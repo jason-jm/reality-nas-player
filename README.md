@@ -1,71 +1,86 @@
 # Reality NAS Player
 
-**简体中文** · [English](README.en.md)
+**A personal cinema built for PICO Space Pro.**
 
-![Reality NAS Player：在太空观景厅的银幕上播放自己的影片；窗外是地球。](docs/showcase/00-screening-room.webp)
+**English** · [简体中文](docs/languages/zh-Hans.md) · [日本語](docs/languages/ja.md) · [Español](docs/languages/es.md) · [Deutsch](docs/languages/de.md) · [Français](docs/languages/fr.md)
 
-**把家里的片库，带进头显里的电影院。** 影片留在 NAS、电脑或头显上；戴上 PICO，从海报墙挑一部，在太空观景厅找个靠窗的位置，接着上次看到的地方播放。用自己的影片就能开始，无需注册。
+<details>
+<summary>All languages (23)</summary>
 
-**[下载 PICO 版 v1.0（签名 APK）](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [版本说明与校验文件](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [macOS / Windows 桌面端](docs/build.md)
+**English** · [简体中文](docs/languages/zh-Hans.md) · [日本語](docs/languages/ja.md) · [Español](docs/languages/es.md) · [Deutsch](docs/languages/de.md) · [Français](docs/languages/fr.md) · [Čeština](docs/languages/cs.md) · [Dansk](docs/languages/da.md) · [Ελληνικά](docs/languages/el.md) · [Suomi](docs/languages/fi.md) · [Italiano](docs/languages/it.md) · [한국어](docs/languages/ko.md) · [Bahasa Melayu](docs/languages/ms.md) · [Norsk bokmål](docs/languages/nb.md) · [Nederlands](docs/languages/nl.md) · [Polski](docs/languages/pl.md) · [Português (Brasil)](docs/languages/pt-BR.md) · [Română](docs/languages/ro.md) · [Русский](docs/languages/ru.md) · [Svenska](docs/languages/sv.md) · [ไทย](docs/languages/th.md) · [Türkçe](docs/languages/tr.md) · [繁體中文](docs/languages/zh-Hant.md)
 
-## 从海报挑电影，从上次那集继续
+[All languages (23) →](docs/languages/README.md)
 
-![片库实拍：原创演示影片在真实海报墙中的排列，以及影片详情。](docs/showcase/01-library.webp)
+</details>
 
-记得封面，却想不起文件名？电影、剧集和动画可以按海报浏览。打开一张卡就能看片名、简介和已有的演员资料；剧集按季、集收好，「继续观看」会带你回到没看完的地方。想从收藏里挑一部还没看过的，可以按观看状态、类型或年代筛选；遇到同名片认错了，也可以自己改匹配。
+![A screening of Polar Letter in the Space Lounge, with Earth outside the windows.](docs/showcase/00-screening-room-en.webp)
 
-已有 Kodi 风格的 `.nfo`、海报和背景图也能沿用。想补齐线上资料，可以在「设置 → 刮削与元数据」填入自己的 TMDB API Key；动画还可从 AniList、Bangumi 获取资料。不填密钥也能播放本地影片。
+The movie can stay on the drive downstairs. Put on your **PICO Space Pro**, open your library and take a seat aboard a station orbiting Earth. Reality NAS Player plays the files you bring; there is no player account to create and no catalogue to subscribe to.
 
-## 片子放在哪里，就从哪里看
+**[Get the v1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop builds](docs/build.md)
 
-![PICO 媒体来源界面，展示文件共享协议与媒体服务器入口。](docs/showcase/02-connect.webp)
+## What was that film with the blue cover?
 
-电脑已经共享了电影文件夹？在「来源」选择 **SMB** 就能连接，不必为了看片再搭一套服务器。NAS 也可通过 **WebDAV、NFS、FTP 或 SFTP** 连接；局域网媒体设备可用 **DLNA**。如果家里已经在用 **Jellyfin、Emby 或 Plex**，应用里有各自的连接入口。
+![The headset library and the Polar Letter detail view, populated with original English demo artwork.](docs/showcase/01-library-en.webp)
 
-只有一个视频文件时，直接从头显的系统文件管理器打开即可。手机上支持 DLNA 投放的应用，还可以把视频投到同一局域网里的头显：先在设置里打开「接收投屏」。
+Browse by artwork when you remember the cover but not the filename. Open a film for its synopsis and cast, or open a series to pick a season and episode. **Continue watching** takes you back to the scene you left. Filters for genre, decade and watch status are handy when nobody can decide what to put on.
 
-## 今晚，想坐哪家影院？
+Already maintain posters, backdrops and Kodi-style NFO files? Keep them. For online film artwork and details, add your own TMDB API key in Settings. Anime can also draw on AniList and Bangumi. A mismatched title can be corrected by hand; local playback never needs a metadata key.
 
-![太空观景厅的选座界面，旁边是私人影院、小镇广场和沙漠营地的实拍。](docs/showcase/03-cinemas.webp)
+## Bring the drive, share or server you use today
 
-看夜场，可以选木饰面和暗色座椅的**私人影院**；想在户外，就去**小镇广场**或**沙漠营地**。在**太空观景厅**，五个座位各有视角：坐中间正对银幕，换到窗边，地球就在身旁。私人影院和小镇广场各有三个座位，回到同一个厅还会记得你选的位置。
+![The English Add a source screen with network-share and media-server options.](docs/showcase/02-connect-en.webp)
 
-影片和字幕都能投到厅内银幕上。你可以调暗放映时的灯光，暂停时灯会亮回来；想兼顾眼前的房间，也能切回独立的播放窗口。
+| Where your film lives | How to open it |
+| --- | --- |
+| On the headset | Open a video in the system file manager, or scan local storage under **Sources**. |
+| On a computer or NAS | Choose **SMB** for a shared folder. WebDAV, NFS, FTP and SFTP are also supported. |
+| In a home media server | Connect to **Jellyfin, Emby or Plex**, or browse a DLNA source on your network. |
 
-## 全景要转头看，立体片要分眼看
+A compatible phone app can send a video over DLNA, too. Turn on the headset’s cast receiver when you want to use it; it starts off.
 
-![同一原创湖景在 PICO 全景播放中的视角，以及真实的画面选择控件。](docs/showcase/04-panorama.webp)
+## Pick a seat, not just a screen size
 
-旅行相机拍的 **360°** 风景，可以转身看身后的山；**180° / VR180** 视频则在眼前展开。想坐着慢慢看，也可在窗口里拖动画面环顾。播放器会参考文件标记判断格式，遇到标记不准的片源，可以手动改。
+![In-app views of the Space Lounge, Private Cinema, Village Square and Desert Camp.](docs/showcase/03-cinemas-en.webp)
 
-收藏的 **左右（SBS）或上下（TAB）3D** 影片，在头显上可左右眼分别显示。平面电影依旧可以留在一块普通银幕上。
+The **Space Lounge** has five seats. Choose the center for a straight view of the screen, or move to the window to watch with Earth in the corner of your eye. For a different evening, try the wood-lined **Private Cinema**, the open-air **Village Square** or the **Desert Camp** after dusk. The cinema and square have three seats each, and the rooms remember where you sat.
 
-## 字幕、配音，按你的习惯来
+The film and its subtitles appear on the room’s screen. Set the house lights for the show and they come up when you pause. Prefer to keep an eye on the room around you? Switch to a floating window from the playback controls.
 
-![真实播放控件：在原创演示短片中切换中英字幕，并调整字幕样式。](docs/showcase/05-playback.webp)
+## Watch what was behind the camera
 
-看动画时保留 **ASS/SSA** 字幕的字体和排版；看外语电影，可以切换内封或外挂字幕，调整字号、位置和延迟。蓝光常见的 PGS 和 DVD 的 VobSub 图形字幕也有播放支持。同名外挂配音能与原声切换。蓝牙耳机听起来慢半拍时，直接微调音画同步，无需重新处理影片。
+![A lakeside 360-degree demo viewed from two directions in the headset player.](docs/showcase/04-panorama-en.webp)
 
-从 MKV、MP4 到 RMVB、WMV、AVI、Hi10P，老收藏也有播放路径。应用可解码 DTS、TrueHD 等音轨，也可从未加密的蓝光 / DVD 影片备份（ISO、BDMV、VIDEO_TS）播放正片。4K、HDR 片源的实际表现取决于编码和头显；原盘交互菜单不在 v1.0 的支持范围内。
+A 360° clip lets you turn away from the sunset and see the opposite shore. **180° and VR180** recordings cover the view ahead. In a floating window, drag to look around instead. The player checks the file for projection information and offers a manual override.
 
-## 出门离线看，回家接着看
+A stereo film is a different experience: **side-by-side and top-and-bottom 3D** give each eye its own view on the headset. An ordinary 2D film still plays on a flat screen.
 
-![PICO 同步设置实拍：由用户选择是否把观看记录保存到自己的 NAS。](docs/showcase/06-offline.webp)
+## Keep the subtitles and soundtrack that came with the film
 
-出门前把影片下载到头显，断网也能看；支持续传的来源可以接着下载。家里有两台头显时，可选择自己的 **SMB 共享**同步观看进度、收藏和手动匹配。同步默认关闭；换设备后重新添加媒体来源即可使用同一份记录。
+![Polar Letter playing with English captions, the track list and subtitle styling controls.](docs/showcase/05-playback-en.webp)
 
-没有 Reality NAS Player 账号、广告或分析服务。片库和服务器连接信息保存在设备上；开启在线匹配时，资料服务会收到检索所需的片名等信息。也可以开启「离线刮削」，只用本地文件信息整理。应用提供 **23 种界面语言**。[隐私政策](docs/privacy-policy.md)
+Keep the typesetting in **ASS/SSA** subtitles or select the **PGS and VobSub** picture subtitles from a disc. Choose embedded or external tracks; adjust subtitle size, position and timing where the format allows. An external dub can sit next to the original soundtrack. If Bluetooth dialogue arrives late, adjust the audio delay without leaving the film.
 
-## 桌面上，也能逛这面海报墙
+MKV and MP4 sit alongside older AVI, WMV, RMVB and Hi10P files. The player can decode DTS and TrueHD audio and find the main feature in an unencrypted Blu-ray or DVD backup (ISO, BDMV or VIDEO_TS). Interactive disc menus are not included. 4K and HDR playback depend on the particular encode and device.
 
-![真实桌面端的深色海报墙，显示与头显相同的演示片库。](docs/showcase/07-desktop.webp)
+## A film for the flight home
 
-不戴头显时，也可以在 macOS 或 Windows 上用桌面端浏览海报、查看剧集详情、播放文件。桌面端与头显共用片库整理和元数据引擎；空间影院和头显选座是 PICO 版的体验。v1.0 的桌面端需[从源码构建](docs/build.md)。
+![The English Sync settings page for saving watch progress on a share you control.](docs/showcase/06-offline-en.webp)
 
-## 第一次开映
+Download a film to the headset before you leave Wi-Fi. Supported sources can resume an interrupted transfer. At home, two headsets can use an **SMB share you choose** to sync progress, favorites and your title corrections. Sync is optional; add the media sources again on a new headset.
 
-1. 从 [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) 下载 APK，侧载到兼容 PICO OS 6 的头显。
-2. 打开「来源」，扫描本地视频，或选一种协议连接自己的共享文件夹。只想试播一部，也可在系统文件管理器里选择「用 Reality NAS Player 打开」。
-3. 点开影片，打开播放控件里的「观影空间」，选窗口、暗场影院或虚拟环境。下次回来，在「继续观看」里接着播。
+There are no ads or analytics. Your library and server settings live on the device. Online metadata lookup sends search information such as a title to the relevant service; choose offline identification to use local file information instead. [Read the privacy policy](docs/privacy-policy.md).
 
-v1.0 提供 PICO 安装包；macOS、Windows 桌面端提供[源码与构建说明](docs/build.md)。播放器不附带影视内容；图中的片名与片画是为演示制作的。[海报与画面说明](docs/showcase/README.md) · [MIT 许可证](LICENSE) · [第三方许可与素材](THIRD_PARTY_NOTICES.md)
+## A desk is a good seat, too
+
+![The English desktop app browsing the same six demonstration titles in its native window.](docs/showcase/07-desktop-en.webp)
+
+The macOS and Windows app shares the headset’s library and metadata tools. Browse a collection, open an episode or play a local file with a mouse and keyboard. The spatial rooms belong to the headset experience. **v1.0 ships a headset APK; the desktop app is available to build from source.** [Desktop instructions](docs/build.md)
+
+## Start with one film
+
+1. Download the signed APK from [Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) and sideload it for **PICO Space Pro / PICO OS 6**.
+2. Open one of your own videos from Files, or add a shared folder under **Sources**. No NAS is required to try local playback.
+3. Start the film and open **Viewing space** to choose your window or room.
+
+The headset screens pictured here were captured in the PICO OS 6 emulator. The films and artwork in the demo library were created for this guide. [About the images](docs/showcase/README.md) · [Language directory](docs/languages/README.md) · [PICO Space Pro platform](https://developer.picoxr.com/document/discover/xr-devices/) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)

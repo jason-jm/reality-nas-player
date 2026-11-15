@@ -1,0 +1,68 @@
+# Reality NAS Player
+
+**En egen filmvisning, byggd för PICO Space Pro.**
+
+**Svenska** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+
+<details>
+<summary>Språk (23)</summary>
+
+**Svenska** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+
+[Språk (23) →](README.md)
+
+</details>
+
+![En egen filmvisning, byggd för PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+
+Filmen kan ligga kvar på din NAS. Ta på dig headsetet, välj en fönsterplats med jorden utanför och fortsätt där du slutade. Du behöver inget spelarkonto för dina egna videofiler.
+
+**[Hämta APK för headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsinformation och kontrollsummor](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bygg datorappen](../build.md)
+
+## Hitta filmen på omslaget
+
+![Hitta filmen på omslaget — Reality NAS Player](../showcase/01-library-en.webp)
+
+Bläddra bland affischerna, läs handlingen eller välj en serie efter säsong och avsnitt. Behåll befintliga Kodi-NFO-filer och bilder. Din egen API-nyckel behövs bara om du vill hämta filminformation från TMDB.
+
+## Anslut din samling
+
+![Anslut din samling — Reality NAS Player](../showcase/02-connect-en.webp)
+
+Öppna en lokal video eller en delad datormapp via SMB. WebDAV, NFS, FTP och SFTP stöds, liksom Jellyfin, Emby, Plex och DLNA. Aktivera DLNA-mottagaren när du vill skicka video från en kompatibel telefon.
+
+## Välj salong och plats
+
+![Välj salong och plats — Reality NAS Player](../showcase/03-cinemas-en.webp)
+
+Rymdloungen har fem platser. Det finns också en privat biograf, ett bytorg och ett ökenläger. Salongen minns din plats och ljuset tänds när du pausar. Du kan även se filmen i ett svävande fönster.
+
+## Se vad som finns bakom dig
+
+![Se vad som finns bakom dig — Reality NAS Player](../showcase/04-panorama-en.webp)
+
+Vänd dig om i 360° eller se scenen framför dig i 180° och VR180. I ett fönster kan du dra för att se dig omkring. 3D-film med bilder sida vid sida eller över varandra ger varje öga en egen vy.
+
+## Välj ljud och text
+
+![Välj ljud och text — Reality NAS Player](../showcase/05-playback-en.webp)
+
+Byt till en extern dubbning, justera ljudfördröjningen och använd ASS/SSA-, PGS- eller VobSub-textning. Förutom MKV, MP4 och äldre format kan du spela huvudfilmen från en okrypterad Blu-ray- eller DVD-kopia utan skivmenyer. 4K och HDR beror på fil och enhet.
+
+## Spara en film till resan
+
+![Spara en film till resan — Reality NAS Player](../showcase/06-offline-en.webp)
+
+Ladda ned innan du lämnar wifi. Med en egen SMB-resurs kan du välja att synka uppspelningsläge, favoriter och manuella matchningar mellan headset. Ingen reklam eller användningsanalys; offlineidentifiering använder lokala uppgifter.
+
+## Vid skrivbordet
+
+![Vid skrivbordet — Reality NAS Player](../showcase/07-desktop-en.webp)
+
+I macOS och Windows kan du bläddra och spela upp med mus och tangentbord. De virtuella salongerna hör till headsetet. v1.0 innehåller en APK för headsetet; datorappen byggs från källkod.
+
+## Första visningen
+
+Installera APK-filen på PICO Space Pro, öppna en egen video eller lägg till en delad mapp och välj visningsmiljö i spelaren. Headsetbilderna kommer från emulatorn för PICO OS 6. Demofilmerna ingår inte.
+
+[Integritet](../privacy-policy.md) · [Om bilderna](../showcase/README.md) · [MIT](../../LICENSE) · [Språk (23)](README.md)

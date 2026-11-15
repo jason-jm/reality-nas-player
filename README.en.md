@@ -1,71 +1,86 @@
 # Reality NAS Player
 
-[简体中文](README.md) · **English**
+**A personal cinema built for PICO Space Pro.**
 
-![Reality NAS Player playing a film on the Space Lounge screen with Earth outside the windows.](docs/showcase/00-screening-room-en.webp)
+**English** · [简体中文](docs/languages/zh-Hans.md) · [日本語](docs/languages/ja.md) · [Español](docs/languages/es.md) · [Deutsch](docs/languages/de.md) · [Français](docs/languages/fr.md)
 
-**Give the films you already own a cinema of their own.** Leave your files on your NAS, computer or headset. Put on your PICO, pick a poster, take the window seat above Earth and pick up where you left off. No player account required.
+<details>
+<summary>All languages (23)</summary>
 
-**[Download v1.0 for PICO (signed APK)](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [macOS / Windows source and build guide](docs/build.md)
+**English** · [简体中文](docs/languages/zh-Hans.md) · [日本語](docs/languages/ja.md) · [Español](docs/languages/es.md) · [Deutsch](docs/languages/de.md) · [Français](docs/languages/fr.md) · [Čeština](docs/languages/cs.md) · [Dansk](docs/languages/da.md) · [Ελληνικά](docs/languages/el.md) · [Suomi](docs/languages/fi.md) · [Italiano](docs/languages/it.md) · [한국어](docs/languages/ko.md) · [Bahasa Melayu](docs/languages/ms.md) · [Norsk bokmål](docs/languages/nb.md) · [Nederlands](docs/languages/nl.md) · [Polski](docs/languages/pl.md) · [Português (Brasil)](docs/languages/pt-BR.md) · [Română](docs/languages/ro.md) · [Русский](docs/languages/ru.md) · [Svenska](docs/languages/sv.md) · [ไทย](docs/languages/th.md) · [Türkçe](docs/languages/tr.md) · [繁體中文](docs/languages/zh-Hant.md)
 
-## Pick a poster, not a filename
+[All languages (23) →](docs/languages/README.md)
 
-![The real poster wall and film details, populated with original demonstration titles.](docs/showcase/01-library-en.webp)
+</details>
 
-Recognise the artwork but forget the title? Browse films, shows and anime by cover. Open a card for the synopsis and available cast, browse a series by season and episode, or use **Continue watching** to return to an unfinished film. Filter by watch status, genre or decade when you want something unwatched. You can correct a match when two films share a name.
+![A screening of Polar Letter in the Space Lounge, with Earth outside the windows.](docs/showcase/00-screening-room-en.webp)
 
-Keep your existing Kodi-style `.nfo` files, posters and backdrops. To fetch film details from TMDB, enter your own API key under **Settings → Scraping**; anime metadata can also come from AniList and Bangumi. Playing a local file needs no key.
+The movie can stay on the drive downstairs. Put on your **PICO Space Pro**, open your library and take a seat aboard a station orbiting Earth. Reality NAS Player plays the files you bring; there is no player account to create and no catalogue to subscribe to.
 
-## Play from the library you already have
+**[Get the v1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop builds](docs/build.md)
 
-![PICO’s media sources screen lists file shares and dedicated media server connections.](docs/showcase/02-connect-en.webp)
+## What was that film with the blue cover?
 
-Already sharing a folder from your computer? Choose **SMB** under Sources. A NAS can also connect over **WebDAV, NFS, FTP or SFTP**. Discover home media devices with **DLNA**, or connect to a **Jellyfin, Emby or Plex** library using its dedicated entry.
+![The headset library and the Polar Letter detail view, populated with original English demo artwork.](docs/showcase/01-library-en.webp)
 
-For a single local video, use the headset’s file manager and open it with Reality NAS Player. To send a video from a compatible phone app, enable the optional **DLNA cast receiver** and connect both devices to the same local network.
+Browse by artwork when you remember the cover but not the filename. Open a film for its synopsis and cast, or open a series to pick a season and episode. **Continue watching** takes you back to the scene you left. Filters for genre, decade and watch status are handy when nobody can decide what to put on.
 
-## Choose a room. Keep your seat.
+Already maintain posters, backdrops and Kodi-style NFO files? Keep them. For online film artwork and details, add your own TMDB API key in Settings. Anime can also draw on AniList and Bangumi. A mismatched title can be corrected by hand; local playback never needs a metadata key.
 
-![The Space Lounge seat picker together with in-app views of the private cinema, village square and desert camp.](docs/showcase/03-cinemas-en.webp)
+## Bring the drive, share or server you use today
 
-Try a late show in the wood-panelled **Private Cinema**, an outdoor screening in the **Village Square** or a quiet night at the **Desert Camp**. The **Space Lounge** has five seats: sit in the middle for a straight view of the screen or take a window seat beside Earth. The private cinema and village square have three seats each. Each room remembers your choice.
+![The English Add a source screen with network-share and media-server options.](docs/showcase/02-connect-en.webp)
 
-Put the film and subtitles on the room’s screen, set the lights for playback and see them come back up when you pause. Switch to a floating window whenever you want the room around you back.
+| Where your film lives | How to open it |
+| --- | --- |
+| On the headset | Open a video in the system file manager, or scan local storage under **Sources**. |
+| On a computer or NAS | Choose **SMB** for a shared folder. WebDAV, NFS, FTP and SFTP are also supported. |
+| In a home media server | Connect to **Jellyfin, Emby or Plex**, or browse a DLNA source on your network. |
 
-## Look around a panorama, see depth in a 3D film
+A compatible phone app can send a video over DLNA, too. Turn on the headset’s cast receiver when you want to use it; it starts off.
 
-![An original lakeside panorama shown in the PICO player with actual viewing controls.](docs/showcase/04-panorama-en.webp)
+## Pick a seat, not just a screen size
 
-Turn around inside a **360°** landscape or look into a **180° / VR180** scene. In a window you can drag to look around instead. The player reads projection information when available and lets you correct it manually.
+![In-app views of the Space Lounge, Private Cinema, Village Square and Desert Camp.](docs/showcase/03-cinemas-en.webp)
 
-**Side-by-side (SBS) and top-and-bottom (TAB) 3D** films can send a separate image to each eye on the headset. Ordinary films still play on a flat screen.
+The **Space Lounge** has five seats. Choose the center for a straight view of the screen, or move to the window to watch with Earth in the corner of your eye. For a different evening, try the wood-lined **Private Cinema**, the open-air **Village Square** or the **Desert Camp** after dusk. The cinema and square have three seats each, and the rooms remember where you sat.
 
-## Read every line, hear the track you want
+The film and its subtitles appear on the room’s screen. Set the house lights for the show and they come up when you pause. Prefer to keep an eye on the room around you? Switch to a floating window from the playback controls.
 
-![A demo film playing with the actual subtitle track and styling controls.](docs/showcase/05-playback-en.webp)
+## Watch what was behind the camera
 
-Keep the styling of **ASS/SSA** subtitles, switch between embedded and external subtitles, and adjust their size, position and timing. Blu-ray PGS and DVD VobSub picture subtitles are supported too. Switch from the original soundtrack to a matching external dub; if Bluetooth audio falls behind, adjust the audio delay while watching.
+![A lakeside 360-degree demo viewed from two directions in the headset player.](docs/showcase/04-panorama-en.webp)
 
-Play everyday MKV and MP4 files alongside older RMVB, WMV, AVI and Hi10P material. The player can decode DTS and TrueHD audio and play the main feature from unencrypted Blu-ray or DVD backups (ISO, BDMV and VIDEO_TS). 4K and HDR results depend on the encoding and headset. Interactive disc menus are not supported in v1.0.
+A 360° clip lets you turn away from the sunset and see the opposite shore. **180° and VR180** recordings cover the view ahead. In a floating window, drag to look around instead. The player checks the file for projection information and offers a manual override.
 
-## Take a film offline. Bring your place home.
+A stereo film is a different experience: **side-by-side and top-and-bottom 3D** give each eye its own view on the headset. An ordinary 2D film still plays on a flat screen.
 
-![The headset’s sync settings, where you choose whether to keep watch state on your own NAS.](docs/showcase/06-offline-en.webp)
+## Keep the subtitles and soundtrack that came with the film
 
-Download a film to your headset before travelling; supported sources can resume an interrupted download. If you use two headsets, an optional **SMB share** can hold your watch progress, favourites and manual matches. Sync is off by default. Add your media sources again on a new device to use the same watch state.
+![Polar Letter playing with English captions, the track list and subtitle styling controls.](docs/showcase/05-playback-en.webp)
 
-No player account, ads or analytics. Your library and server settings stay on your device. Online matching sends search information such as a title to the selected metadata services; offline identification uses local file information instead. The interface is available in **23 languages**. [Privacy policy](docs/privacy-policy.md)
+Keep the typesetting in **ASS/SSA** subtitles or select the **PGS and VobSub** picture subtitles from a disc. Choose embedded or external tracks; adjust subtitle size, position and timing where the format allows. An external dub can sit next to the original soundtrack. If Bluetooth dialogue arrives late, adjust the audio delay without leaving the film.
 
-## Browse the poster wall at your desk
+MKV and MP4 sit alongside older AVI, WMV, RMVB and Hi10P files. The player can decode DTS and TrueHD audio and find the main feature in an unencrypted Blu-ray or DVD backup (ISO, BDMV or VIDEO_TS). Interactive disc menus are not included. 4K and HDR playback depend on the particular encode and device.
 
-![The desktop app’s dark poster wall with the same demonstration film collection.](docs/showcase/07-desktop-en.webp)
+## A film for the flight home
 
-On macOS and Windows, browse artwork, open series details and play a file without wearing a headset. The desktop app shares the library and metadata engine; spatial cinemas and seat selection are part of the PICO experience. For v1.0, [build the desktop app from source](docs/build.md).
+![The English Sync settings page for saving watch progress on a share you control.](docs/showcase/06-offline-en.webp)
 
-## Your first screening
+Download a film to the headset before you leave Wi-Fi. Supported sources can resume an interrupted transfer. At home, two headsets can use an **SMB share you choose** to sync progress, favorites and your title corrections. Sync is optional; add the media sources again on a new headset.
 
-1. Download the APK from [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) and sideload it onto a compatible PICO OS 6 headset.
-2. Open **Sources** to scan local video or add a network share. You can also open a single video straight from the system file manager.
-3. Play a title and open **Viewing space** in the playback controls to choose a window, dark cinema or virtual room. Look under **Continue watching** when you return.
+There are no ads or analytics. Your library and server settings live on the device. Online metadata lookup sends search information such as a title to the relevant service; choose offline identification to use local file information instead. [Read the privacy policy](docs/privacy-policy.md).
 
-The v1.0 download is for PICO. The macOS and Windows desktop app is available as [source with build instructions](docs/build.md). Bring your own films; the titles and film artwork shown here were made for this demonstration. [About the images](docs/showcase/README.md) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+## A desk is a good seat, too
+
+![The English desktop app browsing the same six demonstration titles in its native window.](docs/showcase/07-desktop-en.webp)
+
+The macOS and Windows app shares the headset’s library and metadata tools. Browse a collection, open an episode or play a local file with a mouse and keyboard. The spatial rooms belong to the headset experience. **v1.0 ships a headset APK; the desktop app is available to build from source.** [Desktop instructions](docs/build.md)
+
+## Start with one film
+
+1. Download the signed APK from [Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) and sideload it for **PICO Space Pro / PICO OS 6**.
+2. Open one of your own videos from Files, or add a shared folder under **Sources**. No NAS is required to try local playback.
+3. Start the film and open **Viewing space** to choose your window or room.
+
+The headset screens pictured here were captured in the PICO OS 6 emulator. The films and artwork in the demo library were created for this guide. [About the images](docs/showcase/README.md) · [Language directory](docs/languages/README.md) · [PICO Space Pro platform](https://developer.picoxr.com/document/discover/xr-devices/) · [MIT license](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)
