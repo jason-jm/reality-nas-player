@@ -7,7 +7,7 @@ What you see on the screens is Reality NAS Player. The headset views were captur
 | Open a poster | What to look for |
 | --- | --- |
 | [Your NAS, now showing](00-screening-room-en.webp) | A closer view from the center seat as *Polar Letter* plays in the Space Lounge. |
-| [From filename to film](01-auto-scraping-en.webp) | The files for *Polar Letter* on a WebDAV share, the matching settings and the first row of covers the app found. |
+| [From filename to film](01-auto-scraping-en.webp) | The video, NFO and artwork for *Polar Letter* on a WebDAV share, alongside the scanned covers and the film’s title, year, genre and cast. |
 | [The poster wall](01-library-en.webp) | The full headset library after scanning eight films. Both rows of covers, the sidebar and the filter and sort controls are visible. |
 | [Leave the files there](02-connect-en.webp) | Where to add a shared folder or connect a media server. |
 | [Where are we watching?](03-cinemas-en.webp) | The Space Lounge, Private Cinema, Village Square and Desert Camp, each running the same film. |

@@ -21,13 +21,15 @@ Połącz foldery filmów i seriali na swoim NAS-ie z PICO Space Pro. Reality NAS
 
 ## Od folderów na NAS-ie do opisów filmów
 
-![Pliki filmu Polar Letter w folderze udostępnionym przez WebDAV i pierwszy rząd plakatów po skanowaniu.](../showcase/01-auto-scraping-en.webp)
+![Pliki filmu Polar Letter w folderze udostępnionym przez WebDAV i pierwszy rząd plakatów po skanowaniu. W bibliotece Polar Letter widnieje jako film przygodowy z 2026 roku z udziałem Rowana Lake’a.](../showcase/01-auto-scraping-en.webp)
 
 Dodaj folder sieciowy i uruchom skanowanie. Odtwarzacz rozpoznaje tytuły po nazwach plików, roku oraz numerach sezonów i odcinków. Odczytuje też identyfikatory filmów i seriali z plików NFO w formacie Kodi i korzysta z plakatów i teł zapisanych obok wideo. Na ilustracji opis i obsada filmu Polar Letter pochodzą z pliku NFO odczytanego z udziału WebDAV bez wyszukiwania w internecie. Do wyszukiwania w TMDB możesz dodać własny klucz API. Błędne dopasowanie można poprawić.
 
 ## Przeglądaj bibliotekę po plakatach
 
-![Biblioteka na PICO Space Pro pokazuje osiem plakatów w dwóch rzędach po cztery. Po lewej są kategorie, a u góry opcje filtrowania i sortowania.](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteka na PICO Space Pro pokazuje osiem plakatów w dwóch rzędach po cztery. Po lewej są kategorie, a u góry opcje filtrowania i sortowania." width="520"></a>
+</p>
 
 Pamiętasz niebieski plakat, ale nie tytuł? Wybierz okładkę, by zobaczyć opis, obsadę i tło filmu. Przy serialu możesz przejść do wybranego sezonu i odcinka. Filtry gatunku i dekady ułatwiają wybór, a rozpoczęty film wznowisz od ostatniej sceny.
 

@@ -21,7 +21,7 @@ Open the movie and TV folders on your NAS. Reality NAS Player identifies the tit
 
 ## Turn NAS folders into a film library
 
-![The files for Polar Letter on a WebDAV share and the first four covers on the headset after the scan.](docs/showcase/01-auto-scraping-en.webp)
+![The files for Polar Letter on a WebDAV share and the first four covers after the scan. Its library entry identifies a 2026 adventure film starring Rowan Lake.](docs/showcase/01-auto-scraping-en.webp)
 
 Add a shared folder under **Sources** and start a scan. The player reads filenames, years and episode numbers to identify what you own. Its metadata scraper can turn a name like `Polar.Letter.2026.720p.mp4` into a film entry with a synopsis, credits and artwork. With automatic library updates enabled, later scans pick up new files.
 
@@ -29,7 +29,9 @@ Already organize your NAS with Kodi or tinyMediaManager? The player reads movie 
 
 ## Browse your collection by its artwork
 
-![The PICO Space Pro library shows eight film covers in two rows of four. Library categories are on the left, with Filter and sort controls above the covers.](docs/showcase/01-library-en.webp)
+<p align="center">
+  <a href="docs/showcase/01-library-en.webp?raw=true"><img src="docs/showcase/01-library-en.webp" alt="The PICO Space Pro library shows eight film covers in two rows of four. Library categories are on the left, with Filter and sort controls above the covers." width="520"></a>
+</p>
 
 Open your library and browse the **poster wall**. Pick a category on the left, or use **Filter** to narrow the wall by genre, decade or watch status. Select a cover for the film’s synopsis and cast, or open a series to choose a season and episode. **Continue watching** takes you back to the scene you left.
 

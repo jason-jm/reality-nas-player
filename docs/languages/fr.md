@@ -21,13 +21,15 @@ Connectez les dossiers de films et de séries de votre NAS à votre PICO Space P
 
 ## Des dossiers du NAS aux fiches de films
 
-![Les fichiers de Polar Letter dans un dossier partagé WebDAV et la première rangée d’affiches après l’analyse.](../showcase/01-auto-scraping-en.webp)
+![Les fichiers de Polar Letter dans un dossier partagé WebDAV et la première rangée d’affiches après l’analyse. La fiche présente Polar Letter comme un film d’aventure de 2026 avec Rowan Lake.](../showcase/01-auto-scraping-en.webp)
 
 Lancez l’analyse d’un dossier partagé. Le lecteur s’appuie sur les noms de fichiers, les années et les numéros de saison et d’épisode. Il sait aussi lire les identifiants de films et de séries dans vos NFO Kodi et reprendre les affiches et fonds d’écran rangés à côté des vidéos. Sur l’image, le résumé et la distribution de Polar Letter viennent du NFO d’un partage WebDAV, lu hors ligne. Une clé API TMDB personnelle permet de chercher en ligne. Vous pouvez rectifier une association.
 
 ## Retrouvez un film à son affiche
 
-![La bibliothèque sur PICO Space Pro affiche huit films sur deux rangées de quatre affiches. Les catégories sont à gauche, les filtres et le tri en haut.](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="La bibliothèque sur PICO Space Pro affiche huit films sur deux rangées de quatre affiches. Les catégories sont à gauche, les filtres et le tri en haut." width="520"></a>
+</p>
 
 Vous vous souvenez de l’affiche bleue mais plus du titre ? Parcourez le mur d’affiches, puis ouvrez une fiche pour retrouver le visuel, le résumé et les interprètes. Les séries se parcourent par saison et épisode. Filtrez par genre ou par décennie, ou reprenez un film à la scène où vous l’avez laissé.
 

@@ -21,13 +21,15 @@ Koble film- og seriemappene på NAS-en til PICO Space Pro. Reality NAS Player kj
 
 ## Fra NAS-mapper til filmopplysninger
 
-![Filene til Polar Letter i en delt WebDAV-mappe og den første raden med filmplakater etter skanningen.](../showcase/01-auto-scraping-en.webp)
+![Filene til Polar Letter i en delt WebDAV-mappe og den første raden med filmplakater etter skanningen. Polar Letter vises som en eventyrfilm fra 2026 med Rowan Lake.](../showcase/01-auto-scraping-en.webp)
 
 Legg til en delt mappe og start et søk etter mediefiler. Spilleren bruker filnavn, årstall, sesong og episodenummer for å kjenne igjen titlene. Den leser film- og serie-ID-er i Kodi-NFO-filer og bruker plakater og bakgrunner som ligger ved siden av videoene. Handlingen og rollelisten for Polar Letter på bildet ble hentet fra en NFO-fil på en WebDAV-ressurs uten nettoppslag. Du kan legge inn din egen API-nøkkel for TMDB og rette feil treff.
 
 ## Bla i omslagene
 
-![Biblioteket på PICO Space Pro viser åtte filmplakater i to rader med fire i hver. Kategoriene er til venstre, og filtrering og sortering ligger øverst.](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro viser åtte filmplakater i to rader med fire i hver. Kategoriene er til venstre, og filtrering og sortering ligger øverst." width="520"></a>
+</p>
 
 Husker du den blå plakaten bedre enn tittelen? Finn den på plakatveggen og åpne filmen for å se bakgrunnsbilde, handling og medvirkende. I en serie velger du sesong og episode. Filtrer etter sjanger eller tiår, eller fortsett der du slapp.
 

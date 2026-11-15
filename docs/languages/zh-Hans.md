@@ -21,13 +21,15 @@
 
 ## 让播放器替你的 NAS 片库刮削资料
 
-![WebDAV 共享文件夹里《Polar Letter》的文件，以及扫描后出现在片库第一排的四张海报。](../showcase/01-auto-scraping-en.webp)
+![WebDAV 共享文件夹里《Polar Letter》的文件，以及扫描后出现在片库第一排的四张海报。影片条目显示《Polar Letter》是 2026 年的冒险片，主演为 Rowan Lake。](../showcase/01-auto-scraping-en.webp)
 
 在「来源」里添加 NAS 共享并扫描。播放器会从文件名、年份和季集编号识别电影或剧集。已有 Kodi 风格的 NFO、海报和背景图？它能读取 NFO 里的影片或剧集 ID，沿用同目录的配图。图中的《Polar Letter》就是在关闭在线查询后，从 WebDAV 共享刮削出来的，连简介和演员都来自 NFO。需要在线补全时可填写自己的 TMDB API Key，匹配错了也能手动纠正。
 
 ## 按封面逛海报墙
 
-![PICO Space Pro 片库的完整海报墙。八部影片按四列两行排列，左侧是分类，上方可以筛选和排序。](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 片库的完整海报墙。八部影片按四列两行排列，左侧是分类，上方可以筛选和排序。" width="520"></a>
+</p>
 
 记得蓝色封面，却想不起片名？在海报墙上一眼就能认出来。点开封面可看背景图、简介和演职员，打开剧集还能按季选集。按类型、年代或观看进度筛选，「继续观看」会带你回到上次停下的那一幕。
 

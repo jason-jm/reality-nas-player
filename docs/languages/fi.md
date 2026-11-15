@@ -21,13 +21,15 @@ Yhdistä NAS-palvelimesi elokuva- ja sarjakansiot PICO Space Prohon. Reality NAS
 
 ## Elokuvatiedot suoraan NAS-kansioista
 
-![Polar Letterin tiedostot WebDAV-jaossa ja kirjaston ensimmäinen julisterivi skannauksen jälkeen.](../showcase/01-auto-scraping-en.webp)
+![Polar Letterin tiedostot WebDAV-jaossa ja kirjaston ensimmäinen julisterivi skannauksen jälkeen. Polar Letter näkyy vuoden 2026 seikkailuelokuvana, jonka pääosassa on Rowan Lake.](../showcase/01-auto-scraping-en.webp)
 
 Lisää jaettu kansio ja käynnistä haku. Soitin tunnistaa elokuvia ja jaksoja tiedostonimen, vuosiluvun sekä kausi- ja jaksonumeron perusteella. Se lukee myös Kodi-NFO-tiedostoihin tallennetut elokuvien ja sarjojen tunnisteet ja käyttää videoiden vieressä olevia julisteita ja taustakuvia. Kuvan Polar Letterin juonikuvaus ja näyttelijät tulivat WebDAV-jaon NFO-tiedostosta ilman verkkohakua. TMDB-hakuun voit lisätä oman API-avaimesi. Virheellisen osuman voi korjata käsin.
 
 ## Selaa kirjastoa kansikuvien avulla
 
-![PICO Space Pron kirjastossa näkyy kahdeksan elokuvajulistetta kahdessa neljän julisteen rivissä. Luokat ovat vasemmalla ja suodatus sekä lajittelu ylhäällä.](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pron kirjastossa näkyy kahdeksan elokuvajulistetta kahdessa neljän julisteen rivissä. Luokat ovat vasemmalla ja suodatus sekä lajittelu ylhäällä." width="520"></a>
+</p>
 
 Muistatko sinisen julisteen, mutta et elokuvan nimeä? Julisteseinältä voit avata juonikuvauksen ja näyttelijätiedot tai valita sarjan kauden ja jakson. Rajaa valikoimaa tyylilajin tai vuosikymmenen mukaan tai jatka kesken jäänyttä elokuvaa samasta kohtauksesta.
 

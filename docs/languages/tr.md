@@ -21,13 +21,15 @@ NAS’ınızdaki film ve dizi klasörlerini PICO Space Pro’ya bağlayın. Real
 
 ## NAS klasörlerinden film künyelerine
 
-![WebDAV paylaşımındaki Polar Letter dosyaları ve tarama sonrasında kitaplıkta görünen ilk afiş sırası.](../showcase/01-auto-scraping-en.webp)
+![WebDAV paylaşımındaki Polar Letter dosyaları ve tarama sonrasında kitaplıkta görünen ilk afiş sırası. Polar Letter, kitaplıkta Rowan Lake’in rol aldığı 2026 yapımı bir macera filmi olarak görünüyor.](../showcase/01-auto-scraping-en.webp)
 
 Bir paylaşımlı klasör ekleyip taramayı başlatın. Oynatıcı dosya adlarını, yılları, sezon ve bölüm numaralarını kullanarak yapımları tanır. Kodi biçimindeki NFO dosyalarından film veya dizi kimliklerini okur ve videoların yanındaki afişlerle arka planları kullanır. Görseldeki Polar Letter’ın özeti ve oyuncu kadrosu, internet araması yapılmadan bir WebDAV paylaşımındaki NFO’dan alındı. Çevrimiçi arama için kendi TMDB API anahtarınızı ekleyebilir, hatalı bir eşleşmeyi elle düzeltebilirsiniz.
 
 ## Arşivi afişlerden gezin
 
-![PICO Space Pro kitaplığında sekiz film afişi dörderli iki sıra hâlinde görünüyor. Kategoriler solda, filtreleme ve sıralama seçenekleri üstte.](../showcase/01-library-en.webp)
+<p align="center">
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro kitaplığında sekiz film afişi dörderli iki sıra hâlinde görünüyor. Kategoriler solda, filtreleme ve sıralama seçenekleri üstte." width="520"></a>
+</p>
 
 Adını unuttunuz ama mavi afiş aklınızda mı? Kapağı açıp arka planı, konuyu ve oyuncu kadrosunu görün. Dizilerde sezon ve bölüm seçin. Türe ya da on yıla göre filtreleyebilir veya yarım kalan filme kaldığınız sahneden devam edebilirsiniz.
 
