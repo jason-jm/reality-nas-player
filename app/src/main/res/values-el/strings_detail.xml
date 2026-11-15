@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Αφαίρεση από τα αγαπημένα</string>
+    <string name="det_up_next">Ακολουθεί</string>
+    <string name="det_section_main">Κύριο</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Σεζόν %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Σήμανση όλων ως παρακολουθημένα;</string>
+    <string name="det_mark_all_unwatched_q">Σήμανση όλων ως μη παρακολουθημένα;</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d αρχείο θα σημειωθεί ως παρακολουθημένο.</item>
+        <item quantity="other">%1$d αρχεία θα σημειωθούν ως παρακολουθημένα.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d από αυτά είναι μισοτελειωμένο και θα χάσει τη θέση του.</item>
+        <item quantity="other">%1$d από αυτά είναι μισοτελειωμένα και θα χάσουν τη θέση τους.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Η πρόοδος προβολής %1$d αρχείου θα διαγραφεί.</item>
+        <item quantity="other">Η πρόοδος προβολής %1$d αρχείων θα διαγραφεί.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Πηγή</string>
+    <string name="fix_scope">Εφαρμογή σε</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Ολόκληρη την κάρτα (%1$d αρχείο)</item>
+        <item quantity="other">Ολόκληρη την κάρτα (%1$d αρχεία)</item>
+    </plurals>
+    <string name="fix_scope_file">Μόνο αυτό το αρχείο</string>
+    <string name="fix_query_hint">Τίτλος — οι αγγλικοί τίτλοι ταιριάζουν καλύτερα</string>
+    <string name="fix_hint">Επιλέξτε τη σωστή καταχώριση για να διορθώσετε την αντιστοίχιση</string>
+    <string name="fix_applying">Εφαρμογή…</string>
+    <string name="fix_failed">Δεν ήταν δυνατή η εφαρμογή αυτής της καταχώρισης. Ελέγξτε το δίκτυο και δοκιμάστε ξανά.</string>
+    <string name="fix_kind_movie">Ταινία</string>
+    <string name="fix_kind_show">Σειρά</string>
+    <string name="fix_current">Τρέχουσα</string>
+    <string name="fix_no_results_title">Δεν βρέθηκαν καταχωρίσεις</string>
+    <string name="fix_no_results_anilist">Δοκιμάστε άλλη γραφή — τα ονόματα σε romaji ή στα αγγλικά ταιριάζουν καλύτερα.</string>
+    <string name="fix_error_title">Η αναζήτηση δεν ολοκληρώθηκε</string>
+    <string name="fix_error_body">Ελέγξτε το δίκτυο και δοκιμάστε ξανά.</string>
+    <string name="fix_retry">Επανάληψη</string>
+    <string name="fix_confirm_title">Αλλαγή σε «%1$s»;</string>
+    <string name="fix_confirm_title_year">Αλλαγή σε «%1$s» (%2$d);</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">%1$d αρχείο αυτής της κάρτας θα χρησιμοποιεί από εδώ και πέρα αυτή την καταχώριση και οι επόμενες αναγνωρίσεις δεν θα την αλλάξουν.</item>
+        <item quantity="other">Και τα %1$d αρχεία αυτής της κάρτας θα χρησιμοποιούν από εδώ και πέρα αυτή την καταχώριση και οι επόμενες αναγνωρίσεις δεν θα την αλλάξουν.</item>
+    </plurals>
+    <string name="fix_confirm_file">Μόνο το «%1$s» θα χρησιμοποιεί από εδώ και πέρα αυτή την καταχώριση και οι επόμενες αναγνωρίσεις δεν θα την αλλάξουν.</string>
+    <string name="fix_apply">Εφαρμογή</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d ακόμη</item>
+        <item quantity="other">%d ακόμη</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d ακόμη τίτλος στη βιβλιοθήκη σας</item>
+        <item quantity="other">%d ακόμη τίτλοι στη βιβλιοθήκη σας</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d τίτλος στη βιβλιοθήκη σας</item>
+        <item quantity="other">%d τίτλοι στη βιβλιοθήκη σας</item>
+    </plurals>
+    <string name="det_similar">Παρόμοια</string>
+    <string name="det_episode_copy">%1$s · άλλο αντίγραφο</string>
+    <string name="det_season_progress">%1$d από %2$d προβλήθηκαν</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Προβλήθηκε %1$d επεισόδιο</item>
+        <item quantity="other">Προβλήθηκαν και τα %1$d</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Εκδόσεις</string>
+    <string name="det_series">Σε αυτή τη συλλογή</string>
+    <string name="lib_series">Συλλογή</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d τίτλος</item>
+        <item quantity="other">%d τίτλοι</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d τίτλος σε αυτή τη βιβλιοθήκη, με τη σειρά που κυκλοφόρησαν</item>
+        <item quantity="other">%d τίτλοι σε αυτή τη βιβλιοθήκη, με τη σειρά που κυκλοφόρησαν</item>
+    </plurals>
+</resources>

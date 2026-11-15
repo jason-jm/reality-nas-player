@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Λήψεις</string>
+    <string name="dl_notif_title">Λήψη σε αυτή την κάσκα</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Λήψη στην κάσκα</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Λήψη %d ακόμη επεισοδίου</item>
+        <item quantity="other">Λήψη %d ακόμη επεισοδίων</item>
+    </plurals>
+    <string name="dl_remove">Αφαίρεση λήψης</string>
+    <string name="dl_pause">Παύση</string>
+    <string name="dl_resume">Συνέχεια</string>
+    <string name="dl_retry">Επανάληψη</string>
+    <string name="dl_on_headset">Σε αυτή την κάσκα</string>
+    <plurals name="dl_added">
+        <item quantity="one">Λήψη %d αρχείου στην κάσκα</item>
+        <item quantity="other">Λήψη %d αρχείων στην κάσκα</item>
+    </plurals>
+    <string name="dl_added_none">Υπάρχει ήδη στις Λήψεις</string>
+    <string name="dl_removed">Η λήψη αφαιρέθηκε</string>
+    <string name="dl_state_queued">Σε αναμονή</string>
+    <string name="dl_state_paused">Σε παύση</string>
+    <string name="dl_state_starting">Σύνδεση…</string>
+    <string name="dl_running">%1$s από %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Αναμονή για τον κοινόχρηστο φάκελο · %1$s από %2$s</string>
+    <string name="dl_failed_no_room">Δεν υπάρχει αρκετός χώρος στην κάσκα</string>
+    <string name="dl_failed_unreachable">Ο κοινόχρηστος φάκελος δεν ήταν προσβάσιμος</string>
+    <string name="dl_failed_disk">Δεν ήταν δυνατή η αποθήκευση του αρχείου</string>
+    <string name="dl_empty">Δεν υπάρχουν λήψεις ακόμη</string>
+    <string name="dl_empty_hint">Πατήστε παρατεταμένα μια αφίσα ή ένα επεισόδιο και επιλέξτε Λήψη στην κάσκα για να το δείτε μακριά από το σπίτι.</string>
+    <string name="dl_space">%1$s λήψεις · %2$s ελεύθερα</string>
+    <string name="dl_section_active">Λήψη σε εξέλιξη</string>
+    <string name="dl_section_done">Σε αυτή την κάσκα</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · %2$d ακόμη</item>
+        <item quantity="other">%1$d%% · %2$d ακόμη</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Αφαίρεση %d παρακολουθημένου</item>
+        <item quantity="other">Αφαίρεση %d παρακολουθημένων</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Αφαιρέθηκε %1$d παρακολουθημένη λήψη · ελευθερώθηκαν %2$s</item>
+        <item quantity="other">Αφαιρέθηκαν %1$d παρακολουθημένες λήψεις · ελευθερώθηκαν %2$s</item>
+    </plurals>
+    <string name="dl_cancel">Ακύρωση λήψης</string>
+    <string name="dl_failed_snack">Δεν ήταν δυνατή η λήψη του %1$s: %2$s</string>
+    <string name="set_downloads">Λήψεις σε αυτή την κάσκα</string>
+    <string name="set_downloads_none">Τίποτα ακόμη: πατήστε παρατεταμένα μια αφίσα για λήψη.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d αρχείο · %2$s</item>
+        <item quantity="other">%1$d αρχεία · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Προβολή</string>
+    <string name="set_downloads_clear">Αφαίρεση όλων των λήψεων</string>
+    <string name="set_downloads_clear_hint">Κάθε αντίγραφο στην κάσκα και όσα κατεβαίνουν ακόμη. Τα αρχεία στους κοινόχρηστους φακέλους σας μένουν ανέγγιχτα.</string>
+    <string name="set_downloads_clear_q">Αφαίρεση όλων των λήψεων;</string>
+    <string name="set_downloads_clear_body">Τα αντίγραφα σε αυτή την κάσκα διαγράφονται. Τα αρχεία στο NAS σας μένουν ως έχουν.</string>
+    <string name="set_downloads_cleared">Όλες οι λήψεις αφαιρέθηκαν</string>
+    <string name="set_downloads_clear_action">Αφαίρεση…</string>
+    <string name="set_downloads_clear_confirm">Αφαίρεση</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Λήψη</string>
+    <string name="dl_player_done">Ελήφθη</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Λήψη %d</item>
+        <item quantity="other">Λήψη %d</item>
+    </plurals>
+    <string name="dl_folder">Λήψη αυτού του φακέλου</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Λήψη %d αρχείου;</item>
+        <item quantity="other">Λήψη αυτών των %d αρχείων;</item>
+    </plurals>
+    <string name="dl_folder_body">Κατεβαίνουν το ένα μετά το άλλο. Στην κάσκα υπάρχουν %1$s ελεύθερα και κρατούνται πάντα 2 GB.</string>
+    <string name="dl_folder_go">Λήψη</string>
+    <string name="vid_play_copy">Αναπαραγωγή του %1$s από την κάσκα</string>
+    <string name="lib_offline">Εκτός σύνδεσης · παίζουν μόνο οι λήψεις</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Εκτός σύνδεσης · %d λήψη παίζει εδώ</item>
+        <item quantity="other">Εκτός σύνδεσης · %d λήψεις παίζουν εδώ</item>
+    </plurals>
+    <string name="set_cast_privacy">Λήψη μεταδόσεων (ανενεργή αν δεν την ενεργοποιήσετε)</string>
+    <string name="set_cast_privacy_body">Η κάσκα ανακοινώνει την παρουσία της μόνο στο δικό σας δίκτυο, ώστε να την εμφανίζουν τα τηλέφωνα. Ένα τηλέφωνο στέλνει τη διεύθυνση ενός βίντεο και η κάσκα παίζει από εκεί. Τίποτα δεν περνά από την Reality NAS Player και τίποτα από όσα μεταδίδονται δεν καταγράφεται.</string>
+    <string name="set_downloads_privacy">Λήψεις</string>
+    <string name="set_downloads_privacy_body">Τα αντίγραφα που κατεβάζετε διαβάζονται από τον δικό σας διακομιστή και φυλάσσονται μόνο στην κάσκα. Αφαιρέστε τα στις Λήψεις ή όλα μαζί στη Βιβλιοθήκη.</string>
+    <string name="dl_finished_one">Τώρα στην κάσκα: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d αρχείο είναι τώρα στην κάσκα</item>
+        <item quantity="other">%d αρχεία είναι τώρα στην κάσκα</item>
+    </plurals>
+    <string name="set_delete_watched">Αφαίρεση λήψεων μετά την προβολή</string>
+    <string name="set_delete_watched_hint">Ένα αντίγραφο που προβλήθηκε ως το τέλος φεύγει από την κάσκα. Το αρχείο στο NAS σας μένει</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Αφαιρέθηκε %d παρακολουθημένη λήψη</item>
+        <item quantity="other">Αφαιρέθηκαν %d παρακολουθημένες λήψεις</item>
+    </plurals>
+    <string name="dl_space_free">%1$s ελεύθερα στην κάσκα</string>
+    <string name="pc_info_source">Πηγή</string>
+    <string name="pc_info_from_share">Κοινόχρηστο στο %1$s</string>
+    <string name="dl_slowed">επιβραδύνεται όσο βλέπετε</string>
+</resources>

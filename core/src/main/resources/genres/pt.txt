@@ -1,0 +1,36 @@
+# Genre names in Portuguese — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Ação
+Adventure = Aventura
+Animation = Animação
+Comedy = Comédia
+Crime = Crime
+Documentary = Documentário
+Drama = Drama
+Family = Família
+Fantasy = Fantasia
+History = História
+Horror = Terror
+Music = Música
+Mystery = Mistério
+Romance = Romance
+Science Fiction = Ficção científica
+Sci-Fi = Ficção científica
+TV Movie = Cinema TV
+Thriller = Thriller
+War = Guerra
+Western = Faroeste
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Garota mágica
+Mecha = Mecha
+Psychological = Psicológico
+Slice of Life = Cotidiano
+Sports = Esportes
+Supernatural = Sobrenatural
+Politics = Política

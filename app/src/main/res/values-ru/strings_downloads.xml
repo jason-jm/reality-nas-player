@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Загрузки</string>
+    <string name="dl_notif_title">Загрузка на этот шлем</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Скачать на шлем</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Скачать следующую %d серию</item>
+        <item quantity="few">Скачать следующие %d серии</item>
+        <item quantity="many">Скачать следующие %d серий</item>
+        <item quantity="other">Скачать следующие %d серии</item>
+    </plurals>
+    <string name="dl_remove">Удалить загрузку</string>
+    <string name="dl_pause">Пауза</string>
+    <string name="dl_resume">Продолжить</string>
+    <string name="dl_retry">Повторить</string>
+    <string name="dl_on_headset">На этом шлеме</string>
+    <plurals name="dl_added">
+        <item quantity="one">На шлем скачивается %d файл</item>
+        <item quantity="few">На шлем скачиваются %d файла</item>
+        <item quantity="many">На шлем скачивается %d файлов</item>
+        <item quantity="other">На шлем скачиваются %d файла</item>
+    </plurals>
+    <string name="dl_added_none">Уже в загрузках</string>
+    <string name="dl_removed">Загрузка удалена</string>
+    <string name="dl_state_queued">В очереди</string>
+    <string name="dl_state_paused">Приостановлено</string>
+    <string name="dl_state_starting">Подключение…</string>
+    <string name="dl_running">%1$s из %2$s · %3$s/с</string>
+    <string name="dl_waiting_share">Ожидание общей папки · %1$s из %2$s</string>
+    <string name="dl_failed_no_room">Недостаточно места на шлеме</string>
+    <string name="dl_failed_unreachable">Нет доступа к общей папке</string>
+    <string name="dl_failed_disk">Не удалось сохранить файл</string>
+    <string name="dl_empty">Пока ничего не скачано</string>
+    <string name="dl_empty_hint">Нажмите и удерживайте постер или серию и выберите «Скачать на шлем», чтобы смотреть вдали от дома.</string>
+    <string name="dl_space">Скачано %1$s · свободно %2$s</string>
+    <string name="dl_section_active">Скачивается</string>
+    <string name="dl_section_done">На этом шлеме</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · ещё %2$d</item>
+        <item quantity="few">%1$d%% · ещё %2$d</item>
+        <item quantity="many">%1$d%% · ещё %2$d</item>
+        <item quantity="other">%1$d%% · ещё %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Удалить %d просмотренную</item>
+        <item quantity="few">Удалить %d просмотренные</item>
+        <item quantity="many">Удалить %d просмотренных</item>
+        <item quantity="other">Удалить %d просмотренные</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Удалена %1$d просмотренная загрузка · освобождено %2$s</item>
+        <item quantity="few">Удалены %1$d просмотренные загрузки · освобождено %2$s</item>
+        <item quantity="many">Удалено %1$d просмотренных загрузок · освобождено %2$s</item>
+        <item quantity="other">Удалены %1$d просмотренные загрузки · освобождено %2$s</item>
+    </plurals>
+    <string name="dl_cancel">Отменить загрузку</string>
+    <string name="dl_failed_snack">Не удалось скачать %1$s: %2$s</string>
+    <string name="set_downloads">Скачано на этот шлем</string>
+    <string name="set_downloads_none">Пока ничего: нажмите и удерживайте постер, чтобы скачать.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d файл · %2$s</item>
+        <item quantity="few">%1$d файла · %2$s</item>
+        <item quantity="many">%1$d файлов · %2$s</item>
+        <item quantity="other">%1$d файла · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Открыть</string>
+    <string name="set_downloads_clear">Удалить все загрузки</string>
+    <string name="set_downloads_clear_hint">Все копии на шлеме и те, что ещё скачиваются. Файлы в ваших общих папках не затрагиваются.</string>
+    <string name="set_downloads_clear_q">Удалить все загрузки?</string>
+    <string name="set_downloads_clear_body">Копии на этом шлеме будут удалены. Файлы на вашем NAS останутся как есть.</string>
+    <string name="set_downloads_cleared">Все загрузки удалены</string>
+    <string name="set_downloads_clear_action">Удалить…</string>
+    <string name="set_downloads_clear_confirm">Удалить</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Скачать</string>
+    <string name="dl_player_done">Скачано</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Скачать %d</item>
+        <item quantity="few">Скачать %d</item>
+        <item quantity="many">Скачать %d</item>
+        <item quantity="other">Скачать %d</item>
+    </plurals>
+    <string name="dl_folder">Скачать эту папку</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Скачать %d файл?</item>
+        <item quantity="few">Скачать эти %d файла?</item>
+        <item quantity="many">Скачать эти %d файлов?</item>
+        <item quantity="other">Скачать эти %d файла?</item>
+    </plurals>
+    <string name="dl_folder_body">Они скачиваются по очереди; на шлеме свободно %1$s, и 2 GB всегда остаются в запасе.</string>
+    <string name="dl_folder_go">Скачать</string>
+    <string name="vid_play_copy">Смотреть %1$s со шлема</string>
+    <string name="lib_offline">Офлайн · воспроизводятся только загрузки</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Офлайн · здесь доступна %d загрузка</item>
+        <item quantity="few">Офлайн · здесь доступны %d загрузки</item>
+        <item quantity="many">Офлайн · здесь доступно %d загрузок</item>
+        <item quantity="other">Офлайн · здесь доступны %d загрузки</item>
+    </plurals>
+    <string name="set_cast_privacy">Приём трансляций (выключен, пока вы его не включите)</string>
+    <string name="set_cast_privacy_body">Шлем объявляет о себе только в вашей собственной сети, чтобы телефоны могли его увидеть. Телефон передаёт адрес видео, и шлем воспроизводит его оттуда; ничего не проходит через Reality NAS Player, и ничего из транслированного не записывается.</string>
+    <string name="set_downloads_privacy">Загрузки</string>
+    <string name="set_downloads_privacy_body">Скачанные копии читаются с вашего собственного сервера и хранятся только на шлеме. Удалить их можно в «Загрузках» или все сразу в разделе «Медиатека».</string>
+    <string name="dl_finished_one">Теперь на шлеме: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d файл теперь на шлеме</item>
+        <item quantity="few">%d файла теперь на шлеме</item>
+        <item quantity="many">%d файлов теперь на шлеме</item>
+        <item quantity="other">%d файла теперь на шлеме</item>
+    </plurals>
+    <string name="set_delete_watched">Удалять загрузки после просмотра</string>
+    <string name="set_delete_watched_hint">Копия, досмотренная до конца, удаляется со шлема; файл на NAS остаётся</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Удалена %d просмотренная загрузка</item>
+        <item quantity="few">Удалены %d просмотренные загрузки</item>
+        <item quantity="many">Удалено %d просмотренных загрузок</item>
+        <item quantity="other">Удалены %d просмотренные загрузки</item>
+    </plurals>
+    <string name="dl_space_free">На шлеме свободно %1$s</string>
+    <string name="pc_info_source">Источник</string>
+    <string name="pc_info_from_share">Общая папка на %1$s</string>
+    <string name="dl_slowed">замедлено во время просмотра</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The debug build (and the dev package built from it) can be profiled from the shell: simpleperf on the headset
+     reads where a slow frame went, by method, without making the build debuggable (-Paura.optimized). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <profileable android:shell="true" />
+    </application>
+</manifest>

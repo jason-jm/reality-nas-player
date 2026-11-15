@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Pobrane</string>
+    <string name="dl_notif_title">Pobieranie na te gogle</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Pobierz na gogle</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Pobierz następny %d odcinek</item>
+        <item quantity="few">Pobierz następne %d odcinki</item>
+        <item quantity="many">Pobierz następnych %d odcinków</item>
+        <item quantity="other">Pobierz następne %d odcinka</item>
+    </plurals>
+    <string name="dl_remove">Usuń pobrany plik</string>
+    <string name="dl_pause">Wstrzymaj</string>
+    <string name="dl_resume">Wznów</string>
+    <string name="dl_retry">Spróbuj ponownie</string>
+    <string name="dl_on_headset">W tych goglach</string>
+    <plurals name="dl_added">
+        <item quantity="one">Pobieranie %d pliku na gogle</item>
+        <item quantity="few">Pobieranie %d plików na gogle</item>
+        <item quantity="many">Pobieranie %d plików na gogle</item>
+        <item quantity="other">Pobieranie %d pliku na gogle</item>
+    </plurals>
+    <string name="dl_added_none">Już w Pobranych</string>
+    <string name="dl_removed">Usunięto pobrany plik</string>
+    <string name="dl_state_queued">W kolejce</string>
+    <string name="dl_state_paused">Wstrzymano</string>
+    <string name="dl_state_starting">Łączenie…</string>
+    <string name="dl_running">%1$s z %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Oczekiwanie na udział · %1$s z %2$s</string>
+    <string name="dl_failed_no_room">Za mało miejsca w goglach</string>
+    <string name="dl_failed_unreachable">Brak dostępu do udziału</string>
+    <string name="dl_failed_disk">Nie udało się zapisać pliku</string>
+    <string name="dl_empty">Nic jeszcze nie pobrano</string>
+    <string name="dl_empty_hint">Przytrzymaj plakat lub odcinek i wybierz „Pobierz na gogle”, aby oglądać poza domem.</string>
+    <string name="dl_space">Pobrano %1$s · wolne %2$s</string>
+    <string name="dl_section_active">Pobieranie</string>
+    <string name="dl_section_done">W tych goglach</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · jeszcze %2$d</item>
+        <item quantity="few">%1$d%% · jeszcze %2$d</item>
+        <item quantity="many">%1$d%% · jeszcze %2$d</item>
+        <item quantity="other">%1$d%% · jeszcze %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Usuń %d obejrzany</item>
+        <item quantity="few">Usuń %d obejrzane</item>
+        <item quantity="many">Usuń %d obejrzanych</item>
+        <item quantity="other">Usuń %d obejrzanego</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Usunięto %1$d obejrzany plik · zwolniono %2$s</item>
+        <item quantity="few">Usunięto %1$d obejrzane pliki · zwolniono %2$s</item>
+        <item quantity="many">Usunięto %1$d obejrzanych plików · zwolniono %2$s</item>
+        <item quantity="other">Usunięto %1$d obejrzanego pliku · zwolniono %2$s</item>
+    </plurals>
+    <string name="dl_cancel">Anuluj pobieranie</string>
+    <string name="dl_failed_snack">Nie udało się pobrać %1$s: %2$s</string>
+    <string name="set_downloads">Pobrane na te gogle</string>
+    <string name="set_downloads_none">Jeszcze nic: przytrzymaj plakat, aby go pobrać.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d plik · %2$s</item>
+        <item quantity="few">%1$d pliki · %2$s</item>
+        <item quantity="many">%1$d plików · %2$s</item>
+        <item quantity="other">%1$d pliku · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Pokaż</string>
+    <string name="set_downloads_clear">Usuń wszystkie pobrane</string>
+    <string name="set_downloads_clear_hint">Wszystkie kopie w goglach oraz te, które jeszcze się pobierają. Pliki w udziałach pozostają nietknięte.</string>
+    <string name="set_downloads_clear_q">Usunąć wszystkie pobrane?</string>
+    <string name="set_downloads_clear_body">Kopie w tych goglach zostaną usunięte. Pliki na NAS pozostaną bez zmian.</string>
+    <string name="set_downloads_cleared">Usunięto wszystkie pobrane</string>
+    <string name="set_downloads_clear_action">Usuń…</string>
+    <string name="set_downloads_clear_confirm">Usuń</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Pobierz</string>
+    <string name="dl_player_done">Pobrano</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Pobierz %d</item>
+        <item quantity="few">Pobierz %d</item>
+        <item quantity="many">Pobierz %d</item>
+        <item quantity="other">Pobierz %d</item>
+    </plurals>
+    <string name="dl_folder">Pobierz ten folder</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Pobrać %d plik?</item>
+        <item quantity="few">Pobrać te %d pliki?</item>
+        <item quantity="many">Pobrać tych %d plików?</item>
+        <item quantity="other">Pobrać %d pliku?</item>
+    </plurals>
+    <string name="dl_folder_body">Pobierają się po kolei; w goglach jest wolne %1$s, a 2 GB zawsze zostają w zapasie.</string>
+    <string name="dl_folder_go">Pobierz</string>
+    <string name="vid_play_copy">Odtwórz %1$s z gogli</string>
+    <string name="lib_offline">Offline · odtwarzają się tylko pobrane</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d pobrany plik można tu odtworzyć</item>
+        <item quantity="few">Offline · %d pobrane pliki można tu odtworzyć</item>
+        <item quantity="many">Offline · %d pobranych plików można tu odtworzyć</item>
+        <item quantity="other">Offline · %d pobranego pliku można tu odtworzyć</item>
+    </plurals>
+    <string name="set_cast_privacy">Odbiór przesyłania (wyłączony, dopóki go nie włączysz)</string>
+    <string name="set_cast_privacy_body">Gogle ogłaszają się tylko we własnej sieci, żeby telefony mogły je pokazać. Telefon wysyła adres filmu, a gogle odtwarzają go stamtąd; nic nie przechodzi przez aplikację Reality NAS Player i nic z przesłanego nie jest zapisywane.</string>
+    <string name="set_downloads_privacy">Pobrane</string>
+    <string name="set_downloads_privacy_body">Pobierane kopie są czytane z własnego serwera i przechowywane tylko w goglach. Można je usunąć w sekcji Pobrane lub wszystkie naraz w sekcji Biblioteka.</string>
+    <string name="dl_finished_one">Już w goglach: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d plik jest już w goglach</item>
+        <item quantity="few">%d pliki są już w goglach</item>
+        <item quantity="many">%d plików jest już w goglach</item>
+        <item quantity="other">%d pliku jest już w goglach</item>
+    </plurals>
+    <string name="set_delete_watched">Usuwaj pobrane po obejrzeniu</string>
+    <string name="set_delete_watched_hint">Kopia obejrzana do końca znika z gogli; plik na NAS zostaje</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Usunięto %d obejrzany plik</item>
+        <item quantity="few">Usunięto %d obejrzane pliki</item>
+        <item quantity="many">Usunięto %d obejrzanych plików</item>
+        <item quantity="other">Usunięto %d obejrzanego pliku</item>
+    </plurals>
+    <string name="dl_space_free">Wolne w goglach: %1$s</string>
+    <string name="pc_info_source">Źródło</string>
+    <string name="pc_info_from_share">Udział na %1$s</string>
+    <string name="dl_slowed">spowolnione podczas oglądania</string>
+</resources>

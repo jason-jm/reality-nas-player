@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Nedladdningar</string>
+    <string name="dl_notif_title">Laddar ned till det här headsetet</string>
+    <string name="dl_notif_progress">%1$s · %2$d %%</string>
+    <string name="dl_add">Ladda ned till headset</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Ladda ned nästa avsnitt</item>
+        <item quantity="other">Ladda ned nästa %d avsnitt</item>
+    </plurals>
+    <string name="dl_remove">Ta bort nedladdning</string>
+    <string name="dl_pause">Pausa</string>
+    <string name="dl_resume">Återuppta</string>
+    <string name="dl_retry">Försök igen</string>
+    <string name="dl_on_headset">På det här headsetet</string>
+    <plurals name="dl_added">
+        <item quantity="one">Laddar ned %d fil till headsetet</item>
+        <item quantity="other">Laddar ned %d filer till headsetet</item>
+    </plurals>
+    <string name="dl_added_none">Redan i Nedladdningar</string>
+    <string name="dl_removed">Nedladdningen togs bort</string>
+    <string name="dl_state_queued">Väntar</string>
+    <string name="dl_state_paused">Pausad</string>
+    <string name="dl_state_starting">Ansluter…</string>
+    <string name="dl_running">%1$s av %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Väntar på delningen · %1$s av %2$s</string>
+    <string name="dl_failed_no_room">Inte tillräckligt med utrymme på headsetet</string>
+    <string name="dl_failed_unreachable">Det gick inte att nå delningen</string>
+    <string name="dl_failed_disk">Det gick inte att spara filen</string>
+    <string name="dl_empty">Inget nedladdat än</string>
+    <string name="dl_empty_hint">Tryck länge på en affisch eller ett avsnitt och välj Ladda ned till headset för att se det borta från hemmet.</string>
+    <string name="dl_space">%1$s nedladdat · %2$s ledigt</string>
+    <string name="dl_section_active">Laddar ned</string>
+    <string name="dl_section_done">På det här headsetet</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d %% · %2$d till</item>
+        <item quantity="other">%1$d %% · %2$d till</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d %%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Ta bort den sedda</item>
+        <item quantity="other">Ta bort %d sedda</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Tog bort %1$d sedd nedladdning · %2$s frigjort</item>
+        <item quantity="other">Tog bort %1$d sedda nedladdningar · %2$s frigjort</item>
+    </plurals>
+    <string name="dl_cancel">Avbryt nedladdning</string>
+    <string name="dl_failed_snack">Det gick inte att ladda ned %1$s: %2$s</string>
+    <string name="set_downloads">Nedladdat till det här headsetet</string>
+    <string name="set_downloads_none">Inget än: tryck länge på en affisch för att ladda ned den.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d fil · %2$s</item>
+        <item quantity="other">%1$d filer · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Visa</string>
+    <string name="set_downloads_clear">Ta bort alla nedladdningar</string>
+    <string name="set_downloads_clear_hint">Varje kopia på headsetet, och de som fortfarande laddas ned. Filerna på dina delningar berörs inte.</string>
+    <string name="set_downloads_clear_q">Ta bort alla nedladdningar?</string>
+    <string name="set_downloads_clear_body">Kopiorna på det här headsetet tas bort. Filerna på din NAS förblir som de är.</string>
+    <string name="set_downloads_cleared">Alla nedladdningar borttagna</string>
+    <string name="set_downloads_clear_action">Ta bort…</string>
+    <string name="set_downloads_clear_confirm">Ta bort</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Ladda ned</string>
+    <string name="dl_player_done">Nedladdad</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Ladda ned %d</item>
+        <item quantity="other">Ladda ned %d</item>
+    </plurals>
+    <string name="dl_folder">Ladda ned den här mappen</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Ladda ned %d fil?</item>
+        <item quantity="other">Ladda ned de här %d filerna?</item>
+    </plurals>
+    <string name="dl_folder_body">De laddas ned en i taget; %1$s är ledigt på headsetet, och 2 GB hålls alltid fritt.</string>
+    <string name="dl_folder_go">Ladda ned</string>
+    <string name="vid_play_copy">Spela upp %1$s från headsetet</string>
+    <string name="lib_offline">Offline · bara nedladdningar spelas</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d nedladdning kan spelas här</item>
+        <item quantity="other">Offline · %d nedladdningar kan spelas här</item>
+    </plurals>
+    <string name="set_cast_privacy">Ta emot castning (av om du inte slår på det)</string>
+    <string name="set_cast_privacy_body">Headsetet annonserar sig bara i ditt eget nätverk, så att telefoner kan lista det. En telefon skickar en videos adress och headsetet spelar upp därifrån; inget går via Reality NAS Player, och inget som castas registreras.</string>
+    <string name="set_downloads_privacy">Nedladdningar</string>
+    <string name="set_downloads_privacy_body">Kopior du laddar ned läses från din egen server och sparas bara på headsetet. Ta bort dem under Nedladdningar, eller alla på en gång under Bibliotek.</string>
+    <string name="dl_finished_one">På headsetet nu: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d fil finns på headsetet nu</item>
+        <item quantity="other">%d filer finns på headsetet nu</item>
+    </plurals>
+    <string name="set_delete_watched">Ta bort nedladdningar när de har setts</string>
+    <string name="set_delete_watched_hint">En kopia som har setts till slutet lämnar headsetet; filen på din NAS finns kvar</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Tog bort %d sedd nedladdning</item>
+        <item quantity="other">Tog bort %d sedda nedladdningar</item>
+    </plurals>
+    <string name="dl_space_free">%1$s ledigt på headsetet</string>
+    <string name="pc_info_source">Källa</string>
+    <string name="pc_info_from_share">Delning på %1$s</string>
+    <string name="dl_slowed">saktas ned medan du tittar</string>
+</resources>

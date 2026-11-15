@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Încă niciun film</string>
+    <string name="lib_add_source">Adăugați o sursă</string>
+    <string name="lib_empty_search_hint">Căutarea parcurge toate titlurile și numele de fișiere din bibliotecă.</string>
+    <string name="lib_search_clear">Ștergeți căutarea</string>
+    <string name="lib_empty_favorites_title">Niciun favorit încă</string>
+    <string name="lib_empty_history_title">Nimic vizionat încă</string>
+    <string name="lib_empty_shelf_hint">Titlurile ajung pe acest raft după ce identificarea află ce sunt.</string>
+    <string name="lib_show_all">Răsfoiți toate titlurile</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Rezultate pentru „%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d rezultat</item>
+        <item quantity="few">%1$d rezultate</item>
+        <item quantity="other">%1$d de rezultate</item>
+    </plurals>
+    <string name="lib_search_people_title">Persoane</string>
+    <string name="lib_search_titles">Titluri</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Prin persoanele implicate</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d persoană</item>
+        <item quantity="few">%1$d persoane</item>
+        <item quantity="other">%1$d de persoane</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d titlu</item>
+        <item quantity="few">%1$d titluri</item>
+        <item quantity="other">%1$d de titluri</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Cifre și simboluri</string>
+    <string name="lib_index_unidentified">Neidentificate</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Anul acesta: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Anul acesta: %1$s de vizionare</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d film</item>
+        <item quantity="few">%1$d filme</item>
+        <item quantity="other">%1$d de filme</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d episod</item>
+        <item quantity="few">%1$d episoade</item>
+        <item quantity="other">%1$d de episoade</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">circa %1$d oră</item>
+        <item quantity="few">circa %1$d ore</item>
+        <item quantity="other">circa %1$d de ore</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Nu mai e nimic de identificat — peretele este la zi.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Redare · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Neidentificat</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filtru</string>
+    <string name="lib_filter_n">Filtru · %1$d</string>
+    <string name="lib_filter_watch">Stare vizionare</string>
+    <string name="lib_filter_any">Toate</string>
+    <string name="lib_filter_unwatched">Nevizionate</string>
+    <string name="lib_filter_in_progress">În curs</string>
+    <string name="lib_filter_watched">Vizionate</string>
+    <string name="lib_filter_genre">Gen</string>
+    <string name="lib_filter_decade">Deceniu</string>
+    <string name="lib_filter_picture">Imagine</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">Anii %1$d</string>
+    <string name="lib_filter_reset">Resetați filtrele</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d titlu</item>
+        <item quantity="few">%d titluri</item>
+        <item quantity="other">%d de titluri</item>
+    </plurals>
+    <string name="lib_empty_filter">Nimic nu corespunde acestor filtre</string>
+    <string name="lib_empty_filter_hint">Încercați alte opțiuni sau ștergeți filtrele.</string>
+    <string name="lib_filter_clear">Ștergeți filtrele</string>
+    <string name="lib_recently_added">Adăugate recent</string>
+    <string name="lib_recently_added_on">Adăugate recent · %1$s</string>
+    <string name="lib_surprise">Alegere surpriză</string>
+    <string name="lib_because">Pentru că ați vizionat %1$s</string>
+    <string name="lib_history_today">Astăzi</string>
+    <string name="lib_history_yesterday">Ieri</string>
+    <string name="lib_history_this_week">Săptămâna aceasta</string>
+    <string name="lib_history_this_month">Luna aceasta</string>
+    <string name="lib_history_earlier">Mai demult</string>
+</resources>

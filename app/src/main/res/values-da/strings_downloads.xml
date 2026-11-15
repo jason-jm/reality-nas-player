@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Downloads</string>
+    <string name="dl_notif_title">Henter til dette headset</string>
+    <string name="dl_notif_progress">%1$s · %2$d %%</string>
+    <string name="dl_add">Hent til headset</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Hent næste afsnit</item>
+        <item quantity="other">Hent de næste %d afsnit</item>
+    </plurals>
+    <string name="dl_remove">Fjern download</string>
+    <string name="dl_pause">Pause</string>
+    <string name="dl_resume">Genoptag</string>
+    <string name="dl_retry">Prøv igen</string>
+    <string name="dl_on_headset">På dette headset</string>
+    <plurals name="dl_added">
+        <item quantity="one">Henter %d fil til headsettet</item>
+        <item quantity="other">Henter %d filer til headsettet</item>
+    </plurals>
+    <string name="dl_added_none">Allerede i Downloads</string>
+    <string name="dl_removed">Download fjernet</string>
+    <string name="dl_state_queued">Venter</string>
+    <string name="dl_state_paused">Sat på pause</string>
+    <string name="dl_state_starting">Forbinder…</string>
+    <string name="dl_running">%1$s af %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Venter på delingen · %1$s af %2$s</string>
+    <string name="dl_failed_no_room">Ikke nok plads på headsettet</string>
+    <string name="dl_failed_unreachable">Kunne ikke nå delingen</string>
+    <string name="dl_failed_disk">Kunne ikke gemme filen</string>
+    <string name="dl_empty">Intet hentet endnu</string>
+    <string name="dl_empty_hint">Tryk længe på en plakat eller et afsnit, og vælg Hent til headset for at se det væk fra hjemmet.</string>
+    <string name="dl_space">%1$s hentet · %2$s ledigt</string>
+    <string name="dl_section_active">Henter</string>
+    <string name="dl_section_done">På dette headset</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d %% · %2$d mere</item>
+        <item quantity="other">%1$d %% · %2$d mere</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d %%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Fjern den sete</item>
+        <item quantity="other">Fjern %d sete</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Fjernede %1$d set download · %2$s frigjort</item>
+        <item quantity="other">Fjernede %1$d sete downloads · %2$s frigjort</item>
+    </plurals>
+    <string name="dl_cancel">Annuller download</string>
+    <string name="dl_failed_snack">Kunne ikke hente %1$s: %2$s</string>
+    <string name="set_downloads">Hentet til dette headset</string>
+    <string name="set_downloads_none">Intet endnu: tryk længe på en plakat for at hente den.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d fil · %2$s</item>
+        <item quantity="other">%1$d filer · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Vis</string>
+    <string name="set_downloads_clear">Fjern alle downloads</string>
+    <string name="set_downloads_clear_hint">Alle kopier på headsettet og dem, der stadig hentes. Filerne på dine delinger berøres ikke.</string>
+    <string name="set_downloads_clear_q">Fjern alle downloads?</string>
+    <string name="set_downloads_clear_body">Kopierne på dette headset slettes. Filerne på din NAS forbliver, som de er.</string>
+    <string name="set_downloads_cleared">Alle downloads er fjernet</string>
+    <string name="set_downloads_clear_action">Fjern…</string>
+    <string name="set_downloads_clear_confirm">Fjern</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Hent</string>
+    <string name="dl_player_done">Hentet</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Hent %d</item>
+        <item quantity="other">Hent %d</item>
+    </plurals>
+    <string name="dl_folder">Hent denne mappe</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Hent %d fil?</item>
+        <item quantity="other">Hent disse %d filer?</item>
+    </plurals>
+    <string name="dl_folder_body">De hentes én ad gangen; der er %1$s ledigt på headsettet, og 2 GB holdes altid fri.</string>
+    <string name="dl_folder_go">Hent</string>
+    <string name="vid_play_copy">Afspil %1$s fra headsettet</string>
+    <string name="lib_offline">Offline · kun downloads kan afspilles</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d download kan afspilles her</item>
+        <item quantity="other">Offline · %d downloads kan afspilles her</item>
+    </plurals>
+    <string name="set_cast_privacy">Modtag casting (fra, medmindre du slår det til)</string>
+    <string name="set_cast_privacy_body">Headsettet annoncerer sig kun på dit eget netværk, så telefoner kan vise det. En telefon sender en videos adresse, og headsettet afspiller derfra; intet går gennem Reality NAS Player, og intet castet bliver registreret.</string>
+    <string name="set_downloads_privacy">Downloads</string>
+    <string name="set_downloads_privacy_body">Kopier, du henter, læses fra din egen server og gemmes kun på headsettet. Fjern dem under Downloads, eller alle på én gang under Bibliotek.</string>
+    <string name="dl_finished_one">På headsettet nu: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d fil er på headsettet nu</item>
+        <item quantity="other">%d filer er på headsettet nu</item>
+    </plurals>
+    <string name="set_delete_watched">Fjern downloads, når de er set</string>
+    <string name="set_delete_watched_hint">En kopi, der er set til ende, forlader headsettet; filen på din NAS bliver</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Fjernede %d set download</item>
+        <item quantity="other">Fjernede %d sete downloads</item>
+    </plurals>
+    <string name="dl_space_free">%1$s ledigt på headsettet</string>
+    <string name="pc_info_source">Kilde</string>
+    <string name="pc_info_from_share">Deling på %1$s</string>
+    <string name="dl_slowed">sænket, mens du ser</string>
+</resources>

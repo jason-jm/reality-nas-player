@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Remove from favourites</string>
+    <string name="det_up_next">Up next</string>
+    <string name="det_section_main">Main</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Season %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Mark all as watched?</string>
+    <string name="det_mark_all_unwatched_q">Mark all as unwatched?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d file will be marked as watched.</item>
+        <item quantity="other">%1$d files will be marked as watched.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d of them is part-way through and will lose its place.</item>
+        <item quantity="other">%1$d of them are part-way through and will lose their place.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">The viewing progress of %1$d file will be cleared.</item>
+        <item quantity="other">The viewing progress of %1$d files will be cleared.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Source</string>
+    <string name="fix_source_tmdb" translatable="false">TMDB</string>
+    <string name="fix_source_anilist" translatable="false">AniList</string>
+    <string name="fix_scope">Apply to</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Whole card (%1$d file)</item>
+        <item quantity="other">Whole card (%1$d files)</item>
+    </plurals>
+    <string name="fix_scope_file">This file only</string>
+    <string name="fix_query_hint">Title — English titles match best</string>
+    <string name="fix_hint">Pick the right entry to fix the match</string>
+    <string name="fix_applying">Applying…</string>
+    <string name="fix_failed">Couldn\'t apply this entry. Check the network and try again.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Series</string>
+    <string name="fix_current">Current</string>
+    <string name="fix_rating" translatable="false">★ %1$.1f</string>
+    <string name="fix_no_results_title">No matching entries</string>
+    <string name="fix_no_results_anilist">Try another spelling — romaji or English names match best.</string>
+    <string name="fix_error_title">The search didn\'t finish</string>
+    <string name="fix_error_body">Check the network and try again.</string>
+    <string name="fix_retry">Try again</string>
+    <string name="fix_confirm_title">Change to “%1$s”?</string>
+    <string name="fix_confirm_title_year">Change to “%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">This card\'s file will use this entry from now on, and later scrapes won\'t change it.</item>
+        <item quantity="other">All %1$d files on this card will use this entry from now on, and later scrapes won\'t change it.</item>
+    </plurals>
+    <string name="fix_confirm_file">Only “%1$s” will use this entry from now on, and later scrapes won\'t change it.</string>
+    <string name="fix_apply">Apply</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d more</item>
+        <item quantity="other">%d more</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">One more title in your library</item>
+        <item quantity="other">%d more titles in your library</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">One title in your library</item>
+        <item quantity="other">%d titles in your library</item>
+    </plurals>
+    <string name="det_similar">More like this</string>
+    <string name="det_episode_copy">%1$s · another copy</string>
+    <string name="det_season_progress">%1$d of %2$d watched</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Watched</item>
+        <item quantity="other">All %1$d watched</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versions</string>
+    <string name="det_series">In this series</string>
+    <string name="lib_series">Series</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d title</item>
+        <item quantity="other">%d titles</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d title in this library, in the order they came out</item>
+        <item quantity="other">%d titles in this library, in the order they came out</item>
+    </plurals>
+</resources>

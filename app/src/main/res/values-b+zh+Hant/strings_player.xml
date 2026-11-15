@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pc_playback_menu">播放設定</string>
+
+    <string name="pc_stereo">立體</string>
+    <string name="pc_projection">投影</string>
+    <string name="pc_proj_flat">平面</string>
+
+    <string name="pc_font">字型</string>
+    <string name="pc_colour">顏色</string>
+    <string name="pc_sub_style_plain">陰影</string>
+    <string name="pc_sub_style_box">背景框</string>
+    <string name="pc_second_subtitle">第二字幕</string>
+    <string name="pc_sub_style_outline">描邊</string>
+    <string name="pc_font_default">預設</string>
+    <string name="pc_font_serif">襯線</string>
+    <string name="pc_font_mono">等寬</string>
+    <string name="pc_colour_white">白色</string>
+    <string name="pc_colour_yellow">黃色</string>
+    <string name="pc_colour_cyan">青色</string>
+    <string name="pc_colour_green">綠色</string>
+
+    <string name="pc_loop_sequential">順序播放</string>
+    <string name="pc_loop_all">列表循環</string>
+    <string name="pc_loop_one">單曲循環</string>
+    <string name="pc_loop_shuffle">隨機播放</string>
+
+    <string name="pc_snapshot_working">正在截圖…</string>
+    <string name="pc_hold_speed">2× 倍速</string>
+    <!-- 書籤：檔案裡標記的時刻（更多 → 書籤，進度條上的圓點）。 -->
+    <string name="pc_bookmarks">書籤</string>
+    <string name="pc_bookmarks_n">書籤 · %1$d</string>
+    <string name="pc_bookmark_add">新增書籤</string>
+    <string name="pc_bookmark_empty">看到想回來的地方，點右上角的 ＋ 記下它。</string>
+    <string name="pc_bookmark_remove">刪除 %1$s 的書籤</string>
+    <!-- 跳過片頭片尾：一部劇的片頭和片尾，看的時候設一次。 -->
+    <string name="pc_skip">跳過片頭片尾</string>
+    <string name="pc_skip_intro_set">片頭到 %1$s</string>
+    <string name="pc_skip_outro_set">片尾 %1$s</string>
+    <string name="pc_skip_mark_intro">片頭到此為止</string>
+    <string name="pc_skip_mark_outro">片尾從這裡開始</string>
+    <string name="pc_skip_clear">清除片頭片尾</string>
+    <string name="pc_skip_intro_hint">這部劇以後每一集都從這裡開始</string>
+    <string name="pc_skip_outro_hint">這部劇以後每一集到這裡就接下一集</string>
+    <string name="vid_intro_skipped">已跳過片頭</string>
+    <string name="vid_watch_intro">看片頭</string>
+    <string name="vid_chapter_intro">片頭 · 還剩 %1$s</string>
+    <string name="vid_chapter_outro">片尾 · 還剩 %1$s</string>
+    <string name="vid_skip">跳過</string>
+    <!-- 軌道列表和媒體資訊裡的詞（由播放引擎寫出）。 -->
+    <string name="pc_track_unknown_format">未知格式</string>
+    <string name="pc_track_unknown">未知軌道</string>
+    <string name="pc_track_n">軌道 %1$d</string>
+    <string name="pc_track_external_sub">外掛字幕</string>
+    <string name="pc_track_external">外掛</string>
+    <string name="pc_track_embedded">內嵌</string>
+    <string name="pc_ch_mono">單聲道</string>
+    <string name="pc_ch_stereo">立體聲</string>
+    <string name="pc_dec_hardware">硬解</string>
+    <string name="pc_dec_software">軟解</string>
+    <string name="pc_dec_audio">音訊</string>
+    <string name="pc_frames">丟幀 %1$d / 已渲染 %2$d</string>
+    <string name="pc_env_dim">觀影時調暗</string>
+    <string name="pc_env_viewing_light">播放時燈光亮度</string>
+    <string name="pc_env_dim_hint">觀影時使用所選亮度，暫停或開啟播放控制項時恢復照明。</string>
+    <string name="pc_env_lights">燈光</string>
+    <string name="pc_env_lights_hint">打開或關掉場景自己的燈；開著時，「觀影時調暗」仍會在播放時把燈調暗</string>
+    <string name="pc_env_seat">座位</string>
+    <string name="pc_seat_center">中央</string>
+    <string name="pc_seat_left">左側</string>
+    <string name="pc_seat_right">右側</string>
+    <string name="pc_seat_left_window">左側靠窗</string>
+    <string name="pc_seat_right_window">右側靠窗</string>
+    <string name="pc_env_screen">影片與字幕</string>
+    <string name="pc_env_screen_hint">影片和字幕會一起顯示在環境中的銀幕上。</string>
+    <string name="pc_env_glow">銀幕映光</string>
+    <string name="pc_env_glow_hint">讓影片的顏色映在銀幕邊緣和附近的物體上。</string>
+    <string name="pc_env_screen_none">這裡沒有螢幕，影片留在視窗裡</string>
+    <string name="pc_env_has_screen">有螢幕</string>
+    <string name="pc_env_entering">正在進入%1$s…</string>
+    <string name="pc_env_failed">%1$s載入失敗</string>
+    <string name="pc_lang_simplified">簡體中文</string>
+    <string name="pc_lang_traditional">繁體中文</string>
+    <string name="pc_lang_join">、</string>
+    <plurals name="pc_more_sound">
+        <item quantity="other">還有 %d 條音軌</item>
+    </plurals>
+    <string name="pc_more_sound_hint">內建播放器讀不了這幾條，改用 mpv 播放即可選擇</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="other">還有 %d 個圖形字幕</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">影片旁的 VobSub / PGS 字幕，內建播放器畫不了，改用 mpv 播放即可顯示</string>
+    <string name="pc_pano_format">全景格式</string>
+    <string name="pc_pano_equirect">等距柱狀</string>
+    <string name="pc_pano_fisheye">魚眼</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">立方體</string>
+    <string name="pc_pano_dual">雙魚眼</string>
+    <string name="pc_pano_direction">畫面方向</string>
+    <string name="pc_pano_turn_left">左轉</string>
+    <string name="pc_pano_recenter">回正</string>
+    <string name="pc_pano_turn_right">右轉</string>
+    <string name="pc_pano_turn_hint">畫面繞你轉 30°，坐著也能看到身後</string>
+    <string name="pc_pano_recenter_hint">把影片的正前方轉到你正在看的方向</string>
+    <string name="pc_pano_own">檔案網格</string>
+    <string name="pc_info_format">畫面格式</string>
+    <string name="pc_info_spatial_video">空間影片</string>
+    <string name="pc_info_mv_hevc">MV-HEVC 雙視圖（顯示左眼）</string>
+    <string name="pc_info_camera">視角 %1$d° · 基線 %2$d mm</string>
+    <string name="pc_info_right_first">右眼在前</string>
+    <string name="pc_audio_field">全景聲</string>
+    <string name="vid_pano_guess_360">這像是 360° 全景影片</string>
+    <string name="vid_pano_guess_360_3d">這像是 360° 立體全景影片</string>
+    <string name="vid_pano_guess_180_3d">這像是 180° 立體影片（VR180）</string>
+    <string name="vid_pano_guess_fisheye">這像是魚眼全景影片</string>
+    <string name="vid_pano_guess_fisheye_3d">這像是 180° 立體魚眼影片</string>
+    <string name="vid_pano_guess_dual">這像是 360° 相機的雙魚眼原片</string>
+    <string name="vid_pano_guess_play">全景播放</string>
+    <string name="vid_pano_guess_no">不是</string>
+    <string name="pc_pano_tilt_up">上移</string>
+    <string name="pc_pano_tilt_down">下移</string>
+    <string name="pc_pano_roll_left">左旋</string>
+    <string name="pc_pano_roll_right">右旋</string>
+    <string name="pc_pano_level">放平</string>
+    <string name="pc_pano_level_hint">地平線不正時用，每次 5°，依影片記住</string>
+</resources>

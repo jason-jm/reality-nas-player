@@ -1,0 +1,14 @@
+{"MediaContainer":{"size":2,"totalSize":2,"offset":0,"allowSync":true,"librarySectionID":1,"librarySectionTitle":"电影","Metadata":[
+{"ratingKey":"101","key":"/library/metadata/101","guid":"plex://movie/5d7768b07a53e9001e6c1a3b","studio":"Studio Ghibli","type":"movie","title":"千与千寻","originalTitle":"千と千尋の神隠し","contentRating":"PG","summary":"十岁的千寻误入神灵世界。","rating":9.7,"audienceRating":9.6,"year":2001,"thumb":"/library/metadata/101/thumb/1700000001","art":"/library/metadata/101/art/1700000001","duration":7500000,"originallyAvailableAt":"2001-07-20","addedAt":1690000000,"updatedAt":1700000001,
+ "Media":[{"id":501,"duration":7500000,"videoResolution":"1080","container":"mkv","videoCodec":"hevc","audioCodec":"dts","Part":[{"id":601,"key":"/library/parts/601/1700000001/file.mkv","duration":7500000,"file":"/data/movies/Spirited.Away.2001.1080p.BluRay.x265.mkv","size":8000000000,"container":"mkv"}]}],
+ "Genre":[{"tag":"动画"},{"tag":"奇幻"}],
+ "Director":[{"tag":"宫崎骏"}],
+ "Writer":[{"tag":"宫崎骏"}],
+ "Role":[{"tag":"柊瑠美","role":"千寻 (voice)","thumb":"https://metadata-static.plex.tv/people/1.jpg"},{"tag":"入野自由","role":"白龙 (voice)"}],
+ "Guid":[{"id":"imdb://tt0245429"},{"id":"tmdb://129"},{"id":"tvdb://2200"}]},
+{"ratingKey":"102","key":"/library/metadata/102","type":"movie","title":"Heat","contentRating":"R","summary":"A crew of thieves and the detective hunting them.","rating":8.7,"year":1995,"thumb":"/library/metadata/102/thumb/1700000002","duration":10200000,
+ "Media":[{"id":502,"Part":[{"id":602,"key":"/library/parts/602/1700000002/file.mp4","file":"/data/movies/Heat (1995)/Heat.mp4"}]}],
+ "Genre":[{"tag":"Crime"}],
+ "Director":[{"tag":"Michael Mann"}],
+ "Guid":[{"id":"tmdb://949"}]}
+]}}

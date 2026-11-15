@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Download</string>
+    <string name="dl_notif_title">Download su questo visore</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Scarica sul visore</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Scarica %d episodio successivo</item>
+        <item quantity="many">Scarica i %d di episodi successivi</item>
+        <item quantity="other">Scarica i %d episodi successivi</item>
+    </plurals>
+    <string name="dl_remove">Rimuovi download</string>
+    <string name="dl_pause">Pausa</string>
+    <string name="dl_resume">Riprendi</string>
+    <string name="dl_retry">Riprova</string>
+    <string name="dl_on_headset">Su questo visore</string>
+    <plurals name="dl_added">
+        <item quantity="one">Download di %d file sul visore</item>
+        <item quantity="many">Download di %d di file sul visore</item>
+        <item quantity="other">Download di %d file sul visore</item>
+    </plurals>
+    <string name="dl_added_none">Già nei Download</string>
+    <string name="dl_removed">Download rimosso</string>
+    <string name="dl_state_queued">In attesa</string>
+    <string name="dl_state_paused">In pausa</string>
+    <string name="dl_state_starting">Connessione…</string>
+    <string name="dl_running">%1$s di %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">In attesa della condivisione · %1$s di %2$s</string>
+    <string name="dl_failed_no_room">Spazio insufficiente sul visore</string>
+    <string name="dl_failed_unreachable">Impossibile raggiungere la condivisione</string>
+    <string name="dl_failed_disk">Impossibile salvare il file</string>
+    <string name="dl_empty">Ancora nessun download</string>
+    <string name="dl_empty_hint">Tieni premuto su una locandina o un episodio e scegli Scarica sul visore per guardarlo lontano da casa.</string>
+    <string name="dl_space">%1$s scaricati · %2$s liberi</string>
+    <string name="dl_section_active">In download</string>
+    <string name="dl_section_done">Su questo visore</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · %2$d altro</item>
+        <item quantity="many">%1$d%% · altri %2$d</item>
+        <item quantity="other">%1$d%% · altri %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Rimuovi %d visto</item>
+        <item quantity="many">Rimuovi i %d visti</item>
+        <item quantity="other">Rimuovi i %d visti</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Rimosso %1$d download visto · %2$s liberati</item>
+        <item quantity="many">Rimossi %1$d di download visti · %2$s liberati</item>
+        <item quantity="other">Rimossi %1$d download visti · %2$s liberati</item>
+    </plurals>
+    <string name="dl_cancel">Annulla download</string>
+    <string name="dl_failed_snack">Impossibile scaricare %1$s: %2$s</string>
+    <string name="set_downloads">Scaricati su questo visore</string>
+    <string name="set_downloads_none">Ancora niente: tieni premuto su una locandina per scaricarla.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d file · %2$s</item>
+        <item quantity="many">%1$d di file · %2$s</item>
+        <item quantity="other">%1$d file · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Visualizza</string>
+    <string name="set_downloads_clear">Rimuovi tutti i download</string>
+    <string name="set_downloads_clear_hint">Ogni copia sul visore, e quelle ancora in download. I file sulle tue condivisioni restano intatti.</string>
+    <string name="set_downloads_clear_q">Rimuovere tutti i download?</string>
+    <string name="set_downloads_clear_body">Le copie su questo visore vengono eliminate. I file sul tuo NAS restano come sono.</string>
+    <string name="set_downloads_cleared">Tutti i download rimossi</string>
+    <string name="set_downloads_clear_action">Rimuovi…</string>
+    <string name="set_downloads_clear_confirm">Rimuovi</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Scarica</string>
+    <string name="dl_player_done">Scaricato</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Scarica %d</item>
+        <item quantity="many">Scarica %d</item>
+        <item quantity="other">Scarica %d</item>
+    </plurals>
+    <string name="dl_folder">Scarica questa cartella</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Scaricare %d file?</item>
+        <item quantity="many">Scaricare questi %d di file?</item>
+        <item quantity="other">Scaricare questi %d file?</item>
+    </plurals>
+    <string name="dl_folder_body">Vengono scaricati uno dopo l’altro; sul visore ci sono %1$s liberi, e 2 GB restano sempre disponibili.</string>
+    <string name="dl_folder_go">Scarica</string>
+    <string name="vid_play_copy">Riproduci %1$s dal visore</string>
+    <string name="lib_offline">Offline · si riproducono solo i download</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d download riproducibile qui</item>
+        <item quantity="many">Offline · %d di download riproducibili qui</item>
+        <item quantity="other">Offline · %d download riproducibili qui</item>
+    </plurals>
+    <string name="set_cast_privacy">Ricevi trasmissioni (disattivato finché non lo attivi)</string>
+    <string name="set_cast_privacy_body">Il visore si annuncia solo sulla tua rete, così i telefoni possono elencarlo. Un telefono invia l’indirizzo di un video e il visore lo riproduce da lì; niente passa per Reality NAS Player e niente di ciò che viene trasmesso viene registrato.</string>
+    <string name="set_downloads_privacy">Download</string>
+    <string name="set_downloads_privacy_body">Le copie che scarichi vengono lette dal tuo server e conservate solo sul visore. Rimuovile in Download, o tutte insieme in Libreria.</string>
+    <string name="dl_finished_one">Ora sul visore: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d file è ora sul visore</item>
+        <item quantity="many">%d di file sono ora sul visore</item>
+        <item quantity="other">%d file sono ora sul visore</item>
+    </plurals>
+    <string name="set_delete_watched">Rimuovi i download una volta visti</string>
+    <string name="set_delete_watched_hint">Una copia guardata fino alla fine lascia il visore; il file sul tuo NAS resta</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Rimosso %d download visto</item>
+        <item quantity="many">Rimossi %d di download visti</item>
+        <item quantity="other">Rimossi %d download visti</item>
+    </plurals>
+    <string name="dl_space_free">%1$s liberi sul visore</string>
+    <string name="pc_info_source">Sorgente</string>
+    <string name="pc_info_from_share">Condivisione su %1$s</string>
+    <string name="dl_slowed">rallentato mentre guardi</string>
+</resources>

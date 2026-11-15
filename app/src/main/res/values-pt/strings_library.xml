@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Nenhum filme ainda</string>
+    <string name="lib_add_source">Adicionar uma fonte</string>
+    <string name="lib_empty_search_hint">A pesquisa procura em todos os títulos e nomes de arquivo da biblioteca.</string>
+    <string name="lib_search_clear">Limpar pesquisa</string>
+    <string name="lib_empty_favorites_title">Nenhum favorito ainda</string>
+    <string name="lib_empty_history_title">Nada assistido ainda</string>
+    <string name="lib_empty_shelf_hint">Os títulos chegam a esta seção quando a identificação descobre o que são.</string>
+    <string name="lib_show_all">Ver todos os títulos</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Resultados para “%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d resultado</item>
+        <item quantity="many">%1$d resultados</item>
+        <item quantity="other">%1$d resultados</item>
+    </plurals>
+    <string name="lib_search_people_title">Pessoas</string>
+    <string name="lib_search_titles">Títulos</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Pelo elenco e equipe</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d pessoa</item>
+        <item quantity="many">%1$d pessoas</item>
+        <item quantity="other">%1$d pessoas</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d título</item>
+        <item quantity="many">%1$d títulos</item>
+        <item quantity="other">%1$d títulos</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Números e símbolos</string>
+    <string name="lib_index_unidentified">Não identificado</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Este ano: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Este ano: %1$s assistindo</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d filme</item>
+        <item quantity="many">%1$d filmes</item>
+        <item quantity="other">%1$d filmes</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d episódio</item>
+        <item quantity="many">%1$d episódios</item>
+        <item quantity="other">%1$d episódios</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">cerca de %1$d hora</item>
+        <item quantity="many">cerca de %1$d horas</item>
+        <item quantity="other">cerca de %1$d horas</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Nada mais para identificar: o mural está em dia.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Reproduzir · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Não identificado</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filtrar</string>
+    <string name="lib_filter_n">Filtrar · %1$d</string>
+    <string name="lib_filter_watch">Progresso</string>
+    <string name="lib_filter_any">Tudo</string>
+    <string name="lib_filter_unwatched">Não assistidos</string>
+    <string name="lib_filter_in_progress">Em andamento</string>
+    <string name="lib_filter_watched">Assistidos</string>
+    <string name="lib_filter_genre">Gênero</string>
+    <string name="lib_filter_decade">Década</string>
+    <string name="lib_filter_picture">Imagem</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">Anos %1$d</string>
+    <string name="lib_filter_reset">Redefinir filtros</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d título</item>
+        <item quantity="many">%d títulos</item>
+        <item quantity="other">%d títulos</item>
+    </plurals>
+    <string name="lib_empty_filter">Nada corresponde a estes filtros</string>
+    <string name="lib_empty_filter_hint">Tente outras opções ou limpe os filtros.</string>
+    <string name="lib_filter_clear">Limpar filtros</string>
+    <string name="lib_recently_added">Recém-adicionados</string>
+    <string name="lib_recently_added_on">Recém-adicionados · %1$s</string>
+    <string name="lib_surprise">Me surpreenda</string>
+    <string name="lib_because">Porque você assistiu %1$s</string>
+    <string name="lib_history_today">Hoje</string>
+    <string name="lib_history_yesterday">Ontem</string>
+    <string name="lib_history_this_week">Esta semana</string>
+    <string name="lib_history_this_month">Este mês</string>
+    <string name="lib_history_earlier">Antes disso</string>
+</resources>

@@ -1,0 +1,12 @@
+<!-- 字幕样式 · 描边: the same letter drawn as its outline only. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="1.5"
+        android:pathData="M4 21L10.7247 3H13.2754L20 21H17.372L15.62 15.96H8.2255L6.4477 21H4ZM8.9984 13.8514H14.8728L11.9614 5.4171 8.9984 13.8514Z" />
+</vector>

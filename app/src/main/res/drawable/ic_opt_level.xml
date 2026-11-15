@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Level again: a spirit level, its bubble in the middle. -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillType="evenOdd"
+        android:pathData="M4.5 8H19.5A2.5 2.5 0 0 1 22 10.5V13.5A2.5 2.5 0 0 1 19.5 16H4.5A2.5 2.5 0 0 1 2 13.5V10.5A2.5 2.5 0 0 1 4.5 8ZM4.5 9.8A0.7 0.7 0 0 0 3.8 10.5V13.5A0.7 0.7 0 0 0 4.5 14.2H19.5A0.7 0.7 0 0 0 20.2 13.5V10.5A0.7 0.7 0 0 0 19.5 9.8Z"/>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M10.6 10.6H13.4A1.4 1.4 0 0 1 13.4 13.4H10.6A1.4 1.4 0 0 1 10.6 10.6ZM8.1 10.4H8.9V13.6H8.1ZM15.1 10.4H15.9V13.6H15.1Z"/>
+</vector>

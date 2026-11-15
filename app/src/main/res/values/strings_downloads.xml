@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Downloads</string>
+    <string name="dl_notif_title">Downloading to this headset</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Download to headset</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Download the next episode</item>
+        <item quantity="other">Download the next %d episodes</item>
+    </plurals>
+    <string name="dl_remove">Remove download</string>
+    <string name="dl_pause">Pause</string>
+    <string name="dl_resume">Resume</string>
+    <string name="dl_retry">Try again</string>
+    <string name="dl_on_headset">On this headset</string>
+    <plurals name="dl_added">
+        <item quantity="one">Downloading %d file to the headset</item>
+        <item quantity="other">Downloading %d files to the headset</item>
+    </plurals>
+    <string name="dl_added_none">Already in Downloads</string>
+    <string name="dl_removed">Download removed</string>
+    <string name="dl_state_queued">Waiting</string>
+    <string name="dl_state_paused">Paused</string>
+    <string name="dl_state_starting">Connecting…</string>
+    <string name="dl_running">%1$s of %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Waiting for the share · %1$s of %2$s</string>
+    <string name="dl_failed_no_room">Not enough space on the headset</string>
+    <string name="dl_failed_unreachable">Couldn\'t reach the share</string>
+    <string name="dl_failed_disk">Couldn\'t save the file</string>
+    <string name="dl_empty">Nothing downloaded yet</string>
+    <string name="dl_empty_hint">Long-press a poster or an episode and choose Download to headset to watch it away from home.</string>
+    <string name="dl_space">%1$s downloaded · %2$s free</string>
+    <string name="dl_section_active">Downloading</string>
+    <string name="dl_section_done">On this headset</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · %2$d more</item>
+        <item quantity="other">%1$d%% · %2$d more</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Remove the watched one</item>
+        <item quantity="other">Remove %d watched</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Removed %1$d watched download · %2$s freed</item>
+        <item quantity="other">Removed %1$d watched downloads · %2$s freed</item>
+    </plurals>
+    <string name="dl_cancel">Cancel download</string>
+    <string name="dl_failed_snack">Couldn\'t download %1$s: %2$s</string>
+    <string name="set_downloads">Downloaded to this headset</string>
+    <string name="set_downloads_none">Nothing yet: long-press a poster to download it.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d file · %2$s</item>
+        <item quantity="other">%1$d files · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">View</string>
+    <string name="set_downloads_clear">Remove all downloads</string>
+    <string name="set_downloads_clear_hint">Every copy on the headset, and the ones still downloading. The files on your shares are untouched.</string>
+    <string name="set_downloads_clear_q">Remove all downloads?</string>
+    <string name="set_downloads_clear_body">The copies on this headset are deleted. The files on your NAS stay as they are.</string>
+    <string name="set_downloads_cleared">All downloads removed</string>
+    <string name="set_downloads_clear_action">Remove…</string>
+    <string name="set_downloads_clear_confirm">Remove</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Download</string>
+    <string name="dl_player_done">Downloaded</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Download %d</item>
+        <item quantity="other">Download %d</item>
+    </plurals>
+    <string name="dl_folder">Download this folder</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Download %d file?</item>
+        <item quantity="other">Download these %d files?</item>
+    </plurals>
+    <string name="dl_folder_body">They download one after another; %1$s is free on the headset, and 2 GB is always kept.</string>
+    <string name="dl_folder_go">Download</string>
+    <string name="vid_play_copy">Play %1$s from the headset</string>
+    <string name="lib_offline">Offline · only downloads play</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d download plays here</item>
+        <item quantity="other">Offline · %d downloads play here</item>
+    </plurals>
+    <string name="set_cast_privacy">Receive casts (off unless you turn it on)</string>
+    <string name="set_cast_privacy_body">The headset announces itself only on your own network, so phones can list it. A phone sends a video\'s address and the headset plays from there; nothing goes through Reality NAS Player, and nothing cast is recorded.</string>
+    <string name="set_downloads_privacy">Downloads</string>
+    <string name="set_downloads_privacy_body">Copies you download are read from your own server and kept on the headset only. Remove them on Downloads, or all at once in Library.</string>
+    <string name="dl_finished_one">On the headset now: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d file is on the headset now</item>
+        <item quantity="other">%d files are on the headset now</item>
+    </plurals>
+    <string name="set_delete_watched">Remove downloads once watched</string>
+    <string name="set_delete_watched_hint">A copy watched to the end leaves the headset; the file on your NAS stays</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Removed %d watched download</item>
+        <item quantity="other">Removed %d watched downloads</item>
+    </plurals>
+    <string name="dl_space_free">%1$s free on the headset</string>
+    <string name="pc_info_source">Source</string>
+    <string name="pc_info_from_share">Share on %1$s</string>
+    <string name="dl_slowed">slowed while you watch</string>
+</resources>

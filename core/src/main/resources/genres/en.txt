@@ -1,0 +1,2 @@
+# Genre names in English — `English = name`. AniList and TMDB already speak English; one word for science fiction.
+Science Fiction = Sci-Fi

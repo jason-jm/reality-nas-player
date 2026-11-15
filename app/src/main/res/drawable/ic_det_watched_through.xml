@@ -1,0 +1,18 @@
+<!-- 标为已看（含之前各集）: the rows above ticked through to this one. ICON 7.0 weight (2 px strokes). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M4,6H16M4,11H16M4,16H9" />
+    <path
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M12.5,16.5L15.5,19.5L21,13.5" />
+</vector>

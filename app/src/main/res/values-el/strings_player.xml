@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Αναπαραγωγή</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Στερεοσκοπία</string>
+    <string name="pc_projection">Προβολή</string>
+    <string name="pc_proj_flat">Επίπεδη</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Γραμματοσειρά</string>
+    <string name="pc_colour">Χρώμα</string>
+    <string name="pc_sub_style_plain">Σκιά</string>
+    <string name="pc_sub_style_box">Πλαίσιο</string>
+    <string name="pc_second_subtitle">Δεύτεροι υπότιτλοι</string>
+    <string name="pc_sub_style_outline">Περίγραμμα</string>
+    <string name="pc_font_default">Προεπιλογή</string>
+    <string name="pc_font_serif">Με πατούρες</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">Λευκό</string>
+    <string name="pc_colour_yellow">Κίτρινο</string>
+    <string name="pc_colour_cyan">Κυανό</string>
+    <string name="pc_colour_green">Πράσινο</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Με τη σειρά</string>
+    <string name="pc_loop_all">Όλα</string>
+    <string name="pc_loop_one">Ένα</string>
+    <string name="pc_loop_shuffle">Τυχαία</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Λήψη στιγμιότυπου…</string>
+    <string name="pc_hold_speed">Αναπαραγωγή 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Σελιδοδείκτες</string>
+    <string name="pc_bookmarks_n">Σελιδοδείκτες · %1$d</string>
+    <string name="pc_bookmark_add">Προσθήκη σελιδοδείκτη</string>
+    <string name="pc_bookmark_empty">Σημειώστε μια στιγμή για να επιστρέψετε σε αυτή με το + παραπάνω.</string>
+    <string name="pc_bookmark_remove">Αφαίρεση σελιδοδείκτη στο %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Παράλειψη αρχής και τέλους</string>
+    <string name="pc_skip_intro_set">Εισαγωγή έως %1$s</string>
+    <string name="pc_skip_outro_set">τίτλοι τέλους %1$s</string>
+    <string name="pc_skip_mark_intro">Τέλος εισαγωγής εδώ</string>
+    <string name="pc_skip_mark_outro">Τίτλοι τέλους από εδώ</string>
+    <string name="pc_skip_clear">Διαγραφή σημαδιών</string>
+    <string name="pc_skip_intro_hint">Κάθε επόμενο επεισόδιο αυτής της σειράς ξεκινά από εδώ</string>
+    <string name="pc_skip_outro_hint">Κάθε επόμενο επεισόδιο αυτής της σειράς περνά από εδώ στο επόμενο</string>
+    <string name="vid_intro_skipped">Η εισαγωγή παραλείφθηκε</string>
+    <string name="vid_watch_intro">Δείτε την</string>
+    <string name="vid_chapter_intro">Εισαγωγή · απομένουν %1$s</string>
+    <string name="vid_chapter_outro">Τίτλοι τέλους · απομένουν %1$s</string>
+    <string name="vid_skip">Παράλειψη</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Άγνωστη μορφή</string>
+    <string name="pc_track_unknown">Άγνωστο κομμάτι</string>
+    <string name="pc_track_n">Κομμάτι %1$d</string>
+    <string name="pc_track_external_sub">Εξωτερικοί υπότιτλοι</string>
+    <string name="pc_track_external">Εξωτερικό</string>
+    <string name="pc_track_embedded">Ενσωματωμένο</string>
+    <string name="pc_ch_mono">Μονοφωνικό</string>
+    <string name="pc_ch_stereo">Στερεοφωνικό</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Ήχος</string>
+    <string name="pc_frames">Απορρίφθηκαν %1$d / αποδόθηκαν %2$d</string>
+    <string name="pc_env_dim">Χαμηλά φώτα</string>
+    <string name="pc_env_viewing_light">Φωτισμός κατά την αναπαραγωγή</string>
+    <string name="pc_env_dim_hint">Κατά την αναπαραγωγή χρησιμοποιείται η φωτεινότητα που επιλέξατε. Τα φώτα δυναμώνουν ξανά όταν κάνετε παύση ή ανοίγετε τα χειριστήρια.</string>
+    <string name="pc_env_lights">Φώτα</string>
+    <string name="pc_env_lights_hint">Τα φώτα του χώρου, αναμμένα ή σβηστά· όταν είναι αναμμένα, η επιλογή «Χαμηλά φώτα» τα χαμηλώνει ακόμα κατά την ταινία</string>
+    <string name="pc_env_seat">Θέση</string>
+    <string name="pc_seat_center">Κέντρο</string>
+    <string name="pc_seat_left">Αριστερά</string>
+    <string name="pc_seat_right">Δεξιά</string>
+    <string name="pc_seat_left_window">Αριστερό παράθυρο</string>
+    <string name="pc_seat_right_window">Δεξί παράθυρο</string>
+    <string name="pc_env_screen">Ταινία και υπότιτλοι</string>
+    <string name="pc_env_screen_hint">Η ταινία και οι υπότιτλοι εμφανίζονται στην οθόνη του χώρου.</string>
+    <string name="pc_env_glow">Φως οθόνης</string>
+    <string name="pc_env_glow_hint">Τα χρώματα της ταινίας φωτίζουν το πλαίσιο της οθόνης και τις γύρω επιφάνειες.</string>
+    <string name="pc_env_screen_none">Δεν υπάρχει οθόνη εδώ — η ταινία μένει στο παράθυρο</string>
+    <string name="pc_env_has_screen">Έχει οθόνη</string>
+    <string name="pc_env_entering">Άνοιγμα: %1$s…</string>
+    <string name="pc_env_failed">Δεν ήταν δυνατή η φόρτωση: %1$s</string>
+    <string name="pc_lang_simplified">Απλοποιημένα κινεζικά</string>
+    <string name="pc_lang_traditional">Παραδοσιακά κινεζικά</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d ακόμη κομμάτι ήχου</item>
+        <item quantity="other">%d ακόμη κομμάτια ήχου</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Αυτό το αρχείο έχει ήχο που το ενσωματωμένο πρόγραμμα αναπαραγωγής δεν διαβάζει — παίξτε το στο mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d αρχείο υποτίτλων εικόνας</item>
+        <item quantity="other">%d αρχεία υποτίτλων εικόνας</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS δίπλα στην ταινία — το ενσωματωμένο πρόγραμμα δεν μπορεί να τα σχεδιάσει. Παίξτε το στο mpv</string>
+    <string name="pc_pano_format">Μορφή πανοράματος</string>
+    <string name="pc_pano_equirect">Ισορθογώνια</string>
+    <string name="pc_pano_fisheye">Μάτι ψαριού</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Κυβικός χάρτης</string>
+    <string name="pc_pano_dual">Διπλό μάτι ψαριού</string>
+    <string name="pc_pano_direction">Κατεύθυνση</string>
+    <string name="pc_pano_turn_left">Στροφή αριστερά</string>
+    <string name="pc_pano_recenter">Επανακέντρωση</string>
+    <string name="pc_pano_turn_right">Στροφή δεξιά</string>
+    <string name="pc_pano_turn_hint">Περιστρέφει την εικόνα 30° γύρω σας — δείχνει ό,τι είναι πίσω σας, χωρίς να γυρίσετε</string>
+    <string name="pc_pano_recenter_hint">Φέρνει το μπροστινό μέρος της ταινίας εκεί που κοιτάτε</string>
+    <string name="pc_pano_own">Πλέγμα αρχείου</string>
+    <string name="pc_info_format">Μορφή</string>
+    <string name="pc_info_spatial_video">Χωρικό βίντεο</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, δύο όψεις (εμφανίζεται το αριστερό μάτι)</string>
+    <string name="pc_info_camera">%1$d° οπτικό πεδίο · %2$d mm απόσταση</string>
+    <string name="pc_info_right_first">πρώτα το δεξί μάτι</string>
+    <string name="pc_audio_field">Πανοραμικός ήχος</string>
+    <string name="vid_pano_guess_360">Μοιάζει με βίντεο 360°</string>
+    <string name="vid_pano_guess_360_3d">Μοιάζει με βίντεο 360° 3D</string>
+    <string name="vid_pano_guess_180_3d">Μοιάζει με βίντεο 180° 3D (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Μοιάζει με βίντεο από φακό μάτι ψαριού</string>
+    <string name="vid_pano_guess_fisheye_3d">Μοιάζει με βίντεο 180° 3D από φακό μάτι ψαριού</string>
+    <string name="vid_pano_guess_dual">Μοιάζει με πρωτότυπο δύο φακών από κάμερα 360°</string>
+    <string name="vid_pano_guess_play">Αναπαραγωγή ως πανόραμα</string>
+    <string name="vid_pano_guess_no">Δεν είναι</string>
+    <string name="pc_pano_tilt_up">Πάνω</string>
+    <string name="pc_pano_tilt_down">Κάτω</string>
+    <string name="pc_pano_roll_left">Κλίση αριστερά</string>
+    <string name="pc_pano_roll_right">Κλίση δεξιά</string>
+    <string name="pc_pano_level">Οριζοντίωση</string>
+    <string name="pc_pano_level_hint">Για στραβό ορίζοντα: 5° ανά πάτημα, διατηρείται για αυτή την ταινία</string>
+</resources>

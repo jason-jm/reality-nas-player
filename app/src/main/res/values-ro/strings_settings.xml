@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Încercați din nou</string>
+    <string name="md_secret_show">Afișați</string>
+    <string name="md_secret_hide">Ascundeți</string>
+    <string name="md_secret_show_named">Afișați %1$s</string>
+    <string name="md_secret_hide_named">Ascundeți %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">A apărut o eroare neașteptată</string>
+    <string name="fault_unknown_detail">A apărut o eroare neașteptată: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Înapoi la tipurile de surse</string>
+    <string name="sources_edit">Editați</string>
+    <string name="sources_edit_title">Editați „%1$s”</string>
+    <string name="sources_save_and_scan">Salvați și scanați</string>
+    <string name="sources_password_keep">Lăsați gol pentru a păstra parola salvată</string>
+    <string name="sources_token_keep">Lăsați gol pentru a păstra jetonul salvat</string>
+    <string name="sources_saved_placeholder">Salvat</string>
+    <string name="sources_smb_need_share">Aceasta este doar o gazdă. Atingeți „Răsfoiți partajările…” sus în dreapta pentru a alege o partajare sau scrieți gazdă/partajare pentru a o adăuga direct</string>
+    <string name="sources_webdav_scheme">Adresa trebuie să înceapă cu http:// sau https://</string>
+    <string name="sources_remote_scheme">Această adresă este pentru alt tip de server; tastați-o fără partea dinainte de ://</string>
+    <string name="sources_address_spaces">O adresă nu poate conține spații</string>
+    <string name="sources_server_user_hint">Contul dvs. de pe server, cel cu care vă conectați în aplicația lui web</string>
+    <string name="sources_server_pass_hint">Parola acelui cont</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Server %1$s</string>
+    <string name="sources_kind_dlna">Server media DLNA</string>
+    <string name="sources_remove_action">Eliminați…</string>
+    <string name="sources_removed">„%1$s” a fost eliminat</string>
+    <string name="sources_added_toast">„%1$s” a fost adăugat, se scanează acum</string>
+    <string name="sources_saved_toast">„%1$s” a fost salvat, se scanează din nou</string>
+    <string name="sources_fix_account">Schimbați contul sau parola</string>
+    <string name="sources_fix_account_hint">Conectați această sursă cu contul corect</string>
+    <string name="sources_fix_address">Verificați detaliile conexiunii</string>
+    <string name="sources_fix_address_hint">Verificați adresa și portul sau încercați alt cont, apoi scanați din nou</string>
+    <string name="sources_scan_busy">Rulează deja o altă scanare sau identificare; aceasta poate începe după ce se termină</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Înapoi la partajări</string>
+    <string name="smb_back_servers">Înapoi la servere</string>
+    <string name="smb_saved_password">Folosește parola salvată</string>
+    <string name="smb_signing_in">Se conectează…</string>
+    <string name="smb_subnet_invalid">Introduceți o adresă IPv4, de ex. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Nume de fișiere locale</string>
+    <string name="set_live_engine_exo">Motor îmbunătățit</string>
+    <string name="set_live_engine_system">Playerul sistemului</string>
+    <string name="set_live_spatial">%1$s · sunet spațial</string>
+    <string name="set_live_sync_off">Dezactivată</string>
+    <string name="set_live_sync_on">Activată</string>
+    <string name="set_live_sync_on_ago">Activată · sincronizat %1$s</string>
+    <string name="set_live_sync_failed">Ultima sincronizare a eșuat</string>
+    <string name="set_live_version">Versiunea %1$s</string>
+    <string name="set_live_sub">Subtitrări: %1$s</string>
+    <string name="set_live_audio">Sunet: %1$s</string>
+    <string name="set_live_night">Mod noapte</string>
+    <string name="set_live_no_autoplay">Fără redare automată</string>
+    <string name="set_pano_auto">Deschideți imersiv videoclipurile 360° / 180°</string>
+    <string name="set_pano_auto_on">Activat: un videoclip recunoscut ca 360° sau 180° se deschide în spațiul imersiv, în jurul dvs.</string>
+    <string name="set_pano_auto_off">Dezactivat: videoclipurile 360° și 180° pornesc în fereastră; Imagine › Spațiu de vizionare vă duce înăuntru.</string>
+    <string name="set_auto_skip_intro">Omiteți automat introducerile</string>
+    <string name="set_auto_skip_intro_on">Activat: când capitolele unui fișier îi marchează introducerea (OP, Opening…), aceasta este omisă la pornire — „Vizionați-o” din partea de sus a imaginii revine la ea.</string>
+    <string name="set_auto_skip_intro_off">Dezactivat: când începe o introducere, partea de sus a imaginii oferă „Omiteți”.</string>
+    <string name="set_live_auto_skip_intro">Introduceri omise</string>
+    <string name="set_version_build">Versiunea %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Identificare</string>
+    <string name="set_group_language">Limbă</string>
+    <string name="set_language_ui">Limba aplicației</string>
+    <string name="set_language_ui_hint">Limba meniurilor și a textelor din Reality NAS Player.</string>
+    <string name="set_language_follow_app">La fel ca aplicația</string>
+    <string name="set_language_meta">Limba metadatelor</string>
+    <string name="set_tmdb_key_label">Cheie API TMDB</string>
+    <string name="set_omdb_key_label">Cheie API OMDb</string>
+    <string name="set_keys_offline">Identificarea offline este activă, așa că aceste chei nu sunt folosite deocamdată.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Ștergeți…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Activat: motorul de sunet spațial PICO îl procesează.</string>
+    <string name="set_spatial_off">Dezactivat: mixajul original al filmului se redă așa cum a fost creat.</string>
+    <string name="set_fd_needs_system">Doar playerul sistemului îl acceptă: dezactivați „Motor îmbunătățit” de mai sus pentru a-l folosi.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Completare și reconstruire</string>
+    <string name="set_auto_scan">Actualizați automat biblioteca</string>
+    <string name="set_auto_scan_on">Activat: la deschiderea aplicației se caută fișierele adăugate în surse de la ultima verificare (cel mult o dată la 6 ore) și se identifică doar cele noi.</string>
+    <string name="set_auto_scan_off">Dezactivat: fișierele noi apar după ce scanați din Surse.</string>
+    <string name="set_rescrape">Reidentificați intrările neterminate</string>
+    <string name="set_rescrape_hint">Reîncearcă pentru intrările fără poster sau a căror ultimă identificare a eșuat; intrările identificate rămân neatinse</string>
+    <string name="set_rescrape_start">Începeți</string>
+    <string name="set_rescrape_started">Reidentificarea a început</string>
+    <string name="set_task_busy">Rulează o scanare sau o identificare; o nouă sarcină poate începe după ce se termină.</string>
+    <string name="set_clear_action">Goliți…</string>
+    <string name="set_cleared">Biblioteca este goală</string>
+    <string name="set_clear_failed">Biblioteca nu a putut fi golită; încercați din nou peste puțin timp</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Se caută partajări…</string>
+    <string name="sync_open_sources">Deschideți Surse</string>
+    <string name="sync_open_sources_hint">Adăugați o partajare NAS, apoi reveniți aici</string>
+    <string name="sync_this_device">Această cască</string>
+    <string name="sync_readonly_title">Partajarea este doar în citire</string>
+    <string name="sync_remove_body_at">Se șterge „.aura” de pe %1$s și înregistrările tuturor dispozitivelor din el. Biblioteca și progresul de pe această cască rămân neschimbate.</string>
+    <string name="sync_removed">Dosarul de sincronizare a fost șters</string>
+    <string name="sync_remove_failed">Dosarul de sincronizare nu a putut fi șters: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Deschideți Identificare</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · „%2$s” — %3$s</string>
+    <string name="set_licences">Licențe open source</string>
+    <string name="set_licences_hint">Licența fiecărei componente, sursa bibliotecilor LGPL și cum le puteți înlocui</string>
+</resources>

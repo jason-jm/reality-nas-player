@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Redare</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Proiecție</string>
+    <string name="pc_proj_flat">Plană</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Font</string>
+    <string name="pc_colour">Culoare</string>
+    <string name="pc_sub_style_plain">Umbră</string>
+    <string name="pc_sub_style_box">Casetă</string>
+    <string name="pc_second_subtitle">Subtitrare secundară</string>
+    <string name="pc_sub_style_outline">Contur</string>
+    <string name="pc_font_default">Implicit</string>
+    <string name="pc_font_serif">Cu serife</string>
+    <string name="pc_font_mono">Monospațiat</string>
+    <string name="pc_colour_white">Alb</string>
+    <string name="pc_colour_yellow">Galben</string>
+    <string name="pc_colour_cyan">Turcoaz</string>
+    <string name="pc_colour_green">Verde</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">În ordine</string>
+    <string name="pc_loop_all">Toate</string>
+    <string name="pc_loop_one">Unul</string>
+    <string name="pc_loop_shuffle">Aleatoriu</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Se face captura…</string>
+    <string name="pc_hold_speed">Redare la 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Marcaje</string>
+    <string name="pc_bookmarks_n">Marcaje · %1$d</string>
+    <string name="pc_bookmark_add">Adăugați un marcaj</string>
+    <string name="pc_bookmark_empty">Marcați cu + de mai sus un moment la care să reveniți.</string>
+    <string name="pc_bookmark_remove">Eliminați marcajul de la %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Omitere introducere/generic</string>
+    <string name="pc_skip_intro_set">Introducere până la %1$s</string>
+    <string name="pc_skip_outro_set">genericul durează %1$s</string>
+    <string name="pc_skip_mark_intro">Introducerea se termină aici</string>
+    <string name="pc_skip_mark_outro">Genericul începe aici</string>
+    <string name="pc_skip_clear">Ștergeți introducerea și genericul</string>
+    <string name="pc_skip_intro_hint">Fiecare episod ulterior al serialului începe de aici</string>
+    <string name="pc_skip_outro_hint">Fiecare episod ulterior al serialului trece de aici la următorul</string>
+    <string name="vid_intro_skipped">Introducere omisă</string>
+    <string name="vid_watch_intro">Vizionați-o</string>
+    <string name="vid_chapter_intro">Introducere · încă %1$s</string>
+    <string name="vid_chapter_outro">Generic · încă %1$s</string>
+    <string name="vid_skip">Omiteți</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Format necunoscut</string>
+    <string name="pc_track_unknown">Pistă necunoscută</string>
+    <string name="pc_track_n">Pista %1$d</string>
+    <string name="pc_track_external_sub">Subtitrări externe</string>
+    <string name="pc_track_external">Extern</string>
+    <string name="pc_track_embedded">Încorporat</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Sunet</string>
+    <string name="pc_frames">Pierdute %1$d / redate %2$d</string>
+    <string name="pc_env_dim">Întunecare la redare</string>
+    <string name="pc_env_viewing_light">Iluminare în timpul redării</string>
+    <string name="pc_env_dim_hint">În timpul redării se folosește luminozitatea aleasă. Luminile se aprind din nou când pui pauză sau deschizi comenzile.</string>
+    <string name="pc_env_lights">Lumini</string>
+    <string name="pc_env_lights_hint">Luminile proprii ale locului, aprinse sau stinse; aprinse, „Întunecare la redare” tot le coboară în timpul filmului</string>
+    <string name="pc_env_seat">Loc</string>
+    <string name="pc_seat_center">Centru</string>
+    <string name="pc_seat_left">Stânga</string>
+    <string name="pc_seat_right">Dreapta</string>
+    <string name="pc_seat_left_window">Fereastra din stânga</string>
+    <string name="pc_seat_right_window">Fereastra din dreapta</string>
+    <string name="pc_env_screen">Film și subtitrări</string>
+    <string name="pc_env_screen_hint">Filmul și subtitrările apar pe ecranul încăperii.</string>
+    <string name="pc_env_glow">Lumina ecranului</string>
+    <string name="pc_env_glow_hint">Culorile filmului luminează rama ecranului și suprafețele din apropiere.</string>
+    <string name="pc_env_screen_none">Fără ecran aici — filmul rămâne în fereastră</string>
+    <string name="pc_env_has_screen">Are ecran</string>
+    <string name="pc_env_entering">Se deschide %1$s…</string>
+    <string name="pc_env_failed">%1$s nu a putut fi încărcat</string>
+    <string name="pc_lang_simplified">Chineză simplificată</string>
+    <string name="pc_lang_traditional">Chineză tradițională</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">Încă %d pistă audio</item>
+        <item quantity="few">Încă %d piste audio</item>
+        <item quantity="other">Încă %d de piste audio</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Fișierul are sunet pe care playerul integrat nu îl poate citi — redați-l în mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d fișier de subtitrare grafică</item>
+        <item quantity="few">%d fișiere de subtitrare grafică</item>
+        <item quantity="other">%d de fișiere de subtitrare grafică</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS lângă film — playerul integrat nu le poate afișa; redați-l în mpv</string>
+    <string name="pc_pano_format">Format panoramă</string>
+    <string name="pc_pano_equirect">Echirectangular</string>
+    <string name="pc_pano_fisheye">Ochi de pește</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Cub</string>
+    <string name="pc_pano_dual">Ochi de pește dublu</string>
+    <string name="pc_pano_direction">Direcție</string>
+    <string name="pc_pano_turn_left">Rotire stânga</string>
+    <string name="pc_pano_recenter">Recentrare</string>
+    <string name="pc_pano_turn_right">Rotire dreapta</string>
+    <string name="pc_pano_turn_hint">Rotește imaginea cu 30° în jurul dvs. — vedeți ce e în spate fără să vă întoarceți</string>
+    <string name="pc_pano_recenter_hint">Aduce partea din față a filmului acolo unde priviți</string>
+    <string name="pc_pano_own">Geometria fișierului</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Video spațial</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, două vederi (se arată ochiul stâng)</string>
+    <string name="pc_info_camera">Câmp %1$d° · distanță %2$d mm</string>
+    <string name="pc_info_right_first">ochiul drept primul</string>
+    <string name="pc_audio_field">Sunet ambisonic</string>
+    <string name="vid_pano_guess_360">Pare un video 360°</string>
+    <string name="vid_pano_guess_360_3d">Pare un video 360° 3D</string>
+    <string name="vid_pano_guess_180_3d">Pare un video 180° 3D (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Pare un video ochi de pește</string>
+    <string name="vid_pano_guess_fisheye_3d">Pare un video ochi de pește 180° 3D</string>
+    <string name="vid_pano_guess_dual">Pare originalul cu două lentile al unei camere 360</string>
+    <string name="vid_pano_guess_play">Redați ca panoramă</string>
+    <string name="vid_pano_guess_no">Nu este</string>
+    <string name="pc_pano_tilt_up">Sus</string>
+    <string name="pc_pano_tilt_down">Jos</string>
+    <string name="pc_pano_roll_left">Înclinare stânga</string>
+    <string name="pc_pano_roll_right">Înclinare dreapta</string>
+    <string name="pc_pano_level">Nivelare</string>
+    <string name="pc_pano_level_hint">Pentru un orizont strâmb: 5° la fiecare apăsare, păstrat pentru acest film</string>
+</resources>

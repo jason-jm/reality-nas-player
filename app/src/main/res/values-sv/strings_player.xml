@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Uppspelning</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projektion</string>
+    <string name="pc_proj_flat">Platt</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Typsnitt</string>
+    <string name="pc_colour">Färg</string>
+    <string name="pc_sub_style_plain">Skugga</string>
+    <string name="pc_sub_style_box">Ruta</string>
+    <string name="pc_second_subtitle">Sekundära undertexter</string>
+    <string name="pc_sub_style_outline">Kontur</string>
+    <string name="pc_font_default">Standard</string>
+    <string name="pc_font_serif">Seriff</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">Vit</string>
+    <string name="pc_colour_yellow">Gul</string>
+    <string name="pc_colour_cyan">Turkos</string>
+    <string name="pc_colour_green">Grön</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">I ordning</string>
+    <string name="pc_loop_all">Alla</string>
+    <string name="pc_loop_one">En</string>
+    <string name="pc_loop_shuffle">Blanda</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Tar en skärmbild…</string>
+    <string name="pc_hold_speed">Spelar i 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Bokmärken</string>
+    <string name="pc_bookmarks_n">Bokmärken · %1$d</string>
+    <string name="pc_bookmark_add">Lägg till bokmärke</string>
+    <string name="pc_bookmark_empty">Markera ett ögonblick att komma tillbaka till med + ovan.</string>
+    <string name="pc_bookmark_remove">Ta bort bokmärket vid %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Hoppa över intro/eftertexter</string>
+    <string name="pc_skip_intro_set">Intro till %1$s</string>
+    <string name="pc_skip_outro_set">eftertexter %1$s</string>
+    <string name="pc_skip_mark_intro">Introt slutar här</string>
+    <string name="pc_skip_mark_outro">Eftertexterna börjar här</string>
+    <string name="pc_skip_clear">Rensa intro och eftertexter</string>
+    <string name="pc_skip_intro_hint">Alla senare avsnitt av serien startar här</string>
+    <string name="pc_skip_outro_hint">Alla senare avsnitt av serien går vidare till nästa härifrån</string>
+    <string name="vid_intro_skipped">Introt hoppades över</string>
+    <string name="vid_watch_intro">Se det</string>
+    <string name="vid_chapter_intro">Intro · %1$s kvar</string>
+    <string name="vid_chapter_outro">Eftertexter · %1$s kvar</string>
+    <string name="vid_skip">Hoppa över</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Okänt format</string>
+    <string name="pc_track_unknown">Okänt spår</string>
+    <string name="pc_track_n">Spår %1$d</string>
+    <string name="pc_track_external_sub">Externa undertexter</string>
+    <string name="pc_track_external">Extern</string>
+    <string name="pc_track_embedded">Inbäddad</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Ljud</string>
+    <string name="pc_frames">Tappade %1$d / renderade %2$d</string>
+    <string name="pc_env_dim">Dämpa</string>
+    <string name="pc_env_viewing_light">Ljusstyrka vid uppspelning</string>
+    <string name="pc_env_dim_hint">Den valda ljusstyrkan används under uppspelning. Ljuset höjs igen när du pausar eller öppnar kontrollerna.</string>
+    <string name="pc_env_lights">Ljus</string>
+    <string name="pc_env_lights_hint">Platsens eget ljus, på eller av; när det är på dämpar ”Dämpa” det ändå under filmen</string>
+    <string name="pc_env_seat">Sittplats</string>
+    <string name="pc_seat_center">Mitten</string>
+    <string name="pc_seat_left">Vänster</string>
+    <string name="pc_seat_right">Höger</string>
+    <string name="pc_seat_left_window">Vänster fönster</string>
+    <string name="pc_seat_right_window">Höger fönster</string>
+    <string name="pc_env_screen">Film och undertexter</string>
+    <string name="pc_env_screen_hint">Filmen och undertexterna visas på rummets duk.</string>
+    <string name="pc_env_glow">Ljus från duken</string>
+    <string name="pc_env_glow_hint">Filmens färger lyser upp dukens ram och ytorna intill.</string>
+    <string name="pc_env_screen_none">Ingen skärm här – filmen stannar i fönstret</string>
+    <string name="pc_env_has_screen">Har en skärm</string>
+    <string name="pc_env_entering">Öppnar %1$s…</string>
+    <string name="pc_env_failed">%1$s kunde inte läsas in</string>
+    <string name="pc_lang_simplified">Förenklad kinesiska</string>
+    <string name="pc_lang_traditional">Traditionell kinesiska</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d ljudspår till</item>
+        <item quantity="other">%d ljudspår till</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Den här filen har ljud som den inbyggda spelaren inte kan läsa – spela den i mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d bildbaserad undertextfil</item>
+        <item quantity="other">%d bildbaserade undertextfiler</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub/PGS bredvid filmen – den inbyggda spelaren kan inte rita dem; spela den i mpv</string>
+    <string name="pc_pano_format">Panoramaformat</string>
+    <string name="pc_pano_equirect">Ekvirekt</string>
+    <string name="pc_pano_fisheye">Fisköga</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Kubkarta</string>
+    <string name="pc_pano_dual">Dubbelt fisköga</string>
+    <string name="pc_pano_direction">Riktning</string>
+    <string name="pc_pano_turn_left">Vrid åt vänster</string>
+    <string name="pc_pano_recenter">Centrera</string>
+    <string name="pc_pano_turn_right">Vrid åt höger</string>
+    <string name="pc_pano_turn_hint">Vrider bilden 30° runt dig – det som är bakom dig, utan att du vänder dig om</string>
+    <string name="pc_pano_recenter_hint">Lägger filmens framsida där du tittar</string>
+    <string name="pc_pano_own">Filens nät</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Rumslig video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, två vyer (vänster öga visas)</string>
+    <string name="pc_info_camera">Bildvinkel %1$d° · %2$d mm isär</string>
+    <string name="pc_info_right_first">höger öga först</string>
+    <string name="pc_audio_field">Ambisonics</string>
+    <string name="vid_pano_guess_360">Det här ser ut som en 360°-video</string>
+    <string name="vid_pano_guess_360_3d">Det här ser ut som en 360° 3D-video</string>
+    <string name="vid_pano_guess_180_3d">Det här ser ut som en 180° 3D-video (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Det här ser ut som en fiskögevideo</string>
+    <string name="vid_pano_guess_fisheye_3d">Det här ser ut som en 180° 3D-fiskögevideo</string>
+    <string name="vid_pano_guess_dual">Det här ser ut som en 360-kameras original med två objektiv</string>
+    <string name="vid_pano_guess_play">Spela som panorama</string>
+    <string name="vid_pano_guess_no">Det är det inte</string>
+    <string name="pc_pano_tilt_up">Upp</string>
+    <string name="pc_pano_tilt_down">Ned</string>
+    <string name="pc_pano_roll_left">Luta åt vänster</string>
+    <string name="pc_pano_roll_right">Luta åt höger</string>
+    <string name="pc_pano_level">Räta upp</string>
+    <string name="pc_pano_level_hint">För en sned horisont: 5° per tryck, sparas för den här filmen</string>
+</resources>

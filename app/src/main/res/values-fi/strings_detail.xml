@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Poista suosikeista</string>
+    <string name="det_up_next">Seuraavaksi</string>
+    <string name="det_section_main">Pääsisältö</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Kausi %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Merkitäänkö kaikki katsotuiksi?</string>
+    <string name="det_mark_all_unwatched_q">Merkitäänkö kaikki katsomattomiksi?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d tiedosto merkitään katsotuksi.</item>
+        <item quantity="other">%1$d tiedostoa merkitään katsotuiksi.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d niistä on kesken ja menettää kohtansa.</item>
+        <item quantity="other">%1$d niistä on kesken ja menettää kohtansa.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">%1$d tiedoston katselukohta tyhjennetään.</item>
+        <item quantity="other">%1$d tiedoston katselukohdat tyhjennetään.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Lähde</string>
+    <string name="fix_scope">Koskee</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Koko kortti (%1$d tiedosto)</item>
+        <item quantity="other">Koko kortti (%1$d tiedostoa)</item>
+    </plurals>
+    <string name="fix_scope_file">Vain tämä tiedosto</string>
+    <string name="fix_query_hint">Nimi – englanninkieliset nimet osuvat parhaiten</string>
+    <string name="fix_hint">Korjaa osuma valitsemalla oikea kohde</string>
+    <string name="fix_applying">Otetaan käyttöön…</string>
+    <string name="fix_failed">Kohdetta ei voitu ottaa käyttöön. Tarkista verkko ja yritä uudelleen.</string>
+    <string name="fix_kind_movie">Elokuva</string>
+    <string name="fix_kind_show">Sarja</string>
+    <string name="fix_current">Nykyinen</string>
+    <string name="fix_no_results_title">Ei vastaavia kohteita</string>
+    <string name="fix_no_results_anilist">Kokeile toista kirjoitusasua – romaji- tai englanninkieliset nimet osuvat parhaiten.</string>
+    <string name="fix_error_title">Haku ei valmistunut</string>
+    <string name="fix_error_body">Tarkista verkko ja yritä uudelleen.</string>
+    <string name="fix_retry">Yritä uudelleen</string>
+    <string name="fix_confirm_title">Vaihdetaanko tilalle ”%1$s”?</string>
+    <string name="fix_confirm_title_year">Vaihdetaanko tilalle ”%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Tämän kortin tiedosto käyttää tästä lähtien tätä kohdetta, eivätkä myöhemmät tunnistukset muuta sitä.</item>
+        <item quantity="other">Kaikki tämän kortin %1$d tiedostoa käyttävät tästä lähtien tätä kohdetta, eivätkä myöhemmät tunnistukset muuta sitä.</item>
+    </plurals>
+    <string name="fix_confirm_file">Vain ”%1$s” käyttää tästä lähtien tätä kohdetta, eivätkä myöhemmät tunnistukset muuta sitä.</string>
+    <string name="fix_apply">Käytä</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d muu</item>
+        <item quantity="other">%d muuta</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d muu nimike kirjastossasi</item>
+        <item quantity="other">%d muuta nimikettä kirjastossasi</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d nimike kirjastossasi</item>
+        <item quantity="other">%d nimikettä kirjastossasi</item>
+    </plurals>
+    <string name="det_similar">Samankaltaisia</string>
+    <string name="det_episode_copy">%1$s · toinen kopio</string>
+    <string name="det_season_progress">%1$d/%2$d katsottu</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Katsottu</item>
+        <item quantity="other">Kaikki %1$d katsottu</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versiot</string>
+    <string name="det_series">Tässä sarjassa</string>
+    <string name="lib_series">Sarja</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d nimike</item>
+        <item quantity="other">%d nimikettä</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d nimike tässä kirjastossa julkaisujärjestyksessä</item>
+        <item quantity="other">%d nimikettä tässä kirjastossa julkaisujärjestyksessä</item>
+    </plurals>
+</resources>

@@ -1,0 +1,36 @@
+# Genre names in Czech — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Akční
+Adventure = Dobrodružný
+Animation = Animovaný
+Comedy = Komedie
+Crime = Krimi
+Documentary = Dokumentární
+Drama = Drama
+Family = Rodinný
+Fantasy = Fantasy
+History = Historický
+Horror = Horor
+Music = Hudební
+Mystery = Mysteriózní
+Romance = Romantický
+Science Fiction = Vědeckofantastický
+Sci-Fi = Vědeckofantastický
+TV Movie = Televizní film
+Thriller = Thriller
+War = Válečný
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psychologický
+Slice of Life = Ze života
+Sports = Sportovní
+Supernatural = Nadpřirozený
+Politics = Politický

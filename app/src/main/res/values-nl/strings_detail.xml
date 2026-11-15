@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Verwijderen uit favorieten</string>
+    <string name="det_up_next">Hierna</string>
+    <string name="det_section_main">Hoofddeel</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Seizoen %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Alles als bekeken markeren?</string>
+    <string name="det_mark_all_unwatched_q">Alles als niet bekeken markeren?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d bestand wordt als bekeken gemarkeerd.</item>
+        <item quantity="other">%1$d bestanden worden als bekeken gemarkeerd.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d daarvan is half bekeken en verliest zijn plek.</item>
+        <item quantity="other">%1$d daarvan zijn half bekeken en verliezen hun plek.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">De kijkvoortgang van %1$d bestand wordt gewist.</item>
+        <item quantity="other">De kijkvoortgang van %1$d bestanden wordt gewist.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Bron</string>
+    <string name="fix_scope">Toepassen op</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Hele kaart (%1$d bestand)</item>
+        <item quantity="other">Hele kaart (%1$d bestanden)</item>
+    </plurals>
+    <string name="fix_scope_file">Alleen dit bestand</string>
+    <string name="fix_query_hint">Titel – Engelse titels werken het best</string>
+    <string name="fix_hint">Kies het juiste item om de koppeling te herstellen</string>
+    <string name="fix_applying">Toepassen…</string>
+    <string name="fix_failed">Dit item kon niet worden toegepast. Controleer het netwerk en probeer het opnieuw.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Serie</string>
+    <string name="fix_current">Huidig</string>
+    <string name="fix_no_results_title">Geen overeenkomende items</string>
+    <string name="fix_no_results_anilist">Probeer een andere spelling – romaji of Engelse namen werken het best.</string>
+    <string name="fix_error_title">De zoekopdracht is niet voltooid</string>
+    <string name="fix_error_body">Controleer het netwerk en probeer het opnieuw.</string>
+    <string name="fix_retry">Opnieuw proberen</string>
+    <string name="fix_confirm_title">Wijzigen in “%1$s”?</string>
+    <string name="fix_confirm_title_year">Wijzigen in “%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Het bestand van deze kaart gebruikt voortaan dit item, en latere herkenningen veranderen dat niet.</item>
+        <item quantity="other">Alle %1$d bestanden van deze kaart gebruiken voortaan dit item, en latere herkenningen veranderen dat niet.</item>
+    </plurals>
+    <string name="fix_confirm_file">Alleen “%1$s” gebruikt voortaan dit item, en latere herkenningen veranderen dat niet.</string>
+    <string name="fix_apply">Toepassen</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">Nog %d</item>
+        <item quantity="other">Nog %d</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">Nog één titel in je bibliotheek</item>
+        <item quantity="other">Nog %d titels in je bibliotheek</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">Eén titel in je bibliotheek</item>
+        <item quantity="other">%d titels in je bibliotheek</item>
+    </plurals>
+    <string name="det_similar">Meer zoals dit</string>
+    <string name="det_episode_copy">%1$s · andere kopie</string>
+    <string name="det_season_progress">%1$d van %2$d bekeken</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Bekeken</item>
+        <item quantity="other">Alle %1$d bekeken</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versies</string>
+    <string name="det_series">In deze reeks</string>
+    <string name="lib_series">Reeks</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d titel</item>
+        <item quantity="other">%d titels</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d titel in deze bibliotheek, in volgorde van verschijnen</item>
+        <item quantity="other">%d titels in deze bibliotheek, in volgorde van verschijnen</item>
+    </plurals>
+</resources>

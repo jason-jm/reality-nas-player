@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Belum ada filem</string>
+    <string name="lib_add_source">Tambah sumber</string>
+    <string name="lib_empty_search_hint">Carian meneliti setiap tajuk dan nama fail dalam pustaka.</string>
+    <string name="lib_search_clear">Kosongkan carian</string>
+    <string name="lib_empty_favorites_title">Belum ada kegemaran</string>
+    <string name="lib_empty_history_title">Belum ada yang ditonton</string>
+    <string name="lib_empty_shelf_hint">Tajuk muncul pada rak ini sebaik sahaja padanan mengetahui apa ia.</string>
+    <string name="lib_show_all">Semak imbas semua tajuk</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Hasil untuk “%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="other">%1$d hasil</item>
+    </plurals>
+    <string name="lib_search_people_title">Orang</string>
+    <string name="lib_search_titles">Tajuk</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Melalui orang yang terlibat</string>
+    <plurals name="lib_search_people">
+        <item quantity="other">%1$d orang</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="other">%1$d tajuk</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Digit dan simbol</string>
+    <string name="lib_index_unidentified">Tidak dikenal pasti</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Tahun ini: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Tahun ini: %1$s ditonton</string>
+    <plurals name="hist_stats_films">
+        <item quantity="other">%1$d filem</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="other">%1$d episod</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="other">kira-kira %1$d jam</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Tiada lagi untuk dipadankan — dinding poster sudah terkini.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Main · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Tidak dipadankan</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Tapis</string>
+    <string name="lib_filter_n">Tapis · %1$d</string>
+    <string name="lib_filter_watch">Status tontonan</string>
+    <string name="lib_filter_any">Semua</string>
+    <string name="lib_filter_unwatched">Belum ditonton</string>
+    <string name="lib_filter_in_progress">Sedang ditonton</string>
+    <string name="lib_filter_watched">Ditonton</string>
+    <string name="lib_filter_genre">Genre</string>
+    <string name="lib_filter_decade">Dekad</string>
+    <string name="lib_filter_picture">Gambar</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d-an</string>
+    <string name="lib_filter_reset">Set semula penapis</string>
+    <plurals name="lib_filter_count">
+        <item quantity="other">%d tajuk</item>
+    </plurals>
+    <string name="lib_empty_filter">Tiada yang sepadan dengan penapis ini</string>
+    <string name="lib_empty_filter_hint">Cuba pilihan lain, atau kosongkan penapis.</string>
+    <string name="lib_filter_clear">Kosongkan penapis</string>
+    <string name="lib_recently_added">Baru ditambah</string>
+    <string name="lib_recently_added_on">Baru ditambah · %1$s</string>
+    <string name="lib_surprise">Pilih rawak</string>
+    <string name="lib_because">Kerana anda menonton %1$s</string>
+    <string name="lib_history_today">Hari ini</string>
+    <string name="lib_history_yesterday">Semalam</string>
+    <string name="lib_history_this_week">Awal minggu ini</string>
+    <string name="lib_history_this_month">Awal bulan ini</string>
+    <string name="lib_history_earlier">Sebelum itu</string>
+</resources>

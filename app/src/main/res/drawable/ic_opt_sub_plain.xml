@@ -1,0 +1,18 @@
+<!-- 字幕样式 · 阴影: the letter over its own soft shadow, down and to the right (ICON 7.0 ic_letter_a's glyph). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:translateX="1.5"
+        android:translateY="1.5">
+        <path
+            android:fillAlpha="0.3"
+            android:fillColor="#FF000000"
+            android:pathData="M4 21L10.7247 3H13.2754L20 21H17.372L15.62 15.96H8.2255L6.4477 21H4ZM8.9984 13.8514H14.8728L11.9614 5.4171 8.9984 13.8514Z" />
+    </group>
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M4 21L10.7247 3H13.2754L20 21H17.372L15.62 15.96H8.2255L6.4477 21H4ZM8.9984 13.8514H14.8728L11.9614 5.4171 8.9984 13.8514Z" />
+</vector>

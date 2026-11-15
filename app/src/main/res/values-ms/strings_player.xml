@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Main balik</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Mod 3D</string>
+    <string name="pc_projection">Unjuran</string>
+    <string name="pc_proj_flat">Rata</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Fon</string>
+    <string name="pc_colour">Warna</string>
+    <string name="pc_sub_style_plain">Bayang</string>
+    <string name="pc_sub_style_box">Kotak</string>
+    <string name="pc_second_subtitle">Sari kata kedua</string>
+    <string name="pc_sub_style_outline">Garis luar</string>
+    <string name="pc_font_default">Lalai</string>
+    <string name="pc_font_serif">Berserif</string>
+    <string name="pc_font_mono">Lebar tetap</string>
+    <string name="pc_colour_white">Putih</string>
+    <string name="pc_colour_yellow">Kuning</string>
+    <string name="pc_colour_cyan">Sian</string>
+    <string name="pc_colour_green">Hijau</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Ikut urutan</string>
+    <string name="pc_loop_all">Semua</string>
+    <string name="pc_loop_one">Satu</string>
+    <string name="pc_loop_shuffle">Rawak</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Mengambil petikan skrin…</string>
+    <string name="pc_hold_speed">Dimainkan pada 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Penanda buku</string>
+    <string name="pc_bookmarks_n">Penanda buku · %1$d</string>
+    <string name="pc_bookmark_add">Tambah penanda buku</string>
+    <string name="pc_bookmark_empty">Tandakan detik untuk kembali kepadanya dengan + di atas.</string>
+    <string name="pc_bookmark_remove">Alih keluar penanda buku pada %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Langkau intro &amp; kredit</string>
+    <string name="pc_skip_intro_set">Intro hingga %1$s</string>
+    <string name="pc_skip_outro_set">kredit %1$s terakhir</string>
+    <string name="pc_skip_mark_intro">Intro tamat di sini</string>
+    <string name="pc_skip_mark_outro">Kredit bermula di sini</string>
+    <string name="pc_skip_clear">Kosongkan intro &amp; kredit</string>
+    <string name="pc_skip_intro_hint">Setiap episod rancangan ini selepas ini bermula di sini</string>
+    <string name="pc_skip_outro_hint">Setiap episod rancangan ini selepas ini beralih ke episod seterusnya dari sini</string>
+    <string name="vid_intro_skipped">Intro dilangkau</string>
+    <string name="vid_watch_intro">Tontonnya</string>
+    <string name="vid_chapter_intro">Pembukaan · %1$s lagi</string>
+    <string name="vid_chapter_outro">Kredit · %1$s lagi</string>
+    <string name="vid_skip">Langkau</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Format tidak diketahui</string>
+    <string name="pc_track_unknown">Trek tidak diketahui</string>
+    <string name="pc_track_n">Trek %1$d</string>
+    <string name="pc_track_external_sub">Sari kata luaran</string>
+    <string name="pc_track_external">Luaran</string>
+    <string name="pc_track_embedded">Terbenam</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">Perkakasan</string>
+    <string name="pc_dec_software">Perisian</string>
+    <string name="pc_dec_audio">Audio</string>
+    <string name="pc_frames">Tercicir %1$d / dipaparkan %2$d</string>
+    <string name="pc_env_dim">Malapkan semasa bermain</string>
+    <string name="pc_env_viewing_light">Kecerahan semasa main balik</string>
+    <string name="pc_env_dim_hint">Gunakan tahap kecerahan pilihan semasa menonton. Lampu kembali terang apabila anda menjeda main balik atau membuka kawalan.</string>
+    <string name="pc_env_lights">Lampu</string>
+    <string name="pc_env_lights_hint">Lampu tempat itu sendiri, hidup atau mati; bila hidup, “Malapkan semasa bermain” masih memalapkannya semasa filem</string>
+    <string name="pc_env_seat">Tempat duduk</string>
+    <string name="pc_seat_center">Tengah</string>
+    <string name="pc_seat_left">Kiri</string>
+    <string name="pc_seat_right">Kanan</string>
+    <string name="pc_seat_left_window">Tingkap kiri</string>
+    <string name="pc_seat_right_window">Tingkap kanan</string>
+    <string name="pc_env_screen">Filem dan sari kata</string>
+    <string name="pc_env_screen_hint">Filem dan sari kata dipaparkan pada skrin ruang ini.</string>
+    <string name="pc_env_glow">Cahaya skrin</string>
+    <string name="pc_env_glow_hint">Warna filem menyinari bingkai skrin dan permukaan di sekitarnya.</string>
+    <string name="pc_env_screen_none">Tiada skrin di sini — filem kekal dalam tetingkap</string>
+    <string name="pc_env_has_screen">Ada skrin</string>
+    <string name="pc_env_entering">Membuka %1$s…</string>
+    <string name="pc_env_failed">%1$s tidak dapat dimuatkan</string>
+    <string name="pc_lang_simplified">Cina Ringkas</string>
+    <string name="pc_lang_traditional">Cina Tradisional</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="other">%d lagi trek bunyi</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Fail ini mempunyai bunyi yang tidak dapat dibaca oleh pemain terbina dalam — mainkannya dalam mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="other">%d fail sari kata bergambar</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS di sebelah filem — pemain terbina dalam tidak dapat melukisnya; mainkannya dalam mpv</string>
+    <string name="pc_pano_format">Format panorama</string>
+    <string name="pc_pano_equirect">Ekuirekt</string>
+    <string name="pc_pano_fisheye">Mata ikan</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Peta kiub</string>
+    <string name="pc_pano_dual">Mata ikan berkembar</string>
+    <string name="pc_pano_direction">Arah</string>
+    <string name="pc_pano_turn_left">Pusing kiri</string>
+    <string name="pc_pano_recenter">Tengahkan semula</string>
+    <string name="pc_pano_turn_right">Pusing kanan</string>
+    <string name="pc_pano_turn_hint">Memusingkan gambar 30° di sekeliling anda — melihat apa yang di belakang anda, tanpa berpaling</string>
+    <string name="pc_pano_recenter_hint">Meletakkan bahagian hadapan filem di tempat anda sedang melihat</string>
+    <string name="pc_pano_own">Jejaring fail</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Video ruang</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, dua pandangan (mata kiri ditunjukkan)</string>
+    <string name="pc_info_camera">%1$d° merentas · jarak %2$d mm</string>
+    <string name="pc_info_right_first">mata kanan dahulu</string>
+    <string name="pc_audio_field">Ambisonik</string>
+    <string name="vid_pano_guess_360">Ini kelihatan seperti video 360°</string>
+    <string name="vid_pano_guess_360_3d">Ini kelihatan seperti video 3D 360°</string>
+    <string name="vid_pano_guess_180_3d">Ini kelihatan seperti video 3D 180° (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Ini kelihatan seperti video mata ikan</string>
+    <string name="vid_pano_guess_fisheye_3d">Ini kelihatan seperti video mata ikan 3D 180°</string>
+    <string name="vid_pano_guess_dual">Ini kelihatan seperti rakaman asal dua kanta kamera 360</string>
+    <string name="vid_pano_guess_play">Main sebagai panorama</string>
+    <string name="vid_pano_guess_no">Bukan</string>
+    <string name="pc_pano_tilt_up">Atas</string>
+    <string name="pc_pano_tilt_down">Bawah</string>
+    <string name="pc_pano_roll_left">Guling kiri</string>
+    <string name="pc_pano_roll_right">Guling kanan</string>
+    <string name="pc_pano_level">Ratakan</string>
+    <string name="pc_pano_level_hint">Untuk ufuk yang senget: 5° setiap tekan, disimpan untuk filem ini</string>
+</resources>

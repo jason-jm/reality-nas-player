@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Eliminați din favorite</string>
+    <string name="det_up_next">Urmează</string>
+    <string name="det_section_main">Principal</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Sezonul %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Marcați toate ca vizionate?</string>
+    <string name="det_mark_all_unwatched_q">Marcați toate ca nevizionate?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d fișier va fi marcat ca vizionat.</item>
+        <item quantity="few">%1$d fișiere vor fi marcate ca vizionate.</item>
+        <item quantity="other">%1$d de fișiere vor fi marcate ca vizionate.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d dintre ele este început și își va pierde poziția.</item>
+        <item quantity="few">%1$d dintre ele sunt începute și își vor pierde poziția.</item>
+        <item quantity="other">%1$d dintre ele sunt începute și își vor pierde poziția.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Progresul vizionării pentru %1$d fișier va fi șters.</item>
+        <item quantity="few">Progresul vizionării pentru %1$d fișiere va fi șters.</item>
+        <item quantity="other">Progresul vizionării pentru %1$d de fișiere va fi șters.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Sursă</string>
+    <string name="fix_scope">Se aplică la</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Tot cardul (%1$d fișier)</item>
+        <item quantity="few">Tot cardul (%1$d fișiere)</item>
+        <item quantity="other">Tot cardul (%1$d de fișiere)</item>
+    </plurals>
+    <string name="fix_scope_file">Doar acest fișier</string>
+    <string name="fix_query_hint">Titlu — cele în engleză merg cel mai bine</string>
+    <string name="fix_hint">Alegeți intrarea corectă pentru a corecta potrivirea</string>
+    <string name="fix_applying">Se aplică…</string>
+    <string name="fix_failed">Intrarea nu a putut fi aplicată. Verificați rețeaua și încercați din nou.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Serial</string>
+    <string name="fix_current">Actual</string>
+    <string name="fix_no_results_title">Nicio intrare potrivită</string>
+    <string name="fix_no_results_anilist">Încercați altă grafie — numele în romaji sau în engleză se potrivesc cel mai bine.</string>
+    <string name="fix_error_title">Căutarea nu s-a încheiat</string>
+    <string name="fix_error_body">Verificați rețeaua și încercați din nou.</string>
+    <string name="fix_retry">Încercați din nou</string>
+    <string name="fix_confirm_title">Schimbați în „%1$s”?</string>
+    <string name="fix_confirm_title_year">Schimbați în „%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">%1$d fișier de pe acest card va folosi de acum această intrare, iar identificările ulterioare nu o vor schimba.</item>
+        <item quantity="few">Toate cele %1$d fișiere de pe acest card vor folosi de acum această intrare, iar identificările ulterioare nu o vor schimba.</item>
+        <item quantity="other">Toate cele %1$d de fișiere de pe acest card vor folosi de acum această intrare, iar identificările ulterioare nu o vor schimba.</item>
+    </plurals>
+    <string name="fix_confirm_file">Doar „%1$s” va folosi de acum această intrare, iar identificările ulterioare nu o vor schimba.</string>
+    <string name="fix_apply">Aplicați</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">Încă %d</item>
+        <item quantity="few">Încă %d</item>
+        <item quantity="other">Încă %d</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">Încă %d titlu în biblioteca dvs.</item>
+        <item quantity="few">Încă %d titluri în biblioteca dvs.</item>
+        <item quantity="other">Încă %d de titluri în biblioteca dvs.</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d titlu în biblioteca dvs.</item>
+        <item quantity="few">%d titluri în biblioteca dvs.</item>
+        <item quantity="other">%d de titluri în biblioteca dvs.</item>
+    </plurals>
+    <string name="det_similar">Titluri similare</string>
+    <string name="det_episode_copy">%1$s · altă copie</string>
+    <string name="det_season_progress">%1$d din %2$d vizionate</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Vizionat (%1$d)</item>
+        <item quantity="few">Toate cele %1$d vizionate</item>
+        <item quantity="other">Toate cele %1$d vizionate</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versiuni</string>
+    <string name="det_series">În această serie</string>
+    <string name="lib_series">Serie</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d titlu</item>
+        <item quantity="few">%d titluri</item>
+        <item quantity="other">%d de titluri</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d titlu în această bibliotecă, în ordinea apariției</item>
+        <item quantity="few">%d titluri în această bibliotecă, în ordinea apariției</item>
+        <item quantity="other">%d de titluri în această bibliotecă, în ordinea apariției</item>
+    </plurals>
+</resources>

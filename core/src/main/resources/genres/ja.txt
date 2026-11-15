@@ -1,0 +1,36 @@
+# Genre names in Japanese — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = アクション
+Adventure = アドベンチャー
+Animation = アニメーション
+Comedy = コメディ
+Crime = 犯罪
+Documentary = ドキュメンタリー
+Drama = ドラマ
+Family = ファミリー
+Fantasy = ファンタジー
+History = 履歴
+Horror = ホラー
+Music = 音楽
+Mystery = 謎
+Romance = ロマンス
+Science Fiction = サイエンスフィクション
+Sci-Fi = サイエンスフィクション
+TV Movie = テレビ映画
+Thriller = スリラー
+War = 戦争
+Western = 西洋
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = エッチ
+Hentai = 成人向け
+Mahou Shoujo = 魔法少女
+Mecha = ロボット
+Psychological = サイコ
+Slice of Life = 日常
+Sports = スポーツ
+Supernatural = 超常現象
+Politics = 政治

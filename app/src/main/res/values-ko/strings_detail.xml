@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">즐겨찾기에서 삭제</string>
+    <string name="det_up_next">다음 재생</string>
+    <string name="det_section_main">본편</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">시즌 %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">모두 시청함으로 표시할까요?</string>
+    <string name="det_mark_all_unwatched_q">모두 안 봄으로 표시할까요?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="other">파일 %1$d개가 시청함으로 표시돼요.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="other">그중 %1$d개는 보던 중이라 재생 위치가 사라져요.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="other">파일 %1$d개의 시청 진행 상황이 지워져요.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">소스</string>
+    <string name="fix_scope">적용 대상</string>
+    <plurals name="fix_scope_card">
+        <item quantity="other">카드 전체(파일 %1$d개)</item>
+    </plurals>
+    <string name="fix_scope_file">이 파일만</string>
+    <string name="fix_query_hint">제목 — 영어 제목이 가장 잘 맞아요</string>
+    <string name="fix_hint">올바른 항목을 골라 매칭을 수정하세요</string>
+    <string name="fix_applying">적용 중…</string>
+    <string name="fix_failed">이 항목을 적용하지 못했어요. 네트워크를 확인하고 다시 시도하세요.</string>
+    <string name="fix_kind_movie">영화</string>
+    <string name="fix_kind_show">시리즈</string>
+    <string name="fix_current">현재</string>
+    <string name="fix_no_results_title">일치하는 항목이 없어요</string>
+    <string name="fix_no_results_anilist">다른 표기로 시도해 보세요. 로마자나 영어 이름이 가장 잘 맞아요.</string>
+    <string name="fix_error_title">검색을 완료하지 못했어요</string>
+    <string name="fix_error_body">네트워크를 확인하고 다시 시도하세요.</string>
+    <string name="fix_retry">다시 시도</string>
+    <string name="fix_confirm_title">‘%1$s’ 항목으로 변경할까요?</string>
+    <string name="fix_confirm_title_year">‘%1$s’(%2$d) 항목으로 변경할까요?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="other">이 카드의 파일 %1$d개 모두 앞으로 이 항목을 사용하며, 이후 스크래핑에서도 바뀌지 않아요.</item>
+    </plurals>
+    <string name="fix_confirm_file">앞으로 ‘%1$s’ 파일만 이 항목을 사용하며, 이후 스크래핑에서도 바뀌지 않아요.</string>
+    <string name="fix_apply">적용</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="other">%d편 더</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="other">라이브러리에 작품 %d편 더 있음</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="other">라이브러리의 작품 %d편</item>
+    </plurals>
+    <string name="det_similar">비슷한 작품</string>
+    <string name="det_episode_copy">%1$s · 다른 사본</string>
+    <string name="det_season_progress">%2$d화 중 %1$d화 시청</string>
+    <plurals name="det_season_done">
+        <item quantity="other">%1$d화 모두 시청함</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">버전</string>
+    <string name="det_series">이 시리즈의 작품</string>
+    <string name="lib_series">시리즈</string>
+    <plurals name="lib_series_count">
+        <item quantity="other">작품 %d편</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="other">이 라이브러리의 작품 %d편, 공개순</item>
+    </plurals>
+</resources>

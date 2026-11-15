@@ -1,0 +1,37 @@
+# Genre names in French — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Action
+Adventure = Aventure
+Animation = Animation
+Comedy = Comédie
+Crime = Crime
+Documentary = Documentaire
+Drama = Drame
+Family = Familial
+Fantasy = Fantastique
+History = Histoire
+Horror = Horreur
+Music = Musique
+Mystery = Mystère
+Romance = Romance
+Science Fiction = Science-Fiction
+Sci-Fi = Science-Fiction
+TV Movie = Téléfilm
+Thriller = Thriller
+War = Guerre
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psychologique
+Slice of Life = Tranche de vie
+Sports = Sport
+Supernatural = Surnaturel
+Politics = Politique
+@Science-Fiction & Fantastique = Sci-Fi, Fantasy

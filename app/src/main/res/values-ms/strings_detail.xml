@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Alih keluar daripada kegemaran</string>
+    <string name="det_up_next">Seterusnya</string>
+    <string name="det_section_main">Utama</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Musim %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Tanda semua ditonton?</string>
+    <string name="det_mark_all_unwatched_q">Tanda semua belum ditonton?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="other">%1$d fail akan ditandakan sebagai ditonton.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="other">%1$d daripadanya separuh ditonton dan akan kehilangan kedudukannya.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="other">Kemajuan tontonan %1$d fail akan dikosongkan.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Sumber</string>
+    <string name="fix_scope">Guna pada</string>
+    <plurals name="fix_scope_card">
+        <item quantity="other">Seluruh kad (%1$d fail)</item>
+    </plurals>
+    <string name="fix_scope_file">Fail ini sahaja</string>
+    <string name="fix_query_hint">Tajuk — tajuk Inggeris paling sepadan</string>
+    <string name="fix_hint">Pilih entri yang betul untuk membetulkan padanan</string>
+    <string name="fix_applying">Menggunakan…</string>
+    <string name="fix_failed">Tidak dapat menggunakan entri ini. Semak rangkaian dan cuba lagi.</string>
+    <string name="fix_kind_movie">Filem</string>
+    <string name="fix_kind_show">Siri</string>
+    <string name="fix_current">Semasa</string>
+    <string name="fix_no_results_title">Tiada entri yang sepadan</string>
+    <string name="fix_no_results_anilist">Cuba ejaan lain — nama romaji atau Inggeris paling sepadan.</string>
+    <string name="fix_error_title">Carian tidak selesai</string>
+    <string name="fix_error_body">Semak rangkaian dan cuba lagi.</string>
+    <string name="fix_retry">Cuba lagi</string>
+    <string name="fix_confirm_title">Tukar kepada “%1$s”?</string>
+    <string name="fix_confirm_title_year">Tukar kepada “%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="other">Kesemua %1$d fail pada kad ini akan menggunakan entri ini mulai sekarang, dan pengambilan metadata kemudian tidak akan mengubahnya.</item>
+    </plurals>
+    <string name="fix_confirm_file">Hanya “%1$s” akan menggunakan entri ini mulai sekarang, dan pengambilan metadata kemudian tidak akan mengubahnya.</string>
+    <string name="fix_apply">Guna</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="other">%d lagi</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="other">%d lagi tajuk dalam pustaka anda</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="other">%d tajuk dalam pustaka anda</item>
+    </plurals>
+    <string name="det_similar">Lagi seperti ini</string>
+    <string name="det_episode_copy">%1$s · salinan lain</string>
+    <string name="det_season_progress">%1$d daripada %2$d ditonton</string>
+    <plurals name="det_season_done">
+        <item quantity="other">Kesemua %1$d ditonton</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versi</string>
+    <string name="det_series">Dalam siri ini</string>
+    <string name="lib_series">Siri filem</string>
+    <plurals name="lib_series_count">
+        <item quantity="other">%d tajuk</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="other">%d tajuk dalam pustaka ini, mengikut urutan keluaran</item>
+    </plurals>
+</resources>

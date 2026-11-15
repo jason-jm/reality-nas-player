@@ -1,0 +1,1721 @@
+{
+ "Items": [
+  {
+   "Name": "Earthfall",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "f717d85df782816c2ab75423e32f740b",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2010-06-16T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E01 - Earthfall.mp4",
+   "ChannelId": null,
+   "Overview": "An object from space spreads radiation over North America. Fearing terrorism, U.S. Homeland Security agents are dispatched to investigate and contain the damage. What they discover is a forgotten relic of the old Soviet space program, whose return to Earth will have implications for the entire world.",
+   "Genres": [],
+   "CommunityRating": 4.5,
+   "RunTimeTicks": 18963580000,
+   "ProductionYear": 2010,
+   "IndexNumber": 1,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {},
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 1,
+    "IsFavorite": false,
+    "LastPlayedDate": "2025-10-25T21:02:52.734Z",
+    "Played": true,
+    "Key": "fixture-item-01",
+    "ItemId": "f717d85df782816c2ab75423e32f740b"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "745a7a9a17c6332bda53814ec489f281"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "745a7a9a17c6332bda53814ec489f281": "NDC=PB~8t7$%xDxZ=]-SxZI;afxDjERkWDa}s:of",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "The Man From Mars",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "b80159226d16576d4c0613750e27c072",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2010-06-25T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E02 - The Man From Mars.mp4",
+   "ChannelId": null,
+   "Overview": "Hired Mars expert Dr. Zachary Walzer (Jack Haley) fights to prove the validity of the Mars story. Can he convince the government to mount a manned mission to Mars? Agent in charge Tom Taylor (James Rich) faces pressure from both the Canadians and his own superiors, and has to make a call.",
+   "Genres": [],
+   "CommunityRating": 4,
+   "RunTimeTicks": 23218860000,
+   "ProductionYear": 2010,
+   "IndexNumber": 2,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {},
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlayedPercentage": 22.686499897066437,
+    "PlaybackPositionTicks": 5267546650,
+    "PlayCount": 16,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T15:40:53.6365221Z",
+    "Played": false,
+    "Key": "fixture-item-02",
+    "ItemId": "b80159226d16576d4c0613750e27c072"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "a0d3c8ab7b4a2967731287cfa1418f04"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "a0d3c8ab7b4a2967731287cfa1418f04": "NWF6%{Q*RN%Mi]%NV{IANLIUR-f,MboztmkCoLj?",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Alone in the Night",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "173a94d516c79947da16ba9b1b84a4e0",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2011-03-28T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E03 - Alone in the Night.mp4",
+   "ChannelId": null,
+   "Overview": "Now quarantined to the Calgary base for two weeks, Taylor and his team have bought time to get answers from the supposed Martian cosmonaut. But who can get him to talk?",
+   "Genres": [],
+   "CommunityRating": 4,
+   "RunTimeTicks": 19063803170,
+   "ProductionYear": 2011,
+   "IndexNumber": 3,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {},
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 2,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T15:40:44.8996409Z",
+    "Played": true,
+    "Key": "fixture-item-03",
+    "ItemId": "173a94d516c79947da16ba9b1b84a4e0"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "74624ab967910eab41a8d91fe040797c"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "74624ab967910eab41a8d91fe040797c": "NNH2m3Nf00_39F8_Th?vngtRM{9E%gM{tSM{RO%L",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Triangular Diplomacy",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "99b215aae1784e8d3ada93001ebe686f",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2011-04-28T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E04 - Triangular Diplomacy.mp4",
+   "ChannelId": null,
+   "Overview": "As the media begins to question the story about the crashed satellite, Secretary McClellan (Einar Gunn) starts to play hardball with the Russians in pursuit of his own truth. But everything hinges on what Yuri (Aleksandr Evtushenko), the frightened boy at the center of it all, might have to say...",
+   "Genres": [
+    "Drama",
+    "Sci-Fi"
+   ],
+   "CommunityRating": 5,
+   "RunTimeTicks": 20571520000,
+   "ProductionYear": 2011,
+   "IndexNumber": 4,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {
+    "Imdb": "tt1834645"
+   },
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Drama",
+     "Id": "090eac6e9de4fe1fbc194e5b96691277"
+    },
+    {
+     "Name": "Sci-Fi",
+     "Id": "d3bf560475125eed829c435f3d8329e3"
+    }
+   ],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlayedPercentage": 5.138937151945991,
+    "PlaybackPositionTicks": 1057157484,
+    "PlayCount": 3,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T16:02:59.0808878Z",
+    "Played": false,
+    "Key": "fixture-item-04",
+    "ItemId": "99b215aae1784e8d3ada93001ebe686f"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "9ce442af79c99c03498d06d4fb3264f7"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "9ce442af79c99c03498d06d4fb3264f7": "NABfbC_N~Xogtl~C-o%1wtjFt7%14.xbIn%MsqNa",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Sea Change",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "0a11d3edf0c96febf345553f3cd699dc",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2011-10-05T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E05 - Sea Change.mp4",
+   "ChannelId": null,
+   "Overview": "When an unannounced visitor breaks in to the Calgary base with just days left in the Quarantine, tensions are higher than ever. The fate of Yuri and everyone on Tom Taylor’s team is about to be decided in this, the penultimate episode of the first season.",
+   "Genres": [
+    "Drama",
+    "Sci-Fi"
+   ],
+   "CommunityRating": 5,
+   "RunTimeTicks": 24161239999,
+   "ProductionYear": 2011,
+   "IndexNumber": 5,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {
+    "Imdb": "tt1865903"
+   },
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Drama",
+     "Id": "090eac6e9de4fe1fbc194e5b96691277"
+    },
+    {
+     "Name": "Sci-Fi",
+     "Id": "d3bf560475125eed829c435f3d8329e3"
+    }
+   ],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 0,
+    "IsFavorite": false,
+    "Played": false,
+    "Key": "fixture-item-05",
+    "ItemId": "0a11d3edf0c96febf345553f3cd699dc"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "ad77a739f3cff5128f8bf31842fe0f8d"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "ad77a739f3cff5128f8bf31842fe0f8d": "NRBfhH~V%2xa%1of?GxaM|WCxtt7R*IoIVWB%1xa",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "War of the World",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "a8f85ca6627e583fdc47846d0376c36f",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2011-12-13T00:00:00.0000000Z",
+   "Path": "/media/Shows/Pioneer One (2010)/Season 1/Pioneer One - S01E06 - War of the World.mp4",
+   "ChannelId": null,
+   "Overview": "Taylor prepares to go to the public with Yuri's story, and everyone discovers the consequences of their actions in the conclusion to Pioneer One's first season.",
+   "Genres": [
+    "Drama",
+    "Sci-Fi"
+   ],
+   "CommunityRating": 5,
+   "RunTimeTicks": 26749374480,
+   "ProductionYear": 2011,
+   "IndexNumber": 6,
+   "ParentIndexNumber": 1,
+   "ProviderIds": {
+    "Imdb": "tt1865902"
+   },
+   "IsFolder": false,
+   "Type": "Episode",
+   "People": [
+    {
+     "Name": "Alexandra Blatt",
+     "Id": "6efcf5394940382294edc08ecaa58cbc",
+     "Role": "Sofie Larson",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Laura Graham",
+     "Id": "bdb0ccfde85dddeeb4be4c8a8d9559b1",
+     "Role": "Jane",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Rich",
+     "Id": "f8e493a567614b8aab042b20d756dc65",
+     "Role": "Tom Taylor",
+     "Type": "Actor",
+     "PrimaryImageTag": "431424c16fd5759095d495be9d8b7761",
+     "ImageBlurHashes": {
+      "Primary": {
+       "431424c16fd5759095d495be9d8b7761": "dIG*{E?vEgD%~WsoI:WA0KIUs:j[NGf+NGkBW=WBs:ae"
+      }
+     }
+    },
+    {
+     "Name": "Einar Gunn",
+     "Id": "5a6aa9387851bbb474847f74a1e0a46f",
+     "Role": "Secretary McClellan",
+     "Type": "Actor",
+     "PrimaryImageTag": "175144c1f52ad745327fc9d1a3e73a81",
+     "ImageBlurHashes": {
+      "Primary": {
+       "175144c1f52ad745327fc9d1a3e73a81": "dKCrf|}]5Q9t}k$$I:R*5WEMxF$%5QIoogbcNFR*oJR+"
+      }
+     }
+    },
+    {
+     "Name": "Jack Haley",
+     "Id": "0dc85861e3bb3165fefb9af1b8090892",
+     "Role": "Dr. Zachary Walzer",
+     "Type": "Actor",
+     "PrimaryImageTag": "480f93e4046edf33a07ec088ed4831cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "480f93e4046edf33a07ec088ed4831cf": "dWDJ*c%2cZT1_NoHk?S$tRada_j?M|WXjEsmNFa#oLn$"
+      }
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Drama",
+     "Id": "090eac6e9de4fe1fbc194e5b96691277"
+    },
+    {
+     "Name": "Sci-Fi",
+     "Id": "d3bf560475125eed829c435f3d8329e3"
+    }
+   ],
+   "ParentBackdropItemId": "9bd5926326d651153928e0d11c6ee7cb",
+   "ParentBackdropImageTags": [
+    "970367b9a680d18ccf8502ae3e111b92"
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 0,
+    "IsFavorite": false,
+    "Played": false,
+    "Key": "fixture-item-06",
+    "ItemId": "a8f85ca6627e583fdc47846d0376c36f"
+   },
+   "SeriesName": "Pioneer One",
+   "SeriesId": "9bd5926326d651153928e0d11c6ee7cb",
+   "SeasonId": "c83a32158113f6961530bbc1bcf916a7",
+   "SeriesPrimaryImageTag": "b2dfa2770ea69e5bd933b4bf2784597a",
+   "SeasonName": "Season 1",
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "bc4cc60d1894475ddbaa614dcf765b13"
+   },
+   "BackdropImageTags": [],
+   "ImageBlurHashes": {
+    "Primary": {
+     "bc4cc60d1894475ddbaa614dcf765b13": "NdRyi-%LD%?HIU%L~qoKV@j[axt7DiWCRkaxWXWB",
+     "b2dfa2770ea69e5bd933b4bf2784597a": "dQMW;*%M+^}FcDTJwKv~-otQM{aK}txFR6V@SynirrRQ"
+    },
+    "Backdrop": {
+     "970367b9a680d18ccf8502ae3e111b92": "W54.G1oN4nkljEIB%LWCM{t6oLRj4TWU.8i{ozx]4ot6?aIVNG%M"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "The Boy in the Plastic Bubble",
+   "OriginalTitle": "The Boy in the Plastic Bubble",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "edb39341c5039551a5157e51fe4a3364",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "1976-11-12T00:00:00.0000000Z",
+   "Path": "/media/Movies/Archive.org/The Boy in the Plastic Bubble (1976)/The Boy in the Plastic Bubble (1976).mp4",
+   "OfficialRating": "PG",
+   "ChannelId": null,
+   "Overview": "Tod Lubitch is born with a deficient immune system. As such, he must spend the rest of his life in a completely sterile environment. His room is completely hermetically sealed against bacteria and virus, his food is specially prepared, and his only human contact comes in the form of gloved hands. The movie follows his life into a teenager.",
+   "Genres": [
+    "TV Movie",
+    "Drama"
+   ],
+   "CommunityRating": 5.7,
+   "RunTimeTicks": 55842000000,
+   "ProductionYear": 1976,
+   "ProviderIds": {
+    "Imdb": "tt0074236",
+    "Tmdb": "9878"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "John Travolta",
+     "Id": "8f2ff3eded0cd52c5e19db509182fc64",
+     "Role": "Tod Lubitch",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Glynnis O'Connor",
+     "Id": "e23c037a22e094eacb8f9fc018ec8fec",
+     "Role": "Gina Biggs",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Robert Reed",
+     "Id": "94fd0401890e5beb461a1cc71ea1b97e",
+     "Role": "Johnny Lubitch",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Diana Hyland",
+     "Id": "76fd40cd14c517fef4eb627de554f36e",
+     "Role": "Mickey Lubitch",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Karen Morrow",
+     "Id": "3cb15b6c05b9c793a40410709d1d7ed4",
+     "Role": "Martha Biggs",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Howard Platt",
+     "Id": "ac0b40686fdeaf49b7e79bbeb131dc5e",
+     "Role": "Neighbor",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Buzz Aldrin",
+     "Id": "8afa928ebf393ebd9ea6021661863e9e",
+     "Role": "Himself",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Ralph Bellamy",
+     "Id": "a3470fe4874aaf20cd86c2f7256a2e51",
+     "Role": "Dr. Gunther",
+     "Type": "Actor"
+    },
+    {
+     "Name": "John Friedrich",
+     "Id": "b456aed32f2b88adcc85ac0f4228228f",
+     "Role": "Roy Slater",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Kelly Ward",
+     "Id": "c341015b2e71b2d8fbbc70eb5e5b934f",
+     "Role": "Tom Shuster",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Skip Lowell",
+     "Id": "5d0c3856ac278ccfe8762e516125f984",
+     "Role": "Bruce Shuster",
+     "Type": "Actor"
+    },
+    {
+     "Name": "John Megna",
+     "Id": "4fc5e3364813da91ecec75ae824d6718",
+     "Role": "Smith",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Vernee Watson-Johnson",
+     "Id": "7323334aa1a52f72096124441896ebfe",
+     "Role": "Gwen",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Darrell Zwerling",
+     "Id": "3f43d73b174cc6d54e462786094d1b74",
+     "Role": "Mr. Brister",
+     "Type": "Actor"
+    },
+    {
+     "Name": "P. J. Soles",
+     "Id": "e3ddfb3a7bd9a033dc0d059432a2d960",
+     "Role": "Deborah",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Randal Kleiser",
+     "Id": "0842f885501c368e073c0f6b080e7b29",
+     "Role": "Director",
+     "Type": "Director",
+     "PrimaryImageTag": "c3e2b98504609b616e2831f20e1c7933",
+     "ImageBlurHashes": {
+      "Primary": {
+       "c3e2b98504609b616e2831f20e1c7933": "dSH2mBae6Bo~}ko#WBnhGcof-VkDM{adxZoftSW=r;jY"
+      }
+     }
+    },
+    {
+     "Name": "Douglas Day Stewart",
+     "Id": "d21ce6778a1846ab39db162fcc480da8",
+     "Role": "Writer",
+     "Type": "Writer",
+     "PrimaryImageTag": "b3be11c0c3b6fceb15da6c679a54e27c",
+     "ImageBlurHashes": {
+      "Primary": {
+       "b3be11c0c3b6fceb15da6c679a54e27c": "d#L;%8WYx]%g~VoJx]t7WVWBV@j[XTf+M{V@t7ofjYWB"
+      }
+     }
+    },
+    {
+     "Name": "Joe Morgenstern",
+     "Id": "8184218c34189884239677980f5c63b0",
+     "Role": "Story",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Cindy Dunne",
+     "Id": "24f8dd5b7d9856193e312fefde234082",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Joel Thurm",
+     "Id": "15c301cede6590cd85696200d5209732",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Leonard Goldberg",
+     "Id": "dfc03248a8a3f4717c11c922c3606e5d",
+     "Role": "Executive Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Aaron Spelling",
+     "Id": "03e877d2e6e507f3a87ee83ab5adceb4",
+     "Role": "Executive Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Shelley Hull",
+     "Id": "babcc603254b5672e336646e377d5e5d",
+     "Role": "Associate Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "TV Movie",
+     "Id": "76fc2218a80a6ca3c9818ad49e292dc9"
+    },
+    {
+     "Name": "Drama",
+     "Id": "090eac6e9de4fe1fbc194e5b96691277"
+    }
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 30,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T16:13:43.0605853Z",
+    "Played": false,
+    "Key": "fixture-item-07",
+    "ItemId": "edb39341c5039551a5157e51fe4a3364"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "a131fdbdca9ddadcda7d3c86756c6b67",
+    "Logo": "66c2aaf2789e62fd7c5f40dcaec916ac",
+    "Thumb": "e5c0066328b2f7342e6fffd4499e3413"
+   },
+   "BackdropImageTags": [
+    "408be2dfc34f1ce61108cf049a5aa82e"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "408be2dfc34f1ce61108cf049a5aa82e": "WJECF8%f%z-AaKX9JGR5E1s.nOS$A1Rif5W;n#WE.ToyxuWBadkC"
+    },
+    "Primary": {
+     "a131fdbdca9ddadcda7d3c86756c6b67": "dfEo3c%K9cIW^#t6aLnj%JWVw^$%~9t6M}ni^gxsR.Rk"
+    },
+    "Logo": {
+     "66c2aaf2789e62fd7c5f40dcaec916ac": "NLI5PcxuM{ofxuof01RjWCj[M{oft6ayxuoft7WB"
+    },
+    "Thumb": {
+     "e5c0066328b2f7342e6fffd4499e3413": "WFG8P}^+s=xG9a$x=S9aI@oyI[%KMxoHIUE2kD-n%N~A-oIan|xU"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Caminandes: Gran Dillama",
+   "OriginalTitle": "Caminandes: Gran Dillama",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "1056b7d34f0fa0b8ce635428e8b27f37",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2013-11-22T00:00:00.0000000Z",
+   "Path": "/media/Movies/Blender Foundation/Caminandes Gran Dillama/Caminandes Gran Dillama - 1080p.mp4",
+   "ChannelId": null,
+   "Overview": "A young llama named Koro discovers that the grass is always greener on the other side (of the fence).",
+   "Genres": [
+    "Animation",
+    "Comedy",
+    "Family"
+   ],
+   "CommunityRating": 7.3,
+   "RunTimeTicks": 1460416670,
+   "ProductionYear": 2013,
+   "ProviderIds": {
+    "Imdb": "tt3434172",
+    "Tmdb": "253774",
+    "TmdbCollection": "339473"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "Pablo Vazquez",
+     "Id": "fe794e7cc97036ef19cfcfef8887f7ae",
+     "Role": "Director",
+     "Type": "Director"
+    },
+    {
+     "Name": "Beorn Leonard",
+     "Id": "d3c4ba8412e63f36adf1a1aa0ceb4781",
+     "Role": "Writer",
+     "Type": "Writer"
+    },
+    {
+     "Name": "Francesco Siddi",
+     "Id": "07f3ca2b62c4a853e449e15f033ea957",
+     "Role": "Producer",
+     "Type": "Producer"
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Animation",
+     "Id": "074229225b7254292f131f9f49f8dcd6"
+    },
+    {
+     "Name": "Comedy",
+     "Id": "08d31605d366d63a7a924f944b4417f1"
+    },
+    {
+     "Name": "Family",
+     "Id": "ccbd8d9008aab2b5e749e1cc4bc458a4"
+    }
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 8,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T16:30:51.2314429Z",
+    "Played": true,
+    "Key": "fixture-item-08",
+    "ItemId": "1056b7d34f0fa0b8ce635428e8b27f37"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "bab495667f5f34d1bdec8fc00c1195ce"
+   },
+   "BackdropImageTags": [
+    "73ea9ef0c55bb163556330fd6fe97372"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "73ea9ef0c55bb163556330fd6fe97372": "WuKU1oxaW=xuocxtpykCWCs:oJj]yEkDn$e:WEbb?Ha}oeofS4bI"
+    },
+    "Primary": {
+     "bab495667f5f34d1bdec8fc00c1195ce": "d#NTUO%fbG%2yskXj]kWo~n*jabbtQjEbFj[OYWBe.ae"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Caminandes: Llama Drama",
+   "OriginalTitle": "Caminandes: Llama Drama",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "c541e7545e58b28cd4d0da7aac89d7e8",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2013-02-10T00:00:00.0000000Z",
+   "Path": "/media/Movies/Blender Foundation/Caminandes Llama Drama/Caminandes Llama Drama (2013).mp4",
+   "ChannelId": null,
+   "Overview": "Koro wants to get to the other side of the road.",
+   "Genres": [
+    "Animation",
+    "Family",
+    "Comedy"
+   ],
+   "CommunityRating": 6.9,
+   "RunTimeTicks": 900005440,
+   "ProductionYear": 2013,
+   "ProviderIds": {
+    "Imdb": "tt6059374",
+    "Tmdb": "253777",
+    "TmdbCollection": "339473"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "Pablo Vazquez",
+     "Id": "fe794e7cc97036ef19cfcfef8887f7ae",
+     "Role": "Director",
+     "Type": "Director"
+    },
+    {
+     "Name": "Francesco Siddi",
+     "Id": "07f3ca2b62c4a853e449e15f033ea957",
+     "Role": "Producer",
+     "Type": "Producer"
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Animation",
+     "Id": "074229225b7254292f131f9f49f8dcd6"
+    },
+    {
+     "Name": "Family",
+     "Id": "ccbd8d9008aab2b5e749e1cc4bc458a4"
+    },
+    {
+     "Name": "Comedy",
+     "Id": "08d31605d366d63a7a924f944b4417f1"
+    }
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 7,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T15:27:48.0327013Z",
+    "Played": true,
+    "Key": "fixture-item-09",
+    "ItemId": "c541e7545e58b28cd4d0da7aac89d7e8"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "8eda7db1cc18d804f4aa9a2c0c377b52"
+   },
+   "BackdropImageTags": [
+    "7b395badd25ae09ea8d4344176455f97"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "7b395badd25ae09ea8d4344176455f97": "WzJj}5t6V@xaazs:_NkCRkofayofyCbIjsayjZkBxZs.oeayayoL"
+    },
+    "Primary": {
+     "8eda7db1cc18d804f4aa9a2c0c377b52": "dqMZ8it8S3-T_NbIoKbb-:s.aeWX-mn$W;oetkn%jubb"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Caminandes: Llamigos",
+   "OriginalTitle": "Caminandes: Llamigos",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "c7eb95d14156c803611cf4a78ac469f6",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "2016-01-30T00:00:00.0000000Z",
+   "Path": "/media/Movies/Blender Foundation/Caminandes Llamigos/Caminandes Llamigos.mp4",
+   "ChannelId": null,
+   "Overview": "In this episode of the Caminandes cartoon series we learn to know our hero Koro even better! It's winter in Patagonia, food is getting scarce. Koro the Llama engages with Oti the pesky penguin in an epic fight over that last tasty berry.  This short animation film was made with Blender and funded by the subscribers of the Blender Cloud platform. Already since 2007, Blender Institute successfully combines film and media production with improving a free and open source 3D creation pipeline.",
+   "Genres": [
+    "Animation",
+    "Comedy",
+    "Family"
+   ],
+   "CommunityRating": 6.7,
+   "RunTimeTicks": 1501009980,
+   "ProductionYear": 2016,
+   "ProviderIds": {
+    "Imdb": "tt7993892",
+    "Tmdb": "406956",
+    "TmdbCollection": "339473"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "Sergey Sharybin",
+     "Id": "b62265a59a922aa29364383c6bc96c23",
+     "Role": "Director",
+     "Type": "Director"
+    },
+    {
+     "Name": "Pablo Vazquez",
+     "Id": "fe794e7cc97036ef19cfcfef8887f7ae",
+     "Role": "Director",
+     "Type": "Director"
+    },
+    {
+     "Name": "Matias Mendiola",
+     "Id": "2d9599fd2ac1ecf362ed9022abc53a01",
+     "Role": "Story",
+     "Type": "Writer"
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Animation",
+     "Id": "074229225b7254292f131f9f49f8dcd6"
+    },
+    {
+     "Name": "Comedy",
+     "Id": "08d31605d366d63a7a924f944b4417f1"
+    },
+    {
+     "Name": "Family",
+     "Id": "ccbd8d9008aab2b5e749e1cc4bc458a4"
+    }
+   ],
+   "UserData": {
+    "PlaybackPositionTicks": 0,
+    "PlayCount": 15,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T14:31:36.7841363Z",
+    "Played": true,
+    "Key": "fixture-item-10",
+    "ItemId": "c7eb95d14156c803611cf4a78ac469f6"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "855efbac73978bd01e073cc19697dfac"
+   },
+   "BackdropImageTags": [
+    "d0e1d2866a4165a206cc9f09af791ac2"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "d0e1d2866a4165a206cc9f09af791ac2": "WWGa^0%1Ej=_RkSi~AozNb$$Rkn$adNIjuofj?xV%MaKWBbcoeoe"
+    },
+    "Primary": {
+     "855efbac73978bd01e073cc19697dfac": "dmJIa|o~oz%2Tff8V@WX0fRPWBW=s:Rko}s:SPt7aeR*"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "Dracula",
+   "OriginalTitle": "Dracula",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "c002f0f88ee970cce7f138bbc925de64",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "1931-02-12T00:00:00.0000000Z",
+   "CriticRating": 94,
+   "Path": "/media/Movies/Archive.org/Dracula (1931)/Dracula (1931) [B&W].mp4",
+   "OfficialRating": "NR",
+   "ChannelId": null,
+   "Overview": "British estate agent Renfield travels to Transylvania to meet the mysterious Count Dracula, who is interested in leasing a castle in London. After Dracula enslaves Renfield and drives him to insanity, the pair sail to London together and Dracula, a secret vampire, begins preying on London socialites.",
+   "Genres": [
+    "Horror"
+   ],
+   "CommunityRating": 7.2,
+   "RunTimeTicks": 44662997880,
+   "ProductionYear": 1931,
+   "ProviderIds": {
+    "Imdb": "tt0021814",
+    "Tmdb": "138",
+    "TmdbCollection": "221539"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "Bela Lugosi",
+     "Id": "5e35154b8255d7b03f9a259bb359362f",
+     "Role": "Count Dracula",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Helen Chandler",
+     "Id": "793baaf433de8538becd91654dd28589",
+     "Role": "Mina Seward",
+     "Type": "Actor"
+    },
+    {
+     "Name": "David Manners",
+     "Id": "6b04a31c0b3f1512a45519253e9f6a35",
+     "Role": "John Harker",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Dwight Frye",
+     "Id": "d95d48831318ed4d0e3659568284a1bc",
+     "Role": "Renfield",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Edward Van Sloan",
+     "Id": "6c5e96c461933af1feaca2a3617c16a7",
+     "Role": "Professor Abraham Van Helsing",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Herbert Bunston",
+     "Id": "4448597003f7a825b499c6b4cdb86ec5",
+     "Role": "Dr. Jack Seward",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Frances Dade",
+     "Id": "d225deb04a58a595b83d6dae6cb7e40a",
+     "Role": "Lucy Weston",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Joan Standing",
+     "Id": "953518b6d443f0d6956fd166d1f159ce",
+     "Role": "Nurse Briggs",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Charles K. Gerrard",
+     "Id": "f0a671c9ac66f7efb3a2cc157d207338",
+     "Role": "Martin",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Anna Bakacs",
+     "Id": "33f2a2052f32ec8ba4ed2b2efea2044c",
+     "Role": "Innkeeper's Daughter  (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Bunny Beatty",
+     "Id": "cbf0b469de1e041735f225305409a0b2",
+     "Role": "Flower Girl (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Nicholas Bela",
+     "Id": "a5d4af4de0ae041d31ef594ae912388e",
+     "Role": "Coach Passenger (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Daisy Belmore",
+     "Id": "7d3f5e4ff79cdd83b558264b3661241b",
+     "Role": "Coach Passenger (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "William A. Boardway",
+     "Id": "68ae50bc1c0f40352bce1e3f4ead2edb",
+     "Role": "Concertgoer Outside Theatre (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Barbara Bozoky",
+     "Id": "564aee146f8aff2d1412d90dbae0c077",
+     "Role": "Innkeeper's Wife (uncredited)",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Tod Browning",
+     "Id": "b0dab044aa424d3d3e656ebbb7467f1a",
+     "Role": "Producer",
+     "Type": "Director",
+     "PrimaryImageTag": "6261681b3c57ea9385420d7947aa6d3e",
+     "ImageBlurHashes": {
+      "Primary": {
+       "6261681b3c57ea9385420d7947aa6d3e": "dXLg^Z_3%MM{-;M{xuof?bayM{t7~qt7ofayj[M{IUt7"
+      }
+     }
+    },
+    {
+     "Name": "Tod Browning",
+     "Id": "b0dab044aa424d3d3e656ebbb7467f1a",
+     "Role": "Director",
+     "Type": "Writer",
+     "PrimaryImageTag": "6261681b3c57ea9385420d7947aa6d3e",
+     "ImageBlurHashes": {
+      "Primary": {
+       "6261681b3c57ea9385420d7947aa6d3e": "dXLg^Z_3%MM{-;M{xuof?bayM{t7~qt7ofayj[M{IUt7"
+      }
+     }
+    },
+    {
+     "Name": "Bram Stoker",
+     "Id": "e91f54a44a460ab7127262850a03effd",
+     "Role": "Novel",
+     "Type": "Writer",
+     "PrimaryImageTag": "01d2cfdf00e280da363353849e10d3d3",
+     "ImageBlurHashes": {
+      "Primary": {
+       "01d2cfdf00e280da363353849e10d3d3": "dOELmNM{0L-p~BWCIot6E2xaxaIoI=jYxZogM{R*%2xa"
+      }
+     }
+    },
+    {
+     "Name": "Hamilton Deane",
+     "Id": "454a5392d35b4b2dec28784b255e8e67",
+     "Role": "Theatre Play",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "John L. Balderston",
+     "Id": "22bf8d51c160599d8ddaeb4ff48f406c",
+     "Role": "Theatre Play",
+     "Type": "Writer",
+     "PrimaryImageTag": "494b55ad880e1ba53483238155b77349",
+     "ImageBlurHashes": {
+      "Primary": {
+       "494b55ad880e1ba53483238155b77349": "dYF68|?b00D%-;t7M{WB00IU%MxuD%Rjt7ayRjt7%Mof"
+      }
+     }
+    },
+    {
+     "Name": "Dudley Murphy",
+     "Id": "d07b2599e155d33bcfc576391d94e7f1",
+     "Role": "Dialogue",
+     "Type": "Writer",
+     "PrimaryImageTag": "aa91fe8a5185db42258bfd43eec0bedc",
+     "ImageBlurHashes": {
+      "Primary": {
+       "aa91fe8a5185db42258bfd43eec0bedc": "dAD]o8~qxuxuM{xu-;-;%MRjM{%M~q-;%M%MWB-;WBIU"
+      }
+     }
+    },
+    {
+     "Name": "Frederick Stephani",
+     "Id": "90f07a32efc7bbbea0716ad26ce6c74d",
+     "Role": "Writer",
+     "Type": "Writer",
+     "PrimaryImageTag": "2b29d0ba61e22a8953740dd646b854cf",
+     "ImageBlurHashes": {
+      "Primary": {
+       "2b29d0ba61e22a8953740dd646b854cf": "dKHBh^?a0Ln%~W%MRjM{0LIU%2ofM{M{oft7M|t7f6Rj"
+      }
+     }
+    },
+    {
+     "Name": "Louis Stevens",
+     "Id": "ed72f92ad8abb16507b35481de346dfa",
+     "Role": "Writer",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Garrett Fort",
+     "Id": "2abfd61d7f6a1a43e5b83148e3831408",
+     "Role": "Screenplay",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Louis Bromfield",
+     "Id": "171f82f307d2486ab9d345c645eb49b9",
+     "Role": "Writer",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Max Cohen",
+     "Id": "0927884eb3a0755f594471c652434029",
+     "Role": "Other",
+     "Type": "Writer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Carl Laemmle Jr.",
+     "Id": "39b0478055aa120215dda9f1ad4d1d17",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Tod Browning",
+     "Id": "b0dab044aa424d3d3e656ebbb7467f1a",
+     "Role": "Producer",
+     "Type": "Producer",
+     "PrimaryImageTag": "6261681b3c57ea9385420d7947aa6d3e",
+     "ImageBlurHashes": {
+      "Primary": {
+       "6261681b3c57ea9385420d7947aa6d3e": "dXLg^Z_3%MM{-;M{xuof?bayM{t7~qt7ofayj[M{IUt7"
+      }
+     }
+    },
+    {
+     "Name": "E.M. Asher",
+     "Id": "194236fc660d3ac4f083367cd82075f0",
+     "Role": "Associate Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Horror",
+     "Id": "8b9bd9a3eddad02f2b759b4938fdd0b8"
+    }
+   ],
+   "UserData": {
+    "PlayedPercentage": 26.30949456543735,
+    "PlaybackPositionTicks": 11750609000,
+    "PlayCount": 35,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T16:04:52.1125797Z",
+    "Played": false,
+    "Key": "fixture-item-11",
+    "ItemId": "c002f0f88ee970cce7f138bbc925de64"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Primary": "50267d2518c172701a0c3e2f80a10a33",
+    "Logo": "7b8e65b5b145c8798e05ac7cc6876ddc",
+    "Thumb": "2f1cae014a49fb27e4035d411633ec80"
+   },
+   "BackdropImageTags": [
+    "545281894daf67361d92ae7e13c80d68"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "545281894daf67361d92ae7e13c80d68": "WGBg3u-;00of?bIU%MRjIU%M?bM{IUxu?bM{IUt7M{t7-;M{D%xu"
+    },
+    "Primary": {
+     "50267d2518c172701a0c3e2f80a10a33": "d#G94@%f%Lxu~pxtx[xt?aRkRjWC%LRQM|ayxuWBWBt7"
+    },
+    "Logo": {
+     "7b8e65b5b145c8798e05ac7cc6876ddc": "OwKRQZn*RmW:NcNcS3-8I?Ncs-oKn*sn1LS3j@s-o1WWoK"
+    },
+    "Thumb": {
+     "2f1cae014a49fb27e4035d411633ec80": "WqGHxX%LS$ofNINLwGoyt6xXoJR*0ijFw[WBsAocN{niRkI@R,jb"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  },
+  {
+   "Name": "The Great St. Louis Bank Robbery",
+   "OriginalTitle": "The Great St. Louis Bank Robbery",
+   "ServerId": "f0b3381645f04afb9a0e392e74b6a1b0",
+   "Id": "b74b4d5de01b4e1a5ce43511c3684ad8",
+   "Container": "mov,mp4,m4a,3gp,3g2,mj2",
+   "PremiereDate": "1959-09-10T00:00:00.0000000Z",
+   "Path": "/media/Movies/Archive.org/The Saint Louis Bank Robbery (1959)/The Saint Louis Bank Robbery (1959).mp4",
+   "OfficialRating": "NR",
+   "ChannelId": null,
+   "Overview": "Career criminals and a local youth carefully plan and rehearse the robbery of a Missouri bank.",
+   "Genres": [
+    "Crime",
+    "Thriller"
+   ],
+   "CommunityRating": 6.1,
+   "RunTimeTicks": 53268215000,
+   "ProductionYear": 1959,
+   "ProviderIds": {
+    "Imdb": "tt0052862",
+    "Tmdb": "5926"
+   },
+   "IsFolder": false,
+   "Type": "Movie",
+   "People": [
+    {
+     "Name": "Steve McQueen",
+     "Id": "af17b3c81f0b6de4fcfc95ad57c573f0",
+     "Role": "George Fowler",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Crahan Denton",
+     "Id": "c8f68ea5b4f20dea01937d120ce3cbd6",
+     "Role": "John Egan",
+     "Type": "Actor"
+    },
+    {
+     "Name": "David Clarke",
+     "Id": "3e808b22698cfa5c42e8be6f011f8b78",
+     "Role": "Gino",
+     "Type": "Actor"
+    },
+    {
+     "Name": "James Dukas",
+     "Id": "c5d87ff8c3effcdfd472649dcc0a7696",
+     "Role": "Willie the Driver",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Molly McCarthy",
+     "Id": "609ab5610e19930b8c6014e1fda4fe9a",
+     "Role": "Ann",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Martha Gable",
+     "Id": "dda5e4af74b97259ecb90aa1ca23230e",
+     "Role": "Eddie's Wife",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Larry Gerst",
+     "Id": "560308818544deb5402d659d94c3e58d",
+     "Role": "Eddie",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Boyd Williams",
+     "Id": "9cb0f418a7f280358bfbee617f49b591",
+     "Role": "W.H. Dalton",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Frank Novotny",
+     "Id": "d4f770a648dd5ac9eceac285617c8f55",
+     "Role": "Pat",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Nell Roberts",
+     "Id": "0471fed2a015bf1d7b1ab49a2472ac39",
+     "Role": "Salvation Army Woman",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Bob Holt",
+     "Id": "9ba794be9ec48209dc54d08afcecc7b9",
+     "Role": "Police Dispatcher",
+     "Type": "Actor"
+    },
+    {
+     "Name": "May Kohn",
+     "Id": "24874d1482d2223f513824129aac71c6",
+     "Role": "Bank Cashier",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Jay Elliot",
+     "Id": "7ba6d08c3029ff808ff3eb3f98817e4d",
+     "Role": "Car Salesman",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Robert Klauss",
+     "Id": "36b3bf1900a0246eb91876c72dde7bf3",
+     "Role": "Phone Repairman",
+     "Type": "Actor"
+    },
+    {
+     "Name": "Barney Barnett",
+     "Id": "5c2ba94a76c8fae1758a253605903308",
+     "Role": "Policeman",
+     "Type": "Actor"
+    },
+    {
+     "Name": "John Stix",
+     "Id": "38f06863acec5267cdf57d9be9a3e6e0",
+     "Role": "Director",
+     "Type": "Director"
+    },
+    {
+     "Name": "Charles Guggenheim",
+     "Id": "a3cc1c366e241e1b34c2a27045a11670",
+     "Role": "Producer",
+     "Type": "Director",
+     "PrimaryImageTag": "fa0ec0b53c6b0f6e68d7d115ea6ae4d0",
+     "ImageBlurHashes": {
+      "Primary": {
+       "fa0ec0b53c6b0f6e68d7d115ea6ae4d0": "dMG95C00IU-;D%ofxuxu4n-;RjD%ayfQ%MWBM{Rjxuj["
+      }
+     }
+    },
+    {
+     "Name": "Richard T. Heffron",
+     "Id": "10a821c70fa59e13ed3ec3bc4766a38d",
+     "Role": "Screenplay",
+     "Type": "Writer",
+     "PrimaryImageTag": "0bbccbf9898943005068e3e182a692cd",
+     "ImageBlurHashes": {
+      "Primary": {
+       "0bbccbf9898943005068e3e182a692cd": "dJC%8JM{00t7M{WBIUt7M{t7ofM{t7t7ayM{RjRjxuof"
+      }
+     }
+    },
+    {
+     "Name": "Charles Guggenheim",
+     "Id": "a3cc1c366e241e1b34c2a27045a11670",
+     "Role": "Producer",
+     "Type": "Producer",
+     "PrimaryImageTag": "fa0ec0b53c6b0f6e68d7d115ea6ae4d0",
+     "ImageBlurHashes": {
+      "Primary": {
+       "fa0ec0b53c6b0f6e68d7d115ea6ae4d0": "dMG95C00IU-;D%ofxuxu4n-;RjD%ayfQ%MWBM{Rjxuj["
+      }
+     }
+    },
+    {
+     "Name": "Katherine Drescher",
+     "Id": "84095555382195d9f64c258dbe74d4a8",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Jane Bridges",
+     "Id": "dcbde77a4331307d6bda910d73378aa7",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Helen Hagen",
+     "Id": "757ea164d542bb55e414d56f0a16ba47",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    },
+    {
+     "Name": "Richard T. Heffron",
+     "Id": "10a821c70fa59e13ed3ec3bc4766a38d",
+     "Role": "Associate Producer",
+     "Type": "Producer",
+     "PrimaryImageTag": "0bbccbf9898943005068e3e182a692cd",
+     "ImageBlurHashes": {
+      "Primary": {
+       "0bbccbf9898943005068e3e182a692cd": "dJC%8JM{00t7M{WBIUt7M{t7ofM{t7t7ayM{RjRjxuof"
+      }
+     }
+    },
+    {
+     "Name": "Lee Hammond",
+     "Id": "aad5ba04312a50e1a9c493ad8390e8ac",
+     "Role": "Producer",
+     "Type": "Producer",
+     "ImageBlurHashes": {
+      "Primary": {}
+     }
+    }
+   ],
+   "GenreItems": [
+    {
+     "Name": "Crime",
+     "Id": "83a9dab21914792744c8fb23b9925dc6"
+    },
+    {
+     "Name": "Thriller",
+     "Id": "4936f5b1a6f84f0b0aa2657368a5b364"
+    }
+   ],
+   "UserData": {
+    "PlayedPercentage": 34.679986930292294,
+    "PlaybackPositionTicks": 18473410000,
+    "PlayCount": 4,
+    "IsFavorite": false,
+    "LastPlayedDate": "2026-08-29T15:40:42.5740089Z",
+    "Played": false,
+    "Key": "fixture-item-12",
+    "ItemId": "b74b4d5de01b4e1a5ce43511c3684ad8"
+   },
+   "VideoType": "VideoFile",
+   "ImageTags": {
+    "Thumb": "7955c0fd12ac1f306598844fecf4ef95",
+    "Logo": "3ee067b2a63afaba6cbb5b9bebbbdca1",
+    "Primary": "e62d9e61591d22dd2073ec5509103431"
+   },
+   "BackdropImageTags": [
+    "88b796c6c75018f4b4b130e74027bc74"
+   ],
+   "ImageBlurHashes": {
+    "Backdrop": {
+     "88b796c6c75018f4b4b130e74027bc74": "W$K-d:V@t7t7a|t6~qWBRjt6axay%Mt6M{fPaet6%Moff6WBfkj["
+    },
+    "Thumb": {
+     "7955c0fd12ac1f306598844fecf4ef95": "WgKmzw~W^,-pt8$~x^XR%Lxvofs:?aJAXSxtozWF-VnixDkDR+t6"
+    },
+    "Logo": {
+     "3ee067b2a63afaba6cbb5b9bebbbdca1": "WZK-qP~q9Ft7xufQD%%MM{ayxuRj?bM{ay%MM{WBofWBt7j[j[j["
+    },
+    "Primary": {
+     "e62d9e61591d22dd2073ec5509103431": "dkN,Vf~p.8-=XS.8%La#%iM|RiWA^*xuIpRjo}kDRRt7"
+    }
+   },
+   "LocationType": "FileSystem",
+   "MediaType": "Video"
+  }
+ ],
+ "TotalRecordCount": 18,
+ "StartIndex": 0
+}

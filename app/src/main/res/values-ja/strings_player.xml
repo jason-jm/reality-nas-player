@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">再生設定</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">立体視</string>
+    <string name="pc_projection">投影</string>
+    <string name="pc_proj_flat">平面</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">フォント</string>
+    <string name="pc_colour">色</string>
+    <string name="pc_sub_style_plain">影</string>
+    <string name="pc_sub_style_box">背景</string>
+    <string name="pc_second_subtitle">第2字幕</string>
+    <string name="pc_sub_style_outline">縁取り</string>
+    <string name="pc_font_default">デフォルト</string>
+    <string name="pc_font_serif">明朝</string>
+    <string name="pc_font_mono">等幅</string>
+    <string name="pc_colour_white">白</string>
+    <string name="pc_colour_yellow">黄</string>
+    <string name="pc_colour_cyan">シアン</string>
+    <string name="pc_colour_green">緑</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">順番に再生</string>
+    <string name="pc_loop_all">全リピート</string>
+    <string name="pc_loop_one">1本リピート</string>
+    <string name="pc_loop_shuffle">シャッフル</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">スナップショットを撮影中…</string>
+    <string name="pc_hold_speed">2× で再生中</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">ブックマーク</string>
+    <string name="pc_bookmarks_n">ブックマーク · %1$d</string>
+    <string name="pc_bookmark_add">ブックマークを追加</string>
+    <string name="pc_bookmark_empty">上の ＋ で、あとで戻りたい場面を記録できます。</string>
+    <string name="pc_bookmark_remove">%1$s のブックマークを削除</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">イントロとクレジットをスキップ</string>
+    <string name="pc_skip_intro_set">イントロ: %1$s まで</string>
+    <string name="pc_skip_outro_set">クレジット: 最後の %1$s</string>
+    <string name="pc_skip_mark_intro">ここでイントロ終了</string>
+    <string name="pc_skip_mark_outro">ここからクレジット</string>
+    <string name="pc_skip_clear">イントロとクレジットを解除</string>
+    <string name="pc_skip_intro_hint">この番組の以降のエピソードは、すべてここから始まります</string>
+    <string name="pc_skip_outro_hint">この番組の以降のエピソードは、すべてここで次へ進みます</string>
+    <string name="vid_intro_skipped">イントロをスキップしました</string>
+    <string name="vid_watch_intro">イントロを見る</string>
+    <string name="vid_chapter_intro">オープニング · 残り %1$s</string>
+    <string name="vid_chapter_outro">クレジット · 残り %1$s</string>
+    <string name="vid_skip">スキップ</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">不明なフォーマット</string>
+    <string name="pc_track_unknown">不明なトラック</string>
+    <string name="pc_track_n">トラック %1$d</string>
+    <string name="pc_track_external_sub">外部字幕</string>
+    <string name="pc_track_external">外部</string>
+    <string name="pc_track_embedded">埋め込み</string>
+    <string name="pc_ch_mono">モノラル</string>
+    <string name="pc_ch_stereo">ステレオ</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">音声</string>
+    <string name="pc_frames">ドロップ %1$d / 描画 %2$d</string>
+    <string name="pc_env_dim">再生中は暗くする</string>
+    <string name="pc_env_viewing_light">再生中の照明</string>
+    <string name="pc_env_dim_hint">再生中は選択した明るさになります。一時停止するか、再生コントロールを開くと照明が元に戻ります。</string>
+    <string name="pc_env_lights">照明</string>
+    <string name="pc_env_lights_hint">場所自体の照明をオン／オフします。オンのときも「再生中は暗くする」で再生中は暗くなります</string>
+    <string name="pc_env_seat">座席</string>
+    <string name="pc_seat_center">中央</string>
+    <string name="pc_seat_left">左側</string>
+    <string name="pc_seat_right">右側</string>
+    <string name="pc_seat_left_window">左の窓側</string>
+    <string name="pc_seat_right_window">右の窓側</string>
+    <string name="pc_env_screen">映像と字幕</string>
+    <string name="pc_env_screen_hint">映像と字幕を視聴環境のスクリーンに表示します。</string>
+    <string name="pc_env_glow">スクリーンの反射光</string>
+    <string name="pc_env_glow_hint">映画の色がスクリーンの縁や周囲に映ります。</string>
+    <string name="pc_env_screen_none">ここにはスクリーンがありません。映画はウィンドウに表示されたままです</string>
+    <string name="pc_env_has_screen">スクリーンあり</string>
+    <string name="pc_env_entering">%1$s を開いています…</string>
+    <string name="pc_env_failed">%1$s を読み込めませんでした</string>
+    <string name="pc_lang_simplified">簡体字中国語</string>
+    <string name="pc_lang_traditional">繁体字中国語</string>
+    <string name="pc_lang_join">"、"</string>
+    <plurals name="pc_more_sound">
+        <item quantity="other">ほかに音声トラック%d個</item>
+    </plurals>
+    <string name="pc_more_sound_hint">内蔵プレーヤーでは読めない音声があります。mpv で再生してください</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="other">画像字幕ファイル%d個</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">映画と同じ場所にある VobSub / PGS は内蔵プレーヤーでは表示できません。mpv で再生してください</string>
+    <string name="pc_pano_format">パノラマ形式</string>
+    <string name="pc_pano_equirect">正距円筒</string>
+    <string name="pc_pano_fisheye">魚眼</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">キューブマップ</string>
+    <string name="pc_pano_dual">デュアル魚眼</string>
+    <string name="pc_pano_direction">向き</string>
+    <string name="pc_pano_turn_left">左に回す</string>
+    <string name="pc_pano_recenter">正面に戻す</string>
+    <string name="pc_pano_turn_right">右に回す</string>
+    <string name="pc_pano_turn_hint">映像を自分の周りで 30° 回します。振り向かずに後ろ側を見られます</string>
+    <string name="pc_pano_recenter_hint">映像の正面を、今見ている方向に合わせます</string>
+    <string name="pc_pano_own">ファイルのメッシュ</string>
+    <string name="pc_info_format">フォーマット</string>
+    <string name="pc_info_spatial_video">空間ビデオ</string>
+    <string name="pc_info_mv_hevc">MV-HEVC、2視点（左目を表示）</string>
+    <string name="pc_info_camera">視野 %1$d° · 間隔 %2$d mm</string>
+    <string name="pc_info_right_first">右目が先</string>
+    <string name="pc_audio_field">アンビソニックス</string>
+    <string name="vid_pano_guess_360">360° 動画のようです</string>
+    <string name="vid_pano_guess_360_3d">360° 3D 動画のようです</string>
+    <string name="vid_pano_guess_180_3d">180° 3D 動画（VR180）のようです</string>
+    <string name="vid_pano_guess_fisheye">魚眼動画のようです</string>
+    <string name="vid_pano_guess_fisheye_3d">180° 3D 魚眼動画のようです</string>
+    <string name="vid_pano_guess_dual">360° カメラの 2 レンズの元映像のようです</string>
+    <string name="vid_pano_guess_play">パノラマで再生</string>
+    <string name="vid_pano_guess_no">違います</string>
+    <string name="pc_pano_tilt_up">上へ</string>
+    <string name="pc_pano_tilt_down">下へ</string>
+    <string name="pc_pano_roll_left">左に傾ける</string>
+    <string name="pc_pano_roll_right">右に傾ける</string>
+    <string name="pc_pano_level">水平</string>
+    <string name="pc_pano_level_hint">水平線が傾いているときに。1回 5°、この映画用に保存されます</string>
+</resources>

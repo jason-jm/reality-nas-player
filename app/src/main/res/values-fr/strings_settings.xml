@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Réessayer</string>
+    <string name="md_secret_show">Afficher</string>
+    <string name="md_secret_hide">Masquer</string>
+    <string name="md_secret_show_named">Afficher %1$s</string>
+    <string name="md_secret_hide_named">Masquer %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Une erreur inattendue s’est produite</string>
+    <string name="fault_unknown_detail">Une erreur inattendue s’est produite : %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Retour aux types de sources</string>
+    <string name="sources_edit">Modifier</string>
+    <string name="sources_edit_title">Modifier « %1$s »</string>
+    <string name="sources_save_and_scan">Enregistrer et analyser</string>
+    <string name="sources_password_keep">Laissez vide pour garder le mot de passe enregistré</string>
+    <string name="sources_token_keep">Laissez vide pour garder le jeton enregistré</string>
+    <string name="sources_saved_placeholder">Enregistré</string>
+    <string name="sources_smb_need_share">Ce n’est qu’un hôte. Appuyez sur « Parcourir les partages… » en haut à droite pour choisir un partage, ou écrivez hôte/partage pour l’ajouter directement</string>
+    <string name="sources_webdav_scheme">L’adresse doit commencer par http:// ou https://</string>
+    <string name="sources_remote_scheme">Cette adresse est pour un autre type de serveur ; saisissez-la sans la partie avant ://</string>
+    <string name="sources_address_spaces">Une adresse ne peut pas contenir d’espaces</string>
+    <string name="sources_server_user_hint">Votre compte sur le serveur, celui avec lequel vous vous connectez à son app web</string>
+    <string name="sources_server_pass_hint">Le mot de passe de ce compte</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Serveur %1$s</string>
+    <string name="sources_kind_dlna">Serveur multimédia DLNA</string>
+    <string name="sources_remove_action">Retirer…</string>
+    <string name="sources_removed">Source « %1$s » retirée</string>
+    <string name="sources_added_toast">Source « %1$s » ajoutée, analyse en cours</string>
+    <string name="sources_saved_toast">Source « %1$s » enregistrée, nouvelle analyse en cours</string>
+    <string name="sources_fix_account">Changer de compte ou de mot de passe</string>
+    <string name="sources_fix_account_hint">Connectez cette source avec le bon compte</string>
+    <string name="sources_fix_address">Vérifier les informations de connexion</string>
+    <string name="sources_fix_address_hint">Vérifiez l’adresse et le port, ou essayez un autre compte, puis relancez l’analyse</string>
+    <string name="sources_scan_busy">Une autre analyse ou identification est en cours ; celle-ci pourra démarrer ensuite</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Retour aux partages</string>
+    <string name="smb_back_servers">Retour aux serveurs</string>
+    <string name="smb_saved_password">Utilise le mot de passe enregistré</string>
+    <string name="smb_signing_in">Connexion…</string>
+    <string name="smb_subnet_invalid">Saisissez une adresse IPv4, p. ex. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Noms de fichiers locaux</string>
+    <string name="set_live_engine_exo">Moteur avancé</string>
+    <string name="set_live_engine_system">Lecteur du système</string>
+    <string name="set_live_spatial">%1$s · audio spatial</string>
+    <string name="set_live_sync_off">Désactivée</string>
+    <string name="set_live_sync_on">Activée</string>
+    <string name="set_live_sync_on_ago">Activée · synchro %1$s</string>
+    <string name="set_live_sync_failed">La dernière synchro a échoué</string>
+    <string name="set_live_version">Version %1$s</string>
+    <string name="set_live_sub">Sous-titres : %1$s</string>
+    <string name="set_live_audio">Audio : %1$s</string>
+    <string name="set_live_night">Mode nuit</string>
+    <string name="set_live_no_autoplay">Pas de lecture auto</string>
+    <string name="set_pano_auto">Ouvrir les vidéos 360° / 180° en immersion</string>
+    <string name="set_pano_auto_on">Activé : une vidéo reconnue comme 360° ou 180° s’ouvre dans l’espace immersif, tout autour de vous.</string>
+    <string name="set_pano_auto_off">Désactivé : les vidéos 360° et 180° démarrent dans la fenêtre ; Image › Espace de visionnage vous y fait entrer.</string>
+    <string name="set_auto_skip_intro">Passer les génériques de début automatiquement</string>
+    <string name="set_auto_skip_intro_on">Activé : quand les chapitres d’un fichier marquent son générique (OP, Opening…), il est passé dès qu’il commence — « La regarder » en haut de l’image revient en arrière.</string>
+    <string name="set_auto_skip_intro_off">Désactivé : quand un générique commence, le haut de l’image propose « Passer ».</string>
+    <string name="set_live_auto_skip_intro">Génériques passés</string>
+    <string name="set_version_build">Version %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Identification</string>
+    <string name="set_group_language">Langue</string>
+    <string name="set_language_ui">Langue de l’app</string>
+    <string name="set_language_ui_hint">La langue des menus et des textes de Reality NAS Player.</string>
+    <string name="set_language_follow_app">Comme l’app</string>
+    <string name="set_language_meta">Langue des métadonnées</string>
+    <string name="set_tmdb_key_label">Clé API TMDB</string>
+    <string name="set_omdb_key_label">Clé API OMDb</string>
+    <string name="set_keys_offline">L’identification hors ligne est activée : ces clés ne servent pas pour l’instant.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Supprimer…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Activé : le moteur audio spatial de PICO le traite.</string>
+    <string name="set_spatial_off">Désactivé : le mixage d’origine du film est lu tel quel.</string>
+    <string name="set_fd_needs_system">Seul le lecteur du système le prend en charge : désactivez « Moteur avancé » ci-dessus pour l’utiliser.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Compléter et reconstruire</string>
+    <string name="set_auto_scan">Mettre à jour la bibliothèque automatiquement</string>
+    <string name="set_auto_scan_on">Activé : à l’ouverture de l’app, Reality NAS Player cherche les fichiers ajoutés à vos sources depuis la dernière fois (au plus toutes les 6 heures) et n’identifie que les nouveaux.</string>
+    <string name="set_auto_scan_off">Désactivé : les nouveaux fichiers apparaissent après une analyse dans Sources.</string>
+    <string name="set_rescrape">Réidentifier les fiches inachevées</string>
+    <string name="set_rescrape_hint">Réessaie pour les fiches encore sans affiche, ou dont la dernière identification a échoué ; les fiches identifiées ne sont pas touchées</string>
+    <string name="set_rescrape_start">Démarrer</string>
+    <string name="set_rescrape_started">La réidentification a démarré</string>
+    <string name="set_task_busy">Une analyse ou une identification est en cours ; une nouvelle tâche pourra démarrer ensuite.</string>
+    <string name="set_clear_action">Vider…</string>
+    <string name="set_cleared">La bibliothèque est vide</string>
+    <string name="set_clear_failed">Impossible de vider la bibliothèque ; réessayez dans un instant</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Recherche des partages…</string>
+    <string name="sync_open_sources">Ouvrir Sources</string>
+    <string name="sync_open_sources_hint">Ajoutez un partage NAS, puis revenez ici</string>
+    <string name="sync_this_device">Ce casque</string>
+    <string name="sync_readonly_title">Le partage est en lecture seule</string>
+    <string name="sync_remove_body_at">Cela supprime « .aura » sur %1$s et les données de chaque appareil qu’il contient. La bibliothèque et la progression sur ce casque restent telles quelles.</string>
+    <string name="sync_removed">Le dossier de synchro est supprimé</string>
+    <string name="sync_remove_failed">Impossible de supprimer le dossier de synchro : %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Ouvrir Identification</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · « %2$s » — %3$s</string>
+    <string name="set_licences">Licences open source</string>
+    <string name="set_licences_hint">La licence de chaque composant, le code source des bibliothèques LGPL et la façon de les remplacer</string>
+</resources>

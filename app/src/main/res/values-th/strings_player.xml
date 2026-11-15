@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">การเล่น</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">สามมิติ</string>
+    <string name="pc_projection">การฉายภาพ</string>
+    <string name="pc_proj_flat">ภาพแบน</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">ฟอนต์</string>
+    <string name="pc_colour">สี</string>
+    <string name="pc_sub_style_plain">เงา</string>
+    <string name="pc_sub_style_box">กล่อง</string>
+    <string name="pc_second_subtitle">คำบรรยายที่สอง</string>
+    <string name="pc_sub_style_outline">เส้นขอบ</string>
+    <string name="pc_font_default">ค่าเริ่มต้น</string>
+    <string name="pc_font_serif">มีเชิง</string>
+    <string name="pc_font_mono">โมโน</string>
+    <string name="pc_colour_white">ขาว</string>
+    <string name="pc_colour_yellow">เหลือง</string>
+    <string name="pc_colour_cyan">ฟ้าอมเขียว</string>
+    <string name="pc_colour_green">เขียว</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">ตามลำดับ</string>
+    <string name="pc_loop_all">ทั้งหมด</string>
+    <string name="pc_loop_one">รายการเดียว</string>
+    <string name="pc_loop_shuffle">สุ่ม</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">กำลังจับภาพ…</string>
+    <string name="pc_hold_speed">กำลังเล่นที่ 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">บุ๊กมาร์ก</string>
+    <string name="pc_bookmarks_n">บุ๊กมาร์ก · %1$d</string>
+    <string name="pc_bookmark_add">เพิ่มบุ๊กมาร์ก</string>
+    <string name="pc_bookmark_empty">ทำเครื่องหมายช่วงที่อยากกลับมาดูด้วยปุ่ม + ด้านบน</string>
+    <string name="pc_bookmark_remove">ลบบุ๊กมาร์กที่ %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">ข้ามช่วงเปิดและเครดิตท้าย</string>
+    <string name="pc_skip_intro_set">ช่วงเปิดถึง %1$s</string>
+    <string name="pc_skip_outro_set">เครดิตท้ายยาว %1$s</string>
+    <string name="pc_skip_mark_intro">ช่วงเปิดจบตรงนี้</string>
+    <string name="pc_skip_mark_outro">เครดิตท้ายเริ่มตรงนี้</string>
+    <string name="pc_skip_clear">ล้างช่วงเปิดและเครดิตท้าย</string>
+    <string name="pc_skip_intro_hint">ทุกตอนถัดจากนี้ของซีรีส์นี้จะเริ่มตรงนี้</string>
+    <string name="pc_skip_outro_hint">ทุกตอนถัดจากนี้ของซีรีส์นี้จะไปตอนถัดไปจากตรงนี้</string>
+    <string name="vid_intro_skipped">ข้ามช่วงเปิดแล้ว</string>
+    <string name="vid_watch_intro">ดูช่วงนี้</string>
+    <string name="vid_chapter_intro">ช่วงเปิด · เหลือ %1$s</string>
+    <string name="vid_chapter_outro">เครดิตท้าย · เหลือ %1$s</string>
+    <string name="vid_skip">ข้าม</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">ไม่ทราบรูปแบบ</string>
+    <string name="pc_track_unknown">แทร็กที่ไม่รู้จัก</string>
+    <string name="pc_track_n">แทร็ก %1$d</string>
+    <string name="pc_track_external_sub">คำบรรยายภายนอก</string>
+    <string name="pc_track_external">ภายนอก</string>
+    <string name="pc_track_embedded">ฝังในไฟล์</string>
+    <string name="pc_ch_mono">โมโน</string>
+    <string name="pc_ch_stereo">สเตอริโอ</string>
+    <string name="pc_dec_hardware">ฮาร์ดแวร์</string>
+    <string name="pc_dec_software">ซอฟต์แวร์</string>
+    <string name="pc_dec_audio">เสียง</string>
+    <string name="pc_frames">ตก %1$d / แสดงผล %2$d</string>
+    <string name="pc_env_dim">หรี่ไฟขณะเล่น</string>
+    <string name="pc_env_viewing_light">ความสว่างของไฟขณะเล่น</string>
+    <string name="pc_env_dim_hint">ใช้ความสว่างที่เลือกขณะรับชม ไฟจะกลับมาสว่างเมื่อหยุดเล่นชั่วคราวหรือเปิดแผงควบคุม</string>
+    <string name="pc_env_lights">ไฟ</string>
+    <string name="pc_env_lights_hint">เปิดหรือปิดไฟของสถานที่เอง ขณะเปิดอยู่ ‘หรี่ไฟขณะเล่น’ จะยังหรี่ไฟลงระหว่างฉายภาพยนตร์</string>
+    <string name="pc_env_seat">ที่นั่ง</string>
+    <string name="pc_seat_center">ตรงกลาง</string>
+    <string name="pc_seat_left">ซ้าย</string>
+    <string name="pc_seat_right">ขวา</string>
+    <string name="pc_seat_left_window">ริมหน้าต่างซ้าย</string>
+    <string name="pc_seat_right_window">ริมหน้าต่างขวา</string>
+    <string name="pc_env_screen">ภาพยนตร์และคำบรรยาย</string>
+    <string name="pc_env_screen_hint">ภาพยนตร์และคำบรรยายจะแสดงบนจอของสถานที่นั้น</string>
+    <string name="pc_env_glow">แสงจากจอ</string>
+    <string name="pc_env_glow_hint">สีของภาพยนตร์ส่องไปที่ขอบจอและพื้นผิวใกล้เคียง</string>
+    <string name="pc_env_screen_none">ที่นี่ไม่มีจอ ภาพยนตร์จะอยู่ในหน้าต่าง</string>
+    <string name="pc_env_has_screen">มีจอ</string>
+    <string name="pc_env_entering">กำลังเปิด %1$s…</string>
+    <string name="pc_env_failed">โหลด %1$s ไม่ได้</string>
+    <string name="pc_lang_simplified">จีนตัวย่อ</string>
+    <string name="pc_lang_traditional">จีนตัวเต็ม</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="other">แทร็กเสียงอีก %d แทร็ก</item>
+    </plurals>
+    <string name="pc_more_sound_hint">ไฟล์นี้มีเสียงที่เครื่องเล่นในตัวอ่านไม่ได้ ให้เล่นใน mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="other">ไฟล์คำบรรยายแบบภาพ %d ไฟล์</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS ที่วางคู่กับภาพยนตร์ เครื่องเล่นในตัวแสดงไม่ได้ ให้เล่นใน mpv</string>
+    <string name="pc_pano_format">รูปแบบพาโนรามา</string>
+    <string name="pc_pano_equirect">อิควิเรกต์</string>
+    <string name="pc_pano_fisheye">ตาปลา</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">ลูกบาศก์</string>
+    <string name="pc_pano_dual">ตาปลาคู่</string>
+    <string name="pc_pano_direction">ทิศทาง</string>
+    <string name="pc_pano_turn_left">หมุนซ้าย</string>
+    <string name="pc_pano_recenter">จัดกึ่งกลางใหม่</string>
+    <string name="pc_pano_turn_right">หมุนขวา</string>
+    <string name="pc_pano_turn_hint">หมุนภาพรอบตัวคุณ 30° เพื่อดูสิ่งที่อยู่ด้านหลังโดยไม่ต้องหันตัว</string>
+    <string name="pc_pano_recenter_hint">วางด้านหน้าของภาพยนตร์ไว้ตรงที่คุณกำลังมอง</string>
+    <string name="pc_pano_own">เมชของไฟล์</string>
+    <string name="pc_info_format">รูปแบบ</string>
+    <string name="pc_info_spatial_video">วิดีโอเชิงพื้นที่</string>
+    <string name="pc_info_mv_hevc">MV-HEVC สองมุมมอง (แสดงตาซ้าย)</string>
+    <string name="pc_info_camera">มุมกว้าง %1$d° · ห่างกัน %2$d mm</string>
+    <string name="pc_info_right_first">ตาขวาก่อน</string>
+    <string name="pc_audio_field">แอมบิโซนิก</string>
+    <string name="vid_pano_guess_360">ดูเหมือนเป็นวิดีโอ 360°</string>
+    <string name="vid_pano_guess_360_3d">ดูเหมือนเป็นวิดีโอ 360° 3D</string>
+    <string name="vid_pano_guess_180_3d">ดูเหมือนเป็นวิดีโอ 180° 3D (VR180)</string>
+    <string name="vid_pano_guess_fisheye">ดูเหมือนเป็นวิดีโอตาปลา</string>
+    <string name="vid_pano_guess_fisheye_3d">ดูเหมือนเป็นวิดีโอตาปลา 180° 3D</string>
+    <string name="vid_pano_guess_dual">ดูเหมือนเป็นไฟล์ต้นฉบับสองเลนส์จากกล้อง 360</string>
+    <string name="vid_pano_guess_play">เล่นเป็นพาโนรามา</string>
+    <string name="vid_pano_guess_no">ไม่ใช่</string>
+    <string name="pc_pano_tilt_up">ขึ้น</string>
+    <string name="pc_pano_tilt_down">ลง</string>
+    <string name="pc_pano_roll_left">เอียงซ้าย</string>
+    <string name="pc_pano_roll_right">เอียงขวา</string>
+    <string name="pc_pano_level">ปรับระดับ</string>
+    <string name="pc_pano_level_hint">สำหรับเส้นขอบฟ้าที่เอียง: กดครั้งละ 5° และจำไว้สำหรับภาพยนตร์เรื่องนี้</string>
+</resources>

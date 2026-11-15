@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reality NAS Player 隐私政策 · Privacy Policy</title>
+<style>body{max-width:52rem;margin:2rem auto;padding:0 1rem;color:#202027;background:#fff;font:1rem/1.65 system-ui,sans-serif}h1,h2,h3{line-height:1.3}h2{margin-top:2rem}a{color:#324785}table{display:block;overflow-x:auto;border-collapse:collapse}th,td{border:1px solid #d2d1d6;padding:.4rem;text-align:left}li{margin:.4rem 0}</style>
+<main><nav><a href="#english" lang="en">English</a></nav><h1>Reality NAS Player 隐私政策 / Privacy Policy</h1>
+<p>最后更新 / Last updated: 2026-11-15</p>
+<p>Reality NAS Player 是一款运行在 PICO 头显上的本地媒体库播放器。我们的原则很简单：<strong>你的媒体数据属于你，Reality NAS Player 不收集、不上传、不分析任何个人信息。</strong></p>
+<p>Reality NAS Player is a local media library player for PICO headsets. The principle is simple: <strong>your media data belongs to you. Reality NAS Player collects, uploads and analyzes no personal information.</strong></p>
+<h2>我们不收集什么</h2>
+<ul>
+<li><strong>没有账号系统</strong> —— Reality NAS Player 不要求注册，也没有登录。</li>
+<li><strong>没有数据分析 / 埋点 / 广告 SDK</strong> —— Reality NAS Player 不含任何第三方统计或广告组件。</li>
+<li><strong>不上传你的文件</strong> —— 你的本地视频、片库索引和观看记录保存在头显。启用同步后，进度和收藏还会写入你选择的 NAS 共享。</li>
+</ul>
+<h2>Reality NAS Player 什么时候联网，发送什么</h2>
+<p>联网只发生在以下几类场景，且都可以关闭或不使用：</p>
+<h3>1. 刮削（获取海报和简介）</h3>
+<p>扫描媒体库时，Reality NAS Player 会把<strong>从你的文件名中解析出的标题、年份等关键词</strong>（例如 <code>Interstellar 2014</code>）用于查询公开元数据服务。海报、简介、演员和评分的来源见下表。</p>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>域名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The Movie Database (TMDB)</td>
+<td>api.themoviedb.org / image.tmdb.org</td>
+<td>电影、剧集元数据与海报</td>
+</tr>
+<tr>
+<td>AniList</td>
+<td>graphql.anilist.co</td>
+<td>动画元数据</td>
+</tr>
+<tr>
+<td>Bangumi 番组计划</td>
+<td>api.bgm.tv</td>
+<td>动画中文元数据</td>
+</tr>
+<tr>
+<td>Jikan (MyAnimeList)</td>
+<td>api.jikan.moe</td>
+<td>动画元数据补充</td>
+</tr>
+<tr>
+<td>OMDb（用你填写的 API Key 查询）</td>
+<td><a href="http://www.omdbapi.com">www.omdbapi.com</a></td>
+<td>IMDb / 烂番茄 / Metacritic 评分</td>
+</tr>
+<tr>
+<td>IMDb Datasets</td>
+<td>datasets.imdbws.com</td>
+<td>评分数据集下载</td>
+</tr>
+</tbody></table>
+<p>检索请求会使用标题、年份或公开的作品编号。IMDb 评分数据集以整表下载，在本机按编号查找。元数据请求<strong>不包含</strong>完整文件路径、你的媒体服务器地址、登录凭据或任何设备标识。这些服务各自的隐私政策适用于它们收到的请求。</p>
+<p>在「设置 → 刮削与元数据」中打开<strong>离线刮削</strong>后，Reality NAS Player 使用本地规则识别文件名，停止向外部元数据及图片服务发起请求。你选择的 NAS 播放和同步仍可使用。</p>
+<h3>2. 你主动触发的下载</h3>
+<ul>
+<li><strong>播放串流</strong>：播放网络来源（SMB / FTP / SFTP / NFS / WebDAV / DLNA / Jellyfin）时，视频数据只在你的头显与<strong>你自己的服务器</strong>之间传输，不经过任何第三方。</li>
+<li><strong>下载到本机</strong>：你选择「下载到本机」时，文件从<strong>你自己的服务器</strong>复制到头显本地，不经过任何第三方。</li>
+</ul>
+<h3>3. 接收投屏（默认关闭）</h3>
+<p>在「设置 → 播放 → 接收投屏」打开后，头显会在<strong>你的局域网内</strong>以 DLNA 宣告自己，手机上的视频 App 才能在投屏列表里看到它。手机发来的是视频地址，头显直接从那个地址播放；Reality NAS Player 不经过任何自己的服务器，也不记录投过来的内容。关闭后头显立即从局域网里消失。</p>
+<h3>4. 同步（默认关闭）</h3>
+<p>在「设置 → 同步」打开后，Reality NAS Player 会在<strong>你选定的 NAS 共享</strong>顶层建一个隐藏文件夹「.aura」，把这台头显的观看进度、是否看过、收藏和你手动修正过的匹配写进去，并读取其他设备写的那部分，让你的几台设备保持一致。数据只在头显与<strong>你自己的 NAS</strong> 之间传输，不经过任何第三方；文件里带有你给这台头显起的名称，方便在其他设备上区分。关闭同步后不再读写这个文件夹；「删除同步文件夹」会把它从 NAS 上删掉。</p>
+<h2>保存在本地的数据</h2>
+<p>Reality NAS Player 将下列数据保存在头显的应用存储中，卸载时系统会删除这些本地副本。开启 NAS 同步后，观看进度、收藏和手动匹配也会写入你选择的共享文件夹。</p>
+<ul>
+<li>媒体库索引（识别出的影片信息）与海报缓存</li>
+<li>你的来源配置，包括 NAS / WebDAV / Jellyfin 的<strong>地址、用户名与密码/令牌</strong>——它们仅用于连接你自己的服务器，绝不上传</li>
+<li>应用设置（含你自行填入的 API Key）</li>
+<li>收藏与观看历史</li>
+<li>「下载到本机」的视频副本——可在「已下载」页或「设置 → 媒体库 → 删除全部下载」中删除</li>
+</ul>
+<p>Reality NAS Player 的头显版本关闭了 Android 对应用数据的自动云备份，并从系统的设备迁移中排除应用数据。换头显后需要重新添加媒体来源。你可以在「设置 → 同步」中选择自己的 NAS 来同步观看进度、收藏和手动匹配。</p>
+<p>「设置 → 媒体库 → 清空媒体库」会删除片库条目及封面缓存。你手动保存的影片截图位于系统相册 Pictures/Reality NAS Player，卸载后仍可在相册中查看和删除。旧版截图保存在原相册 Pictures/Aura。</p>
+<h2>权限说明</h2>
+<ul>
+<li><strong>网络</strong>：刮削元数据、串流你自己服务器上的视频</li>
+<li><strong>前台服务</strong>：让大型媒体库的刮削在后台持续完成</li>
+<li><strong>本地媒体读取（视频）</strong>：仅在你点「扫描本地」时请求，用来读取头显 Movies、Download 里的影片；拒绝也不影响其它功能</li>
+<li><strong>局域网组播</strong>：仅在打开「接收投屏」时使用，让手机发现头显</li>
+</ul>
+<h2>变更与联系</h2>
+<p>本政策若有变更，将随应用更新一并发布。问题或建议请联系：<a href="mailto:madeforyou2025@gmail.com">madeforyou2025@gmail.com</a></p>
+<hr>
+<section lang="en"><h2 id="english">English</h2>
+<p>Reality NAS Player is a local video player for PICO headsets. It has no Reality NAS Player account, advertising or analytics. Your library index, server credentials and playback settings are stored on the headset.</p>
+<ul>
+<li><strong>Film identification.</strong> When enabled, Reality NAS Player uses title and year keywords or public work IDs to look up posters and descriptions from TMDB, AniList, Bangumi and Jikan. OMDb is used when you enter an API key. IMDb ratings are downloaded as a complete dataset and matched locally. Requests to these services do not include your file paths, NAS credentials or device identifiers. Offline identification stops external metadata and artwork requests. You can still play films from your own servers.</li>
+<li><strong>Playback and downloads.</strong> Reality NAS Player connects directly to the servers you configure, including for streaming and offline downloads. Connection security depends on the protocol and settings you choose.</li>
+<li><strong>Casting and sync.</strong> Both are off by default. Enabling the cast receiver lets phones on your network discover the headset and send a playback URL. Enabling sync stores viewing progress, favourites and manual matches in a hidden <code>.aura</code> directory in the NAS share you select. The records include the device name you set. You can disable either feature or delete the sync folder from settings.</li>
+<li><strong>Changing headsets.</strong> Reality NAS Player excludes its app data from Android cloud backup and device-to-device transfer. On a new headset, add your media sources again. In Settings → Sync, you can choose your own NAS to carry over watch progress, favourites and manual matches.</li>
+<li><strong>Permissions and deletion.</strong> A local video scan requests media access. The foreground service supports long-running library indexing, and multicast supports cast discovery. Removing the app clears its local app data. You can remove downloaded media in the app and delete NAS sync data separately. Screenshots you save to the Pictures/Reality NAS Player album remain in the system gallery after uninstallation. You can delete them in the gallery. Screenshots saved by earlier versions remain in Pictures/Aura.</li>
+</ul>
+<p>Contact for questions about this policy: <a href="mailto:madeforyou2025@gmail.com">madeforyou2025@gmail.com</a>.</p>
+</section></main></html>

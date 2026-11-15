@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PICO OS reads the front layer first. Each distance map belongs to the layer at the same index. -->
+    <array name="icon_3d_list">
+        <item>@drawable/icon_3d_play</item>
+        <item>@drawable/icon_3d_ring</item>
+        <item>@drawable/icon_3d_base</item>
+    </array>
+    <array name="icon_sdf_list">
+        <item>@drawable/icon_3d_sdf_play</item>
+        <item>@drawable/icon_3d_sdf_ring</item>
+        <item>@drawable/icon_3d_sdf_base</item>
+    </array>
+</resources>

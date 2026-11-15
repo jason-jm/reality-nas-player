@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 媒體庫視窗（側欄、海報牆、繼續觀看）：PICO 改版新增的文案。 -->
+
+    <!-- 海報牆的空狀態與載入狀態。 -->
+    <string name="lib_empty_library_title">還沒有影片</string>
+    <string name="lib_add_source">新增來源</string>
+    <string name="lib_empty_search_hint">搜尋會查找整個媒體庫的片名和檔名。</string>
+    <string name="lib_search_clear">清除搜尋</string>
+    <string name="lib_empty_favorites_title">還沒有收藏</string>
+    <string name="lib_empty_history_title">還沒有觀看紀錄</string>
+    <string name="lib_empty_shelf_hint">刮削認出作品的類型後，它們會自動歸到這裡。</string>
+    <string name="lib_show_all">查看全部作品</string>
+
+    <!-- 搜尋時的標題列：搜的是什麼、找到多少。 -->
+    <string name="lib_search_title">搜尋「%1$s」</string>
+    <plurals name="lib_search_results">
+        <item quantity="other">%1$d 個結果</item>
+    </plurals>
+    <string name="lib_search_people_title">人物</string>
+    <string name="lib_search_titles">作品</string>
+    <!-- 搜索结果里只因演职人员的名字而找到的作品，排在标题匹配的作品之后。 -->
+    <string name="lib_search_by_people">相關人物的作品</string>
+    <plurals name="lib_search_people">
+        <item quantity="other">%1$d 位人物</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="other">%1$d 部作品</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">數字與符號</string>
+    <string name="lib_index_unidentified">未識別</string>
+
+    <!-- 歷史的標題欄：今年看完了多少、看了多久。 -->
+    <string name="hist_stats_done">今年看完 %1$s · %2$s</string>
+    <string name="hist_stats_time_only">今年已觀看 %1$s</string>
+    <plurals name="hist_stats_films">
+        <item quantity="other">%1$d 部電影</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="other">%1$d 集</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="other">約 %1$d 小時</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d 分鐘</string>
+
+    <!-- 刮削時發現所有檔案都已辨識。 -->
+    <string name="lib_scrape_nothing">沒有需要刮削的影片，海報牆已是最新。</string>
+
+    <!-- AI 辨識先確認：它會重新辨識整個媒體庫。 -->
+
+    <!-- 繼續觀看：劇集的下一集是「播放」，不是「繼續」。 -->
+    <string name="cw_play_next">播放 · %1$s</string>
+
+    <!-- 海報卡片標題下的一行。 -->
+    <string name="card_unmatched">未辨識</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 篩選：海報牆的篩選按鈕和面板。 -->
+    <string name="lib_filter">篩選</string>
+    <string name="lib_filter_n">篩選 · %1$d</string>
+    <string name="lib_filter_watch">觀看狀態</string>
+    <string name="lib_filter_any">全部</string>
+    <string name="lib_filter_unwatched">未看</string>
+    <string name="lib_filter_in_progress">在看</string>
+    <string name="lib_filter_watched">看過</string>
+    <string name="lib_filter_genre">類型</string>
+    <string name="lib_filter_decade">年代</string>
+    <string name="lib_filter_picture">畫面</string>
+    <string name="lib_filter_panorama">全景</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d 年代</string>
+    <string name="lib_filter_reset">重設篩選</string>
+    <plurals name="lib_filter_count">
+        <item quantity="other">共 %d 部</item>
+    </plurals>
+    <string name="lib_empty_filter">沒有符合篩選的作品</string>
+    <string name="lib_empty_filter_hint">換個條件，或者清除篩選。</string>
+    <string name="lib_filter_clear">清除篩選</string>
+    <string name="lib_recently_added">最近新增</string>
+    <string name="lib_recently_added_on">最近新增 · %1$s</string>
+    <string name="lib_surprise">隨便看看</string>
+    <string name="lib_because">因為你看過《%1$s》</string>
+    <string name="lib_history_today">今天</string>
+    <string name="lib_history_yesterday">昨天</string>
+    <string name="lib_history_this_week">本週</string>
+    <string name="lib_history_this_month">本月</string>
+    <string name="lib_history_earlier">更早</string>
+</resources>

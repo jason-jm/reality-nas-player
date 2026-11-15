@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Přehrávání</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereoskopie</string>
+    <string name="pc_projection">Projekce</string>
+    <string name="pc_proj_flat">Plochá</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Písmo</string>
+    <string name="pc_colour">Barva</string>
+    <string name="pc_sub_style_plain">Stín</string>
+    <string name="pc_sub_style_box">Pozadí</string>
+    <string name="pc_second_subtitle">Druhé titulky</string>
+    <string name="pc_sub_style_outline">Obrys</string>
+    <string name="pc_font_default">Výchozí</string>
+    <string name="pc_font_serif">Patkové</string>
+    <string name="pc_font_mono">Strojové</string>
+    <string name="pc_colour_white">Bílá</string>
+    <string name="pc_colour_yellow">Žlutá</string>
+    <string name="pc_colour_cyan">Azurová</string>
+    <string name="pc_colour_green">Zelená</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Postupně</string>
+    <string name="pc_loop_all">Vše</string>
+    <string name="pc_loop_one">Jeden</string>
+    <string name="pc_loop_shuffle">Náhodně</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Pořizování snímku…</string>
+    <string name="pc_hold_speed">Přehrávání 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Záložky</string>
+    <string name="pc_bookmarks_n">Záložky · %1$d</string>
+    <string name="pc_bookmark_add">Přidat záložku</string>
+    <string name="pc_bookmark_empty">Tlačítkem + výše označte okamžik, ke kterému se chcete vrátit.</string>
+    <string name="pc_bookmark_remove">Odebrat záložku v %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Přeskočit úvod a titulky</string>
+    <string name="pc_skip_intro_set">Úvod do %1$s</string>
+    <string name="pc_skip_outro_set">titulky posledních %1$s</string>
+    <string name="pc_skip_mark_intro">Úvod končí zde</string>
+    <string name="pc_skip_mark_outro">Titulky začínají zde</string>
+    <string name="pc_skip_clear">Vymazat úvod a titulky</string>
+    <string name="pc_skip_intro_hint">Každý další díl tohoto seriálu začne zde</string>
+    <string name="pc_skip_outro_hint">Každý další díl tohoto seriálu odsud přejde na následující</string>
+    <string name="vid_intro_skipped">Úvod přeskočen</string>
+    <string name="vid_watch_intro">Zhlédnout</string>
+    <string name="vid_chapter_intro">Úvod · zbývá %1$s</string>
+    <string name="vid_chapter_outro">Titulky · zbývá %1$s</string>
+    <string name="vid_skip">Přeskočit</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Neznámý formát</string>
+    <string name="pc_track_unknown">Neznámá stopa</string>
+    <string name="pc_track_n">Stopa %1$d</string>
+    <string name="pc_track_external_sub">Externí titulky</string>
+    <string name="pc_track_external">Externí</string>
+    <string name="pc_track_embedded">Vložené</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Zvuk</string>
+    <string name="pc_frames">Zahozeno %1$d / vykresleno %2$d</string>
+    <string name="pc_env_dim">Při přehrávání ztlumit</string>
+    <string name="pc_env_viewing_light">Jas světel při přehrávání</string>
+    <string name="pc_env_dim_hint">Při sledování se použije nastavený jas. Když přehrávání pozastavíte nebo otevřete ovládání, světla se znovu rozsvítí.</string>
+    <string name="pc_env_lights">Světla</string>
+    <string name="pc_env_lights_hint">Vlastní světla místa, zapnutá nebo vypnutá; když svítí, „Při přehrávání ztlumit“ je během filmu stále ztlumí</string>
+    <string name="pc_env_seat">Sedadlo</string>
+    <string name="pc_seat_center">Uprostřed</string>
+    <string name="pc_seat_left">Vlevo</string>
+    <string name="pc_seat_right">Vpravo</string>
+    <string name="pc_seat_left_window">Vlevo u okna</string>
+    <string name="pc_seat_right_window">Vpravo u okna</string>
+    <string name="pc_env_screen">Film a titulky</string>
+    <string name="pc_env_screen_hint">Film i titulky se zobrazí na plátně v tomto prostředí.</string>
+    <string name="pc_env_glow">Záře plátna</string>
+    <string name="pc_env_glow_hint">Barvy filmu se odrážejí na okraji plátna a na okolních plochách.</string>
+    <string name="pc_env_screen_none">Tady není obrazovka — film zůstane v okně</string>
+    <string name="pc_env_has_screen">Má obrazovku</string>
+    <string name="pc_env_entering">Otevírání: %1$s…</string>
+    <string name="pc_env_failed">%1$s se nepodařilo načíst</string>
+    <string name="pc_lang_simplified">Zjednodušená čínština</string>
+    <string name="pc_lang_traditional">Tradiční čínština</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d další zvuková stopa</item>
+        <item quantity="few">%d další zvukové stopy</item>
+        <item quantity="many">%d další zvukové stopy</item>
+        <item quantity="other">%d dalších zvukových stop</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Tento soubor má zvuk, který vestavěný přehrávač neumí přečíst — přehrajte ho v mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d soubor obrazových titulků</item>
+        <item quantity="few">%d soubory obrazových titulků</item>
+        <item quantity="many">%d souboru obrazových titulků</item>
+        <item quantity="other">%d souborů obrazových titulků</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS vedle filmu — vestavěný přehrávač je neumí vykreslit; přehrajte ho v mpv</string>
+    <string name="pc_pano_format">Formát panoramatu</string>
+    <string name="pc_pano_equirect">Válcová</string>
+    <string name="pc_pano_fisheye">Rybí oko</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Krychlová</string>
+    <string name="pc_pano_dual">Dvojité rybí oko</string>
+    <string name="pc_pano_direction">Směr</string>
+    <string name="pc_pano_turn_left">Otočit vlevo</string>
+    <string name="pc_pano_recenter">Vycentrovat</string>
+    <string name="pc_pano_turn_right">Otočit vpravo</string>
+    <string name="pc_pano_turn_hint">Otočí obraz o 30° kolem vás — uvidíte, co je za vámi, aniž byste se otáčeli</string>
+    <string name="pc_pano_recenter_hint">Přesune přední stranu filmu tam, kam se díváte</string>
+    <string name="pc_pano_own">Síť ze souboru</string>
+    <string name="pc_info_format">Formát</string>
+    <string name="pc_info_spatial_video">Prostorové video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, dva pohledy (zobrazeno levé oko)</string>
+    <string name="pc_info_camera">%1$d° napříč · %2$d mm od sebe</string>
+    <string name="pc_info_right_first">pravé oko první</string>
+    <string name="pc_audio_field">Ambisonický</string>
+    <string name="vid_pano_guess_360">Vypadá to na 360° video</string>
+    <string name="vid_pano_guess_360_3d">Vypadá to na 360° 3D video</string>
+    <string name="vid_pano_guess_180_3d">Vypadá to na 180° 3D video (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Vypadá to na video s rybím okem</string>
+    <string name="vid_pano_guess_fisheye_3d">Vypadá to na 180° 3D video s rybím okem</string>
+    <string name="vid_pano_guess_dual">Vypadá to na originál ze dvou objektivů 360° kamery</string>
+    <string name="vid_pano_guess_play">Přehrát jako panoráma</string>
+    <string name="vid_pano_guess_no">Není</string>
+    <string name="pc_pano_tilt_up">Nahoru</string>
+    <string name="pc_pano_tilt_down">Dolů</string>
+    <string name="pc_pano_roll_left">Naklonit vlevo</string>
+    <string name="pc_pano_roll_right">Naklonit vpravo</string>
+    <string name="pc_pano_level">Vyrovnat</string>
+    <string name="pc_pano_level_hint">Pro křivý horizont: 5° na stisk, uloží se pro tento film</string>
+</resources>

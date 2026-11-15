@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Убрать из избранного</string>
+    <string name="det_up_next">Далее</string>
+    <string name="det_section_main">Основное</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Сезон %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Отметить всё как просмотренное?</string>
+    <string name="det_mark_all_unwatched_q">Отметить всё как непросмотренное?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d файл будет отмечен как просмотренный.</item>
+        <item quantity="few">%1$d файла будут отмечены как просмотренные.</item>
+        <item quantity="many">%1$d файлов будут отмечены как просмотренные.</item>
+        <item quantity="other">%1$d файла будут отмечены как просмотренные.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d из них просмотрен не до конца и потеряет позицию.</item>
+        <item quantity="few">%1$d из них просмотрены не до конца и потеряют позицию.</item>
+        <item quantity="many">%1$d из них просмотрены не до конца и потеряют позицию.</item>
+        <item quantity="other">%1$d из них просмотрены не до конца и потеряют позицию.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Прогресс просмотра %1$d файла будет сброшен.</item>
+        <item quantity="few">Прогресс просмотра %1$d файлов будет сброшен.</item>
+        <item quantity="many">Прогресс просмотра %1$d файлов будет сброшен.</item>
+        <item quantity="other">Прогресс просмотра %1$d файла будет сброшен.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Источник</string>
+    <string name="fix_scope">Применить к</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Всей карточке (%1$d файл)</item>
+        <item quantity="few">Всей карточке (%1$d файла)</item>
+        <item quantity="many">Всей карточке (%1$d файлов)</item>
+        <item quantity="other">Всей карточке (%1$d файла)</item>
+    </plurals>
+    <string name="fix_scope_file">Только этому файлу</string>
+    <string name="fix_query_hint">Название — лучше всего находятся английские</string>
+    <string name="fix_hint">Выберите верную запись, чтобы исправить сопоставление</string>
+    <string name="fix_applying">Применение…</string>
+    <string name="fix_failed">Не удалось применить запись. Проверьте сеть и попробуйте снова.</string>
+    <string name="fix_kind_movie">Фильм</string>
+    <string name="fix_kind_show">Сериал</string>
+    <string name="fix_current">Текущее</string>
+    <string name="fix_no_results_title">Подходящих записей нет</string>
+    <string name="fix_no_results_anilist">Попробуйте другое написание — лучше всего находятся названия на ромадзи и английском.</string>
+    <string name="fix_error_title">Поиск не завершился</string>
+    <string name="fix_error_body">Проверьте сеть и попробуйте снова.</string>
+    <string name="fix_retry">Повторить</string>
+    <string name="fix_confirm_title">Заменить на «%1$s»?</string>
+    <string name="fix_confirm_title_year">Заменить на «%1$s» (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">%1$d файл этой карточки отныне будет использовать эту запись, и последующие распознавания её не изменят.</item>
+        <item quantity="few">Все %1$d файла этой карточки отныне будут использовать эту запись, и последующие распознавания её не изменят.</item>
+        <item quantity="many">Все %1$d файлов этой карточки отныне будут использовать эту запись, и последующие распознавания её не изменят.</item>
+        <item quantity="other">Все %1$d файла этой карточки отныне будут использовать эту запись, и последующие распознавания её не изменят.</item>
+    </plurals>
+    <string name="fix_confirm_file">Только «%1$s» отныне будет использовать эту запись, и последующие распознавания её не изменят.</string>
+    <string name="fix_apply">Применить</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">Ещё %d</item>
+        <item quantity="few">Ещё %d</item>
+        <item quantity="many">Ещё %d</item>
+        <item quantity="other">Ещё %d</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">Ещё %d работа в вашей медиатеке</item>
+        <item quantity="few">Ещё %d работы в вашей медиатеке</item>
+        <item quantity="many">Ещё %d работ в вашей медиатеке</item>
+        <item quantity="other">Ещё %d работы в вашей медиатеке</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d работа в вашей медиатеке</item>
+        <item quantity="few">%d работы в вашей медиатеке</item>
+        <item quantity="many">%d работ в вашей медиатеке</item>
+        <item quantity="other">%d работы в вашей медиатеке</item>
+    </plurals>
+    <string name="det_similar">Похожее</string>
+    <string name="det_episode_copy">%1$s · другая копия</string>
+    <string name="det_season_progress">Просмотрено %1$d из %2$d</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Просмотрено: %1$d</item>
+        <item quantity="few">Просмотрены все %1$d</item>
+        <item quantity="many">Просмотрены все %1$d</item>
+        <item quantity="other">Просмотрены все %1$d</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Версии</string>
+    <string name="det_series">Из этой коллекции</string>
+    <string name="lib_series">Коллекция</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d название</item>
+        <item quantity="few">%d названия</item>
+        <item quantity="many">%d названий</item>
+        <item quantity="other">%d названия</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d название в этой медиатеке, в порядке выхода</item>
+        <item quantity="few">%d названия в этой медиатеке, в порядке выхода</item>
+        <item quantity="many">%d названий в этой медиатеке, в порядке выхода</item>
+        <item quantity="other">%d названия в этой медиатеке, в порядке выхода</item>
+    </plurals>
+</resources>

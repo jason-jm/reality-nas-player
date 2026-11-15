@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Cleartext HTTP is permitted. A video player's own network is a home's: a phone casting
+  (DLNA serves its video at http://192.168.x.x:port/…, and 投屏 from B站 / 腾讯视频 hands over
+  plain http CDN addresses), Jellyfin / Emby / Plex and DLNA servers, a NAS's WebDAV — nearly
+  all of it plain http, and Android refused every such address to Media3
+  (ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED: a cast to the headset started nothing). The loopback
+  proxy (LocalStreamServer) is http://127.0.0.1 as before. What the app asks of the internet
+  itself — the scraping sites, the font and artwork downloads — is addressed as https:// in
+  code, and this does not make it any less so.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

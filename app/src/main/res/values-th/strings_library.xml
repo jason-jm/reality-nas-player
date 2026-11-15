@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">ยังไม่มีภาพยนตร์</string>
+    <string name="lib_add_source">เพิ่มแหล่งสื่อ</string>
+    <string name="lib_empty_search_hint">การค้นหาจะดูทุกชื่อเรื่องและชื่อไฟล์ในคลังสื่อ</string>
+    <string name="lib_search_clear">ล้างการค้นหา</string>
+    <string name="lib_empty_favorites_title">ยังไม่มีรายการโปรด</string>
+    <string name="lib_empty_history_title">ยังไม่ได้ดูอะไร</string>
+    <string name="lib_empty_shelf_hint">เรื่องต่างๆ จะมาอยู่ในชั้นนี้เมื่อการจับคู่รู้ว่าเป็นเรื่องอะไร</string>
+    <string name="lib_show_all">เรียกดูทุกเรื่อง</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">ผลลัพธ์สำหรับ “%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="other">%1$d ผลลัพธ์</item>
+    </plurals>
+    <string name="lib_search_people_title">บุคคล</string>
+    <string name="lib_search_titles">ชื่อเรื่อง</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">จากบุคคลที่เกี่ยวข้อง</string>
+    <plurals name="lib_search_people">
+        <item quantity="other">%1$d คน</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="other">%1$d เรื่อง</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">ตัวเลขและสัญลักษณ์</string>
+    <string name="lib_index_unidentified">ยังไม่ระบุ</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">ปีนี้: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">ปีนี้: ดูไป %1$s</string>
+    <plurals name="hist_stats_films">
+        <item quantity="other">ภาพยนตร์ %1$d เรื่อง</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="other">%1$d ตอน</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="other">ประมาณ %1$d ชั่วโมง</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d นาที</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">ไม่มีอะไรเหลือให้จับคู่ ผนังโปสเตอร์เป็นปัจจุบันแล้ว</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">เล่น · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">ยังไม่จับคู่</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">ตัวกรอง</string>
+    <string name="lib_filter_n">ตัวกรอง · %1$d</string>
+    <string name="lib_filter_watch">สถานะการดู</string>
+    <string name="lib_filter_any">ทั้งหมด</string>
+    <string name="lib_filter_unwatched">ยังไม่ดู</string>
+    <string name="lib_filter_in_progress">กำลังดู</string>
+    <string name="lib_filter_watched">ดูแล้ว</string>
+    <string name="lib_filter_genre">ประเภท</string>
+    <string name="lib_filter_decade">ทศวรรษ</string>
+    <string name="lib_filter_picture">ภาพ</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">ยุค %1$d</string>
+    <string name="lib_filter_reset">รีเซ็ตตัวกรอง</string>
+    <plurals name="lib_filter_count">
+        <item quantity="other">%d เรื่อง</item>
+    </plurals>
+    <string name="lib_empty_filter">ไม่มีรายการที่ตรงกับตัวกรองเหล่านี้</string>
+    <string name="lib_empty_filter_hint">ลองตัวเลือกอื่น หรือล้างตัวกรอง</string>
+    <string name="lib_filter_clear">ล้างตัวกรอง</string>
+    <string name="lib_recently_added">เพิ่มล่าสุด</string>
+    <string name="lib_recently_added_on">เพิ่มล่าสุด · %1$s</string>
+    <string name="lib_surprise">สุ่มให้ดู</string>
+    <string name="lib_because">เพราะคุณดู %1$s</string>
+    <string name="lib_history_today">วันนี้</string>
+    <string name="lib_history_yesterday">เมื่อวาน</string>
+    <string name="lib_history_this_week">ก่อนหน้านี้ในสัปดาห์นี้</string>
+    <string name="lib_history_this_month">ก่อนหน้านี้ในเดือนนี้</string>
+    <string name="lib_history_earlier">ก่อนหน้านั้น</string>
+</resources>

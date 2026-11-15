@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Afspelen</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projectie</string>
+    <string name="pc_proj_flat">Plat</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Lettertype</string>
+    <string name="pc_colour">Kleur</string>
+    <string name="pc_sub_style_plain">Schaduw</string>
+    <string name="pc_sub_style_box">Kader</string>
+    <string name="pc_second_subtitle">Tweede ondertiteling</string>
+    <string name="pc_sub_style_outline">Rand</string>
+    <string name="pc_font_default">Standaard</string>
+    <string name="pc_font_serif">Schreef</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">Wit</string>
+    <string name="pc_colour_yellow">Geel</string>
+    <string name="pc_colour_cyan">Cyaan</string>
+    <string name="pc_colour_green">Groen</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Op volgorde</string>
+    <string name="pc_loop_all">Alles</string>
+    <string name="pc_loop_one">Eén</string>
+    <string name="pc_loop_shuffle">Willekeurig</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Momentopname maken…</string>
+    <string name="pc_hold_speed">Afspelen op 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Bladwijzers</string>
+    <string name="pc_bookmarks_n">Bladwijzers · %1$d</string>
+    <string name="pc_bookmark_add">Bladwijzer toevoegen</string>
+    <string name="pc_bookmark_empty">Markeer met + hierboven een moment om naar terug te gaan.</string>
+    <string name="pc_bookmark_remove">Bladwijzer bij %1$s verwijderen</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Intro &amp; aftiteling overslaan</string>
+    <string name="pc_skip_intro_set">Intro tot %1$s</string>
+    <string name="pc_skip_outro_set">aftiteling duurt %1$s</string>
+    <string name="pc_skip_mark_intro">Intro eindigt hier</string>
+    <string name="pc_skip_mark_outro">Aftiteling begint hier</string>
+    <string name="pc_skip_clear">Intro &amp; aftiteling wissen</string>
+    <string name="pc_skip_intro_hint">Elke latere aflevering van deze serie begint hier</string>
+    <string name="pc_skip_outro_hint">Elke latere aflevering van deze serie gaat vanaf hier door naar de volgende</string>
+    <string name="vid_intro_skipped">Intro overgeslagen</string>
+    <string name="vid_watch_intro">Toch kijken</string>
+    <string name="vid_chapter_intro">Opening · nog %1$s</string>
+    <string name="vid_chapter_outro">Aftiteling · nog %1$s</string>
+    <string name="vid_skip">Overslaan</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Onbekend formaat</string>
+    <string name="pc_track_unknown">Onbekend spoor</string>
+    <string name="pc_track_n">Spoor %1$d</string>
+    <string name="pc_track_external_sub">Externe ondertitels</string>
+    <string name="pc_track_external">Extern</string>
+    <string name="pc_track_embedded">Ingesloten</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Geluid</string>
+    <string name="pc_frames">Overgeslagen %1$d / weergegeven %2$d</string>
+    <string name="pc_env_dim">Dimmen</string>
+    <string name="pc_env_viewing_light">Licht tijdens afspelen</string>
+    <string name="pc_env_dim_hint">Tijdens het afspelen wordt de gekozen helderheid gebruikt. Het licht wordt weer feller als je pauzeert of de bediening opent.</string>
+    <string name="pc_env_lights">Licht</string>
+    <string name="pc_env_lights_hint">Het eigen licht van de plek, aan of uit; staat het aan, dan dimt „Dimmen” het toch tijdens de film</string>
+    <string name="pc_env_seat">Zitplaats</string>
+    <string name="pc_seat_center">Midden</string>
+    <string name="pc_seat_left">Links</string>
+    <string name="pc_seat_right">Rechts</string>
+    <string name="pc_seat_left_window">Linkerraam</string>
+    <string name="pc_seat_right_window">Rechterraam</string>
+    <string name="pc_env_screen">Film en ondertitels</string>
+    <string name="pc_env_screen_hint">De film en ondertitels verschijnen op het scherm van de ruimte.</string>
+    <string name="pc_env_glow">Schermgloed</string>
+    <string name="pc_env_glow_hint">De kleuren van de film verlichten de schermrand en de oppervlakken eromheen.</string>
+    <string name="pc_env_screen_none">Hier is geen scherm – de film blijft in het venster</string>
+    <string name="pc_env_has_screen">Heeft een scherm</string>
+    <string name="pc_env_entering">%1$s openen…</string>
+    <string name="pc_env_failed">%1$s kon niet worden geladen</string>
+    <string name="pc_lang_simplified">Vereenvoudigd Chinees</string>
+    <string name="pc_lang_traditional">Traditioneel Chinees</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">Nog %d geluidsspoor</item>
+        <item quantity="other">Nog %d geluidssporen</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Dit bestand heeft geluid dat de ingebouwde speler niet kan lezen – speel het af in mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d ondertitelbestand met beelden</item>
+        <item quantity="other">%d ondertitelbestanden met beelden</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS naast de film – de ingebouwde speler kan ze niet tekenen; speel hem af in mpv</string>
+    <string name="pc_pano_format">Panoramaformaat</string>
+    <string name="pc_pano_equirect">Equirect</string>
+    <string name="pc_pano_fisheye">Visoog</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Kubus</string>
+    <string name="pc_pano_dual">Dubbel visoog</string>
+    <string name="pc_pano_direction">Richting</string>
+    <string name="pc_pano_turn_left">Links draaien</string>
+    <string name="pc_pano_recenter">Centreren</string>
+    <string name="pc_pano_turn_right">Rechts draaien</string>
+    <string name="pc_pano_turn_hint">Draait het beeld 30° om je heen – wat achter je is, zonder je om te draaien</string>
+    <string name="pc_pano_recenter_hint">Zet de voorkant van de film waar je naar kijkt</string>
+    <string name="pc_pano_own">Mesh van bestand</string>
+    <string name="pc_info_format">Formaat</string>
+    <string name="pc_info_spatial_video">Ruimtelijke video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, twee beelden (linkeroog getoond)</string>
+    <string name="pc_info_camera">%1$d° beeldhoek · %2$d mm uit elkaar</string>
+    <string name="pc_info_right_first">rechteroog eerst</string>
+    <string name="pc_audio_field">Ambisonics</string>
+    <string name="vid_pano_guess_360">Dit lijkt een 360°-video</string>
+    <string name="vid_pano_guess_360_3d">Dit lijkt een 360°-3D-video</string>
+    <string name="vid_pano_guess_180_3d">Dit lijkt een 180°-3D-video (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Dit lijkt een visoogvideo</string>
+    <string name="vid_pano_guess_fisheye_3d">Dit lijkt een 180°-3D-visoogvideo</string>
+    <string name="vid_pano_guess_dual">Dit lijkt het origineel met twee lenzen van een 360°-camera</string>
+    <string name="vid_pano_guess_play">Als panorama afspelen</string>
+    <string name="vid_pano_guess_no">Dat is het niet</string>
+    <string name="pc_pano_tilt_up">Omhoog</string>
+    <string name="pc_pano_tilt_down">Omlaag</string>
+    <string name="pc_pano_roll_left">Links kantelen</string>
+    <string name="pc_pano_roll_right">Rechts kantelen</string>
+    <string name="pc_pano_level">Horizon</string>
+    <string name="pc_pano_level_hint">Voor een scheve horizon: 5° per druk, bewaard voor deze film</string>
+</resources>

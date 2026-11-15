@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_downloads">已下载</string>
+    <string name="dl_notif_title">正在下载到本机</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">下载到本机</string>
+    <plurals name="dl_add_next">
+        <item quantity="other">下载接下来的 %d 集</item>
+    </plurals>
+    <string name="dl_remove">删除下载</string>
+    <string name="dl_pause">暂停</string>
+    <string name="dl_resume">继续</string>
+    <string name="dl_retry">重试</string>
+    <string name="dl_on_headset">已下载到本机</string>
+    <plurals name="dl_added">
+        <item quantity="other">正在把 %d 个文件下载到本机</item>
+    </plurals>
+    <string name="dl_added_none">已在下载列表中</string>
+    <string name="dl_removed">已删除下载</string>
+    <string name="dl_state_queued">等待下载</string>
+    <string name="dl_state_paused">已暂停</string>
+    <string name="dl_state_starting">正在连接…</string>
+    <string name="dl_running">%1$s / %2$s · %3$s/秒</string>
+    <string name="dl_waiting_share">等待共享恢复 · %1$s / %2$s</string>
+    <string name="dl_failed_no_room">本机空间不足</string>
+    <string name="dl_failed_unreachable">连不上文件所在的共享</string>
+    <string name="dl_failed_disk">文件无法保存</string>
+    <string name="dl_empty">还没有下载的影片</string>
+    <string name="dl_empty_hint">长按海报或剧集，选「下载到本机」，离开家也能看。</string>
+    <string name="dl_space">已下载 %1$s · 剩余 %2$s</string>
+    <string name="dl_section_active">正在下载</string>
+    <string name="dl_section_done">在本机上</string>
+    <plurals name="dl_nav_more">
+        <item quantity="other">%1$d%% · 还有 %2$d 个</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="other">清理已看完的 %d 个</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="other">已清理 %1$d 个看完的下载，腾出 %2$s</item>
+    </plurals>
+    <string name="dl_cancel">取消下载</string>
+    <string name="dl_failed_snack">「%1$s」没能下载：%2$s</string>
+    <string name="set_downloads">已下载到本机</string>
+    <string name="set_downloads_none">还没有：长按海报即可下载到本机。</string>
+    <plurals name="set_downloads_n">
+        <item quantity="other">%1$d 个文件 · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">查看</string>
+    <string name="set_downloads_clear">删除全部下载</string>
+    <string name="set_downloads_clear_hint">头显上的全部副本，以及正在下载的；NAS 上的文件不受影响。</string>
+    <string name="set_downloads_clear_q">删除全部下载？</string>
+    <string name="set_downloads_clear_body">头显上的副本会被删除，NAS 上的原文件不受影响。</string>
+    <string name="set_downloads_cleared">已删除全部下载</string>
+    <string name="set_downloads_clear_action">删除…</string>
+    <string name="set_downloads_clear_confirm">删除</string>
+    <string name="dl_player_one">下载</string>
+    <string name="dl_player_done">已下载</string>
+    <plurals name="dl_player_n">
+        <item quantity="other">下载 %d 集</item>
+    </plurals>
+    <string name="dl_folder">下载这个文件夹</string>
+    <plurals name="dl_folder_q">
+        <item quantity="other">下载这 %d 个文件？</item>
+    </plurals>
+    <string name="dl_folder_body">它们会依次下载到本机。本机剩余 %1$s，始终保留 2 GB。</string>
+    <string name="dl_folder_go">下载</string>
+    <string name="vid_play_copy">播放本机的%1$s</string>
+    <string name="lib_offline">网络已断开 · 只能播放已下载的内容</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="other">网络已断开 · 本机有 %d 个下载可以播放</item>
+    </plurals>
+    <string name="set_cast_privacy">接收投屏（默认关闭）</string>
+    <string name="set_cast_privacy_body">打开后头显只在你的局域网内宣告自己，让手机能在投屏列表里看到它。手机发来的是视频地址，头显直接从那里播放；不经过 Reality NAS Player 的任何服务器，也不记录投过来的内容。</string>
+    <string name="set_downloads_privacy">下载到本机的副本</string>
+    <string name="set_downloads_privacy_body">从你自己的服务器复制，只存在头显上。可在「已下载」页删除，或在「媒体库」页一次删除全部。</string>
+    <string name="dl_finished_one">已下载到本机：%1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="other">%d 个文件已下载到本机</item>
+    </plurals>
+    <string name="set_delete_watched">看完后删除下载</string>
+    <string name="set_delete_watched_hint">看完的副本会从头显上删除，NAS 上的原文件不受影响</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="other">已删除 %d 个看完的下载</item>
+    </plurals>
+    <string name="dl_space_free">本机剩余 %1$s</string>
+    <string name="pc_info_source">来源</string>
+    <string name="pc_info_from_share">%1$s 上的共享</string>
+    <string name="dl_slowed">看片时减速</string>
+</resources>

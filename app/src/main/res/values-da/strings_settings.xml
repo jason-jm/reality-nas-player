@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Prøv igen</string>
+    <string name="md_secret_show">Vis</string>
+    <string name="md_secret_hide">Skjul</string>
+    <string name="md_secret_show_named">Vis %1$s</string>
+    <string name="md_secret_hide_named">Skjul %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Noget uventet gik galt</string>
+    <string name="fault_unknown_detail">Noget uventet gik galt: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Tilbage til kildetyper</string>
+    <string name="sources_edit">Rediger</string>
+    <string name="sources_edit_title">Rediger »%1$s«</string>
+    <string name="sources_save_and_scan">Gem og scan</string>
+    <string name="sources_password_keep">Lad være tomt for at beholde den gemte adgangskode</string>
+    <string name="sources_token_keep">Lad være tomt for at beholde det gemte token</string>
+    <string name="sources_saved_placeholder">Gemt</string>
+    <string name="sources_smb_need_share">Det er kun en vært. Tryk på »Gennemse delinger…« øverst til højre for at vælge en deling, eller skriv vært/deling for at tilføje den direkte</string>
+    <string name="sources_webdav_scheme">Adressen skal starte med http:// eller https://</string>
+    <string name="sources_remote_scheme">Denne adresse er til en anden type server; skriv den uden delen før ://</string>
+    <string name="sources_address_spaces">En adresse må ikke indeholde mellemrum</string>
+    <string name="sources_server_user_hint">Din konto på serveren, den du logger ind i dens webapp med</string>
+    <string name="sources_server_pass_hint">Kontoens adgangskode</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s-server</string>
+    <string name="sources_kind_dlna">DLNA-medieserver</string>
+    <string name="sources_remove_action">Fjern…</string>
+    <string name="sources_removed">Fjernede »%1$s«</string>
+    <string name="sources_added_toast">Tilføjede »%1$s«, scanner nu</string>
+    <string name="sources_saved_toast">Gemte »%1$s«, scanner den igen</string>
+    <string name="sources_fix_account">Skift konto eller adgangskode</string>
+    <string name="sources_fix_account_hint">Forbind denne kilde med den rigtige konto</string>
+    <string name="sources_fix_address">Tjek forbindelsesoplysningerne</string>
+    <string name="sources_fix_address_hint">Tjek adresse og port, eller prøv en anden konto, og scan så igen</string>
+    <string name="sources_scan_busy">En anden scanning eller skrabning kører; denne kan starte, når den er færdig</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Tilbage til delingerne</string>
+    <string name="smb_back_servers">Tilbage til serverne</string>
+    <string name="smb_saved_password">Bruger den gemte adgangskode</string>
+    <string name="smb_signing_in">Logger ind…</string>
+    <string name="smb_subnet_invalid">Angiv en IPv4-adresse, f.eks. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Lokale filnavne</string>
+    <string name="set_live_engine_exo">Forbedret motor</string>
+    <string name="set_live_engine_system">Systemafspiller</string>
+    <string name="set_live_spatial">%1$s · rumlig lyd</string>
+    <string name="set_live_sync_off">Fra</string>
+    <string name="set_live_sync_on">Til</string>
+    <string name="set_live_sync_on_ago">Til · synkroniseret %1$s</string>
+    <string name="set_live_sync_failed">Seneste synkronisering mislykkedes</string>
+    <string name="set_live_version">Version %1$s</string>
+    <string name="set_live_sub">Undertekster: %1$s</string>
+    <string name="set_live_audio">Lyd: %1$s</string>
+    <string name="set_live_night">Nattilstand</string>
+    <string name="set_live_no_autoplay">Ingen autostart</string>
+    <string name="set_pano_auto">Åbn 360°/180°-videoer immersivt</string>
+    <string name="set_pano_auto_on">Til: en video, der genkendes som 360° eller 180°, åbner i det immersive rum, hele vejen rundt om dig.</string>
+    <string name="set_pano_auto_off">Fra: 360°- og 180°-videoer starter i vinduet; Billede › Visningsrum tager dig ind.</string>
+    <string name="set_auto_skip_intro">Spring intro over automatisk</string>
+    <string name="set_auto_skip_intro_on">Til: når en fils kapitler markerer introen (OP, Opening…), springes den over, når den starter – »Se den« øverst i billedet går tilbage.</string>
+    <string name="set_auto_skip_intro_off">Fra: når en intro starter, tilbyder toppen af billedet »Spring over«.</string>
+    <string name="set_live_auto_skip_intro">Introer springes over</string>
+    <string name="set_version_build">Version %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Matchning</string>
+    <string name="set_group_language">Sprog</string>
+    <string name="set_language_ui">Appsprog</string>
+    <string name="set_language_ui_hint">Sproget i appens menuer og tekster.</string>
+    <string name="set_language_follow_app">Samme som appen</string>
+    <string name="set_language_meta">Metadatasprog</string>
+    <string name="set_tmdb_key_label">TMDB API-nøgle</string>
+    <string name="set_omdb_key_label">OMDb API-nøgle</string>
+    <string name="set_keys_offline">Offlineskrabning er slået til, så disse nøgler bruges ikke lige nu.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Slet…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Til: PICOs motor til rumlig lyd behandler den.</string>
+    <string name="set_spatial_off">Fra: filmens eget mix afspilles, som det blev lavet.</string>
+    <string name="set_fd_needs_system">Kun systemafspilleren understøtter det: slå »Forbedret motor« fra ovenfor for at bruge det.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Udfyld og genopbyg</string>
+    <string name="set_auto_scan">Opdater biblioteket automatisk</string>
+    <string name="set_auto_scan_on">Til: når appen åbnes, leder den efter filer, der er føjet til dine kilder siden sidst (højst hver 6. time), og matcher kun de nye.</string>
+    <string name="set_auto_scan_off">Fra: nye filer vises, når du har scannet under Kilder.</string>
+    <string name="set_rescrape">Skrab de ufærdige poster igen</string>
+    <string name="set_rescrape_hint">Prøver igen for poster uden plakat endnu, eller hvis seneste skrabning mislykkedes; matchede poster lades i fred</string>
+    <string name="set_rescrape_start">Start</string>
+    <string name="set_rescrape_started">Genskrabningen er startet</string>
+    <string name="set_task_busy">En scanning eller skrabning kører; en ny opgave kan starte, når den er færdig.</string>
+    <string name="set_clear_action">Tøm…</string>
+    <string name="set_cleared">Biblioteket er tomt</string>
+    <string name="set_clear_failed">Biblioteket kunne ikke tømmes; prøv igen om lidt</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Leder efter delinger…</string>
+    <string name="sync_open_sources">Åbn Kilder</string>
+    <string name="sync_open_sources_hint">Tilføj en NAS-deling, og kom så tilbage hertil</string>
+    <string name="sync_this_device">Dette headset</string>
+    <string name="sync_readonly_title">Delingen er skrivebeskyttet</string>
+    <string name="sync_remove_body_at">Dette sletter ».aura« på %1$s og alle enheders poster i den. Biblioteket og fremskridtet på dette headset forbliver, som de er.</string>
+    <string name="sync_removed">Synkroniseringsmappen er slettet</string>
+    <string name="sync_remove_failed">Synkroniseringsmappen kunne ikke slettes: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Åbn Skrabning</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · »%2$s« — %3$s</string>
+    <string name="set_licences">Open source-licenser</string>
+    <string name="set_licences_hint">Hver komponents licens, kildekoden til LGPL-bibliotekerne, og hvordan de udskiftes</string>
+</resources>

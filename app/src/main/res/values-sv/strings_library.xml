@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Inga filmer än</string>
+    <string name="lib_add_source">Lägg till en källa</string>
+    <string name="lib_empty_search_hint">Sökningen går igenom varje titel och filnamn i biblioteket.</string>
+    <string name="lib_search_clear">Rensa sökningen</string>
+    <string name="lib_empty_favorites_title">Inga favoriter än</string>
+    <string name="lib_empty_history_title">Inget sett än</string>
+    <string name="lib_empty_shelf_hint">Titlar hamnar på den här hyllan när matchningen vet vad de är.</string>
+    <string name="lib_show_all">Bläddra bland alla titlar</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Resultat för ”%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d träff</item>
+        <item quantity="other">%1$d träffar</item>
+    </plurals>
+    <string name="lib_search_people_title">Personer</string>
+    <string name="lib_search_titles">Titlar</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Via medverkande</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d person</item>
+        <item quantity="other">%1$d personer</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d titel</item>
+        <item quantity="other">%1$d titlar</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Siffror och tecken</string>
+    <string name="lib_index_unidentified">Inte identifierad</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">I år: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">I år: %1$s sett</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d film</item>
+        <item quantity="other">%1$d filmer</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d avsnitt</item>
+        <item quantity="other">%1$d avsnitt</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">cirka %1$d timme</item>
+        <item quantity="other">cirka %1$d timmar</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Inget kvar att matcha – väggen är uppdaterad.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Spela upp · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Inte matchad</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filtrera</string>
+    <string name="lib_filter_n">Filtrera · %1$d</string>
+    <string name="lib_filter_watch">Visningsstatus</string>
+    <string name="lib_filter_any">Alla</string>
+    <string name="lib_filter_unwatched">Osedda</string>
+    <string name="lib_filter_in_progress">Påbörjade</string>
+    <string name="lib_filter_watched">Sedda</string>
+    <string name="lib_filter_genre">Genre</string>
+    <string name="lib_filter_decade">Årtionde</string>
+    <string name="lib_filter_picture">Bild</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d-tal</string>
+    <string name="lib_filter_reset">Återställ filter</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d titel</item>
+        <item quantity="other">%d titlar</item>
+    </plurals>
+    <string name="lib_empty_filter">Inget matchar de här filtren</string>
+    <string name="lib_empty_filter_hint">Prova andra val, eller rensa filtren.</string>
+    <string name="lib_filter_clear">Rensa filter</string>
+    <string name="lib_recently_added">Nyligen tillagda</string>
+    <string name="lib_recently_added_on">Nyligen tillagda · %1$s</string>
+    <string name="lib_surprise">Överraska mig</string>
+    <string name="lib_because">Eftersom du såg %1$s</string>
+    <string name="lib_history_today">I dag</string>
+    <string name="lib_history_yesterday">I går</string>
+    <string name="lib_history_this_week">Tidigare i veckan</string>
+    <string name="lib_history_this_month">Tidigare i månaden</string>
+    <string name="lib_history_earlier">Dessförinnan</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">まだ映画がありません</string>
+    <string name="lib_add_source">ソースを追加</string>
+    <string name="lib_empty_search_hint">検索はライブラリ内のすべてのタイトルとファイル名が対象です。</string>
+    <string name="lib_search_clear">検索をクリア</string>
+    <string name="lib_empty_favorites_title">お気に入りはまだありません</string>
+    <string name="lib_empty_history_title">まだ何も視聴していません</string>
+    <string name="lib_empty_shelf_hint">マッチングで作品の内容がわかると、この棚に並びます。</string>
+    <string name="lib_show_all">すべての作品を見る</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">「%1$s」の検索結果</string>
+    <plurals name="lib_search_results">
+        <item quantity="other">%1$d件</item>
+    </plurals>
+    <string name="lib_search_people_title">人物</string>
+    <string name="lib_search_titles">作品</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">関連する人物から</string>
+    <plurals name="lib_search_people">
+        <item quantity="other">%1$d人</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="other">%1$d作品</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">数字と記号</string>
+    <string name="lib_index_unidentified">未識別</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">今年: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">今年: %1$s 視聴</string>
+    <plurals name="hist_stats_films">
+        <item quantity="other">映画%1$d本</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="other">%1$d話</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="other">約%1$d時間</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d分</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">マッチングが必要なものはありません。ポスターウォールは最新です。</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">再生 · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">未マッチ</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">フィルタ</string>
+    <string name="lib_filter_n">フィルタ · %1$d</string>
+    <string name="lib_filter_watch">視聴状態</string>
+    <string name="lib_filter_any">すべて</string>
+    <string name="lib_filter_unwatched">未視聴</string>
+    <string name="lib_filter_in_progress">視聴中</string>
+    <string name="lib_filter_watched">視聴済み</string>
+    <string name="lib_filter_genre">ジャンル</string>
+    <string name="lib_filter_decade">年代</string>
+    <string name="lib_filter_picture">映像</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d年代</string>
+    <string name="lib_filter_reset">フィルタをリセット</string>
+    <plurals name="lib_filter_count">
+        <item quantity="other">%d作品</item>
+    </plurals>
+    <string name="lib_empty_filter">このフィルタに一致するものはありません</string>
+    <string name="lib_empty_filter_hint">別の条件を選ぶか、フィルタを解除してください。</string>
+    <string name="lib_filter_clear">フィルタを解除</string>
+    <string name="lib_recently_added">最近追加</string>
+    <string name="lib_recently_added_on">最近追加 · %1$s</string>
+    <string name="lib_surprise">おまかせ</string>
+    <string name="lib_because">%1$sを見たあなたに</string>
+    <string name="lib_history_today">今日</string>
+    <string name="lib_history_yesterday">昨日</string>
+    <string name="lib_history_this_week">今週</string>
+    <string name="lib_history_this_month">今月</string>
+    <string name="lib_history_earlier">それ以前</string>
+</resources>

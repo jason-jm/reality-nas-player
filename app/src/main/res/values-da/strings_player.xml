@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Afspilning</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projektion</string>
+    <string name="pc_proj_flat">Flad</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Skrifttype</string>
+    <string name="pc_colour">Farve</string>
+    <string name="pc_sub_style_plain">Skygge</string>
+    <string name="pc_sub_style_box">Boks</string>
+    <string name="pc_second_subtitle">Sekundære undertekster</string>
+    <string name="pc_sub_style_outline">Kontur</string>
+    <string name="pc_font_default">Standard</string>
+    <string name="pc_font_serif">Serif</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">Hvid</string>
+    <string name="pc_colour_yellow">Gul</string>
+    <string name="pc_colour_cyan">Turkis</string>
+    <string name="pc_colour_green">Grøn</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">I rækkefølge</string>
+    <string name="pc_loop_all">Alle</string>
+    <string name="pc_loop_one">Én</string>
+    <string name="pc_loop_shuffle">Bland</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Tager et skærmbillede…</string>
+    <string name="pc_hold_speed">Afspiller i 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Bogmærker</string>
+    <string name="pc_bookmarks_n">Bogmærker · %1$d</string>
+    <string name="pc_bookmark_add">Tilføj bogmærke</string>
+    <string name="pc_bookmark_empty">Markér et øjeblik, du vil vende tilbage til, med + ovenfor.</string>
+    <string name="pc_bookmark_remove">Fjern bogmærket ved %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Spring intro/rulletekst over</string>
+    <string name="pc_skip_intro_set">Intro til %1$s</string>
+    <string name="pc_skip_outro_set">rulletekster %1$s</string>
+    <string name="pc_skip_mark_intro">Introen slutter her</string>
+    <string name="pc_skip_mark_outro">Rulleteksterne starter her</string>
+    <string name="pc_skip_clear">Ryd intro og rulletekster</string>
+    <string name="pc_skip_intro_hint">Alle senere afsnit af serien starter her</string>
+    <string name="pc_skip_outro_hint">Alle senere afsnit af serien går videre til det næste herfra</string>
+    <string name="vid_intro_skipped">Intro sprunget over</string>
+    <string name="vid_watch_intro">Se den</string>
+    <string name="vid_chapter_intro">Intro · %1$s tilbage</string>
+    <string name="vid_chapter_outro">Rulletekster · %1$s tilbage</string>
+    <string name="vid_skip">Spring over</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Ukendt format</string>
+    <string name="pc_track_unknown">Ukendt spor</string>
+    <string name="pc_track_n">Spor %1$d</string>
+    <string name="pc_track_external_sub">Eksterne undertekster</string>
+    <string name="pc_track_external">Ekstern</string>
+    <string name="pc_track_embedded">Indlejret</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Lyd</string>
+    <string name="pc_frames">Tabt %1$d / renderet %2$d</string>
+    <string name="pc_env_dim">Dæmp under afspilning</string>
+    <string name="pc_env_viewing_light">Lysstyrke under afspilning</string>
+    <string name="pc_env_dim_hint">Brug den valgte lysstyrke under afspilning. Lyset skrues op igen, når du sætter filmen på pause eller åbner betjeningen.</string>
+    <string name="pc_env_lights">Lys</string>
+    <string name="pc_env_lights_hint">Stedets eget lys, tændt eller slukket; når det er tændt, dæmper „Dæmp under afspilning“ det stadig under filmen</string>
+    <string name="pc_env_seat">Sæde</string>
+    <string name="pc_seat_center">Midten</string>
+    <string name="pc_seat_left">Venstre</string>
+    <string name="pc_seat_right">Højre</string>
+    <string name="pc_seat_left_window">Venstre vindue</string>
+    <string name="pc_seat_right_window">Højre vindue</string>
+    <string name="pc_env_screen">Film og undertekster</string>
+    <string name="pc_env_screen_hint">Filmen og underteksterne vises på rummets lærred.</string>
+    <string name="pc_env_glow">Lys fra lærredet</string>
+    <string name="pc_env_glow_hint">Filmens farver lyser lærredets ramme og de nærmeste flader op.</string>
+    <string name="pc_env_screen_none">Ingen skærm her – filmen bliver i vinduet</string>
+    <string name="pc_env_has_screen">Har en skærm</string>
+    <string name="pc_env_entering">Åbner %1$s…</string>
+    <string name="pc_env_failed">%1$s kunne ikke indlæses</string>
+    <string name="pc_lang_simplified">Forenklet kinesisk</string>
+    <string name="pc_lang_traditional">Traditionelt kinesisk</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d lydspor mere</item>
+        <item quantity="other">%d lydspor mere</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Denne fil har lyd, som den indbyggede afspiller ikke kan læse – afspil den i mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d billedbaseret undertekstfil</item>
+        <item quantity="other">%d billedbaserede undertekstfiler</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub/PGS ved siden af filmen – den indbyggede afspiller kan ikke tegne dem; afspil den i mpv</string>
+    <string name="pc_pano_format">Panoramaformat</string>
+    <string name="pc_pano_equirect">Ekvirekt</string>
+    <string name="pc_pano_fisheye">Fiskeøje</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Kubekort</string>
+    <string name="pc_pano_dual">Dobbelt fiskeøje</string>
+    <string name="pc_pano_direction">Retning</string>
+    <string name="pc_pano_turn_left">Drej til venstre</string>
+    <string name="pc_pano_recenter">Centrér</string>
+    <string name="pc_pano_turn_right">Drej til højre</string>
+    <string name="pc_pano_turn_hint">Drejer billedet 30° rundt om dig – det, der er bag dig, uden at du vender dig om</string>
+    <string name="pc_pano_recenter_hint">Placerer filmens front, hvor du kigger</string>
+    <string name="pc_pano_own">Filens mesh</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Rumlig video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, to visninger (venstre øje vises)</string>
+    <string name="pc_info_camera">Billedvinkel %1$d° · %2$d mm fra hinanden</string>
+    <string name="pc_info_right_first">højre øje først</string>
+    <string name="pc_audio_field">Ambisonics</string>
+    <string name="vid_pano_guess_360">Dette ligner en 360°-video</string>
+    <string name="vid_pano_guess_360_3d">Dette ligner en 360° 3D-video</string>
+    <string name="vid_pano_guess_180_3d">Dette ligner en 180° 3D-video (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Dette ligner en fiskeøjevideo</string>
+    <string name="vid_pano_guess_fisheye_3d">Dette ligner en 180° 3D-fiskeøjevideo</string>
+    <string name="vid_pano_guess_dual">Dette ligner originalen fra et 360-kamera med to objektiver</string>
+    <string name="vid_pano_guess_play">Afspil som panorama</string>
+    <string name="vid_pano_guess_no">Det er det ikke</string>
+    <string name="pc_pano_tilt_up">Op</string>
+    <string name="pc_pano_tilt_down">Ned</string>
+    <string name="pc_pano_roll_left">Hæld til venstre</string>
+    <string name="pc_pano_roll_right">Hæld til højre</string>
+    <string name="pc_pano_level">Ret op</string>
+    <string name="pc_pano_level_hint">Til en skæv horisont: 5° pr. tryk, gemmes for denne film</string>
+</resources>

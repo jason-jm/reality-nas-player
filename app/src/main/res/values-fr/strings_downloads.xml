@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Téléchargements</string>
+    <string name="dl_notif_title">Téléchargement sur ce casque</string>
+    <string name="dl_notif_progress">%1$s · %2$d %%</string>
+    <string name="dl_add">Télécharger sur le casque</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Télécharger %d épisode suivant</item>
+        <item quantity="many">Télécharger les %d d’épisodes suivants</item>
+        <item quantity="other">Télécharger les %d épisodes suivants</item>
+    </plurals>
+    <string name="dl_remove">Supprimer le téléchargement</string>
+    <string name="dl_pause">Pause</string>
+    <string name="dl_resume">Reprendre</string>
+    <string name="dl_retry">Réessayer</string>
+    <string name="dl_on_headset">Sur ce casque</string>
+    <plurals name="dl_added">
+        <item quantity="one">Téléchargement de %d fichier sur le casque</item>
+        <item quantity="many">Téléchargement de %d de fichiers sur le casque</item>
+        <item quantity="other">Téléchargement de %d fichiers sur le casque</item>
+    </plurals>
+    <string name="dl_added_none">Déjà dans Téléchargements</string>
+    <string name="dl_removed">Téléchargement supprimé</string>
+    <string name="dl_state_queued">En attente</string>
+    <string name="dl_state_paused">En pause</string>
+    <string name="dl_state_starting">Connexion…</string>
+    <string name="dl_running">%1$s sur %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">En attente du partage · %1$s sur %2$s</string>
+    <string name="dl_failed_no_room">Espace insuffisant sur le casque</string>
+    <string name="dl_failed_unreachable">Partage injoignable</string>
+    <string name="dl_failed_disk">Impossible d’enregistrer le fichier</string>
+    <string name="dl_empty">Aucun téléchargement pour l’instant</string>
+    <string name="dl_empty_hint">Appuyez longuement sur une affiche ou un épisode et choisissez Télécharger sur le casque pour le regarder loin de chez vous.</string>
+    <string name="dl_space">%1$s téléchargés · %2$s libres</string>
+    <string name="dl_section_active">En cours</string>
+    <string name="dl_section_done">Sur ce casque</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d %% · %2$d autre</item>
+        <item quantity="many">%1$d %% · %2$d autres</item>
+        <item quantity="other">%1$d %% · %2$d autres</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d %%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Supprimer %d vu</item>
+        <item quantity="many">Supprimer les %d vus</item>
+        <item quantity="other">Supprimer les %d vus</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">%1$d téléchargement vu supprimé · %2$s libérés</item>
+        <item quantity="many">%1$d de téléchargements vus supprimés · %2$s libérés</item>
+        <item quantity="other">%1$d téléchargements vus supprimés · %2$s libérés</item>
+    </plurals>
+    <string name="dl_cancel">Annuler le téléchargement</string>
+    <string name="dl_failed_snack">Impossible de télécharger %1$s : %2$s</string>
+    <string name="set_downloads">Téléchargé sur ce casque</string>
+    <string name="set_downloads_none">Rien pour l’instant : appuyez longuement sur une affiche pour la télécharger.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d fichier · %2$s</item>
+        <item quantity="many">%1$d de fichiers · %2$s</item>
+        <item quantity="other">%1$d fichiers · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Voir</string>
+    <string name="set_downloads_clear">Supprimer tous les téléchargements</string>
+    <string name="set_downloads_clear_hint">Toutes les copies sur le casque, y compris celles en cours. Les fichiers de vos partages ne sont pas touchés.</string>
+    <string name="set_downloads_clear_q">Supprimer tous les téléchargements ?</string>
+    <string name="set_downloads_clear_body">Les copies sur ce casque sont supprimées. Les fichiers de votre NAS restent tels quels.</string>
+    <string name="set_downloads_cleared">Tous les téléchargements ont été supprimés</string>
+    <string name="set_downloads_clear_action">Supprimer…</string>
+    <string name="set_downloads_clear_confirm">Supprimer</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Télécharger</string>
+    <string name="dl_player_done">Téléchargé</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Télécharger %d</item>
+        <item quantity="many">Télécharger %d</item>
+        <item quantity="other">Télécharger %d</item>
+    </plurals>
+    <string name="dl_folder">Télécharger ce dossier</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Télécharger %d fichier ?</item>
+        <item quantity="many">Télécharger ces %d de fichiers ?</item>
+        <item quantity="other">Télécharger ces %d fichiers ?</item>
+    </plurals>
+    <string name="dl_folder_body">Ils se téléchargent l’un après l’autre ; il reste %1$s sur le casque, et 2 GB sont toujours préservés.</string>
+    <string name="dl_folder_go">Télécharger</string>
+    <string name="vid_play_copy">Lire %1$s depuis le casque</string>
+    <string name="lib_offline">Hors ligne · seuls les téléchargements sont lisibles</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Hors ligne · %d téléchargement lisible ici</item>
+        <item quantity="many">Hors ligne · %d de téléchargements lisibles ici</item>
+        <item quantity="other">Hors ligne · %d téléchargements lisibles ici</item>
+    </plurals>
+    <string name="set_cast_privacy">Recevoir les diffusions (désactivé sauf si vous l’activez)</string>
+    <string name="set_cast_privacy_body">Le casque ne s’annonce que sur votre propre réseau, pour que les téléphones puissent le lister. Un téléphone envoie l’adresse d’une vidéo et le casque la lit depuis là ; rien ne passe par Reality NAS Player, et rien de ce qui est diffusé n’est enregistré.</string>
+    <string name="set_downloads_privacy">Téléchargements</string>
+    <string name="set_downloads_privacy_body">Les copies que vous téléchargez sont lues depuis votre propre serveur et conservées sur le casque uniquement. Supprimez-les dans Téléchargements, ou toutes d’un coup dans Bibliothèque.</string>
+    <string name="dl_finished_one">Maintenant sur le casque : %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d fichier est maintenant sur le casque</item>
+        <item quantity="many">%d de fichiers sont maintenant sur le casque</item>
+        <item quantity="other">%d fichiers sont maintenant sur le casque</item>
+    </plurals>
+    <string name="set_delete_watched">Supprimer les téléchargements une fois vus</string>
+    <string name="set_delete_watched_hint">Une copie vue jusqu’au bout quitte le casque ; le fichier de votre NAS reste</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">%d téléchargement vu supprimé</item>
+        <item quantity="many">%d de téléchargements vus supprimés</item>
+        <item quantity="other">%d téléchargements vus supprimés</item>
+    </plurals>
+    <string name="dl_space_free">%1$s libres sur le casque</string>
+    <string name="pc_info_source">Source</string>
+    <string name="pc_info_from_share">Partage sur %1$s</string>
+    <string name="dl_slowed">ralenti pendant le visionnage</string>
+</resources>

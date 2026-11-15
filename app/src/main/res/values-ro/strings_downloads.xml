@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Descărcări</string>
+    <string name="dl_notif_title">Se descarcă pe această cască</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Descărcați pe cască</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Descărcați %d episod următor</item>
+        <item quantity="few">Descărcați următoarele %d episoade</item>
+        <item quantity="other">Descărcați următoarele %d de episoade</item>
+    </plurals>
+    <string name="dl_remove">Eliminați descărcarea</string>
+    <string name="dl_pause">Pauză</string>
+    <string name="dl_resume">Reluați</string>
+    <string name="dl_retry">Încercați din nou</string>
+    <string name="dl_on_headset">Pe această cască</string>
+    <plurals name="dl_added">
+        <item quantity="one">Se descarcă %d fișier pe cască</item>
+        <item quantity="few">Se descarcă %d fișiere pe cască</item>
+        <item quantity="other">Se descarcă %d de fișiere pe cască</item>
+    </plurals>
+    <string name="dl_added_none">Deja în Descărcări</string>
+    <string name="dl_removed">Descărcare eliminată</string>
+    <string name="dl_state_queued">În așteptare</string>
+    <string name="dl_state_paused">Întrerupt</string>
+    <string name="dl_state_starting">Se conectează…</string>
+    <string name="dl_running">%1$s din %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Se așteaptă partajarea · %1$s din %2$s</string>
+    <string name="dl_failed_no_room">Spațiu insuficient pe cască</string>
+    <string name="dl_failed_unreachable">Partajarea nu a putut fi accesată</string>
+    <string name="dl_failed_disk">Fișierul nu a putut fi salvat</string>
+    <string name="dl_empty">Nimic descărcat încă</string>
+    <string name="dl_empty_hint">Apăsați lung pe un poster sau pe un episod și alegeți Descărcați pe cască pentru a-l viziona departe de casă.</string>
+    <string name="dl_space">%1$s descărcat · %2$s liber</string>
+    <string name="dl_section_active">Se descarcă</string>
+    <string name="dl_section_done">Pe această cască</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · încă %2$d</item>
+        <item quantity="few">%1$d%% · încă %2$d</item>
+        <item quantity="other">%1$d%% · încă %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Eliminați %d vizionată</item>
+        <item quantity="few">Eliminați %d vizionate</item>
+        <item quantity="other">Eliminați %d vizionate</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">S-a eliminat %1$d descărcare vizionată · eliberat: %2$s</item>
+        <item quantity="few">S-au eliminat %1$d descărcări vizionate · eliberat: %2$s</item>
+        <item quantity="other">S-au eliminat %1$d de descărcări vizionate · eliberat: %2$s</item>
+    </plurals>
+    <string name="dl_cancel">Anulați descărcarea</string>
+    <string name="dl_failed_snack">%1$s nu a putut fi descărcat: %2$s</string>
+    <string name="set_downloads">Descărcate pe această cască</string>
+    <string name="set_downloads_none">Nimic încă: apăsați lung pe un poster pentru a-l descărca.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d fișier · %2$s</item>
+        <item quantity="few">%1$d fișiere · %2$s</item>
+        <item quantity="other">%1$d de fișiere · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Vedeți</string>
+    <string name="set_downloads_clear">Eliminați toate descărcările</string>
+    <string name="set_downloads_clear_hint">Toate copiile de pe cască, inclusiv cele care încă se descarcă. Fișierele de pe partajări rămân neatinse.</string>
+    <string name="set_downloads_clear_q">Eliminați toate descărcările?</string>
+    <string name="set_downloads_clear_body">Copiile de pe această cască sunt șterse. Fișierele de pe NAS rămân așa cum sunt.</string>
+    <string name="set_downloads_cleared">Descărcări eliminate</string>
+    <string name="set_downloads_clear_action">Eliminați…</string>
+    <string name="set_downloads_clear_confirm">Eliminați</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Descărcați</string>
+    <string name="dl_player_done">Descărcat</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Descărcați %d</item>
+        <item quantity="few">Descărcați %d</item>
+        <item quantity="other">Descărcați %d</item>
+    </plurals>
+    <string name="dl_folder">Descărcați acest dosar</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Descărcați %d fișier?</item>
+        <item quantity="few">Descărcați aceste %d fișiere?</item>
+        <item quantity="other">Descărcați aceste %d de fișiere?</item>
+    </plurals>
+    <string name="dl_folder_body">Se descarcă unul după altul; pe cască sunt libere %1$s, iar 2 GB rămân mereu liberi.</string>
+    <string name="dl_folder_go">Descărcați</string>
+    <string name="vid_play_copy">Redați %1$s de pe cască</string>
+    <string name="lib_offline">Offline · se redau doar descărcările</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d descărcare se poate reda aici</item>
+        <item quantity="few">Offline · %d descărcări se pot reda aici</item>
+        <item quantity="other">Offline · %d de descărcări se pot reda aici</item>
+    </plurals>
+    <string name="set_cast_privacy">Primire proiecții (dezactivată până o activați)</string>
+    <string name="set_cast_privacy_body">Casca se anunță doar în propria dvs. rețea, ca telefoanele să o poată lista. Un telefon trimite adresa unui videoclip, iar casca redă de acolo; nimic nu trece prin Reality NAS Player și nimic din ce se proiectează nu este înregistrat.</string>
+    <string name="set_downloads_privacy">Descărcări</string>
+    <string name="set_downloads_privacy_body">Copiile descărcate sunt citite de pe propriul dvs. server și păstrate doar pe cască. Eliminați-le din Descărcări sau pe toate deodată din Bibliotecă.</string>
+    <string name="dl_finished_one">Acum pe cască: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d fișier este acum pe cască</item>
+        <item quantity="few">%d fișiere sunt acum pe cască</item>
+        <item quantity="other">%d de fișiere sunt acum pe cască</item>
+    </plurals>
+    <string name="set_delete_watched">Eliminați descărcările după vizionare</string>
+    <string name="set_delete_watched_hint">O copie vizionată până la capăt pleacă de pe cască; fișierul de pe NAS rămâne</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">S-a eliminat %d descărcare vizionată</item>
+        <item quantity="few">S-au eliminat %d descărcări vizionate</item>
+        <item quantity="other">S-au eliminat %d de descărcări vizionate</item>
+    </plurals>
+    <string name="dl_space_free">%1$s liber pe cască</string>
+    <string name="pc_info_source">Sursă</string>
+    <string name="pc_info_from_share">Partajare pe %1$s</string>
+    <string name="dl_slowed">încetinit cât vizionați</string>
+</resources>

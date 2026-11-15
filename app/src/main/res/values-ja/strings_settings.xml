@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">再試行</string>
+    <string name="md_secret_show">表示</string>
+    <string name="md_secret_hide">非表示</string>
+    <string name="md_secret_show_named">%1$sを表示</string>
+    <string name="md_secret_hide_named">%1$sを非表示</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">予期しないエラーが発生しました</string>
+    <string name="fault_unknown_detail">予期しないエラーが発生しました: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">ソースの種類に戻る</string>
+    <string name="sources_edit">編集</string>
+    <string name="sources_edit_title">「%1$s」を編集</string>
+    <string name="sources_save_and_scan">保存してスキャン</string>
+    <string name="sources_password_keep">空欄なら保存済みのパスワードを使用</string>
+    <string name="sources_token_keep">空欄なら保存済みのトークンを使用</string>
+    <string name="sources_saved_placeholder">保存済み</string>
+    <string name="sources_smb_need_share">ホストしか入力されていません。右上の「共有を参照…」で共有を選ぶか、ホスト/共有 の形式で入力して直接追加してください</string>
+    <string name="sources_webdav_scheme">アドレスは http:// または https:// で始まる必要があります</string>
+    <string name="sources_remote_scheme">このアドレスは別の種類のサーバー用です。:// より前の部分を除いて入力してください</string>
+    <string name="sources_address_spaces">アドレスにスペースは使えません</string>
+    <string name="sources_server_user_hint">サーバーのアカウント（Web アプリへのサインインに使うもの）</string>
+    <string name="sources_server_pass_hint">そのアカウントのパスワード</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s サーバー</string>
+    <string name="sources_kind_dlna">DLNA メディアサーバー</string>
+    <string name="sources_remove_action">削除…</string>
+    <string name="sources_removed">「%1$s」を削除しました</string>
+    <string name="sources_added_toast">「%1$s」を追加しました。スキャンしています</string>
+    <string name="sources_saved_toast">「%1$s」を保存しました。再スキャンしています</string>
+    <string name="sources_fix_account">アカウントまたはパスワードを変更</string>
+    <string name="sources_fix_account_hint">正しいアカウントでこのソースに接続します</string>
+    <string name="sources_fix_address">接続情報を確認</string>
+    <string name="sources_fix_address_hint">アドレスとポートを確認するか、別のアカウントを試してから、もう一度スキャンしてください</string>
+    <string name="sources_scan_busy">別のスキャンかスクレイピングが実行中です。終了後に開始できます</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">共有一覧に戻る</string>
+    <string name="smb_back_servers">サーバー一覧に戻る</string>
+    <string name="smb_saved_password">保存済みのパスワードを使用</string>
+    <string name="smb_signing_in">サインイン中…</string>
+    <string name="smb_subnet_invalid">IPv4 アドレスを入力してください（例: 192.168.1.100）</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">ファイル名で識別</string>
+    <string name="set_live_engine_exo">拡張エンジン</string>
+    <string name="set_live_engine_system">システムのプレーヤー</string>
+    <string name="set_live_spatial">%1$s · 空間オーディオ</string>
+    <string name="set_live_sync_off">オフ</string>
+    <string name="set_live_sync_on">オン</string>
+    <string name="set_live_sync_on_ago">オン · %1$s に同期</string>
+    <string name="set_live_sync_failed">前回の同期に失敗しました</string>
+    <string name="set_live_version">バージョン %1$s</string>
+    <string name="set_live_sub">字幕: %1$s</string>
+    <string name="set_live_audio">音声: %1$s</string>
+    <string name="set_live_night">ナイトモード</string>
+    <string name="set_live_no_autoplay">自動再生なし</string>
+    <string name="set_pano_auto">360° / 180° 動画をイマーシブで開く</string>
+    <string name="set_pano_auto_on">オン: 360° または 180° と認識された動画は、周囲を包むイマーシブ空間で開きます。</string>
+    <string name="set_pano_auto_off">オフ: 360° と 180° の動画はウィンドウで始まります。画面 › 視聴空間 からイマーシブに入れます。</string>
+    <string name="set_auto_skip_intro">オープニングを自動でスキップ</string>
+    <string name="set_auto_skip_intro_on">オン: ファイルのチャプターでオープニング（OP、Opening など）が示されている場合、始まると同時にスキップします。映像の上部にある「イントロを見る」で戻れます。</string>
+    <string name="set_auto_skip_intro_off">オフ: オープニングが始まると、映像の上部に「スキップ」が表示されます。</string>
+    <string name="set_live_auto_skip_intro">オープニングをスキップ</string>
+    <string name="set_version_build">バージョン %1$s（%2$s）</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">マッチング</string>
+    <string name="set_group_language">言語</string>
+    <string name="set_language_ui">アプリの言語</string>
+    <string name="set_language_ui_hint">Reality NAS Player のメニューとテキストの言語です。</string>
+    <string name="set_language_follow_app">アプリと同じ</string>
+    <string name="set_language_meta">メタデータの言語</string>
+    <string name="set_tmdb_key_label">TMDB API キー</string>
+    <string name="set_omdb_key_label">OMDb API キー</string>
+    <string name="set_keys_offline">オフラインスクレイピングがオンのため、これらのキーは現在使われていません。</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">削除…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">オン: PICO の空間オーディオエンジンで処理します。</string>
+    <string name="set_spatial_off">オフ: 映画本来のミックスをそのまま再生します。</string>
+    <string name="set_fd_needs_system">システムのプレーヤーでのみ使えます。使うには上の「拡張エンジン」をオフにしてください。</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">補完と再構築</string>
+    <string name="set_auto_scan">ライブラリを自動更新</string>
+    <string name="set_auto_scan_on">オン: アプリを開くと、前回以降にソースに追加されたファイルを探し（最大 6 時間ごと）、新しいものだけをマッチングします。</string>
+    <string name="set_auto_scan_off">オフ: 新しいファイルは「ソース」でスキャンした後に表示されます。</string>
+    <string name="set_rescrape">未完了の項目を再スクレイピング</string>
+    <string name="set_rescrape_hint">まだポスターがない項目や、前回のスクレイピングに失敗した項目を再試行します。マッチ済みの項目はそのままです</string>
+    <string name="set_rescrape_start">開始</string>
+    <string name="set_rescrape_started">再スクレイピングを開始しました</string>
+    <string name="set_task_busy">スキャンまたはスクレイピングが実行中です。終了後に新しいタスクを開始できます。</string>
+    <string name="set_clear_action">空にする…</string>
+    <string name="set_cleared">ライブラリを空にしました</string>
+    <string name="set_clear_failed">ライブラリを空にできませんでした。しばらくしてからもう一度お試しください</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">共有を探しています…</string>
+    <string name="sync_open_sources">「ソース」を開く</string>
+    <string name="sync_open_sources_hint">NAS の共有を追加してから、ここに戻ってください</string>
+    <string name="sync_this_device">このヘッドセット</string>
+    <string name="sync_readonly_title">この共有は読み取り専用です</string>
+    <string name="sync_remove_body_at">%1$s 上の「.aura」と、その中のすべてのデバイスの記録を削除します。このヘッドセットのライブラリと再生位置はそのまま残ります。</string>
+    <string name="sync_removed">同期フォルダを削除しました</string>
+    <string name="sync_remove_failed">同期フォルダを削除できませんでした: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">「スクレイピング」を開く</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s ·「%2$s」— %3$s</string>
+    <string name="set_licences">オープンソースライセンス</string>
+    <string name="set_licences_hint">各コンポーネントのライセンス、LGPL ライブラリのソースコードと差し替え方法</string>
+</resources>

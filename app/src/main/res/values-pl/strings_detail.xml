@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Usuń z ulubionych</string>
+    <string name="det_up_next">Następne</string>
+    <string name="det_section_main">Główne</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Sezon %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Oznaczyć wszystko jako obejrzane?</string>
+    <string name="det_mark_all_unwatched_q">Oznaczyć wszystko jako nieobejrzane?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d plik zostanie oznaczony jako obejrzany.</item>
+        <item quantity="few">%1$d pliki zostaną oznaczone jako obejrzane.</item>
+        <item quantity="many">%1$d plików zostanie oznaczonych jako obejrzane.</item>
+        <item quantity="other">%1$d pliku zostanie oznaczone jako obejrzane.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d z nich jest w trakcie oglądania i straci zapamiętane miejsce.</item>
+        <item quantity="few">%1$d z nich są w trakcie oglądania i stracą zapamiętane miejsce.</item>
+        <item quantity="many">%1$d z nich jest w trakcie oglądania i straci zapamiętane miejsce.</item>
+        <item quantity="other">%1$d z nich jest w trakcie oglądania i straci zapamiętane miejsce.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Postęp oglądania %1$d pliku zostanie wyczyszczony.</item>
+        <item quantity="few">Postęp oglądania %1$d plików zostanie wyczyszczony.</item>
+        <item quantity="many">Postęp oglądania %1$d plików zostanie wyczyszczony.</item>
+        <item quantity="other">Postęp oglądania %1$d pliku zostanie wyczyszczony.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Źródło</string>
+    <string name="fix_scope">Zastosuj do</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Całej karty (%1$d plik)</item>
+        <item quantity="few">Całej karty (%1$d pliki)</item>
+        <item quantity="many">Całej karty (%1$d plików)</item>
+        <item quantity="other">Całej karty (%1$d pliku)</item>
+    </plurals>
+    <string name="fix_scope_file">Tylko tego pliku</string>
+    <string name="fix_query_hint">Tytuł — najlepiej pasują angielskie</string>
+    <string name="fix_hint">Wybierz właściwą pozycję, aby poprawić dopasowanie</string>
+    <string name="fix_applying">Stosowanie…</string>
+    <string name="fix_failed">Nie udało się zastosować tej pozycji. Sprawdź sieć i spróbuj ponownie.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Serial</string>
+    <string name="fix_current">Bieżące</string>
+    <string name="fix_no_results_title">Brak pasujących pozycji</string>
+    <string name="fix_no_results_anilist">Spróbuj innej pisowni — najlepiej pasują nazwy w romaji lub po angielsku.</string>
+    <string name="fix_error_title">Wyszukiwanie nie zostało ukończone</string>
+    <string name="fix_error_body">Sprawdź sieć i spróbuj ponownie.</string>
+    <string name="fix_retry">Spróbuj ponownie</string>
+    <string name="fix_confirm_title">Zmienić na „%1$s”?</string>
+    <string name="fix_confirm_title_year">Zmienić na „%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">%1$d plik tej karty będzie odtąd korzystać z tej pozycji, a kolejne rozpoznawania jej nie zmienią.</item>
+        <item quantity="few">%1$d pliki tej karty będą odtąd korzystać z tej pozycji, a kolejne rozpoznawania jej nie zmienią.</item>
+        <item quantity="many">%1$d plików tej karty będzie odtąd korzystać z tej pozycji, a kolejne rozpoznawania jej nie zmienią.</item>
+        <item quantity="other">%1$d pliku tej karty będzie odtąd korzystać z tej pozycji, a kolejne rozpoznawania jej nie zmienią.</item>
+    </plurals>
+    <string name="fix_confirm_file">Tylko „%1$s” będzie odtąd korzystać z tej pozycji, a kolejne rozpoznawania jej nie zmienią.</string>
+    <string name="fix_apply">Zastosuj</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">Jeszcze %d</item>
+        <item quantity="few">Jeszcze %d</item>
+        <item quantity="many">Jeszcze %d</item>
+        <item quantity="other">Jeszcze %d</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">Jeszcze %d tytuł w bibliotece</item>
+        <item quantity="few">Jeszcze %d tytuły w bibliotece</item>
+        <item quantity="many">Jeszcze %d tytułów w bibliotece</item>
+        <item quantity="other">Jeszcze %d tytułu w bibliotece</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d tytuł w bibliotece</item>
+        <item quantity="few">%d tytuły w bibliotece</item>
+        <item quantity="many">%d tytułów w bibliotece</item>
+        <item quantity="other">%d tytułu w bibliotece</item>
+    </plurals>
+    <string name="det_similar">Podobne</string>
+    <string name="det_episode_copy">%1$s · inna kopia</string>
+    <string name="det_season_progress">Obejrzano %1$d z %2$d</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Obejrzano: %1$d</item>
+        <item quantity="few">Obejrzano wszystkie: %1$d</item>
+        <item quantity="many">Obejrzano wszystkie: %1$d</item>
+        <item quantity="other">Obejrzano wszystkie: %1$d</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Wersje</string>
+    <string name="det_series">Z tej serii</string>
+    <string name="lib_series">Seria</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d tytuł</item>
+        <item quantity="few">%d tytuły</item>
+        <item quantity="many">%d tytułów</item>
+        <item quantity="other">%d tytułu</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d tytuł w tej bibliotece, w kolejności premier</item>
+        <item quantity="few">%d tytuły w tej bibliotece, w kolejności premier</item>
+        <item quantity="many">%d tytułów w tej bibliotece, w kolejności premier</item>
+        <item quantity="other">%d tytułu w tej bibliotece, w kolejności premier</item>
+    </plurals>
+</resources>

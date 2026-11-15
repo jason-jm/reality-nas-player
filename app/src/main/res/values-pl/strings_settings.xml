@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Spróbuj ponownie</string>
+    <string name="md_secret_show">Pokaż</string>
+    <string name="md_secret_hide">Ukryj</string>
+    <string name="md_secret_show_named">Pokaż %1$s</string>
+    <string name="md_secret_hide_named">Ukryj %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Wystąpił nieoczekiwany błąd</string>
+    <string name="fault_unknown_detail">Wystąpił nieoczekiwany błąd: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Wróć do typów źródeł</string>
+    <string name="sources_edit">Edytuj</string>
+    <string name="sources_edit_title">Edytuj „%1$s”</string>
+    <string name="sources_save_and_scan">Zapisz i skanuj</string>
+    <string name="sources_password_keep">Zostaw puste, aby zachować zapisane hasło</string>
+    <string name="sources_token_keep">Zostaw puste, aby zachować zapisany token</string>
+    <string name="sources_saved_placeholder">Zapisano</string>
+    <string name="sources_smb_need_share">To tylko host. Dotknij „Przeglądaj udziały…” w prawym górnym rogu, aby wybrać udział, lub wpisz host/udział, aby dodać go bezpośrednio</string>
+    <string name="sources_webdav_scheme">Adres musi zaczynać się od http:// lub https://</string>
+    <string name="sources_remote_scheme">Ten adres jest dla innego rodzaju serwera; wpisz go bez części przed ://</string>
+    <string name="sources_address_spaces">Adres nie może zawierać spacji</string>
+    <string name="sources_server_user_hint">Konto na serwerze — to, którym logujesz się do jego aplikacji internetowej</string>
+    <string name="sources_server_pass_hint">Hasło do tego konta</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Serwer %1$s</string>
+    <string name="sources_kind_dlna">Serwer multimediów DLNA</string>
+    <string name="sources_remove_action">Usuń…</string>
+    <string name="sources_removed">Usunięto „%1$s”</string>
+    <string name="sources_added_toast">Dodano „%1$s”, trwa skanowanie</string>
+    <string name="sources_saved_toast">Zapisano „%1$s”, trwa ponowne skanowanie</string>
+    <string name="sources_fix_account">Zmień konto lub hasło</string>
+    <string name="sources_fix_account_hint">Połącz to źródło z właściwym kontem</string>
+    <string name="sources_fix_address">Sprawdź dane połączenia</string>
+    <string name="sources_fix_address_hint">Sprawdź adres i port lub spróbuj innego konta, a potem zeskanuj ponownie</string>
+    <string name="sources_scan_busy">Trwa inne skanowanie lub rozpoznawanie; to zacznie się po jego zakończeniu</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Wróć do udziałów</string>
+    <string name="smb_back_servers">Wróć do serwerów</string>
+    <string name="smb_saved_password">Używa zapisanego hasła</string>
+    <string name="smb_signing_in">Logowanie…</string>
+    <string name="smb_subnet_invalid">Wpisz adres IPv4, np. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Lokalne nazwy plików</string>
+    <string name="set_live_engine_exo">Rozszerzony silnik</string>
+    <string name="set_live_engine_system">Odtwarzacz systemowy</string>
+    <string name="set_live_spatial">%1$s · dźwięk przestrzenny</string>
+    <string name="set_live_sync_off">Wył.</string>
+    <string name="set_live_sync_on">Wł.</string>
+    <string name="set_live_sync_on_ago">Wł. · synchronizacja %1$s</string>
+    <string name="set_live_sync_failed">Błąd synchronizacji</string>
+    <string name="set_live_version">Wersja %1$s</string>
+    <string name="set_live_sub">Napisy: %1$s</string>
+    <string name="set_live_audio">Dźwięk: %1$s</string>
+    <string name="set_live_night">Tryb nocny</string>
+    <string name="set_live_no_autoplay">Bez autoodtwarzania</string>
+    <string name="set_pano_auto">Otwieraj wideo 360° / 180° w immersji</string>
+    <string name="set_pano_auto_on">Wł.: wideo rozpoznane jako 360° lub 180° otwiera się w przestrzeni immersyjnej, dookoła ciebie.</string>
+    <string name="set_pano_auto_off">Wył.: wideo 360° i 180° startuje w oknie; Obraz › Tryb oglądania przenosi do środka.</string>
+    <string name="set_auto_skip_intro">Automatycznie pomijaj czołówki</string>
+    <string name="set_auto_skip_intro_on">Wł.: gdy rozdziały pliku oznaczają czołówkę (OP, Opening…), jest ona pomijana od razu — „Obejrzyj ją” u góry obrazu wraca do niej.</string>
+    <string name="set_auto_skip_intro_off">Wył.: gdy zaczyna się czołówka, u góry obrazu pojawia się „Pomiń”.</string>
+    <string name="set_live_auto_skip_intro">Czołówki pomijane</string>
+    <string name="set_version_build">Wersja %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Dopasowywanie</string>
+    <string name="set_group_language">Język</string>
+    <string name="set_language_ui">Język aplikacji</string>
+    <string name="set_language_ui_hint">Język menu i tekstów aplikacji Reality NAS Player.</string>
+    <string name="set_language_follow_app">Jak w aplikacji</string>
+    <string name="set_language_meta">Język metadanych</string>
+    <string name="set_tmdb_key_label">Klucz API TMDB</string>
+    <string name="set_omdb_key_label">Klucz API OMDb</string>
+    <string name="set_keys_offline">Rozpoznawanie offline jest włączone, więc te klucze nie są teraz używane.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Usuń…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Wł.: dźwięk przetwarza silnik dźwięku przestrzennego PICO.</string>
+    <string name="set_spatial_off">Wył.: oryginalny miks filmu gra tak, jak go zmiksowano.</string>
+    <string name="set_fd_needs_system">Obsługuje to tylko odtwarzacz systemowy: aby z tego skorzystać, wyłącz „Rozszerzony silnik” powyżej.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Uzupełnianie i odbudowa</string>
+    <string name="set_auto_scan">Aktualizuj bibliotekę automatycznie</string>
+    <string name="set_auto_scan_on">Wł.: przy otwarciu aplikacja szuka plików dodanych do źródeł od ostatniego sprawdzenia (najwyżej co 6 godzin) i rozpoznaje tylko nowe.</string>
+    <string name="set_auto_scan_off">Wył.: nowe pliki pojawiają się po skanowaniu w sekcji Źródła.</string>
+    <string name="set_rescrape">Ponownie rozpoznaj niedokończone pozycje</string>
+    <string name="set_rescrape_hint">Ponawia próbę dla pozycji bez plakatu lub tych, których ostatnie rozpoznawanie się nie udało; dopasowane pozycje zostają nietknięte</string>
+    <string name="set_rescrape_start">Rozpocznij</string>
+    <string name="set_rescrape_started">Rozpoczęto ponowne rozpoznawanie</string>
+    <string name="set_task_busy">Trwa skanowanie lub rozpoznawanie; nowe zadanie zacznie się po jego zakończeniu.</string>
+    <string name="set_clear_action">Wyczyść…</string>
+    <string name="set_cleared">Biblioteka jest pusta</string>
+    <string name="set_clear_failed">Nie udało się wyczyścić biblioteki; spróbuj za chwilę</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Szukanie udziałów…</string>
+    <string name="sync_open_sources">Otwórz Źródła</string>
+    <string name="sync_open_sources_hint">Dodaj udział NAS, a potem wróć tutaj</string>
+    <string name="sync_this_device">Te gogle</string>
+    <string name="sync_readonly_title">Udział jest tylko do odczytu</string>
+    <string name="sync_remove_body_at">Usuwa „.aura” na %1$s i zapisy wszystkich urządzeń w nim. Biblioteka i postęp w tych goglach pozostaną bez zmian.</string>
+    <string name="sync_removed">Usunięto folder synchronizacji</string>
+    <string name="sync_remove_failed">Nie udało się usunąć folderu synchronizacji: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Otwórz Rozpoznawanie</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · „%2$s” — %3$s</string>
+    <string name="set_licences">Licencje open source</string>
+    <string name="set_licences_hint">Licencja każdego składnika, źródła bibliotek LGPL i sposób ich wymiany</string>
+</resources>

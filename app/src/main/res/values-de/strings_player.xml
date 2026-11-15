@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Wiedergabe</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projektion</string>
+    <string name="pc_proj_flat">Flach</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Schrift</string>
+    <string name="pc_colour">Farbe</string>
+    <string name="pc_sub_style_plain">Schatten</string>
+    <string name="pc_sub_style_box">Kasten</string>
+    <string name="pc_second_subtitle">Zweite Untertitel</string>
+    <string name="pc_sub_style_outline">Kontur</string>
+    <string name="pc_font_default">Standard</string>
+    <string name="pc_font_serif">Serifen</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">Weiß</string>
+    <string name="pc_colour_yellow">Gelb</string>
+    <string name="pc_colour_cyan">Cyan</string>
+    <string name="pc_colour_green">Grün</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Reihenfolge</string>
+    <string name="pc_loop_all">Alle</string>
+    <string name="pc_loop_one">Einzeln</string>
+    <string name="pc_loop_shuffle">Zufällig</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Standbild wird erstellt…</string>
+    <string name="pc_hold_speed">Wiedergabe mit 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Lesezeichen</string>
+    <string name="pc_bookmarks_n">Lesezeichen · %1$d</string>
+    <string name="pc_bookmark_add">Lesezeichen setzen</string>
+    <string name="pc_bookmark_empty">Markiere mit + oben einen Moment, zu dem du zurückkehren willst.</string>
+    <string name="pc_bookmark_remove">Lesezeichen bei %1$s entfernen</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Intro &amp; Abspann überspringen</string>
+    <string name="pc_skip_intro_set">Intro bis %1$s</string>
+    <string name="pc_skip_outro_set">Abspann dauert %1$s</string>
+    <string name="pc_skip_mark_intro">Intro endet hier</string>
+    <string name="pc_skip_mark_outro">Abspann beginnt hier</string>
+    <string name="pc_skip_clear">Intro &amp; Abspann löschen</string>
+    <string name="pc_skip_intro_hint">Jede spätere Folge dieser Serie startet hier</string>
+    <string name="pc_skip_outro_hint">Jede spätere Folge dieser Serie springt ab hier zur nächsten</string>
+    <string name="vid_intro_skipped">Intro übersprungen</string>
+    <string name="vid_watch_intro">Ansehen</string>
+    <string name="vid_chapter_intro">Intro · noch %1$s</string>
+    <string name="vid_chapter_outro">Abspann · noch %1$s</string>
+    <string name="vid_skip">Überspringen</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Unbekanntes Format</string>
+    <string name="pc_track_unknown">Unbekannte Spur</string>
+    <string name="pc_track_n">Spur %1$d</string>
+    <string name="pc_track_external_sub">Externe Untertitel</string>
+    <string name="pc_track_external">Extern</string>
+    <string name="pc_track_embedded">Eingebettet</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Ton</string>
+    <string name="pc_frames">Verworfen %1$d / dargestellt %2$d</string>
+    <string name="pc_env_dim">Abdunkeln</string>
+    <string name="pc_env_viewing_light">Helligkeit bei Wiedergabe</string>
+    <string name="pc_env_dim_hint">Beim Abspielen gilt die gewählte Helligkeit. Bei einer Pause oder beim Öffnen der Wiedergabesteuerung wird der Raum wieder hell.</string>
+    <string name="pc_env_lights">Licht</string>
+    <string name="pc_env_lights_hint">Das eigene Licht des Ortes, an oder aus; ist es an, dimmt „Abdunkeln“ es während des Films trotzdem</string>
+    <string name="pc_env_seat">Sitzplatz</string>
+    <string name="pc_seat_center">Mitte</string>
+    <string name="pc_seat_left">Links</string>
+    <string name="pc_seat_right">Rechts</string>
+    <string name="pc_seat_left_window">Am linken Fenster</string>
+    <string name="pc_seat_right_window">Am rechten Fenster</string>
+    <string name="pc_env_screen">Film und Untertitel</string>
+    <string name="pc_env_screen_hint">Film und Untertitel erscheinen auf der Leinwand des Raums.</string>
+    <string name="pc_env_glow">Leinwandlicht</string>
+    <string name="pc_env_glow_hint">Die Farben des Films beleuchten den Leinwandrahmen und die umliegenden Flächen.</string>
+    <string name="pc_env_screen_none">Hier gibt es keinen Bildschirm – der Film bleibt im Fenster</string>
+    <string name="pc_env_has_screen">Mit Bildschirm</string>
+    <string name="pc_env_entering">%1$s wird geöffnet…</string>
+    <string name="pc_env_failed">%1$s konnte nicht geladen werden</string>
+    <string name="pc_lang_simplified">Vereinfachtes Chinesisch</string>
+    <string name="pc_lang_traditional">Traditionelles Chinesisch</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d weitere Tonspur</item>
+        <item quantity="other">%d weitere Tonspuren</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Diese Datei hat Ton, den der eingebaute Player nicht lesen kann – spiel sie in mpv ab</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d Bild-Untertiteldatei</item>
+        <item quantity="other">%d Bild-Untertiteldateien</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS neben dem Film – der eingebaute Player kann sie nicht darstellen; spiel ihn in mpv ab</string>
+    <string name="pc_pano_format">Panoramaformat</string>
+    <string name="pc_pano_equirect">Equirekt</string>
+    <string name="pc_pano_fisheye">Fischauge</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Würfel</string>
+    <string name="pc_pano_dual">Doppel-Fischauge</string>
+    <string name="pc_pano_direction">Richtung</string>
+    <string name="pc_pano_turn_left">Links drehen</string>
+    <string name="pc_pano_recenter">Zentrieren</string>
+    <string name="pc_pano_turn_right">Rechts drehen</string>
+    <string name="pc_pano_turn_hint">Dreht das Bild um 30° um dich herum – was hinter dir ist, ohne dich umzudrehen</string>
+    <string name="pc_pano_recenter_hint">Setzt die Vorderseite des Films dorthin, wohin du schaust</string>
+    <string name="pc_pano_own">Netz der Datei</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Räumliches Video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, zwei Ansichten (linkes Auge gezeigt)</string>
+    <string name="pc_info_camera">%1$d° Bildwinkel · %2$d mm Abstand</string>
+    <string name="pc_info_right_first">rechtes Auge zuerst</string>
+    <string name="pc_audio_field">Ambisonics</string>
+    <string name="vid_pano_guess_360">Das sieht nach einem 360°-Video aus</string>
+    <string name="vid_pano_guess_360_3d">Das sieht nach einem 360°-3D-Video aus</string>
+    <string name="vid_pano_guess_180_3d">Das sieht nach einem 180°-3D-Video aus (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Das sieht nach einem Fischaugen-Video aus</string>
+    <string name="vid_pano_guess_fisheye_3d">Das sieht nach einem 180°-3D-Fischaugen-Video aus</string>
+    <string name="vid_pano_guess_dual">Das sieht nach dem Zwei-Linsen-Original einer 360°-Kamera aus</string>
+    <string name="vid_pano_guess_play">Als Panorama abspielen</string>
+    <string name="vid_pano_guess_no">Ist es nicht</string>
+    <string name="pc_pano_tilt_up">Hoch</string>
+    <string name="pc_pano_tilt_down">Runter</string>
+    <string name="pc_pano_roll_left">Links kippen</string>
+    <string name="pc_pano_roll_right">Rechts kippen</string>
+    <string name="pc_pano_level">Horizont</string>
+    <string name="pc_pano_level_hint">Für einen schiefen Horizont: 5° pro Druck, für diesen Film gespeichert</string>
+</resources>

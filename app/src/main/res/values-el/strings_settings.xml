@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Επανάληψη</string>
+    <string name="md_secret_show">Εμφάνιση</string>
+    <string name="md_secret_hide">Απόκρυψη</string>
+    <string name="md_secret_show_named">Εμφάνιση %1$s</string>
+    <string name="md_secret_hide_named">Απόκρυψη %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Παρουσιάστηκε απρόσμενο σφάλμα</string>
+    <string name="fault_unknown_detail">Παρουσιάστηκε απρόσμενο σφάλμα: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Πίσω στους τύπους πηγών</string>
+    <string name="sources_edit">Επεξεργασία</string>
+    <string name="sources_edit_title">Επεξεργασία «%1$s»</string>
+    <string name="sources_save_and_scan">Αποθήκευση και σάρωση</string>
+    <string name="sources_password_keep">Αφήστε το κενό για να κρατήσετε τον αποθηκευμένο κωδικό</string>
+    <string name="sources_token_keep">Αφήστε το κενό για να κρατήσετε το αποθηκευμένο διακριτικό</string>
+    <string name="sources_saved_placeholder">Αποθηκευμένο</string>
+    <string name="sources_smb_need_share">Αυτό είναι μόνο ένας διακομιστής. Πατήστε «Περιήγηση κοινόχρηστων…» πάνω δεξιά για να επιλέξετε κοινόχρηστο φάκελο ή γράψτε διακομιστής/κοινόχρηστος για να τον προσθέσετε απευθείας</string>
+    <string name="sources_webdav_scheme">Η διεύθυνση πρέπει να ξεκινά με http:// ή https://</string>
+    <string name="sources_remote_scheme">Αυτή η διεύθυνση είναι για άλλο είδος διακομιστή. Πληκτρολογήστε τη χωρίς το τμήμα πριν από το ://</string>
+    <string name="sources_address_spaces">Μια διεύθυνση δεν μπορεί να περιέχει κενά</string>
+    <string name="sources_server_user_hint">Ο λογαριασμός σας στον διακομιστή, αυτός με τον οποίο συνδέεστε στην εφαρμογή ιστού του</string>
+    <string name="sources_server_pass_hint">Ο κωδικός αυτού του λογαριασμού</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Διακομιστής %1$s</string>
+    <string name="sources_kind_dlna">Διακομιστής πολυμέσων DLNA</string>
+    <string name="sources_remove_action">Κατάργηση…</string>
+    <string name="sources_removed">Το «%1$s» καταργήθηκε</string>
+    <string name="sources_added_toast">Το «%1$s» προστέθηκε, γίνεται σάρωση</string>
+    <string name="sources_saved_toast">Το «%1$s» αποθηκεύτηκε, γίνεται νέα σάρωση</string>
+    <string name="sources_fix_account">Αλλαγή λογαριασμού ή κωδικού</string>
+    <string name="sources_fix_account_hint">Συνδέστε αυτή την πηγή με τον σωστό λογαριασμό</string>
+    <string name="sources_fix_address">Έλεγχος στοιχείων σύνδεσης</string>
+    <string name="sources_fix_address_hint">Ελέγξτε τη διεύθυνση και τη θύρα ή δοκιμάστε άλλον λογαριασμό και κάντε ξανά σάρωση</string>
+    <string name="sources_scan_busy">Εκτελείται άλλη σάρωση ή αναγνώριση. Αυτή μπορεί να ξεκινήσει όταν τελειώσει</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Πίσω στα κοινόχρηστα</string>
+    <string name="smb_back_servers">Πίσω στους διακομιστές</string>
+    <string name="smb_saved_password">Χρησιμοποιεί τον αποθηκευμένο κωδικό</string>
+    <string name="smb_signing_in">Σύνδεση…</string>
+    <string name="smb_subnet_invalid">Εισαγάγετε μια διεύθυνση IPv4, π.χ. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Τοπικά ονόματα αρχείων</string>
+    <string name="set_live_engine_exo">Βελτιωμένη μηχανή</string>
+    <string name="set_live_engine_system">Πρόγραμμα συστήματος</string>
+    <string name="set_live_spatial">%1$s · χωρικός ήχος</string>
+    <string name="set_live_sync_off">Ανενεργός</string>
+    <string name="set_live_sync_on">Ενεργός</string>
+    <string name="set_live_sync_on_ago">Ενεργός · τελευταία %1$s</string>
+    <string name="set_live_sync_failed">Ο τελευταίος συγχρονισμός απέτυχε</string>
+    <string name="set_live_version">Έκδοση %1$s</string>
+    <string name="set_live_sub">Υπότιτλοι: %1$s</string>
+    <string name="set_live_audio">Ήχος: %1$s</string>
+    <string name="set_live_night">Νυχτερινή λειτουργία</string>
+    <string name="set_live_no_autoplay">Χωρίς αυτόματη συνέχεια</string>
+    <string name="set_pano_auto">Άνοιγμα βίντεο 360° / 180° με εμβύθιση</string>
+    <string name="set_pano_auto_on">Ενεργό: ένα βίντεο που αναγνωρίζεται ως 360° ή 180° ανοίγει στον χώρο εμβύθισης, γύρω σας.</string>
+    <string name="set_pano_auto_off">Ανενεργό: τα βίντεο 360° και 180° ξεκινούν στο παράθυρο. Η επιλογή Εικόνα › Χώρος προβολής σας μεταφέρει μέσα.</string>
+    <string name="set_auto_skip_intro">Αυτόματη παράλειψη εισαγωγών</string>
+    <string name="set_auto_skip_intro_on">Ενεργό: όταν τα κεφάλαια ενός αρχείου σημειώνουν την εισαγωγή του (OP, Opening…), αυτή παραλείπεται μόλις ξεκινήσει — το «Δείτε την» στο πάνω μέρος της εικόνας επιστρέφει πίσω.</string>
+    <string name="set_auto_skip_intro_off">Ανενεργό: όταν ξεκινά μια εισαγωγή, στο πάνω μέρος της εικόνας εμφανίζεται «Παράλειψη».</string>
+    <string name="set_live_auto_skip_intro">Παράλειψη εισαγωγών</string>
+    <string name="set_version_build">Έκδοση %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Αντιστοίχιση</string>
+    <string name="set_group_language">Γλώσσα</string>
+    <string name="set_language_ui">Γλώσσα εφαρμογής</string>
+    <string name="set_language_ui_hint">Η γλώσσα των μενού και των κειμένων της Reality NAS Player.</string>
+    <string name="set_language_follow_app">Ίδια με την εφαρμογή</string>
+    <string name="set_language_meta">Γλώσσα μεταδεδομένων</string>
+    <string name="set_tmdb_key_label">Κλειδί API του TMDB</string>
+    <string name="set_omdb_key_label">Κλειδί API του OMDb</string>
+    <string name="set_keys_offline">Η αναγνώριση εκτός σύνδεσης είναι ενεργή, οπότε αυτά τα κλειδιά δεν χρησιμοποιούνται προς το παρόν.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Διαγραφή…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Ενεργό: τον επεξεργάζεται η μηχανή χωρικού ήχου του PICO.</string>
+    <string name="set_spatial_off">Ανενεργό: η αρχική μίξη της ταινίας παίζει όπως δημιουργήθηκε.</string>
+    <string name="set_fd_needs_system">Υποστηρίζεται μόνο από το πρόγραμμα αναπαραγωγής του συστήματος: απενεργοποιήστε τη «Βελτιωμένη μηχανή» παραπάνω για να το χρησιμοποιήσετε.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Συμπλήρωση και ανακατασκευή</string>
+    <string name="set_auto_scan">Αυτόματη ενημέρωση της βιβλιοθήκης</string>
+    <string name="set_auto_scan_on">Ενεργό: το άνοιγμα της εφαρμογής ψάχνει αρχεία που προστέθηκαν στις πηγές σας από τον τελευταίο έλεγχο (το πολύ κάθε 6 ώρες) και αναγνωρίζει μόνο τα νέα.</string>
+    <string name="set_auto_scan_off">Ανενεργό: τα νέα αρχεία εμφανίζονται αφού κάνετε σάρωση στις Πηγές.</string>
+    <string name="set_rescrape">Νέα αναγνώριση των ημιτελών καταχωρίσεων</string>
+    <string name="set_rescrape_hint">Ξαναδοκιμάζει καταχωρίσεις χωρίς αφίσα ακόμη ή των οποίων η τελευταία αναγνώριση απέτυχε. Οι αντιστοιχισμένες καταχωρίσεις μένουν ως έχουν</string>
+    <string name="set_rescrape_start">Έναρξη</string>
+    <string name="set_rescrape_started">Η νέα αναγνώριση ξεκίνησε</string>
+    <string name="set_task_busy">Εκτελείται σάρωση ή αναγνώριση. Μια νέα εργασία μπορεί να ξεκινήσει όταν τελειώσει.</string>
+    <string name="set_clear_action">Άδειασμα…</string>
+    <string name="set_cleared">Η βιβλιοθήκη άδειασε</string>
+    <string name="set_clear_failed">Δεν ήταν δυνατό το άδειασμα της βιβλιοθήκης. Δοκιμάστε ξανά σε λίγο</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Αναζήτηση κοινόχρηστων φακέλων…</string>
+    <string name="sync_open_sources">Άνοιγμα Πηγών</string>
+    <string name="sync_open_sources_hint">Προσθέστε έναν κοινόχρηστο φάκελο NAS και επιστρέψτε εδώ</string>
+    <string name="sync_this_device">Αυτή η κάσκα</string>
+    <string name="sync_readonly_title">Μόνο για ανάγνωση</string>
+    <string name="sync_remove_body_at">Διαγράφει το «.aura» στο %1$s και τις εγγραφές όλων των συσκευών σε αυτό. Η βιβλιοθήκη και η πρόοδος σε αυτή την κάσκα μένουν ως έχουν.</string>
+    <string name="sync_removed">Ο φάκελος συγχρονισμού διαγράφηκε</string>
+    <string name="sync_remove_failed">Δεν ήταν δυνατή η διαγραφή του φακέλου συγχρονισμού: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Άνοιγμα Αναγνώρισης</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · «%2$s» — %3$s</string>
+    <string name="set_licences">Άδειες ανοιχτού κώδικα</string>
+    <string name="set_licences_hint">Η άδεια κάθε στοιχείου, ο πηγαίος κώδικας των βιβλιοθηκών LGPL και πώς να τις αντικαταστήσετε</string>
+</resources>

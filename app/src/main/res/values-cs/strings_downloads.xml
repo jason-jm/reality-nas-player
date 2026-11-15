@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Stažené</string>
+    <string name="dl_notif_title">Stahování do tohoto headsetu</string>
+    <string name="dl_notif_progress">%1$s · %2$d %%</string>
+    <string name="dl_add">Stáhnout do headsetu</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Stáhnout %d další díl</item>
+        <item quantity="few">Stáhnout %d další díly</item>
+        <item quantity="many">Stáhnout %d dalšího dílu</item>
+        <item quantity="other">Stáhnout %d dalších dílů</item>
+    </plurals>
+    <string name="dl_remove">Odebrat stažený soubor</string>
+    <string name="dl_pause">Pozastavit</string>
+    <string name="dl_resume">Pokračovat</string>
+    <string name="dl_retry">Zkusit znovu</string>
+    <string name="dl_on_headset">V tomto headsetu</string>
+    <plurals name="dl_added">
+        <item quantity="one">Do headsetu se stahuje %d soubor</item>
+        <item quantity="few">Do headsetu se stahují %d soubory</item>
+        <item quantity="many">Do headsetu se stahuje %d souboru</item>
+        <item quantity="other">Do headsetu se stahuje %d souborů</item>
+    </plurals>
+    <string name="dl_added_none">Už je ve Stažených</string>
+    <string name="dl_removed">Stažený soubor odebrán</string>
+    <string name="dl_state_queued">Čeká</string>
+    <string name="dl_state_paused">Pozastaveno</string>
+    <string name="dl_state_starting">Připojování…</string>
+    <string name="dl_running">%1$s z %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Čeká se na sdílenou složku · %1$s z %2$s</string>
+    <string name="dl_failed_no_room">V headsetu není dost místa</string>
+    <string name="dl_failed_unreachable">Sdílená složka není dostupná</string>
+    <string name="dl_failed_disk">Soubor nelze uložit</string>
+    <string name="dl_empty">Zatím nic staženého</string>
+    <string name="dl_empty_hint">Dlouze stiskněte plakát nebo díl a zvolte Stáhnout do headsetu, abyste se mohli dívat i mimo domov.</string>
+    <string name="dl_space">Staženo %1$s · volno %2$s</string>
+    <string name="dl_section_active">Stahuje se</string>
+    <string name="dl_section_done">V tomto headsetu</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d %% · ještě %2$d</item>
+        <item quantity="few">%1$d %% · ještě %2$d</item>
+        <item quantity="many">%1$d %% · ještě %2$d</item>
+        <item quantity="other">%1$d %% · ještě %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d %%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Odebrat %d zhlédnutý</item>
+        <item quantity="few">Odebrat %d zhlédnuté</item>
+        <item quantity="many">Odebrat %d zhlédnutého</item>
+        <item quantity="other">Odebrat %d zhlédnutých</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Odebrán %1$d zhlédnutý stažený soubor · uvolněno %2$s</item>
+        <item quantity="few">Odebrány %1$d zhlédnuté stažené soubory · uvolněno %2$s</item>
+        <item quantity="many">Odebráno %1$d zhlédnutého staženého souboru · uvolněno %2$s</item>
+        <item quantity="other">Odebráno %1$d zhlédnutých stažených souborů · uvolněno %2$s</item>
+    </plurals>
+    <string name="dl_cancel">Zrušit stahování</string>
+    <string name="dl_failed_snack">%1$s nelze stáhnout: %2$s</string>
+    <string name="set_downloads">Staženo do tohoto headsetu</string>
+    <string name="set_downloads_none">Zatím nic: plakát stáhnete dlouhým stisknutím.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d soubor · %2$s</item>
+        <item quantity="few">%1$d soubory · %2$s</item>
+        <item quantity="many">%1$d souboru · %2$s</item>
+        <item quantity="other">%1$d souborů · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Zobrazit</string>
+    <string name="set_downloads_clear">Odebrat všechny stažené</string>
+    <string name="set_downloads_clear_hint">Všechny kopie v headsetu i ty, které se ještě stahují. Soubory ve sdílených složkách zůstanou nedotčeny.</string>
+    <string name="set_downloads_clear_q">Odebrat všechny stažené soubory?</string>
+    <string name="set_downloads_clear_body">Kopie v tomto headsetu budou smazány. Soubory na vašem NAS zůstanou tak, jak jsou.</string>
+    <string name="set_downloads_cleared">Všechny stažené soubory odebrány</string>
+    <string name="set_downloads_clear_action">Odebrat…</string>
+    <string name="set_downloads_clear_confirm">Odebrat</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Stáhnout</string>
+    <string name="dl_player_done">Staženo</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Stáhnout %d</item>
+        <item quantity="few">Stáhnout %d</item>
+        <item quantity="many">Stáhnout %d</item>
+        <item quantity="other">Stáhnout %d</item>
+    </plurals>
+    <string name="dl_folder">Stáhnout tuto složku</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Stáhnout %d soubor?</item>
+        <item quantity="few">Stáhnout tyto %d soubory?</item>
+        <item quantity="many">Stáhnout těchto %d souboru?</item>
+        <item quantity="other">Stáhnout těchto %d souborů?</item>
+    </plurals>
+    <string name="dl_folder_body">Stahují se jeden po druhém; v headsetu je volno %1$s a 2 GB zůstávají vždy rezervovány.</string>
+    <string name="dl_folder_go">Stáhnout</string>
+    <string name="vid_play_copy">Přehrát %1$s z headsetu</string>
+    <string name="lib_offline">Offline · přehrají se jen stažené</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · přehraje se tu %d stažené video</item>
+        <item quantity="few">Offline · přehrají se tu %d stažená videa</item>
+        <item quantity="many">Offline · přehraje se tu %d staženého videa</item>
+        <item quantity="other">Offline · přehraje se tu %d stažených videí</item>
+    </plurals>
+    <string name="set_cast_privacy">Přijímat přenos (vypnuto, dokud ho nezapnete)</string>
+    <string name="set_cast_privacy_body">Headset se ohlašuje jen ve vaší vlastní síti, aby ho telefony mohly zobrazit. Telefon pošle adresu videa a headset ho přehrává odtamtud; nic neprochází přes aplikaci Reality NAS Player a nic z přenosu se nezaznamenává.</string>
+    <string name="set_downloads_privacy">Stažené</string>
+    <string name="set_downloads_privacy_body">Stažené kopie se čtou z vašeho vlastního serveru a ukládají se jen v headsetu. Odebrat je můžete ve Stažených nebo všechny najednou v Knihovně.</string>
+    <string name="dl_finished_one">Nyní v headsetu: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d soubor je teď v headsetu</item>
+        <item quantity="few">%d soubory jsou teď v headsetu</item>
+        <item quantity="many">%d souboru je teď v headsetu</item>
+        <item quantity="other">%d souborů je teď v headsetu</item>
+    </plurals>
+    <string name="set_delete_watched">Odebírat stažené po zhlédnutí</string>
+    <string name="set_delete_watched_hint">Kopie zhlédnutá do konce z headsetu zmizí; soubor na vašem NAS zůstane</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Odebrán %d zhlédnutý stažený soubor</item>
+        <item quantity="few">Odebrány %d zhlédnuté stažené soubory</item>
+        <item quantity="many">Odebráno %d zhlédnutého staženého souboru</item>
+        <item quantity="other">Odebráno %d zhlédnutých stažených souborů</item>
+    </plurals>
+    <string name="dl_space_free">V headsetu volno %1$s</string>
+    <string name="pc_info_source">Zdroj</string>
+    <string name="pc_info_from_share">Sdílená složka na %1$s</string>
+    <string name="dl_slowed">zpomaleno během sledování</string>
+</resources>

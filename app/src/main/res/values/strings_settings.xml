@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Try again</string>
+    <string name="md_secret_show">Show</string>
+    <string name="md_secret_hide">Hide</string>
+    <string name="md_secret_show_named">Show %1$s</string>
+    <string name="md_secret_hide_named">Hide %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Something unexpected went wrong</string>
+    <string name="fault_unknown_detail">Something unexpected went wrong: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Back to source types</string>
+    <string name="sources_edit">Edit</string>
+    <string name="sources_edit_title">Edit “%1$s”</string>
+    <string name="sources_save_and_scan">Save and scan</string>
+    <string name="sources_password_keep">Leave empty to keep the saved password</string>
+    <string name="sources_token_keep">Leave empty to keep the saved token</string>
+    <string name="sources_saved_placeholder">Saved</string>
+    <string name="sources_smb_need_share">That is only a host. Tap “Browse shares…” at the top right to pick a share, or write host/share to add it directly</string>
+    <string name="sources_webdav_scheme">The address must start with http:// or https://</string>
+    <string name="sources_remote_scheme">This address is for another kind of server; type it without the part before ://</string>
+    <string name="sources_address_spaces">An address cannot contain spaces</string>
+    <string name="sources_server_user_hint">Your account on the server, the one you sign in to its web app with</string>
+    <string name="sources_server_pass_hint">That account\'s password</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s server</string>
+    <string name="sources_kind_dlna">DLNA media server</string>
+    <string name="sources_remove_action">Remove…</string>
+    <string name="sources_removed">Removed “%1$s”</string>
+    <string name="sources_added_toast">Added “%1$s”, scanning now</string>
+    <string name="sources_saved_toast">Saved “%1$s”, scanning it again</string>
+    <string name="sources_fix_account">Change the account or password</string>
+    <string name="sources_fix_account_hint">Connect this source with the right account</string>
+    <string name="sources_fix_address">Check the connection details</string>
+    <string name="sources_fix_address_hint">Check the address and port, or try another account, then scan again</string>
+    <string name="sources_scan_busy">Another scan or scrape is running; this one can start when it ends</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Back to the shares</string>
+    <string name="smb_back_servers">Back to the servers</string>
+    <string name="smb_saved_password">Uses the saved password</string>
+    <string name="smb_signing_in">Signing in…</string>
+    <string name="smb_subnet_invalid">Enter an IPv4 address, e.g. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Local file names</string>
+    <string name="set_live_engine_exo">Enhanced engine</string>
+    <string name="set_live_engine_system">System player</string>
+    <string name="set_live_spatial">%1$s · spatial audio</string>
+    <string name="set_live_sync_off">Off</string>
+    <string name="set_live_sync_on">On</string>
+    <string name="set_live_sync_on_ago">On · synced %1$s</string>
+    <string name="set_live_sync_failed">The last sync failed</string>
+    <string name="set_live_version">Version %1$s</string>
+    <string name="set_live_sub">Subtitles: %1$s</string>
+    <string name="set_live_audio">Audio: %1$s</string>
+    <string name="set_live_night">Night mode</string>
+    <string name="set_live_no_autoplay">No autoplay</string>
+    <string name="set_pano_auto">Open 360° / 180° videos immersed</string>
+    <string name="set_pano_auto_on">On: a video recognised as 360° or 180° opens in the immersive space, all round you.</string>
+    <string name="set_pano_auto_off">Off: 360° and 180° videos start in the window; Display › Viewing space takes you in.</string>
+    <string name="set_auto_skip_intro">Skip openings automatically</string>
+    <string name="set_auto_skip_intro_on">On: when a file\'s chapters mark its opening (OP, Opening…), it is skipped as it starts — \"Watch it\" at the top of the picture goes back.</string>
+    <string name="set_auto_skip_intro_off">Off: when an opening starts, the top of the picture offers \"Skip\".</string>
+    <string name="set_live_auto_skip_intro">Openings skipped</string>
+    <string name="set_version_build">Version %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Matching</string>
+    <string name="set_group_language">Language</string>
+    <string name="set_language_ui">App language</string>
+    <string name="set_language_ui_hint">The language of Reality NAS Player’s menus and text.</string>
+    <string name="set_language_follow_app">Same as the app</string>
+    <string name="set_language_meta">Metadata language</string>
+    <string name="set_tmdb_key_label">TMDB API key</string>
+    <string name="set_omdb_key_label">OMDb API key</string>
+    <string name="set_keys_offline">Offline scraping is on, so these keys are not used for now.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Delete…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">On: PICO\'s spatial audio engine processes it.</string>
+    <string name="set_spatial_off">Off: the film\'s own mix plays as it was made.</string>
+    <string name="set_fd_needs_system">Only the system player supports it: turn off “Enhanced engine” above to use it.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Fill in and rebuild</string>
+    <string name="set_auto_scan">Update the library automatically</string>
+    <string name="set_auto_scan_on">On: opening the app looks for files added to your sources since the last look (at most every 6 hours) and matches only the new ones.</string>
+    <string name="set_auto_scan_off">Off: new files appear after you scan in Sources.</string>
+    <string name="set_rescrape">Scrape the unfinished entries again</string>
+    <string name="set_rescrape_hint">Tries again for entries with no poster yet, or whose last scrape failed; matched entries are left alone</string>
+    <string name="set_rescrape_start">Start</string>
+    <string name="set_rescrape_started">Rescraping has started</string>
+    <string name="set_task_busy">A scan or scrape is running; a new task can start when it ends.</string>
+    <string name="set_clear_action">Empty…</string>
+    <string name="set_cleared">The library is empty</string>
+    <string name="set_clear_failed">Could not empty the library; try again in a moment</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Looking for shares…</string>
+    <string name="sync_open_sources">Open Sources</string>
+    <string name="sync_open_sources_hint">Add a NAS share, then come back here</string>
+    <string name="sync_this_device">This headset</string>
+    <string name="sync_readonly_title">The share is read-only</string>
+    <string name="sync_remove_body_at">This deletes “.aura” on %1$s and every device\'s records in it. The library and the progress on this headset stay as they are.</string>
+    <string name="sync_removed">The sync folder is deleted</string>
+    <string name="sync_remove_failed">Could not delete the sync folder: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Open Scraping</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” — %3$s</string>
+    <string name="set_licences">Open-source licences</string>
+    <string name="set_licences_hint">Every component\'s licence, the LGPL libraries\' source and how to replace them</string>
+</resources>

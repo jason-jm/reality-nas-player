@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">ดาวน์โหลด</string>
+    <string name="dl_notif_title">กำลังดาวน์โหลดลงเฮดเซ็ตนี้</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">ดาวน์โหลดลงเฮดเซ็ต</string>
+    <plurals name="dl_add_next">
+        <item quantity="other">ดาวน์โหลด %d ตอนถัดไป</item>
+    </plurals>
+    <string name="dl_remove">ลบการดาวน์โหลด</string>
+    <string name="dl_pause">หยุดชั่วคราว</string>
+    <string name="dl_resume">ดำเนินการต่อ</string>
+    <string name="dl_retry">ลองอีกครั้ง</string>
+    <string name="dl_on_headset">ในเฮดเซ็ตนี้</string>
+    <plurals name="dl_added">
+        <item quantity="other">กำลังดาวน์โหลด %d ไฟล์ลงเฮดเซ็ต</item>
+    </plurals>
+    <string name="dl_added_none">อยู่ในรายการดาวน์โหลดแล้ว</string>
+    <string name="dl_removed">ลบการดาวน์โหลดแล้ว</string>
+    <string name="dl_state_queued">รอคิว</string>
+    <string name="dl_state_paused">หยุดชั่วคราว</string>
+    <string name="dl_state_starting">กำลังเชื่อมต่อ…</string>
+    <string name="dl_running">%1$s จาก %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">รอแชร์ · %1$s จาก %2$s</string>
+    <string name="dl_failed_no_room">พื้นที่ในเฮดเซ็ตไม่พอ</string>
+    <string name="dl_failed_unreachable">เข้าถึงแชร์ไม่ได้</string>
+    <string name="dl_failed_disk">บันทึกไฟล์ไม่ได้</string>
+    <string name="dl_empty">ยังไม่มีสิ่งที่ดาวน์โหลด</string>
+    <string name="dl_empty_hint">กดโปสเตอร์หรือตอนค้างไว้ แล้วเลือก “ดาวน์โหลดลงเฮดเซ็ต” เพื่อดูเมื่ออยู่นอกบ้าน</string>
+    <string name="dl_space">ดาวน์โหลดแล้ว %1$s · ว่าง %2$s</string>
+    <string name="dl_section_active">กำลังดาวน์โหลด</string>
+    <string name="dl_section_done">ในเฮดเซ็ตนี้</string>
+    <plurals name="dl_nav_more">
+        <item quantity="other">%1$d%% · อีก %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="other">ลบ %d รายการที่ดูแล้ว</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="other">ลบการดาวน์โหลดที่ดูแล้ว %1$d รายการ · ได้พื้นที่คืน %2$s</item>
+    </plurals>
+    <string name="dl_cancel">ยกเลิกการดาวน์โหลด</string>
+    <string name="dl_failed_snack">ดาวน์โหลด %1$s ไม่ได้: %2$s</string>
+    <string name="set_downloads">ดาวน์โหลดลงเฮดเซ็ตนี้แล้ว</string>
+    <string name="set_downloads_none">ยังไม่มี: กดโปสเตอร์ค้างไว้เพื่อดาวน์โหลด</string>
+    <plurals name="set_downloads_n">
+        <item quantity="other">%1$d ไฟล์ · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">ดู</string>
+    <string name="set_downloads_clear">ลบการดาวน์โหลดทั้งหมด</string>
+    <string name="set_downloads_clear_hint">ทุกสำเนาบนเฮดเซ็ต รวมถึงที่กำลังดาวน์โหลด ไฟล์บนแชร์ของคุณจะไม่ถูกแตะต้อง</string>
+    <string name="set_downloads_clear_q">ลบการดาวน์โหลดทั้งหมดใช่ไหม</string>
+    <string name="set_downloads_clear_body">สำเนาบนเฮดเซ็ตนี้จะถูกลบ ไฟล์บน NAS ของคุณยังคงเดิม</string>
+    <string name="set_downloads_cleared">ลบการดาวน์โหลดทั้งหมดแล้ว</string>
+    <string name="set_downloads_clear_action">ลบ…</string>
+    <string name="set_downloads_clear_confirm">ลบ</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">ดาวน์โหลด</string>
+    <string name="dl_player_done">ดาวน์โหลดแล้ว</string>
+    <plurals name="dl_player_n">
+        <item quantity="other">ดาวน์โหลด %d</item>
+    </plurals>
+    <string name="dl_folder">ดาวน์โหลดโฟลเดอร์นี้</string>
+    <plurals name="dl_folder_q">
+        <item quantity="other">ดาวน์โหลด %d ไฟล์นี้ใช่ไหม</item>
+    </plurals>
+    <string name="dl_folder_body">ไฟล์จะดาวน์โหลดทีละไฟล์ เฮดเซ็ตมีพื้นที่ว่าง %1$s และจะเว้นไว้ 2 GB เสมอ</string>
+    <string name="dl_folder_go">ดาวน์โหลด</string>
+    <string name="vid_play_copy">เล่น %1$s จากเฮดเซ็ต</string>
+    <string name="lib_offline">ออฟไลน์ · เล่นได้เฉพาะที่ดาวน์โหลดไว้</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="other">ออฟไลน์ · เล่นที่ดาวน์โหลดไว้ได้ %d รายการ</item>
+    </plurals>
+    <string name="set_cast_privacy">รับการแคสต์ (ปิดอยู่จนกว่าคุณจะเปิด)</string>
+    <string name="set_cast_privacy_body">เฮดเซ็ตประกาศตัวเองเฉพาะในเครือข่ายของคุณเท่านั้น เพื่อให้โทรศัพท์แสดงในรายการได้ โทรศัพท์จะส่งที่อยู่ของวิดีโอ แล้วเฮดเซ็ตเล่นจากที่นั่น ไม่มีอะไรผ่าน Reality NAS Player และไม่มีการบันทึกสิ่งที่แคสต์</string>
+    <string name="set_downloads_privacy">การดาวน์โหลด</string>
+    <string name="set_downloads_privacy_body">สำเนาที่คุณดาวน์โหลดจะอ่านจากเซิร์ฟเวอร์ของคุณเองและเก็บไว้บนเฮดเซ็ตเท่านั้น ลบได้ใน “ดาวน์โหลด” หรือลบทั้งหมดพร้อมกันใน “คลังสื่อ”</string>
+    <string name="dl_finished_one">อยู่บนเฮดเซ็ตแล้ว: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="other">%d ไฟล์อยู่บนเฮดเซ็ตแล้ว</item>
+    </plurals>
+    <string name="set_delete_watched">ลบการดาวน์โหลดเมื่อดูจบ</string>
+    <string name="set_delete_watched_hint">สำเนาที่ดูจนจบจะถูกลบจากเฮดเซ็ต ไฟล์บน NAS ของคุณยังอยู่</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="other">ลบการดาวน์โหลดที่ดูแล้ว %d รายการ</item>
+    </plurals>
+    <string name="dl_space_free">เฮดเซ็ตว่าง %1$s</string>
+    <string name="pc_info_source">แหล่งที่มา</string>
+    <string name="pc_info_from_share">แชร์บน %1$s</string>
+    <string name="dl_slowed">ช้าลงขณะที่คุณดู</string>
+</resources>

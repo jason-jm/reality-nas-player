@@ -1,0 +1,36 @@
+# Genre names in Swedish — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Action
+Adventure = Äventyr
+Animation = Animerat
+Comedy = Komedi
+Crime = Kriminal
+Documentary = Dokumentär
+Drama = Drama
+Family = Familj
+Fantasy = Fantasy
+History = Historisk
+Horror = Skräck
+Music = Music
+Mystery = Mystik
+Romance = Romantik
+Science Fiction = Science Fiction
+Sci-Fi = Science Fiction
+TV Movie = TV-film
+Thriller = Thriller
+War = Krig
+Western = Västern
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psykologisk
+Slice of Life = Vardagsliv
+Sports = Sport
+Supernatural = Övernaturligt
+Politics = Politik

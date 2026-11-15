@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Повторить</string>
+    <string name="md_secret_show">Показать</string>
+    <string name="md_secret_hide">Скрыть</string>
+    <string name="md_secret_show_named">Показать %1$s</string>
+    <string name="md_secret_hide_named">Скрыть %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Произошла непредвиденная ошибка</string>
+    <string name="fault_unknown_detail">Произошла непредвиденная ошибка: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Назад к типам источников</string>
+    <string name="sources_edit">Изменить</string>
+    <string name="sources_edit_title">Изменить «%1$s»</string>
+    <string name="sources_save_and_scan">Сохранить и сканировать</string>
+    <string name="sources_password_keep">Оставьте пустым, чтобы сохранить прежний пароль</string>
+    <string name="sources_token_keep">Оставьте пустым, чтобы сохранить прежний токен</string>
+    <string name="sources_saved_placeholder">Сохранено</string>
+    <string name="sources_smb_need_share">Это только хост. Нажмите «Обзор общих папок…» вверху справа, чтобы выбрать общую папку, или напишите хост/папка, чтобы добавить её напрямую</string>
+    <string name="sources_webdav_scheme">Адрес должен начинаться с http:// или https://</string>
+    <string name="sources_remote_scheme">Этот адрес для сервера другого типа; введите его без части до ://</string>
+    <string name="sources_address_spaces">Адрес не может содержать пробелы</string>
+    <string name="sources_server_user_hint">Ваша учётная запись на сервере — та, с которой вы входите в его веб-приложение</string>
+    <string name="sources_server_pass_hint">Пароль этой учётной записи</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Сервер %1$s</string>
+    <string name="sources_kind_dlna">Медиасервер DLNA</string>
+    <string name="sources_remove_action">Удалить…</string>
+    <string name="sources_removed">Источник «%1$s» удалён</string>
+    <string name="sources_added_toast">Источник «%1$s» добавлен, идёт сканирование</string>
+    <string name="sources_saved_toast">Источник «%1$s» сохранён, сканируем заново</string>
+    <string name="sources_fix_account">Изменить учётную запись или пароль</string>
+    <string name="sources_fix_account_hint">Подключите этот источник с правильной учётной записью</string>
+    <string name="sources_fix_address">Проверить параметры подключения</string>
+    <string name="sources_fix_address_hint">Проверьте адрес и порт или попробуйте другую учётную запись, затем снова запустите сканирование</string>
+    <string name="sources_scan_busy">Уже идёт другое сканирование или распознавание; это начнётся после него</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Назад к общим папкам</string>
+    <string name="smb_back_servers">Назад к серверам</string>
+    <string name="smb_saved_password">Используется сохранённый пароль</string>
+    <string name="smb_signing_in">Вход…</string>
+    <string name="smb_subnet_invalid">Введите адрес IPv4, например 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">По именам файлов</string>
+    <string name="set_live_engine_exo">Расширенный движок</string>
+    <string name="set_live_engine_system">Системный плеер</string>
+    <string name="set_live_spatial">%1$s · пространственный звук</string>
+    <string name="set_live_sync_off">Выкл.</string>
+    <string name="set_live_sync_on">Вкл.</string>
+    <string name="set_live_sync_on_ago">Вкл. · синхронизировано %1$s</string>
+    <string name="set_live_sync_failed">Сбой синхронизации</string>
+    <string name="set_live_version">Версия %1$s</string>
+    <string name="set_live_sub">Субтитры: %1$s</string>
+    <string name="set_live_audio">Звук: %1$s</string>
+    <string name="set_live_night">Ночной режим</string>
+    <string name="set_live_no_autoplay">Без автозапуска</string>
+    <string name="set_pano_auto">Открывать видео 360° / 180° с погружением</string>
+    <string name="set_pano_auto_on">Вкл.: видео, распознанное как 360° или 180°, открывается в пространстве погружения — вокруг вас.</string>
+    <string name="set_pano_auto_off">Выкл.: видео 360° и 180° начинаются в окне; погрузиться можно через Изображение › Режим просмотра.</string>
+    <string name="set_auto_skip_intro">Пропускать заставки автоматически</string>
+    <string name="set_auto_skip_intro_on">Вкл.: если главы файла отмечают заставку (OP, Opening…), она пропускается сразу при начале — кнопка «Посмотреть» вверху изображения возвращает назад.</string>
+    <string name="set_auto_skip_intro_off">Выкл.: когда начинается заставка, вверху изображения появляется кнопка «Пропустить».</string>
+    <string name="set_live_auto_skip_intro">Заставки пропускаются</string>
+    <string name="set_version_build">Версия %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Сопоставление</string>
+    <string name="set_group_language">Язык</string>
+    <string name="set_language_ui">Язык приложения</string>
+    <string name="set_language_ui_hint">Язык меню и текстов Reality NAS Player.</string>
+    <string name="set_language_follow_app">Как в приложении</string>
+    <string name="set_language_meta">Язык метаданных</string>
+    <string name="set_tmdb_key_label">API-ключ TMDB</string>
+    <string name="set_omdb_key_label">API-ключ OMDb</string>
+    <string name="set_keys_offline">Офлайн-распознавание включено, поэтому эти ключи сейчас не используются.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Удалить…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Вкл.: звук обрабатывает движок пространственного звука PICO.</string>
+    <string name="set_spatial_off">Выкл.: собственный микс фильма звучит так, как был сведён.</string>
+    <string name="set_fd_needs_system">Поддерживается только системным плеером: чтобы использовать, выключите «Расширенный движок» выше.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Дополнение и пересоздание</string>
+    <string name="set_auto_scan">Обновлять медиатеку автоматически</string>
+    <string name="set_auto_scan_on">Вкл.: при открытии приложение ищет файлы, добавленные в источники с прошлой проверки (не чаще раза в 6 часов), и распознаёт только новые.</string>
+    <string name="set_auto_scan_off">Выкл.: новые файлы появляются после сканирования в разделе «Источники».</string>
+    <string name="set_rescrape">Повторно распознать незавершённые записи</string>
+    <string name="set_rescrape_hint">Повторяет попытку для записей без постера или с неудачным последним распознаванием; сопоставленные записи не трогаются</string>
+    <string name="set_rescrape_start">Начать</string>
+    <string name="set_rescrape_started">Повторное распознавание запущено</string>
+    <string name="set_task_busy">Идёт сканирование или распознавание; новая задача начнётся после него.</string>
+    <string name="set_clear_action">Очистить…</string>
+    <string name="set_cleared">Медиатека очищена</string>
+    <string name="set_clear_failed">Не удалось очистить медиатеку; попробуйте чуть позже</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Ищем общие папки…</string>
+    <string name="sync_open_sources">Открыть «Источники»</string>
+    <string name="sync_open_sources_hint">Добавьте общую папку NAS и вернитесь сюда</string>
+    <string name="sync_this_device">Этот шлем</string>
+    <string name="sync_readonly_title">Общая папка только для чтения</string>
+    <string name="sync_remove_body_at">Будут удалены «.aura» на %1$s и записи всех устройств в ней. Медиатека и прогресс на этом шлеме останутся как есть.</string>
+    <string name="sync_removed">Папка синхронизации удалена</string>
+    <string name="sync_remove_failed">Не удалось удалить папку синхронизации: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Открыть «Распознавание»</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · «%2$s» — %3$s</string>
+    <string name="set_licences">Лицензии открытого ПО</string>
+    <string name="set_licences_hint">Лицензия каждого компонента, исходный код библиотек LGPL и способ их замены</string>
+</resources>

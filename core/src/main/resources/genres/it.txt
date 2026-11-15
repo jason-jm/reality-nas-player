@@ -1,0 +1,36 @@
+# Genre names in Italian — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Azione
+Adventure = Avventura
+Animation = Animazione
+Comedy = Commedia
+Crime = Crime
+Documentary = Documentario
+Drama = Dramma
+Family = Famiglia
+Fantasy = Fantasy
+History = Storia
+Horror = Horror
+Music = Musica
+Mystery = Mistero
+Romance = Romance
+Science Fiction = Fantascienza
+Sci-Fi = Fantascienza
+TV Movie = televisione film
+Thriller = Thriller
+War = Guerra
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Majokko
+Mecha = Mecha
+Psychological = Psicologico
+Slice of Life = Slice of life
+Sports = Sport
+Supernatural = Soprannaturale
+Politics = Politica

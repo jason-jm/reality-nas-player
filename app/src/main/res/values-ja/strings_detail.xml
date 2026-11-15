@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">お気に入りから削除</string>
+    <string name="det_up_next">次に再生</string>
+    <string name="det_section_main">本編</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">シーズン%1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">すべて視聴済みにしますか？</string>
+    <string name="det_mark_all_unwatched_q">すべて未視聴にしますか？</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="other">%1$d ファイルが視聴済みになります。</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="other">そのうち %1$d ファイルは途中まで視聴しており、再生位置が失われます。</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="other">%1$d ファイルの視聴状況が消去されます。</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">ソース</string>
+    <string name="fix_scope">適用範囲</string>
+    <plurals name="fix_scope_card">
+        <item quantity="other">カード全体（%1$d ファイル）</item>
+    </plurals>
+    <string name="fix_scope_file">このファイルのみ</string>
+    <string name="fix_query_hint">タイトル（英語のタイトルが最もヒットしやすい）</string>
+    <string name="fix_hint">正しい項目を選んでマッチを修正します</string>
+    <string name="fix_applying">適用中…</string>
+    <string name="fix_failed">この項目を適用できませんでした。ネットワークを確認して、もう一度お試しください。</string>
+    <string name="fix_kind_movie">映画</string>
+    <string name="fix_kind_show">シリーズ</string>
+    <string name="fix_current">現在</string>
+    <string name="fix_no_results_title">一致する項目がありません</string>
+    <string name="fix_no_results_anilist">別の表記で試してください。ローマ字か英語の名前が最もヒットしやすくなります。</string>
+    <string name="fix_error_title">検索を完了できませんでした</string>
+    <string name="fix_error_body">ネットワークを確認して、もう一度お試しください。</string>
+    <string name="fix_retry">再試行</string>
+    <string name="fix_confirm_title">「%1$s」に変更しますか？</string>
+    <string name="fix_confirm_title_year">「%1$s」（%2$d）に変更しますか？</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="other">このカードの %1$d ファイルすべてで今後この項目が使われ、以降のスクレイピングでは変更されません。</item>
+    </plurals>
+    <string name="fix_confirm_file">今後は「%1$s」だけがこの項目を使い、以降のスクレイピングでは変更されません。</string>
+    <string name="fix_apply">適用</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="other">ほか%d件</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="other">ライブラリにほか%d作品</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="other">ライブラリに%d作品</item>
+    </plurals>
+    <string name="det_similar">似ている作品</string>
+    <string name="det_episode_copy">%1$s · 別のコピー</string>
+    <string name="det_season_progress">%2$d話中%1$d話を視聴済み</string>
+    <plurals name="det_season_done">
+        <item quantity="other">全%1$d話を視聴済み</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">バージョン</string>
+    <string name="det_series">このシリーズの作品</string>
+    <string name="lib_series">シリーズ</string>
+    <plurals name="lib_series_count">
+        <item quantity="other">%d作品</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="other">このライブラリの%d作品（公開順）</item>
+    </plurals>
+</resources>

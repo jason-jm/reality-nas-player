@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 收藏 on the detail page, on: the same heart as ic_det_fav, filled. Its outline is a little lighter
+     (1.5dp) so the filled shape's mass reads level with the line one beside it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="butt"
+        android:strokeLineJoin="miter"
+        android:strokeMiterLimit="4"
+        android:pathData="M12,20.2L4.75,12.95C2.5,10.7 2.55,7.1 4.85,5.2C7,3.4 10.1,3.8 12,6.15C13.9,3.8 17,3.4 19.15,5.2C21.45,7.1 21.5,10.7 19.25,12.95Z" />
+</vector>

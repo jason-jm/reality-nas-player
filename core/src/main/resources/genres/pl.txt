@@ -1,0 +1,37 @@
+# Genre names in Polish — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Akcja
+Adventure = Przygodowy
+Animation = Animacja
+Comedy = Komedia
+Crime = Kryminał
+Documentary = Dokumentalny
+Drama = Dramat
+Family = Familijny
+Fantasy = Fantasy
+History = Historyczny
+Horror = Horror
+Music = Muzyczny
+Mystery = Tajemnica
+Romance = Romans
+Science Fiction = Sci-Fi
+Sci-Fi = Sci-Fi
+TV Movie = film TV
+Thriller = Thriller
+War = Wojenny
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psychologiczny
+Slice of Life = Okruchy życia
+Sports = Sportowy
+Supernatural = Nadprzyrodzony
+Politics = Polityczny
+@Akcja i Przygoda = Action, Adventure

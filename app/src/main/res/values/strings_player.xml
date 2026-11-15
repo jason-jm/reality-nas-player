@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Playback</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projection</string>
+    <string name="pc_proj_flat">Flat</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Font</string>
+    <string name="pc_colour">Colour</string>
+    <string name="pc_sub_style_plain">Shadow</string>
+    <string name="pc_sub_style_box">Box</string>
+    <string name="pc_second_subtitle">Second subtitles</string>
+    <string name="pc_sub_style_outline">Outline</string>
+    <string name="pc_font_default">Default</string>
+    <string name="pc_font_serif">Serif</string>
+    <string name="pc_font_mono">Mono</string>
+    <string name="pc_colour_white">White</string>
+    <string name="pc_colour_yellow">Yellow</string>
+    <string name="pc_colour_cyan">Cyan</string>
+    <string name="pc_colour_green">Green</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">In order</string>
+    <string name="pc_loop_all">All</string>
+    <string name="pc_loop_one">One</string>
+    <string name="pc_loop_shuffle">Shuffle</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Taking a snapshot…</string>
+    <string name="pc_hold_speed">Playing at 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Bookmarks</string>
+    <string name="pc_bookmarks_n">Bookmarks · %1$d</string>
+    <string name="pc_bookmark_add">Add bookmark</string>
+    <string name="pc_bookmark_empty">Mark a moment to come back to with + above.</string>
+    <string name="pc_bookmark_remove">Remove bookmark at %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Skip intro &amp; credits</string>
+    <string name="pc_skip_intro_set">Intro to %1$s</string>
+    <string name="pc_skip_outro_set">credits last %1$s</string>
+    <string name="pc_skip_mark_intro">Intro ends here</string>
+    <string name="pc_skip_mark_outro">Credits start here</string>
+    <string name="pc_skip_clear">Clear intro &amp; credits</string>
+    <string name="pc_skip_intro_hint">Every later episode of this show starts here</string>
+    <string name="pc_skip_outro_hint">Every later episode of this show moves on to the next from here</string>
+    <string name="vid_intro_skipped">Intro skipped</string>
+    <string name="vid_watch_intro">Watch it</string>
+    <string name="vid_chapter_intro">Opening · %1$s left</string>
+    <string name="vid_chapter_outro">Credits · %1$s left</string>
+    <string name="vid_skip">Skip</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Unknown format</string>
+    <string name="pc_track_unknown">Unknown track</string>
+    <string name="pc_track_n">Track %1$d</string>
+    <string name="pc_track_external_sub">External subtitles</string>
+    <string name="pc_track_external">External</string>
+    <string name="pc_track_embedded">Embedded</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Audio</string>
+    <string name="pc_frames">Dropped %1$d / rendered %2$d</string>
+    <string name="pc_env_dim">Dim while playing</string>
+    <string name="pc_env_viewing_light">Light level during playback</string>
+    <string name="pc_env_dim_hint">Use the selected light level while watching. The lights come back up when you pause or open the controls.</string>
+    <string name="pc_env_lights">Lights</string>
+    <string name="pc_env_lights_hint">The place’s own lights, on or off; while on, “Dim while playing” still takes them down during the film</string>
+    <string name="pc_env_seat">Seat</string>
+    <string name="pc_seat_center">Center</string>
+    <string name="pc_seat_left">Left</string>
+    <string name="pc_seat_right">Right</string>
+    <string name="pc_seat_left_window">Left window</string>
+    <string name="pc_seat_right_window">Right window</string>
+    <string name="pc_env_screen">Film and subtitles</string>
+    <string name="pc_env_screen_hint">The film and its subtitles appear on the room’s screen.</string>
+    <string name="pc_env_glow">Screen glow</string>
+    <string name="pc_env_glow_hint">Let light from the film colour the screen frame and nearby surfaces.</string>
+    <string name="pc_env_screen_none">No screen here — the film stays in the window</string>
+    <string name="pc_env_has_screen">Has a screen</string>
+    <string name="pc_env_entering">Opening %1$s…</string>
+    <string name="pc_env_failed">%1$s couldn’t be loaded</string>
+    <string name="pc_lang_simplified">Simplified Chinese</string>
+    <string name="pc_lang_traditional">Traditional Chinese</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d more sound track</item>
+        <item quantity="other">%d more sound tracks</item>
+    </plurals>
+    <string name="pc_more_sound_hint">This file has sound the built-in player cannot read — play it in mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d picture subtitle file</item>
+        <item quantity="other">%d picture subtitle files</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS beside the film — the built-in player cannot draw them; play it in mpv</string>
+    <string name="pc_pano_format">Panorama format</string>
+    <string name="pc_pano_equirect">Equirect</string>
+    <string name="pc_pano_fisheye">Fisheye</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Cubemap</string>
+    <string name="pc_pano_dual">Dual fisheye</string>
+    <string name="pc_pano_direction">Direction</string>
+    <string name="pc_pano_turn_left">Turn left</string>
+    <string name="pc_pano_recenter">Recenter</string>
+    <string name="pc_pano_turn_right">Turn right</string>
+    <string name="pc_pano_turn_hint">Turns the picture 30° round you — what is behind you, without turning round</string>
+    <string name="pc_pano_recenter_hint">Puts the film\'s front where you are looking</string>
+    <string name="pc_pano_own">File\'s mesh</string>
+    <string name="pc_info_format">Format</string>
+    <string name="pc_info_spatial_video">Spatial video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, two views (left eye shown)</string>
+    <string name="pc_info_camera">%1$d° across · %2$d mm apart</string>
+    <string name="pc_info_right_first">right eye first</string>
+    <string name="pc_audio_field">Ambisonic</string>
+    <string name="vid_pano_guess_360">This looks like a 360° video</string>
+    <string name="vid_pano_guess_360_3d">This looks like a 360° 3D video</string>
+    <string name="vid_pano_guess_180_3d">This looks like a 180° 3D video (VR180)</string>
+    <string name="vid_pano_guess_fisheye">This looks like a fisheye video</string>
+    <string name="vid_pano_guess_fisheye_3d">This looks like a 180° 3D fisheye video</string>
+    <string name="vid_pano_guess_dual">This looks like a 360 camera\'s two-lens original</string>
+    <string name="vid_pano_guess_play">Play as panorama</string>
+    <string name="vid_pano_guess_no">It isn\'t</string>
+    <string name="pc_pano_tilt_up">Up</string>
+    <string name="pc_pano_tilt_down">Down</string>
+    <string name="pc_pano_roll_left">Roll left</string>
+    <string name="pc_pano_roll_right">Roll right</string>
+    <string name="pc_pano_level">Level</string>
+    <string name="pc_pano_level_hint">For a crooked horizon: 5° a press, kept for this film</string>
+</resources>

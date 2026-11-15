@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">다운로드</string>
+    <string name="dl_notif_title">이 헤드셋에 다운로드 중</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">헤드셋에 다운로드</string>
+    <plurals name="dl_add_next">
+        <item quantity="other">다음 에피소드 %d개 다운로드</item>
+    </plurals>
+    <string name="dl_remove">다운로드 삭제</string>
+    <string name="dl_pause">일시정지</string>
+    <string name="dl_resume">재개</string>
+    <string name="dl_retry">다시 시도</string>
+    <string name="dl_on_headset">이 헤드셋에 있음</string>
+    <plurals name="dl_added">
+        <item quantity="other">파일 %d개를 헤드셋에 다운로드하는 중</item>
+    </plurals>
+    <string name="dl_added_none">이미 다운로드 목록에 있어요</string>
+    <string name="dl_removed">다운로드를 삭제했어요</string>
+    <string name="dl_state_queued">대기 중</string>
+    <string name="dl_state_paused">일시정지됨</string>
+    <string name="dl_state_starting">연결 중…</string>
+    <string name="dl_running">%1$s / %2$s · %3$s/초</string>
+    <string name="dl_waiting_share">공유를 기다리는 중 · %1$s / %2$s</string>
+    <string name="dl_failed_no_room">헤드셋의 저장 공간이 부족해요</string>
+    <string name="dl_failed_unreachable">공유에 연결할 수 없었어요</string>
+    <string name="dl_failed_disk">파일을 저장할 수 없었어요</string>
+    <string name="dl_empty">아직 다운로드한 항목이 없어요</string>
+    <string name="dl_empty_hint">포스터나 에피소드를 길게 누르고 ‘헤드셋에 다운로드’를 선택하면 집 밖에서도 볼 수 있어요.</string>
+    <string name="dl_space">%1$s 다운로드됨 · %2$s 남음</string>
+    <string name="dl_section_active">다운로드 중</string>
+    <string name="dl_section_done">이 헤드셋에 있음</string>
+    <plurals name="dl_nav_more">
+        <item quantity="other">%1$d%% · %2$d개 더</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="other">시청한 항목 %d개 삭제</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="other">시청한 다운로드 %1$d개 삭제 · %2$s 확보</item>
+    </plurals>
+    <string name="dl_cancel">다운로드 취소</string>
+    <string name="dl_failed_snack">%1$s 다운로드 실패: %2$s</string>
+    <string name="set_downloads">이 헤드셋에 다운로드됨</string>
+    <string name="set_downloads_none">아직 없어요. 포스터를 길게 누르면 다운로드할 수 있어요.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="other">파일 %1$d개 · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">보기</string>
+    <string name="set_downloads_clear">모든 다운로드 삭제</string>
+    <string name="set_downloads_clear_hint">헤드셋에 있는 모든 사본과 다운로드 중인 항목이에요. 공유에 있는 파일은 그대로예요.</string>
+    <string name="set_downloads_clear_q">모든 다운로드를 삭제할까요?</string>
+    <string name="set_downloads_clear_body">이 헤드셋의 사본이 삭제돼요. NAS의 파일은 그대로 남아요.</string>
+    <string name="set_downloads_cleared">모든 다운로드를 삭제했어요</string>
+    <string name="set_downloads_clear_action">삭제…</string>
+    <string name="set_downloads_clear_confirm">삭제</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">다운로드</string>
+    <string name="dl_player_done">다운로드됨</string>
+    <plurals name="dl_player_n">
+        <item quantity="other">%d개 다운로드</item>
+    </plurals>
+    <string name="dl_folder">이 폴더 다운로드</string>
+    <plurals name="dl_folder_q">
+        <item quantity="other">파일 %d개를 다운로드할까요?</item>
+    </plurals>
+    <string name="dl_folder_body">하나씩 차례로 다운로드해요. 헤드셋 여유 공간 %1$s 중 2 GB는 항상 남겨 둬요.</string>
+    <string name="dl_folder_go">다운로드</string>
+    <string name="vid_play_copy">헤드셋에 있는 %1$s 재생</string>
+    <string name="lib_offline">오프라인 · 다운로드한 항목만 재생 가능</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="other">오프라인 · 다운로드한 항목 %d개 재생 가능</item>
+    </plurals>
+    <string name="set_cast_privacy">캐스트 수신(직접 켜기 전에는 꺼짐)</string>
+    <string name="set_cast_privacy_body">헤드셋은 내 네트워크에서만 자신을 알려 휴대폰 목록에 나타나요. 휴대폰이 동영상 주소를 보내면 헤드셋이 그곳에서 직접 재생해요. Reality NAS Player를 거치는 것은 없고, 캐스트한 내용은 기록되지 않아요.</string>
+    <string name="set_downloads_privacy">다운로드</string>
+    <string name="set_downloads_privacy_body">다운로드한 사본은 내 서버에서 읽어 와 헤드셋에만 저장돼요. ‘다운로드’에서 삭제하거나, ‘라이브러리’에서 한 번에 모두 삭제할 수 있어요.</string>
+    <string name="dl_finished_one">헤드셋에 다운로드 완료: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="other">파일 %d개가 헤드셋에 다운로드되었어요</item>
+    </plurals>
+    <string name="set_delete_watched">시청 후 다운로드 삭제</string>
+    <string name="set_delete_watched_hint">끝까지 본 사본은 헤드셋에서 삭제돼요. NAS의 파일은 그대로 남아요</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="other">시청한 다운로드 %d개를 삭제했어요</item>
+    </plurals>
+    <string name="dl_space_free">헤드셋 여유 공간 %1$s</string>
+    <string name="pc_info_source">소스</string>
+    <string name="pc_info_from_share">%1$s의 공유</string>
+    <string name="dl_slowed">시청 중에는 속도를 낮춰요</string>
+</resources>

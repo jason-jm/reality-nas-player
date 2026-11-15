@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Yeniden dene</string>
+    <string name="md_secret_show">Göster</string>
+    <string name="md_secret_hide">Gizle</string>
+    <string name="md_secret_show_named">Göster: %1$s</string>
+    <string name="md_secret_hide_named">Gizle: %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Beklenmedik bir sorun oluştu</string>
+    <string name="fault_unknown_detail">Beklenmedik bir sorun oluştu: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Kaynak türlerine dön</string>
+    <string name="sources_edit">Düzenle</string>
+    <string name="sources_edit_title">“%1$s” kaynağını düzenle</string>
+    <string name="sources_save_and_scan">Kaydet ve tara</string>
+    <string name="sources_password_keep">Kayıtlı şifreyi korumak için boş bırakın</string>
+    <string name="sources_token_keep">Kayıtlı belirteci korumak için boş bırakın</string>
+    <string name="sources_saved_placeholder">Kayıtlı</string>
+    <string name="sources_smb_need_share">Bu yalnızca bir ana bilgisayar. Bir paylaşım seçmek için sağ üstteki “Paylaşımlara göz at…” düğmesine dokunun veya doğrudan eklemek için ana bilgisayar/paylaşım yazın</string>
+    <string name="sources_webdav_scheme">Adres http:// veya https:// ile başlamalı</string>
+    <string name="sources_remote_scheme">Bu adres başka türde bir sunucu için; :// öncesindeki kısım olmadan yazın</string>
+    <string name="sources_address_spaces">Adres boşluk içeremez</string>
+    <string name="sources_server_user_hint">Sunucudaki hesabınız; web uygulamasında oturum açtığınız hesap</string>
+    <string name="sources_server_pass_hint">O hesabın şifresi</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s sunucusu</string>
+    <string name="sources_kind_dlna">DLNA medya sunucusu</string>
+    <string name="sources_remove_action">Kaldır…</string>
+    <string name="sources_removed">“%1$s” kaldırıldı</string>
+    <string name="sources_added_toast">“%1$s” eklendi, şimdi taranıyor</string>
+    <string name="sources_saved_toast">“%1$s” kaydedildi, yeniden taranıyor</string>
+    <string name="sources_fix_account">Hesabı veya şifreyi değiştir</string>
+    <string name="sources_fix_account_hint">Bu kaynağa doğru hesapla bağlanın</string>
+    <string name="sources_fix_address">Bağlantı ayrıntılarını kontrol et</string>
+    <string name="sources_fix_address_hint">Adresi ve portu kontrol edin ya da başka bir hesap deneyin, sonra yeniden tarayın</string>
+    <string name="sources_scan_busy">Başka bir tarama veya eşleştirme sürüyor; bu işlem o bitince başlayabilir</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Paylaşımlara dön</string>
+    <string name="smb_back_servers">Sunuculara dön</string>
+    <string name="smb_saved_password">Kayıtlı şifre kullanılıyor</string>
+    <string name="smb_signing_in">Oturum açılıyor…</string>
+    <string name="smb_subnet_invalid">Bir IPv4 adresi girin, ör. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Yerel dosya adları</string>
+    <string name="set_live_engine_exo">Gelişmiş motor</string>
+    <string name="set_live_engine_system">Sistem oynatıcısı</string>
+    <string name="set_live_spatial">%1$s · uzamsal ses</string>
+    <string name="set_live_sync_off">Kapalı</string>
+    <string name="set_live_sync_on">Açık</string>
+    <string name="set_live_sync_on_ago">Açık · son eşitleme %1$s</string>
+    <string name="set_live_sync_failed">Son eşitleme başarısız oldu</string>
+    <string name="set_live_version">Sürüm %1$s</string>
+    <string name="set_live_sub">Altyazı: %1$s</string>
+    <string name="set_live_audio">Ses: %1$s</string>
+    <string name="set_live_night">Gece modu</string>
+    <string name="set_live_no_autoplay">Otomatik oynatma yok</string>
+    <string name="set_pano_auto">360° / 180° videoları sürükleyici modda aç</string>
+    <string name="set_pano_auto_on">Açık: 360° veya 180° olarak tanınan bir video, etrafınızı saran sürükleyici alanda açılır.</string>
+    <string name="set_pano_auto_off">Kapalı: 360° ve 180° videolar pencerede başlar; Görüntü › İzleme alanı sizi içeri alır.</string>
+    <string name="set_auto_skip_intro">Girişleri otomatik atla</string>
+    <string name="set_auto_skip_intro_on">Açık: bir dosyanın kısımları açılışını işaretlediğinde (OP, Opening…), açılış başlarken atlanır — görüntünün üstündeki “Girişi izle” geri götürür.</string>
+    <string name="set_auto_skip_intro_off">Kapalı: bir açılış başladığında görüntünün üstünde “Atla” seçeneği çıkar.</string>
+    <string name="set_live_auto_skip_intro">Girişler atlanıyor</string>
+    <string name="set_version_build">Sürüm %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Eşleştirme</string>
+    <string name="set_group_language">Dil</string>
+    <string name="set_language_ui">Uygulama dili</string>
+    <string name="set_language_ui_hint">Reality NAS Player uygulamasının menülerinin ve metinlerinin dili.</string>
+    <string name="set_language_follow_app">Uygulamayla aynı</string>
+    <string name="set_language_meta">Meta veri dili</string>
+    <string name="set_tmdb_key_label">TMDB API anahtarı</string>
+    <string name="set_omdb_key_label">OMDb API anahtarı</string>
+    <string name="set_keys_offline">Çevrimdışı eşleştirme açık, bu yüzden bu anahtarlar şimdilik kullanılmıyor.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Sil…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Açık: sesi PICO’nun uzamsal ses motoru işler.</string>
+    <string name="set_spatial_off">Kapalı: filmin kendi miksajı yapıldığı gibi çalınır.</string>
+    <string name="set_fd_needs_system">Yalnızca sistem oynatıcısı destekler: kullanmak için yukarıdaki “Gelişmiş motor” seçeneğini kapatın.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Tamamla ve yeniden oluştur</string>
+    <string name="set_auto_scan">Kitaplığı otomatik güncelle</string>
+    <string name="set_auto_scan_on">Açık: uygulama açıldığında, son bakıştan beri kaynaklarınıza eklenen dosyalar aranır (en fazla 6 saatte bir) ve yalnızca yeniler eşleştirilir.</string>
+    <string name="set_auto_scan_off">Kapalı: yeni dosyalar, Kaynaklar’da tarama yaptıktan sonra görünür.</string>
+    <string name="set_rescrape">Tamamlanmamış girişleri yeniden eşleştir</string>
+    <string name="set_rescrape_hint">Henüz afişi olmayan veya son eşleştirmesi başarısız olan girişler için yeniden dener; eşleşmiş girişlere dokunulmaz</string>
+    <string name="set_rescrape_start">Başlat</string>
+    <string name="set_rescrape_started">Yeniden eşleştirme başladı</string>
+    <string name="set_task_busy">Bir tarama veya eşleştirme sürüyor; yeni bir görev o bitince başlayabilir.</string>
+    <string name="set_clear_action">Boşalt…</string>
+    <string name="set_cleared">Kitaplık boşaltıldı</string>
+    <string name="set_clear_failed">Kitaplık boşaltılamadı; biraz sonra yeniden deneyin</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Paylaşımlar aranıyor…</string>
+    <string name="sync_open_sources">Kaynakları aç</string>
+    <string name="sync_open_sources_hint">Bir NAS paylaşımı ekleyin, sonra buraya dönün</string>
+    <string name="sync_this_device">Bu gözlük</string>
+    <string name="sync_readonly_title">Paylaşım salt okunur</string>
+    <string name="sync_remove_body_at">Bu işlem %1$s üzerindeki “.aura” klasörünü ve içindeki tüm cihaz kayıtlarını siler. Bu gözlükteki kitaplık ve ilerleme olduğu gibi kalır.</string>
+    <string name="sync_removed">Eşitleme klasörü silindi</string>
+    <string name="sync_remove_failed">Eşitleme klasörü silinemedi: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Eşleştirme’ye git</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” — %3$s</string>
+    <string name="set_licences">Açık kaynak lisansları</string>
+    <string name="set_licences_hint">Her bileşenin lisansı, LGPL kitaplıklarının kaynak kodu ve nasıl değiştirilecekleri</string>
+</resources>

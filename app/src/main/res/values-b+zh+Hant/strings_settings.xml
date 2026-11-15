@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 媒體來源與設定頁（主從版面）新增的文字。 -->
+<resources>
+    <!-- 兩個頁面共用的元件 -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">重試</string>
+    <string name="md_secret_show">顯示</string>
+    <string name="md_secret_hide">隱藏</string>
+    <string name="md_secret_show_named">顯示%1$s</string>
+    <string name="md_secret_hide_named">隱藏%1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- 連線失敗的原因 -->
+    <string name="fault_unknown">發生了未知錯誤</string>
+    <string name="fault_unknown_detail">發生了未知錯誤：%1$s</string>
+
+    <!-- 媒體來源 -->
+    <string name="sources_back_kinds">返回來源類型</string>
+    <string name="sources_edit">編輯</string>
+    <string name="sources_edit_title">編輯「%1$s」</string>
+    <string name="sources_save_and_scan">儲存並掃描</string>
+    <string name="sources_password_keep">留空則保留已儲存的密碼</string>
+    <string name="sources_token_keep">留空則保留已儲存的權杖</string>
+    <string name="sources_saved_placeholder">已儲存</string>
+    <string name="sources_smb_need_share">只填了主機。點右上角「瀏覽共用…」挑一個共用，或寫成「主機/共用名稱」直接新增</string>
+    <string name="sources_webdav_scheme">位址需要以 http:// 或 https:// 開頭</string>
+    <string name="sources_remote_scheme">這是另一種伺服器的位址；去掉 :// 及前面的部分再填</string>
+    <string name="sources_address_spaces">位址中不能有空格</string>
+    <string name="sources_server_user_hint">伺服器上的帳號，與網頁版登入用的相同</string>
+    <string name="sources_server_pass_hint">這個帳號的密碼</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s 伺服器</string>
+    <string name="sources_kind_dlna">DLNA 媒體伺服器</string>
+    <string name="sources_remove_action">移除…</string>
+    <string name="sources_removed">已移除「%1$s」</string>
+    <string name="sources_added_toast">已新增「%1$s」，正在掃描</string>
+    <string name="sources_saved_toast">已儲存「%1$s」，正在重新掃描</string>
+    <string name="sources_fix_account">修改帳號或密碼</string>
+    <string name="sources_fix_account_hint">用正確的帳號重新連線這個來源</string>
+    <string name="sources_fix_address">檢查連線資訊</string>
+    <string name="sources_fix_address_hint">核對位址和連接埠，或者換個帳號，然後再掃描</string>
+    <string name="sources_scan_busy">正在進行其他掃描或刮削，結束後才能開始</string>
+
+    <!-- 瀏覽與搜尋 SMB -->
+    <string name="smb_back_shares">返回共用列表</string>
+    <string name="smb_back_servers">返回伺服器列表</string>
+    <string name="smb_saved_password">使用已儲存的密碼</string>
+    <string name="smb_signing_in">正在登入…</string>
+    <string name="smb_subnet_invalid">請輸入 IPv4 位址，例如 192.168.1.100</string>
+
+    <!-- 設定：左側每一項下方的目前狀態 -->
+    <string name="set_live_offline">依本機檔名辨識</string>
+    <string name="set_live_engine_exo">增強播放引擎</string>
+    <string name="set_live_engine_system">系統播放器</string>
+    <string name="set_live_spatial">%1$s · 空間音訊</string>
+    <string name="set_live_sync_off">未開啟</string>
+    <string name="set_live_sync_on">已開啟</string>
+    <string name="set_live_sync_on_ago">已開啟 · %1$s同步</string>
+    <string name="set_live_sync_failed">上次同步失敗</string>
+    <string name="set_live_version">版本 %1$s</string>
+    <string name="set_live_sub">字幕 %1$s</string>
+    <string name="set_live_audio">音軌 %1$s</string>
+    <string name="set_live_night">夜間模式</string>
+    <string name="set_live_no_autoplay">不自動連播</string>
+    <string name="set_pano_auto">全景影片自動沉浸</string>
+    <string name="set_pano_auto_on">開：辨識為 360° 或 180° 的影片開始播放時，自動進入沉浸空間，畫面環繞在你四周。</string>
+    <string name="set_pano_auto_off">關：全景影片先在視窗裡播放，可在「顯示 › 觀影空間」中進入沉浸空間。</string>
+    <string name="set_auto_skip_intro">自動跳過片頭</string>
+    <string name="set_auto_skip_intro_on">開：檔案的章節標出了片頭（OP、Opening、片頭…）時，片頭一開始就跳過；畫面上方的「看片頭」可以回去。</string>
+    <string name="set_auto_skip_intro_off">關：片頭開始時，畫面上方提示「跳過」，由你決定。</string>
+    <string name="set_live_auto_skip_intro">自動跳過片頭</string>
+    <string name="set_version_build">版本 %1$s（%2$s）</string>
+
+    <!-- 設定：刮削與中繼資料 -->
+    <string name="set_group_matching">辨識方式</string>
+    <string name="set_group_language">語言</string>
+    <string name="set_language_ui">介面語言</string>
+    <string name="set_language_ui_hint">Reality NAS Player 的選單和文字使用的語言。</string>
+    <string name="set_language_follow_app">跟隨介面語言</string>
+    <string name="set_language_meta">中繼資料語言</string>
+    <string name="set_tmdb_key_label">TMDB API 金鑰</string>
+    <string name="set_omdb_key_label">OMDb API 金鑰</string>
+    <string name="set_keys_offline">離線刮削已開啟，這兩個金鑰暫時不會用到。</string>
+
+    <!-- 設定：AI 辨識 -->
+    <string name="set_delete_action">刪除…</string>
+
+    <!-- 設定：播放 -->
+    <string name="set_spatial_on">開：交給 PICO 空間音訊引擎處理。</string>
+    <string name="set_spatial_off">關：按影片原始混音播放。</string>
+    <string name="set_fd_needs_system">只有系統播放器支援。先關閉上方的「增強播放引擎」才能使用。</string>
+
+    <!-- 設定：媒體庫 -->
+    <string name="set_group_upkeep">補全與重建</string>
+    <string name="set_auto_scan">自動更新媒體庫</string>
+    <string name="set_auto_scan_on">開：開啟應用時檢查來源裡新增的檔案（最多每 6 小時一次），只刮削新檔案。</string>
+    <string name="set_auto_scan_off">關：新檔案要在「來源」裡手動掃描後才出現。</string>
+    <string name="set_rescrape">重新刮削未完成的項目</string>
+    <string name="set_rescrape_hint">為還沒有海報、或上次刮削失敗的項目再試一次；已匹配的項目不受影響</string>
+    <string name="set_rescrape_start">開始</string>
+    <string name="set_rescrape_started">已開始重新刮削</string>
+    <string name="set_task_busy">正在掃描或刮削，結束後才能開始新的工作。</string>
+    <string name="set_clear_action">清空…</string>
+    <string name="set_cleared">媒體庫已清空</string>
+    <string name="set_clear_failed">未能清空媒體庫，請稍後再試</string>
+
+    <!-- 設定：同步 -->
+    <string name="sync_location_loading">正在尋找可用的共用…</string>
+    <string name="sync_open_sources">前往「媒體來源」</string>
+    <string name="sync_open_sources_hint">新增一個 NAS 共用後再回到這裡</string>
+    <string name="sync_this_device">本機</string>
+    <string name="sync_readonly_title">這個共用是唯讀的</string>
+    <string name="sync_remove_body_at">將刪除 %1$s 上的「.aura」資料夾，以及其中所有裝置的記錄。這台頭顯上的媒體庫和播放進度保持不變。</string>
+    <string name="sync_removed">已刪除同步資料夾</string>
+    <string name="sync_remove_failed">未能刪除同步資料夾：%1$s</string>
+
+    <!-- 設定：隱私與關於 -->
+    <string name="set_privacy_go_scrape">前往「刮削與中繼資料」</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s ·「%2$s」— %3$s</string>
+    <string name="set_licences">開源授權</string>
+    <string name="set_licences_hint">各元件的授權條款全文，以及 LGPL 函式庫的原始碼取得與替換方式</string>
+</resources>

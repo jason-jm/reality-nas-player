@@ -1,0 +1,36 @@
+# Genre names in Dutch — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Actie
+Adventure = Avontuur
+Animation = Animatie
+Comedy = Komedie
+Crime = Misdaad
+Documentary = Documentaire
+Drama = Drama
+Family = Familie
+Fantasy = Fantasie
+History = Historisch
+Horror = Horror
+Music = Muziek
+Mystery = Mysterie
+Romance = Romantiek
+Science Fiction = Sciencefiction
+Sci-Fi = Sciencefiction
+TV Movie = TV Film
+Thriller = Thriller
+War = Oorlog
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psychologisch
+Slice of Life = Slice of life
+Sports = Sport
+Supernatural = Bovennatuurlijk
+Politics = Politiek

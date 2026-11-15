@@ -1,0 +1,36 @@
+# Genre names in Norwegian Bokmål — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB has no genre names in this language (it answers in English): every one by hand.
+Action = Action
+Adventure = Eventyr
+Animation = Animasjon
+Comedy = Komedie
+Crime = Krim
+Documentary = Dokumentar
+Drama = Drama
+Family = Familie
+Fantasy = Fantasy
+History = Historie
+Horror = Skrekk
+Music = Musikk
+Mystery = Mysterium
+Romance = Romantikk
+Science Fiction = Science fiction
+Sci-Fi = Science fiction
+TV Movie = TV-film
+Thriller = Thriller
+War = Krig
+Western = Western
+Kids = Barn
+News = Nyheter
+Reality = Reality
+Soap = Såpeopera
+Talk = Talkshow
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical girl
+Mecha = Mecha
+Psychological = Psykologisk
+Slice of Life = Hverdagsliv
+Sports = Sport
+Supernatural = Overnaturlig
+Politics = Politikk

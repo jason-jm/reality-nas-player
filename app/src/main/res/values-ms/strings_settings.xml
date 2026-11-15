@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Cuba lagi</string>
+    <string name="md_secret_show">Tunjuk</string>
+    <string name="md_secret_hide">Sembunyi</string>
+    <string name="md_secret_show_named">Tunjukkan %1$s</string>
+    <string name="md_secret_hide_named">Sembunyikan %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Sesuatu yang tidak dijangka berlaku</string>
+    <string name="fault_unknown_detail">Sesuatu yang tidak dijangka berlaku: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Kembali ke jenis sumber</string>
+    <string name="sources_edit">Sunting</string>
+    <string name="sources_edit_title">Sunting “%1$s”</string>
+    <string name="sources_save_and_scan">Simpan dan imbas</string>
+    <string name="sources_password_keep">Biarkan kosong untuk mengekalkan kata laluan yang disimpan</string>
+    <string name="sources_token_keep">Biarkan kosong untuk mengekalkan token yang disimpan</string>
+    <string name="sources_saved_placeholder">Disimpan</string>
+    <string name="sources_smb_need_share">Itu hanya hos. Ketik “Lihat perkongsian…” di atas kanan untuk memilih perkongsian, atau tulis hos/perkongsian untuk menambahnya terus</string>
+    <string name="sources_webdav_scheme">Alamat mesti bermula dengan http:// atau https://</string>
+    <string name="sources_remote_scheme">Alamat ini untuk jenis pelayan lain; taipkannya tanpa bahagian sebelum ://</string>
+    <string name="sources_address_spaces">Alamat tidak boleh mengandungi ruang</string>
+    <string name="sources_server_user_hint">Akaun anda pada pelayan, yang anda gunakan untuk log masuk ke apl webnya</string>
+    <string name="sources_server_pass_hint">Kata laluan akaun itu</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Pelayan %1$s</string>
+    <string name="sources_kind_dlna">Pelayan media DLNA</string>
+    <string name="sources_remove_action">Alih keluar…</string>
+    <string name="sources_removed">“%1$s” dialih keluar</string>
+    <string name="sources_added_toast">“%1$s” ditambah, sedang diimbas</string>
+    <string name="sources_saved_toast">“%1$s” disimpan, sedang diimbas semula</string>
+    <string name="sources_fix_account">Tukar akaun atau kata laluan</string>
+    <string name="sources_fix_account_hint">Sambungkan sumber ini dengan akaun yang betul</string>
+    <string name="sources_fix_address">Semak butiran sambungan</string>
+    <string name="sources_fix_address_hint">Semak alamat dan port, atau cuba akaun lain, kemudian imbas semula</string>
+    <string name="sources_scan_busy">Imbasan atau pengambilan metadata lain sedang berjalan; yang ini boleh bermula apabila ia selesai</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Kembali ke perkongsian</string>
+    <string name="smb_back_servers">Kembali ke pelayan</string>
+    <string name="smb_saved_password">Guna kata laluan tersimpan</string>
+    <string name="smb_signing_in">Log masuk…</string>
+    <string name="smb_subnet_invalid">Masukkan alamat IPv4, cth. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Nama fail setempat</string>
+    <string name="set_live_engine_exo">Enjin dipertingkat</string>
+    <string name="set_live_engine_system">Pemain sistem</string>
+    <string name="set_live_spatial">%1$s · audio ruang</string>
+    <string name="set_live_sync_off">Mati</string>
+    <string name="set_live_sync_on">Hidup</string>
+    <string name="set_live_sync_on_ago">Hidup · disegerakkan %1$s</string>
+    <string name="set_live_sync_failed">Segerak terakhir gagal</string>
+    <string name="set_live_version">Versi %1$s</string>
+    <string name="set_live_sub">Sari kata: %1$s</string>
+    <string name="set_live_audio">Audio: %1$s</string>
+    <string name="set_live_night">Mod malam</string>
+    <string name="set_live_no_autoplay">Main auto: mati</string>
+    <string name="set_pano_auto">Buka video 360° / 180° secara imersif</string>
+    <string name="set_pano_auto_on">Hidup: video yang dikenali sebagai 360° atau 180° dibuka dalam ruang imersif, mengelilingi anda.</string>
+    <string name="set_pano_auto_off">Mati: video 360° dan 180° bermula dalam tetingkap; Gambar › Ruang tontonan membawa anda masuk.</string>
+    <string name="set_auto_skip_intro">Langkau pembukaan secara automatik</string>
+    <string name="set_auto_skip_intro_on">Hidup: apabila bab fail menandakan pembukaannya (OP, Opening…), ia dilangkau sebaik bermula — “Tontonnya” di bahagian atas gambar membawa anda kembali.</string>
+    <string name="set_auto_skip_intro_off">Mati: apabila pembukaan bermula, bahagian atas gambar menawarkan “Langkau”.</string>
+    <string name="set_live_auto_skip_intro">Pembukaan dilangkau</string>
+    <string name="set_version_build">Versi %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Padanan</string>
+    <string name="set_group_language">Bahasa</string>
+    <string name="set_language_ui">Bahasa apl</string>
+    <string name="set_language_ui_hint">Bahasa menu dan teks Reality NAS Player.</string>
+    <string name="set_language_follow_app">Sama seperti apl</string>
+    <string name="set_language_meta">Bahasa metadata</string>
+    <string name="set_tmdb_key_label">API key TMDB</string>
+    <string name="set_omdb_key_label">API key OMDb</string>
+    <string name="set_keys_offline">Metadata luar talian dihidupkan, jadi kunci ini tidak digunakan buat masa ini.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Padam…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Hidup: enjin audio ruang PICO memprosesnya.</string>
+    <string name="set_spatial_off">Mati: campuran asal filem dimainkan seperti yang dihasilkan.</string>
+    <string name="set_fd_needs_system">Hanya pemain sistem yang menyokongnya: matikan “Enjin dipertingkat” di atas untuk menggunakannya.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Lengkapkan dan bina semula</string>
+    <string name="set_auto_scan">Kemas kini pustaka secara automatik</string>
+    <string name="set_auto_scan_on">Hidup: membuka apl akan mencari fail yang ditambah pada sumber anda sejak semakan terakhir (paling kerap setiap 6 jam) dan hanya memadankan yang baharu.</string>
+    <string name="set_auto_scan_off">Mati: fail baharu muncul selepas anda mengimbas dalam Sumber.</string>
+    <string name="set_rescrape">Ambil semula metadata entri yang belum selesai</string>
+    <string name="set_rescrape_hint">Mencuba semula entri yang belum ada poster, atau yang pengambilan terakhirnya gagal; entri yang sudah dipadankan dibiarkan</string>
+    <string name="set_rescrape_start">Mula</string>
+    <string name="set_rescrape_started">Pengambilan semula telah bermula</string>
+    <string name="set_task_busy">Imbasan atau pengambilan metadata sedang berjalan; tugas baharu boleh bermula apabila ia selesai.</string>
+    <string name="set_clear_action">Kosongkan…</string>
+    <string name="set_cleared">Pustaka kosong</string>
+    <string name="set_clear_failed">Tidak dapat mengosongkan pustaka; cuba lagi sebentar lagi</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Mencari perkongsian…</string>
+    <string name="sync_open_sources">Buka Sumber</string>
+    <string name="sync_open_sources_hint">Tambah perkongsian NAS, kemudian kembali ke sini</string>
+    <string name="sync_this_device">Set kepala ini</string>
+    <string name="sync_readonly_title">Perkongsian ini baca sahaja</string>
+    <string name="sync_remove_body_at">Ini memadam “.aura” pada %1$s dan rekod setiap peranti di dalamnya. Pustaka dan kemajuan pada set kepala ini kekal seperti sedia ada.</string>
+    <string name="sync_removed">Folder segerak dipadam</string>
+    <string name="sync_remove_failed">Tidak dapat memadam folder segerak: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Buka Metadata</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” — %3$s</string>
+    <string name="set_licences">Lesen sumber terbuka</string>
+    <string name="set_licences_hint">Lesen setiap komponen, kod sumber perpustakaan LGPL dan cara menggantikannya</string>
+</resources>

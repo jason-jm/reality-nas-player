@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Opnieuw proberen</string>
+    <string name="md_secret_show">Tonen</string>
+    <string name="md_secret_hide">Verbergen</string>
+    <string name="md_secret_show_named">%1$s tonen</string>
+    <string name="md_secret_hide_named">%1$s verbergen</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Er ging iets onverwachts mis</string>
+    <string name="fault_unknown_detail">Er ging iets onverwachts mis: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Terug naar brontypen</string>
+    <string name="sources_edit">Bewerken</string>
+    <string name="sources_edit_title">“%1$s” bewerken</string>
+    <string name="sources_save_and_scan">Opslaan en scannen</string>
+    <string name="sources_password_keep">Laat leeg om het opgeslagen wachtwoord te houden</string>
+    <string name="sources_token_keep">Laat leeg om de opgeslagen token te houden</string>
+    <string name="sources_saved_placeholder">Opgeslagen</string>
+    <string name="sources_smb_need_share">Dat is alleen een host. Tik rechtsboven op “Gedeelde mappen…” om een gedeelde map te kiezen, of schrijf host/map om hem direct toe te voegen</string>
+    <string name="sources_webdav_scheme">Het adres moet beginnen met http:// of https://</string>
+    <string name="sources_remote_scheme">Dit adres is voor een ander soort server; typ het zonder het deel vóór ://</string>
+    <string name="sources_address_spaces">Een adres mag geen spaties bevatten</string>
+    <string name="sources_server_user_hint">Je account op de server, waarmee je inlogt in de webapp ervan</string>
+    <string name="sources_server_pass_hint">Het wachtwoord van dat account</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s-server</string>
+    <string name="sources_kind_dlna">DLNA-mediaserver</string>
+    <string name="sources_remove_action">Verwijderen…</string>
+    <string name="sources_removed">“%1$s” verwijderd</string>
+    <string name="sources_added_toast">“%1$s” toegevoegd, wordt nu gescand</string>
+    <string name="sources_saved_toast">“%1$s” opgeslagen, wordt opnieuw gescand</string>
+    <string name="sources_fix_account">Account of wachtwoord wijzigen</string>
+    <string name="sources_fix_account_hint">Verbind deze bron met het juiste account</string>
+    <string name="sources_fix_address">Verbindingsgegevens controleren</string>
+    <string name="sources_fix_address_hint">Controleer het adres en de poort, of probeer een ander account, en scan dan opnieuw</string>
+    <string name="sources_scan_busy">Er loopt al een scan of herkenning; deze kan starten als die klaar is</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Terug naar de gedeelde mappen</string>
+    <string name="smb_back_servers">Terug naar de servers</string>
+    <string name="smb_saved_password">Gebruikt het opgeslagen wachtwoord</string>
+    <string name="smb_signing_in">Inloggen…</string>
+    <string name="smb_subnet_invalid">Voer een IPv4-adres in, bijv. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Lokale bestandsnamen</string>
+    <string name="set_live_engine_exo">Uitgebreide speler</string>
+    <string name="set_live_engine_system">Systeemspeler</string>
+    <string name="set_live_spatial">%1$s · ruimtelijk geluid</string>
+    <string name="set_live_sync_off">Uit</string>
+    <string name="set_live_sync_on">Aan</string>
+    <string name="set_live_sync_on_ago">Aan · gesynct %1$s</string>
+    <string name="set_live_sync_failed">Laatste sync mislukt</string>
+    <string name="set_live_version">Versie %1$s</string>
+    <string name="set_live_sub">Ondertiteling: %1$s</string>
+    <string name="set_live_audio">Geluid: %1$s</string>
+    <string name="set_live_night">Nachtmodus</string>
+    <string name="set_live_no_autoplay">Autoplay uit</string>
+    <string name="set_pano_auto">360°/180°-video’s immersief openen</string>
+    <string name="set_pano_auto_on">Aan: een video die als 360° of 180° wordt herkend, opent in de immersieve ruimte, helemaal om je heen.</string>
+    <string name="set_pano_auto_off">Uit: 360°- en 180°-video’s starten in het venster; Beeld › Kijkruimte brengt je erin.</string>
+    <string name="set_auto_skip_intro">Openingen automatisch overslaan</string>
+    <string name="set_auto_skip_intro_on">Aan: als de hoofdstukken van een bestand de opening markeren (OP, Opening…), wordt die bij de start overgeslagen – “Toch kijken” bovenaan het beeld gaat terug.</string>
+    <string name="set_auto_skip_intro_off">Uit: als een opening begint, biedt de bovenkant van het beeld “Overslaan” aan.</string>
+    <string name="set_live_auto_skip_intro">Openingen overgeslagen</string>
+    <string name="set_version_build">Versie %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Koppelen</string>
+    <string name="set_group_language">Taal</string>
+    <string name="set_language_ui">App-taal</string>
+    <string name="set_language_ui_hint">De taal van de menu’s en teksten van Reality NAS Player.</string>
+    <string name="set_language_follow_app">Zelfde als de app</string>
+    <string name="set_language_meta">Taal van metadata</string>
+    <string name="set_tmdb_key_label">TMDB API-key</string>
+    <string name="set_omdb_key_label">OMDb API-key</string>
+    <string name="set_keys_offline">Offline herkennen staat aan, dus deze sleutels worden nu niet gebruikt.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Verwijderen…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Aan: de ruimtelijke audio-engine van PICO verwerkt het geluid.</string>
+    <string name="set_spatial_off">Uit: de eigen mix van de film speelt zoals hij is gemaakt.</string>
+    <string name="set_fd_needs_system">Alleen de systeemspeler ondersteunt dit: zet “Uitgebreide speler” hierboven uit om het te gebruiken.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Aanvullen en opnieuw opbouwen</string>
+    <string name="set_auto_scan">Bibliotheek automatisch bijwerken</string>
+    <string name="set_auto_scan_on">Aan: bij het openen van de app wordt gezocht naar bestanden die sinds de vorige keer aan je bronnen zijn toegevoegd (hooguit elke 6 uur), en worden alleen de nieuwe herkend.</string>
+    <string name="set_auto_scan_off">Uit: nieuwe bestanden verschijnen nadat je in Bronnen scant.</string>
+    <string name="set_rescrape">Onvoltooide items opnieuw herkennen</string>
+    <string name="set_rescrape_hint">Probeert het opnieuw voor items zonder poster, of waarvan de laatste herkenning mislukte; gekoppelde items blijven ongemoeid</string>
+    <string name="set_rescrape_start">Starten</string>
+    <string name="set_rescrape_started">Opnieuw herkennen is gestart</string>
+    <string name="set_task_busy">Er loopt een scan of herkenning; een nieuwe taak kan starten als die klaar is.</string>
+    <string name="set_clear_action">Legen…</string>
+    <string name="set_cleared">De bibliotheek is leeg</string>
+    <string name="set_clear_failed">Kan de bibliotheek niet legen; probeer het zo opnieuw</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Gedeelde mappen zoeken…</string>
+    <string name="sync_open_sources">Bronnen openen</string>
+    <string name="sync_open_sources_hint">Voeg een gedeelde NAS-map toe en kom dan hier terug</string>
+    <string name="sync_this_device">Deze headset</string>
+    <string name="sync_readonly_title">De gedeelde map is alleen-lezen</string>
+    <string name="sync_remove_body_at">Hiermee worden “.aura” op %1$s en de gegevens van elk apparaat erin verwijderd. De bibliotheek en de voortgang op deze headset blijven zoals ze zijn.</string>
+    <string name="sync_removed">De synchronisatiemap is verwijderd</string>
+    <string name="sync_remove_failed">Kan de synchronisatiemap niet verwijderen: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Herkenning openen</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” – %3$s</string>
+    <string name="set_licences">Opensourcelicenties</string>
+    <string name="set_licences_hint">De licentie van elk onderdeel, de broncode van de LGPL-bibliotheken en hoe je ze vervangt</string>
+</resources>

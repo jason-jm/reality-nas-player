@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">아직 영화가 없어요</string>
+    <string name="lib_add_source">소스 추가</string>
+    <string name="lib_empty_search_hint">검색은 라이브러리의 모든 제목과 파일 이름에서 찾아요.</string>
+    <string name="lib_search_clear">검색 지우기</string>
+    <string name="lib_empty_favorites_title">아직 즐겨찾기가 없어요</string>
+    <string name="lib_empty_history_title">아직 시청한 항목이 없어요</string>
+    <string name="lib_empty_shelf_hint">매칭으로 작품이 무엇인지 알게 되면 이 칸에 나타나요.</string>
+    <string name="lib_show_all">모든 작품 둘러보기</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">‘%1$s’ 검색 결과</string>
+    <plurals name="lib_search_results">
+        <item quantity="other">결과 %1$d개</item>
+    </plurals>
+    <string name="lib_search_people_title">인물</string>
+    <string name="lib_search_titles">작품</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">관련 인물로 찾은 작품</string>
+    <plurals name="lib_search_people">
+        <item quantity="other">%1$d명</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="other">작품 %1$d편</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">숫자 및 기호</string>
+    <string name="lib_index_unidentified">식별되지 않음</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">올해: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">올해: %1$s 시청</string>
+    <plurals name="hist_stats_films">
+        <item quantity="other">영화 %1$d편</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="other">에피소드 %1$d개</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="other">약 %1$d시간</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d분</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">더 매칭할 항목이 없어요. 포스터 월이 최신 상태예요.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">재생 · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">매칭 안 됨</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">필터</string>
+    <string name="lib_filter_n">필터 · %1$d</string>
+    <string name="lib_filter_watch">시청 상태</string>
+    <string name="lib_filter_any">전체</string>
+    <string name="lib_filter_unwatched">안 봄</string>
+    <string name="lib_filter_in_progress">보는 중</string>
+    <string name="lib_filter_watched">시청함</string>
+    <string name="lib_filter_genre">장르</string>
+    <string name="lib_filter_decade">연대</string>
+    <string name="lib_filter_picture">화면</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d년대</string>
+    <string name="lib_filter_reset">필터 초기화</string>
+    <plurals name="lib_filter_count">
+        <item quantity="other">작품 %d편</item>
+    </plurals>
+    <string name="lib_empty_filter">이 필터와 일치하는 항목이 없어요</string>
+    <string name="lib_empty_filter_hint">다른 조건을 선택하거나 필터를 지워 보세요.</string>
+    <string name="lib_filter_clear">필터 지우기</string>
+    <string name="lib_recently_added">최근 추가</string>
+    <string name="lib_recently_added_on">최근 추가 · %1$s</string>
+    <string name="lib_surprise">랜덤 추천</string>
+    <string name="lib_because">‘%1$s’ 시청 기반 추천</string>
+    <string name="lib_history_today">오늘</string>
+    <string name="lib_history_yesterday">어제</string>
+    <string name="lib_history_this_week">이번 주</string>
+    <string name="lib_history_this_month">이번 달</string>
+    <string name="lib_history_earlier">그 이전</string>
+</resources>

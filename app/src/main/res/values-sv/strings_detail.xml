@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Ta bort från favoriter</string>
+    <string name="det_up_next">Härnäst</string>
+    <string name="det_section_main">Huvuddel</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Säsong %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Markera alla som sedda?</string>
+    <string name="det_mark_all_unwatched_q">Markera alla som osedda?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d fil markeras som sedd.</item>
+        <item quantity="other">%1$d filer markeras som sedda.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d av dem är påbörjad och förlorar sin position.</item>
+        <item quantity="other">%1$d av dem är påbörjade och förlorar sin position.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Visningsförloppet för %1$d fil rensas.</item>
+        <item quantity="other">Visningsförloppet för %1$d filer rensas.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Källa</string>
+    <string name="fix_scope">Gäller</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Hela kortet (%1$d fil)</item>
+        <item quantity="other">Hela kortet (%1$d filer)</item>
+    </plurals>
+    <string name="fix_scope_file">Endast den här filen</string>
+    <string name="fix_query_hint">Titel – engelska titlar matchar bäst</string>
+    <string name="fix_hint">Välj rätt post för att rätta matchningen</string>
+    <string name="fix_applying">Tillämpar…</string>
+    <string name="fix_failed">Det gick inte att tillämpa posten. Kontrollera nätverket och försök igen.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Serie</string>
+    <string name="fix_current">Aktuell</string>
+    <string name="fix_no_results_title">Inga matchande poster</string>
+    <string name="fix_no_results_anilist">Prova en annan stavning – romaji eller engelska namn matchar bäst.</string>
+    <string name="fix_error_title">Sökningen slutfördes inte</string>
+    <string name="fix_error_body">Kontrollera nätverket och försök igen.</string>
+    <string name="fix_retry">Försök igen</string>
+    <string name="fix_confirm_title">Ändra till ”%1$s”?</string>
+    <string name="fix_confirm_title_year">Ändra till ”%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Kortets fil använder den här posten från och med nu, och senare skrapningar ändrar den inte.</item>
+        <item quantity="other">Alla %1$d filer på det här kortet använder den här posten från och med nu, och senare skrapningar ändrar den inte.</item>
+    </plurals>
+    <string name="fix_confirm_file">Bara ”%1$s” använder den här posten från och med nu, och senare skrapningar ändrar den inte.</string>
+    <string name="fix_apply">Tillämpa</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d till</item>
+        <item quantity="other">%d till</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d titel till i ditt bibliotek</item>
+        <item quantity="other">%d titlar till i ditt bibliotek</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d titel i ditt bibliotek</item>
+        <item quantity="other">%d titlar i ditt bibliotek</item>
+    </plurals>
+    <string name="det_similar">Mer som detta</string>
+    <string name="det_episode_copy">%1$s · en annan kopia</string>
+    <string name="det_season_progress">%1$d av %2$d sedda</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Sedd</item>
+        <item quantity="other">Alla %1$d sedda</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versioner</string>
+    <string name="det_series">I den här samlingen</string>
+    <string name="lib_series">Samlingar</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d titel</item>
+        <item quantity="other">%d titlar</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d titel i det här biblioteket, i den ordning de kom ut</item>
+        <item quantity="other">%d titlar i det här biblioteket, i den ordning de kom ut</item>
+    </plurals>
+</resources>

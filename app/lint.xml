@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Strings read through LocalContext — in event handlers (snackbars) and menus' label lambdas. The check
+         is there for an activity that keeps itself across a language change; Aura's declare no configChanges,
+         so a new language recreates them and every string is read again in it. -->
+    <issue id="LocalContextGetResourceValueCall" severity="warning" />
+</lint>

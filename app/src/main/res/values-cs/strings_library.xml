@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Zatím žádné filmy</string>
+    <string name="lib_add_source">Přidat zdroj</string>
+    <string name="lib_empty_search_hint">Hledání prochází všechny názvy titulů a souborů v knihovně.</string>
+    <string name="lib_search_clear">Vymazat hledání</string>
+    <string name="lib_empty_favorites_title">Zatím žádné oblíbené</string>
+    <string name="lib_empty_history_title">Zatím nic zhlédnuto</string>
+    <string name="lib_empty_shelf_hint">Tituly se na této polici objeví, jakmile je rozpoznávání určí.</string>
+    <string name="lib_show_all">Procházet všechny tituly</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Výsledky pro „%1$s“</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d výsledek</item>
+        <item quantity="few">%1$d výsledky</item>
+        <item quantity="many">%1$d výsledku</item>
+        <item quantity="other">%1$d výsledků</item>
+    </plurals>
+    <string name="lib_search_people_title">Lidé</string>
+    <string name="lib_search_titles">Tituly</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Díla souvisejících osob</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d osoba</item>
+        <item quantity="few">%1$d osoby</item>
+        <item quantity="many">%1$d osoby</item>
+        <item quantity="other">%1$d osob</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d titul</item>
+        <item quantity="few">%1$d tituly</item>
+        <item quantity="many">%1$d titulu</item>
+        <item quantity="other">%1$d titulů</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Číslice a znaky</string>
+    <string name="lib_index_unidentified">Nerozpoznáno</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Letos: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Letos zhlédnuto: %1$s</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d film</item>
+        <item quantity="few">%1$d filmy</item>
+        <item quantity="many">%1$d filmu</item>
+        <item quantity="other">%1$d filmů</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d díl</item>
+        <item quantity="few">%1$d díly</item>
+        <item quantity="many">%1$d dílu</item>
+        <item quantity="other">%1$d dílů</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">asi %1$d hodina</item>
+        <item quantity="few">asi %1$d hodiny</item>
+        <item quantity="many">asi %1$d hodiny</item>
+        <item quantity="other">asi %1$d hodin</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Nic dalšího k rozpoznání — stěna je aktuální.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Přehrát · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Nerozpoznáno</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filtr</string>
+    <string name="lib_filter_n">Filtr · %1$d</string>
+    <string name="lib_filter_watch">Stav sledování</string>
+    <string name="lib_filter_any">Vše</string>
+    <string name="lib_filter_unwatched">Nezhlédnuté</string>
+    <string name="lib_filter_in_progress">Rozkoukané</string>
+    <string name="lib_filter_watched">Zhlédnuté</string>
+    <string name="lib_filter_genre">Žánr</string>
+    <string name="lib_filter_decade">Desetiletí</string>
+    <string name="lib_filter_picture">Obraz</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">Léta %1$d</string>
+    <string name="lib_filter_reset">Obnovit filtry</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d titul</item>
+        <item quantity="few">%d tituly</item>
+        <item quantity="many">%d titulu</item>
+        <item quantity="other">%d titulů</item>
+    </plurals>
+    <string name="lib_empty_filter">Těmto filtrům nic neodpovídá</string>
+    <string name="lib_empty_filter_hint">Zkuste jiné volby nebo filtry vymažte.</string>
+    <string name="lib_filter_clear">Vymazat filtry</string>
+    <string name="lib_recently_added">Nedávno přidané</string>
+    <string name="lib_recently_added_on">Nedávno přidané · %1$s</string>
+    <string name="lib_surprise">Překvapte mě</string>
+    <string name="lib_because">Protože jste sledovali %1$s</string>
+    <string name="lib_history_today">Dnes</string>
+    <string name="lib_history_yesterday">Včera</string>
+    <string name="lib_history_this_week">Dříve tento týden</string>
+    <string name="lib_history_this_month">Dříve tento měsíc</string>
+    <string name="lib_history_earlier">Ještě dříve</string>
+</resources>

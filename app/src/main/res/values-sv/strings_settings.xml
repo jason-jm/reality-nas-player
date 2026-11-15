@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Försök igen</string>
+    <string name="md_secret_show">Visa</string>
+    <string name="md_secret_hide">Dölj</string>
+    <string name="md_secret_show_named">Visa %1$s</string>
+    <string name="md_secret_hide_named">Dölj %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Något oväntat gick fel</string>
+    <string name="fault_unknown_detail">Något oväntat gick fel: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Tillbaka till källtyper</string>
+    <string name="sources_edit">Redigera</string>
+    <string name="sources_edit_title">Redigera ”%1$s”</string>
+    <string name="sources_save_and_scan">Spara och skanna</string>
+    <string name="sources_password_keep">Lämna tomt för att behålla det sparade lösenordet</string>
+    <string name="sources_token_keep">Lämna tomt för att behålla den sparade token</string>
+    <string name="sources_saved_placeholder">Sparat</string>
+    <string name="sources_smb_need_share">Det är bara en värd. Tryck på ”Visa delningar…” uppe till höger för att välja en delning, eller skriv värd/delning för att lägga till den direkt</string>
+    <string name="sources_webdav_scheme">Adressen måste börja med http:// eller https://</string>
+    <string name="sources_remote_scheme">Den här adressen är för en annan typ av server; skriv den utan delen före ://</string>
+    <string name="sources_address_spaces">En adress får inte innehålla mellanslag</string>
+    <string name="sources_server_user_hint">Ditt konto på servern, det du loggar in i dess webbapp med</string>
+    <string name="sources_server_pass_hint">Kontots lösenord</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s-server</string>
+    <string name="sources_kind_dlna">DLNA-mediaserver</string>
+    <string name="sources_remove_action">Ta bort…</string>
+    <string name="sources_removed">Tog bort ”%1$s”</string>
+    <string name="sources_added_toast">Lade till ”%1$s”, skannar nu</string>
+    <string name="sources_saved_toast">Sparade ”%1$s”, skannar den igen</string>
+    <string name="sources_fix_account">Ändra konto eller lösenord</string>
+    <string name="sources_fix_account_hint">Anslut den här källan med rätt konto</string>
+    <string name="sources_fix_address">Kontrollera anslutningsuppgifterna</string>
+    <string name="sources_fix_address_hint">Kontrollera adress och port, eller prova ett annat konto, och skanna sedan igen</string>
+    <string name="sources_scan_busy">En annan skanning eller skrapning pågår; den här kan starta när den är klar</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Tillbaka till delningarna</string>
+    <string name="smb_back_servers">Tillbaka till servrarna</string>
+    <string name="smb_saved_password">Använder det sparade lösenordet</string>
+    <string name="smb_signing_in">Loggar in…</string>
+    <string name="smb_subnet_invalid">Ange en IPv4-adress, t.ex. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Lokala filnamn</string>
+    <string name="set_live_engine_exo">Förbättrad motor</string>
+    <string name="set_live_engine_system">Systemspelare</string>
+    <string name="set_live_spatial">%1$s · rumsligt ljud</string>
+    <string name="set_live_sync_off">Av</string>
+    <string name="set_live_sync_on">På</string>
+    <string name="set_live_sync_on_ago">På · synkad %1$s</string>
+    <string name="set_live_sync_failed">Senaste synken misslyckades</string>
+    <string name="set_live_version">Version %1$s</string>
+    <string name="set_live_sub">Undertexter: %1$s</string>
+    <string name="set_live_audio">Ljud: %1$s</string>
+    <string name="set_live_night">Nattläge</string>
+    <string name="set_live_no_autoplay">Ingen autostart</string>
+    <string name="set_pano_auto">Öppna 360°/180°-videor immersivt</string>
+    <string name="set_pano_auto_on">På: en video som känns igen som 360° eller 180° öppnas i det immersiva rummet, runt omkring dig.</string>
+    <string name="set_pano_auto_off">Av: 360°- och 180°-videor startar i fönstret; Bild › Visningsrum tar dig in.</string>
+    <string name="set_auto_skip_intro">Hoppa över intron automatiskt</string>
+    <string name="set_auto_skip_intro_on">På: när en fils kapitel markerar introt (OP, Opening…) hoppas det över när det börjar – ”Se det” högst upp i bilden går tillbaka.</string>
+    <string name="set_auto_skip_intro_off">Av: när ett intro börjar erbjuder bildens överkant ”Hoppa över”.</string>
+    <string name="set_live_auto_skip_intro">Intron hoppas över</string>
+    <string name="set_version_build">Version %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Matchning</string>
+    <string name="set_group_language">Språk</string>
+    <string name="set_language_ui">Appspråk</string>
+    <string name="set_language_ui_hint">Språket i appens menyer och texter.</string>
+    <string name="set_language_follow_app">Samma som appen</string>
+    <string name="set_language_meta">Metadataspråk</string>
+    <string name="set_tmdb_key_label">TMDB API-nyckel</string>
+    <string name="set_omdb_key_label">OMDb API-nyckel</string>
+    <string name="set_keys_offline">Offlineskrapning är på, så de här nycklarna används inte för tillfället.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Ta bort…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">På: PICO:s motor för rumsligt ljud bearbetar det.</string>
+    <string name="set_spatial_off">Av: filmens egen mix spelas som den gjordes.</string>
+    <string name="set_fd_needs_system">Bara systemspelaren stöder det: stäng av ”Förbättrad motor” ovan för att använda det.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Fyll i och bygg om</string>
+    <string name="set_auto_scan">Uppdatera biblioteket automatiskt</string>
+    <string name="set_auto_scan_on">På: när appen öppnas letar den efter filer som har lagts till i dina källor sedan senast (högst var 6:e timme) och matchar bara de nya.</string>
+    <string name="set_auto_scan_off">Av: nya filer visas efter att du har skannat i Källor.</string>
+    <string name="set_rescrape">Skrapa de ofullständiga posterna igen</string>
+    <string name="set_rescrape_hint">Försöker igen för poster som saknar affisch eller vars senaste skrapning misslyckades; matchade poster lämnas i fred</string>
+    <string name="set_rescrape_start">Starta</string>
+    <string name="set_rescrape_started">Omskrapningen har startat</string>
+    <string name="set_task_busy">En skanning eller skrapning pågår; en ny uppgift kan starta när den är klar.</string>
+    <string name="set_clear_action">Töm…</string>
+    <string name="set_cleared">Biblioteket är tomt</string>
+    <string name="set_clear_failed">Det gick inte att tömma biblioteket; försök igen om en stund</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Letar efter delningar…</string>
+    <string name="sync_open_sources">Öppna Källor</string>
+    <string name="sync_open_sources_hint">Lägg till en NAS-delning och kom sedan tillbaka hit</string>
+    <string name="sync_this_device">Det här headsetet</string>
+    <string name="sync_readonly_title">Delningen är skrivskyddad</string>
+    <string name="sync_remove_body_at">Detta tar bort ”.aura” på %1$s och alla enheters poster i den. Biblioteket och framstegen på det här headsetet förblir som de är.</string>
+    <string name="sync_removed">Synkmappen är borttagen</string>
+    <string name="sync_remove_failed">Det gick inte att ta bort synkmappen: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Öppna Skrapning</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · ”%2$s” — %3$s</string>
+    <string name="set_licences">Licenser för öppen källkod</string>
+    <string name="set_licences_hint">Varje komponents licens, källkoden till LGPL-biblioteken och hur de byts ut</string>
+</resources>

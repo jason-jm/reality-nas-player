@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Zkusit znovu</string>
+    <string name="md_secret_show">Zobrazit</string>
+    <string name="md_secret_hide">Skrýt</string>
+    <string name="md_secret_show_named">Zobrazit %1$s</string>
+    <string name="md_secret_hide_named">Skrýt %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Došlo k neočekávané chybě</string>
+    <string name="fault_unknown_detail">Došlo k neočekávané chybě: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Zpět na typy zdrojů</string>
+    <string name="sources_edit">Upravit</string>
+    <string name="sources_edit_title">Upravit „%1$s“</string>
+    <string name="sources_save_and_scan">Uložit a prohledat</string>
+    <string name="sources_password_keep">Ponechte prázdné, chcete-li zachovat uložené heslo</string>
+    <string name="sources_token_keep">Ponechte prázdné, chcete-li zachovat uložený token</string>
+    <string name="sources_saved_placeholder">Uloženo</string>
+    <string name="sources_smb_need_share">To je jen hostitel. Klepnutím na „Procházet sdílené složky…“ vpravo nahoře vyberte sdílenou složku, nebo napište hostitel/složka a přidejte ji přímo</string>
+    <string name="sources_webdav_scheme">Adresa musí začínat http:// nebo https://</string>
+    <string name="sources_remote_scheme">Tato adresa patří jinému druhu serveru; napište ji bez části před ://</string>
+    <string name="sources_address_spaces">Adresa nesmí obsahovat mezery</string>
+    <string name="sources_server_user_hint">Váš účet na serveru, ten, kterým se přihlašujete do jeho webové aplikace</string>
+    <string name="sources_server_pass_hint">Heslo k tomuto účtu</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">Server %1$s</string>
+    <string name="sources_kind_dlna">Mediální server DLNA</string>
+    <string name="sources_remove_action">Odebrat…</string>
+    <string name="sources_removed">„%1$s“ odebráno</string>
+    <string name="sources_added_toast">„%1$s“ přidáno, prohledává se</string>
+    <string name="sources_saved_toast">„%1$s“ uloženo, prohledává se znovu</string>
+    <string name="sources_fix_account">Změnit účet nebo heslo</string>
+    <string name="sources_fix_account_hint">Připojte tento zdroj správným účtem</string>
+    <string name="sources_fix_address">Zkontrolovat údaje připojení</string>
+    <string name="sources_fix_address_hint">Zkontrolujte adresu a port nebo zkuste jiný účet a pak prohledejte znovu</string>
+    <string name="sources_scan_busy">Probíhá jiné prohledávání nebo rozpoznávání; toto začne, až skončí</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Zpět na sdílené složky</string>
+    <string name="smb_back_servers">Zpět na servery</string>
+    <string name="smb_saved_password">Použije uložené heslo</string>
+    <string name="smb_signing_in">Přihlašování…</string>
+    <string name="smb_subnet_invalid">Zadejte adresu IPv4, např. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Podle názvů souborů</string>
+    <string name="set_live_engine_exo">Rozšířený přehrávač</string>
+    <string name="set_live_engine_system">Systémový přehrávač</string>
+    <string name="set_live_spatial">%1$s · prostorový zvuk</string>
+    <string name="set_live_sync_off">Vypnuto</string>
+    <string name="set_live_sync_on">Zapnuto</string>
+    <string name="set_live_sync_on_ago">Zapnuto · naposledy %1$s</string>
+    <string name="set_live_sync_failed">Poslední synchronizace selhala</string>
+    <string name="set_live_version">Verze %1$s</string>
+    <string name="set_live_sub">Titulky: %1$s</string>
+    <string name="set_live_audio">Zvuk: %1$s</string>
+    <string name="set_live_night">Noční režim</string>
+    <string name="set_live_no_autoplay">Další díl ručně</string>
+    <string name="set_pano_auto">Otevírat videa 360° / 180° imerzivně</string>
+    <string name="set_pano_auto_on">Zapnuto: video rozpoznané jako 360° nebo 180° se otevře v imerzivním prostoru, všude kolem vás.</string>
+    <string name="set_pano_auto_off">Vypnuto: videa 360° a 180° začínají v okně; do imerze vás přenese Obraz › Prostor sledování.</string>
+    <string name="set_auto_skip_intro">Automaticky přeskakovat úvody</string>
+    <string name="set_auto_skip_intro_on">Zapnuto: když kapitoly souboru označují úvod (OP, Opening…), přeskočí se hned na začátku — „Zhlédnout“ nahoře v obraze vrátí zpět.</string>
+    <string name="set_auto_skip_intro_off">Vypnuto: když začne úvod, nahoře v obraze se nabídne „Přeskočit“.</string>
+    <string name="set_live_auto_skip_intro">Úvody se přeskakují</string>
+    <string name="set_version_build">Verze %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Rozpoznávání</string>
+    <string name="set_group_language">Jazyk</string>
+    <string name="set_language_ui">Jazyk aplikace</string>
+    <string name="set_language_ui_hint">Jazyk nabídek a textů aplikace Reality NAS Player.</string>
+    <string name="set_language_follow_app">Stejný jako aplikace</string>
+    <string name="set_language_meta">Jazyk metadat</string>
+    <string name="set_tmdb_key_label">Klíč TMDB API</string>
+    <string name="set_omdb_key_label">Klíč OMDb API</string>
+    <string name="set_keys_offline">Offline rozpoznávání je zapnuté, proto se tyto klíče zatím nepoužívají.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Smazat…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Zapnuto: zvuk zpracuje prostorový zvukový systém PICO.</string>
+    <string name="set_spatial_off">Vypnuto: původní mix filmu hraje tak, jak byl vytvořen.</string>
+    <string name="set_fd_needs_system">Podporuje to jen systémový přehrávač: chcete-li to použít, vypněte výše „Rozšířený přehrávač“.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Doplnění a obnova</string>
+    <string name="set_auto_scan">Automaticky aktualizovat knihovnu</string>
+    <string name="set_auto_scan_on">Zapnuto: při otevření aplikace se hledají soubory přidané do zdrojů od poslední kontroly (nejvýše jednou za 6 hodin) a rozpoznávají se jen ty nové.</string>
+    <string name="set_auto_scan_off">Vypnuto: nové soubory se objeví, až je prohledáte v části Zdroje.</string>
+    <string name="set_rescrape">Znovu rozpoznat nedokončené položky</string>
+    <string name="set_rescrape_hint">Zkusí znovu položky, které ještě nemají plakát nebo jejichž poslední rozpoznávání selhalo; rozpoznané položky zůstanou beze změny</string>
+    <string name="set_rescrape_start">Spustit</string>
+    <string name="set_rescrape_started">Nové rozpoznávání bylo spuštěno</string>
+    <string name="set_task_busy">Probíhá prohledávání nebo rozpoznávání; nová úloha začne, až skončí.</string>
+    <string name="set_clear_action">Vyprázdnit…</string>
+    <string name="set_cleared">Knihovna je prázdná</string>
+    <string name="set_clear_failed">Knihovnu nelze vyprázdnit; zkuste to za chvíli znovu</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Hledání sdílených složek…</string>
+    <string name="sync_open_sources">Otevřít Zdroje</string>
+    <string name="sync_open_sources_hint">Přidejte sdílenou složku NAS a pak se sem vraťte</string>
+    <string name="sync_this_device">Tento headset</string>
+    <string name="sync_readonly_title">Sdílená složka je jen pro čtení</string>
+    <string name="sync_remove_body_at">Smaže „.aura“ na %1$s a záznamy všech zařízení v ní. Knihovna a postup v tomto headsetu zůstanou tak, jak jsou.</string>
+    <string name="sync_removed">Složka synchronizace je smazána</string>
+    <string name="sync_remove_failed">Složku synchronizace nelze smazat: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Otevřít Rozpoznávání</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · „%2$s“ — %3$s</string>
+    <string name="set_licences">Licence open source</string>
+    <string name="set_licences_hint">Licence každé součásti, zdrojový kód knihoven LGPL a jak je nahradit</string>
+</resources>

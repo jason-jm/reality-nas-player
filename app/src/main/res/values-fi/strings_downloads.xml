@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Lataukset</string>
+    <string name="dl_notif_title">Ladataan näille laseille</string>
+    <string name="dl_notif_progress">%1$s · %2$d %%</string>
+    <string name="dl_add">Lataa laseille</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Lataa seuraava jakso</item>
+        <item quantity="other">Lataa seuraavat %d jaksoa</item>
+    </plurals>
+    <string name="dl_remove">Poista lataus</string>
+    <string name="dl_pause">Tauko</string>
+    <string name="dl_resume">Jatka</string>
+    <string name="dl_retry">Yritä uudelleen</string>
+    <string name="dl_on_headset">Näillä laseilla</string>
+    <plurals name="dl_added">
+        <item quantity="one">Ladataan %d tiedosto laseille</item>
+        <item quantity="other">Ladataan %d tiedostoa laseille</item>
+    </plurals>
+    <string name="dl_added_none">Jo latauksissa</string>
+    <string name="dl_removed">Lataus poistettu</string>
+    <string name="dl_state_queued">Odottaa</string>
+    <string name="dl_state_paused">Tauolla</string>
+    <string name="dl_state_starting">Yhdistetään…</string>
+    <string name="dl_running">%1$s / %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Odotetaan jakoa · %1$s / %2$s</string>
+    <string name="dl_failed_no_room">Laseilla ei ole tarpeeksi tilaa</string>
+    <string name="dl_failed_unreachable">Jakoon ei saatu yhteyttä</string>
+    <string name="dl_failed_disk">Tiedostoa ei voitu tallentaa</string>
+    <string name="dl_empty">Mitään ei ole vielä ladattu</string>
+    <string name="dl_empty_hint">Paina julistetta tai jaksoa pitkään ja valitse Lataa laseille, niin voit katsoa sen kodin ulkopuolella.</string>
+    <string name="dl_space">%1$s ladattu · %2$s vapaana</string>
+    <string name="dl_section_active">Ladataan</string>
+    <string name="dl_section_done">Näillä laseilla</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d %% · %2$d muu</item>
+        <item quantity="other">%1$d %% · %2$d muuta</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d %%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Poista katsottu</item>
+        <item quantity="other">Poista %d katsottua</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Poistettiin %1$d katsottu lataus · %2$s vapautui</item>
+        <item quantity="other">Poistettiin %1$d katsottua latausta · %2$s vapautui</item>
+    </plurals>
+    <string name="dl_cancel">Peruuta lataus</string>
+    <string name="dl_failed_snack">Kohteen %1$s lataus epäonnistui: %2$s</string>
+    <string name="set_downloads">Ladattu näille laseille</string>
+    <string name="set_downloads_none">Ei vielä mitään: lataa elokuva painamalla sen julistetta pitkään.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d tiedosto · %2$s</item>
+        <item quantity="other">%1$d tiedostoa · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Näytä</string>
+    <string name="set_downloads_clear">Poista kaikki lataukset</string>
+    <string name="set_downloads_clear_hint">Kaikki lasien kopiot ja ne, joiden lataus on kesken. Jakojesi tiedostoihin ei kosketa.</string>
+    <string name="set_downloads_clear_q">Poistetaanko kaikki lataukset?</string>
+    <string name="set_downloads_clear_body">Näiden lasien kopiot poistetaan. NAS-laitteesi tiedostot säilyvät ennallaan.</string>
+    <string name="set_downloads_cleared">Kaikki lataukset poistettu</string>
+    <string name="set_downloads_clear_action">Poista…</string>
+    <string name="set_downloads_clear_confirm">Poista</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Lataa</string>
+    <string name="dl_player_done">Ladattu</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Lataa %d</item>
+        <item quantity="other">Lataa %d</item>
+    </plurals>
+    <string name="dl_folder">Lataa tämä kansio</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Ladataanko %d tiedosto?</item>
+        <item quantity="other">Ladataanko nämä %d tiedostoa?</item>
+    </plurals>
+    <string name="dl_folder_body">Ne ladataan yksi kerrallaan; laseilla on vapaana %1$s, ja 2 GB jätetään aina vapaaksi.</string>
+    <string name="dl_folder_go">Lataa</string>
+    <string name="vid_play_copy">Toista %1$s laseilta</string>
+    <string name="lib_offline">Ei verkkoa · vain lataukset toistuvat</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Ei verkkoa · %d lataus toistuu täällä</item>
+        <item quantity="other">Ei verkkoa · %d latausta toistuu täällä</item>
+    </plurals>
+    <string name="set_cast_privacy">Vastaanota suoratoisto (pois, ellet ota sitä käyttöön)</string>
+    <string name="set_cast_privacy_body">Lasit ilmoittavat itsestään vain omassa verkossasi, jotta puhelimet voivat näyttää ne luettelossa. Puhelin lähettää videon osoitteen, ja lasit toistavat sen sieltä; mikään ei kulje Reality NAS Player -sovelluksen kautta, eikä mitään suoratoistettua tallenneta.</string>
+    <string name="set_downloads_privacy">Lataukset</string>
+    <string name="set_downloads_privacy_body">Lataamasi kopiot luetaan omalta palvelimeltasi ja säilytetään vain laseilla. Poista ne Lataukset-näkymässä tai kaikki kerralla kohdassa Kirjasto.</string>
+    <string name="dl_finished_one">Nyt laseilla: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d tiedosto on nyt laseilla</item>
+        <item quantity="other">%d tiedostoa on nyt laseilla</item>
+    </plurals>
+    <string name="set_delete_watched">Poista lataukset katselun jälkeen</string>
+    <string name="set_delete_watched_hint">Loppuun katsottu kopio poistuu laseilta; NAS-laitteesi tiedosto säilyy</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Poistettiin %d katsottu lataus</item>
+        <item quantity="other">Poistettiin %d katsottua latausta</item>
+    </plurals>
+    <string name="dl_space_free">%1$s vapaana laseilla</string>
+    <string name="pc_info_source">Lähde</string>
+    <string name="pc_info_from_share">Jako palvelimella %1$s</string>
+    <string name="dl_slowed">hidastettu katselun ajaksi</string>
+</resources>

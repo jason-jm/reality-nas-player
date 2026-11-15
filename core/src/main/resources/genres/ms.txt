@@ -1,0 +1,36 @@
+# Genre names in Malay — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB has no genre names in this language (it answers in English): every one by hand.
+Action = Aksi
+Adventure = Pengembaraan
+Animation = Animasi
+Comedy = Komedi
+Crime = Jenayah
+Documentary = Dokumentari
+Drama = Drama
+Family = Keluarga
+Fantasy = Fantasi
+History = Sejarah
+Horror = Seram
+Music = Muzik
+Mystery = Misteri
+Romance = Romantik
+Science Fiction = Fiksyen sains
+Sci-Fi = Fiksyen sains
+TV Movie = Filem TV
+Thriller = Thriller
+War = Perang
+Western = Koboi
+Kids = Kanak-kanak
+News = Berita
+Reality = Realiti
+Soap = Opera sabun
+Talk = Bual bicara
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Gadis ajaib
+Mecha = Mecha
+Psychological = Psikologi
+Slice of Life = Kehidupan harian
+Sports = Sukan
+Supernatural = Ghaib
+Politics = Politik

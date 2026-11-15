@@ -1,0 +1,22 @@
+--- a/libavcodec/mlpdec.c
++++ b/libavcodec/mlpdec.c
+@@ -436,4 +436,3 @@
+         if (mh.channels_thd_stream1 == 2 &&
+-            mh.channels_thd_stream2 == 2 &&
+-            m->avctx->ch_layout.nb_channels == 2)
++            mh.channels_thd_stream2 == 2)
+             m->substream[0].mask = AV_CH_LAYOUT_STEREO;
+@@ -443,4 +442,3 @@
+             mh.channels_thd_stream1 == 1 &&
+-            mh.channels_thd_stream2 == 1 &&
+-            m->avctx->ch_layout.nb_channels == 1)
++            mh.channels_thd_stream2 == 1)
+             m->substream[0].mask = AV_CH_LAYOUT_MONO;
+@@ -451,4 +449,5 @@
+                 m->substream[2].mask = mh.channel_layout_thd_stream1;
+-        if (m->avctx->ch_layout.nb_channels > 2)
+-            m->substream[mh.num_substreams > 1].mask = mh.channel_layout_thd_stream1;
++        if (mh.num_substreams == 2 && (!m->downmix_layout.nb_channels ||
++                                        m->downmix_layout.nb_channels > 2))
++            m->substream[1].mask = mh.channel_layout_thd_stream2;
+     }

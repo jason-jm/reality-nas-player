@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Descargas</string>
+    <string name="dl_notif_title">Descargando en este visor</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Descargar al visor</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Descargar %d episodio más</item>
+        <item quantity="many">Descargar %d episodios más</item>
+        <item quantity="other">Descargar %d episodios más</item>
+    </plurals>
+    <string name="dl_remove">Eliminar descarga</string>
+    <string name="dl_pause">Pausar</string>
+    <string name="dl_resume">Reanudar</string>
+    <string name="dl_retry">Reintentar</string>
+    <string name="dl_on_headset">En este visor</string>
+    <plurals name="dl_added">
+        <item quantity="one">Descargando %d archivo al visor</item>
+        <item quantity="many">Descargando %d archivos al visor</item>
+        <item quantity="other">Descargando %d archivos al visor</item>
+    </plurals>
+    <string name="dl_added_none">Ya está en Descargas</string>
+    <string name="dl_removed">Descarga eliminada</string>
+    <string name="dl_state_queued">En espera</string>
+    <string name="dl_state_paused">En pausa</string>
+    <string name="dl_state_starting">Conectando…</string>
+    <string name="dl_running">%1$s de %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Esperando la carpeta compartida · %1$s de %2$s</string>
+    <string name="dl_failed_no_room">No hay espacio suficiente en el visor</string>
+    <string name="dl_failed_unreachable">No se pudo acceder a la carpeta compartida</string>
+    <string name="dl_failed_disk">No se pudo guardar el archivo</string>
+    <string name="dl_empty">Aún no hay descargas</string>
+    <string name="dl_empty_hint">Mantén presionado un póster o un episodio y elige Descargar al visor para verlo lejos de casa.</string>
+    <string name="dl_space">%1$s descargados · %2$s libres</string>
+    <string name="dl_section_active">Descargando</string>
+    <string name="dl_section_done">En este visor</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · %2$d más</item>
+        <item quantity="many">%1$d%% · %2$d más</item>
+        <item quantity="other">%1$d%% · %2$d más</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Eliminar %d ya vista</item>
+        <item quantity="many">Eliminar %d ya vistas</item>
+        <item quantity="other">Eliminar %d ya vistas</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">Se eliminó %1$d descarga vista · %2$s liberados</item>
+        <item quantity="many">Se eliminaron %1$d descargas vistas · %2$s liberados</item>
+        <item quantity="other">Se eliminaron %1$d descargas vistas · %2$s liberados</item>
+    </plurals>
+    <string name="dl_cancel">Cancelar descarga</string>
+    <string name="dl_failed_snack">No se pudo descargar %1$s: %2$s</string>
+    <string name="set_downloads">Descargado en este visor</string>
+    <string name="set_downloads_none">Nada todavía: mantén presionado un póster para descargarlo.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d archivo · %2$s</item>
+        <item quantity="many">%1$d archivos · %2$s</item>
+        <item quantity="other">%1$d archivos · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Ver</string>
+    <string name="set_downloads_clear">Eliminar todas las descargas</string>
+    <string name="set_downloads_clear_hint">Todas las copias del visor y las que aún se están descargando. Los archivos de tus carpetas compartidas no se tocan.</string>
+    <string name="set_downloads_clear_q">¿Eliminar todas las descargas?</string>
+    <string name="set_downloads_clear_body">Se borran las copias de este visor. Los archivos de tu NAS quedan como están.</string>
+    <string name="set_downloads_cleared">Se eliminaron todas las descargas</string>
+    <string name="set_downloads_clear_action">Eliminar…</string>
+    <string name="set_downloads_clear_confirm">Eliminar</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Descargar</string>
+    <string name="dl_player_done">Descargado</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Descargar %d</item>
+        <item quantity="many">Descargar %d</item>
+        <item quantity="other">Descargar %d</item>
+    </plurals>
+    <string name="dl_folder">Descargar esta carpeta</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">¿Descargar %d archivo?</item>
+        <item quantity="many">¿Descargar estos %d archivos?</item>
+        <item quantity="other">¿Descargar estos %d archivos?</item>
+    </plurals>
+    <string name="dl_folder_body">Se descargan uno tras otro; hay %1$s libres en el visor y siempre se reservan 2 GB.</string>
+    <string name="dl_folder_go">Descargar</string>
+    <string name="vid_play_copy">Reproducir %1$s desde el visor</string>
+    <string name="lib_offline">Sin conexión · solo se reproducen las descargas</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Sin conexión · %d descarga se reproduce aquí</item>
+        <item quantity="many">Sin conexión · %d descargas se reproducen aquí</item>
+        <item quantity="other">Sin conexión · %d descargas se reproducen aquí</item>
+    </plurals>
+    <string name="set_cast_privacy">Recibir transmisiones (desactivado salvo que lo actives)</string>
+    <string name="set_cast_privacy_body">El visor se anuncia solo en tu propia red, para que los teléfonos puedan mostrarlo. Un teléfono envía la dirección de un video y el visor lo reproduce desde allí; nada pasa por Reality NAS Player y no se registra nada de lo transmitido.</string>
+    <string name="set_downloads_privacy">Descargas</string>
+    <string name="set_downloads_privacy_body">Las copias que descargas se leen de tu propio servidor y se guardan solo en el visor. Elimínalas en Descargas, o todas a la vez en Biblioteca.</string>
+    <string name="dl_finished_one">Ya en el visor: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d archivo ya está en el visor</item>
+        <item quantity="many">%d archivos ya están en el visor</item>
+        <item quantity="other">%d archivos ya están en el visor</item>
+    </plurals>
+    <string name="set_delete_watched">Eliminar descargas al terminar de verlas</string>
+    <string name="set_delete_watched_hint">Una copia vista hasta el final sale del visor; el archivo de tu NAS se queda</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">Se eliminó %d descarga vista</item>
+        <item quantity="many">Se eliminaron %d descargas vistas</item>
+        <item quantity="other">Se eliminaron %d descargas vistas</item>
+    </plurals>
+    <string name="dl_space_free">%1$s libres en el visor</string>
+    <string name="pc_info_source">Origen</string>
+    <string name="pc_info_from_share">Carpeta compartida en %1$s</string>
+    <string name="dl_slowed">más lenta mientras ves</string>
+</resources>

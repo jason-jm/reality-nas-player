@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Καμία ταινία ακόμη</string>
+    <string name="lib_add_source">Προσθήκη πηγής</string>
+    <string name="lib_empty_search_hint">Η αναζήτηση ψάχνει σε κάθε τίτλο και όνομα αρχείου της βιβλιοθήκης.</string>
+    <string name="lib_search_clear">Διαγραφή αναζήτησης</string>
+    <string name="lib_empty_favorites_title">Κανένα αγαπημένο ακόμη</string>
+    <string name="lib_empty_history_title">Δεν έχετε δει τίποτα ακόμη</string>
+    <string name="lib_empty_shelf_hint">Οι τίτλοι μπαίνουν σε αυτό το ράφι μόλις η αναγνώριση μάθει τι είναι.</string>
+    <string name="lib_show_all">Όλοι οι τίτλοι</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Αποτελέσματα για «%1$s»</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d αποτέλεσμα</item>
+        <item quantity="other">%1$d αποτελέσματα</item>
+    </plurals>
+    <string name="lib_search_people_title">Πρόσωπα</string>
+    <string name="lib_search_titles">Τίτλοι</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Μέσω των συντελεστών τους</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d πρόσωπο</item>
+        <item quantity="other">%1$d πρόσωπα</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d τίτλος</item>
+        <item quantity="other">%1$d τίτλοι</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Ψηφία και σύμβολα</string>
+    <string name="lib_index_unidentified">Μη αναγνωρισμένα</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Φέτος: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Φέτος: %1$s προβολής</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d ταινία</item>
+        <item quantity="other">%1$d ταινίες</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d επεισόδιο</item>
+        <item quantity="other">%1$d επεισόδια</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">περίπου %1$d ώρα</item>
+        <item quantity="other">περίπου %1$d ώρες</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d λεπ.</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Δεν έμεινε τίποτα για αναγνώριση — ο τοίχος είναι ενημερωμένος.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Αναπαραγωγή · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Μη αναγνωρισμένο</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Φίλτρο</string>
+    <string name="lib_filter_n">Φίλτρο · %1$d</string>
+    <string name="lib_filter_watch">Κατάσταση προβολής</string>
+    <string name="lib_filter_any">Όλα</string>
+    <string name="lib_filter_unwatched">Δεν προβλήθηκαν</string>
+    <string name="lib_filter_in_progress">Σε εξέλιξη</string>
+    <string name="lib_filter_watched">Προβλήθηκαν</string>
+    <string name="lib_filter_genre">Είδος</string>
+    <string name="lib_filter_decade">Δεκαετία</string>
+    <string name="lib_filter_picture">Εικόνα</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">Δεκαετία %1$d</string>
+    <string name="lib_filter_reset">Επαναφορά φίλτρων</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d τίτλος</item>
+        <item quantity="other">%d τίτλοι</item>
+    </plurals>
+    <string name="lib_empty_filter">Τίποτα δεν ταιριάζει με αυτά τα φίλτρα</string>
+    <string name="lib_empty_filter_hint">Δοκιμάστε άλλες επιλογές ή καταργήστε τα φίλτρα.</string>
+    <string name="lib_filter_clear">Κατάργηση φίλτρων</string>
+    <string name="lib_recently_added">Πρόσφατες προσθήκες</string>
+    <string name="lib_recently_added_on">Πρόσφατες προσθήκες · %1$s</string>
+    <string name="lib_surprise">Κάτι τυχαίο</string>
+    <string name="lib_because">Επειδή είδατε %1$s</string>
+    <string name="lib_history_today">Σήμερα</string>
+    <string name="lib_history_yesterday">Χθες</string>
+    <string name="lib_history_this_week">Νωρίτερα αυτή την εβδομάδα</string>
+    <string name="lib_history_this_month">Νωρίτερα αυτόν τον μήνα</string>
+    <string name="lib_history_earlier">Παλαιότερα</string>
+</resources>

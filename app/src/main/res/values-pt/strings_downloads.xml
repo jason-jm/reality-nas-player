@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Downloads</string>
+    <string name="dl_notif_title">Baixando para estes óculos</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Baixar nos óculos</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Baixar mais %d episódio</item>
+        <item quantity="many">Baixar mais %d episódios</item>
+        <item quantity="other">Baixar mais %d episódios</item>
+    </plurals>
+    <string name="dl_remove">Remover download</string>
+    <string name="dl_pause">Pausar</string>
+    <string name="dl_resume">Retomar</string>
+    <string name="dl_retry">Tentar de novo</string>
+    <string name="dl_on_headset">Nestes óculos</string>
+    <plurals name="dl_added">
+        <item quantity="one">Baixando %d arquivo para os óculos</item>
+        <item quantity="many">Baixando %d arquivos para os óculos</item>
+        <item quantity="other">Baixando %d arquivos para os óculos</item>
+    </plurals>
+    <string name="dl_added_none">Já está em Downloads</string>
+    <string name="dl_removed">Download removido</string>
+    <string name="dl_state_queued">Aguardando</string>
+    <string name="dl_state_paused">Pausado</string>
+    <string name="dl_state_starting">Conectando…</string>
+    <string name="dl_running">%1$s de %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Aguardando a pasta compartilhada · %1$s de %2$s</string>
+    <string name="dl_failed_no_room">Espaço insuficiente nos óculos</string>
+    <string name="dl_failed_unreachable">Não foi possível acessar a pasta compartilhada</string>
+    <string name="dl_failed_disk">Não foi possível salvar o arquivo</string>
+    <string name="dl_empty">Nenhum download ainda</string>
+    <string name="dl_empty_hint">Toque e segure um pôster ou um episódio e escolha Baixar nos óculos para assistir longe de casa.</string>
+    <string name="dl_space">%1$s baixados · %2$s livres</string>
+    <string name="dl_section_active">Baixando</string>
+    <string name="dl_section_done">Nestes óculos</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · mais %2$d</item>
+        <item quantity="many">%1$d%% · mais %2$d</item>
+        <item quantity="other">%1$d%% · mais %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">Remover %d já assistido</item>
+        <item quantity="many">Remover %d já assistidos</item>
+        <item quantity="other">Remover %d já assistidos</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">%1$d download assistido removido · %2$s liberados</item>
+        <item quantity="many">%1$d downloads assistidos removidos · %2$s liberados</item>
+        <item quantity="other">%1$d downloads assistidos removidos · %2$s liberados</item>
+    </plurals>
+    <string name="dl_cancel">Cancelar download</string>
+    <string name="dl_failed_snack">Não foi possível baixar %1$s: %2$s</string>
+    <string name="set_downloads">Baixado nestes óculos</string>
+    <string name="set_downloads_none">Nada ainda: toque e segure um pôster para baixá-lo.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d arquivo · %2$s</item>
+        <item quantity="many">%1$d arquivos · %2$s</item>
+        <item quantity="other">%1$d arquivos · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Ver</string>
+    <string name="set_downloads_clear">Remover todos os downloads</string>
+    <string name="set_downloads_clear_hint">Todas as cópias nos óculos e as que ainda estão sendo baixadas. Os arquivos nas suas pastas compartilhadas não são alterados.</string>
+    <string name="set_downloads_clear_q">Remover todos os downloads?</string>
+    <string name="set_downloads_clear_body">As cópias nestes óculos são excluídas. Os arquivos no seu NAS ficam como estão.</string>
+    <string name="set_downloads_cleared">Todos os downloads foram removidos</string>
+    <string name="set_downloads_clear_action">Remover…</string>
+    <string name="set_downloads_clear_confirm">Remover</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Baixar</string>
+    <string name="dl_player_done">Baixado</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">Baixar %d</item>
+        <item quantity="many">Baixar %d</item>
+        <item quantity="other">Baixar %d</item>
+    </plurals>
+    <string name="dl_folder">Baixar esta pasta</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">Baixar %d arquivo?</item>
+        <item quantity="many">Baixar estes %d arquivos?</item>
+        <item quantity="other">Baixar estes %d arquivos?</item>
+    </plurals>
+    <string name="dl_folder_body">Eles são baixados um após o outro; há %1$s livres nos óculos, e 2 GB ficam sempre reservados.</string>
+    <string name="dl_folder_go">Baixar</string>
+    <string name="vid_play_copy">Reproduzir %1$s dos óculos</string>
+    <string name="lib_offline">Offline · só os downloads reproduzem</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d download reproduz aqui</item>
+        <item quantity="many">Offline · %d downloads reproduzem aqui</item>
+        <item quantity="other">Offline · %d downloads reproduzem aqui</item>
+    </plurals>
+    <string name="set_cast_privacy">Receber transmissões (desativado até você ativar)</string>
+    <string name="set_cast_privacy_body">Os óculos se anunciam só na sua própria rede, para que os celulares possam listá-los. Um celular envia o endereço de um vídeo e os óculos reproduzem a partir dali; nada passa pelo Reality NAS Player, e nada transmitido é registrado.</string>
+    <string name="set_downloads_privacy">Downloads</string>
+    <string name="set_downloads_privacy_body">As cópias que você baixa são lidas do seu próprio servidor e guardadas só nos óculos. Remova-as em Downloads, ou todas de uma vez em Biblioteca.</string>
+    <string name="dl_finished_one">Já nos óculos: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d arquivo já está nos óculos</item>
+        <item quantity="many">%d arquivos já estão nos óculos</item>
+        <item quantity="other">%d arquivos já estão nos óculos</item>
+    </plurals>
+    <string name="set_delete_watched">Remover downloads depois de assistidos</string>
+    <string name="set_delete_watched_hint">Uma cópia assistida até o fim sai dos óculos; o arquivo no seu NAS fica</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">%d download assistido removido</item>
+        <item quantity="many">%d downloads assistidos removidos</item>
+        <item quantity="other">%d downloads assistidos removidos</item>
+    </plurals>
+    <string name="dl_space_free">%1$s livres nos óculos</string>
+    <string name="pc_info_source">Origem</string>
+    <string name="pc_info_from_share">Pasta compartilhada em %1$s</string>
+    <string name="dl_slowed">mais lento enquanto você assiste</string>
+</resources>

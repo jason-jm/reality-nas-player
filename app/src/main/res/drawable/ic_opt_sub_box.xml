@@ -1,0 +1,11 @@
+<!-- 字幕样式 · 背景框: the same letter set on a box — an 18dp rounded square with the letter cut out. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:fillType="evenOdd"
+        android:pathData="M6 3H18C19.6569 3 21 4.3431 21 6V18C21 19.6569 19.6569 21 18 21H6C4.3431 21 3 19.6569 3 18V6C3 4.3431 4.3431 3 6 3ZM7.04 17.83L11.2093 6.67H12.7907L16.96 17.83H15.3306L14.2444 14.7052H9.6598L8.5576 17.83H7.04ZM10.139 13.3979H13.7811L11.9761 8.1686 10.139 13.3979Z" />
+</vector>

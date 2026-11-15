@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">Yritä uudelleen</string>
+    <string name="md_secret_show">Näytä</string>
+    <string name="md_secret_hide">Piilota</string>
+    <string name="md_secret_show_named">Näytä %1$s</string>
+    <string name="md_secret_hide_named">Piilota %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">Jotain odottamatonta tapahtui</string>
+    <string name="fault_unknown_detail">Jotain odottamatonta tapahtui: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">Takaisin lähdetyyppeihin</string>
+    <string name="sources_edit">Muokkaa</string>
+    <string name="sources_edit_title">Muokkaa: ”%1$s”</string>
+    <string name="sources_save_and_scan">Tallenna ja skannaa</string>
+    <string name="sources_password_keep">Jätä tyhjäksi, niin tallennettu salasana säilyy</string>
+    <string name="sources_token_keep">Jätä tyhjäksi, niin tallennettu tunnus säilyy</string>
+    <string name="sources_saved_placeholder">Tallennettu</string>
+    <string name="sources_smb_need_share">Tämä on vain isäntä. Valitse jako napauttamalla oikeasta yläkulmasta ”Selaa jakoja…” tai lisää se suoraan kirjoittamalla isäntä/jako</string>
+    <string name="sources_webdav_scheme">Osoitteen on alettava http:// tai https://</string>
+    <string name="sources_remote_scheme">Tämä osoite on toisenlaiselle palvelimelle; kirjoita se ilman ://-merkintää edeltävää osaa</string>
+    <string name="sources_address_spaces">Osoitteessa ei voi olla välilyöntejä</string>
+    <string name="sources_server_user_hint">Tilisi palvelimella, sama jolla kirjaudut sen verkkosovellukseen</string>
+    <string name="sources_server_pass_hint">Tilin salasana</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s-palvelin</string>
+    <string name="sources_kind_dlna">DLNA-mediapalvelin</string>
+    <string name="sources_remove_action">Poista…</string>
+    <string name="sources_removed">”%1$s” poistettu</string>
+    <string name="sources_added_toast">”%1$s” lisätty, skannataan</string>
+    <string name="sources_saved_toast">”%1$s” tallennettu, skannataan uudelleen</string>
+    <string name="sources_fix_account">Vaihda tili tai salasana</string>
+    <string name="sources_fix_account_hint">Yhdistä tämä lähde oikealla tilillä</string>
+    <string name="sources_fix_address">Tarkista yhteystiedot</string>
+    <string name="sources_fix_address_hint">Tarkista osoite ja portti tai kokeile toista tiliä ja skannaa sitten uudelleen</string>
+    <string name="sources_scan_busy">Toinen skannaus tai tunnistus on käynnissä; tämä voi alkaa, kun se päättyy</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">Takaisin jakoihin</string>
+    <string name="smb_back_servers">Takaisin palvelimiin</string>
+    <string name="smb_saved_password">Käyttää tallennettua salasanaa</string>
+    <string name="smb_signing_in">Kirjaudutaan…</string>
+    <string name="smb_subnet_invalid">Anna IPv4-osoite, esim. 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">Paikalliset tiedostonimet</string>
+    <string name="set_live_engine_exo">Tehostettu moottori</string>
+    <string name="set_live_engine_system">Järjestelmän soitin</string>
+    <string name="set_live_spatial">%1$s · tilaääni</string>
+    <string name="set_live_sync_off">Pois</string>
+    <string name="set_live_sync_on">Päällä</string>
+    <string name="set_live_sync_on_ago">Päällä · synkronoitu %1$s</string>
+    <string name="set_live_sync_failed">Synkronointi epäonnistui</string>
+    <string name="set_live_version">Versio %1$s</string>
+    <string name="set_live_sub">Tekstitys: %1$s</string>
+    <string name="set_live_audio">Ääni: %1$s</string>
+    <string name="set_live_night">Yötila</string>
+    <string name="set_live_no_autoplay">Ei automaattitoistoa</string>
+    <string name="set_pano_auto">Avaa 360°/180°-videot uppoutuvina</string>
+    <string name="set_pano_auto_on">Päällä: 360°- tai 180°-videoksi tunnistettu video avautuu uppoutuvaan tilaan, ympärillesi.</string>
+    <string name="set_pano_auto_off">Pois: 360°- ja 180°-videot alkavat ikkunassa; Kuva › Katselutila vie sisään.</string>
+    <string name="set_auto_skip_intro">Ohita alkutekstit automaattisesti</string>
+    <string name="set_auto_skip_intro_on">Päällä: kun tiedoston luvut merkitsevät alkutekstit (OP, Opening…), ne ohitetaan heti alussa – kuvan yläreunan ”Katso” palaa takaisin.</string>
+    <string name="set_auto_skip_intro_off">Pois: kun alkutekstit alkavat, kuvan yläreunassa tarjotaan ”Ohita”.</string>
+    <string name="set_live_auto_skip_intro">Alkutekstit ohitetaan</string>
+    <string name="set_version_build">Versio %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">Tunnistus</string>
+    <string name="set_group_language">Kieli</string>
+    <string name="set_language_ui">Sovelluksen kieli</string>
+    <string name="set_language_ui_hint">Reality NAS Player -sovelluksen valikoiden ja tekstien kieli.</string>
+    <string name="set_language_follow_app">Sama kuin sovelluksessa</string>
+    <string name="set_language_meta">Metatietojen kieli</string>
+    <string name="set_tmdb_key_label">TMDB API -avain</string>
+    <string name="set_omdb_key_label">OMDb API -avain</string>
+    <string name="set_keys_offline">Tunnistus ilman verkkoa on päällä, joten näitä avaimia ei toistaiseksi käytetä.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">Poista…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">Päällä: PICOn tilaäänimoottori käsittelee äänen.</string>
+    <string name="set_spatial_off">Pois: elokuvan oma miksaus soi sellaisena kuin se on tehty.</string>
+    <string name="set_fd_needs_system">Vain järjestelmän soitin tukee tätä: poista yllä ”Tehostettu moottori” käytöstä, jos haluat käyttää sitä.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">Täydennys ja uudelleenrakennus</string>
+    <string name="set_auto_scan">Päivitä kirjasto automaattisesti</string>
+    <string name="set_auto_scan_on">Päällä: sovellus etsii avautuessaan lähteisiisi edellisen tarkistuksen jälkeen lisätyt tiedostot (enintään 6 tunnin välein) ja tunnistaa vain uudet.</string>
+    <string name="set_auto_scan_off">Pois: uudet tiedostot näkyvät, kun skannaat ne kohdassa Lähteet.</string>
+    <string name="set_rescrape">Tunnista keskeneräiset kohteet uudelleen</string>
+    <string name="set_rescrape_hint">Yrittää uudelleen kohteille, joilla ei vielä ole julistetta tai joiden edellinen tunnistus epäonnistui; tunnistettuihin kohteisiin ei kosketa</string>
+    <string name="set_rescrape_start">Aloita</string>
+    <string name="set_rescrape_started">Uudelleentunnistus aloitettu</string>
+    <string name="set_task_busy">Skannaus tai tunnistus on käynnissä; uusi tehtävä voi alkaa, kun se päättyy.</string>
+    <string name="set_clear_action">Tyhjennä…</string>
+    <string name="set_cleared">Kirjasto on tyhjä</string>
+    <string name="set_clear_failed">Kirjastoa ei voitu tyhjentää; yritä hetken päästä uudelleen</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">Etsitään jakoja…</string>
+    <string name="sync_open_sources">Avaa Lähteet</string>
+    <string name="sync_open_sources_hint">Lisää NAS-jako ja palaa sitten tänne</string>
+    <string name="sync_this_device">Nämä lasit</string>
+    <string name="sync_readonly_title">Jako on vain luku -tilassa</string>
+    <string name="sync_remove_body_at">Tämä poistaa ”.aura”-kansion kohteesta %1$s ja kaikkien laitteiden tiedot siinä. Näiden lasien kirjasto ja katselukohdat säilyvät ennallaan.</string>
+    <string name="sync_removed">Synkronointikansio on poistettu</string>
+    <string name="sync_remove_failed">Synkronointikansiota ei voitu poistaa: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">Avaa Metatiedot</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · ”%2$s” — %3$s</string>
+    <string name="set_licences">Avoimen lähdekoodin lisenssit</string>
+    <string name="set_licences_hint">Kunkin komponentin lisenssi, LGPL-kirjastojen lähdekoodi ja ohjeet niiden korvaamiseen</string>
+</resources>

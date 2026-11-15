@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Fjern fra favoritter</string>
+    <string name="det_up_next">Neste</string>
+    <string name="det_section_main">Hovedinnhold</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Sesong %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Merke alle som sett?</string>
+    <string name="det_mark_all_unwatched_q">Merke alle som ikke sett?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d fil blir merket som sett.</item>
+        <item quantity="other">%1$d filer blir merket som sett.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d av dem er påbegynt og mister plassen sin.</item>
+        <item quantity="other">%1$d av dem er påbegynt og mister plassen sin.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Seerfremdriften for %1$d fil blir slettet.</item>
+        <item quantity="other">Seerfremdriften for %1$d filer blir slettet.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Kilde</string>
+    <string name="fix_scope">Bruk på</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Hele kortet (%1$d fil)</item>
+        <item quantity="other">Hele kortet (%1$d filer)</item>
+    </plurals>
+    <string name="fix_scope_file">Bare denne filen</string>
+    <string name="fix_query_hint">Tittel – engelske titler gir best treff</string>
+    <string name="fix_hint">Velg riktig oppføring for å endre treffet</string>
+    <string name="fix_applying">Bruker…</string>
+    <string name="fix_failed">Kunne ikke bruke denne oppføringen. Sjekk nettverket og prøv igjen.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Serie</string>
+    <string name="fix_current">Gjeldende</string>
+    <string name="fix_no_results_title">Ingen samsvarende oppføringer</string>
+    <string name="fix_no_results_anilist">Prøv en annen stavemåte – romaji eller engelske navn gir best treff.</string>
+    <string name="fix_error_title">Søket ble ikke fullført</string>
+    <string name="fix_error_body">Sjekk nettverket og prøv igjen.</string>
+    <string name="fix_retry">Prøv igjen</string>
+    <string name="fix_confirm_title">Bytte til «%1$s»?</string>
+    <string name="fix_confirm_title_year">Bytte til «%1$s» (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Filen på dette kortet bruker denne oppføringen fra nå av, og senere gjenkjenning endrer den ikke.</item>
+        <item quantity="other">Alle %1$d filene på dette kortet bruker denne oppføringen fra nå av, og senere gjenkjenning endrer dem ikke.</item>
+    </plurals>
+    <string name="fix_confirm_file">Bare «%1$s» bruker denne oppføringen fra nå av, og senere gjenkjenning endrer den ikke.</string>
+    <string name="fix_apply">Bruk</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d til</item>
+        <item quantity="other">%d til</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d tittel til i biblioteket ditt</item>
+        <item quantity="other">%d titler til i biblioteket ditt</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d tittel i biblioteket ditt</item>
+        <item quantity="other">%d titler i biblioteket ditt</item>
+    </plurals>
+    <string name="det_similar">Mer som dette</string>
+    <string name="det_episode_copy">%1$s · en annen kopi</string>
+    <string name="det_season_progress">%1$d av %2$d sett</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Sett</item>
+        <item quantity="other">Alle %1$d sett</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versjoner</string>
+    <string name="det_series">I denne serien</string>
+    <string name="lib_series">Serie</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d tittel</item>
+        <item quantity="other">%d titler</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d tittel i dette biblioteket, i utgivelsesrekkefølge</item>
+        <item quantity="other">%d titler i dette biblioteket, i utgivelsesrekkefølge</item>
+    </plurals>
+</resources>

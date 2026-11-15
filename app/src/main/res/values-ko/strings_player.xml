@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">재생 설정</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">입체</string>
+    <string name="pc_projection">투영</string>
+    <string name="pc_proj_flat">평면</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">글꼴</string>
+    <string name="pc_colour">색상</string>
+    <string name="pc_sub_style_plain">그림자</string>
+    <string name="pc_sub_style_box">배경 상자</string>
+    <string name="pc_second_subtitle">보조 자막</string>
+    <string name="pc_sub_style_outline">외곽선</string>
+    <string name="pc_font_default">기본</string>
+    <string name="pc_font_serif">명조</string>
+    <string name="pc_font_mono">고정폭</string>
+    <string name="pc_colour_white">흰색</string>
+    <string name="pc_colour_yellow">노란색</string>
+    <string name="pc_colour_cyan">청록색</string>
+    <string name="pc_colour_green">초록색</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">순서대로</string>
+    <string name="pc_loop_all">전체 반복</string>
+    <string name="pc_loop_one">한 개 반복</string>
+    <string name="pc_loop_shuffle">셔플</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">스냅샷 찍는 중…</string>
+    <string name="pc_hold_speed">2× 재생 중</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">북마크</string>
+    <string name="pc_bookmarks_n">북마크 · %1$d</string>
+    <string name="pc_bookmark_add">북마크 추가</string>
+    <string name="pc_bookmark_empty">위의 +를 눌러 다시 보고 싶은 순간을 표시하세요.</string>
+    <string name="pc_bookmark_remove">%1$s 북마크 삭제</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">인트로 및 크레딧 건너뛰기</string>
+    <string name="pc_skip_intro_set">인트로: %1$s까지</string>
+    <string name="pc_skip_outro_set">크레딧: 마지막 %1$s</string>
+    <string name="pc_skip_mark_intro">여기서 인트로 끝</string>
+    <string name="pc_skip_mark_outro">여기서 크레딧 시작</string>
+    <string name="pc_skip_clear">인트로 및 크레딧 지우기</string>
+    <string name="pc_skip_intro_hint">이 시리즈의 이후 모든 에피소드가 여기서 시작돼요</string>
+    <string name="pc_skip_outro_hint">이 시리즈의 이후 모든 에피소드가 여기서 다음 화로 넘어가요</string>
+    <string name="vid_intro_skipped">인트로를 건너뛰었어요</string>
+    <string name="vid_watch_intro">인트로 보기</string>
+    <string name="vid_chapter_intro">오프닝 · %1$s 남음</string>
+    <string name="vid_chapter_outro">크레딧 · %1$s 남음</string>
+    <string name="vid_skip">건너뛰기</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">알 수 없는 형식</string>
+    <string name="pc_track_unknown">알 수 없는 트랙</string>
+    <string name="pc_track_n">트랙 %1$d</string>
+    <string name="pc_track_external_sub">외부 자막</string>
+    <string name="pc_track_external">외부</string>
+    <string name="pc_track_embedded">내장</string>
+    <string name="pc_ch_mono">모노</string>
+    <string name="pc_ch_stereo">스테레오</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">오디오</string>
+    <string name="pc_frames">누락 %1$d / 렌더링 %2$d</string>
+    <string name="pc_env_dim">재생 중 어둡게</string>
+    <string name="pc_env_viewing_light">재생 중 조명 밝기</string>
+    <string name="pc_env_dim_hint">재생 중에는 선택한 밝기를 사용합니다. 일시 정지하거나 재생 컨트롤을 열면 조명이 원래 밝기로 돌아옵니다.</string>
+    <string name="pc_env_lights">조명</string>
+    <string name="pc_env_lights_hint">장소 자체 조명을 켜거나 끕니다. 켜져 있어도 ‘재생 중 어둡게’가 영화 중에는 조명을 낮춥니다</string>
+    <string name="pc_env_seat">좌석</string>
+    <string name="pc_seat_center">중앙</string>
+    <string name="pc_seat_left">왼쪽</string>
+    <string name="pc_seat_right">오른쪽</string>
+    <string name="pc_seat_left_window">왼쪽 창가</string>
+    <string name="pc_seat_right_window">오른쪽 창가</string>
+    <string name="pc_env_screen">영상 및 자막</string>
+    <string name="pc_env_screen_hint">영상과 자막이 감상 공간의 스크린에 표시됩니다.</string>
+    <string name="pc_env_glow">스크린 반사광</string>
+    <string name="pc_env_glow_hint">영화의 색이 스크린 테두리와 주변 표면에 비칩니다.</string>
+    <string name="pc_env_screen_none">이곳에는 화면이 없어요. 영화는 창에 그대로 표시돼요</string>
+    <string name="pc_env_has_screen">화면 있음</string>
+    <string name="pc_env_entering">%1$s 여는 중…</string>
+    <string name="pc_env_failed">%1$s 불러오기 실패</string>
+    <string name="pc_lang_simplified">중국어 간체</string>
+    <string name="pc_lang_traditional">중국어 번체</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="other">사운드 트랙 %d개 더 있음</item>
+    </plurals>
+    <string name="pc_more_sound_hint">기본 플레이어가 읽을 수 없는 사운드가 있어요. mpv로 재생하세요</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="other">그림 자막 파일 %d개</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">영화 옆의 VobSub / PGS 자막은 기본 플레이어가 표시할 수 없어요. mpv로 재생하세요</string>
+    <string name="pc_pano_format">파노라마 형식</string>
+    <string name="pc_pano_equirect">등장방형</string>
+    <string name="pc_pano_fisheye">어안</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">큐브맵</string>
+    <string name="pc_pano_dual">듀얼 어안</string>
+    <string name="pc_pano_direction">방향</string>
+    <string name="pc_pano_turn_left">왼쪽으로 회전</string>
+    <string name="pc_pano_recenter">정면 재설정</string>
+    <string name="pc_pano_turn_right">오른쪽으로 회전</string>
+    <string name="pc_pano_turn_hint">화면을 내 주위로 30° 돌려요. 몸을 돌리지 않고도 뒤쪽을 볼 수 있어요</string>
+    <string name="pc_pano_recenter_hint">영화의 정면을 지금 보고 있는 방향으로 맞춰요</string>
+    <string name="pc_pano_own">파일의 메시</string>
+    <string name="pc_info_format">형식</string>
+    <string name="pc_info_spatial_video">공간 비디오</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, 두 시점(왼쪽 눈 표시)</string>
+    <string name="pc_info_camera">시야 %1$d° · 간격 %2$d mm</string>
+    <string name="pc_info_right_first">오른쪽 눈 먼저</string>
+    <string name="pc_audio_field">앰비소닉</string>
+    <string name="vid_pano_guess_360">360° 동영상인 것 같아요</string>
+    <string name="vid_pano_guess_360_3d">360° 3D 동영상인 것 같아요</string>
+    <string name="vid_pano_guess_180_3d">180° 3D 동영상(VR180)인 것 같아요</string>
+    <string name="vid_pano_guess_fisheye">어안 동영상인 것 같아요</string>
+    <string name="vid_pano_guess_fisheye_3d">180° 3D 어안 동영상인 것 같아요</string>
+    <string name="vid_pano_guess_dual">360° 카메라의 두 렌즈 원본 영상인 것 같아요</string>
+    <string name="vid_pano_guess_play">파노라마로 재생</string>
+    <string name="vid_pano_guess_no">아니에요</string>
+    <string name="pc_pano_tilt_up">위로</string>
+    <string name="pc_pano_tilt_down">아래로</string>
+    <string name="pc_pano_roll_left">왼쪽으로 기울이기</string>
+    <string name="pc_pano_roll_right">오른쪽으로 기울이기</string>
+    <string name="pc_pano_level">수평</string>
+    <string name="pc_pano_level_hint">수평선이 기울었을 때 사용해요. 한 번에 5°씩, 이 영화에 저장돼요</string>
+</resources>

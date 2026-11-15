@@ -1,0 +1,16 @@
+# Aura's own code, ahead of time from the install on (merged with the libraries' profiles into
+# assets/dexopt/baseline.prof; profileinstaller hands it to ART on a sideload).
+#
+# Measured on the B3110 (OS 6.2): installed and not yet compiled ([status=verify]), 57% of the main thread's
+# time went to the interpreter (nterp) — a title page took 100-200 ms to come up with one 89-178 ms frame, the
+# wall 495 ms to be usable. Compiled, the page came up in 48-74 ms (worst frame 33-67 ms), the wall in 362 ms.
+# The libraries' profiles cover Compose; nothing covered the app, the core it is built on, or SpatialUI —
+# what every frame of the wall, a title's page and the player runs.
+
+# The app and :core (one package): the wall, grouping, the title page, the player, the stream server.
+HSPLcom/therealityteam/videoplayer/**;->**(**)**
+Lcom/therealityteam/videoplayer/**;
+
+# SpatialUI: every panel, button, list and hover is drawn by it.
+HSPLcom/pico/spatial/ui/**;->**(**)**
+Lcom/pico/spatial/ui/**;

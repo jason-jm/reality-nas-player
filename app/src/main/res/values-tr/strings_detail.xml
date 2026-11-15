@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Favorilerden kaldır</string>
+    <string name="det_up_next">Sıradaki</string>
+    <string name="det_section_main">Ana içerik</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Sezon %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Tümü izlendi olarak işaretlensin mi?</string>
+    <string name="det_mark_all_unwatched_q">Tümü izlenmedi olarak işaretlensin mi?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d dosya izlendi olarak işaretlenecek.</item>
+        <item quantity="other">%1$d dosya izlendi olarak işaretlenecek.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">Bunlardan %1$d tanesi yarıda kalmış ve kaldığı yeri kaybedecek.</item>
+        <item quantity="other">Bunlardan %1$d tanesi yarıda kalmış ve kaldıkları yeri kaybedecek.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">%1$d dosyanın izleme ilerlemesi silinecek.</item>
+        <item quantity="other">%1$d dosyanın izleme ilerlemesi silinecek.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Kaynak</string>
+    <string name="fix_scope">Kapsam</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Tüm kart (%1$d dosya)</item>
+        <item quantity="other">Tüm kart (%1$d dosya)</item>
+    </plurals>
+    <string name="fix_scope_file">Yalnızca bu dosya</string>
+    <string name="fix_query_hint">Başlık — İngilizce başlıklar en iyi eşleşir</string>
+    <string name="fix_hint">Eşleşmeyi düzeltmek için doğru girişi seçin</string>
+    <string name="fix_applying">Uygulanıyor…</string>
+    <string name="fix_failed">Bu giriş uygulanamadı. Ağı kontrol edip yeniden deneyin.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Dizi</string>
+    <string name="fix_current">Geçerli</string>
+    <string name="fix_no_results_title">Eşleşen giriş yok</string>
+    <string name="fix_no_results_anilist">Başka bir yazım deneyin — romaji veya İngilizce adlar en iyi eşleşir.</string>
+    <string name="fix_error_title">Arama tamamlanamadı</string>
+    <string name="fix_error_body">Ağı kontrol edip yeniden deneyin.</string>
+    <string name="fix_retry">Yeniden dene</string>
+    <string name="fix_confirm_title">“%1$s” olarak değiştirilsin mi?</string>
+    <string name="fix_confirm_title_year">“%1$s” (%2$d) olarak değiştirilsin mi?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Bu karttaki %1$d dosya bundan sonra bu girişi kullanacak ve sonraki eşleştirmeler bunu değiştirmeyecek.</item>
+        <item quantity="other">Bu karttaki %1$d dosyanın tümü bundan sonra bu girişi kullanacak ve sonraki eşleştirmeler bunu değiştirmeyecek.</item>
+    </plurals>
+    <string name="fix_confirm_file">Bundan sonra yalnızca “%1$s” bu girişi kullanacak ve sonraki eşleştirmeler bunu değiştirmeyecek.</string>
+    <string name="fix_apply">Uygula</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d tane daha</item>
+        <item quantity="other">%d tane daha</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">Kitaplığınızda %d başlık daha</item>
+        <item quantity="other">Kitaplığınızda %d başlık daha</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">Kitaplığınızda %d başlık</item>
+        <item quantity="other">Kitaplığınızda %d başlık</item>
+    </plurals>
+    <string name="det_similar">Benzerleri</string>
+    <string name="det_episode_copy">%1$s · başka bir kopya</string>
+    <string name="det_season_progress">%1$d / %2$d izlendi</string>
+    <plurals name="det_season_done">
+        <item quantity="one">İzlendi (%1$d)</item>
+        <item quantity="other">Tümü izlendi (%1$d)</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Sürümler</string>
+    <string name="det_series">Bu seride</string>
+    <string name="lib_series">Seri</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d başlık</item>
+        <item quantity="other">%d başlık</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">Bu kitaplıkta çıkış sırasına göre %d başlık</item>
+        <item quantity="other">Bu kitaplıkta çıkış sırasına göre %d başlık</item>
+    </plurals>
+</resources>

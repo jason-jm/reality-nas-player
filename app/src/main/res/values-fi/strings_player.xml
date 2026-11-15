@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Toisto</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">3D-muoto</string>
+    <string name="pc_projection">Projektio</string>
+    <string name="pc_proj_flat">Tasainen</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Fontti</string>
+    <string name="pc_colour">Väri</string>
+    <string name="pc_sub_style_plain">Varjo</string>
+    <string name="pc_sub_style_box">Laatikko</string>
+    <string name="pc_second_subtitle">Toinen tekstitys</string>
+    <string name="pc_sub_style_outline">Ääriviiva</string>
+    <string name="pc_font_default">Oletus</string>
+    <string name="pc_font_serif">Antiikva</string>
+    <string name="pc_font_mono">Tasaväli</string>
+    <string name="pc_colour_white">Valkoinen</string>
+    <string name="pc_colour_yellow">Keltainen</string>
+    <string name="pc_colour_cyan">Syaani</string>
+    <string name="pc_colour_green">Vihreä</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Järjestyksessä</string>
+    <string name="pc_loop_all">Kaikki</string>
+    <string name="pc_loop_one">Yksi</string>
+    <string name="pc_loop_shuffle">Satunnainen</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Otetaan kuvakaappausta…</string>
+    <string name="pc_hold_speed">Nopeus 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Kirjanmerkit</string>
+    <string name="pc_bookmarks_n">Kirjanmerkit · %1$d</string>
+    <string name="pc_bookmark_add">Lisää kirjanmerkki</string>
+    <string name="pc_bookmark_empty">Merkitse hetki, johon haluat palata, yllä olevalla +-painikkeella.</string>
+    <string name="pc_bookmark_remove">Poista kirjanmerkki kohdasta %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Ohita alku- ja lopputekstit</string>
+    <string name="pc_skip_intro_set">Alkutekstit %1$s asti</string>
+    <string name="pc_skip_outro_set">lopputekstit %1$s</string>
+    <string name="pc_skip_mark_intro">Alku päättyy tähän</string>
+    <string name="pc_skip_mark_outro">Lopputekstit alkavat</string>
+    <string name="pc_skip_clear">Tyhjennä alku- ja lopputekstit</string>
+    <string name="pc_skip_intro_hint">Sarjan kaikki myöhemmät jaksot alkavat tästä</string>
+    <string name="pc_skip_outro_hint">Sarjan kaikki myöhemmät jaksot siirtyvät tästä seuraavaan</string>
+    <string name="vid_intro_skipped">Alkutekstit ohitettu</string>
+    <string name="vid_watch_intro">Katso</string>
+    <string name="vid_chapter_intro">Alkutekstit · %1$s jäljellä</string>
+    <string name="vid_chapter_outro">Lopputekstit · %1$s jäljellä</string>
+    <string name="vid_skip">Ohita</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Tuntematon muoto</string>
+    <string name="pc_track_unknown">Tuntematon raita</string>
+    <string name="pc_track_n">Raita %1$d</string>
+    <string name="pc_track_external_sub">Ulkoinen tekstitys</string>
+    <string name="pc_track_external">Ulkoinen</string>
+    <string name="pc_track_embedded">Upotettu</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">HW</string>
+    <string name="pc_dec_software">SW</string>
+    <string name="pc_dec_audio">Ääni</string>
+    <string name="pc_frames">Pudotettu %1$d / piirretty %2$d</string>
+    <string name="pc_env_dim">Himmennä toiston ajaksi</string>
+    <string name="pc_env_viewing_light">Valaistus toiston aikana</string>
+    <string name="pc_env_dim_hint">Katselun aikana käytetään valittua kirkkautta. Valot kirkastuvat, kun keskeytät toiston tai avaat säätimet.</string>
+    <string name="pc_env_lights">Valot</string>
+    <string name="pc_env_lights_hint">Paikan omat valot päälle tai pois; kun ne ovat päällä, ”Himmennä toiston ajaksi” himmentää ne silti elokuvan ajaksi</string>
+    <string name="pc_env_seat">Istuin</string>
+    <string name="pc_seat_center">Keskellä</string>
+    <string name="pc_seat_left">Vasen</string>
+    <string name="pc_seat_right">Oikea</string>
+    <string name="pc_seat_left_window">Vasen ikkunapaikka</string>
+    <string name="pc_seat_right_window">Oikea ikkunapaikka</string>
+    <string name="pc_env_screen">Elokuva ja tekstitys</string>
+    <string name="pc_env_screen_hint">Elokuva ja tekstitys näkyvät tilan valkokankaalla.</string>
+    <string name="pc_env_glow">Valkokankaan valo</string>
+    <string name="pc_env_glow_hint">Elokuvan värit heijastuvat valkokankaan kehykseen ja lähellä oleviin pintoihin.</string>
+    <string name="pc_env_screen_none">Täällä ei ole näyttöä – elokuva pysyy ikkunassa</string>
+    <string name="pc_env_has_screen">Näytöllinen</string>
+    <string name="pc_env_entering">Avataan %1$s…</string>
+    <string name="pc_env_failed">%1$s: lataus epäonnistui</string>
+    <string name="pc_lang_simplified">Yksinkertaistettu kiina</string>
+    <string name="pc_lang_traditional">Perinteinen kiina</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d ääniraita lisää</item>
+        <item quantity="other">%d ääniraitaa lisää</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Tiedostossa on ääntä, jota sisäänrakennettu soitin ei osaa lukea – toista se mpv:llä</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d kuvapohjainen tekstitystiedosto</item>
+        <item quantity="other">%d kuvapohjaista tekstitystiedostoa</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS elokuvan vieressä – sisäänrakennettu soitin ei osaa piirtää niitä; toista se mpv:llä</string>
+    <string name="pc_pano_format">Panoraamamuoto</string>
+    <string name="pc_pano_equirect">Ekvirekt.</string>
+    <string name="pc_pano_fisheye">Kalansilmä</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Kuutiokartta</string>
+    <string name="pc_pano_dual">Kaksoiskalansilmä</string>
+    <string name="pc_pano_direction">Suunta</string>
+    <string name="pc_pano_turn_left">Käännä vasemmalle</string>
+    <string name="pc_pano_recenter">Keskitä</string>
+    <string name="pc_pano_turn_right">Käännä oikealle</string>
+    <string name="pc_pano_turn_hint">Kääntää kuvaa 30° ympärilläsi – näet, mitä on takanasi, kääntymättä</string>
+    <string name="pc_pano_recenter_hint">Asettaa elokuvan etusuunnan sinne, minne katsot</string>
+    <string name="pc_pano_own">Tiedoston verkko</string>
+    <string name="pc_info_format">Muoto</string>
+    <string name="pc_info_spatial_video">Tilavideo</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, kaksi näkymää (vasen silmä näytetään)</string>
+    <string name="pc_info_camera">%1$d° kuvakulma · %2$d mm väli</string>
+    <string name="pc_info_right_first">oikea silmä ensin</string>
+    <string name="pc_audio_field">Ambisoninen</string>
+    <string name="vid_pano_guess_360">Tämä näyttää 360°-videolta</string>
+    <string name="vid_pano_guess_360_3d">Tämä näyttää 360° 3D -videolta</string>
+    <string name="vid_pano_guess_180_3d">Tämä näyttää 180° 3D -videolta (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Tämä näyttää kalansilmävideolta</string>
+    <string name="vid_pano_guess_fisheye_3d">Tämä näyttää 180° 3D -kalansilmävideolta</string>
+    <string name="vid_pano_guess_dual">Tämä näyttää 360-kameran kahden linssin alkuperäistallenteelta</string>
+    <string name="vid_pano_guess_play">Toista panoraamana</string>
+    <string name="vid_pano_guess_no">Ei ole</string>
+    <string name="pc_pano_tilt_up">Ylös</string>
+    <string name="pc_pano_tilt_down">Alas</string>
+    <string name="pc_pano_roll_left">Kallista vasemmalle</string>
+    <string name="pc_pano_roll_right">Kallista oikealle</string>
+    <string name="pc_pano_level">Suorista</string>
+    <string name="pc_pano_level_hint">Vinolle horisontille: 5° painallukselta, muistetaan tälle elokuvalle</string>
+</resources>

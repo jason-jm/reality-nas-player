@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Nog geen films</string>
+    <string name="lib_add_source">Bron toevoegen</string>
+    <string name="lib_empty_search_hint">Zoeken doorzoekt elke titel en bestandsnaam in de bibliotheek.</string>
+    <string name="lib_search_clear">Zoekopdracht wissen</string>
+    <string name="lib_empty_favorites_title">Nog geen favorieten</string>
+    <string name="lib_empty_history_title">Nog niets bekeken</string>
+    <string name="lib_empty_shelf_hint">Titels komen op deze plank zodra de herkenning weet wat ze zijn.</string>
+    <string name="lib_show_all">Alle titels bekijken</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Resultaten voor “%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d resultaat</item>
+        <item quantity="other">%1$d resultaten</item>
+    </plurals>
+    <string name="lib_search_people_title">Personen</string>
+    <string name="lib_search_titles">Titels</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Via acteurs en makers</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d persoon</item>
+        <item quantity="other">%1$d personen</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d titel</item>
+        <item quantity="other">%1$d titels</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Cijfers en tekens</string>
+    <string name="lib_index_unidentified">Niet herkend</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Dit jaar: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Dit jaar: %1$s gekeken</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d film</item>
+        <item quantity="other">%1$d films</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d aflevering</item>
+        <item quantity="other">%1$d afleveringen</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">ongeveer %1$d uur</item>
+        <item quantity="other">ongeveer %1$d uur</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Niets meer te herkennen – de wand is bijgewerkt.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Afspelen · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Niet gekoppeld</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filter</string>
+    <string name="lib_filter_n">Filter · %1$d</string>
+    <string name="lib_filter_watch">Kijkstatus</string>
+    <string name="lib_filter_any">Alles</string>
+    <string name="lib_filter_unwatched">Niet bekeken</string>
+    <string name="lib_filter_in_progress">Bezig</string>
+    <string name="lib_filter_watched">Bekeken</string>
+    <string name="lib_filter_genre">Genre</string>
+    <string name="lib_filter_decade">Decennium</string>
+    <string name="lib_filter_picture">Beeld</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">Jaren %1$d</string>
+    <string name="lib_filter_reset">Filters resetten</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d titel</item>
+        <item quantity="other">%d titels</item>
+    </plurals>
+    <string name="lib_empty_filter">Niets voldoet aan deze filters</string>
+    <string name="lib_empty_filter_hint">Probeer andere keuzes of wis de filters.</string>
+    <string name="lib_filter_clear">Filters wissen</string>
+    <string name="lib_recently_added">Recent toegevoegd</string>
+    <string name="lib_recently_added_on">Recent toegevoegd · %1$s</string>
+    <string name="lib_surprise">Verras me</string>
+    <string name="lib_because">Omdat je %1$s hebt gekeken</string>
+    <string name="lib_history_today">Vandaag</string>
+    <string name="lib_history_yesterday">Gisteren</string>
+    <string name="lib_history_this_week">Eerder deze week</string>
+    <string name="lib_history_this_month">Eerder deze maand</string>
+    <string name="lib_history_earlier">Daarvoor</string>
+</resources>

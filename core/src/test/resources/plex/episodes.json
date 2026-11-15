@@ -1,0 +1,9 @@
+{"MediaContainer":{"size":2,"totalSize":2,"offset":0,"allowSync":true,"librarySectionID":2,"librarySectionTitle":"剧集","Metadata":[
+{"ratingKey":"301","key":"/library/metadata/301","parentRatingKey":"300","grandparentRatingKey":"299","guid":"plex://episode/5d9c1c5b7b1c8a001f2a1001","type":"episode","title":"从零开始","grandparentKey":"/library/metadata/299","parentKey":"/library/metadata/300","grandparentTitle":"Pioneer One","parentTitle":"Season 1","contentRating":"TV-14","summary":"第一集。","index":1,"parentIndex":1,"year":2010,"thumb":"/library/metadata/301/thumb/1700000301","art":"/library/metadata/299/art/1700000299","grandparentThumb":"/library/metadata/299/thumb/1700000299","duration":2100000,
+ "Media":[{"id":701,"Part":[{"id":801,"key":"/library/parts/801/1700000301/file.mkv","file":"/data/tv/Pioneer One/S01E01.mkv"}]}],
+ "Director":[{"tag":"Bracey Smith"}],"Writer":[{"tag":"Josh Bernhard"}],
+ "Role":[{"tag":"James Rich","role":"Tom Taylor"}],
+ "Guid":[{"id":"tmdb://1000001"}]},
+{"ratingKey":"302","key":"/library/metadata/302","parentRatingKey":"300","grandparentRatingKey":"299","type":"episode","title":"The Man from Mars","grandparentTitle":"Pioneer One","parentTitle":"Season 1","index":2,"parentIndex":1,"thumb":"/library/metadata/302/thumb/1700000302","grandparentThumb":"/library/metadata/299/thumb/1700000299","duration":2200000,
+ "Media":[{"id":702,"Part":[{"id":802,"key":"/library/parts/802/1700000302/file.mkv","file":"/data/tv/Pioneer One/S01E02.mkv"}]}]}
+]}}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Odebrat z oblíbených</string>
+    <string name="det_up_next">Další na řadě</string>
+    <string name="det_section_main">Hlavní</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Řada %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">Označit vše jako zhlédnuté?</string>
+    <string name="det_mark_all_unwatched_q">Označit vše jako nezhlédnuté?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d soubor bude označen jako zhlédnutý.</item>
+        <item quantity="few">%1$d soubory budou označeny jako zhlédnuté.</item>
+        <item quantity="many">%1$d souboru bude označeno jako zhlédnuté.</item>
+        <item quantity="other">%1$d souborů bude označeno jako zhlédnuté.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d z nich je rozkoukaný a ztratí svou pozici.</item>
+        <item quantity="few">%1$d z nich jsou rozkoukané a ztratí svou pozici.</item>
+        <item quantity="many">%1$d z nich je rozkoukáno a ztratí svou pozici.</item>
+        <item quantity="other">%1$d z nich je rozkoukaných a ztratí svou pozici.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Postup sledování %1$d souboru bude vymazán.</item>
+        <item quantity="few">Postup sledování %1$d souborů bude vymazán.</item>
+        <item quantity="many">Postup sledování %1$d souboru bude vymazán.</item>
+        <item quantity="other">Postup sledování %1$d souborů bude vymazán.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Zdroj</string>
+    <string name="fix_scope">Použít na</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Celou kartu (%1$d soubor)</item>
+        <item quantity="few">Celou kartu (%1$d soubory)</item>
+        <item quantity="many">Celou kartu (%1$d souboru)</item>
+        <item quantity="other">Celou kartu (%1$d souborů)</item>
+    </plurals>
+    <string name="fix_scope_file">Jen tento soubor</string>
+    <string name="fix_query_hint">Název — nejlépe fungují anglické názvy</string>
+    <string name="fix_hint">Vyberte správnou položku a opravte shodu</string>
+    <string name="fix_applying">Přiřazování…</string>
+    <string name="fix_failed">Tuto položku nelze použít. Zkontrolujte síť a zkuste to znovu.</string>
+    <string name="fix_kind_movie">Film</string>
+    <string name="fix_kind_show">Seriál</string>
+    <string name="fix_current">Aktuální</string>
+    <string name="fix_no_results_title">Žádné odpovídající položky</string>
+    <string name="fix_no_results_anilist">Zkuste jiný přepis — nejlépe fungují názvy v rómadži nebo anglicky.</string>
+    <string name="fix_error_title">Hledání se nedokončilo</string>
+    <string name="fix_error_body">Zkontrolujte síť a zkuste to znovu.</string>
+    <string name="fix_retry">Zkusit znovu</string>
+    <string name="fix_confirm_title">Změnit na „%1$s“?</string>
+    <string name="fix_confirm_title_year">Změnit na „%1$s“ (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">%1$d soubor této karty bude odteď používat tuto položku a pozdější rozpoznávání ji nezmění.</item>
+        <item quantity="few">Všechny %1$d soubory této karty budou odteď používat tuto položku a pozdější rozpoznávání ji nezmění.</item>
+        <item quantity="many">Všech %1$d souboru této karty bude odteď používat tuto položku a pozdější rozpoznávání ji nezmění.</item>
+        <item quantity="other">Všech %1$d souborů této karty bude odteď používat tuto položku a pozdější rozpoznávání ji nezmění.</item>
+    </plurals>
+    <string name="fix_confirm_file">Jen „%1$s“ bude odteď používat tuto položku a pozdější rozpoznávání ji nezmění.</string>
+    <string name="fix_apply">Použít</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d další</item>
+        <item quantity="few">%d další</item>
+        <item quantity="many">%d dalšího</item>
+        <item quantity="other">%d dalších</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d další titul ve vaší knihovně</item>
+        <item quantity="few">%d další tituly ve vaší knihovně</item>
+        <item quantity="many">%d dalšího titulu ve vaší knihovně</item>
+        <item quantity="other">%d dalších titulů ve vaší knihovně</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d titul ve vaší knihovně</item>
+        <item quantity="few">%d tituly ve vaší knihovně</item>
+        <item quantity="many">%d titulu ve vaší knihovně</item>
+        <item quantity="other">%d titulů ve vaší knihovně</item>
+    </plurals>
+    <string name="det_similar">Podobné tituly</string>
+    <string name="det_episode_copy">%1$s · další kopie</string>
+    <string name="det_season_progress">Zhlédnuto %1$d z %2$d</string>
+    <plurals name="det_season_done">
+        <item quantity="one">Zhlédnut %1$d díl</item>
+        <item quantity="few">Zhlédnuty všechny %1$d díly</item>
+        <item quantity="many">Zhlédnuto všech %1$d dílu</item>
+        <item quantity="other">Zhlédnuto všech %1$d dílů</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Verze</string>
+    <string name="det_series">V této sérii</string>
+    <string name="lib_series">Série</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d titul</item>
+        <item quantity="few">%d tituly</item>
+        <item quantity="many">%d titulu</item>
+        <item quantity="other">%d titulů</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d titul v této knihovně, v pořadí, v jakém vycházely</item>
+        <item quantity="few">%d tituly v této knihovně, v pořadí, v jakém vycházely</item>
+        <item quantity="many">%d titulu v této knihovně, v pořadí, v jakém vycházely</item>
+        <item quantity="other">%d titulů v této knihovně, v pořadí, v jakém vycházely</item>
+    </plurals>
+</resources>

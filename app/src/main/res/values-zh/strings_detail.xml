@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 详情页与修正匹配。 -->
+<resources>
+    <!-- 详情页 -->
+    <string name="det_unfavorite">取消收藏</string>
+    <string name="det_up_next">接下来</string>
+    <string name="det_section_main">正片</string>
+    <!-- 多季剧集的播放按钮里的集名：「第 2 季 第 1 集」。 -->
+    <string name="det_episode_in_season">第 %1$d 季 %2$s</string>
+    <string name="det_mark_all_watched_q">全部标为已看？</string>
+    <string name="det_mark_all_unwatched_q">全部标为未看？</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="other">%1$d 个文件会标为已看。</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="other">其中 %1$d 个看到一半，续播位置会被清除。</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="other">%1$d 个文件的观看进度会被清除。</item>
+    </plurals>
+
+    <!-- 修正匹配 -->
+    <string name="fix_source">来源</string>
+    <string name="fix_scope">应用到</string>
+    <plurals name="fix_scope_card">
+        <item quantity="other">整张卡（%1$d 个文件）</item>
+    </plurals>
+    <string name="fix_scope_file">仅此文件</string>
+    <string name="fix_query_hint">输入片名，英文片名更容易命中</string>
+    <string name="fix_hint">点选正确的条目来修正</string>
+    <string name="fix_applying">正在应用…</string>
+    <string name="fix_failed">没能应用这个条目，请检查网络后重试。</string>
+    <string name="fix_kind_movie">电影</string>
+    <string name="fix_kind_show">剧集</string>
+    <string name="fix_current">当前</string>
+    <string name="fix_no_results_title">没有找到匹配的条目</string>
+    <string name="fix_no_results_anilist">换个写法试试，罗马音或英文名更容易命中。</string>
+    <string name="fix_error_title">搜索没能完成</string>
+    <string name="fix_error_body">检查网络后再试一次。</string>
+    <string name="fix_retry">重试</string>
+    <string name="fix_confirm_title">改为「%1$s」？</string>
+    <string name="fix_confirm_title_year">改为「%1$s」（%2$d）？</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="other">这张卡的 %1$d 个文件都会改用这个条目，并就此固定，之后刮削不会再改动。</item>
+    </plurals>
+    <string name="fix_confirm_file">只有「%1$s」会改用这个条目，并就此固定，之后刮削不会再改动。</string>
+    <string name="fix_apply">应用</string>
+    <!-- 这个人在片库里的其他作品（演职人员一行、完整名单、作品面板）。 -->
+    <plurals name="det_person_more_works">
+        <item quantity="other">另有 %d 部</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="other">片库里还有 %d 部作品</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="other">片库里有 %d 部作品</item>
+    </plurals>
+    <string name="det_similar">相似作品</string>
+    <string name="det_episode_copy">%1$s · 另一版本</string>
+    <string name="det_season_progress">已看 %1$d / %2$d 集</string>
+    <plurals name="det_season_done">
+        <item quantity="other">已看完 · %1$d 集</item>
+    </plurals>
+    <string name="q_dolby_vision">杜比视界</string>
+    <string name="q_dolby_atmos">杜比全景声</string>
+    <string name="det_versions">版本</string>
+    <string name="det_series">系列作品</string>
+    <string name="lib_series">系列</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d 部</item>
+        <item quantity="other">%d 部</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">片库里有 %d 部，按上映先后</item>
+        <item quantity="other">片库里有 %d 部，按上映先后</item>
+    </plurals>
+</resources>

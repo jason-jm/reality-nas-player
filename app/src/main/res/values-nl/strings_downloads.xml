@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Downloads</string>
+    <string name="dl_notif_title">Downloaden naar deze headset</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Naar headset downloaden</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Volgende aflevering downloaden</item>
+        <item quantity="other">Volgende %d afleveringen downloaden</item>
+    </plurals>
+    <string name="dl_remove">Download verwijderen</string>
+    <string name="dl_pause">Pauzeren</string>
+    <string name="dl_resume">Hervatten</string>
+    <string name="dl_retry">Opnieuw proberen</string>
+    <string name="dl_on_headset">Op deze headset</string>
+    <plurals name="dl_added">
+        <item quantity="one">%d bestand wordt naar de headset gedownload</item>
+        <item quantity="other">%d bestanden worden naar de headset gedownload</item>
+    </plurals>
+    <string name="dl_added_none">Al in Downloads</string>
+    <string name="dl_removed">Download verwijderd</string>
+    <string name="dl_state_queued">Wachten</string>
+    <string name="dl_state_paused">Gepauzeerd</string>
+    <string name="dl_state_starting">Verbinden…</string>
+    <string name="dl_running">%1$s van %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Wachten op de gedeelde map · %1$s van %2$s</string>
+    <string name="dl_failed_no_room">Niet genoeg ruimte op de headset</string>
+    <string name="dl_failed_unreachable">Kan de gedeelde map niet bereiken</string>
+    <string name="dl_failed_disk">Kan het bestand niet opslaan</string>
+    <string name="dl_empty">Nog niets gedownload</string>
+    <string name="dl_empty_hint">Houd een poster of aflevering ingedrukt en kies Naar headset downloaden om hem buitenshuis te kijken.</string>
+    <string name="dl_space">%1$s gedownload · %2$s vrij</string>
+    <string name="dl_section_active">Actief</string>
+    <string name="dl_section_done">Op deze headset</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%1$d%% · nog %2$d</item>
+        <item quantity="other">%1$d%% · nog %2$d</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">De bekeken download verwijderen</item>
+        <item quantity="other">%d bekeken verwijderen</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">%1$d bekeken download verwijderd · %2$s vrijgemaakt</item>
+        <item quantity="other">%1$d bekeken downloads verwijderd · %2$s vrijgemaakt</item>
+    </plurals>
+    <string name="dl_cancel">Download annuleren</string>
+    <string name="dl_failed_snack">Kan %1$s niet downloaden: %2$s</string>
+    <string name="set_downloads">Gedownload naar deze headset</string>
+    <string name="set_downloads_none">Nog niets: houd een poster ingedrukt om hem te downloaden.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d bestand · %2$s</item>
+        <item quantity="other">%1$d bestanden · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Bekijken</string>
+    <string name="set_downloads_clear">Alle downloads verwijderen</string>
+    <string name="set_downloads_clear_hint">Elke kopie op de headset, en de downloads die nog bezig zijn. De bestanden op je gedeelde mappen blijven onaangeroerd.</string>
+    <string name="set_downloads_clear_q">Alle downloads verwijderen?</string>
+    <string name="set_downloads_clear_body">De kopieën op deze headset worden verwijderd. De bestanden op je NAS blijven zoals ze zijn.</string>
+    <string name="set_downloads_cleared">Alle downloads verwijderd</string>
+    <string name="set_downloads_clear_action">Verwijderen…</string>
+    <string name="set_downloads_clear_confirm">Verwijderen</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Downloaden</string>
+    <string name="dl_player_done">Gedownload</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">%d downloaden</item>
+        <item quantity="other">%d downloaden</item>
+    </plurals>
+    <string name="dl_folder">Deze map downloaden</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">%d bestand downloaden?</item>
+        <item quantity="other">Deze %d bestanden downloaden?</item>
+    </plurals>
+    <string name="dl_folder_body">Ze worden een voor een gedownload; er is %1$s vrij op de headset, en 2 GB blijft altijd vrij.</string>
+    <string name="dl_folder_go">Downloaden</string>
+    <string name="vid_play_copy">%1$s afspelen vanaf de headset</string>
+    <string name="lib_offline">Offline · alleen downloads spelen af</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Offline · %d download speelt hier af</item>
+        <item quantity="other">Offline · %d downloads spelen hier af</item>
+    </plurals>
+    <string name="set_cast_privacy">Casts ontvangen (uit tenzij je het aanzet)</string>
+    <string name="set_cast_privacy_body">De headset maakt zich alleen in je eigen netwerk bekend, zodat telefoons hem kunnen tonen. Een telefoon stuurt het adres van een video en de headset speelt vanaf daar af; niets gaat via Reality NAS Player, en niets wat wordt gecast, wordt vastgelegd.</string>
+    <string name="set_downloads_privacy">Downloads</string>
+    <string name="set_downloads_privacy_body">Kopieën die je downloadt, worden van je eigen server gelezen en alleen op de headset bewaard. Verwijder ze bij Downloads, of allemaal tegelijk bij Bibliotheek.</string>
+    <string name="dl_finished_one">Nu op de headset: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d bestand staat nu op de headset</item>
+        <item quantity="other">%d bestanden staan nu op de headset</item>
+    </plurals>
+    <string name="set_delete_watched">Downloads verwijderen na het kijken</string>
+    <string name="set_delete_watched_hint">Een kopie die tot het einde is bekeken, verdwijnt van de headset; het bestand op je NAS blijft</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">%d bekeken download verwijderd</item>
+        <item quantity="other">%d bekeken downloads verwijderd</item>
+    </plurals>
+    <string name="dl_space_free">%1$s vrij op de headset</string>
+    <string name="pc_info_source">Bron</string>
+    <string name="pc_info_from_share">Gedeelde map op %1$s</string>
+    <string name="dl_slowed">vertraagd terwijl je kijkt</string>
+</resources>

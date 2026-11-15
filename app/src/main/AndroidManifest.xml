@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- TMDB scraping + remote streaming -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 接收投屏: SSDP discovery is multicast, which Wi-Fi drops unless a lock asks for it. -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!-- Local media library scan -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <!-- A scrape pass is hours long; the dataSync foreground service keeps it alive when the
+         spatial window closes (three overnight runs died as background-ANR kills without it). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <application
+        android:name=".platform.SpatialApplication"
+        android:largeHeap="true"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appLabel}"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpatialApp"
+        tools:targetApi="31">
+
+        <meta-data android:name="icon.3d.list" android:resource="@array/icon_3d_list" />
+        <meta-data android:name="icon.sdf.list" android:resource="@array/icon_sdf_list" />
+
+        <!-- App-level Vibrant: keep ON per design system (default true; declared explicitly) -->
+        <meta-data
+            android:name="com.pico.spatial.ui.isVibrant"
+            android:value="true" />
+
+        <!-- Keep the store manifest on the stable Spatial APIs even if a dependency declares an opt-in. -->
+        <meta-data
+            android:name="pico.spatial.use_experimental_api"
+            tools:node="remove" />
+
+        <activity
+            android:name=".platform.LaunchActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SpatialApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 打开方式: other apps (file managers, browsers) can hand us a video to play. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+
+            <!-- Planar DefaultWindowContainer Configuration (Aura library window) -->
+            <meta-data android:name="pico.spatial.windowcontainer.id" android:value="AuraLibraryWindow"/>
+
+            <!-- Form: "1" Planar -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.style"
+                android:value="1" />
+
+            <!-- Default size: poster wall (video has its own window now) sized so ~2 rows are
+                 visible with the third row just peeking out. User-resizable. -->
+            <meta-data android:name="pico.spatial.windowcontainer.defaultsize" android:value="1280x960" />
+            <meta-data android:name="pico.spatial.windowcontainer.defaultsize.unit" android:value="dp" />
+
+            <!-- Resize type: "1" ContentMinSize -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.resizetype"
+                android:value="1" />
+
+            <!-- Resize restriction: "0" NonUniformResizable -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.resizerestriction"
+                android:value="0" />
+
+            <!-- Scale type: "1" Dynamic (legible at any distance) -->
+            <meta-data android:name="pico.spatial.windowcontainer.worldscaletype" android:value="1" />
+
+            <!-- Caption bar: "0" always visible -->
+            <meta-data android:name="pico.spatial.windowcontainer.captionbar" android:value="0" />
+
+            <!-- Material background: "1" Material.Regular. This is the real system frosted-glass
+                 base panel AND what enables the Vibrant color system app-wide (the SDK gates
+                 Vibrant on it). The video is positioned a small depth IN FRONT of this back-plane
+                 (see VideoScreen depth()) so it isn't occluded by the base panel on hardware. -->
+            <meta-data
+                android:name="pico.spatial.windowcontainer.materialbackground"
+                android:value="1"/>
+        </activity>
+
+        <service
+            android:name=".platform.LibraryTaskService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+    </application>
+
+</manifest>

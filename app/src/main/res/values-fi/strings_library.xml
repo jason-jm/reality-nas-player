@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Ei vielä elokuvia</string>
+    <string name="lib_add_source">Lisää lähde</string>
+    <string name="lib_empty_search_hint">Haku käy läpi kaikki kirjaston nimikkeet ja tiedostonimet.</string>
+    <string name="lib_search_clear">Tyhjennä haku</string>
+    <string name="lib_empty_favorites_title">Ei vielä suosikkeja</string>
+    <string name="lib_empty_history_title">Mitään ei ole vielä katsottu</string>
+    <string name="lib_empty_shelf_hint">Nimikkeet tulevat tälle hyllylle, kun tunnistus tietää, mitä ne ovat.</string>
+    <string name="lib_show_all">Selaa kaikkia nimikkeitä</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Tulokset haulle ”%1$s”</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d tulos</item>
+        <item quantity="other">%1$d tulosta</item>
+    </plurals>
+    <string name="lib_search_people_title">Henkilöt</string>
+    <string name="lib_search_titles">Nimikkeet</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Tekijöiden kautta</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d henkilö</item>
+        <item quantity="other">%1$d henkilöä</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d nimike</item>
+        <item quantity="other">%1$d nimikettä</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Numerot ja merkit</string>
+    <string name="lib_index_unidentified">Tunnistamattomat</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Tänä vuonna: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Tänä vuonna katsottu %1$s</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d elokuva</item>
+        <item quantity="other">%1$d elokuvaa</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d jakso</item>
+        <item quantity="other">%1$d jaksoa</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">noin %1$d tunti</item>
+        <item quantity="other">noin %1$d tuntia</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d min</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Ei mitään tunnistettavaa – seinä on ajan tasalla.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Toista · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Ei tunnistettu</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Suodatin</string>
+    <string name="lib_filter_n">Suodatin · %1$d</string>
+    <string name="lib_filter_watch">Katselutila</string>
+    <string name="lib_filter_any">Kaikki</string>
+    <string name="lib_filter_unwatched">Katsomattomat</string>
+    <string name="lib_filter_in_progress">Kesken</string>
+    <string name="lib_filter_watched">Katsotut</string>
+    <string name="lib_filter_genre">Lajityyppi</string>
+    <string name="lib_filter_decade">Vuosikymmen</string>
+    <string name="lib_filter_picture">Kuva</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d-luku</string>
+    <string name="lib_filter_reset">Nollaa suodattimet</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d nimike</item>
+        <item quantity="other">%d nimikettä</item>
+    </plurals>
+    <string name="lib_empty_filter">Mikään ei vastaa näitä suodattimia</string>
+    <string name="lib_empty_filter_hint">Kokeile muita valintoja tai tyhjennä suodattimet.</string>
+    <string name="lib_filter_clear">Tyhjennä suodattimet</string>
+    <string name="lib_recently_added">Viimeksi lisätyt</string>
+    <string name="lib_recently_added_on">Viimeksi lisätyt · %1$s</string>
+    <string name="lib_surprise">Yllätä minut</string>
+    <string name="lib_because">Koska katsoit: %1$s</string>
+    <string name="lib_history_today">Tänään</string>
+    <string name="lib_history_yesterday">Eilen</string>
+    <string name="lib_history_this_week">Aiemmin tällä viikolla</string>
+    <string name="lib_history_this_month">Aiemmin tässä kuussa</string>
+    <string name="lib_history_earlier">Sitä ennen</string>
+</resources>

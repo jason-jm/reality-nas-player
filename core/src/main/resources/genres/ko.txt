@@ -1,0 +1,36 @@
+# Genre names in Korean — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = 액션
+Adventure = 모험
+Animation = 애니메이션
+Comedy = 코미디
+Crime = 범죄
+Documentary = 다큐멘터리
+Drama = 드라마
+Family = 가족
+Fantasy = 판타지
+History = 역사
+Horror = 공포
+Music = 음악
+Mystery = 미스터리
+Romance = 로맨스
+Science Fiction = SF
+Sci-Fi = SF
+TV Movie = TV 영화
+Thriller = 스릴러
+War = 전쟁
+Western = 서부
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = 에치
+Hentai = 성인
+Mahou Shoujo = 마법소녀
+Mecha = 메카
+Psychological = 심리
+Slice of Life = 일상
+Sports = 스포츠
+Supernatural = 초자연
+Politics = 정치

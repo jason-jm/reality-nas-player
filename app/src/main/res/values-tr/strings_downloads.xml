@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">İndirilenler</string>
+    <string name="dl_notif_title">Bu gözlüğe indiriliyor</string>
+    <string name="dl_notif_progress">%1$s · %%%2$d</string>
+    <string name="dl_add">Gözlüğe indir</string>
+    <plurals name="dl_add_next">
+        <item quantity="one">Sonraki %d bölümü indir</item>
+        <item quantity="other">Sonraki %d bölümü indir</item>
+    </plurals>
+    <string name="dl_remove">İndirmeyi kaldır</string>
+    <string name="dl_pause">Duraklat</string>
+    <string name="dl_resume">Sürdür</string>
+    <string name="dl_retry">Yeniden dene</string>
+    <string name="dl_on_headset">Bu gözlükte</string>
+    <plurals name="dl_added">
+        <item quantity="one">%d dosya gözlüğe indiriliyor</item>
+        <item quantity="other">%d dosya gözlüğe indiriliyor</item>
+    </plurals>
+    <string name="dl_added_none">Zaten İndirilenler’de</string>
+    <string name="dl_removed">İndirme kaldırıldı</string>
+    <string name="dl_state_queued">Bekliyor</string>
+    <string name="dl_state_paused">Duraklatıldı</string>
+    <string name="dl_state_starting">Bağlanıyor…</string>
+    <string name="dl_running">%1$s / %2$s · %3$s/sn</string>
+    <string name="dl_waiting_share">Paylaşım bekleniyor · %1$s / %2$s</string>
+    <string name="dl_failed_no_room">Gözlükte yeterli alan yok</string>
+    <string name="dl_failed_unreachable">Paylaşıma ulaşılamadı</string>
+    <string name="dl_failed_disk">Dosya kaydedilemedi</string>
+    <string name="dl_empty">Henüz indirilen bir şey yok</string>
+    <string name="dl_empty_hint">Evden uzakta izlemek için bir afişe veya bölüme uzun basın ve “Gözlüğe indir” seçeneğini belirleyin.</string>
+    <string name="dl_space">%1$s indirildi · %2$s boş</string>
+    <string name="dl_section_active">İndiriliyor</string>
+    <string name="dl_section_done">Bu gözlükte</string>
+    <plurals name="dl_nav_more">
+        <item quantity="one">%%%1$d · %2$d tane daha</item>
+        <item quantity="other">%%%1$d · %2$d tane daha</item>
+    </plurals>
+    <string name="dl_nav_one">%%%1$d</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="one">İzlenen %d tanesini kaldır</item>
+        <item quantity="other">İzlenen %d tanesini kaldır</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="one">İzlenmiş %1$d indirme kaldırıldı · %2$s boşaldı</item>
+        <item quantity="other">İzlenmiş %1$d indirme kaldırıldı · %2$s boşaldı</item>
+    </plurals>
+    <string name="dl_cancel">İndirmeyi iptal et</string>
+    <string name="dl_failed_snack">%1$s indirilemedi: %2$s</string>
+    <string name="set_downloads">Bu gözlüğe indirilenler</string>
+    <string name="set_downloads_none">Henüz yok: indirmek için bir afişe uzun basın.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="one">%1$d dosya · %2$s</item>
+        <item quantity="other">%1$d dosya · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Görüntüle</string>
+    <string name="set_downloads_clear">Tüm indirmeleri kaldır</string>
+    <string name="set_downloads_clear_hint">Gözlükteki tüm kopyalar ve hâlâ inmekte olanlar. Paylaşımlarınızdaki dosyalara dokunulmaz.</string>
+    <string name="set_downloads_clear_q">Tüm indirmeler kaldırılsın mı?</string>
+    <string name="set_downloads_clear_body">Bu gözlükteki kopyalar silinir. NAS’ınızdaki dosyalar olduğu gibi kalır.</string>
+    <string name="set_downloads_cleared">Tüm indirmeler kaldırıldı</string>
+    <string name="set_downloads_clear_action">Kaldır…</string>
+    <string name="set_downloads_clear_confirm">Kaldır</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">İndir</string>
+    <string name="dl_player_done">İndirildi</string>
+    <plurals name="dl_player_n">
+        <item quantity="one">İndir (%d)</item>
+        <item quantity="other">İndir (%d)</item>
+    </plurals>
+    <string name="dl_folder">Bu klasörü indir</string>
+    <plurals name="dl_folder_q">
+        <item quantity="one">%d dosya indirilsin mi?</item>
+        <item quantity="other">Bu %d dosya indirilsin mi?</item>
+    </plurals>
+    <string name="dl_folder_body">Dosyalar sırayla iner; gözlükte %1$s boş alan var ve her zaman 2 GB ayrılır.</string>
+    <string name="dl_folder_go">İndir</string>
+    <string name="vid_play_copy">Gözlükteki kopyayı oynat: %1$s</string>
+    <string name="lib_offline">Çevrimdışı · yalnızca indirilenler oynatılır</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="one">Çevrimdışı · burada %d indirme oynatılabilir</item>
+        <item quantity="other">Çevrimdışı · burada %d indirme oynatılabilir</item>
+    </plurals>
+    <string name="set_cast_privacy">Yayınları al (siz açmadıkça kapalı)</string>
+    <string name="set_cast_privacy_body">Gözlük kendini yalnızca kendi ağınızda duyurur, böylece telefonlar onu listeleyebilir. Telefon bir videonun adresini gönderir ve gözlük oradan oynatır; hiçbir şey Reality NAS Player üzerinden geçmez ve yayınlanan hiçbir şey kaydedilmez.</string>
+    <string name="set_downloads_privacy">İndirmeler</string>
+    <string name="set_downloads_privacy_body">İndirdiğiniz kopyalar kendi sunucunuzdan okunur ve yalnızca gözlükte saklanır. Bunları İndirilenler’den ya da hepsini birden Kitaplık’tan kaldırabilirsiniz.</string>
+    <string name="dl_finished_one">Artık gözlükte: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="one">%d dosya artık gözlükte</item>
+        <item quantity="other">%d dosya artık gözlükte</item>
+    </plurals>
+    <string name="set_delete_watched">İzlendikten sonra indirmeleri kaldır</string>
+    <string name="set_delete_watched_hint">Sonuna kadar izlenen kopya gözlükten silinir; NAS’ınızdaki dosya kalır</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="one">İzlenmiş %d indirme kaldırıldı</item>
+        <item quantity="other">İzlenmiş %d indirme kaldırıldı</item>
+    </plurals>
+    <string name="dl_space_free">Gözlükte %1$s boş</string>
+    <string name="pc_info_source">Kaynak</string>
+    <string name="pc_info_from_share">%1$s üzerindeki paylaşım</string>
+    <string name="dl_slowed">siz izlerken yavaşlatıldı</string>
+</resources>

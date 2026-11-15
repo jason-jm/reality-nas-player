@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">ダウンロード</string>
+    <string name="dl_notif_title">このヘッドセットにダウンロード中</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">ヘッドセットにダウンロード</string>
+    <plurals name="dl_add_next">
+        <item quantity="other">次の%d話をダウンロード</item>
+    </plurals>
+    <string name="dl_remove">ダウンロードを削除</string>
+    <string name="dl_pause">一時停止</string>
+    <string name="dl_resume">再開</string>
+    <string name="dl_retry">再試行</string>
+    <string name="dl_on_headset">このヘッドセット内</string>
+    <plurals name="dl_added">
+        <item quantity="other">%d ファイルをヘッドセットにダウンロード中</item>
+    </plurals>
+    <string name="dl_added_none">すでにダウンロード済みです</string>
+    <string name="dl_removed">ダウンロードを削除しました</string>
+    <string name="dl_state_queued">待機中</string>
+    <string name="dl_state_paused">一時停止中</string>
+    <string name="dl_state_starting">接続中…</string>
+    <string name="dl_running">%1$s / %2$s · %3$s/秒</string>
+    <string name="dl_waiting_share">共有を待っています · %1$s / %2$s</string>
+    <string name="dl_failed_no_room">ヘッドセットの空き容量が不足しています</string>
+    <string name="dl_failed_unreachable">共有に接続できませんでした</string>
+    <string name="dl_failed_disk">ファイルを保存できませんでした</string>
+    <string name="dl_empty">まだ何もダウンロードしていません</string>
+    <string name="dl_empty_hint">ポスターやエピソードを長押しして「ヘッドセットにダウンロード」を選ぶと、外出先でも見られます。</string>
+    <string name="dl_space">ダウンロード済み %1$s · 空き %2$s</string>
+    <string name="dl_section_active">ダウンロード中</string>
+    <string name="dl_section_done">このヘッドセット内</string>
+    <plurals name="dl_nav_more">
+        <item quantity="other">%1$d%% · ほか%2$d件</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="other">視聴済み%d件を削除</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="other">視聴済みのダウンロード%1$d件を削除 · %2$s を解放</item>
+    </plurals>
+    <string name="dl_cancel">ダウンロードをキャンセル</string>
+    <string name="dl_failed_snack">%1$s をダウンロードできませんでした: %2$s</string>
+    <string name="set_downloads">このヘッドセットにダウンロード済み</string>
+    <string name="set_downloads_none">まだありません。ポスターを長押しするとダウンロードできます。</string>
+    <plurals name="set_downloads_n">
+        <item quantity="other">%1$d ファイル · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">表示</string>
+    <string name="set_downloads_clear">すべてのダウンロードを削除</string>
+    <string name="set_downloads_clear_hint">ヘッドセット上のすべてのコピーと、ダウンロード中のもの。共有上のファイルには影響しません。</string>
+    <string name="set_downloads_clear_q">すべてのダウンロードを削除しますか？</string>
+    <string name="set_downloads_clear_body">このヘッドセット上のコピーが削除されます。NAS 上のファイルはそのまま残ります。</string>
+    <string name="set_downloads_cleared">すべてのダウンロードを削除しました</string>
+    <string name="set_downloads_clear_action">削除…</string>
+    <string name="set_downloads_clear_confirm">削除</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">ダウンロード</string>
+    <string name="dl_player_done">ダウンロード済み</string>
+    <plurals name="dl_player_n">
+        <item quantity="other">%d件をダウンロード</item>
+    </plurals>
+    <string name="dl_folder">このフォルダをダウンロード</string>
+    <plurals name="dl_folder_q">
+        <item quantity="other">%d ファイルをダウンロードしますか？</item>
+    </plurals>
+    <string name="dl_folder_body">順番にダウンロードします。ヘッドセットの空き容量は %1$s で、常に 2 GB は残します。</string>
+    <string name="dl_folder_go">ダウンロード</string>
+    <string name="vid_play_copy">ヘッドセットの%1$sを再生</string>
+    <string name="lib_offline">オフライン · ダウンロード済みのみ再生可能</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="other">オフライン · ダウンロード済みの%d件を再生できます</item>
+    </plurals>
+    <string name="set_cast_privacy">キャストを受信（オンにした場合のみ）</string>
+    <string name="set_cast_privacy_body">ヘッドセットは自分のネットワーク内でのみ存在を通知し、スマートフォンの一覧に表示されるようにします。スマートフォンは動画のアドレスを送り、ヘッドセットはそこから再生します。Reality NAS Player を経由するものはなく、キャストされた内容は記録されません。</string>
+    <string name="set_downloads_privacy">ダウンロード</string>
+    <string name="set_downloads_privacy_body">ダウンロードしたコピーは自分のサーバーから読み込まれ、ヘッドセットだけに保存されます。「ダウンロード」で削除するか、「ライブラリ」でまとめて削除できます。</string>
+    <string name="dl_finished_one">ヘッドセットにダウンロード完了: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="other">%d ファイルがヘッドセットにダウンロードされました</item>
+    </plurals>
+    <string name="set_delete_watched">視聴後にダウンロードを削除</string>
+    <string name="set_delete_watched_hint">最後まで見たコピーはヘッドセットから削除されます。NAS 上のファイルは残ります</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="other">視聴済みのダウンロード%d件を削除しました</item>
+    </plurals>
+    <string name="dl_space_free">ヘッドセットの空き容量 %1$s</string>
+    <string name="pc_info_source">ソース</string>
+    <string name="pc_info_from_share">%1$s 上の共有</string>
+    <string name="dl_slowed">視聴中は速度を抑えています</string>
+</resources>

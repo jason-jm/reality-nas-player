@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Henüz film yok</string>
+    <string name="lib_add_source">Kaynak ekle</string>
+    <string name="lib_empty_search_hint">Arama, kitaplıktaki tüm başlıklara ve dosya adlarına bakar.</string>
+    <string name="lib_search_clear">Aramayı temizle</string>
+    <string name="lib_empty_favorites_title">Henüz favori yok</string>
+    <string name="lib_empty_history_title">Henüz izlenen bir şey yok</string>
+    <string name="lib_empty_shelf_hint">Eşleştirme ne olduklarını öğrendiğinde başlıklar bu rafa gelir.</string>
+    <string name="lib_show_all">Tüm başlıklara göz at</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">“%1$s” için sonuçlar</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d sonuç</item>
+        <item quantity="other">%1$d sonuç</item>
+    </plurals>
+    <string name="lib_search_people_title">Kişiler</string>
+    <string name="lib_search_titles">Başlıklar</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">İlgili kişiler üzerinden</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d kişi</item>
+        <item quantity="other">%1$d kişi</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d başlık</item>
+        <item quantity="other">%1$d başlık</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Rakamlar ve simgeler</string>
+    <string name="lib_index_unidentified">Tanımlanmamış</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">Bu yıl: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">Bu yıl: %1$s izlendi</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d film</item>
+        <item quantity="other">%1$d film</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d bölüm</item>
+        <item quantity="other">%1$d bölüm</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">yaklaşık %1$d saat</item>
+        <item quantity="other">yaklaşık %1$d saat</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d dk</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Eşleştirilecek bir şey kalmadı — duvar güncel.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Oynat · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Eşleşmedi</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Filtre</string>
+    <string name="lib_filter_n">Filtre · %1$d</string>
+    <string name="lib_filter_watch">İzlenme durumu</string>
+    <string name="lib_filter_any">Tümü</string>
+    <string name="lib_filter_unwatched">İzlenmedi</string>
+    <string name="lib_filter_in_progress">Devam eden</string>
+    <string name="lib_filter_watched">İzlendi</string>
+    <string name="lib_filter_genre">Tür</string>
+    <string name="lib_filter_decade">On yıl</string>
+    <string name="lib_filter_picture">Görüntü</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d yılları</string>
+    <string name="lib_filter_reset">Filtreleri sıfırla</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d başlık</item>
+        <item quantity="other">%d başlık</item>
+    </plurals>
+    <string name="lib_empty_filter">Bu filtrelerle eşleşen bir şey yok</string>
+    <string name="lib_empty_filter_hint">Başka seçenekler deneyin veya filtreleri temizleyin.</string>
+    <string name="lib_filter_clear">Filtreleri temizle</string>
+    <string name="lib_recently_added">Son eklenenler</string>
+    <string name="lib_recently_added_on">Son eklenenler · %1$s</string>
+    <string name="lib_surprise">Rastgele seç</string>
+    <string name="lib_because">Şunu izlediğiniz için: %1$s</string>
+    <string name="lib_history_today">Bugün</string>
+    <string name="lib_history_yesterday">Dün</string>
+    <string name="lib_history_this_week">Bu hafta</string>
+    <string name="lib_history_this_month">Bu ay</string>
+    <string name="lib_history_earlier">Daha önce</string>
+</resources>

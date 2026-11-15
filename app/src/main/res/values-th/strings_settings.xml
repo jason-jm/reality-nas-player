@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">ลองอีกครั้ง</string>
+    <string name="md_secret_show">แสดง</string>
+    <string name="md_secret_hide">ซ่อน</string>
+    <string name="md_secret_show_named">แสดง %1$s</string>
+    <string name="md_secret_hide_named">ซ่อน %1$s</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">เกิดข้อผิดพลาดที่ไม่คาดคิด</string>
+    <string name="fault_unknown_detail">เกิดข้อผิดพลาดที่ไม่คาดคิด: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">กลับไปที่ประเภทแหล่งสื่อ</string>
+    <string name="sources_edit">แก้ไข</string>
+    <string name="sources_edit_title">แก้ไข “%1$s”</string>
+    <string name="sources_save_and_scan">บันทึกและสแกน</string>
+    <string name="sources_password_keep">เว้นว่างไว้เพื่อใช้รหัสผ่านที่บันทึกไว้</string>
+    <string name="sources_token_keep">เว้นว่างไว้เพื่อใช้โทเค็นที่บันทึกไว้</string>
+    <string name="sources_saved_placeholder">บันทึกแล้ว</string>
+    <string name="sources_smb_need_share">นี่เป็นแค่โฮสต์ แตะ “เรียกดูแชร์…” ที่มุมขวาบนเพื่อเลือกแชร์ หรือเขียนเป็น โฮสต์/แชร์ เพื่อเพิ่มโดยตรง</string>
+    <string name="sources_webdav_scheme">ที่อยู่ต้องขึ้นต้นด้วย http:// หรือ https://</string>
+    <string name="sources_remote_scheme">ที่อยู่นี้เป็นของเซิร์ฟเวอร์ประเภทอื่น ให้พิมพ์โดยไม่ใส่ส่วนก่อน ://</string>
+    <string name="sources_address_spaces">ที่อยู่ต้องไม่มีช่องว่าง</string>
+    <string name="sources_server_user_hint">บัญชีของคุณบนเซิร์ฟเวอร์ ที่ใช้ลงชื่อเข้าเว็บแอปของเซิร์ฟเวอร์</string>
+    <string name="sources_server_pass_hint">รหัสผ่านของบัญชีนั้น</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">เซิร์ฟเวอร์ %1$s</string>
+    <string name="sources_kind_dlna">เซิร์ฟเวอร์สื่อ DLNA</string>
+    <string name="sources_remove_action">ลบ…</string>
+    <string name="sources_removed">ลบ “%1$s” แล้ว</string>
+    <string name="sources_added_toast">เพิ่ม “%1$s” แล้ว กำลังสแกน</string>
+    <string name="sources_saved_toast">บันทึก “%1$s” แล้ว กำลังสแกนอีกครั้ง</string>
+    <string name="sources_fix_account">เปลี่ยนบัญชีหรือรหัสผ่าน</string>
+    <string name="sources_fix_account_hint">เชื่อมต่อแหล่งสื่อนี้ด้วยบัญชีที่ถูกต้อง</string>
+    <string name="sources_fix_address">ตรวจสอบรายละเอียดการเชื่อมต่อ</string>
+    <string name="sources_fix_address_hint">ตรวจสอบที่อยู่และพอร์ต หรือลองบัญชีอื่น แล้วสแกนอีกครั้ง</string>
+    <string name="sources_scan_busy">มีการสแกนหรือดึงข้อมูลอื่นกำลังทำงาน รายการนี้จะเริ่มได้เมื่อเสร็จ</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">กลับไปที่แชร์</string>
+    <string name="smb_back_servers">กลับไปที่เซิร์ฟเวอร์</string>
+    <string name="smb_saved_password">ใช้รหัสผ่านที่บันทึกไว้</string>
+    <string name="smb_signing_in">กำลังลงชื่อเข้าใช้…</string>
+    <string name="smb_subnet_invalid">ใส่ที่อยู่ IPv4 เช่น 192.168.1.100</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">ระบุจากชื่อไฟล์</string>
+    <string name="set_live_engine_exo">เอนจินขั้นสูง</string>
+    <string name="set_live_engine_system">เครื่องเล่นของระบบ</string>
+    <string name="set_live_spatial">%1$s · เสียงรอบทิศทาง</string>
+    <string name="set_live_sync_off">ปิด</string>
+    <string name="set_live_sync_on">เปิด</string>
+    <string name="set_live_sync_on_ago">เปิด · ซิงค์เมื่อ %1$s</string>
+    <string name="set_live_sync_failed">การซิงค์ครั้งล่าสุดล้มเหลว</string>
+    <string name="set_live_version">เวอร์ชัน %1$s</string>
+    <string name="set_live_sub">คำบรรยาย: %1$s</string>
+    <string name="set_live_audio">เสียง: %1$s</string>
+    <string name="set_live_night">โหมดกลางคืน</string>
+    <string name="set_live_no_autoplay">ไม่เล่นอัตโนมัติ</string>
+    <string name="set_pano_auto">เปิดวิดีโอ 360° / 180° แบบดื่มด่ำ</string>
+    <string name="set_pano_auto_on">เปิด: วิดีโอที่ระบุได้ว่าเป็น 360° หรือ 180° จะเปิดในพื้นที่ดื่มด่ำรอบตัวคุณ</string>
+    <string name="set_pano_auto_off">ปิด: วิดีโอ 360° และ 180° จะเริ่มในหน้าต่าง ใช้ ภาพ › พื้นที่รับชม เพื่อเข้าไป</string>
+    <string name="set_auto_skip_intro">ข้ามช่วงเปิดอัตโนมัติ</string>
+    <string name="set_auto_skip_intro_on">เปิด: เมื่อบทของไฟล์ระบุช่วงเปิดไว้ (OP, Opening…) จะข้ามทันทีที่เริ่ม ปุ่ม “ดูช่วงนี้” ด้านบนของภาพจะย้อนกลับไปดู</string>
+    <string name="set_auto_skip_intro_off">ปิด: เมื่อช่วงเปิดเริ่ม ด้านบนของภาพจะมีปุ่ม “ข้าม”</string>
+    <string name="set_live_auto_skip_intro">ข้ามช่วงเปิด</string>
+    <string name="set_version_build">เวอร์ชัน %1$s (%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">การจับคู่</string>
+    <string name="set_group_language">ภาษา</string>
+    <string name="set_language_ui">ภาษาของแอป</string>
+    <string name="set_language_ui_hint">ภาษาของเมนูและข้อความใน Reality NAS Player</string>
+    <string name="set_language_follow_app">เหมือนกับแอป</string>
+    <string name="set_language_meta">ภาษาของข้อมูลเมตา</string>
+    <string name="set_tmdb_key_label">API key ของ TMDB</string>
+    <string name="set_omdb_key_label">API key ของ OMDb</string>
+    <string name="set_keys_offline">การดึงข้อมูลแบบออฟไลน์เปิดอยู่ จึงยังไม่ใช้คีย์เหล่านี้ในตอนนี้</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">ลบ…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">เปิด: เอนจินเสียงรอบทิศทางของ PICO จะประมวลผลเสียง</string>
+    <string name="set_spatial_off">ปิด: เล่นมิกซ์ต้นฉบับของภาพยนตร์ตามที่สร้างมา</string>
+    <string name="set_fd_needs_system">รองรับเฉพาะเครื่องเล่นของระบบ: ปิด “เอนจินขั้นสูง” ด้านบนเพื่อใช้งาน</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">เติมข้อมูลและสร้างใหม่</string>
+    <string name="set_auto_scan">อัปเดตคลังสื่ออัตโนมัติ</string>
+    <string name="set_auto_scan_on">เปิด: เมื่อเปิดแอป จะหาไฟล์ที่เพิ่มในแหล่งสื่อตั้งแต่ครั้งล่าสุด (ไม่เกินทุก 6 ชั่วโมง) และจับคู่เฉพาะไฟล์ใหม่</string>
+    <string name="set_auto_scan_off">ปิด: ไฟล์ใหม่จะปรากฏหลังจากคุณสแกนใน “แหล่งสื่อ”</string>
+    <string name="set_rescrape">ดึงข้อมูลรายการที่ยังไม่เสร็จอีกครั้ง</string>
+    <string name="set_rescrape_hint">ลองอีกครั้งกับรายการที่ยังไม่มีโปสเตอร์หรือที่ดึงข้อมูลครั้งล่าสุดล้มเหลว รายการที่จับคู่แล้วจะไม่ถูกแตะต้อง</string>
+    <string name="set_rescrape_start">เริ่ม</string>
+    <string name="set_rescrape_started">เริ่มดึงข้อมูลใหม่แล้ว</string>
+    <string name="set_task_busy">มีการสแกนหรือดึงข้อมูลกำลังทำงาน งานใหม่จะเริ่มได้เมื่อเสร็จ</string>
+    <string name="set_clear_action">ล้าง…</string>
+    <string name="set_cleared">คลังสื่อว่างแล้ว</string>
+    <string name="set_clear_failed">ล้างคลังสื่อไม่ได้ โปรดลองอีกครั้งในอีกสักครู่</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">กำลังหาแชร์…</string>
+    <string name="sync_open_sources">เปิดแหล่งสื่อ</string>
+    <string name="sync_open_sources_hint">เพิ่มแชร์ NAS แล้วกลับมาที่นี่</string>
+    <string name="sync_this_device">เฮดเซ็ตนี้</string>
+    <string name="sync_readonly_title">แชร์นี้อ่านได้อย่างเดียว</string>
+    <string name="sync_remove_body_at">การนี้จะลบ “.aura” บน %1$s และบันทึกของทุกอุปกรณ์ในนั้น คลังสื่อและความคืบหน้าบนเฮดเซ็ตนี้จะยังคงเดิม</string>
+    <string name="sync_removed">ลบโฟลเดอร์ซิงค์แล้ว</string>
+    <string name="sync_remove_failed">ลบโฟลเดอร์ซิงค์ไม่ได้: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">เปิด “การดึงข้อมูล”</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” — %3$s</string>
+    <string name="set_licences">สัญญาอนุญาตโอเพนซอร์ส</string>
+    <string name="set_licences_hint">สัญญาอนุญาตของทุกคอมโพเนนต์ ซอร์สโค้ดของไลบรารี LGPL และวิธีแทนที่</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text added for the Sources and Settings master–detail pages. -->
+<resources>
+    <!-- Pieces both pages share -->
+    <string name="md_pair">%1$s · %2$s</string>
+    <string name="md_retry">다시 시도</string>
+    <string name="md_secret_show">표시</string>
+    <string name="md_secret_hide">숨기기</string>
+    <string name="md_secret_show_named">%1$s 표시</string>
+    <string name="md_secret_hide_named">%1$s 숨기기</string>
+    <string name="md_unknown">—</string>
+
+    <!-- Why a source could not be reached -->
+    <string name="fault_unknown">예기치 않은 문제가 발생했어요</string>
+    <string name="fault_unknown_detail">예기치 않은 문제가 발생했어요: %1$s</string>
+
+    <!-- Sources -->
+    <string name="sources_back_kinds">소스 유형으로 돌아가기</string>
+    <string name="sources_edit">편집</string>
+    <string name="sources_edit_title">‘%1$s’ 편집</string>
+    <string name="sources_save_and_scan">저장하고 스캔</string>
+    <string name="sources_password_keep">비워 두면 저장된 비밀번호를 유지해요</string>
+    <string name="sources_token_keep">비워 두면 저장된 토큰을 유지해요</string>
+    <string name="sources_saved_placeholder">저장됨</string>
+    <string name="sources_smb_need_share">호스트만 입력했어요. 오른쪽 위의 ‘공유 찾아보기…’를 눌러 공유를 고르거나, 호스트/공유 형식으로 입력해 바로 추가하세요</string>
+    <string name="sources_webdav_scheme">주소는 http:// 또는 https://로 시작해야 해요</string>
+    <string name="sources_remote_scheme">이 주소는 다른 종류의 서버용이에요. :// 앞부분을 빼고 입력하세요</string>
+    <string name="sources_address_spaces">주소에는 공백을 넣을 수 없어요</string>
+    <string name="sources_server_user_hint">서버의 웹 앱에 로그인할 때 쓰는 계정</string>
+    <string name="sources_server_pass_hint">해당 계정의 비밀번호</string>
+    <string name="sources_plex_token_label">X-Plex-Token</string>
+    <string name="sources_kind_server">%1$s 서버</string>
+    <string name="sources_kind_dlna">DLNA 미디어 서버</string>
+    <string name="sources_remove_action">삭제…</string>
+    <string name="sources_removed">‘%1$s’ 소스를 삭제했어요</string>
+    <string name="sources_added_toast">‘%1$s’ 소스를 추가했어요. 지금 스캔하는 중이에요</string>
+    <string name="sources_saved_toast">‘%1$s’ 소스를 저장했어요. 다시 스캔하는 중이에요</string>
+    <string name="sources_fix_account">계정 또는 비밀번호 변경</string>
+    <string name="sources_fix_account_hint">올바른 계정으로 이 소스에 연결하세요</string>
+    <string name="sources_fix_address">연결 정보 확인</string>
+    <string name="sources_fix_address_hint">주소와 포트를 확인하거나 다른 계정을 사용해 본 뒤 다시 스캔하세요</string>
+    <string name="sources_scan_busy">다른 스캔이나 스크래핑이 진행 중이에요. 끝나면 시작할 수 있어요</string>
+
+    <!-- Browsing and finding SMB servers -->
+    <string name="smb_back_shares">공유 목록으로 돌아가기</string>
+    <string name="smb_back_servers">서버 목록으로 돌아가기</string>
+    <string name="smb_saved_password">저장된 비밀번호 사용</string>
+    <string name="smb_signing_in">로그인 중…</string>
+    <string name="smb_subnet_invalid">IPv4 주소를 입력하세요(예: 192.168.1.100)</string>
+
+    <!-- Settings: the state under each row of the master column -->
+    <string name="set_live_offline">파일 이름으로 식별</string>
+    <string name="set_live_engine_exo">향상된 엔진</string>
+    <string name="set_live_engine_system">시스템 플레이어</string>
+    <string name="set_live_spatial">%1$s · 공간 음향</string>
+    <string name="set_live_sync_off">꺼짐</string>
+    <string name="set_live_sync_on">켜짐</string>
+    <string name="set_live_sync_on_ago">켜짐 · %1$s 동기화</string>
+    <string name="set_live_sync_failed">마지막 동기화에 실패했어요</string>
+    <string name="set_live_version">버전 %1$s</string>
+    <string name="set_live_sub">자막: %1$s</string>
+    <string name="set_live_audio">오디오: %1$s</string>
+    <string name="set_live_night">야간 모드</string>
+    <string name="set_live_no_autoplay">자동 재생 안 함</string>
+    <string name="set_pano_auto">360° / 180° 동영상을 몰입형으로 열기</string>
+    <string name="set_pano_auto_on">켜짐: 360° 또는 180°로 인식된 동영상은 사방을 둘러싸는 몰입형 공간에서 열려요.</string>
+    <string name="set_pano_auto_off">꺼짐: 360° 및 180° 동영상은 창에서 시작해요. 화면 › 시청 공간에서 몰입형으로 들어갈 수 있어요.</string>
+    <string name="set_auto_skip_intro">오프닝 자동 건너뛰기</string>
+    <string name="set_auto_skip_intro_on">켜짐: 파일의 챕터에 오프닝(OP, Opening 등)이 표시되어 있으면 시작하자마자 건너뛰어요. 화면 위쪽의 ‘인트로 보기’를 누르면 돌아가요.</string>
+    <string name="set_auto_skip_intro_off">꺼짐: 오프닝이 시작되면 화면 위쪽에 ‘건너뛰기’가 나타나요.</string>
+    <string name="set_live_auto_skip_intro">오프닝 건너뛰기</string>
+    <string name="set_version_build">버전 %1$s(%2$s)</string>
+
+    <!-- Settings: scraping -->
+    <string name="set_group_matching">매칭</string>
+    <string name="set_group_language">언어</string>
+    <string name="set_language_ui">앱 언어</string>
+    <string name="set_language_ui_hint">Reality NAS Player의 메뉴와 텍스트에 쓰는 언어예요.</string>
+    <string name="set_language_follow_app">앱 언어와 같게</string>
+    <string name="set_language_meta">메타데이터 언어</string>
+    <string name="set_tmdb_key_label">TMDB API 키</string>
+    <string name="set_omdb_key_label">OMDb API 키</string>
+    <string name="set_keys_offline">오프라인 스크래핑이 켜져 있어서 지금은 이 키들을 사용하지 않아요.</string>
+
+    <!-- Settings: AI matching -->
+    <string name="set_delete_action">삭제…</string>
+
+    <!-- Settings: playback -->
+    <string name="set_spatial_on">켜짐: PICO 공간 음향 엔진이 처리해요.</string>
+    <string name="set_spatial_off">꺼짐: 영화 본래의 믹스를 만들어진 그대로 재생해요.</string>
+    <string name="set_fd_needs_system">시스템 플레이어에서만 지원해요. 사용하려면 위의 ‘향상된 엔진’을 끄세요.</string>
+
+    <!-- Settings: library -->
+    <string name="set_group_upkeep">보완 및 다시 만들기</string>
+    <string name="set_auto_scan">라이브러리 자동 업데이트</string>
+    <string name="set_auto_scan_on">켜짐: 앱을 열면 지난번 이후 소스에 추가된 파일을 찾고(최대 6시간마다), 새 파일만 매칭해요.</string>
+    <string name="set_auto_scan_off">꺼짐: 새 파일은 ‘소스’에서 스캔한 후에 나타나요.</string>
+    <string name="set_rescrape">미완료 항목 다시 스크래핑</string>
+    <string name="set_rescrape_hint">아직 포스터가 없거나 지난 스크래핑에 실패한 항목을 다시 시도해요. 매칭된 항목은 그대로 둬요</string>
+    <string name="set_rescrape_start">시작</string>
+    <string name="set_rescrape_started">다시 스크래핑을 시작했어요</string>
+    <string name="set_task_busy">스캔이나 스크래핑이 진행 중이에요. 끝나면 새 작업을 시작할 수 있어요.</string>
+    <string name="set_clear_action">비우기…</string>
+    <string name="set_cleared">라이브러리를 비웠어요</string>
+    <string name="set_clear_failed">라이브러리를 비우지 못했어요. 잠시 후 다시 시도하세요</string>
+
+    <!-- Settings: sync -->
+    <string name="sync_location_loading">공유를 찾는 중…</string>
+    <string name="sync_open_sources">소스 열기</string>
+    <string name="sync_open_sources_hint">NAS 공유를 추가한 다음 여기로 돌아오세요</string>
+    <string name="sync_this_device">이 헤드셋</string>
+    <string name="sync_readonly_title">공유가 읽기 전용이에요</string>
+    <string name="sync_remove_body_at">%1$s의 ‘.aura’와 그 안의 모든 기기 기록을 삭제해요. 이 헤드셋의 라이브러리와 재생 위치는 그대로 유지돼요.</string>
+    <string name="sync_removed">동기화 폴더를 삭제했어요</string>
+    <string name="sync_remove_failed">동기화 폴더를 삭제하지 못했어요: %1$s</string>
+
+    <!-- Settings: privacy and about -->
+    <string name="set_privacy_go_scrape">스크래핑 열기</string>
+    <string name="set_tmdb_name">The Movie Database (TMDB)</string>
+    <string name="set_ffmpeg_name">FFmpeg</string>
+    <string name="set_mpv_name">mpv</string>
+    <string name="set_env_credit">%1$s · “%2$s” — %3$s</string>
+    <string name="set_licences">오픈소스 라이선스</string>
+    <string name="set_licences_hint">각 구성 요소의 라이선스, LGPL 라이브러리의 소스 코드와 교체 방법</string>
+</resources>

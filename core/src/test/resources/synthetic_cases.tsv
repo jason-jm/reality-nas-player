@@ -1,0 +1,292 @@
+# Synthetic long-tail cases for poster-wall grouping — hand-authored, no network, no device.
+#
+# Every row is one file. `work` is the card it SHOULD land on: rows sharing a work id must end up
+# on one card, rows with different ids must not. That expectation is a judgement about what the
+# poster wall ought to look like, not a restatement of the folder layout — several groups below
+# deliberately contradict "one folder = one work".
+#
+# columns: work <TAB> status <TAB> key <TAB> kind <TAB> tag <TAB> path <TAB> title <TAB> category <TAB> genres
+# (title/category/genres optional; `-` means absent. category is asserted by the category test.)
+#   status  MATCHED | UNMATCHED   (UNMATCHED exercises the folder-based fallback)
+#   key     collectionKey, "-" for none
+#   kind    MOVIE | EPISODE | SHOW | UNKNOWN
+#   tag     MAIN | EXTRA | MOVIE | -
+#   title   (optional 7th column) the SCRAPED title, when it differs from the file name
+work	status	key	kind	tag	path
+# ── 1. seasons of one show in sub-folders → ONE card ──────────────────────────────────────────
+natsume	MATCHED	anilist:4081	EPISODE	MAIN	smb://nas/video/Anime/夏目友人帐/Season 01/Natsume - 01.mkv
+natsume	MATCHED	anilist:4081	EPISODE	MAIN	smb://nas/video/Anime/夏目友人帐/Season 01/Natsume - 02.mkv
+natsume	MATCHED	anilist:4081	EPISODE	MAIN	smb://nas/video/Anime/夏目友人帐/Season 02/Natsume - 13.mkv
+# ── 2. a SEQUEL series in a sibling folder → its own card ─────────────────────────────────────
+sao1	MATCHED	anilist:11757	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online/[grp][Sword Art Online][01].mkv
+sao1	MATCHED	anilist:11757	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online/[grp][Sword Art Online][02].mkv
+sao2	MATCHED	anilist:20594	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online II/[grp][Sword Art Online II][01].mkv
+sao2	MATCHED	anilist:20594	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online II/[grp][Sword Art Online II][02].mkv
+# ── 3. 劇場版 inside the series folder, sharing the series' scraped id → its OWN card ──────────
+macross-tv	MATCHED	anilist:3572	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier/[grp][Macross_Frontier][01].mkv
+macross-tv	MATCHED	anilist:3572	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier/[grp][Macross_Frontier][02].mkv
+macross-movie	MATCHED	anilist:3572	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier 剧场版/[grp][Macross_Frontier_The_Movie][01].mkv
+# ── 4. a film's own 特典 live with the film, not with the series ───────────────────────────────
+macross-movie	MATCHED	anilist:3572	EPISODE	EXTRA	smb://nas/video/Anime/Macross Frontier 剧场版/映像特典/[grp][CM01].mkv
+# ── 5. NC OP/ED under Bonus Material → the SERIES card ────────────────────────────────────────
+codegeass	MATCHED	anilist:1575	EPISODE	MAIN	smb://nas/video/Anime/Code Geass/[grp]_Code_Geass_01.mkv
+codegeass	MATCHED	anilist:1575	EPISODE	EXTRA	smb://nas/video/Anime/Code Geass/Bonus Material/Clean OPs/[grp]Clean OP1.mkv
+# ── 6. a decorated Picture Drama SUBFOLDER → the series card, not a card of its own ────────────
+codegeass	MATCHED	anilist:1575	EPISODE	EXTRA	smb://nas/video/Anime/Code Geass/[grp]_Code_Geass_Picture_Drama_(1920x1080)/pd_0.56.mkv
+# ── 7. a BDMV disc tree bottoming out in numeric streams → the film it belongs to ──────────────
+gits-movie	MATCHED	anilist:43	MOVIE	MAIN	smb://nas/video/Anime/Ghost in the Shell 1995/BDMV/STREAM/00001.m2ts
+gits-movie	MATCHED	anilist:43	MOVIE	EXTRA	smb://nas/video/Anime/Ghost in the Shell 1995/BDMV/STREAM/00002.m2ts
+# ── 8. a bonus disc bundled with a CD, under the SHOW's folder → the show ──────────────────────
+sao1	MATCHED	anilist:11757	EPISODE	EXTRA	smb://nas/video/Anime/Sword Art Online/CDs/LiSA LANDSPACE/BD_ROM/BDMV/STREAM/00002.m2ts
+# ── 9. the same work in two folders (different encodes) → ONE card ────────────────────────────
+eightysix	MATCHED	anilist:116589	EPISODE	MAIN	smb://nas/video/Anime/86.BDRip.1080p/86 [01].mkv
+eightysix	MATCHED	anilist:116589	EPISODE	MAIN	smb://nas/video/Anime/86.TVRip.1080p/86.S01E01.mkv
+# ── 10. an English dub folder of a show already present → ONE card ────────────────────────────
+haruhi	MATCHED	anilist:849	EPISODE	MAIN	smb://nas/video/Anime/凉宫春日的忧郁/[grp] Suzumiya Haruhi - 01.mkv
+haruhi	MATCHED	anilist:849	EPISODE	MAIN	smb://nas/video/Anime/凉宫春日的忧郁 Eng/haruhi episode 1 english dub.flv
+# ── 11. a trilogy box: three films in ONE folder → three cards ─────────────────────────────────
+lotr1	MATCHED	id:120	MOVIE	MAIN	smb://nas/video/Movie/LOTR.Trilogy.Extended/The.Fellowship.of.the.Ring.2001.mkv
+lotr2	MATCHED	id:121	MOVIE	MAIN	smb://nas/video/Movie/LOTR.Trilogy.Extended/The.Two.Towers.2002.mkv
+lotr3	MATCHED	id:122	MOVIE	MAIN	smb://nas/video/Movie/LOTR.Trilogy.Extended/The.Return.of.the.King.2003.mkv
+# ── 12. a folder of UNRELATED one-off documentaries → one card EACH, never one card ────────────
+doc-a	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/NHK.纪录片.核黑市-巨大网络的内幕.avi
+doc-b	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/NHK.纪录片.秋叶原物语.avi
+doc-c	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/NHK.纪录片.欧洲野餐计划.avi
+# ── 13. a multi-part series inside that same flat folder → ONE card for its parts ──────────────
+doc-series	MATCHED	id:900	EPISODE	MAIN	smb://nas/video/Documentary/NHK/NHK映像的世纪（01）-二十世纪的开幕.avi
+doc-series	MATCHED	id:900	EPISODE	MAIN	smb://nas/video/Documentary/NHK/NHK映像的世纪（02）-大量杀戮的形成.avi
+# ── 14. one film split into CD1/CD2 → ONE card ────────────────────────────────────────────────
+fahrenheit	MATCHED	id:901	MOVIE	MAIN	smb://nas/video/Documentary/Fahrenheit 911/华氏911.CD1.rmvb
+fahrenheit	MATCHED	id:901	MOVIE	MAIN	smb://nas/video/Documentary/Fahrenheit 911/华氏911.CD2.rmvb
+# ── 15. titles that ARE numbers, and a year inside a title → separate cards, never merged ──────
+movie-2012	MATCHED	id:910	MOVIE	MAIN	smb://nas/video/Movie/2012/2012.2009.1080p.BluRay.mkv
+movie-1917	MATCHED	id:911	MOVIE	MAIN	smb://nas/video/Movie/1917/1917.2019.1080p.BluRay.mkv
+movie-1944	MATCHED	id:912	MOVIE	MAIN	smb://nas/video/Movie/1944/1944.2015.1080p.BluRay.mkv
+blade2049	MATCHED	id:913	MOVIE	MAIN	smb://nas/video/Movie/Blade.Runner.2049.2017/Blade.Runner.2049.2017.2160p.mkv
+# ── 16. loose films sitting directly at a shelf root → one card each, NOT one folder card ──────
+loose-a	MATCHED	id:920	MOVIE	MAIN	smb://nas/video/Movie/Arrival.2016.1080p.BluRay.x264.mkv
+loose-b	MATCHED	id:921	MOVIE	MAIN	smb://nas/video/Movie/Dune.2021.2160p.WEB-DL.mkv
+# ── 17. a remake sharing its title with the original → separate cards ──────────────────────────
+lion-1994	MATCHED	id:930	MOVIE	MAIN	smb://nas/video/Movie/The Lion King (1994)/The.Lion.King.1994.mkv
+lion-2019	MATCHED	id:931	MOVIE	MAIN	smb://nas/video/Movie/The Lion King (2019)/The.Lion.King.2019.mkv
+# ── 18. numbered sequels of a film series → separate cards ─────────────────────────────────────
+dogdays1	MATCHED	anilist:9756	EPISODE	MAIN	smb://nas/video/Anime/Dog Days/[grp][Dog_Days][01].mkv
+dogdays2	MATCHED	anilist:12291	EPISODE	MAIN	smb://nas/video/Anime/Dog Days 2/[grp][Dog_Days_2][01].mkv
+# ── 19. a franchise folder holding a TV series AND a live-action spin-off → two cards ──────────
+patlabor-tv	MATCHED	anilist:400	EPISODE	MAIN	smb://nas/video/Anime/Patlabor 機動警察パトレイバー/[PATLABOR TV][BDRIP][01].mkv
+patlabor-live	MATCHED	id:940	EPISODE	MAIN	smb://nas/video/Anime/Patlabor 機動警察パトレイバー/[2014] THE NEXT GENERATION パトレイバー_実写/ep01.mkv
+# ── 20. unidentifiable junk in one folder (a game recording) → ONE placeholder card ────────────
+junkdump	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/Remember11/中文影像版/悟篇/01.avi
+junkdump	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/Remember11/中文影像版/悟篇/02.avi
+junkdump	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/Remember11/中文影像版/心篇/Final.avi
+# ── 21. an OVA of a show, in its own folder → the show's card (OVA is 特典 by product rule) ────
+lucky-star	MATCHED	anilist:1887	EPISODE	MAIN	smb://nas/video/Anime/Lucky Star/[grp][Lucky_Star][01].mkv
+lucky-star	MATCHED	anilist:1887	EPISODE	EXTRA	smb://nas/video/Anime/Lucky Star OVA/[grp][Lucky_Star][OVA].mkv
+# ── 22. a 全集 box of one director → one card per FILM ─────────────────────────────────────────
+ghibli-laputa	MATCHED	id:950	MOVIE	MAIN	smb://nas/video/Anime/宮崎駿全集/天空之城 天空の城ラピュタ/Laputa.mkv
+ghibli-mononoke	MATCHED	id:951	MOVIE	MAIN	smb://nas/video/Anime/宮崎駿全集/幽灵公主 もののけ姫/Mononoke.mkv
+ghibli-ponyo	MATCHED	id:952	MOVIE	MAIN	smb://nas/video/Anime/宮崎駿全集/悬崖上的金鱼姬 崖の上のポニョ/Ponyo.mkv
+# ── 23. a release folder: the film is identified, its featurettes are not and are named nothing
+#        like extras ("A Roll of Film", "Dubai Car Crash") → they belong to the FILM's card ───────
+mi-ghost	MATCHED	id:56292	MOVIE	MAIN	smb://nas/video/Movie/Mission.Impossible-Ghost.Protocol.2011.Bluray.1080p.x264-Grym/Mission.Impossible-Ghost.Protocol.2011.Bluray.1080p.x264-Grym.mkv
+mi-ghost	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Movie/Mission.Impossible-Ghost.Protocol.2011.Bluray.1080p.x264-Grym/A.Roll.of.Film-Grym.mkv
+mi-ghost	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Movie/Mission.Impossible-Ghost.Protocol.2011.Bluray.1080p.x264-Grym/Dubai.Car.Crash-Grym.mkv
+mi-ghost	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Movie/Mission.Impossible-Ghost.Protocol.2011.Bluray.1080p.x264-Grym/Art.Department-Grym.mkv
+# ── 24. the same film in two folders (different encodes/editions) → ONE card ───────────────────
+matrix	MATCHED	id:603	MOVIE	MAIN	smb://nas/video/Movie/The.Matrix.1999.BluRay.1080p/The.Matrix.1999.1080p.mkv
+matrix	MATCHED	id:603	MOVIE	MAIN	smb://nas/video/Movie/The.Matrix.1999.PROPER.2160p.REMUX/The.Matrix.1999.2160p.mkv
+# ── 25. the extras live one level DOWN, in their own decorated sub-folder → still the film ─────
+aviator	MATCHED	id:2567	MOVIE	MAIN	smb://nas/video/Movie/The.Aviator.2004.Bluray.1080p.x264-Grym/The.Aviator.2004.Bluray.1080p.x264-Grym.mkv
+aviator	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Movie/The.Aviator.2004.Bluray.1080p.x264-Grym/The.Aviator.Extras-Grym/The.Making.of.The.Aviator-Grym.mkv
+aviator	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Movie/The.Aviator.2004.Bluray.1080p.x264-Grym/The.Aviator.Extras-Grym/Scoring.The.Aviator-Grym.mkv
+# ── 26. specials filed under Extra/Special that scraped to their OWN database entry still
+#        belong to the show whose release folder holds them — that is what the filing says ──────
+aot	MATCHED	anilist:16498	EPISODE	MAIN	smb://nas/video/Anime/进击的巨人 (BDRip)/[grp] Shingeki no Kyojin - 01.mkv	进击的巨人
+aot	MATCHED	anilist:16498	EPISODE	MAIN	smb://nas/video/Anime/进击的巨人 (BDRip)/[grp] Shingeki no Kyojin - 02.mkv	进击的巨人
+aot	MATCHED	anilist:21281	EPISODE	MAIN	smb://nas/video/Anime/进击的巨人 (BDRip)/Extra/Special/Chuugakkou/[grp] Shingeki no Kyojin - SP1.mkv	进击！巨人中学校
+aot	MATCHED	anilist:21281	EPISODE	MAIN	smb://nas/video/Anime/进击的巨人 (BDRip)/Extra/Special/Chuugakkou/[grp] Shingeki no Kyojin - SP2.mkv	进击！巨人中学校
+# ── 27. bare-number season directories (a very common TV rip layout) → ONE card ────────────────
+halfmen	UNMATCHED	-	UNKNOWN	-	smb://nas/video/TV/Two and a Half Men/01/Two.and.a.Half.Men.S01E01.mkv
+halfmen	UNMATCHED	-	UNKNOWN	-	smb://nas/video/TV/Two and a Half Men/02/Two.and.a.Half.Men.S02E01.mkv
+halfmen	UNMATCHED	-	UNKNOWN	-	smb://nas/video/TV/Two and a Half Men/08/Two.and.a.Half.Men.S08E01.mkv
+# ── 28. a broadcast programme downloaded one folder per episode → ONE card. The folder names
+#        share the programme's whole name and differ by the air year / the episode's own title ──
+nhkpacific	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争１９４１開戦（前編）/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争「１９４１　開戦（前編）」.mp4	-	DOC
+nhkpacific	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争１９４２　大日本帝国の分岐点　後編/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争１９４２　大日本帝国の分岐点　後編.mp4	-	DOC
+nhkpacific	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争１９４４　絶望の空の下で/ＮＨＫスペシャル　選　新・ドキュメント太平洋戦争１９４４　絶望の空の下で.mp4	-	DOC
+butterfly	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/2025-09-29 映像の世紀バタフライエフェクト「ナチを支えた女性たち」/映像の世紀バタフライエフェクト「ナチを支えた女性たち」.mkv	-	DOC
+butterfly	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/2025-11-10 映像の世紀バタフライエフェクト「銀座 百年の記憶」/映像の世紀バタフライエフェクト「銀座 百年の記憶」.mkv	-	DOC
+# …and the straggler episode that names no episode still belongs to the programme it names
+butterfly	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/映像の世紀バタフライエフェクト　ベトナム　勝利の代償.mp4/映像の世紀バタフライエフェクト　ベトナム　勝利の代償.mp4	-	DOC
+# ── 29. …while single-file sibling folders sharing just as long a prefix stay APART when what
+#        follows it is a subtitle: theatrical films, not episodes. The G-Reco films carry an
+#        identity each, so the rule must not reach them at all; the two Gundam films carry none
+#        and are held apart by the subtitle test alone ────────────────────────────────────────
+greco1	MATCHED	anilist:99426	MOVIE	MAIN	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅠ 行け！コア・ファイター/[NEO·QSW]劇場版 GのレコンギスタⅠ.mkv
+greco2	MATCHED	anilist:99427	MOVIE	MAIN	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅡ ベルリ 撃進/[NEO·QSW]劇場版 GのレコンギスタⅡ.mkv
+greco3	MATCHED	anilist:99428	MOVIE	MAIN	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅢ 宇宙からの遺産/[NEO·QSW]劇場版 GのレコンギスタⅢ.mkv
+gundamhathaway	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/Mobile Suit Gundam Hathaway's Flash/Mobile Suit Gundam - Hathaway's Flash [BDRip 1080p].mkv
+gundamstargazer	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/Mobile Suit Gundam SEED C.E.73 -STARGAZER/[QTS] Mobile Suit GUNDAM SEED C.E.73 -STARGAZER.mkv
+# ── 30. unidentified files in a WORK folder are one card, whatever their names say. The disc
+#        labels ("DVD1 SP", "DVD2 SP") are not titles, and the folder already names the film ─────
+byousoku	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/秒速5CM 1080P BDRIP/秒速5厘米.mkv
+byousoku	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/秒速5CM 1080P BDRIP/DVD1 SP3.mkv
+byousoku	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/秒速5CM 1080P BDRIP/DVD2 SP1.mkv
+# (a box with identified films in it is not a junk dump — that distinction is what decides here)
+kiminonawa	MATCHED	anilist:21519	MOVIE	MAIN	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/你的名字 1080P BDRIP/君の名は。.mkv
+hoshi	MATCHED	anilist:1689	MOVIE	MAIN	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/星之声 1080P BDRIP/ほしのこえ.mkv
+kumo	MATCHED	anilist:1416	MOVIE	MAIN	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/云之彼端 1080P BDRIP/雲のむこう.mkv
+tenki	MATCHED	anilist:106286	MOVIE	MAIN	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/天气之子 1080P BDRIP/天気の子.mkv
+# …while a SIBLING work in the same box stays its own card
+kotonoha	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/言叶之庭 1080P BDRIP/言叶之庭.mkv
+kotonoha	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/新海诚（Makoto Shinkai）全集 1080P BDRIP/言叶之庭 1080P BDRIP/DVD1 SP1.mkv
+# ── 31. an OVA that is its OWN work keeps its card, even sharing a folder with the TV series it
+#        is named after — the FILING decides what is a 特典, not the word "OVA" in a filename ────
+rodtv	MATCHED	anilist:209	EPISODE	MAIN	smb://nas/video/Anime/读或死R.O.D [10bit][Lv.1]/R.O.D －THE TV－ 第01話 ｢紙は舞い降りた｣ (BD 1440x1080).mp4
+rodtv	MATCHED	anilist:209	EPISODE	MAIN	smb://nas/video/Anime/读或死R.O.D [10bit][Lv.1]/R.O.D －THE TV－ 第02話 ｢ダメ人間ども集まれ｣ (BD 1440x1080).mp4
+rodova	MATCHED	anilist:208	EPISODE	MAIN	smb://nas/video/Anime/读或死R.O.D [10bit][Lv.1]/R.O.D －READ OR DIE－ OVA 第01話 (BD 1440x1080).mp4
+rodova	MATCHED	anilist:208	EPISODE	MAIN	smb://nas/video/Anime/读或死R.O.D [10bit][Lv.1]/R.O.D －READ OR DIE－ OVA 第02話 (BD 1440x1080).mp4
+# (case 26 above already covers the other direction: filed under Extra/Special, it IS a 特典)
+# ── 32. CATEGORY (column 8): which sidebar tab the card belongs in. A card grouped and named
+#        right but filed under the wrong tab is a card the user will not find. ─────────────────
+catdoc1	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]秋叶原物语.avi	-	DOC
+catdoc2	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/PBS/The.Vietnam.War.E01.mkv	-	DOC
+# …and the SAME name in Unicode decomposed form, which is how macOS/SMB hands it over
+catdoc5	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/ＢＳ１スペシャル「山本五十六と“開戦”」.mp4/ＢＳ１スペシャル「山本五十六と“開戦”」.mp4	-	DOC
+# 特集ドラマ is a DRAMA special, not a documentary, though NHK labels both with 特集
+catdrama	MATCHED	-	MOVIE	MAIN	smb://nas/迅雷/下载/【太平洋戦争８０年・特集ドラマ】倫敦ノ山本五十六 - EP01.END.mkv	伦敦的山本五十六	MOVIE
+# an animated film on the MOVIES shelf is 动画, whatever shelf it was dropped on
+catanime1	MATCHED	-	MOVIE	MAIN	smb://nas/video/Movie/Wall-E.2008.1080p.BluRay/Wall-E.mkv	机器人总动员	ANIME	动画|家庭
+# an anime-shelf file with no metadata at all is still 动画 — the user filed it there
+catanime2	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/某个没刮到的番/[grp] Unknown Show - 01.mkv	-	ANIME
+# a concert is 综艺, not a film
+catmusic	MATCHED	-	MOVIE	MAIN	smb://nas/video/Movie/嵐 ARASHI LIVE TOUR 2019 演唱会/concert.mkv	嵐 演唱会	MUSIC
+catvariety	MATCHED	-	SHOW	MAIN	smb://nas/video/TV/Running Man/E500.mkv	Running Man	VARIETY	真人秀|喜剧
+# ── 33. 劇場版-ness is the RELEASE's property, not each file's. A film's menus/CMs/SPs are not
+#        films, and a feature whose own name carries no marker is still one. ──────────────────
+# the bonus disc of a film, filed in a folder of its own beside the feature — one card
+filmbonus	MATCHED	anilist:900001	MOVIE	MOVIE	smb://nas/video/Anime/Ghost in the Shell The New Movie 1080P BDRIP/[VCB-S][Ghost in the Shell：The New Movie][Movie][BDRIP].mkv	攻壳机动队 新剧场版	ANIME
+filmbonus	MATCHED	anilist:900001	EPISODE	EXTRA	smb://nas/video/Anime/Ghost in the Shell The New Movie 1080P BDRIP/Bonus/[VCB-S][Ghost in the Shell：The New Movie][CM1][BDRIP].mkv	攻壳机动队 新剧场版	ANIME
+filmbonus	MATCHED	anilist:900001	EPISODE	EXTRA	smb://nas/video/Anime/Ghost in the Shell The New Movie 1080P BDRIP/Bonus/[VCB-S][Ghost in the Shell：The New Movie][SP1][BDRIP].mkv	攻壳机动队 新剧场版	ANIME
+filmbonus	MATCHED	anilist:900001	EPISODE	EXTRA	smb://nas/video/Anime/Ghost in the Shell The New Movie 1080P BDRIP/Bonus/[VCB-S][Ghost in the Shell：The New Movie][MenuJP][BDRIP].mkv	攻壳机动队 新剧场版	ANIME
+# a stray disc menu among a 劇場版's episodes-worth of files belongs to the film, not beside it
+filmmenu	MATCHED	anilist:900002	MOVIE	MAIN	smb://nas/video/Anime/劇場版 魔法科高校の劣等生 星を呼ぶ少女 [BDRip]/[DMG] 劇場版 魔法科高校の劣等生 星を呼ぶ少女 [BDRip][1080P].mkv	剧场版 魔法科高校的劣等生	ANIME
+filmmenu	MATCHED	anilist:900002	MOVIE	MAIN	smb://nas/video/Anime/劇場版 魔法科高校の劣等生 星を呼ぶ少女 [BDRip]/[DMG] 劇場版 魔法科高校の劣等生 星を呼ぶ少女 Menu [BDRip][1080P].mkv	剧场版 魔法科高校的劣等生	ANIME
+# 「The Menu」 is a film. Its own name reads as a menu file to any regex; its sample is the extra
+themenu	MATCHED	id:900003	MOVIE	-	smb://nas/video/Movie/The.Menu.2022.1080p.BluRay.x264-WiKi/The.Menu.2022.1080p.BluRay.x264-WiKi.mkv	菜单	MOVIE
+themenu	MATCHED	id:900003	EPISODE	EXTRA	smb://nas/video/Movie/The.Menu.2022.1080p.BluRay.x264-WiKi/The.Menu.2022.1080p.BluRay.x264-WiKi.Sample.mkv	菜单	MOVIE
+# …and the release's featurettes, filed in a sibling folder with no marker a regex can see
+themenu	MATCHED	id:900003	EPISODE	EXTRA	smb://nas/video/Movie/The.Menu.2022.1080p.BluRay.x264-WiKi/The.Menu.Extras-WiKi/The.Menu.Extras1.Anatomy.of.a.Scene.mkv	菜单	MOVIE
+# BUT a 劇場版 filed in its own folder still leaves the TV series it shares an AniList id with
+mfrontier-tv	MATCHED	anilist:900004	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier/[VCB-S] Macross Frontier - 01.mkv	超时空要塞Frontier	ANIME
+mfrontier-tv	MATCHED	anilist:900004	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier/[VCB-S] Macross Frontier - 02.mkv	超时空要塞Frontier	ANIME
+mfrontier-tv	MATCHED	anilist:900004	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier/[VCB-S] Macross Frontier - 03.mkv	超时空要塞Frontier	ANIME
+mfrontier-movie	MATCHED	anilist:900004	EPISODE	MAIN	smb://nas/video/Anime/Macross Frontier 剧场版2 1080P BDRIP/[VCB-S] Macross Frontier Sayonara no Tsubasa.mkv	超时空要塞Frontier 剧场版	ANIME
+mfrontier-movie	MATCHED	anilist:900004	EPISODE	EXTRA	smb://nas/video/Anime/Macross Frontier 剧场版2 1080P BDRIP/[VCB-S] Macross Frontier Sayonara no Tsubasa [PV].mkv	超时空要塞Frontier 剧场版	ANIME
+# ── 34. A film's own 特典 folder sits INSIDE the film's folder. Whichever folder is nearest the
+#        file is the one that describes it — read from the outside in, the 劇場版 folder answers
+#        first and calls the trailer a feature, and a wrong scrape then walks it off the card.
+greco4	MATCHED	id:900005	MOVIE	-	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P]/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P].mkv	剧场版 高达G之复国运动Ⅳ	ANIME
+greco4	MATCHED	id:900005	EPISODE	EXTRA	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P]/特典DISC/モビルスーツ学園「帰ってきたＧ-レコ甲子園Ⅳ」.mkv	剧场版 高达G之复国运动Ⅳ	ANIME
+# …and these four scraped to a DIFFERENT id — one wrong id shared by all five films' 特典 folders.
+# The filing says whose 特典 they are; the scrape does not get to overrule it.
+greco4	MATCHED	anilist:900006	EPISODE	EXTRA	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P]/本篇特典/TVCM.mkv	高达G之复国运动	ANIME
+greco4	MATCHED	anilist:900006	EPISODE	EXTRA	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P]/本篇特典/本予告.mkv	高达G之复国运动	ANIME
+greco4	MATCHED	anilist:900006	EPISODE	EXTRA	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅣ 激闘に叫ぶ愛[BDRIP HEVC 1080P]/本篇特典/MENU.mkv	高达G之复国运动	ANIME
+greco5	MATCHED	id:900007	MOVIE	-	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅤ 死線を越えて[BDRIP HEVC 1080P]/[NEO·QSW]劇場版 GのレコンギスタⅤ 死線を越えて[BDRIP HEVC 1080P].mkv	剧场版 高达G之复国运动Ⅴ	ANIME
+greco5	MATCHED	anilist:900006	EPISODE	EXTRA	smb://nas/video/Anime/高达G之复国运动剧场版.BDRip.1080p/[NEO·QSW]劇場版 GのレコンギスタⅤ 死線を越えて[BDRIP HEVC 1080P]/本篇特典/TVCM.mkv	高达G之复国运动	ANIME
+# ── 35. `00001.m2ts` is disc structure, not a name. Whatever such a file matched was read off the
+#        folders above it, so the release it sits under overrules it — where that release names
+#        one. A disc's own tree (BD_ROM/BDMV/STREAM) is one disc, not three levels of filing.
+sao2bd	MATCHED	anilist:900008	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online 1080P BDRIP/[philosophy-raws][Sword Art Online II]/[philosophy-raws][Sword Art Online II][BDRIP][01].mkv	刀剑神域 II	ANIME
+sao2bd	MATCHED	anilist:900008	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online 1080P BDRIP/[philosophy-raws][Sword Art Online II]/[philosophy-raws][Sword Art Online II][BDRIP][02].mkv	刀剑神域 II	ANIME
+sao2bd	MATCHED	anilist:900008	EPISODE	EXTRA	smb://nas/video/Anime/Sword Art Online 1080P BDRIP/[philosophy-raws][Sword Art Online II]/CDs/LiSA Launcher BD付初回生産限定盤/LiSA Launcher.ts	刀剑神域 II	ANIME
+# …matched to season ONE, four discs together, which no lone-fuzzy-hit test can catch
+sao2bd	MATCHED	anilist:900009	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online 1080P BDRIP/[philosophy-raws][Sword Art Online II]/CDs/LiSA Launcher BD付初回生産限定盤/BD_ROM/BDMV/STREAM/00002.m2ts	刀剑神域	ANIME
+sao2bd	MATCHED	anilist:900009	EPISODE	MAIN	smb://nas/video/Anime/Sword Art Online 1080P BDRIP/[philosophy-raws][Sword Art Online II]/CDs/藍井エイル D'AZUR BD付初回生産限定盤A/BD_ROM/BDMV/STREAM/00001.m2ts	刀剑神域	ANIME
+# BUT a full-disc rip of a film is the film: nothing else in that release names it, and throwing
+# its own match away left it a nameless folder card.
+oppenheimer	MATCHED	id:900010	MOVIE	-	smb://nas/video/Movie/OPPENHEIMER.2023.4K.UHD.COMPLETE.BLURAY-MassModz/BDMV/STREAM/00294.m2ts	奥本海默	MOVIE
+# ── 36. Loose on a shelf, a programme is grouped by a shard of its title — so the shard has to be
+#        the PROGRAMME's name, cut where the instalment starts. One NHK series writes its parts
+#        two ways, and six characters of the whole title read them as two series.
+boiling	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]沸腾都市系列（5）约翰内斯堡：“黑钻石”的搏斗.avi	-	DOC
+boiling	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]沸腾都市系列（8）怪兽东京.avi	-	DOC
+boiling	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]沸腾都市（3）达卡：穷人银行的奇迹.mp4	-	DOC
+boiling	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]沸腾都市（4）伊斯坦布尔：欧洲与伊斯兰的冲突.mp4	-	DOC
+techcrisis	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]技术危机（2）：机器人军用化的战栗.avi	-	DOC
+techcrisis	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]技术危机（3）：潜在的破坏-飞机引擎.avi	-	DOC
+# …but a DIFFERENT series that merely visited the same place stays on its own card: 纪实72小时 is
+# Document 72 Hours, not an instalment of 横滨中华街.
+chinatown	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]横滨中华街（1）：从横滨开港到明治时期.avi	-	DOC
+chinatown	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]横滨中华街（2）：从关东大地震到二战结束.avi	-	DOC
+doc72h	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]纪实72小时-横滨中华街的青春.avi	-	DOC
+# ── 37. Loose on a shelf, siblings that agree on their title vouch for each other both ways.
+# Nine parts could not be identified and the tenth matched a Chinese nature documentary, on the
+# strength of its episode subtitle 「made in china」 — a lone hit among agreeing siblings is an
+# outlier, not a discovery.
+worldmkt	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]世界市场.财富攻防战.第一回：驰骋世界的年金洪流.avi	-	DOC
+worldmkt	MATCHED	id:900011	MOVIE	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]世界市场.财富攻防战.第二回：made.in.china.中国的战略.avi	我们诞生在中国	DOC
+worldmkt	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]世界市场.财富攻防战.第三回：要塞小镇的人们.avi	-	DOC
+worldmkt	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[道兰][NHK纪录片]世界市场.财富攻防战.第四回：巨大企业对决非政府组织.MPG	-	DOC
+# …and the mirror: four parts identified as one programme, the 序章 not. The 序章 is that programme.
+meiji	MATCHED	id:900012	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治.第1集.教育.wmv	明治	DOC
+meiji	MATCHED	id:900012	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治.第2集.模仿与独创.wmv	明治	DOC
+meiji	MATCHED	id:900012	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治.第3集.农民与税.wmv	明治	DOC
+meiji	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治.序章.向明治学习什么.wmv	-	DOC
+# ── 38. `[激流中国].01.喉舌与职责.avi` — the bracket holds the SERIES, not the release group. What
+#        is left outside opens with a bare episode number, which no title does, so the name is the
+#        one thing bracket-stripping threw away, and a 12-part series drew 12 cards.
+jiliu	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[激流中国].(引子).富人与穷人.avi	-	DOC
+jiliu	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[激流中国].01.喉舌与职责.avi	-	DOC
+jiliu	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[激流中国].02.青岛养老院的故事.avi	-	DOC
+jiliu	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[激流中国].12.环保攻防战.avi	-	DOC
+# …but a Latin bracket at the head of a file is a release group far more often than it is a title
+grpbracket	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[VCB-Studio].01.Some Programme.mkv	-	DOC
+grpbracket2	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Documentary/NHK/[诸神字幕组].01.另一个节目.mkv	-	DOC
+# ── 39. A shelf is where unrelated programmes sit side by side, so one identity carried by two
+#        different programme NAMES there is not one work — 29 files on Documentary/PBS all matched
+#        The Medici, and Rick Steves' Europe rode onto its card. The shelf must not anchor them
+#        either, though their file names carry the broadcaster.
+ricksteves	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/Rick.Steves.Europe.01of11.Spain.Toledo.and.Salamanca.720p.avi	The Medici	DOC
+ricksteves	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/Rick.Steves.Europe.02of11.France.Normandy.720p.avi	The Medici	DOC
+ricksteves	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/Rick.Steves.Europe.03of11.Belgium.Bruges.and.Brussels.720p.avi	The Medici	DOC
+pbsempires	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/[PBS.帝国系列之文艺复兴教父-美第齐家族].PBS.Empires.The.Medici.Godfathers.of.the.Renaissance.1of4.DivX-AC3.avi	The Medici	DOC
+pbsempires	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/[PBS.帝国系列之文艺复兴教父-美第齐家族].PBS.Empires.The.Medici.Godfathers.of.the.Renaissance.2of4.DivX-AC3.avi	The Medici	DOC
+# …and Napoleon and Victoria are their own programmes, though the strand name they share —
+# Empires — is the only thing outside the bracket that any regex can see.
+pbsnapoleon	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/[PBS.拿破仑传奇].Empires.Napoleon.1of4.to.destiny.xvid.avi	The Medici	DOC
+pbsnapoleon	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/[PBS.拿破仑传奇].Empires.Napoleon.2of4.mastering.luck.xvid.avi	The Medici	DOC
+pbsvictoria	MATCHED	id:900013	MOVIE	EXTRA	smb://nas/video/Documentary/PBS/[PBS.维多利亚女王的帝国].Empires.Queen.Victorias.Empire.1of3.avi	The Medici	DOC
+# …a site tag in the bracket names nothing, and every download would share one card
+site1	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/[电影天堂www.dy2018.com]肖申克的救赎.1994.mkv	-	-
+site2	UNMATCHED	-	UNKNOWN	-	smb://nas/迅雷/下载/[电影天堂www.dy2018.com]阿甘正传.1994.mkv	-	-
+# …but ONE programme filed on a shelf under one identity stays whole
+meijitv	MATCHED	id:900014	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治维新.第1集.教育.wmv	明治维新	DOC
+meijitv	MATCHED	id:900014	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治维新.第2集.模仿与独创.wmv	明治维新	DOC
+meijitv	MATCHED	id:900014	MOVIE	-	smb://nas/video/Documentary/NHK/[NHK][纪录片]明治维新.第3集.农民与税.wmv	明治维新	DOC
+
+# ---- 総集編 (recap compilation) subfolders belong to the show, not to whatever their chapter ----
+# ---- numbers fuzzy-match. A bare 総集編/ dir is skipped on the path climb like 特典/, so the ----
+# ---- files take the release folder's name; grouping files them as that show's extras.        ----
+taiga-13	MATCHED	id:125215	EPISODE	MAIN	smb://nas/video/TV/2022-01 【大河ドラマ】鎌倉殿の13人 - [EP01-48][字]/鎌倉殿の１３人（１）「大いなる小競り合い」.mkv	镰仓殿的13人	TV	-
+taiga-13	MATCHED	id:125215	EPISODE	MAIN	smb://nas/video/TV/2022-01 【大河ドラマ】鎌倉殿の13人 - [EP01-48][字]/鎌倉殿の１３人（２）「佐殿の腹」.mkv	镰仓殿的13人	TV	-
+taiga-13	MATCHED	id:125215	EPISODE	MAIN	smb://nas/video/TV/2022-01 【大河ドラマ】鎌倉殿の13人 - [EP01-48][字]/鎌倉殿の１３人（３）「挙兵は慎重に」.mkv	镰仓殿的13人	TV	-
+taiga-13	UNMATCHED	-	UNKNOWN	-	smb://nas/video/TV/2022-01 【大河ドラマ】鎌倉殿の13人 - [EP01-48][字]/総集編/鎌倉殿の１３人 総集編 EP01 第一章.mkv	-	-	-
+taiga-13	UNMATCHED	-	UNKNOWN	-	smb://nas/video/TV/2022-01 【大河ドラマ】鎌倉殿の13人 - [EP01-48][字]/総集編/鎌倉殿の１３人 総集編 EP02 第二章.mkv	-	-	-
+
+# ---- Subtree adoption: an UNMATCHED stray anywhere under a release whose subtree is ONE work ----
+# ---- joins that work; a mixed box and a shelf stay untouched.                                ----
+# 混装盒（两作品五五开）：谁也不收编谁 —— 各自成卡
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_01.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_02.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_03.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_04.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_05.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_06.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_07.mkv	翼神传说	ANIME	动画
+rax	MATCHED	anilist:165	EPISODE	MAIN	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/Rahxephon/rahxephon_08.mkv	翼神传说	ANIME	动画
+rax	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/翼神传说 BD-BOX - TV + Movie + OVA/RahXephon - Movie (BD 1440x1080).mkv	-	-	-
+mixA	MATCHED	anilist:501	MOVIE	MOVIE	smb://nas/video/Anime/双片合集/フィルムA (1985).mkv	电影A	ANIME	动画
+mixB	MATCHED	anilist:502	MOVIE	MOVIE	smb://nas/video/Anime/双片合集/フィルムB (1987).mkv	电影B	ANIME	动画
+mixC	UNMATCHED	-	UNKNOWN	-	smb://nas/video/Anime/双片合集/unknown_clip.mkv	-	-	-

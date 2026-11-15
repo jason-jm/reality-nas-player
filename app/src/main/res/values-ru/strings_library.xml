@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The library window (sidebar, poster wall, 继续观看): words added with the PICO redesign. -->
+
+    <!-- Empty and loading states of the wall. -->
+    <string name="lib_empty_library_title">Фильмов пока нет</string>
+    <string name="lib_add_source">Добавить источник</string>
+    <string name="lib_empty_search_hint">Поиск идёт по всем названиям и именам файлов в медиатеке.</string>
+    <string name="lib_search_clear">Очистить поиск</string>
+    <string name="lib_empty_favorites_title">В избранном пока пусто</string>
+    <string name="lib_empty_history_title">Вы ещё ничего не смотрели</string>
+    <string name="lib_empty_shelf_hint">Фильмы и сериалы появятся на этой полке, когда распознавание определит, что это такое.</string>
+    <string name="lib_show_all">Показать всё</string>
+
+    <!-- The title bar while a search is on: what was searched for, and how much came back. -->
+    <string name="lib_search_title">Результаты для «%1$s»</string>
+    <plurals name="lib_search_results">
+        <item quantity="one">%1$d результат</item>
+        <item quantity="few">%1$d результата</item>
+        <item quantity="many">%1$d результатов</item>
+        <item quantity="other">%1$d результата</item>
+    </plurals>
+    <string name="lib_search_people_title">Люди</string>
+    <string name="lib_search_titles">Названия</string>
+    <!-- Below a search's titles: the works found only through a person's name in their cast or crew. -->
+    <string name="lib_search_by_people">Работы этих людей</string>
+    <plurals name="lib_search_people">
+        <item quantity="one">%1$d человек</item>
+        <item quantity="few">%1$d человека</item>
+        <item quantity="many">%1$d человек</item>
+        <item quantity="other">%1$d человека</item>
+    </plurals>
+    <plurals name="lib_search_person_works">
+        <item quantity="one">%1$d работа</item>
+        <item quantity="few">%1$d работы</item>
+        <item quantity="many">%1$d работ</item>
+        <item quantity="other">%1$d работы</item>
+    </plurals>
+
+    <!-- 字母索引: what # and ? stand for, in their tooltips. -->
+    <string name="lib_index_other">Цифры и знаки</string>
+    <string name="lib_index_unidentified">Не распознано</string>
+
+    <!-- History's title bar: what was seen through this year, and about how long it took. -->
+    <string name="hist_stats_done">В этом году: %1$s · %2$s</string>
+    <string name="hist_stats_time_only">В этом году просмотрено: %1$s</string>
+    <plurals name="hist_stats_films">
+        <item quantity="one">%1$d фильм</item>
+        <item quantity="few">%1$d фильма</item>
+        <item quantity="many">%1$d фильмов</item>
+        <item quantity="other">%1$d фильма</item>
+    </plurals>
+    <plurals name="hist_stats_episodes">
+        <item quantity="one">%1$d серия</item>
+        <item quantity="few">%1$d серии</item>
+        <item quantity="many">%1$d серий</item>
+        <item quantity="other">%1$d серии</item>
+    </plurals>
+    <plurals name="hist_stats_hours">
+        <item quantity="one">около %1$d часа</item>
+        <item quantity="few">около %1$d часов</item>
+        <item quantity="many">около %1$d часов</item>
+        <item quantity="other">около %1$d часа</item>
+    </plurals>
+    <string name="hist_stats_minutes">%1$d мин</string>
+
+    <!-- 刮削 found every file already matched. -->
+    <string name="lib_scrape_nothing">Распознавать больше нечего — стена актуальна.</string>
+
+    <!-- AI 识别 asks first: it re-reads the whole library. -->
+
+    <!-- 继续观看: the next episode of a series is played, not resumed. -->
+    <string name="cw_play_next">Смотреть · %1$s</string>
+
+    <!-- A poster card's line under the title. -->
+    <string name="card_unmatched">Не распознано</string>
+    <string name="card_sub_year_kind">%1$d · %2$s</string>
+    <string name="meta_separator">" · "</string>
+    <!-- 筛选: the wall's filter chip and its panel. -->
+    <string name="lib_filter">Фильтр</string>
+    <string name="lib_filter_n">Фильтр · %1$d</string>
+    <string name="lib_filter_watch">Просмотр</string>
+    <string name="lib_filter_any">Все</string>
+    <string name="lib_filter_unwatched">Не просмотрено</string>
+    <string name="lib_filter_in_progress">Начато</string>
+    <string name="lib_filter_watched">Просмотрено</string>
+    <string name="lib_filter_genre">Жанр</string>
+    <string name="lib_filter_decade">Десятилетие</string>
+    <string name="lib_filter_picture">Изображение</string>
+    <string name="lib_filter_panorama">360° / 180°</string>
+    <string name="lib_filter_3d">3D</string>
+    <string name="lib_filter_decade_n">%1$d-е</string>
+    <string name="lib_filter_reset">Сбросить фильтры</string>
+    <plurals name="lib_filter_count">
+        <item quantity="one">%d название</item>
+        <item quantity="few">%d названия</item>
+        <item quantity="many">%d названий</item>
+        <item quantity="other">%d названия</item>
+    </plurals>
+    <string name="lib_empty_filter">Под эти фильтры ничего не подходит</string>
+    <string name="lib_empty_filter_hint">Попробуйте другие варианты или сбросьте фильтры.</string>
+    <string name="lib_filter_clear">Сбросить фильтры</string>
+    <string name="lib_recently_added">Недавно добавленные</string>
+    <string name="lib_recently_added_on">Недавно добавленные · %1$s</string>
+    <string name="lib_surprise">Удиви меня</string>
+    <string name="lib_because">Потому что вы смотрели «%1$s»</string>
+    <string name="lib_history_today">Сегодня</string>
+    <string name="lib_history_yesterday">Вчера</string>
+    <string name="lib_history_this_week">Ранее на этой неделе</string>
+    <string name="lib_history_this_month">Ранее в этом месяце</string>
+    <string name="lib_history_earlier">Ещё раньше</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Воспроизведение</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Стерео</string>
+    <string name="pc_projection">Проекция</string>
+    <string name="pc_proj_flat">Плоская</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Шрифт</string>
+    <string name="pc_colour">Цвет</string>
+    <string name="pc_sub_style_plain">Тень</string>
+    <string name="pc_sub_style_box">Подложка</string>
+    <string name="pc_second_subtitle">Вторые субтитры</string>
+    <string name="pc_sub_style_outline">Контур</string>
+    <string name="pc_font_default">Обычный</string>
+    <string name="pc_font_serif">Засечки</string>
+    <string name="pc_font_mono">Моно</string>
+    <string name="pc_colour_white">Белый</string>
+    <string name="pc_colour_yellow">Жёлтый</string>
+    <string name="pc_colour_cyan">Голубой</string>
+    <string name="pc_colour_green">Зелёный</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">По порядку</string>
+    <string name="pc_loop_all">Все</string>
+    <string name="pc_loop_one">Одно</string>
+    <string name="pc_loop_shuffle">Вперемешку</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Делаем снимок…</string>
+    <string name="pc_hold_speed">Скорость 2×</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Закладки</string>
+    <string name="pc_bookmarks_n">Закладки · %1$d</string>
+    <string name="pc_bookmark_add">Добавить закладку</string>
+    <string name="pc_bookmark_empty">Отметьте кнопкой + выше момент, к которому хотите вернуться.</string>
+    <string name="pc_bookmark_remove">Удалить закладку на %1$s</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Пропуск заставки и титров</string>
+    <string name="pc_skip_intro_set">Заставка до %1$s</string>
+    <string name="pc_skip_outro_set">титры — последние %1$s</string>
+    <string name="pc_skip_mark_intro">Здесь кончается заставка</string>
+    <string name="pc_skip_mark_outro">Здесь начинаются титры</string>
+    <string name="pc_skip_clear">Сбросить заставку и титры</string>
+    <string name="pc_skip_intro_hint">Все следующие серии этого сериала начнутся отсюда</string>
+    <string name="pc_skip_outro_hint">Все следующие серии этого сериала отсюда будут переходить к следующей</string>
+    <string name="vid_intro_skipped">Заставка пропущена</string>
+    <string name="vid_watch_intro">Посмотреть</string>
+    <string name="vid_chapter_intro">Заставка · осталось %1$s</string>
+    <string name="vid_chapter_outro">Титры · осталось %1$s</string>
+    <string name="vid_skip">Пропустить</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Неизвестный формат</string>
+    <string name="pc_track_unknown">Неизвестная дорожка</string>
+    <string name="pc_track_n">Дорожка %1$d</string>
+    <string name="pc_track_external_sub">Внешние субтитры</string>
+    <string name="pc_track_external">Внешняя</string>
+    <string name="pc_track_embedded">Встроенная</string>
+    <string name="pc_ch_mono">Моно</string>
+    <string name="pc_ch_stereo">Стерео</string>
+    <string name="pc_dec_hardware">Аппаратный</string>
+    <string name="pc_dec_software">Программный</string>
+    <string name="pc_dec_audio">Звук</string>
+    <string name="pc_frames">Пропущено %1$d / отрисовано %2$d</string>
+    <string name="pc_env_dim">Затемнять</string>
+    <string name="pc_env_viewing_light">Освещение при просмотре</string>
+    <string name="pc_env_dim_hint">Во время просмотра используется выбранная яркость. При паузе или открытии панели управления освещение восстанавливается.</string>
+    <string name="pc_env_lights">Свет</string>
+    <string name="pc_env_lights_hint">Собственный свет места — включён или выключен; когда он включён, «Затемнять» всё равно приглушает его во время фильма</string>
+    <string name="pc_env_seat">Место</string>
+    <string name="pc_seat_center">Центр</string>
+    <string name="pc_seat_left">Слева</string>
+    <string name="pc_seat_right">Справа</string>
+    <string name="pc_seat_left_window">У левого окна</string>
+    <string name="pc_seat_right_window">У правого окна</string>
+    <string name="pc_env_screen">Фильм и субтитры</string>
+    <string name="pc_env_screen_hint">Фильм и субтитры выводятся на экран выбранного зала.</string>
+    <string name="pc_env_glow">Свет от экрана</string>
+    <string name="pc_env_glow_hint">Цвета фильма подсвечивают рамку экрана и ближайшие поверхности.</string>
+    <string name="pc_env_screen_none">Здесь нет экрана — фильм остаётся в окне</string>
+    <string name="pc_env_has_screen">Есть экран</string>
+    <string name="pc_env_entering">Открываем «%1$s»…</string>
+    <string name="pc_env_failed">Не удалось загрузить «%1$s»</string>
+    <string name="pc_lang_simplified">Китайский (упрощённый)</string>
+    <string name="pc_lang_traditional">Китайский (традиционный)</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">Ещё %d звуковая дорожка</item>
+        <item quantity="few">Ещё %d звуковые дорожки</item>
+        <item quantity="many">Ещё %d звуковых дорожек</item>
+        <item quantity="other">Ещё %d звуковые дорожки</item>
+    </plurals>
+    <string name="pc_more_sound_hint">В файле есть звук, который встроенный плеер не читает, — воспроизведите его в mpv</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d файл графических субтитров</item>
+        <item quantity="few">%d файла графических субтитров</item>
+        <item quantity="many">%d файлов графических субтитров</item>
+        <item quantity="other">%d файла графических субтитров</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">VobSub / PGS рядом с фильмом — встроенный плеер не умеет их отображать; воспроизведите его в mpv</string>
+    <string name="pc_pano_format">Формат панорамы</string>
+    <string name="pc_pano_equirect">Равнопромежуточная</string>
+    <string name="pc_pano_fisheye">Рыбий глаз</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Кубическая</string>
+    <string name="pc_pano_dual">Двойной рыбий глаз</string>
+    <string name="pc_pano_direction">Направление</string>
+    <string name="pc_pano_turn_left">Повернуть влево</string>
+    <string name="pc_pano_recenter">Центрировать</string>
+    <string name="pc_pano_turn_right">Повернуть вправо</string>
+    <string name="pc_pano_turn_hint">Поворачивает изображение вокруг вас на 30° — видно то, что позади, не оборачиваясь</string>
+    <string name="pc_pano_recenter_hint">Ставит переднюю часть фильма туда, куда вы смотрите</string>
+    <string name="pc_pano_own">Сетка файла</string>
+    <string name="pc_info_format">Формат</string>
+    <string name="pc_info_spatial_video">Пространственное видео</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, два ракурса (показан левый глаз)</string>
+    <string name="pc_info_camera">Обзор %1$d° · база %2$d мм</string>
+    <string name="pc_info_right_first">сначала правый глаз</string>
+    <string name="pc_audio_field">Амбисоника</string>
+    <string name="vid_pano_guess_360">Похоже, это видео 360°</string>
+    <string name="vid_pano_guess_360_3d">Похоже, это 3D-видео 360°</string>
+    <string name="vid_pano_guess_180_3d">Похоже, это 3D-видео 180° (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Похоже, это видео «рыбий глаз»</string>
+    <string name="vid_pano_guess_fisheye_3d">Похоже, это 3D-видео 180° «рыбий глаз»</string>
+    <string name="vid_pano_guess_dual">Похоже, это исходник с двух объективов камеры 360°</string>
+    <string name="vid_pano_guess_play">Смотреть как панораму</string>
+    <string name="vid_pano_guess_no">Нет, это не так</string>
+    <string name="pc_pano_tilt_up">Вверх</string>
+    <string name="pc_pano_tilt_down">Вниз</string>
+    <string name="pc_pano_roll_left">Наклон влево</string>
+    <string name="pc_pano_roll_right">Наклон вправо</string>
+    <string name="pc_pano_level">Выровнять</string>
+    <string name="pc_pano_level_hint">Для заваленного горизонта: 5° за нажатие, запоминается для этого фильма</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The title detail page and 修正匹配 (fix match). -->
+<resources>
+    <!-- Detail page -->
+    <string name="det_unfavorite">Quitar de favoritos</string>
+    <string name="det_up_next">A continuación</string>
+    <string name="det_section_main">Principal</string>
+    <!-- The big button's file name when a show has several seasons: "Season 2 · Episode 1". -->
+    <string name="det_episode_in_season">Temporada %1$d · %2$s</string>
+    <string name="det_mark_all_watched_q">¿Marcar todo como visto?</string>
+    <string name="det_mark_all_unwatched_q">¿Marcar todo como no visto?</string>
+    <plurals name="det_confirm_watched_n">
+        <item quantity="one">%1$d archivo se marcará como visto.</item>
+        <item quantity="many">%1$d archivos se marcarán como vistos.</item>
+        <item quantity="other">%1$d archivos se marcarán como vistos.</item>
+    </plurals>
+    <plurals name="det_confirm_resume_lost_n">
+        <item quantity="one">%1$d de ellos está a medias y perderá su posición.</item>
+        <item quantity="many">%1$d de ellos están a medias y perderán su posición.</item>
+        <item quantity="other">%1$d de ellos están a medias y perderán su posición.</item>
+    </plurals>
+    <plurals name="det_confirm_unwatched_n">
+        <item quantity="one">Se borrará el progreso de %1$d archivo.</item>
+        <item quantity="many">Se borrará el progreso de %1$d archivos.</item>
+        <item quantity="other">Se borrará el progreso de %1$d archivos.</item>
+    </plurals>
+
+    <!-- Fix match -->
+    <string name="fix_source">Fuente</string>
+    <string name="fix_scope">Aplicar a</string>
+    <plurals name="fix_scope_card">
+        <item quantity="one">Toda la tarjeta (%1$d archivo)</item>
+        <item quantity="many">Toda la tarjeta (%1$d archivos)</item>
+        <item quantity="other">Toda la tarjeta (%1$d archivos)</item>
+    </plurals>
+    <string name="fix_scope_file">Solo este archivo</string>
+    <string name="fix_query_hint">Título; los títulos en inglés coinciden mejor</string>
+    <string name="fix_hint">Elige la entrada correcta para corregir la coincidencia</string>
+    <string name="fix_applying">Aplicando…</string>
+    <string name="fix_failed">No se pudo aplicar esta entrada. Revisa la red y vuelve a intentarlo.</string>
+    <string name="fix_kind_movie">Película</string>
+    <string name="fix_kind_show">Serie</string>
+    <string name="fix_current">Actual</string>
+    <string name="fix_no_results_title">No hay entradas que coincidan</string>
+    <string name="fix_no_results_anilist">Prueba otra grafía: los nombres en romaji o en inglés coinciden mejor.</string>
+    <string name="fix_error_title">La búsqueda no terminó</string>
+    <string name="fix_error_body">Revisa la red y vuelve a intentarlo.</string>
+    <string name="fix_retry">Reintentar</string>
+    <string name="fix_confirm_title">¿Cambiar a “%1$s”?</string>
+    <string name="fix_confirm_title_year">¿Cambiar a “%1$s” (%2$d)?</string>
+    <plurals name="fix_confirm_card">
+        <item quantity="one">Esta tarjeta tiene %1$d archivo: usará esta entrada a partir de ahora, y las próximas identificaciones no la cambiarán.</item>
+        <item quantity="many">Los %1$d archivos de esta tarjeta usarán esta entrada a partir de ahora, y las próximas identificaciones no la cambiarán.</item>
+        <item quantity="other">Los %1$d archivos de esta tarjeta usarán esta entrada a partir de ahora, y las próximas identificaciones no la cambiarán.</item>
+    </plurals>
+    <string name="fix_confirm_file">Solo “%1$s” usará esta entrada a partir de ahora, y las próximas identificaciones no la cambiarán.</string>
+    <string name="fix_apply">Aplicar</string>
+    <!-- A person's other cards in the library (the 演职人员 row, the full credits, the sheet). -->
+    <plurals name="det_person_more_works">
+        <item quantity="one">%d más</item>
+        <item quantity="many">%d más</item>
+        <item quantity="other">%d más</item>
+    </plurals>
+    <plurals name="det_person_works_in_library">
+        <item quantity="one">%d título más en tu biblioteca</item>
+        <item quantity="many">%d títulos más en tu biblioteca</item>
+        <item quantity="other">%d títulos más en tu biblioteca</item>
+    </plurals>
+    <plurals name="det_person_all_works_in_library">
+        <item quantity="one">%d título en tu biblioteca</item>
+        <item quantity="many">%d títulos en tu biblioteca</item>
+        <item quantity="other">%d títulos en tu biblioteca</item>
+    </plurals>
+    <string name="det_similar">Títulos similares</string>
+    <string name="det_episode_copy">%1$s · otra copia</string>
+    <string name="det_season_progress">%1$d de %2$d vistos</string>
+    <plurals name="det_season_done">
+        <item quantity="one">%1$d visto</item>
+        <item quantity="many">Los %1$d vistos</item>
+        <item quantity="other">Los %1$d vistos</item>
+    </plurals>
+    <string name="q_dolby_vision">Dolby Vision</string>
+    <string name="q_dolby_atmos">Dolby Atmos</string>
+    <string name="det_versions">Versiones</string>
+    <string name="det_series">En esta saga</string>
+    <string name="lib_series">Sagas</string>
+    <plurals name="lib_series_count">
+        <item quantity="one">%d título</item>
+        <item quantity="many">%d títulos</item>
+        <item quantity="other">%d títulos</item>
+    </plurals>
+    <plurals name="lib_series_in_order">
+        <item quantity="one">%d título en esta biblioteca, en orden de estreno</item>
+        <item quantity="many">%d títulos en esta biblioteca, en orden de estreno</item>
+        <item quantity="other">%d títulos en esta biblioteca, en orden de estreno</item>
+    </plurals>
+</resources>

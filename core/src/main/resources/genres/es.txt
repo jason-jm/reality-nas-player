@@ -1,0 +1,36 @@
+# Genre names in Spanish — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Acción
+Adventure = Aventura
+Animation = Animación
+Comedy = Comedia
+Crime = Crimen
+Documentary = Documental
+Drama = Drama
+Family = Familia
+Fantasy = Fantasía
+History = Historia
+Horror = Terror
+Music = Música
+Mystery = Misterio
+Romance = Romance
+Science Fiction = Ciencia ficción
+Sci-Fi = Ciencia ficción
+TV Movie = Película de TV
+Thriller = Suspense
+War = Bélica
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Chicas mágicas
+Mecha = Mecha
+Psychological = Psicológico
+Slice of Life = Recuentos de la vida
+Sports = Deportes
+Supernatural = Sobrenatural
+Politics = Política

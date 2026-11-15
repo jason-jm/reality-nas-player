@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The player window's strings added with the PICO player pass; the older ones live in strings.xml. -->
+<resources>
+    <!-- 播放 on the bar opens speed, loop and A–B: its own name, so it no longer shares "Play" with the play button. -->
+    <string name="pc_playback_menu">Oynatma</string>
+
+    <!-- 显示: the picture format as two choices side by side. -->
+    <string name="pc_stereo">Stereo</string>
+    <string name="pc_projection">Projeksiyon</string>
+    <string name="pc_proj_flat">Düz</string>
+
+    <!-- 字幕设置 -->
+    <string name="pc_font">Yazı tipi</string>
+    <string name="pc_colour">Renk</string>
+    <string name="pc_sub_style_plain">Gölge</string>
+    <string name="pc_sub_style_box">Kutu</string>
+    <string name="pc_second_subtitle">İkinci altyazı</string>
+    <string name="pc_sub_style_outline">Kontur</string>
+    <string name="pc_font_default">Varsayılan</string>
+    <string name="pc_font_serif">Tırnaklı</string>
+    <string name="pc_font_mono">Eş aralıklı</string>
+    <string name="pc_colour_white">Beyaz</string>
+    <string name="pc_colour_yellow">Sarı</string>
+    <string name="pc_colour_cyan">Camgöbeği</string>
+    <string name="pc_colour_green">Yeşil</string>
+
+    <!-- 播放 · 循环方式, under the heading "Repeat". -->
+    <string name="pc_loop_sequential">Sırayla</string>
+    <string name="pc_loop_all">Tümü</string>
+    <string name="pc_loop_one">Tek</string>
+    <string name="pc_loop_shuffle">Karışık</string>
+
+    <!-- Feedback over the picture. -->
+    <string name="pc_snapshot_working">Anlık görüntü alınıyor…</string>
+    <string name="pc_hold_speed">2× hızda oynatılıyor</string>
+    <!-- 书签: moments marked in a file (更多 → 书签, dots on the seek bar). -->
+    <string name="pc_bookmarks">Yer işaretleri</string>
+    <string name="pc_bookmarks_n">Yer işaretleri · %1$d</string>
+    <string name="pc_bookmark_add">Yer işareti ekle</string>
+    <string name="pc_bookmark_empty">Geri dönmek istediğiniz bir anı yukarıdaki + ile işaretleyin.</string>
+    <string name="pc_bookmark_remove">%1$s konumundaki yer işaretini kaldır</string>
+    <!-- 跳过片头片尾: a show's opening and closing, set once while watching. -->
+    <string name="pc_skip">Giriş ve jeneriği atla</string>
+    <string name="pc_skip_intro_set">Giriş sonu %1$s</string>
+    <string name="pc_skip_outro_set">jenerik süresi %1$s</string>
+    <string name="pc_skip_mark_intro">Giriş burada biter</string>
+    <string name="pc_skip_mark_outro">Jenerik burada başlar</string>
+    <string name="pc_skip_clear">Giriş ve jeneriği temizle</string>
+    <string name="pc_skip_intro_hint">Bu dizinin sonraki her bölümü buradan başlar</string>
+    <string name="pc_skip_outro_hint">Bu dizinin sonraki her bölümü buradan bir sonrakine geçer</string>
+    <string name="vid_intro_skipped">Giriş atlandı</string>
+    <string name="vid_watch_intro">Girişi izle</string>
+    <string name="vid_chapter_intro">Giriş · %1$s kaldı</string>
+    <string name="vid_chapter_outro">Jenerik · %1$s kaldı</string>
+    <string name="vid_skip">Atla</string>
+    <!-- Words of the track lists and the info panel (written by the playback engine). -->
+    <string name="pc_track_unknown_format">Bilinmeyen biçim</string>
+    <string name="pc_track_unknown">Bilinmeyen parça</string>
+    <string name="pc_track_n">Parça %1$d</string>
+    <string name="pc_track_external_sub">Harici altyazı</string>
+    <string name="pc_track_external">Harici</string>
+    <string name="pc_track_embedded">Gömülü</string>
+    <string name="pc_ch_mono">Mono</string>
+    <string name="pc_ch_stereo">Stereo</string>
+    <string name="pc_dec_hardware">Donanım</string>
+    <string name="pc_dec_software">Yazılım</string>
+    <string name="pc_dec_audio">Ses</string>
+    <string name="pc_frames">Atlanan %1$d / işlenen %2$d</string>
+    <string name="pc_env_dim">Oynatırken karart</string>
+    <string name="pc_env_viewing_light">Oynatma sırasında ışık düzeyi</string>
+    <string name="pc_env_dim_hint">Oynatma sırasında seçilen parlaklık kullanılır. Duraklattığınızda veya oynatma denetimlerini açtığınızda ışıklar yeniden açılır.</string>
+    <string name="pc_env_lights">Işıklar</string>
+    <string name="pc_env_lights_hint">Mekânın kendi ışıkları, açık ya da kapalı; açıkken “Oynatırken karart” film sırasında yine de kısar</string>
+    <string name="pc_env_seat">Koltuk</string>
+    <string name="pc_seat_center">Orta</string>
+    <string name="pc_seat_left">Sol</string>
+    <string name="pc_seat_right">Sağ</string>
+    <string name="pc_seat_left_window">Sol pencere</string>
+    <string name="pc_seat_right_window">Sağ pencere</string>
+    <string name="pc_env_screen">Film ve altyazılar</string>
+    <string name="pc_env_screen_hint">Film ve altyazılar ortamın perdesinde gösterilir.</string>
+    <string name="pc_env_glow">Perde ışığı</string>
+    <string name="pc_env_glow_hint">Filmin renkleri perde çerçevesini ve yakındaki yüzeyleri aydınlatır.</string>
+    <string name="pc_env_screen_none">Burada ekran yok — film pencerede kalır</string>
+    <string name="pc_env_has_screen">Ekranı var</string>
+    <string name="pc_env_entering">%1$s açılıyor…</string>
+    <string name="pc_env_failed">%1$s yüklenemedi</string>
+    <string name="pc_lang_simplified">Basitleştirilmiş Çince</string>
+    <string name="pc_lang_traditional">Geleneksel Çince</string>
+    <string name="pc_lang_join">", "</string>
+    <plurals name="pc_more_sound">
+        <item quantity="one">%d ses parçası daha</item>
+        <item quantity="other">%d ses parçası daha</item>
+    </plurals>
+    <string name="pc_more_sound_hint">Bu dosyada yerleşik oynatıcının okuyamadığı ses var — mpv ile oynatın</string>
+    <plurals name="pc_more_picture_subs">
+        <item quantity="one">%d görüntü tabanlı altyazı dosyası</item>
+        <item quantity="other">%d görüntü tabanlı altyazı dosyası</item>
+    </plurals>
+    <string name="pc_more_picture_subs_hint">Filmin yanında VobSub / PGS — yerleşik oynatıcı bunları çizemez; mpv ile oynatın</string>
+    <string name="pc_pano_format">Panorama biçimi</string>
+    <string name="pc_pano_equirect">Eşdikdörtgen</string>
+    <string name="pc_pano_fisheye">Balıkgözü</string>
+    <string name="pc_pano_eac">EAC</string>
+    <string name="pc_pano_cube">Küp harita</string>
+    <string name="pc_pano_dual">Çift balıkgözü</string>
+    <string name="pc_pano_direction">Yön</string>
+    <string name="pc_pano_turn_left">Sola döndür</string>
+    <string name="pc_pano_recenter">Ortala</string>
+    <string name="pc_pano_turn_right">Sağa döndür</string>
+    <string name="pc_pano_turn_hint">Görüntüyü etrafınızda 30° döndürür — arkanızda kalanı dönmeden görürsünüz</string>
+    <string name="pc_pano_recenter_hint">Filmin önünü baktığınız yere getirir</string>
+    <string name="pc_pano_own">Dosyanın ağ modeli</string>
+    <string name="pc_info_format">Biçim</string>
+    <string name="pc_info_spatial_video">Uzamsal video</string>
+    <string name="pc_info_mv_hevc">MV-HEVC, iki görünüm (sol göz gösteriliyor)</string>
+    <string name="pc_info_camera">%1$d° görüş · %2$d mm ara</string>
+    <string name="pc_info_right_first">önce sağ göz</string>
+    <string name="pc_audio_field">Ambisonik</string>
+    <string name="vid_pano_guess_360">Bu bir 360° video gibi görünüyor</string>
+    <string name="vid_pano_guess_360_3d">Bu bir 360° 3D video gibi görünüyor</string>
+    <string name="vid_pano_guess_180_3d">Bu bir 180° 3D video gibi görünüyor (VR180)</string>
+    <string name="vid_pano_guess_fisheye">Bu bir balıkgözü video gibi görünüyor</string>
+    <string name="vid_pano_guess_fisheye_3d">Bu bir 180° 3D balıkgözü video gibi görünüyor</string>
+    <string name="vid_pano_guess_dual">Bu bir 360 kameranın iki lensli orijinal kaydı gibi görünüyor</string>
+    <string name="vid_pano_guess_play">Panorama olarak oynat</string>
+    <string name="vid_pano_guess_no">Değil</string>
+    <string name="pc_pano_tilt_up">Yukarı</string>
+    <string name="pc_pano_tilt_down">Aşağı</string>
+    <string name="pc_pano_roll_left">Sola yatır</string>
+    <string name="pc_pano_roll_right">Sağa yatır</string>
+    <string name="pc_pano_level">Düzleştir</string>
+    <string name="pc_pano_level_hint">Eğri bir ufuk için: her basışta 5°, bu film için saklanır</string>
+</resources>

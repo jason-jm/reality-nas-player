@@ -1,0 +1,36 @@
+# Genre names in German — `English = name`, then `@paired name = English parts` (see GenreCn).
+# TMDB's own names where TMDB has the genre (so AniList's anime genres file beside TMDB's films), the rest by hand.
+Action = Action
+Adventure = Abenteuer
+Animation = Animation
+Comedy = Komödie
+Crime = Krimi
+Documentary = Dokumentarfilm
+Drama = Drama
+Family = Familie
+Fantasy = Fantasy
+History = Historie
+Horror = Horror
+Music = Musik
+Mystery = Mystery
+Romance = Liebesfilm
+Science Fiction = Science Fiction
+Sci-Fi = Science Fiction
+TV Movie = TV-Film
+Thriller = Thriller
+War = Kriegsfilm
+Western = Western
+Kids = Kids
+News = News
+Reality = Reality
+Soap = Soap
+Talk = Talk
+Ecchi = Ecchi
+Hentai = Hentai
+Mahou Shoujo = Magical Girl
+Mecha = Mecha
+Psychological = Psycho
+Slice of Life = Slice of Life
+Sports = Sport
+Supernatural = Übernatürlich
+Politics = Politik

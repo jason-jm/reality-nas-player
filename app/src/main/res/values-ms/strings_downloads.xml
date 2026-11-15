@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 下载到本机: copies of files on the headset, to watch away from the NAS. -->
+<resources>
+    <string name="nav_downloads">Muat turun</string>
+    <string name="dl_notif_title">Memuat turun ke set kepala ini</string>
+    <string name="dl_notif_progress">%1$s · %2$d%%</string>
+    <string name="dl_add">Muat turun ke set kepala</string>
+    <plurals name="dl_add_next">
+        <item quantity="other">Muat turun %d episod seterusnya</item>
+    </plurals>
+    <string name="dl_remove">Alih keluar muat turun</string>
+    <string name="dl_pause">Jeda</string>
+    <string name="dl_resume">Sambung</string>
+    <string name="dl_retry">Cuba lagi</string>
+    <string name="dl_on_headset">Pada set kepala ini</string>
+    <plurals name="dl_added">
+        <item quantity="other">Memuat turun %d fail ke set kepala</item>
+    </plurals>
+    <string name="dl_added_none">Sudah ada dalam Muat Turun</string>
+    <string name="dl_removed">Muat turun dialih keluar</string>
+    <string name="dl_state_queued">Menunggu</string>
+    <string name="dl_state_paused">Dijeda</string>
+    <string name="dl_state_starting">Menyambung…</string>
+    <string name="dl_running">%1$s daripada %2$s · %3$s/s</string>
+    <string name="dl_waiting_share">Menunggu perkongsian · %1$s daripada %2$s</string>
+    <string name="dl_failed_no_room">Ruang tidak mencukupi pada set kepala</string>
+    <string name="dl_failed_unreachable">Tidak dapat mencapai perkongsian</string>
+    <string name="dl_failed_disk">Tidak dapat menyimpan fail</string>
+    <string name="dl_empty">Belum ada apa-apa dimuat turun</string>
+    <string name="dl_empty_hint">Tekan lama pada poster atau episod dan pilih Muat turun ke set kepala untuk menontonnya ketika jauh dari rumah.</string>
+    <string name="dl_space">%1$s dimuat turun · %2$s kosong</string>
+    <string name="dl_section_active">Memuat turun</string>
+    <string name="dl_section_done">Pada set kepala ini</string>
+    <plurals name="dl_nav_more">
+        <item quantity="other">%1$d%% · %2$d lagi</item>
+    </plurals>
+    <string name="dl_nav_one">%1$d%%</string>
+    <plurals name="dl_clean_watched">
+        <item quantity="other">Alih keluar %d yang ditonton</item>
+    </plurals>
+    <plurals name="dl_cleaned">
+        <item quantity="other">%1$d muat turun yang ditonton dialih keluar · %2$s dikosongkan</item>
+    </plurals>
+    <string name="dl_cancel">Batalkan muat turun</string>
+    <string name="dl_failed_snack">Tidak dapat memuat turun %1$s: %2$s</string>
+    <string name="set_downloads">Dimuat turun ke set kepala ini</string>
+    <string name="set_downloads_none">Belum ada: tekan lama pada poster untuk memuat turunnya.</string>
+    <plurals name="set_downloads_n">
+        <item quantity="other">%1$d fail · %2$s</item>
+    </plurals>
+    <string name="set_downloads_open">Lihat</string>
+    <string name="set_downloads_clear">Alih keluar semua muat turun</string>
+    <string name="set_downloads_clear_hint">Setiap salinan pada set kepala, termasuk yang masih dimuat turun. Fail pada perkongsian anda tidak disentuh.</string>
+    <string name="set_downloads_clear_q">Alih keluar semua muat turun?</string>
+    <string name="set_downloads_clear_body">Salinan pada set kepala ini dipadam. Fail pada NAS anda kekal seperti sedia ada.</string>
+    <string name="set_downloads_cleared">Semua muat turun dialih keluar</string>
+    <string name="set_downloads_clear_action">Alih keluar…</string>
+    <string name="set_downloads_clear_confirm">Alih keluar</string>
+    <!-- Player 更多 › 工具: the one-file download button, short to fit a third of the panel (the tooltip says the rest). -->
+    <string name="dl_player_one">Muat turun</string>
+    <string name="dl_player_done">Dimuat turun</string>
+    <plurals name="dl_player_n">
+        <item quantity="other">Muat turun %d</item>
+    </plurals>
+    <string name="dl_folder">Muat turun folder ini</string>
+    <plurals name="dl_folder_q">
+        <item quantity="other">Muat turun %d fail ini?</item>
+    </plurals>
+    <string name="dl_folder_body">Fail dimuat turun satu demi satu; %1$s kosong pada set kepala, dan 2 GB sentiasa dikekalkan.</string>
+    <string name="dl_folder_go">Muat turun</string>
+    <string name="vid_play_copy">Mainkan %1$s daripada set kepala</string>
+    <string name="lib_offline">Luar talian · hanya muat turun dimainkan</string>
+    <plurals name="lib_offline_copies">
+        <item quantity="other">Luar talian · %d muat turun boleh dimainkan di sini</item>
+    </plurals>
+    <string name="set_cast_privacy">Terima siaran (mati melainkan anda menghidupkannya)</string>
+    <string name="set_cast_privacy_body">Set kepala mengumumkan dirinya hanya pada rangkaian anda sendiri, supaya telefon dapat menyenaraikannya. Telefon menghantar alamat video dan set kepala memainkannya dari situ; tiada apa melalui Reality NAS Player, dan tiada siaran direkodkan.</string>
+    <string name="set_downloads_privacy">Muat turun</string>
+    <string name="set_downloads_privacy_body">Salinan yang anda muat turun dibaca daripada pelayan anda sendiri dan disimpan pada set kepala sahaja. Alih keluar dalam Muat Turun, atau semuanya sekali gus dalam Pustaka.</string>
+    <string name="dl_finished_one">Kini pada set kepala: %1$s</string>
+    <plurals name="dl_finished_n">
+        <item quantity="other">%d fail kini pada set kepala</item>
+    </plurals>
+    <string name="set_delete_watched">Alih keluar muat turun setelah ditonton</string>
+    <string name="set_delete_watched_hint">Salinan yang ditonton hingga habis dialih keluar dari set kepala; fail pada NAS anda kekal</string>
+    <plurals name="dl_auto_removed">
+        <item quantity="other">%d muat turun yang ditonton dialih keluar</item>
+    </plurals>
+    <string name="dl_space_free">%1$s kosong pada set kepala</string>
+    <string name="pc_info_source">Sumber</string>
+    <string name="pc_info_from_share">Perkongsian pada %1$s</string>
+    <string name="dl_slowed">diperlahankan semasa anda menonton</string>
+</resources>
