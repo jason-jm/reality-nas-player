@@ -21,13 +21,13 @@ Conecte as pastas de filmes e séries do seu NAS ao PICO Space Pro. O Reality NA
 
 ## Das pastas do NAS às fichas dos filmes
 
-![Das pastas do NAS às fichas dos filmes — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Os arquivos de Polar Letter em uma pasta compartilhada via WebDAV e a primeira fileira de pôsteres após a varredura.](../showcase/01-auto-scraping-en.webp)
 
 Adicione uma pasta compartilhada e inicie a varredura. O player identifica os títulos pelo nome do arquivo, pelo ano e pelos números de temporada e episódio. Também lê os identificadores de filmes e séries em arquivos NFO do Kodi e aproveita os pôsteres e fundos salvos ao lado dos vídeos. Na imagem, a sinopse e o elenco de Polar Letter vieram de um NFO em um compartilhamento WebDAV, sem consulta à internet. Para buscar no TMDB, adicione sua chave de API. Você pode corrigir as associações.
 
 ## Encontre o filme pela capa
 
-![Encontre o filme pela capa — Reality NAS Player](../showcase/01-library-en.webp)
+![A biblioteca no PICO Space Pro exibe oito pôsteres em duas fileiras de quatro. As categorias ficam à esquerda, com os controles de filtro e ordenação no topo.](../showcase/01-library-en.webp)
 
 Esqueceu o título, mas lembra daquele pôster azul? Percorra o mural de capas e abra o filme para ver a arte de fundo, a sinopse e o elenco. Nas séries, escolha a temporada e o episódio. Filtre por gênero ou década ou continue uma sessão do ponto em que parou.
 

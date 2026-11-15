@@ -21,13 +21,13 @@
 
 ## 自動為 NAS 片庫刮削影片資料
 
-![自動為 NAS 片庫刮削影片資料 — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![WebDAV 共用資料夾裡《Polar Letter》的檔案，以及掃描後出現在片庫第一排的四張海報。](../showcase/01-auto-scraping-en.webp)
 
 在「來源」加入 NAS 共享資料夾並掃描。播放器會從檔名、年份和季集編號辨識電影與影集。若已有 Kodi 格式的 NFO、海報和背景圖，便能讀取 NFO 內的電影或影集 ID，並沿用隨檔圖片。圖中的《Polar Letter》就是在關閉線上查詢後從 WebDAV 共享讀入的，連劇情簡介和演員都來自 NFO。需要線上資料時可填入自己的 TMDB API 金鑰，也能手動修正配對。
 
 ## 用封面逛片庫
 
-![用封面逛片庫 — Reality NAS Player](../showcase/01-library-en.webp)
+![PICO Space Pro 片庫的完整海報牆。八部電影分成上下兩排，每排四張，左側是分類，上方可篩選與排序。](../showcase/01-library-en.webp)
 
 只記得那張藍色海報？從海報牆挑片，點開就能看背景圖、劇情和演職員。影集依季、集整理，也能依類型、年代和觀看狀態篩選；「繼續觀看」會回到上次停下的場景。
 

@@ -21,13 +21,13 @@ Verbinde die Film- und Serienordner auf deinem NAS mit PICO Space Pro. Reality N
 
 ## Aus NAS-Ordnern werden Filmeinträge
 
-![Aus NAS-Ordnern werden Filmeinträge — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Die Dateien zu Polar Letter auf einer WebDAV-Freigabe und die erste Posterreihe nach dem Einlesen.](../showcase/01-auto-scraping-en.webp)
 
 Füge einen freigegebenen Ordner hinzu und starte den Scan. Der Player erkennt Filme und Folgen anhand von Dateinamen, Jahreszahlen und Staffel- und Folgennummern. Er liest Film- oder Serien-IDs aus Kodi-NFO-Dateien und übernimmt die Poster und Hintergrundbilder neben deinen Videos. Im Bild stammen Inhalt und Besetzung von Polar Letter aus der NFO einer WebDAV-Freigabe, ganz ohne Onlineabfrage. Für die Onlinesuche kannst du deinen TMDB-API-Schlüssel hinterlegen. Falsche Zuordnungen lassen sich korrigieren.
 
 ## Durch die Filmplakate stöbern
 
-![Durch die Filmplakate stöbern — Reality NAS Player](../showcase/01-library-en.webp)
+![Die Bibliothek auf PICO Space Pro zeigt acht Filmplakate in zwei Viererreihen. Links stehen die Kategorien, oben die Filter und die Sortierung.](../showcase/01-library-en.webp)
 
 Dir fällt nur noch das blaue Plakat ein? Auf der Posterwand erkennst du den Film wieder. Öffne das Cover für Hintergrundbild, Handlung und Besetzung oder wähle bei Serien Staffel und Folge. Filtere nach Genre oder Jahrzehnt und setze angefangene Filme an der letzten Stelle fort.
 

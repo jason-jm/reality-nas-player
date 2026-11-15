@@ -21,13 +21,13 @@ Připojte složky s filmy a seriály na svém NAS k PICO Space Pro. Reality NAS 
 
 ## Ze složek na NAS do filmové knihovny
 
-![Ze složek na NAS do filmové knihovny — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Soubory filmu Polar Letter na úložišti WebDAV a první řada obálek po načtení knihovny.](../showcase/01-auto-scraping-en.webp)
 
 Přidejte sdílenou složku a spusťte skenování. Přehrávač rozpoznává filmy a epizody podle názvů souborů, roku a čísel řad a dílů. Čte také identifikátory filmů a seriálů ze souborů NFO pro Kodi a využívá plakáty a pozadí uložené vedle videa. Popis a obsazení filmu Polar Letter na obrázku načetl z NFO přes WebDAV bez internetového vyhledávání. Pro hledání v TMDB zadejte vlastní klíč API. Chybné přiřazení můžete opravit.
 
 ## Listujte filmovými plakáty
 
-![Listujte filmovými plakáty — Reality NAS Player](../showcase/01-library-en.webp)
+![Knihovna na PICO Space Pro zobrazuje osm filmových plakátů ve dvou řadách. Vlevo jsou kategorie, nahoře filtry a řazení.](../showcase/01-library-en.webp)
 
 Pamatujete si modrý plakát, ale název už ne? Najděte ho mezi obaly a otevřete si příběh, obsazení a obrázek na pozadí. U seriálů si zvolíte řadu a díl. Nabídku lze zúžit podle žánru či desetiletí a rozkoukaný film pustit od poslední scény.
 

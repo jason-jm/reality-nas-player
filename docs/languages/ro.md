@@ -21,13 +21,13 @@ Conectează la PICO Space Pro dosarele cu filme și seriale de pe NAS. Reality N
 
 ## De la dosarele de pe NAS la fișa filmului
 
-![De la dosarele de pe NAS la fișa filmului — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Fișierele filmului Polar Letter dintr-un dosar partajat prin WebDAV și primul rând de afișe după scanare.](../showcase/01-auto-scraping-en.webp)
 
 Adaugă un dosar partajat și pornește scanarea. Playerul identifică filmele și episoadele după numele fișierului, an și numerele sezonului și episodului. Citește și identificatorii din fișierele NFO în format Kodi, împreună cu afișele și fundalurile de lângă videoclipuri. În imagine, rezumatul și distribuția filmului Polar Letter provin dintr-un NFO citit prin WebDAV, fără căutare pe internet. Pentru căutări în TMDB poți adăuga propria cheie API. Asocierile greșite se pot corecta.
 
 ## Răsfoiește biblioteca după afișe
 
-![Răsfoiește biblioteca după afișe — Reality NAS Player](../showcase/01-library-en.webp)
+![Biblioteca de pe PICO Space Pro arată opt afișe de film pe două rânduri de câte patru. Categoriile sunt în stânga, iar opțiunile de filtrare și sortare sunt sus.](../showcase/01-library-en.webp)
 
 Îți amintești afișul albastru, dar nu și titlul? Deschide coperta pentru a vedea fundalul, rezumatul și distribuția. La seriale poți alege sezonul și episodul. Filtrează după gen sau deceniu ori reia un film din scena în care te-ai oprit.
 

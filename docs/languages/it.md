@@ -21,13 +21,13 @@ Collega le cartelle di film e serie del NAS a PICO Space Pro. Reality NAS Player
 
 ## Dalle cartelle del NAS alle schede dei film
 
-![Dalle cartelle del NAS alle schede dei film — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![I file di Polar Letter in una cartella condivisa via WebDAV e la prima fila di locandine dopo la scansione.](../showcase/01-auto-scraping-en.webp)
 
 Aggiungi una cartella condivisa e avvia la scansione. Il lettore identifica film ed episodi dal nome del file, dall’anno e dal numero di stagione e puntata. Legge gli ID nei file NFO di Kodi e usa locandine e sfondi salvati accanto ai video. Nell’immagine, trama e cast di Polar Letter provengono dal file NFO di una condivisione WebDAV, letto senza ricerche online. Per cercare su TMDB puoi inserire la tua chiave API. Puoi anche correggere un abbinamento a mano.
 
 ## Sfoglia la libreria dalle locandine
 
-![Sfoglia la libreria dalle locandine — Reality NAS Player](../showcase/01-library-en.webp)
+![La libreria su PICO Space Pro mostra otto locandine in due file da quattro, con le categorie a sinistra e i comandi per filtrare e ordinare in alto.](../showcase/01-library-en.webp)
 
 Ti ricordi la locandina blu ma non il titolo? Apri il film dal mosaico di copertine per ritrovare sfondo, trama e interpreti. Per una serie scegli stagione ed episodio. Puoi filtrare per genere o decennio e riprendere un film dalla scena che avevi lasciato.
 

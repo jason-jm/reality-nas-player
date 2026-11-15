@@ -21,13 +21,13 @@ Verbind de mappen met films en series op je NAS met PICO Space Pro. Reality NAS 
 
 ## Van NAS-map naar filmgegevens
 
-![Van NAS-map naar filmgegevens — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![De bestanden van Polar Letter in een gedeelde WebDAV-map en de eerste rij filmposters na het scannen.](../showcase/01-auto-scraping-en.webp)
 
 Voeg een gedeelde map toe en start een scan. De speler herkent films en afleveringen aan bestandsnamen, jaartallen en seizoen- en afleveringsnummers. Hij leest film- en serie-ID’s uit Kodi-NFO-bestanden en gebruikt posters en achtergronden die naast je video’s staan. De beschrijving en rolverdeling van Polar Letter in de afbeelding komen uit een NFO op een WebDAV-share, zonder online zoekopdracht. Voor TMDB kun je je eigen API-sleutel invoeren. Een verkeerde koppeling kun je zelf herstellen.
 
 ## Blader langs de filmhoezen
 
-![Blader langs de filmhoezen — Reality NAS Player](../showcase/01-library-en.webp)
+![De bibliotheek op PICO Space Pro toont acht filmposters in twee rijen van vier. Links staan de categorieën en bovenaan kun je filteren en sorteren.](../showcase/01-library-en.webp)
 
 Weet je de titel niet meer, maar herinner je je de blauwe hoes? Op de posterwand herken je hem meteen. Open een film voor de achtergrond, het verhaal en de acteurs, of kies bij een serie een seizoen en aflevering. Filter op genre of decennium, of kijk verder waar je was gebleven.
 

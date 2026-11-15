@@ -21,7 +21,7 @@ Open the movie and TV folders on your NAS. Reality NAS Player identifies the tit
 
 ## Turn NAS folders into a film library
 
-![A film filename and Kodi sidecar files beside the title, synopsis and cast the app read from a WebDAV share.](docs/showcase/01-auto-scraping-en.webp)
+![The files for Polar Letter on a WebDAV share and the first four covers on the headset after the scan.](docs/showcase/01-auto-scraping-en.webp)
 
 Add a shared folder under **Sources** and start a scan. The player reads filenames, years and episode numbers to identify what you own. Its metadata scraper can turn a name like `Polar.Letter.2026.720p.mp4` into a film entry with a synopsis, credits and artwork. With automatic library updates enabled, later scans pick up new files.
 
@@ -29,9 +29,9 @@ Already organize your NAS with Kodi or tinyMediaManager? The player reads movie 
 
 ## Browse your collection by its artwork
 
-![The headset poster wall beside the original Salt Route and Tide Garden covers shown on the shelf.](docs/showcase/01-library-en.webp)
+![The PICO Space Pro library shows eight film covers in two rows of four. Library categories are on the left, with Filter and sort controls above the covers.](docs/showcase/01-library-en.webp)
 
-Remember the blue cover but not the film’s name? Look for it on the **poster wall**. Open a cover to see the backdrop, synopsis and cast. Open a series to choose a season and episode. Genre, decade and watch-status filters narrow the shelf, and **Continue watching** takes you back to the scene you left.
+Open your library and browse the **poster wall**. Pick a category on the left, or use **Filter** to narrow the wall by genre, decade or watch status. Select a cover for the film’s synopsis and cast, or open a series to choose a season and episode. **Continue watching** takes you back to the scene you left.
 
 ## Bring the drive, share or server you use today
 
@@ -79,7 +79,7 @@ There are no ads or analytics. Your library and server settings live on the devi
 
 ## A desk is a good seat, too
 
-![The English desktop app browsing the same six demonstration titles in its native window.](docs/showcase/07-desktop-en.webp)
+![The desktop app showing six of the demonstration titles in its native window.](docs/showcase/07-desktop-en.webp)
 
 The macOS and Windows app shares the headset’s library and metadata tools. Browse a collection, open an episode or play a local file with a mouse and keyboard. The spatial rooms belong to the headset experience. **v1.0 ships a headset APK; the desktop app is available to build from source.** [Desktop instructions](docs/build.md)
 

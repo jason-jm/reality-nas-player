@@ -21,13 +21,13 @@ Anslut film- och seriemapparna på din NAS till PICO Space Pro. Reality NAS Play
 
 ## Från NAS-mappar till filmuppgifter
 
-![Från NAS-mappar till filmuppgifter — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Filerna för Polar Letter i en delad WebDAV-mapp och den första raden filmaffischer efter genomsökningen.](../showcase/01-auto-scraping-en.webp)
 
 Lägg till en delad mapp och starta en genomsökning. Spelaren tolkar filnamn, årtal samt säsongs- och avsnittsnummer. Film- och serie-ID:n i Kodi-NFO-filer går också att läsa, tillsammans med affischer och bakgrunder intill videofilerna. På bilden kommer handlingen och rollistan för Polar Letter från en NFO-fil på en WebDAV-resurs, helt utan sökning på nätet. Lägg till din egen TMDB-nyckel om du vill söka online. Felaktiga träffar går att rätta.
 
 ## Hitta filmen på omslaget
 
-![Hitta filmen på omslaget — Reality NAS Player](../showcase/01-library-en.webp)
+![Biblioteket på PICO Space Pro visar åtta filmaffischer i två rader med fyra i varje. Kategorierna finns till vänster och reglagen för filtrering och sortering högst upp.](../showcase/01-library-en.webp)
 
 Du kanske minns den blå affischen bättre än titeln. Bläddra bland omslagen och öppna ett för att se bakgrundsbild, handling och medverkande. För en serie kan du välja säsong och avsnitt. Filtrera på genre eller årtionde, eller fortsätt där du slutade.
 

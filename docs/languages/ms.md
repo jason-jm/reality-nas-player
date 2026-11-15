@@ -21,13 +21,13 @@ Sambungkan folder filem dan siri pada NAS anda ke PICO Space Pro. Reality NAS Pl
 
 ## Daripada folder NAS kepada maklumat filem
 
-![Daripada folder NAS kepada maklumat filem — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+![Fail Polar Letter dalam folder kongsi WebDAV dan baris pertama poster selepas imbasan.](../showcase/01-auto-scraping-en.webp)
 
 Tambah folder kongsi dan mulakan imbasan. Pemain mengenal pasti filem dan episod melalui nama fail, tahun serta nombor musim dan episod. Ia turut membaca ID filem atau siri dalam fail NFO Kodi dan menggunakan poster serta latar yang disimpan bersama video. Sinopsis dan barisan pelakon Polar Letter dalam gambar dibaca daripada NFO melalui WebDAV tanpa carian dalam talian. Untuk carian TMDB, tambah kunci API anda sendiri. Padanan yang salah boleh dibetulkan.
 
 ## Selak koleksi mengikut poster
 
-![Selak koleksi mengikut poster — Reality NAS Player](../showcase/01-library-en.webp)
+![Pustaka pada PICO Space Pro memaparkan lapan poster filem dalam dua baris, empat poster setiap baris. Kategori di sebelah kiri, dengan pilihan penapis dan susunan di bahagian atas.](../showcase/01-library-en.webp)
 
 Ingat poster biru tetapi terlupa tajuknya? Pilih kulit filem untuk melihat latar, sinopsis dan pelakon. Untuk siri, pilih musim dan episod. Tapis mengikut genre atau dekad, atau sambung menonton dari babak terakhir.
 
