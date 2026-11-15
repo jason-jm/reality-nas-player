@@ -15,20 +15,26 @@
 
 ![Een eigen filmzaal, ontworpen voor PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Verbind de mappen met films en series op je NAS met PICO Space Pro. Reality NAS Player herkent de titels en vult je bibliotheek. Kies een film aan de hand van de hoes en neem plaats met uitzicht op de aarde.
+Open de mappen met films, series en anime die je door de jaren heen op je NAS hebt verzameld. Reality NAS Player herkent titels, zet afleveringen op volgorde en bewaart de extra’s bij de serie. Kies op **PICO Space Pro** een hoes en neem plaats met uitzicht op de aarde.
 
 **[Headset-APK downloaden](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versiegegevens en controlesommen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktopapp bouwen](../build.md)
 
 ## Van NAS-map naar filmgegevens
 
-![De bestanden van Polar Letter in een gedeelde WebDAV-map en de eerste rij filmposters na het scannen. Polar Letter staat in de bibliotheek als een avonturenfilm uit 2026 met Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Twee voorbeelden van herkenning via een mapnaam en een andere aflevering. Rechts staan vier van de acht demofilms die de headset via NFO-bestanden op een WebDAV-share heeft herkend.](../showcase/01-auto-scraping-en.webp)
 
-Voeg een gedeelde map toe en start een scan. De speler herkent films en afleveringen aan bestandsnamen, jaartallen en seizoen- en afleveringsnummers. Hij leest film- en serie-ID’s uit Kodi-NFO-bestanden en gebruikt posters en achtergronden die naast je video’s staan. De beschrijving en rolverdeling van Polar Letter in de afbeelding komen uit een NFO op een WebDAV-share, zonder online zoekopdracht. Voor TMDB kun je je eigen API-sleutel invoeren. Een verkeerde koppeling kun je zelf herstellen.
+**Ook de mapnaam telt mee.** Bij `Interstellar (2014)/video1.mkv` geeft de bovenliggende map de titel en het jaar. Een bestand met de naam `Dark Staffel 2 Folge 3.mkv` hoort bij seizoen 2, aflevering 3. De speler zoekt ook op oorspronkelijke titels en namen waaronder een film elders is uitgebracht.
+
+Staat er op één anime-aflevering alleen `Seitokai`, dan kan een andere aflevering in dezelfde map de volledige naam leveren voor de zoekopdracht bij AniList. Een bioscoopfilm kan een eigen hoes krijgen, terwijl intro’s en outro’s zonder credits bij de extra’s van de serie komen. Twee versies van dezelfde film kun je vanuit één kaart afspelen.
+
+Een Kodi-NFO met een TMDB-ID kan voor films en series ook offline de samenvatting en cast leveren, samen met de posters en achtergronden uit je map. Vul je eigen API-sleutel in om TMDB online te raadplegen. Een verkeerde koppeling herstel je voor de hele seriekaart. Die keuze blijft behouden bij een nieuwe scan.
+
+[Bekijk de voorbeelden en probeer de tests van het project (Engels)](../metadata-matching.md)
 
 ## Blader langs de filmhoezen
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="De bibliotheek op PICO Space Pro toont acht filmposters in twee rijen van vier. Links staan de categorieën en bovenaan kun je filteren en sorteren." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="De bibliotheek op PICO Space Pro toont acht filmposters in twee rijen van vier. Links staan de categorieën en bovenaan kun je filteren en sorteren."></a>
 </p>
 
 Weet je de titel niet meer, maar herinner je je de blauwe hoes? Op de posterwand herken je hem meteen. Open een film voor de achtergrond, het verhaal en de acteurs, of kies bij een serie een seizoen en aflevering. Filter op genre of decennium, of kijk verder waar je was gebleven.

@@ -15,20 +15,26 @@
 
 ![En egen filmvisning, byggd för PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Anslut film- och seriemapparna på din NAS till PICO Space Pro. Reality NAS Player identifierar titlarna och bygger ditt bibliotek. Välj en film efter omslaget och slå dig ned med utsikt över jorden.
+Öppna mapparna med filmer, serier och anime som du har samlat på din NAS. Reality NAS Player hittar titlar, sorterar avsnitt och lägger extramaterialet hos rätt serie. Välj ett omslag på **PICO Space Pro** och slå dig ner med utsikt över jorden.
 
 **[Hämta APK för headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsinformation och kontrollsummor](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bygg datorappen](../build.md)
 
 ## Från NAS-mappar till filmuppgifter
 
-![Filerna för Polar Letter i en delad WebDAV-mapp och den första raden filmaffischer efter genomsökningen. Polar Letter visas som en äventyrsfilm från 2026 med Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Två exempel visar hur en mapp och ett annat avsnitt kan ge titeln. Till höger syns fyra av åtta demofilmer som identifierats med NFO-filer på en WebDAV-resurs.](../showcase/01-auto-scraping-en.webp)
 
-Lägg till en delad mapp och starta en genomsökning. Spelaren tolkar filnamn, årtal samt säsongs- och avsnittsnummer. Film- och serie-ID:n i Kodi-NFO-filer går också att läsa, tillsammans med affischer och bakgrunder intill videofilerna. På bilden kommer handlingen och rollistan för Polar Letter från en NFO-fil på en WebDAV-resurs, helt utan sökning på nätet. Lägg till din egen TMDB-nyckel om du vill söka online. Felaktiga träffar går att rätta.
+**Mappnamnet ger fler ledtrådar.** I `Interstellar (2014)/video1.mkv` ger mappen både titel och årtal. En fil som heter `Dark Staffel 2 Folge 3.mkv` hamnar som tredje avsnitt i andra säsongen. Spelaren kan även söka på originaltitlar och titlar från andra länder.
+
+Om ett animeavsnitt bara heter `Seitokai` kan ett annat avsnitt i samma mapp ge hela namnet för sökningen på AniList. En biofilm kan få ett eget omslag, medan för- och eftertexternas bildsekvenser utan text hamnar bland seriens extramaterial. Två kopior av samma film kan dela post, så att du själv kan välja version.
+
+Med en Kodi-NFO som innehåller ett TMDB-id kan spelaren läsa filmens eller seriens handling och rollista offline och använda dina omslag och bakgrundsbilder. Ange din egen API-nyckel för att söka på TMDB online. Om en serie fått fel titel kan du rätta hela posten på en gång. Valet finns kvar efter nästa genomsökning.
+
+[Se exemplen och prova projektets öppna tester (på engelska)](../metadata-matching.md)
 
 ## Hitta filmen på omslaget
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro visar åtta filmaffischer i två rader med fyra i varje. Kategorierna finns till vänster och reglagen för filtrering och sortering högst upp." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro visar åtta filmaffischer i två rader med fyra i varje. Kategorierna finns till vänster och reglagen för filtrering och sortering högst upp."></a>
 </p>
 
 Du kanske minns den blå affischen bättre än titeln. Bläddra bland omslagen och öppna ett för att se bakgrundsbild, handling och medverkande. För en serie kan du välja säsong och avsnitt. Filtrera på genre eller årtionde, eller fortsätt där du slutade.

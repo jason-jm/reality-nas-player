@@ -15,20 +15,26 @@
 
 ![Das persönliche Kino für PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Verbinde die Film- und Serienordner auf deinem NAS mit PICO Space Pro. Reality NAS Player erkennt die Titel und baut deine Mediathek auf. Such dir am Filmplakat etwas aus und nimm mit Blick auf die Erde Platz.
+Öffne die Film-, Serien- und Anime-Ordner, die sich über die Jahre auf deinem NAS angesammelt haben. Reality NAS Player erkennt Titel, ordnet Folgen und legt Extras zur passenden Serie. Auf **PICO Space Pro** wählst du ein Cover und nimmst mit Blick auf die Erde Platz.
 
 **[Headset-APK herunterladen](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionshinweise und Prüfsummen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop-App bauen](../build.md)
 
 ## Aus NAS-Ordnern werden Filmeinträge
 
-![Die Dateien zu Polar Letter auf einer WebDAV-Freigabe und die erste Posterreihe nach dem Einlesen. Der Eintrag zeigt Polar Letter als Abenteuerfilm von 2026 mit Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Zwei Beispiele für Hinweise aus Ordnernamen und benachbarten Folgen. Rechts sind vier von acht Demofilmen zu sehen, die anhand ihrer NFO-Dateien auf einer WebDAV-Freigabe erkannt wurden.](../showcase/01-auto-scraping-en.webp)
 
-Füge einen freigegebenen Ordner hinzu und starte den Scan. Der Player erkennt Filme und Folgen anhand von Dateinamen, Jahreszahlen und Staffel- und Folgennummern. Er liest Film- oder Serien-IDs aus Kodi-NFO-Dateien und übernimmt die Poster und Hintergrundbilder neben deinen Videos. Im Bild stammen Inhalt und Besetzung von Polar Letter aus der NFO einer WebDAV-Freigabe, ganz ohne Onlineabfrage. Für die Onlinesuche kannst du deinen TMDB-API-Schlüssel hinterlegen. Falsche Zuordnungen lassen sich korrigieren.
+**Der Ordner liefert den fehlenden Hinweis.** Bei `Interstellar (2014)/video1.mkv` verrät der übergeordnete Ordner Titel und Jahr. Auch `Dark Staffel 2 Folge 3.mkv` landet an der richtigen Stelle. Für die Suche zieht der Player Originaltitel und regionale Verleihtitel heran.
+
+Fansub-Dateien tragen oft Kürzel. Heißt eine Folge nur `Seitokai`, kann eine andere im selben Ordner den vollständigen Namen für die Suche bei AniList liefern. Ein Kinofilm kann ein eigenes Cover bekommen, während Vor- und Abspänne ohne Texteinblendungen unter den Extras der Serie landen. Mehrere Fassungen desselben Films lassen sich über einen einzigen Eintrag auswählen.
+
+Ein Kodi-NFO mit TMDB-ID liefert bei Filmen und Serien auch offline die darin gespeicherte Handlung und Besetzung. Poster und Hintergrundbilder können aus deinem Ordner stammen. Für die Online-Suche bei TMDB hinterlegst du deinen eigenen API-Schlüssel. Eine falsche Zuordnung korrigierst du für die gesamte Serienkarte. Die Auswahl bleibt beim nächsten Scan erhalten.
+
+[Beispiele und die zugehörigen Open-Source-Tests ansehen (Englisch)](../metadata-matching.md)
 
 ## Durch die Filmplakate stöbern
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Die Bibliothek auf PICO Space Pro zeigt acht Filmplakate in zwei Viererreihen. Links stehen die Kategorien, oben die Filter und die Sortierung." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Die Bibliothek auf PICO Space Pro zeigt acht Filmplakate in zwei Viererreihen. Links stehen die Kategorien, oben die Filter und die Sortierung."></a>
 </p>
 
 Dir fällt nur noch das blaue Plakat ein? Auf der Posterwand erkennst du den Film wieder. Öffne das Cover für Hintergrundbild, Handlung und Besetzung oder wähle bei Serien Staffel und Folge. Filtere nach Genre oder Jahrzehnt und setze angefangene Filme an der letzten Stelle fort.

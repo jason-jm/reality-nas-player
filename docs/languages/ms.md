@@ -15,20 +15,26 @@
 
 ![Pawagam peribadi yang dibina untuk PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Sambungkan folder filem dan siri pada NAS anda ke PICO Space Pro. Reality NAS Player mengenal pasti tajuk dan menyusun koleksi anda. Pilih filem melalui poster, kemudian duduk dan tonton dengan pemandangan Bumi.
+Buka folder filem, siri dan anime yang anda kumpulkan selama ini pada NAS. Reality NAS Player mengenal pasti tajuk, menyusun episod dan meletakkan bahan tambahan bersama siri yang betul. Pilih poster pada **PICO Space Pro** dan tonton dengan pemandangan Bumi.
 
 **[Muat turun APK set kepala](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Nota keluaran dan nilai semak](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bina aplikasi komputer](../build.md)
 
 ## Daripada folder NAS kepada maklumat filem
 
-![Fail Polar Letter dalam folder kongsi WebDAV dan baris pertama poster selepas imbasan. Polar Letter dipaparkan sebagai filem pengembaraan tahun 2026 lakonan Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Dua contoh menunjukkan petunjuk daripada folder dan episod lain. Di sebelah kanan terpapar empat daripada lapan filem demo yang dikenal pasti melalui fail NFO pada perkongsian WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Tambah folder kongsi dan mulakan imbasan. Pemain mengenal pasti filem dan episod melalui nama fail, tahun serta nombor musim dan episod. Ia turut membaca ID filem atau siri dalam fail NFO Kodi dan menggunakan poster serta latar yang disimpan bersama video. Sinopsis dan barisan pelakon Polar Letter dalam gambar dibaca daripada NFO melalui WebDAV tanpa carian dalam talian. Untuk carian TMDB, tambah kunci API anda sendiri. Padanan yang salah boleh dibetulkan.
+**Nama folder juga memberi petunjuk.** Dalam `Interstellar (2014)/video1.mkv`, nama folder memberikan tajuk dan tahun. Fail `Dark Staffel 2 Folge 3.mkv` pula dikenal pasti sebagai episod ketiga musim kedua. Carian turut mengambil kira tajuk asal dan tajuk tayangan di negara lain.
+
+Jika nama satu episod anime disingkatkan kepada `Seitokai`, episod lain dalam folder yang sama boleh memberikan tajuk penuh untuk carian di AniList. Filem pawagam boleh mendapat posternya sendiri, manakala pembukaan dan penutup tanpa kredit diletakkan bersama bahan tambahan siri. Dua salinan filem yang sama boleh berkongsi satu kad untuk anda memilih versi yang ingin dimainkan.
+
+Untuk filem dan siri, fail NFO Kodi dengan ID TMDB membolehkan anda membaca sinopsis dan senarai pelakon di luar talian serta menggunakan poster dan latar sendiri. Masukkan kunci API TMDB anda untuk carian dalam talian. Jika siri tersalah padan, betulkan seluruh kad sekali sahaja. Pilihan itu kekal selepas imbasan seterusnya.
+
+[Lihat contoh padanan dan cuba ujian sumber terbuka projek (bahasa Inggeris)](../metadata-matching.md)
 
 ## Selak koleksi mengikut poster
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Pustaka pada PICO Space Pro memaparkan lapan poster filem dalam dua baris, empat poster setiap baris. Kategori di sebelah kiri, dengan pilihan penapis dan susunan di bahagian atas." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Pustaka pada PICO Space Pro memaparkan lapan poster filem dalam dua baris, empat poster setiap baris. Kategori di sebelah kiri, dengan pilihan penapis dan susunan di bahagian atas."></a>
 </p>
 
 Ingat poster biru tetapi terlupa tajuknya? Pilih kulit filem untuk melihat latar, sinopsis dan pelakon. Untuk siri, pilih musim dan episod. Tapis mengikut genre atau dekad, atau sambung menonton dari babak terakhir.

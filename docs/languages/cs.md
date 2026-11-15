@@ -15,20 +15,26 @@
 
 ![Vaše soukromé kino pro PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Připojte složky s filmy a seriály na svém NAS k PICO Space Pro. Reality NAS Player rozpozná tituly a sestaví knihovnu. Vyberte si film podle plakátu a usaďte se s výhledem na Zemi.
+Otevřete složky s filmy, seriály a anime, které jste si v průběhu let uložili na NAS. Reality NAS Player rozpozná názvy, seřadí epizody a přiřadí bonusy k seriálu. Na **PICO Space Pro** si vyberte podle plakátu a usaďte se s výhledem na Zemi.
 
 **[Stáhnout APK pro headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Poznámky k vydání a kontrolní součty](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Sestavení pro počítač](../build.md)
 
 ## Ze složek na NAS do filmové knihovny
 
-![Soubory filmu Polar Letter na úložišti WebDAV a první řada obálek po načtení knihovny. Aplikace film rozpoznala jako dobrodružný snímek z roku 2026 s Rowanem Lakem.](../showcase/01-auto-scraping-en.webp)
+![Dva příklady ukazují vodítka z názvu složky a sousední epizody. Vpravo jsou čtyři z osmi ukázkových filmů rozpoznaných podle souborů NFO ve sdílené složce WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Přidejte sdílenou složku a spusťte skenování. Přehrávač rozpoznává filmy a epizody podle názvů souborů, roku a čísel řad a dílů. Čte také identifikátory filmů a seriálů ze souborů NFO pro Kodi a využívá plakáty a pozadí uložené vedle videa. Popis a obsazení filmu Polar Letter na obrázku načetl z NFO přes WebDAV bez internetového vyhledávání. Pro hledání v TMDB zadejte vlastní klíč API. Chybné přiřazení můžete opravit.
+**Napoví i složka.** U souboru `Interstellar (2014)/video1.mkv` prozradí složka název i rok. Soubor `Dark Staffel 2 Folge 3.mkv` patří ke třetí epizodě druhé řady. Při hledání přehrávač využívá také původní názvy a názvy, pod kterými film vyšel v jiných zemích.
+
+Když je v názvu jednoho dílu anime jen `Seitokai`, může jiná epizoda ve stejné složce dodat celý název pro hledání v AniListu. Celovečerní film může dostat vlastní plakát a úvodní či závěrečné znělky bez titulků zůstanou mezi bonusy seriálu. Dvě verze téhož filmu lze vybírat z jediné karty.
+
+Obsahuje-li soubor Kodi NFO u filmu nebo seriálu identifikátor TMDB, přehrávač z něj načte děj i obsazení offline a použije vaše plakáty a pozadí. Pro online vyhledávání v TMDB zadejte vlastní klíč API. Chybné přiřazení můžete opravit najednou pro celou kartu seriálu. Oprava zůstane i po novém prohledání.
+
+[Prohlédněte si příklady a vyzkoušejte testy projektu (anglicky)](../metadata-matching.md)
 
 ## Listujte filmovými plakáty
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Knihovna na PICO Space Pro zobrazuje osm filmových plakátů ve dvou řadách. Vlevo jsou kategorie, nahoře filtry a řazení." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Knihovna na PICO Space Pro zobrazuje osm filmových plakátů ve dvou řadách. Vlevo jsou kategorie, nahoře filtry a řazení."></a>
 </p>
 
 Pamatujete si modrý plakát, ale název už ne? Najděte ho mezi obaly a otevřete si příběh, obsazení a obrázek na pozadí. U seriálů si zvolíte řadu a díl. Nabídku lze zúžit podle žánru či desetiletí a rozkoukaný film pustit od poslední scény.

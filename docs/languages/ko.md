@@ -15,20 +15,26 @@
 
 ![PICO Space Pro를 위한 나만의 영화관. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-NAS에 있는 영화와 시리즈 폴더를 PICO Space Pro에 연결하세요. Reality NAS Player가 작품을 식별해 보관함을 정리합니다. 포스터로 오늘 볼 작품을 골라 지구가 보이는 자리에 앉아 보세요.
+오랫동안 NAS에 모아 둔 영화와 시리즈, 애니메이션 폴더를 그대로 열어 보세요. Reality NAS Player가 폴더와 다른 회차에 남은 단서를 읽어 작품을 정리합니다. **PICO Space Pro**에서 포스터를 고르고 지구가 보이는 좌석에서 감상하세요.
 
 **[헤드셋 APK 받기](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [릴리스 및 체크섬](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [데스크톱 빌드](../build.md)
 
 ## NAS를 스캔해 작품 정보를 자동으로 채우세요
 
-![WebDAV 공유 폴더에 있는 Polar Letter의 파일과 스캔 후 라이브러리 첫 줄에 나타난 포스터. Polar Letter는 2026년 모험 영화로 표시되며 출연진에는 Rowan Lake가 나온다.](../showcase/01-auto-scraping-en.webp)
+![상위 폴더와 이웃 회차에서 작품명을 찾는 두 사례. 오른쪽에는 WebDAV 공유 폴더의 NFO로 식별한 데모 영화 여덟 편 중 네 편이 보입니다.](../showcase/01-auto-scraping-en.webp)
 
-공유 폴더를 추가하고 스캔하면 파일명, 연도, 시즌과 회차를 바탕으로 작품을 찾습니다. Kodi 형식 NFO에 영화나 시리즈 ID가 있으면 이를 읽고 파일 옆에 둔 포스터와 배경 이미지를 사용합니다. 화면 속 ‘Polar Letter’의 줄거리와 출연진은 온라인 검색 없이 WebDAV 공유의 NFO에서 가져왔습니다. 온라인 검색에는 본인의 TMDB API 키를 추가할 수 있고 잘못 연결된 작품은 직접 바로잡을 수 있습니다.
+**파일명이 짧아도 단서는 남습니다.** `Interstellar (2014)/video1.mkv`에서는 상위 폴더에서 제목과 연도를 찾습니다. 독일어로 적힌 `Dark Staffel 2 Folge 3.mkv`는 시즌 2의 3화로 읽습니다. 영화와 시리즈를 검색할 때는 원제와 지역별 개봉명도 대조합니다.
+
+**자막판 애니메이션도 회차별로 정리합니다.** 어떤 파일에 `Seitokai`라고만 적혀 있어도 같은 폴더의 다른 회차에 있는 전체 제목으로 AniList를 검색할 수 있습니다. 극장판은 별도 작품으로, 논크레딧 오프닝과 엔딩은 본편의 특전으로 정리합니다. 같은 애니메이션 영화의 두 판본을 TMDB와 AniList가 각각 식별한 경우에도 원제와 개봉 연도가 일치하면 한 카드에서 판본을 골라 재생할 수 있습니다.
+
+영화나 시리즈의 Kodi NFO에 TMDB ID가 있으면 오프라인에서도 거기에 저장된 줄거리와 출연진, 폴더의 포스터와 배경 이미지를 사용할 수 있습니다. 온라인 영화·시리즈 검색에는 개인 TMDB API 키를 입력하세요. 잘못 연결된 시리즈는 카드에서 한 번 수정하면 다시 스캔해도 선택이 유지됩니다.
+
+[작품 식별 사례와 오픈 소스 테스트로 확인하는 방법 보기 (영어)](../metadata-matching.md)
 
 ## 포스터로 둘러보는 보관함
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 라이브러리에 영화 포스터 여덟 장이 한 줄에 네 장씩 두 줄로 보인다. 왼쪽에는 카테고리, 위쪽에는 필터와 정렬 메뉴가 있다." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 라이브러리에 영화 포스터 여덟 장이 한 줄에 네 장씩 두 줄로 보인다. 왼쪽에는 카테고리, 위쪽에는 필터와 정렬 메뉴가 있다."></a>
 </p>
 
 제목이 가물가물해도 파란 포스터는 눈에 띕니다. 표지를 열어 배경 이미지와 줄거리, 출연진을 보거나 시리즈의 시즌과 회차를 고르세요. 장르와 연대로 범위를 좁히고, 이어 보기로 마지막 장면에 돌아갈 수 있습니다.

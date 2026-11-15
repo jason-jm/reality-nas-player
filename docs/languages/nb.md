@@ -15,20 +15,26 @@
 
 ![Din egen kino, laget for PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Koble film- og seriemappene på NAS-en til PICO Space Pro. Reality NAS Player kjenner igjen titlene og bygger opp biblioteket. Velg en film etter omslaget og ta plass med utsikt til jorda.
+Åpne mappene med film, serier og anime som du har samlet på NAS-en din. Reality NAS Player kjenner igjen titlene, setter episodene i rekkefølge og legger ekstramaterialet ved riktig serie. Velg et omslag på **PICO Space Pro**, og finn deg en plass med utsikt mot jorda.
 
 **[Last ned APK til headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versjonsnotater og kontrollsummer](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bygg datamaskinappen](../build.md)
 
 ## Fra NAS-mapper til filmopplysninger
 
-![Filene til Polar Letter i en delt WebDAV-mappe og den første raden med filmplakater etter skanningen. Polar Letter vises som en eventyrfilm fra 2026 med Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![To eksempler viser hvordan en mappe og en annen episode gir ledetråder til tittelen. Til høyre vises fire av åtte demofilmer som ble identifisert med NFO-filer på en WebDAV-deling.](../showcase/01-auto-scraping-en.webp)
 
-Legg til en delt mappe og start et søk etter mediefiler. Spilleren bruker filnavn, årstall, sesong og episodenummer for å kjenne igjen titlene. Den leser film- og serie-ID-er i Kodi-NFO-filer og bruker plakater og bakgrunner som ligger ved siden av videoene. Handlingen og rollelisten for Polar Letter på bildet ble hentet fra en NFO-fil på en WebDAV-ressurs uten nettoppslag. Du kan legge inn din egen API-nøkkel for TMDB og rette feil treff.
+**Mappenavnet gir også ledetråder.** I `Interstellar (2014)/video1.mkv` oppgir mappen både tittel og årstall. En fil som heter `Dark Staffel 2 Folge 3.mkv` havner som tredje episode i andre sesong. Spilleren kan også søke etter originaltitler og titler brukt i andre land.
+
+Hvis en animeepisode bare heter `Seitokai`, kan en annen episode i samme mappe gi hele navnet til søket på AniList. En kinofilm kan få sitt eget omslag, mens åpnings- og avslutningssekvenser uten tekst legges under ekstramaterialet til serien. To kopier av samme film kan dele kort, slik at du kan velge hvilken du vil spille.
+
+Med en Kodi-NFO som har en TMDB-ID, kan spilleren hente handlingsreferat og rolleliste for filmer og serier lokalt og bruke dine egne omslag og bakgrunner. Oppgi din egen API-nøkkel for å søke på TMDB på nett. Du kan rette en feil kobling for hele seriekortet på én gang. Valget står også etter neste skanning.
+
+[Se eksemplene og prøv prosjektets tester (på engelsk)](../metadata-matching.md)
 
 ## Bla i omslagene
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro viser åtte filmplakater i to rader med fire i hver. Kategoriene er til venstre, og filtrering og sortering ligger øverst." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro viser åtte filmplakater i to rader med fire i hver. Kategoriene er til venstre, og filtrering og sortering ligger øverst."></a>
 </p>
 
 Husker du den blå plakaten bedre enn tittelen? Finn den på plakatveggen og åpne filmen for å se bakgrunnsbilde, handling og medvirkende. I en serie velger du sesong og episode. Filtrer etter sjanger eller tiår, eller fortsett der du slapp.

@@ -15,20 +15,26 @@
 
 ![PICO Space Pro のための、自分専用の映画館。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-NAS の映画やドラマのフォルダーを PICO Space Pro につなぐと、Reality NAS Player が作品を識別してライブラリを整えます。ポスターから今夜の一本を選んで、地球の見える席へ。
+NAS にしまってきた映画やドラマ、アニメのフォルダーをそのまま開けます。ファイル名だけではわからない作品も前後の手掛かりから探し、各話や映像特典を整理。**PICO Space Pro** のポスター棚で一本選んだら、地球を望む座席へどうぞ。
 
 **[ヘッドセット用 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [リリース情報とチェックサム](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [デスクトップ版のビルド](../build.md)
 
 ## NAS のファイルから作品情報を自動取得
 
-![WebDAV 共有フォルダー内の『Polar Letter』のファイルと、スキャン後にライブラリの先頭に並んだポスター。『Polar Letter』は2026年のアドベンチャー映画として登録され、出演者にRowan Lakeと表示される。](../showcase/01-auto-scraping-en.webp)
+![親フォルダーから映画を特定する例と、別の話からアニメの正式名がわかる例。右は WebDAV 上の NFO で照合したデモ映画8本のうち4本を表示したヘッドセット画面。](../showcase/01-auto-scraping-en.webp)
 
-共有フォルダーを追加してスキャンすると、ファイル名や公開年、シーズン・話数を手がかりに作品を照合します。Kodi 形式の NFO に映画やシリーズの ID があれば、それを読み、同じフォルダーのポスターや背景画像を使えます。画面の『Polar Letter』のあらすじと出演者は WebDAV 上の NFO からオフラインで読み込んだものです。オンライン検索には自分の TMDB API キーを設定でき、誤った照合は手動で直せます。
+**手掛かりはフォルダーの中にも。** `Interstellar (2014)/video1.mkv` なら、親フォルダーから作品名と公開年がわかります。`Dark Staffel 2 Folge 3.mkv` のようにドイツ語で付けた名前もシーズン2の第3話として読み取れます。映画やドラマを探すときは原題や各国での公開タイトルも照合します。
+
+**アニメの略称にも対応。** ある話の名前が `Seitokai` まででも、同じ場所の別の話に `Seitokai no Ichizon` とあれば、その正式名で AniList を検索できます。劇場版には個別のポスターを、ノンクレジットの OP・ED は本編の特典に。同じアニメ映画を映画棚とアニメ棚に置いた場合も、TMDB と AniList の原題と公開年を照らし合わせて、ひとつの作品から再生する版を選べます。
+
+映画やドラマの Kodi NFO に TMDB ID があれば、オフラインでも中のあらすじや出演者を読み込み、手元のポスターや背景画像を使えます。映画・ドラマのオンライン検索にはご自身の TMDB API キーを設定してください。シリーズの取り違えは作品単位で一度直せば、再スキャン後も修正が残ります。
+
+[照合の具体例と、公開テストで確かめる方法を見る（英語）](../metadata-matching.md)
 
 ## ポスターをめくって次の一本を選ぶ
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro のライブラリに映画のポスターが横4枚、縦2段で並ぶ。左側にカテゴリ、上部に絞り込みと並べ替えがある。" width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro のライブラリに映画のポスターが横4枚、縦2段で並ぶ。左側にカテゴリ、上部に絞り込みと並べ替えがある。"></a>
 </p>
 
 題名は忘れても、青い表紙なら覚えている。そんなときはポスターが並ぶライブラリへ。作品を開くと背景画像、あらすじ、出演者が見られ、ドラマならシーズンと話数を選べます。ジャンルや年代で絞り込んだり、前回の続きから再生したりできます。

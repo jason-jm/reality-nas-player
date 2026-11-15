@@ -15,20 +15,26 @@
 
 ![Un cinematograf personal, creat pentru PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Conectează la PICO Space Pro dosarele cu filme și seriale de pe NAS. Reality NAS Player recunoaște titlurile și îți organizează biblioteca. Alege un film după afiș și ia loc cu vedere spre Pământ.
+Deschide folderele cu filme, seriale și anime pe care le-ai strâns de-a lungul anilor pe NAS. Reality NAS Player recunoaște titlurile, ordonează episoadele și păstrează materialele bonus lângă serialul potrivit. Alege un afiș pe **PICO Space Pro** și ia loc cu vedere spre Pământ.
 
 **[Descarcă APK-ul pentru cască](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Note de versiune și sume de control](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilare pentru calculator](../build.md)
 
 ## De la dosarele de pe NAS la fișa filmului
 
-![Fișierele filmului Polar Letter dintr-un dosar partajat prin WebDAV și primul rând de afișe după scanare. Polar Letter apare ca un film de aventură din 2026, cu Rowan Lake în distribuție.](../showcase/01-auto-scraping-en.webp)
+![Două exemple arată indiciile din numele folderului și dintr-un episod vecin. În dreapta apar patru dintre cele opt filme demonstrative identificate prin fișiere NFO pe o resursă WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Adaugă un dosar partajat și pornește scanarea. Playerul identifică filmele și episoadele după numele fișierului, an și numerele sezonului și episodului. Citește și identificatorii din fișierele NFO în format Kodi, împreună cu afișele și fundalurile de lângă videoclipuri. În imagine, rezumatul și distribuția filmului Polar Letter provin dintr-un NFO citit prin WebDAV, fără căutare pe internet. Pentru căutări în TMDB poți adăuga propria cheie API. Asocierile greșite se pot corecta.
+**Și numele folderului e un indiciu.** În `Interstellar (2014)/video1.mkv`, folderul dă titlul și anul. Fișierul `Dark Staffel 2 Folge 3.mkv` își găsește locul ca al treilea episod din sezonul doi. Căutarea ține cont și de titlul original și de cele sub care filmul a fost lansat în alte țări.
+
+Dacă un episod anime apare doar ca `Seitokai`, un alt episod din același folder poate da numele complet pentru căutarea pe AniList. Lungmetrajul poate primi propriul afiș, iar secvențele de început și sfârșit fără generic intră la materialele bonus ale serialului. Două copii ale aceluiași film pot împărți o fișă din care alegi versiunea de redat.
+
+Pentru filme și seriale, un fișier NFO Kodi cu un ID TMDB îți pune la dispoziție sinopsisul și distribuția offline, alături de afișele și fundalurile tale. Pentru căutări online în TMDB introdu cheia ta API. O asociere greșită se poate corecta o singură dată pentru toată fișa serialului, iar alegerea se păstrează la următoarea scanare.
+
+[Vezi exemplele și încearcă testele proiectului (în engleză)](../metadata-matching.md)
 
 ## Răsfoiește biblioteca după afișe
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteca de pe PICO Space Pro arată opt afișe de film pe două rânduri de câte patru. Categoriile sunt în stânga, iar opțiunile de filtrare și sortare sunt sus." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteca de pe PICO Space Pro arată opt afișe de film pe două rânduri de câte patru. Categoriile sunt în stânga, iar opțiunile de filtrare și sortare sunt sus."></a>
 </p>
 
 Îți amintești afișul albastru, dar nu și titlul? Deschide coperta pentru a vedea fundalul, rezumatul și distribuția. La seriale poți alege sezonul și episodul. Filtrează după gen sau deceniu ori reia un film din scena în care te-ai oprit.

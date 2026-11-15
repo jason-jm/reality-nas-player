@@ -15,20 +15,26 @@
 
 ![Twoja prywatna sala kinowa na PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Połącz foldery filmów i seriali na swoim NAS-ie z PICO Space Pro. Reality NAS Player rozpozna tytuły i ułoży je w bibliotece. Wybierz film po plakacie i zajmij miejsce z widokiem na Ziemię.
+Otwórz foldery z filmami, serialami i anime, które przez lata gromadziły się na Twoim NAS-ie. Reality NAS Player rozpoznaje tytuły, porządkuje odcinki i przypisuje dodatki do właściwych serii. Na **PICO Space Pro** wybierz plakat i zajmij miejsce z widokiem na Ziemię.
 
 **[Pobierz APK na gogle](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Informacje o wydaniu i sumy kontrolne](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Budowanie na komputer](../build.md)
 
 ## Od folderów na NAS-ie do opisów filmów
 
-![Pliki filmu Polar Letter w folderze udostępnionym przez WebDAV i pierwszy rząd plakatów po skanowaniu. W bibliotece Polar Letter widnieje jako film przygodowy z 2026 roku z udziałem Rowana Lake’a.](../showcase/01-auto-scraping-en.webp)
+![Dwa przykłady rozpoznawania tytułu na podstawie folderu i sąsiedniego odcinka. Po prawej cztery z ośmiu filmów demonstracyjnych rozpoznanych dzięki plikom NFO w udziale WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Dodaj folder sieciowy i uruchom skanowanie. Odtwarzacz rozpoznaje tytuły po nazwach plików, roku oraz numerach sezonów i odcinków. Odczytuje też identyfikatory filmów i seriali z plików NFO w formacie Kodi i korzysta z plakatów i teł zapisanych obok wideo. Na ilustracji opis i obsada filmu Polar Letter pochodzą z pliku NFO odczytanego z udziału WebDAV bez wyszukiwania w internecie. Do wyszukiwania w TMDB możesz dodać własny klucz API. Błędne dopasowanie można poprawić.
+**Podpowiedź kryje się też w nazwie folderu.** Przy `Interstellar (2014)/video1.mkv` to folder podaje tytuł i rok. Plik `Dark Staffel 2 Folge 3.mkv` trafi na miejsce trzeciego odcinka drugiego sezonu. Wyszukiwanie uwzględnia też tytuły oryginalne oraz te, pod którymi film trafił do kin w innych krajach.
+
+Jeśli jeden odcinek anime ma w nazwie tylko `Seitokai`, inny z tego samego folderu może podpowiedzieć pełny tytuł do wyszukania w AniList. Film kinowy może dostać własny plakat, a czołówki i końcówki bez napisów trafią do dodatków serialu. Dwie kopie jednego filmu mogą mieć wspólną kartę, na której wybierzesz wersję do odtworzenia.
+
+Plik NFO z Kodi z identyfikatorem TMDB pozwala odczytać opis i obsadę filmu lub serialu offline oraz wykorzystać własne plakaty i tła. Aby wyszukiwać w TMDB przez internet, podaj własny klucz API. Błędne dopasowanie można poprawić dla całej karty serialu jednocześnie. Wybór pozostanie po ponownym skanowaniu.
+
+[Zobacz przykłady i wypróbuj testy projektu (po angielsku)](../metadata-matching.md)
 
 ## Przeglądaj bibliotekę po plakatach
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteka na PICO Space Pro pokazuje osiem plakatów w dwóch rzędach po cztery. Po lewej są kategorie, a u góry opcje filtrowania i sortowania." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteka na PICO Space Pro pokazuje osiem plakatów w dwóch rzędach po cztery. Po lewej są kategorie, a u góry opcje filtrowania i sortowania."></a>
 </p>
 
 Pamiętasz niebieski plakat, ale nie tytuł? Wybierz okładkę, by zobaczyć opis, obsadę i tło filmu. Przy serialu możesz przejść do wybranego sezonu i odcinka. Filtry gatunku i dekady ułatwiają wybór, a rozpoczęty film wznowisz od ostatniej sceny.

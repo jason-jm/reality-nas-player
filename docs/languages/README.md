@@ -1,6 +1,6 @@
 # Reality NAS Player in your language
 
-A personal cinema built for **PICO Space Pro**. Scan your NAS for film and TV metadata, browse the poster wall and choose a screening room. Pick a language for the illustrated guide and headset download.
+A personal cinema built for **PICO Space Pro**. Match films, TV seasons and fansub releases from the folders on your NAS, then browse them by cover. Pick a language for the illustrated guide and headset download.
 
 | Read the guide | Language |
 | --- | --- |

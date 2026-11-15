@@ -15,20 +15,26 @@
 
 ![Tu sala de cine, diseñada para PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Conecta las carpetas de películas y series de tu NAS a PICO Space Pro. Reality NAS Player identifica los títulos y prepara la biblioteca. Elige una película por su cartel y toma asiento con vistas a la Tierra.
+Abre las carpetas de películas, series y anime que llevas años guardando en el NAS. Reality NAS Player reconoce títulos, ordena episodios y reúne cada serie con sus extras. En **PICO Space Pro**, elige un cartel y toma asiento con vistas a la Tierra.
 
 **[Descargar APK para el visor](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notas de versión y sumas de verificación](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilar para escritorio](../build.md)
 
 ## De las carpetas del NAS a las fichas de las películas
 
-![Los archivos de Polar Letter en una carpeta WebDAV y la primera fila de carteles tras el escaneo. La ficha identifica Polar Letter como una película de aventuras de 2026 con Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Dos ejemplos muestran cómo ayudan la carpeta y otro episodio a reconocer un título. A la derecha se ven cuatro de las ocho películas de demostración identificadas por sus NFO en un recurso WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Añade una carpeta compartida e inicia el análisis. El reproductor reconoce los nombres de archivo, el año y los números de temporada y episodio. También lee los identificadores de películas y series de los NFO de Kodi y aprovecha los carteles y fondos guardados junto al vídeo. La sinopsis y el reparto de Polar Letter, en la imagen, se leyeron sin conexión del NFO de un recurso WebDAV. Puedes añadir tu clave de la API de TMDB para buscar en línea y corregir una coincidencia a mano.
+**La carpeta también cuenta.** En `Interstellar (2014)/video1.mkv`, la carpeta da el título y el año. Un archivo llamado `Dark Staffel 2 Folge 3.mkv` se sitúa en el tercer episodio de la segunda temporada. La búsqueda también tiene en cuenta los títulos originales y los de estreno en otros países.
+
+Si un grupo de fansub abrevia el nombre de un anime como `Seitokai`, otro episodio de la carpeta puede aportar el nombre completo para buscarlo en AniList. Una película de la saga puede tener su propio cartel y los openings y endings sin créditos quedan entre los extras de la serie. Dos copias de una misma película pueden compartir ficha para que elijas cuál reproducir.
+
+Si ya guardas un NFO de Kodi con un identificador de TMDB, puedes recuperar sin conexión la sinopsis y el reparto de la película o serie y usar tus carteles y fondos. Para consultar TMDB en línea, introduce tu propia clave de API. Una sola corrección en la ficha de una serie se aplica a sus archivos y se conserva al volver a escanear.
+
+[Ver los ejemplos y probarlos con los tests del proyecto (en inglés)](../metadata-matching.md)
 
 ## Explora la biblioteca por sus carteles
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="La biblioteca de PICO Space Pro muestra ocho carteles en dos filas de cuatro. Las categorías están a la izquierda y los controles de filtro y orden, arriba." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="La biblioteca de PICO Space Pro muestra ocho carteles en dos filas de cuatro. Las categorías están a la izquierda y los controles de filtro y orden, arriba."></a>
 </p>
 
 Si solo recuerdas aquel cartel azul, búscalo en el muro de portadas. Abre la película para ver su fondo, la sinopsis y el reparto, o elige temporada y episodio en una serie. Filtra por género o década, o retoma una película en la escena donde la dejaste.

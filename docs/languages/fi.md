@@ -15,20 +15,26 @@
 
 ![Oma elokuvateatteri PICO Space Prolle. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Yhdistä NAS-palvelimesi elokuva- ja sarjakansiot PICO Space Prohon. Reality NAS Player tunnistaa teokset ja kokoaa kirjaston. Valitse elokuva julisteen perusteella ja istahda katselemaan Maata kiertoradalta.
+Avaa NAS-palvelimelle vuosien varrella keräämäsi elokuva-, sarja- ja animekansiot. Reality NAS Player tunnistaa teokset, järjestää jaksot ja kokoaa lisämateriaalin sarjan yhteyteen. Valitse kansikuva **PICO Space Prolla** ja istahda katsomoon, jonka ikkunasta näkyy Maa.
 
 **[Lataa lasien APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Julkaisutiedot ja tarkistussummat](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Käännä työpöytäsovellus](../build.md)
 
 ## Elokuvatiedot suoraan NAS-kansioista
 
-![Polar Letterin tiedostot WebDAV-jaossa ja kirjaston ensimmäinen julisterivi skannauksen jälkeen. Polar Letter näkyy vuoden 2026 seikkailuelokuvana, jonka pääosassa on Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Kaksi esimerkkiä kansion nimen ja viereisen jakson antamista vihjeistä. Oikealla näkyy neljä kahdeksasta demoelokuvasta, jotka tunnistettiin WebDAV-jaon NFO-tiedostojen avulla.](../showcase/01-auto-scraping-en.webp)
 
-Lisää jaettu kansio ja käynnistä haku. Soitin tunnistaa elokuvia ja jaksoja tiedostonimen, vuosiluvun sekä kausi- ja jaksonumeron perusteella. Se lukee myös Kodi-NFO-tiedostoihin tallennetut elokuvien ja sarjojen tunnisteet ja käyttää videoiden vieressä olevia julisteita ja taustakuvia. Kuvan Polar Letterin juonikuvaus ja näyttelijät tulivat WebDAV-jaon NFO-tiedostosta ilman verkkohakua. TMDB-hakuun voit lisätä oman API-avaimesi. Virheellisen osuman voi korjata käsin.
+**Kansionkin nimi kertoo paljon.** Polussa `Interstellar (2014)/video1.mkv` kansion nimi paljastaa elokuvan ja ilmestymisvuoden. Saksankielinen nimi `Dark Staffel 2 Folge 3.mkv` kertoo, että kyseessä on toisen kauden kolmas jakso. Haussa voidaan käyttää myös alkuperäistä nimeä ja eri maissa käytettyjä nimiä.
+
+Jos animejakson nimessä lukee vain `Seitokai`, toinen saman kansion jakso voi kertoa koko nimen AniList-hakua varten. Teatterielokuva voi saada oman kansikuvan, ja tekstitön alku- tai lopputunnus päätyy sarjan lisämateriaaliin. Saman elokuvan kaksi versiota voivat jakaa kortin, josta voit valita toistettavan version.
+
+Jos elokuvan tai sarjan Kodi-NFO sisältää TMDB-tunnisteen, voit käyttää sen juonikuvausta ja näyttelijätietoja myös offline-tilassa sekä omia julisteita ja taustakuvia. Verkkohaku TMDB:stä vaatii oman API-avaimesi. Väärän tunnistuksen voi korjata koko sarjakortille kerralla. Valinta säilyy uudessa skannauksessa.
+
+[Katso esimerkit ja kokeile niitä projektin testeillä (englanniksi)](../metadata-matching.md)
 
 ## Selaa kirjastoa kansikuvien avulla
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pron kirjastossa näkyy kahdeksan elokuvajulistetta kahdessa neljän julisteen rivissä. Luokat ovat vasemmalla ja suodatus sekä lajittelu ylhäällä." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pron kirjastossa näkyy kahdeksan elokuvajulistetta kahdessa neljän julisteen rivissä. Luokat ovat vasemmalla ja suodatus sekä lajittelu ylhäällä."></a>
 </p>
 
 Muistatko sinisen julisteen, mutta et elokuvan nimeä? Julisteseinältä voit avata juonikuvauksen ja näyttelijätiedot tai valita sarjan kauden ja jakson. Rajaa valikoimaa tyylilajin tai vuosikymmenen mukaan tai jatka kesken jäänyttä elokuvaa samasta kohtauksesta.

@@ -15,20 +15,26 @@
 
 ![PICO Space Pro için tasarlanmış kişisel sinemanız. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-NAS’ınızdaki film ve dizi klasörlerini PICO Space Pro’ya bağlayın. Reality NAS Player yapımları tanır ve arşivinizi düzenler. Afişinden bir film seçip Dünya manzaralı koltuğunuza geçin.
+Yıllardır NAS üzerinde biriktirdiğiniz film, dizi ve anime klasörlerini açın. Reality NAS Player yapımları tanır, bölümleri sıralar ve ek içerikleri ait oldukları diziyle bir araya getirir. **PICO Space Pro** üzerinde afişten bir film seçip Dünya manzaralı koltuğunuza yerleşin.
 
 **[Başlık için APK’yı indir](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Sürüm notları ve sağlama toplamları](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Masaüstü uygulamasını derle](../build.md)
 
 ## NAS klasörlerinden film künyelerine
 
-![WebDAV paylaşımındaki Polar Letter dosyaları ve tarama sonrasında kitaplıkta görünen ilk afiş sırası. Polar Letter, kitaplıkta Rowan Lake’in rol aldığı 2026 yapımı bir macera filmi olarak görünüyor.](../showcase/01-auto-scraping-en.webp)
+![Üst klasör ve komşu bölüm adının tanımaya nasıl yardımcı olduğunu gösteren iki örnek. Sağda WebDAV paylaşımındaki NFO dosyalarıyla tanınan sekiz örnek filmden dördü görünüyor.](../showcase/01-auto-scraping-en.webp)
 
-Bir paylaşımlı klasör ekleyip taramayı başlatın. Oynatıcı dosya adlarını, yılları, sezon ve bölüm numaralarını kullanarak yapımları tanır. Kodi biçimindeki NFO dosyalarından film veya dizi kimliklerini okur ve videoların yanındaki afişlerle arka planları kullanır. Görseldeki Polar Letter’ın özeti ve oyuncu kadrosu, internet araması yapılmadan bir WebDAV paylaşımındaki NFO’dan alındı. Çevrimiçi arama için kendi TMDB API anahtarınızı ekleyebilir, hatalı bir eşleşmeyi elle düzeltebilirsiniz.
+**Klasör adı da ipucu verir.** `Interstellar (2014)/video1.mkv` yolunda filmin adını ve yılını klasör söyler. `Dark Staffel 2 Folge 3.mkv` adlı dosya ikinci sezonun üçüncü bölümüne yerleşir. Aramada yapımın özgün adı ve farklı ülkelerde gösterime girdiği adlar da kullanılabilir.
+
+Bir anime bölümünün adında yalnızca `Seitokai` yazıyorsa aynı klasördeki başka bir bölüm, AniList araması için tam adı verebilir. Sinema filmi ayrı bir afiş alabilir. Yazısız açılış ve kapanışlar ise dizinin ek içerikleri arasına girer. Aynı filmin iki kopyasını tek bir karttan açıp izlemek istediğiniz sürümü seçebilirsiniz.
+
+Filmlere ve dizilere ait Kodi NFO dosyasında TMDB kimliği varsa özet ve oyuncu kadrosu çevrimdışı okunabilir, kendi afiş ve arka plan görselleriniz kullanılabilir. Çevrimiçi TMDB araması için kendi API anahtarınızı girin. Yanlış eşleşen bir dizinin kartını bir kez düzeltmeniz yeterlidir. Seçiminiz yeniden taramada da korunur.
+
+[Eşleştirme örneklerini ve projenin açık kaynak testlerini inceleyin (İngilizce)](../metadata-matching.md)
 
 ## Arşivi afişlerden gezin
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro kitaplığında sekiz film afişi dörderli iki sıra hâlinde görünüyor. Kategoriler solda, filtreleme ve sıralama seçenekleri üstte." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro kitaplığında sekiz film afişi dörderli iki sıra hâlinde görünüyor. Kategoriler solda, filtreleme ve sıralama seçenekleri üstte."></a>
 </p>
 
 Adını unuttunuz ama mavi afiş aklınızda mı? Kapağı açıp arka planı, konuyu ve oyuncu kadrosunu görün. Dizilerde sezon ve bölüm seçin. Türe ya da on yıla göre filtreleyebilir veya yarım kalan filme kaldığınız sahneden devam edebilirsiniz.

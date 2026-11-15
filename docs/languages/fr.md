@@ -15,20 +15,26 @@
 
 ![Votre salle de cinéma personnelle, conçue pour PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Connectez les dossiers de films et de séries de votre NAS à votre PICO Space Pro. Reality NAS Player reconnaît les titres et prépare la bibliothèque. Choisissez une affiche et prenez place face à la Terre.
+Ouvrez les dossiers de films, de séries et d’anime que vous gardez sur votre NAS. Reality NAS Player y retrouve les titres, range les épisodes et rattache les bonus à leur œuvre. Sur **PICO Space Pro**, choisissez une affiche et installez-vous face à la Terre.
 
 **[Télécharger l’APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notes de version et sommes de contrôle](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compiler la version de bureau](../build.md)
 
 ## Des dossiers du NAS aux fiches de films
 
-![Les fichiers de Polar Letter dans un dossier partagé WebDAV et la première rangée d’affiches après l’analyse. La fiche présente Polar Letter comme un film d’aventure de 2026 avec Rowan Lake.](../showcase/01-auto-scraping-en.webp)
+![Le dossier parent et un épisode voisin permettent de retrouver deux titres. À droite, le casque affiche quatre des huit films de démonstration identifiés grâce aux NFO d’un partage WebDAV.](../showcase/01-auto-scraping-en.webp)
 
-Lancez l’analyse d’un dossier partagé. Le lecteur s’appuie sur les noms de fichiers, les années et les numéros de saison et d’épisode. Il sait aussi lire les identifiants de films et de séries dans vos NFO Kodi et reprendre les affiches et fonds d’écran rangés à côté des vidéos. Sur l’image, le résumé et la distribution de Polar Letter viennent du NFO d’un partage WebDAV, lu hors ligne. Une clé API TMDB personnelle permet de chercher en ligne. Vous pouvez rectifier une association.
+**Un nom de fichier ne dit pas tout.** Dans `Interstellar (2014)/video1.mkv`, le dossier donne le titre et l’année. Un épisode nommé `Dark Staffel 2 Folge 3.mkv` trouve sa place en saison 2, épisode 3. La recherche tient aussi compte du titre original et des titres de sortie selon les pays.
+
+Pour un anime, si une équipe de fansub abrège le titre en `Seitokai`, un autre épisode du dossier peut fournir le nom complet à chercher sur AniList. Le film sorti en salles peut avoir sa propre affiche, tandis que les génériques sans crédits rejoignent les bonus de la série. Deux encodages d’un même film peuvent partager une fiche, avec le choix de la version à lire.
+
+Pour les films et séries, un NFO Kodi contenant un identifiant TMDB permet de reprendre hors ligne le synopsis, la distribution et les illustrations conservées sur le NAS. Pour interroger TMDB en ligne, renseignez votre propre clé API. Une correction apportée à la fiche d’une série vaut pour les fichiers qu’elle regroupe et reste en place après une nouvelle analyse.
+
+[Explorer les exemples et les essayer avec les tests du projet (en anglais)](../metadata-matching.md)
 
 ## Retrouvez un film à son affiche
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="La bibliothèque sur PICO Space Pro affiche huit films sur deux rangées de quatre affiches. Les catégories sont à gauche, les filtres et le tri en haut." width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="La bibliothèque sur PICO Space Pro affiche huit films sur deux rangées de quatre affiches. Les catégories sont à gauche, les filtres et le tri en haut."></a>
 </p>
 
 Vous vous souvenez de l’affiche bleue mais plus du titre ? Parcourez le mur d’affiches, puis ouvrez une fiche pour retrouver le visuel, le résumé et les interprètes. Les séries se parcourent par saison et épisode. Filtrez par genre ou par décennie, ou reprenez un film à la scène où vous l’avez laissé.

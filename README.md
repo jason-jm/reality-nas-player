@@ -15,22 +15,28 @@
 
 ![A closer view of Polar Letter playing on the Space Lounge screen, with Earth visible through the windows.](docs/showcase/00-screening-room-en.webp)
 
-Open the movie and TV folders on your NAS. Reality NAS Player identifies the titles and builds a library you can browse by cover on **PICO Space Pro**. Pick a film, take a seat above Earth and start watching. The files stay on your drive.
+Point Reality NAS Player at the folders you already keep on your NAS. It can find the film behind a file called `video1.mkv`, put a box set in episode order and give a theatrical spin-off its own cover. Pick a title from the poster wall on **PICO Space Pro** and watch it from a seat above Earth.
 
 **[Get the v1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop builds](docs/build.md)
 
 ## Turn NAS folders into a film library
 
-![The files for Polar Letter on a WebDAV share and the first four covers after the scan. Its library entry identifies a 2026 adventure film starring Rowan Lake.](docs/showcase/01-auto-scraping-en.webp)
+![How a parent folder identifies Interstellar and another episode supplies a full anime title. The headset shows four of eight demo films matched from NFO files on a WebDAV share.](docs/showcase/01-auto-scraping-en.webp)
 
-Add a shared folder under **Sources** and start a scan. The player reads filenames, years and episode numbers to identify what you own. Its metadata scraper can turn a name like `Polar.Letter.2026.720p.mp4` into a film entry with a synopsis, credits and artwork. With automatic library updates enabled, later scans pick up new files.
+**The folder can give you the title.** In `Interstellar (2014)/video1.mkv`, it supplies both the film’s name and its year. A TV rip named `Dark Staffel 2 Folge 3.mkv` goes to season 2, episode 3. The player can also look up a regional release title or the name in its original language to find the synopsis, cast and artwork.
 
-Already organize your NAS with Kodi or tinyMediaManager? The player reads movie or series IDs in **NFO files** and uses posters and backdrops stored beside your videos. The example above was matched from a WebDAV share with online lookup switched off. For online film and TV matches, add your own TMDB API key. Anime matching can also use AniList and Bangumi. If the player picks the wrong title, correct it once and the choice survives an ordinary rescan.
+**An anime box set can hold a whole franchise.** One fansub file says `Seitokai`. Another episode in the same folder spells out `Seitokai no Ichizon`. The player can use the longer name to search AniList, distinguish a TV season from its theatrical film, and shelve creditless openings and endings under Extras. When available, Bangumi supplies individual episode titles and synopses.
+
+**One film, both copies.** Keep an anime film in Movies and a second encode in Anime. Even if TMDB recognizes one and AniList the other, the player can bring them together by original title and release year. Open one card and choose the version you want.
+
+**Keep the work you put into your NAS.** For films and TV, Kodi NFO files with a TMDB ID can supply credits and a synopsis offline, alongside your own posters and backdrops. For online film and TV lookup, add your own TMDB API key. If a whole series lands on the wrong card, use **Fix match** once for the group. Your choice survives a rescan.
+
+[Explore the matching examples and try them with the open-source tests](docs/metadata-matching.md)
 
 ## Browse your collection by its artwork
 
 <p align="center">
-  <a href="docs/showcase/01-library-en.webp?raw=true"><img src="docs/showcase/01-library-en.webp" alt="The PICO Space Pro library shows eight film covers in two rows of four. Library categories are on the left, with Filter and sort controls above the covers." width="520"></a>
+  <a href="docs/showcase/01-library-en.webp?raw=true"><img src="docs/showcase/01-library-en.webp" alt="The PICO Space Pro library shows eight film covers in two rows of four. Library categories are on the left, with Filter and sort controls above the covers."></a>
 </p>
 
 Open your library and browse the **poster wall**. Pick a category on the left, or use **Filter** to narrow the wall by genre, decade or watch status. Select a cover for the film’s synopsis and cast, or open a series to choose a season and episode. **Continue watching** takes you back to the scene you left.

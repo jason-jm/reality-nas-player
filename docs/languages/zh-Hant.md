@@ -15,20 +15,26 @@
 
 ![專為 PICO Space Pro 打造的私人電影院。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-把 NAS 裡的電影和影集資料夾連上 PICO Space Pro。Reality NAS Player 會辨識片名、整理資料，讓你從海報牆挑一部，再到太空觀景廳入座。
+把 NAS 裡多年累積的電影、影集和動畫資料夾接進來。Reality NAS Player 能從檔名以外的線索認出作品，把正片、各集與特典分好。戴上 **PICO Space Pro**，從海報牆選一部，到太空觀影廳入座。
 
 **[下載頭戴版 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [版本資訊與校驗碼](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [建置桌面版](../build.md)
 
 ## 自動為 NAS 片庫刮削影片資料
 
-![WebDAV 共用資料夾裡《Polar Letter》的檔案，以及掃描後出現在片庫第一排的四張海報。影片資料顯示《Polar Letter》是 2026 年的冒險片，由 Rowan Lake 主演。](../showcase/01-auto-scraping-en.webp)
+![左側以《星際效應》和動畫簡稱為例，說明資料夾及相鄰各集提供的線索。右側是頭顯從 WebDAV 共享的 NFO 辨識出的八部示範影片中的四部。](../showcase/01-auto-scraping-en.webp)
 
-在「來源」加入 NAS 共享資料夾並掃描。播放器會從檔名、年份和季集編號辨識電影與影集。若已有 Kodi 格式的 NFO、海報和背景圖，便能讀取 NFO 內的電影或影集 ID，並沿用隨檔圖片。圖中的《Polar Letter》就是在關閉線上查詢後從 WebDAV 共享讀入的，連劇情簡介和演員都來自 NFO。需要線上資料時可填入自己的 TMDB API 金鑰，也能手動修正配對。
+**檔名寫不下的線索，資料夾裡找得到。** 在 `Interstellar (2014)/video1.mkv` 裡，上一層資料夾就交代了片名和年份。影集寫成德文的 `Dark Staffel 2 Folge 3.mkv`，也能排進《闇》第二季第三集。查詢時還能比對原名與各地譯名，帶回簡介、演員與海報。
+
+**動畫收藏也能各就各位。** 某集只寫了 `Seitokai`，同一個資料夾裡另一集寫了全名 `Seitokai no Ichizon`，播放器就能用全名到 AniList 查詢。劇場版可自成一張海報，無字幕片頭與片尾則收在原作的特典裡。同一部動畫電影若有兩個版本，分別由 TMDB 與 AniList 認出，也能依原名和年份歸在同一張卡片，兩版都能播放。
+
+電影或影集的 Kodi NFO 若有 TMDB ID，離線也能讀取裡面的劇情和演員，沿用自己存的海報及背景圖。線上查詢影視資料可填入自己的 TMDB API 金鑰。若整部影集配錯，只要在詳情頁修正一次，卡片裡的各集都會跟著更正，重新掃描也會保留。
+
+[查看辨識案例，以及如何用開源測試自行驗證](../metadata-matching.zh-Hant.md)
 
 ## 用封面逛片庫
 
 <p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 片庫的完整海報牆。八部電影分成上下兩排，每排四張，左側是分類，上方可篩選與排序。" width="520"></a>
+  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 片庫的完整海報牆。八部電影分成上下兩排，每排四張，左側是分類，上方可篩選與排序。"></a>
 </p>
 
 只記得那張藍色海報？從海報牆挑片，點開就能看背景圖、劇情和演職員。影集依季、集整理，也能依類型、年代和觀看狀態篩選；「繼續觀看」會回到上次停下的場景。
