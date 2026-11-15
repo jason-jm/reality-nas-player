@@ -15,15 +15,21 @@
 
 ![La tua sala cinematografica, progettata per PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Il film può restare sul NAS di casa. Indossa il visore, siediti accanto a un finestrino affacciato sulla Terra e riprendi la visione dall’ultima scena. Per guardare i tuoi file non serve un account del lettore.
+Collega le cartelle di film e serie del NAS a PICO Space Pro. Reality NAS Player riconosce i titoli e prepara la libreria. Scegli una locandina e accomodati in sala con vista sulla Terra.
 
 **[Scarica l’APK per il visore](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Note di rilascio e checksum](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compila l’app desktop](../build.md)
 
-## Ritrova un film dalla locandina
+## Dalle cartelle del NAS alle schede dei film
 
-![Ritrova un film dalla locandina — Reality NAS Player](../showcase/01-library-en.webp)
+![Dalle cartelle del NAS alle schede dei film — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Sfoglia le locandine per leggere trama e cast, oppure scegli una serie per stagione ed episodio. Puoi conservare i file NFO in stile Kodi e le tue immagini. La chiave API personale serve solo per ottenere i dati di TMDB, non per la riproduzione locale.
+Aggiungi una cartella condivisa e avvia la scansione. Il lettore identifica film ed episodi dal nome del file, dall’anno e dal numero di stagione e puntata. Legge gli ID nei file NFO di Kodi e usa locandine e sfondi salvati accanto ai video. Nell’immagine, trama e cast di Polar Letter provengono dal file NFO di una condivisione WebDAV, letto senza ricerche online. Per cercare su TMDB puoi inserire la tua chiave API. Puoi anche correggere un abbinamento a mano.
+
+## Sfoglia la libreria dalle locandine
+
+![Sfoglia la libreria dalle locandine — Reality NAS Player](../showcase/01-library-en.webp)
+
+Ti ricordi la locandina blu ma non il titolo? Apri il film dal mosaico di copertine per ritrovare sfondo, trama e interpreti. Per una serie scegli stagione ed episodio. Puoi filtrare per genere o decennio e riprendere un film dalla scena che avevi lasciato.
 
 ## Collega l’archivio che hai già
 

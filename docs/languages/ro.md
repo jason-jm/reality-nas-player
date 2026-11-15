@@ -15,15 +15,21 @@
 
 ![Un cinematograf personal, creat pentru PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Filmele pot rămâne pe discul de acasă. Pune-ți casca PICO Space Pro, deschide colecția și reia scena de aseară de pe un fotoliu cu vedere spre Pământ. Nu ai nevoie de cont pentru a reda propriile fișiere.
+Conectează la PICO Space Pro dosarele cu filme și seriale de pe NAS. Reality NAS Player recunoaște titlurile și îți organizează biblioteca. Alege un film după afiș și ia loc cu vedere spre Pământ.
 
 **[Descarcă APK-ul pentru cască](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Note de versiune și sume de control](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilare pentru calculator](../build.md)
 
-## Îți amintești afișul, dar nu și titlul?
+## De la dosarele de pe NAS la fișa filmului
 
-![Îți amintești afișul, dar nu și titlul? — Reality NAS Player](../showcase/01-library-en.webp)
+![De la dosarele de pe NAS la fișa filmului — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Răsfoiește copertele și deschide un film pentru distribuție și rezumat. La seriale poți alege sezonul și episodul. Filmele începute păstrează locul unde te-ai oprit. Poți folosi afișele și fișierele NFO pe care le ai sau propria cheie API pentru datele din TMDB.
+Adaugă un dosar partajat și pornește scanarea. Playerul identifică filmele și episoadele după numele fișierului, an și numerele sezonului și episodului. Citește și identificatorii din fișierele NFO în format Kodi, împreună cu afișele și fundalurile de lângă videoclipuri. În imagine, rezumatul și distribuția filmului Polar Letter provin dintr-un NFO citit prin WebDAV, fără căutare pe internet. Pentru căutări în TMDB poți adăuga propria cheie API. Asocierile greșite se pot corecta.
+
+## Răsfoiește biblioteca după afișe
+
+![Răsfoiește biblioteca după afișe — Reality NAS Player](../showcase/01-library-en.webp)
+
+Îți amintești afișul albastru, dar nu și titlul? Deschide coperta pentru a vedea fundalul, rezumatul și distribuția. La seriale poți alege sezonul și episodul. Filtrează după gen sau deceniu ori reia un film din scena în care te-ai oprit.
 
 ## De pe discul sau serverul tău
 

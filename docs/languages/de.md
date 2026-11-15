@@ -15,15 +15,21 @@
 
 ![Das persönliche Kino für PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Der Film bleibt auf dem NAS zu Hause. Setz das Headset auf, nimm am Fenster mit Blick auf die Erde Platz und schau dort weiter, wo du aufgehört hast. Für eigene Dateien brauchst du kein Konto beim Player.
+Verbinde die Film- und Serienordner auf deinem NAS mit PICO Space Pro. Reality NAS Player erkennt die Titel und baut deine Mediathek auf. Such dir am Filmplakat etwas aus und nimm mit Blick auf die Erde Platz.
 
 **[Headset-APK herunterladen](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionshinweise und Prüfsummen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop-App bauen](../build.md)
 
-## Am Filmplakat wiedererkennen
+## Aus NAS-Ordnern werden Filmeinträge
 
-![Am Filmplakat wiedererkennen — Reality NAS Player](../showcase/01-library-en.webp)
+![Aus NAS-Ordnern werden Filmeinträge — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Stöbere durch die Cover, lies die Handlung nach oder suche eine Folge nach Staffel und Nummer. Vorhandene Kodi-NFOs und Bilder kannst du behalten. Nur für Filmdaten von TMDB brauchst du einen eigenen API-Schlüssel. Lokale Dateien lassen sich auch ohne Schlüssel abspielen.
+Füge einen freigegebenen Ordner hinzu und starte den Scan. Der Player erkennt Filme und Folgen anhand von Dateinamen, Jahreszahlen und Staffel- und Folgennummern. Er liest Film- oder Serien-IDs aus Kodi-NFO-Dateien und übernimmt die Poster und Hintergrundbilder neben deinen Videos. Im Bild stammen Inhalt und Besetzung von Polar Letter aus der NFO einer WebDAV-Freigabe, ganz ohne Onlineabfrage. Für die Onlinesuche kannst du deinen TMDB-API-Schlüssel hinterlegen. Falsche Zuordnungen lassen sich korrigieren.
+
+## Durch die Filmplakate stöbern
+
+![Durch die Filmplakate stöbern — Reality NAS Player](../showcase/01-library-en.webp)
+
+Dir fällt nur noch das blaue Plakat ein? Auf der Posterwand erkennst du den Film wieder. Öffne das Cover für Hintergrundbild, Handlung und Besetzung oder wähle bei Serien Staffel und Folge. Filtere nach Genre oder Jahrzehnt und setze angefangene Filme an der letzten Stelle fort.
 
 ## Die vorhandene Sammlung anschließen
 

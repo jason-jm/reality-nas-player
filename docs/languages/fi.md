@@ -15,15 +15,21 @@
 
 ![Oma elokuvateatteri PICO Space Prolle. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Elokuva saa jäädä kotiverkon NAS-levylle. Laita lasit päähän, valitse ikkunapaikka maapallon yläpuolelta ja jatka siitä, mihin jäit. Omien tiedostojen toisto ei vaadi käyttäjätiliä.
+Yhdistä NAS-palvelimesi elokuva- ja sarjakansiot PICO Space Prohon. Reality NAS Player tunnistaa teokset ja kokoaa kirjaston. Valitse elokuva julisteen perusteella ja istahda katselemaan Maata kiertoradalta.
 
 **[Lataa lasien APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Julkaisutiedot ja tarkistussummat](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Käännä työpöytäsovellus](../build.md)
 
-## Löydä elokuva kannen perusteella
+## Elokuvatiedot suoraan NAS-kansioista
 
-![Löydä elokuva kannen perusteella — Reality NAS Player](../showcase/01-library-en.webp)
+![Elokuvatiedot suoraan NAS-kansioista — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Selaa julisteita, tarkista näyttelijät tai etsi sarjasta oikea kausi ja jakso. Voit säilyttää Kodi-tyyliset NFO-tiedostot ja kansikuvat. Oma API-avain tarvitaan vain TMDB-tietojen hakuun.
+Lisää jaettu kansio ja käynnistä haku. Soitin tunnistaa elokuvia ja jaksoja tiedostonimen, vuosiluvun sekä kausi- ja jaksonumeron perusteella. Se lukee myös Kodi-NFO-tiedostoihin tallennetut elokuvien ja sarjojen tunnisteet ja käyttää videoiden vieressä olevia julisteita ja taustakuvia. Kuvan Polar Letterin juonikuvaus ja näyttelijät tulivat WebDAV-jaon NFO-tiedostosta ilman verkkohakua. TMDB-hakuun voit lisätä oman API-avaimesi. Virheellisen osuman voi korjata käsin.
+
+## Selaa kirjastoa kansikuvien avulla
+
+![Selaa kirjastoa kansikuvien avulla — Reality NAS Player](../showcase/01-library-en.webp)
+
+Muistatko sinisen julisteen, mutta et elokuvan nimeä? Julisteseinältä voit avata juonikuvauksen ja näyttelijätiedot tai valita sarjan kauden ja jakson. Rajaa valikoimaa tyylilajin tai vuosikymmenen mukaan tai jatka kesken jäänyttä elokuvaa samasta kohtauksesta.
 
 ## Yhdistä oma tallennustilasi
 

@@ -15,15 +15,21 @@
 
 ![Din egen biograf, skabt til PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Lad filmen ligge på din NAS. Tag headsettet på, vælg en vinduesplads med udsigt til Jorden, og se videre dér, hvor du stoppede. Dine egne filer kræver ingen konto hos afspilleren.
+Forbind mapperne med film og serier på din NAS med PICO Space Pro. Reality NAS Player genkender titlerne og opbygger dit bibliotek. Vælg en film ud fra omslaget, og tag plads med udsigt til Jorden.
 
 **[Hent APK til headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsnoter og kontrolsummer](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Byg computerappen](../build.md)
+
+## Fra NAS-mapper til filmoplysninger
+
+![Fra NAS-mapper til filmoplysninger — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+
+Tilføj en delt mappe, og start en scanning. Afspilleren bruger filnavne, årstal samt sæson- og afsnitsnumre til at genkende titlerne. Den læser også film- og serie-id’er fra Kodi-NFO-filer og bruger plakater og baggrunde ved siden af videoerne. Handlingen og rollelisten for Polar Letter på billedet kommer fra en NFO-fil på et WebDAV-drev, uden opslag på nettet. Tilføj din egen TMDB-API-nøgle til onlineopslag. Forkerte match kan rettes manuelt.
 
 ## Find filmen på plakaten
 
 ![Find filmen på plakaten — Reality NAS Player](../showcase/01-library-en.webp)
 
-Bladr i plakaterne, se handling og medvirkende, eller find næste afsnit efter sæson. Du kan beholde dine Kodi-NFO-filer og billeder. En personlig API-nøgle er kun nødvendig, hvis du vil hente oplysninger fra TMDB.
+Kan du huske den blå plakat, men ikke titlen? Gå på opdagelse blandt omslagene, og åbn en film for at se baggrundsbillede, handling og medvirkende. I serier kan du vælge sæson og afsnit. Filtrér efter genre eller årti, eller se videre fra sidste scene.
 
 ## Brug det lager, du har
 

@@ -15,15 +15,21 @@
 
 ![Tu sala de cine, diseñada para PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-La película puede quedarse en el NAS de casa. Ponte el visor, elige un asiento junto a la ventana y sigue la sesión con la Tierra al fondo. Tú eliges los archivos; no necesitas crear una cuenta en el reproductor.
+Conecta las carpetas de películas y series de tu NAS a PICO Space Pro. Reality NAS Player identifica los títulos y prepara la biblioteca. Elige una película por su cartel y toma asiento con vistas a la Tierra.
 
 **[Descargar APK para el visor](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notas de versión y sumas de verificación](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilar para escritorio](../build.md)
 
-## Encuentra esa película por su cartel
+## De las carpetas del NAS a las fichas de las películas
 
-![Encuentra esa película por su cartel — Reality NAS Player](../showcase/01-library-en.webp)
+![De las carpetas del NAS a las fichas de las películas — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Explora las carátulas, consulta el reparto y la sinopsis, o busca el episodio por temporada. Puedes conservar tus archivos NFO de Kodi y tus imágenes. Si quieres consultar TMDB, añade tu propia clave de API; los archivos locales se reproducen sin ella.
+Añade una carpeta compartida e inicia el análisis. El reproductor reconoce los nombres de archivo, el año y los números de temporada y episodio. También lee los identificadores de películas y series de los NFO de Kodi y aprovecha los carteles y fondos guardados junto al vídeo. La sinopsis y el reparto de Polar Letter, en la imagen, se leyeron sin conexión del NFO de un recurso WebDAV. Puedes añadir tu clave de la API de TMDB para buscar en línea y corregir una coincidencia a mano.
+
+## Explora la biblioteca por sus carteles
+
+![Explora la biblioteca por sus carteles — Reality NAS Player](../showcase/01-library-en.webp)
+
+Si solo recuerdas aquel cartel azul, búscalo en el muro de portadas. Abre la película para ver su fondo, la sinopsis y el reparto, o elige temporada y episodio en una serie. Filtra por género o década, o retoma una película en la escena donde la dejaste.
 
 ## Conecta lo que ya tienes
 

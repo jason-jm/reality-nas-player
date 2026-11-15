@@ -15,15 +15,21 @@
 
 ![Votre salle de cinéma personnelle, conçue pour PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Le film reste sur le NAS du salon. Installez-vous près d’un hublot, face à la Terre, et reprenez la séance que vous aviez laissée en pause. Vous apportez vos films ; aucun compte de lecteur n’est nécessaire.
+Connectez les dossiers de films et de séries de votre NAS à votre PICO Space Pro. Reality NAS Player reconnaît les titres et prépare la bibliothèque. Choisissez une affiche et prenez place face à la Terre.
 
 **[Télécharger l’APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notes de version et sommes de contrôle](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compiler la version de bureau](../build.md)
 
-## Retrouver un film par son affiche
+## Des dossiers du NAS aux fiches de films
 
-![Retrouver un film par son affiche — Reality NAS Player](../showcase/01-library-en.webp)
+![Des dossiers du NAS aux fiches de films — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Parcourez les affiches, ouvrez une fiche pour lire le synopsis ou retrouver un acteur. Les séries sont classées par saison et par épisode. Gardez vos fichiers NFO et vos images de style Kodi ; pour obtenir des affiches ou des fiches sur TMDB, renseignez votre propre clé API. Elle n’est pas nécessaire à la lecture locale.
+Lancez l’analyse d’un dossier partagé. Le lecteur s’appuie sur les noms de fichiers, les années et les numéros de saison et d’épisode. Il sait aussi lire les identifiants de films et de séries dans vos NFO Kodi et reprendre les affiches et fonds d’écran rangés à côté des vidéos. Sur l’image, le résumé et la distribution de Polar Letter viennent du NFO d’un partage WebDAV, lu hors ligne. Une clé API TMDB personnelle permet de chercher en ligne. Vous pouvez rectifier une association.
+
+## Retrouvez un film à son affiche
+
+![Retrouvez un film à son affiche — Reality NAS Player](../showcase/01-library-en.webp)
+
+Vous vous souvenez de l’affiche bleue mais plus du titre ? Parcourez le mur d’affiches, puis ouvrez une fiche pour retrouver le visuel, le résumé et les interprètes. Les séries se parcourent par saison et épisode. Filtrez par genre ou par décennie, ou reprenez un film à la scène où vous l’avez laissé.
 
 ## Lire depuis votre installation actuelle
 

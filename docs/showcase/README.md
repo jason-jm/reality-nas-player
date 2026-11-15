@@ -6,8 +6,9 @@ What you see on the screens is Reality NAS Player. The headset views were captur
 
 | Open a poster | What to look for |
 | --- | --- |
-| [A seat in orbit](00-screening-room-en.webp) | A film in progress, with Earth outside the Space Lounge windows. |
-| [Remember the cover?](01-library-en.webp) | A six-title library and the detail page for *Polar Letter*. |
+| [Your NAS, now showing](00-screening-room-en.webp) | A closer view from the center seat as *Polar Letter* plays in the Space Lounge. |
+| [From filename to film](01-auto-scraping-en.webp) | The original files on a WebDAV share, the app’s matching settings and the film entry produced by its scanner. |
+| [Remember the cover?](01-library-en.webp) | The six-title poster wall beside the original covers for *Salt Route* and *Tide Garden*. |
 | [Leave the files there](02-connect-en.webp) | Where to add a shared folder or connect a media server. |
 | [Where are we watching?](03-cinemas-en.webp) | The Space Lounge, Private Cinema, Village Square and Desert Camp, each running the same film. |
 | [Beyond the frame](04-panorama-en.webp) | The panorama controls and a second view of the same lake. |
@@ -17,4 +18,6 @@ What you see on the screens is Reality NAS Player. The headset views were captur
 
 The 3:2 format belongs to the **poster**, not to the app. A spatial view, a video and a desktop window each keep their own shape. We calibrated the headset capture with a square and a circle before taking the pictures. In the 1920 × 1920 capture the square measured 149 × 148 pixels and the circle 150 × 149. The published images use a single scale factor for each screenshot. Some frames crop empty space around the interface so its labels stay readable.
 
-The covers, synopses, subtitle line and sample footage belong to a fictional programme made for these pictures. The artwork is original and the demonstration films are not included with the player. The library, rooms, playback controls and settings are captures, not artist impressions. See the [third-party notices](../../THIRD_PARTY_NOTICES.md) for the environment and Earth imagery credits.
+For the metadata example, the app scanned a demonstration WebDAV share containing `Polar.Letter.2026.720p.mp4`, a Kodi `movie.nfo` with a sample ID, `poster.jpg` and `fanart.jpg`. With online lookup off, it read the title, year, synopsis and credits from the NFO and the pictures from the share. The cover photograph was captured during playback with the controls hidden. Its tighter framing preserves the proportions of the original capture.
+
+The covers, synopses, subtitle line and sample footage belong to a fictional programme made for these pictures. The artwork is original and the demonstration films are not included with the player. The library, rooms, playback controls and settings are app captures. See the [third-party notices](../../THIRD_PARTY_NOTICES.md) for the environment and Earth imagery credits.

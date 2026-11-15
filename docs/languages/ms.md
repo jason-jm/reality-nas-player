@@ -15,15 +15,21 @@
 
 ![Pawagam peribadi yang dibina untuk PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Biarkan filem tersimpan pada pemacu di rumah. Pakai PICO Space Pro, buka koleksi anda dan sambung menonton dari sebuah stesen yang mengorbit Bumi. Anda tidak perlu mendaftar akaun pemain untuk membuka fail sendiri.
+Sambungkan folder filem dan siri pada NAS anda ke PICO Space Pro. Reality NAS Player mengenal pasti tajuk dan menyusun koleksi anda. Pilih filem melalui poster, kemudian duduk dan tonton dengan pemandangan Bumi.
 
 **[Muat turun APK set kepala](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Nota keluaran dan nilai semak](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bina aplikasi komputer](../build.md)
 
-## Ingat poster, lupa tajuk?
+## Daripada folder NAS kepada maklumat filem
 
-![Ingat poster, lupa tajuk? — Reality NAS Player](../showcase/01-library-en.webp)
+![Daripada folder NAS kepada maklumat filem — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Cari filem melalui kulitnya, baca sinopsis atau semak barisan pelakon. Untuk siri, pilih musim dan episod; untuk filem yang belum habis, teruskan dari babak terakhir. Poster dan fail NFO sedia ada boleh digunakan. Tambah kunci API TMDB sendiri jika mahu mencari maklumat dalam talian.
+Tambah folder kongsi dan mulakan imbasan. Pemain mengenal pasti filem dan episod melalui nama fail, tahun serta nombor musim dan episod. Ia turut membaca ID filem atau siri dalam fail NFO Kodi dan menggunakan poster serta latar yang disimpan bersama video. Sinopsis dan barisan pelakon Polar Letter dalam gambar dibaca daripada NFO melalui WebDAV tanpa carian dalam talian. Untuk carian TMDB, tambah kunci API anda sendiri. Padanan yang salah boleh dibetulkan.
+
+## Selak koleksi mengikut poster
+
+![Selak koleksi mengikut poster — Reality NAS Player](../showcase/01-library-en.webp)
+
+Ingat poster biru tetapi terlupa tajuknya? Pilih kulit filem untuk melihat latar, sinopsis dan pelakon. Untuk siri, pilih musim dan episod. Tapis mengikut genre atau dekad, atau sambung menonton dari babak terakhir.
 
 ## Terus dari tempat anda menyimpan filem
 

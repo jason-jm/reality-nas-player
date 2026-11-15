@@ -15,15 +15,21 @@
 
 ![Um cinema particular feito para o PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-O filme pode ficar no NAS de casa. Coloque o headset, pegue um lugar à janela com vista para a Terra e volte à cena em que parou. Você traz os arquivos; não precisa criar uma conta no player.
+Conecte as pastas de filmes e séries do seu NAS ao PICO Space Pro. O Reality NAS Player identifica os títulos e organiza a biblioteca. Escolha um filme pela capa e assista de uma poltrona com vista para a Terra.
 
 **[Baixar APK do headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notas da versão e somas de verificação](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilar para computador](../build.md)
 
-## Escolha pela capa
+## Das pastas do NAS às fichas dos filmes
 
-![Escolha pela capa — Reality NAS Player](../showcase/01-library-en.webp)
+![Das pastas do NAS às fichas dos filmes — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Navegue pelos cartazes, confira a sinopse e o elenco ou procure um episódio por temporada. Dá para aproveitar arquivos NFO do Kodi e imagens que você já tem. Sua chave de API do TMDB só é necessária para buscar dados no serviço, não para reproduzir arquivos locais.
+Adicione uma pasta compartilhada e inicie a varredura. O player identifica os títulos pelo nome do arquivo, pelo ano e pelos números de temporada e episódio. Também lê os identificadores de filmes e séries em arquivos NFO do Kodi e aproveita os pôsteres e fundos salvos ao lado dos vídeos. Na imagem, a sinopse e o elenco de Polar Letter vieram de um NFO em um compartilhamento WebDAV, sem consulta à internet. Para buscar no TMDB, adicione sua chave de API. Você pode corrigir as associações.
+
+## Encontre o filme pela capa
+
+![Encontre o filme pela capa — Reality NAS Player](../showcase/01-library-en.webp)
+
+Esqueceu o título, mas lembra daquele pôster azul? Percorra o mural de capas e abra o filme para ver a arte de fundo, a sinopse e o elenco. Nas séries, escolha a temporada e o episódio. Filtre por gênero ou década ou continue uma sessão do ponto em que parou.
 
 ## Use o armazenamento que já tem
 

@@ -1,6 +1,6 @@
 # Reality NAS Player in your language
 
-A personal cinema built for **PICO Space Pro**. Pick a language for the illustrated product guide, headset download and first screening. Every edition uses the same English screenshots and posters.
+A personal cinema built for **PICO Space Pro**. Scan your NAS for film and TV metadata, browse the poster wall and choose a screening room. Pick a language for the illustrated guide and headset download.
 
 | Read the guide | Language |
 | --- | --- |

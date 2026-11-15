@@ -15,15 +15,21 @@
 
 ![PICO Space Pro のための、自分専用の映画館。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-映画は自宅の NAS に置いたまま、今夜の席は地球を望む窓際に。PICO Space Pro で自分のライブラリを開けば、昨夜止めた場面から再生できます。プレーヤーのアカウントは不要です。
+NAS の映画やドラマのフォルダーを PICO Space Pro につなぐと、Reality NAS Player が作品を識別してライブラリを整えます。ポスターから今夜の一本を選んで、地球の見える席へ。
 
 **[ヘッドセット用 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [リリース情報とチェックサム](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [デスクトップ版のビルド](../build.md)
 
-## 表紙を手がかりに一本を選ぶ
+## NAS のファイルから作品情報を自動取得
 
-![表紙を手がかりに一本を選ぶ — Reality NAS Player](../showcase/01-library-en.webp)
+![NAS のファイルから作品情報を自動取得 — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-ポスターから映画やアニメを探し、作品ページであらすじと出演者を確認できます。シリーズはシーズン・話数ごとにまとまり、視聴中の作品には続きから戻れます。Kodi 形式の NFO や手持ちの画像も利用可能。TMDB の情報を取得するときだけ、自分の API キーを設定します。
+共有フォルダーを追加してスキャンすると、ファイル名や公開年、シーズン・話数を手がかりに作品を照合します。Kodi 形式の NFO に映画やシリーズの ID があれば、それを読み、同じフォルダーのポスターや背景画像を使えます。画面の『Polar Letter』のあらすじと出演者は WebDAV 上の NFO からオフラインで読み込んだものです。オンライン検索には自分の TMDB API キーを設定でき、誤った照合は手動で直せます。
+
+## ポスターをめくって次の一本を選ぶ
+
+![ポスターをめくって次の一本を選ぶ — Reality NAS Player](../showcase/01-library-en.webp)
+
+題名は忘れても、青い表紙なら覚えている。そんなときはポスターが並ぶライブラリへ。作品を開くと背景画像、あらすじ、出演者が見られ、ドラマならシーズンと話数を選べます。ジャンルや年代で絞り込んだり、前回の続きから再生したりできます。
 
 ## いま使っている保存先から再生
 

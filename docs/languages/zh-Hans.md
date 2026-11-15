@@ -15,15 +15,21 @@
 
 ![为 PICO Space Pro 打造的私人影院。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-影片留在家里的硬盘上，观影的位置可以换到太空。戴上 PICO Space Pro，打开自己的片库，在地球旁看完昨晚暂停的那一幕。播放自己的文件无需注册播放器账号。
+把 NAS 上的电影和剧集文件夹接入 PICO Space Pro。Reality NAS Player 会识别影片、整理资料，你可以按封面挑片，再到太空观景厅里开场。
 
 **[下载头显 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [版本说明与校验值](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [桌面构建](../build.md)
 
-## 凭封面找回那部电影
+## 让播放器替你的 NAS 片库刮削资料
 
-![凭封面找回那部电影 — Reality NAS Player](../showcase/01-library-en.webp)
+![让播放器替你的 NAS 片库刮削资料 — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-海报墙把电影、动画和剧集放到一起。点开可看演职员和简介，剧集按季、集排列，「继续观看」会记得上次停在哪里。可以沿用 Kodi 风格的 NFO、海报和背景图；需要 TMDB 在线资料时再填自己的 API Key。不填也能播放本地文件。
+在「来源」里添加 NAS 共享并扫描。播放器会从文件名、年份和季集编号识别电影或剧集。已有 Kodi 风格的 NFO、海报和背景图？它能读取 NFO 里的影片或剧集 ID，沿用同目录的配图。图中的《Polar Letter》就是在关闭在线查询后，从 WebDAV 共享刮削出来的，连简介和演员都来自 NFO。需要在线补全时可填写自己的 TMDB API Key，匹配错了也能手动纠正。
+
+## 按封面逛海报墙
+
+![按封面逛海报墙 — Reality NAS Player](../showcase/01-library-en.webp)
+
+记得蓝色封面，却想不起片名？在海报墙上一眼就能认出来。点开封面可看背景图、简介和演职员，打开剧集还能按季选集。按类型、年代或观看进度筛选，「继续观看」会带你回到上次停下的那一幕。
 
 ## 家里的片源，直接连
 

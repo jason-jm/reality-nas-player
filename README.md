@@ -13,19 +13,25 @@
 
 </details>
 
-![A screening of Polar Letter in the Space Lounge, with Earth outside the windows.](docs/showcase/00-screening-room-en.webp)
+![A closer view of Polar Letter playing on the Space Lounge screen, with Earth visible through the windows.](docs/showcase/00-screening-room-en.webp)
 
-The movie can stay on the drive downstairs. Put on your **PICO Space Pro**, open your library and take a seat aboard a station orbiting Earth. Reality NAS Player plays the files you bring; there is no player account to create and no catalogue to subscribe to.
+Open the movie and TV folders on your NAS. Reality NAS Player identifies the titles and builds a library you can browse by cover on **PICO Space Pro**. Pick a film, take a seat above Earth and start watching. The files stay on your drive.
 
 **[Get the v1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop builds](docs/build.md)
 
-## What was that film with the blue cover?
+## Turn NAS folders into a film library
 
-![The headset library and the Polar Letter detail view, populated with original English demo artwork.](docs/showcase/01-library-en.webp)
+![A film filename and Kodi sidecar files beside the title, synopsis and cast the app read from a WebDAV share.](docs/showcase/01-auto-scraping-en.webp)
 
-Browse by artwork when you remember the cover but not the filename. Open a film for its synopsis and cast, or open a series to pick a season and episode. **Continue watching** takes you back to the scene you left. Filters for genre, decade and watch status are handy when nobody can decide what to put on.
+Add a shared folder under **Sources** and start a scan. The player reads filenames, years and episode numbers to identify what you own. Its metadata scraper can turn a name like `Polar.Letter.2026.720p.mp4` into a film entry with a synopsis, credits and artwork. With automatic library updates enabled, later scans pick up new files.
 
-Already maintain posters, backdrops and Kodi-style NFO files? Keep them. For online film artwork and details, add your own TMDB API key in Settings. Anime can also draw on AniList and Bangumi. A mismatched title can be corrected by hand; local playback never needs a metadata key.
+Already organize your NAS with Kodi or tinyMediaManager? The player reads movie or series IDs in **NFO files** and uses posters and backdrops stored beside your videos. The example above was matched from a WebDAV share with online lookup switched off. For online film and TV matches, add your own TMDB API key. Anime matching can also use AniList and Bangumi. If the player picks the wrong title, correct it once and the choice survives an ordinary rescan.
+
+## Browse your collection by its artwork
+
+![The headset poster wall beside the original Salt Route and Tide Garden covers shown on the shelf.](docs/showcase/01-library-en.webp)
+
+Remember the blue cover but not the film’s name? Look for it on the **poster wall**. Open a cover to see the backdrop, synopsis and cast. Open a series to choose a season and episode. Genre, decade and watch-status filters narrow the shelf, and **Continue watching** takes you back to the scene you left.
 
 ## Bring the drive, share or server you use today
 

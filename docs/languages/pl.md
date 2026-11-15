@@ -15,15 +15,21 @@
 
 ![Twoja prywatna sala kinowa na PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Filmy mogą zostać na domowym dysku. Załóż PICO Space Pro, otwórz swoją kolekcję i wróć do wczorajszej sceny z widokiem na Ziemię. Odtwarzanie własnych plików nie wymaga konta w aplikacji.
+Połącz foldery filmów i seriali na swoim NAS-ie z PICO Space Pro. Reality NAS Player rozpozna tytuły i ułoży je w bibliotece. Wybierz film po plakacie i zajmij miejsce z widokiem na Ziemię.
 
 **[Pobierz APK na gogle](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Informacje o wydaniu i sumy kontrolne](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Budowanie na komputer](../build.md)
 
-## Pamiętasz okładkę, ale nie tytuł?
+## Od folderów na NAS-ie do opisów filmów
 
-![Pamiętasz okładkę, ale nie tytuł? — Reality NAS Player](../showcase/01-library-en.webp)
+![Od folderów na NAS-ie do opisów filmów — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Przejrzyj plakaty, sprawdź obsadę lub opis, a w serialu wybierz sezon i odcinek. Rozpoczęty film wróci do miejsca, w którym ostatnio przerwano seans. Możesz użyć własnych plakatów i plików NFO albo dodać swój klucz API do pobierania danych z TMDB.
+Dodaj folder sieciowy i uruchom skanowanie. Odtwarzacz rozpoznaje tytuły po nazwach plików, roku oraz numerach sezonów i odcinków. Odczytuje też identyfikatory filmów i seriali z plików NFO w formacie Kodi i korzysta z plakatów i teł zapisanych obok wideo. Na ilustracji opis i obsada filmu Polar Letter pochodzą z pliku NFO odczytanego z udziału WebDAV bez wyszukiwania w internecie. Do wyszukiwania w TMDB możesz dodać własny klucz API. Błędne dopasowanie można poprawić.
+
+## Przeglądaj bibliotekę po plakatach
+
+![Przeglądaj bibliotekę po plakatach — Reality NAS Player](../showcase/01-library-en.webp)
+
+Pamiętasz niebieski plakat, ale nie tytuł? Wybierz okładkę, by zobaczyć opis, obsadę i tło filmu. Przy serialu możesz przejść do wybranego sezonu i odcinka. Filtry gatunku i dekady ułatwiają wybór, a rozpoczęty film wznowisz od ostatniej sceny.
 
 ## Otwórz film tam, gdzie już jest
 

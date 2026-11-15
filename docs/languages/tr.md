@@ -15,15 +15,21 @@
 
 ![PICO Space Pro için tasarlanmış kişisel sinemanız. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Filmleriniz evdeki diskte kalabilir. PICO Space Pro’yu takın, arşivinizi açın ve dün gece yarım kalan sahneyi Dünya manzaralı bir koltuktan izleyin. Kendi dosyalarınızı oynatmak için uygulamada hesap açmanız gerekmez.
+NAS’ınızdaki film ve dizi klasörlerini PICO Space Pro’ya bağlayın. Reality NAS Player yapımları tanır ve arşivinizi düzenler. Afişinden bir film seçip Dünya manzaralı koltuğunuza geçin.
 
 **[Başlık için APK’yı indir](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Sürüm notları ve sağlama toplamları](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Masaüstü uygulamasını derle](../build.md)
 
-## Adı değil de afişi aklınızdaysa
+## NAS klasörlerinden film künyelerine
 
-![Adı değil de afişi aklınızdaysa — Reality NAS Player](../showcase/01-library-en.webp)
+![NAS klasörlerinden film künyelerine — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Arşivi kapaklardan tarayın, bir filmin konusuna ve oyuncularına bakın ya da dizinin sezonunu ve bölümünü seçin. Yarım bıraktığınız film kaldığınız yerden açılır. Kendi afişlerinizi ve NFO dosyalarınızı kullanabilir, TMDB’den bilgi almak için kendi API anahtarınızı ekleyebilirsiniz.
+Bir paylaşımlı klasör ekleyip taramayı başlatın. Oynatıcı dosya adlarını, yılları, sezon ve bölüm numaralarını kullanarak yapımları tanır. Kodi biçimindeki NFO dosyalarından film veya dizi kimliklerini okur ve videoların yanındaki afişlerle arka planları kullanır. Görseldeki Polar Letter’ın özeti ve oyuncu kadrosu, internet araması yapılmadan bir WebDAV paylaşımındaki NFO’dan alındı. Çevrimiçi arama için kendi TMDB API anahtarınızı ekleyebilir, hatalı bir eşleşmeyi elle düzeltebilirsiniz.
+
+## Arşivi afişlerden gezin
+
+![Arşivi afişlerden gezin — Reality NAS Player](../showcase/01-library-en.webp)
+
+Adını unuttunuz ama mavi afiş aklınızda mı? Kapağı açıp arka planı, konuyu ve oyuncu kadrosunu görün. Dizilerde sezon ve bölüm seçin. Türe ya da on yıla göre filtreleyebilir veya yarım kalan filme kaldığınız sahneden devam edebilirsiniz.
 
 ## Diskten ya da evdeki sunucudan
 

@@ -15,15 +15,21 @@
 
 ![En egen filmvisning, byggd för PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Filmen kan ligga kvar på din NAS. Ta på dig headsetet, välj en fönsterplats med jorden utanför och fortsätt där du slutade. Du behöver inget spelarkonto för dina egna videofiler.
+Anslut film- och seriemapparna på din NAS till PICO Space Pro. Reality NAS Player identifierar titlarna och bygger ditt bibliotek. Välj en film efter omslaget och slå dig ned med utsikt över jorden.
 
 **[Hämta APK för headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsinformation och kontrollsummor](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bygg datorappen](../build.md)
+
+## Från NAS-mappar till filmuppgifter
+
+![Från NAS-mappar till filmuppgifter — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
+
+Lägg till en delad mapp och starta en genomsökning. Spelaren tolkar filnamn, årtal samt säsongs- och avsnittsnummer. Film- och serie-ID:n i Kodi-NFO-filer går också att läsa, tillsammans med affischer och bakgrunder intill videofilerna. På bilden kommer handlingen och rollistan för Polar Letter från en NFO-fil på en WebDAV-resurs, helt utan sökning på nätet. Lägg till din egen TMDB-nyckel om du vill söka online. Felaktiga träffar går att rätta.
 
 ## Hitta filmen på omslaget
 
 ![Hitta filmen på omslaget — Reality NAS Player](../showcase/01-library-en.webp)
 
-Bläddra bland affischerna, läs handlingen eller välj en serie efter säsong och avsnitt. Behåll befintliga Kodi-NFO-filer och bilder. Din egen API-nyckel behövs bara om du vill hämta filminformation från TMDB.
+Du kanske minns den blå affischen bättre än titeln. Bläddra bland omslagen och öppna ett för att se bakgrundsbild, handling och medverkande. För en serie kan du välja säsong och avsnitt. Filtrera på genre eller årtionde, eller fortsätt där du slutade.
 
 ## Anslut din samling
 

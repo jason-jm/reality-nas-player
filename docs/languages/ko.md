@@ -15,15 +15,21 @@
 
 ![PICO Space Pro를 위한 나만의 영화관. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-영화 파일은 집에 있는 NAS에 두고, 오늘 볼 자리는 지구가 내려다보이는 창가로 정하세요. PICO Space Pro에서 보던 장면을 바로 이어 볼 수 있습니다. 플레이어 계정은 필요하지 않습니다.
+NAS에 있는 영화와 시리즈 폴더를 PICO Space Pro에 연결하세요. Reality NAS Player가 작품을 식별해 보관함을 정리합니다. 포스터로 오늘 볼 작품을 골라 지구가 보이는 자리에 앉아 보세요.
 
 **[헤드셋 APK 받기](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [릴리스 및 체크섬](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [데스크톱 빌드](../build.md)
 
-## 포스터로 기억하는 영화
+## NAS를 스캔해 작품 정보를 자동으로 채우세요
 
-![포스터로 기억하는 영화 — Reality NAS Player](../showcase/01-library-en.webp)
+![NAS를 스캔해 작품 정보를 자동으로 채우세요 — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-영화와 애니메이션을 표지로 고르고 작품의 줄거리와 출연진을 확인하세요. 시리즈는 시즌과 회차별로 정리되며 이어 보기로 돌아갈 수 있습니다. 기존 Kodi NFO와 포스터도 사용할 수 있습니다. TMDB 자료를 받을 때만 개인 API 키를 입력하면 됩니다.
+공유 폴더를 추가하고 스캔하면 파일명, 연도, 시즌과 회차를 바탕으로 작품을 찾습니다. Kodi 형식 NFO에 영화나 시리즈 ID가 있으면 이를 읽고 파일 옆에 둔 포스터와 배경 이미지를 사용합니다. 화면 속 ‘Polar Letter’의 줄거리와 출연진은 온라인 검색 없이 WebDAV 공유의 NFO에서 가져왔습니다. 온라인 검색에는 본인의 TMDB API 키를 추가할 수 있고 잘못 연결된 작품은 직접 바로잡을 수 있습니다.
+
+## 포스터로 둘러보는 보관함
+
+![포스터로 둘러보는 보관함 — Reality NAS Player](../showcase/01-library-en.webp)
+
+제목이 가물가물해도 파란 포스터는 눈에 띕니다. 표지를 열어 배경 이미지와 줄거리, 출연진을 보거나 시리즈의 시즌과 회차를 고르세요. 장르와 연대로 범위를 좁히고, 이어 보기로 마지막 장면에 돌아갈 수 있습니다.
 
 ## 지금 쓰는 저장소 그대로
 

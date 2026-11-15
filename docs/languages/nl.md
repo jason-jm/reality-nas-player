@@ -15,15 +15,21 @@
 
 ![Een eigen filmzaal, ontworpen voor PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-De film blijft op je NAS. Zet de headset op, kies een stoel aan het raam met uitzicht op de aarde en kijk verder waar je gebleven was. Voor je eigen bestanden heb je geen account bij de speler nodig.
+Verbind de mappen met films en series op je NAS met PICO Space Pro. Reality NAS Player herkent de titels en vult je bibliotheek. Kies een film aan de hand van de hoes en neem plaats met uitzicht op de aarde.
 
 **[Headset-APK downloaden](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versiegegevens en controlesommen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktopapp bouwen](../build.md)
 
-## Zoek op de hoes
+## Van NAS-map naar filmgegevens
 
-![Zoek op de hoes — Reality NAS Player](../showcase/01-library-en.webp)
+![Van NAS-map naar filmgegevens — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Blader langs filmposters, bekijk de rolverdeling of zoek een aflevering per seizoen. Bestaande Kodi-NFO’s en afbeeldingen kun je behouden. Alleen voor gegevens van TMDB heb je je eigen API-sleutel nodig.
+Voeg een gedeelde map toe en start een scan. De speler herkent films en afleveringen aan bestandsnamen, jaartallen en seizoen- en afleveringsnummers. Hij leest film- en serie-ID’s uit Kodi-NFO-bestanden en gebruikt posters en achtergronden die naast je video’s staan. De beschrijving en rolverdeling van Polar Letter in de afbeelding komen uit een NFO op een WebDAV-share, zonder online zoekopdracht. Voor TMDB kun je je eigen API-sleutel invoeren. Een verkeerde koppeling kun je zelf herstellen.
+
+## Blader langs de filmhoezen
+
+![Blader langs de filmhoezen — Reality NAS Player](../showcase/01-library-en.webp)
+
+Weet je de titel niet meer, maar herinner je je de blauwe hoes? Op de posterwand herken je hem meteen. Open een film voor de achtergrond, het verhaal en de acteurs, of kies bij een serie een seizoen en aflevering. Filter op genre of decennium, of kijk verder waar je was gebleven.
 
 ## Sluit je eigen opslag aan
 

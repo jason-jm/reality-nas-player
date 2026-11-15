@@ -15,15 +15,21 @@
 
 ![Vaše soukromé kino pro PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
-Filmy můžou zůstat na disku v pracovně. Nasaďte si PICO Space Pro, otevřete svou sbírku a vyberte si sedadlo s výhledem na Zemi. K přehrávání vlastních souborů nepotřebujete účet.
+Připojte složky s filmy a seriály na svém NAS k PICO Space Pro. Reality NAS Player rozpozná tituly a sestaví knihovnu. Vyberte si film podle plakátu a usaďte se s výhledem na Zemi.
 
 **[Stáhnout APK pro headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Poznámky k vydání a kontrolní součty](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Sestavení pro počítač](../build.md)
 
-## Když si pamatujete jen plakát
+## Ze složek na NAS do filmové knihovny
 
-![Když si pamatujete jen plakát — Reality NAS Player](../showcase/01-library-en.webp)
+![Ze složek na NAS do filmové knihovny — Reality NAS Player](../showcase/01-auto-scraping-en.webp)
 
-Procházejte sbírku podle obalů. U filmu najdete děj a obsazení, u seriálu řady a epizody. Rozkoukaný film pokračuje tam, kde jste skončili. Přehrávač využije i vaše plakáty a soubory NFO; pro údaje z TMDB můžete přidat vlastní klíč API.
+Přidejte sdílenou složku a spusťte skenování. Přehrávač rozpoznává filmy a epizody podle názvů souborů, roku a čísel řad a dílů. Čte také identifikátory filmů a seriálů ze souborů NFO pro Kodi a využívá plakáty a pozadí uložené vedle videa. Popis a obsazení filmu Polar Letter na obrázku načetl z NFO přes WebDAV bez internetového vyhledávání. Pro hledání v TMDB zadejte vlastní klíč API. Chybné přiřazení můžete opravit.
+
+## Listujte filmovými plakáty
+
+![Listujte filmovými plakáty — Reality NAS Player](../showcase/01-library-en.webp)
+
+Pamatujete si modrý plakát, ale název už ne? Najděte ho mezi obaly a otevřete si příběh, obsazení a obrázek na pozadí. U seriálů si zvolíte řadu a díl. Nabídku lze zúžit podle žánru či desetiletí a rozkoukaný film pustit od poslední scény.
 
 ## Z disku rovnou na plátno
 
