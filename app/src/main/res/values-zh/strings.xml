@@ -262,7 +262,7 @@
     <string name="set_local_meta_hint">读取影片旁的 .nfo 和 poster、fanart 图片（Kodi、Jellyfin 等写的格式）。NFO 里有数据库编号时直接按编号识别。</string>
     <string name="set_sources_group">数据源</string>
     <string name="set_tmdb_hint">已内置应用 key，可留空；填入自己的 key 则优先使用。离线刮削打开时不联网。</string>
-    <string name="set_tmdb_hint2">填入后自动获取封面、简介、演员和评分。离线刮削打开时不会使用。</string>
+    <string name="set_tmdb_hint2">可以留空。播放器会自动从公开片库查找电影海报和简介。填入密钥可改用 TMDB。</string>
     <string name="set_tmdb_placeholder">留空即用内置 key</string>
     <string name="set_tmdb_where">themoviedb.org 申请，免费</string>
     <string name="set_omdb_hint">可选。填入后电影会额外显示 IMDb / 烂番茄 / Metacritic 评分。</string>
@@ -317,7 +317,7 @@
     <string name="set_no_collect_body">Reality NAS Player 没有账号系统、广告或使用统计。片库保存在头显。开启 NAS 同步后，观看进度、收藏和手动匹配也会写入你选择的共享文件夹。</string>
     <string name="set_when_network">什么时候联网</string>
     <string name="set_scrape_metadata">刮削元数据</string>
-    <string name="set_scrape_metadata_body">扫描时把从文件名解析出的标题关键词（如 “Interstellar 2014”）发给 TMDB / AniList / Bangumi / Jikan 等公开数据库换取海报和简介。不发送完整路径、服务器地址、凭据或设备标识。</string>
+    <string name="set_scrape_metadata_body">扫描时把从文件名解析出的标题关键词（如 “Interstellar 2014”）发给 every.film / NeoDB / Wikidata / OFDb / TMDB / AniList / Bangumi / Jikan 等公开数据库换取海报和简介。不发送完整路径、服务器地址、凭据或设备标识。</string>
     <string name="set_you_asked">你主动触发的下载</string>
     <string name="set_you_asked_body">下载到本机时，文件只从你自己的服务器复制到头显；播放时视频数据也只在头显与你自己的服务器之间传输，不经过任何第三方。</string>
     <string name="set_offline_note">离线刮削使用本地规则识别片名，跳过在线元数据和封面查询。你仍可播放 NAS 上的影片。</string>

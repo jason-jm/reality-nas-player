@@ -18,8 +18,19 @@ kotlin {
     compilerOptions { jvmTarget.set(JvmTarget.JVM_11) }
 }
 
-tasks.named<Copy>("processResources") {
-    from(rootProject.file("private-build/tmdb-api-key.txt")) { into("reality-nas-player") }
+// Only an explicitly configured build can include a publisher credential.
+val publisherKeyPath = providers.gradleProperty("reality.tmdbKeyFile").orNull
+if (publisherKeyPath != null) {
+    val publisherKeyFile = rootProject.file(publisherKeyPath)
+    require(publisherKeyFile.isFile && publisherKeyFile.readText().trim().matches(Regex("[0-9a-fA-F]{32}"))) {
+        "reality.tmdbKeyFile must point to a file containing a TMDB v3 API key."
+    }
+    tasks.named<Copy>("processResources") {
+        from(publisherKeyFile) {
+            into("reality-nas-player")
+            rename { "tmdb-api-key.txt" }
+        }
+    }
 }
 
 // Forward -Daura.* to the test JVM so the poster-wall evaluation harness (eval/README.md) can

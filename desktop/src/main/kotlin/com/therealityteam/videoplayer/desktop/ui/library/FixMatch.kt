@@ -1,5 +1,6 @@
 package com.therealityteam.videoplayer.desktop.ui.library
 
+import com.therealityteam.videoplayer.data.scrape.TmdbConfig
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.VerticalScrollbar
 import androidx.compose.foundation.background
@@ -90,7 +91,7 @@ fun FixMatchPage(state: AppState, key: String) {
     var query by remember(key) { mutableStateOf(group.title) }
     var results by remember(key) { mutableStateOf<List<MetaResult>?>(null) }
     var loading by remember { mutableStateOf(false) }
-    var applying by remember { mutableStateOf<Int?>(null) }
+    var applying by remember { mutableStateOf<String?>(null) }
     fun search() {
         loading = true
         val from = source
@@ -118,7 +119,7 @@ fun FixMatchPage(state: AppState, key: String) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Txt(s["d_fix_source"], Aura.type.callout, c.textSecondary)
                 Spacer(Modifier.width(8.dp))
-                Segmented(listOf(MatchSource.TMDB to "TMDB", MatchSource.ANILIST to "AniList"), source, { source = it })
+                Segmented(listOf(MatchSource.TMDB to (if (TmdbConfig.effectiveKey.isBlank()) s["nav_movies"] else "TMDB"), MatchSource.ANILIST to "AniList"), source, { source = it })
             }
             if (group.items.size > 1) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -143,10 +144,10 @@ fun FixMatchPage(state: AppState, key: String) {
             list != null -> Box(Modifier.fillMaxSize()) {
                 val listState = rememberLazyListState()
                 LazyColumn(state = listState, verticalArrangement = Arrangement.spacedBy(4.dp), contentPadding = PaddingValues(bottom = 40.dp)) {
-                    items(list, key = { source.name + ":" + it.kind.name + ":" + it.providerId }) { r ->
-                        Candidate(r, applying == r.providerId) {
+                    items(list, key = { source.name + ":" + it.kind.name + ":" + (it.publicMovieKey ?: it.providerId) }) { r ->
+                        Candidate(r, applying == (r.publicMovieKey ?: r.providerId.toString())) {
                             if (applying != null) return@Candidate
-                            applying = r.providerId
+                            applying = r.publicMovieKey ?: r.providerId.toString()
                             val targets = if (wholeCard) group.items else listOf(item)
                             val anime = source == MatchSource.ANILIST
                             scope.launch {

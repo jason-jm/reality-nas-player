@@ -17,7 +17,7 @@
 
 Ouvrez les dossiers de films, de séries et d’anime que vous gardez sur votre NAS. Reality NAS Player y retrouve les titres, range les épisodes et rattache les bonus à leur œuvre. Sur **PICO Space Pro**, choisissez une affiche et installez-vous face à la Terre.
 
-**[Télécharger l’APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notes de version et sommes de contrôle](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compiler la version de bureau](../build.md)
+**[Télécharger l’APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Notes de version et sommes de contrôle](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compiler la version de bureau](../build.md)
 
 ## Des dossiers du NAS aux fiches de films
 
@@ -27,7 +27,7 @@ Ouvrez les dossiers de films, de séries et d’anime que vous gardez sur votre 
 
 Pour un anime, si une équipe de fansub abrège le titre en `Seitokai`, un autre épisode du dossier peut fournir le nom complet à chercher sur AniList. Le film sorti en salles peut avoir sa propre affiche, tandis que les génériques sans crédits rejoignent les bonus de la série. Deux encodages d’un même film peuvent partager une fiche, avec le choix de la version à lire.
 
-Pour les films et séries, un NFO Kodi contenant un identifiant TMDB permet de reprendre hors ligne le synopsis, la distribution et les illustrations conservées sur le NAS. Pour interroger TMDB en ligne, renseignez votre propre clé API. Une correction apportée à la fiche d’une série vaut pour les fichiers qu’elle regroupe et reste en place après une nouvelle analyse.
+Pour les films et séries, un NFO Kodi contenant un identifiant TMDB permet de reprendre hors ligne le synopsis, la distribution et les illustrations conservées sur le NAS. Dès la première analyse, le lecteur reconnaît les films à partir du titre et de l’année et récupère les affiches et les résumés disponibles, sans compte ni clé API. Une correction apportée à la fiche d’une série vaut pour les fichiers qu’elle regroupe et reste en place après une nouvelle analyse.
 
 [Explorer les exemples et les essayer avec les tests du projet (en anglais)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Téléchargez avant de quitter le Wi-Fi. Un partage SMB de votre choix peut sync
 
 ![Au bureau aussi — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-Sur macOS et Windows, retrouvez les outils de bibliothèque et lisez vos fichiers à la souris et au clavier. Les salles virtuelles sont réservées au casque. La v1.0 fournit un APK pour casque ; l’application de bureau se compile à partir des sources.
+Sur macOS et Windows, retrouvez les outils de bibliothèque et lisez vos fichiers à la souris et au clavier. Les salles virtuelles sont réservées au casque. La v1.1.0 fournit un APK pour casque ; l’application de bureau se compile à partir des sources.
 
 ## Première séance
 

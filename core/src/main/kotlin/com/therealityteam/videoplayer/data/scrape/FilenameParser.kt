@@ -1274,11 +1274,20 @@ object FilenameParser {
         // When the file title can't be trusted, adopt the nearest informative folder's title + year.
         // A clean, year-bearing release folder also wins over a year-less file so a boxset parent can't.
         if (!fromFile.isEpisode && !trustworthyFile(fromFile, fileName)) {
+            // A long word with a year can be a complete film name (Interstellar.2014). A mixed
+            // shelf cannot identify it better. A dated release folder or “Cloud Atlas” for
+            // “cloudatlas.2012” still supplies the title.
+            val datedWord = fromFile.year != null && !fromFile.isWeak() &&
+                fromFile.title.all(Char::isLetter) && !SITE_STAMP.containsMatchIn(fileName)
             for ((i, folder) in folders.withIndex()) {
                 if (i >= 4) break
                 if (folder.lowercase() in CONTAINER_FOLDERS || isSeasonFolder(folder)) continue
                 val p = parse(folder)
-                if (!p.isWeak()) return dropOwnedYear(ParsedName(p.title, p.year ?: fromFile.year))
+                if (p.isWeak()) continue
+                if (datedWord && p.year != fromFile.year &&
+                    !p.title.replace(" ", "").equals(fromFile.title, ignoreCase = true)) continue
+                val releaseYear = if (datedWord) fromFile.year else p.year ?: fromFile.year
+                return dropOwnedYear(ParsedName(p.title, releaseYear))
             }
         }
 

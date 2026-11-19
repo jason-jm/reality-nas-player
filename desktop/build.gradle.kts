@@ -51,7 +51,14 @@ sourceSets {
 
 tasks.named<Copy>("processResources") {
     dependsOn(headsetStrings)
-    from(file("../private-build/tmdb-api-key.txt")) { into("reality-nas-player") }
+    providers.gradleProperty("reality.tmdbKeyFile").orNull?.let { path ->
+        val keyFile = rootDir.parentFile.resolve(path)
+        require(keyFile.isFile && keyFile.readText().trim().matches(Regex("[0-9a-fA-F]{32}")))
+        from(keyFile) {
+            into("reality-nas-player")
+            rename { "tmdb-api-key.txt" }
+        }
+    }
 }
 
 /** This machine as mediamp names platforms: macos-arm64, windows-x64, … */
@@ -234,7 +241,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Exe)
             packageName = "Reality NAS Player"
-            packageVersion = "1.0.0"
+            packageVersion = "1.1.0"
             description = "A video player for your own library"
             vendor = "The Reality Team"
             copyright = "Free and open source"

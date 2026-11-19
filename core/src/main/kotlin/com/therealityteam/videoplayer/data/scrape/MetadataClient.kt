@@ -53,6 +53,10 @@ data class MetaResult(
     /** The provider's form for the entry (AniList: TV / TV_SHORT / MOVIE / SPECIAL / OVA / ONA / MUSIC),
      *  so a query that names a form (`… OVA`) can prefer the entry of that form. */
     val format: String? = null,
+    /** Stable identity for catalogues whose film identifiers are strings. */
+    val publicMovieKey: String? = null,
+    /** Cross-reference used only to verify the identity in a local NFO. */
+    val referencedTmdbMovie: Int? = null,
 )
 
 /** A TV show's season and its episode count (for mapping absolute episode numbers to seasons). */
@@ -82,7 +86,7 @@ interface MetadataClient {
     suspend fun findByImdb(imdbId: String): MetaResult? = null
 }
 
-/** Runtime config (API key set from Settings; empty = offline, scraping degrades gracefully). */
+/** Online TMDB lookup uses the viewer’s key when set, then the publisher key packaged with the app. */
 object TmdbConfig {
     /** Optional publisher resource. A clean checkout uses the viewer’s key from Settings. */
     val BUILT_IN_KEY: String by lazy {

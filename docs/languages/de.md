@@ -17,7 +17,7 @@
 
 Öffne die Film-, Serien- und Anime-Ordner, die sich über die Jahre auf deinem NAS angesammelt haben. Reality NAS Player erkennt Titel, ordnet Folgen und legt Extras zur passenden Serie. Auf **PICO Space Pro** wählst du ein Cover und nimmst mit Blick auf die Erde Platz.
 
-**[Headset-APK herunterladen](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionshinweise und Prüfsummen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop-App bauen](../build.md)
+**[Headset-APK herunterladen](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versionshinweise und Prüfsummen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Desktop-App bauen](../build.md)
 
 ## Aus NAS-Ordnern werden Filmeinträge
 
@@ -27,7 +27,7 @@
 
 Fansub-Dateien tragen oft Kürzel. Heißt eine Folge nur `Seitokai`, kann eine andere im selben Ordner den vollständigen Namen für die Suche bei AniList liefern. Ein Kinofilm kann ein eigenes Cover bekommen, während Vor- und Abspänne ohne Texteinblendungen unter den Extras der Serie landen. Mehrere Fassungen desselben Films lassen sich über einen einzigen Eintrag auswählen.
 
-Ein Kodi-NFO mit TMDB-ID liefert bei Filmen und Serien auch offline die darin gespeicherte Handlung und Besetzung. Poster und Hintergrundbilder können aus deinem Ordner stammen. Für die Online-Suche bei TMDB hinterlegst du deinen eigenen API-Schlüssel. Eine falsche Zuordnung korrigierst du für die gesamte Serienkarte. Die Auswahl bleibt beim nächsten Scan erhalten.
+Ein Kodi-NFO mit TMDB-ID liefert bei Filmen und Serien auch offline die darin gespeicherte Handlung und Besetzung. Poster und Hintergrundbilder können aus deinem Ordner stammen. Beim Scannen erkennt der Player Filme anhand von Titel und Erscheinungsjahr und lädt verfügbare Poster und Inhaltsangaben. Dafür brauchst du weder Konto noch API-Schlüssel. Eine falsche Zuordnung korrigierst du für die gesamte Serienkarte. Die Auswahl bleibt beim nächsten Scan erhalten.
 
 [Beispiele und die zugehörigen Open-Source-Tests ansehen (Englisch)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Lade den Film vor der Reise auf das Headset. Über eine eigene SMB-Freigabe kann
 
 ![Wieder am Schreibtisch — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-Unter macOS und Windows lässt sich die Sammlung mit Maus und Tastatur durchsuchen und abspielen. Die räumlichen Kinos gehören zur Headset-Version. v1.0 enthält eine Headset-APK; die Desktop-App wird aus dem Quellcode gebaut.
+Unter macOS und Windows lässt sich die Sammlung mit Maus und Tastatur durchsuchen und abspielen. Die räumlichen Kinos gehören zur Headset-Version. v1.1.0 enthält eine Headset-APK; die Desktop-App wird aus dem Quellcode gebaut.
 
 ## Die erste Vorstellung
 

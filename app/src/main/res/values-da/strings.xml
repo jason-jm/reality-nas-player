@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Læs .nfo-, poster- og fanart-filerne ved siden af en video, sådan som Kodi og Jellyfin skriver dem. En nfo med et database-id identificerer filmen uden en søgning.</string>
     <string name="set_sources_group">Datakilder</string>
     <string name="set_tmdb_hint">En appnøgle er indbygget, så feltet kan forblive tomt; din egen nøgle bruges først. Der hentes intet, mens offlineskrabning er slået til.</string>
-    <string name="set_tmdb_hint2">Udfyld dette, så kommer covers, resuméer, medvirkende og vurderinger af sig selv. Bruges ikke, mens offlineskrabning er slået til.</string>
+    <string name="set_tmdb_hint2">Valgfrit. Uden en nøgle findes filmplakater og resuméer i offentlige filmkataloger. Indtast en nøgle for at bruge TMDB.</string>
     <string name="set_tmdb_placeholder">Tomt bruger den indbyggede nøgle</string>
     <string name="set_tmdb_where">Gratis fra themoviedb.org</string>
     <string name="set_omdb_hint">Valgfri. Med den viser film også vurderinger fra IMDb, Rotten Tomatoes og Metacritic.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player har ingen konti, annoncer eller brugsstatistik. Biblioteket ligger på headsettet. Med NAS-synkronisering gemmes afspilningspositioner, favoritter og manuelle match også i den delte mappe, du vælger.</string>
     <string name="set_when_network">Når den går online</string>
     <string name="set_scrape_metadata">Hentning af metadata</string>
-    <string name="set_scrape_metadata_body">Scanningen sender titlen, der læses ud af et filnavn – f.eks. »Interstellar 2014« – til offentlige databaser som TMDB, AniList, Bangumi og Jikan, i bytte for en plakat og et resumé. Aldrig den fulde sti, din servers adresse, dine loginoplysninger eller noget enheds-id.</string>
+    <string name="set_scrape_metadata_body">Scanningen sender titlen, der læses ud af et filnavn – f.eks. »Interstellar 2014« – til offentlige databaser som every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi og Jikan, i bytte for en plakat og et resumé. Aldrig den fulde sti, din servers adresse, dine loginoplysninger eller noget enheds-id.</string>
     <string name="set_you_asked">Downloads, du beder om</string>
     <string name="set_you_asked_body">En download til headsettet kopieres kun fra din egen server; under afspilning går videoen kun mellem dette headset og din egen server – ingen tredjepart imellem.</string>
     <string name="set_offline_note">Offlineskrabning genkender titler ud fra filnavne uden at hente metadata eller plakater på nettet. Du kan stadig afspille film fra din NAS.</string>

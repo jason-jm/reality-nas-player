@@ -17,7 +17,7 @@
 
 把 NAS 上积攒多年的电影、剧集和番剧文件夹接进来。Reality NAS Player 能认出藏在普通文件名里的电影，把正片、分集和特典各自归好。戴上 **PICO Space Pro**，从海报墙挑一部，到太空观影厅开场。
 
-**[下载头显 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [版本说明与校验值](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [桌面构建](../build.md)
+**[下载头显 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [版本说明与校验值](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [桌面构建](../build.md)
 
 ## 让播放器替你的 NAS 片库刮削资料
 
@@ -27,7 +27,7 @@
 
 **番剧有自己的识别逻辑。** 字幕组把一集简写成 `Seitokai`，同目录另一集写了全名 `Seitokai no Ichizon`，播放器就能借全名去 AniList 查找。剧场版可以单独成卡，无字幕片头、片尾则收进原作的特典。有些动画电影在「电影」和「番剧」各存了一版，分别被 TMDB 和 AniList 认出，也能按原名和年份合到同一张卡里，两个版本都能播放。
 
-**以前整理好的片库也用得上。** 电影或电视剧的 Kodi NFO 带有 TMDB ID 时，可离线读出其中的简介、演员，沿用旁边的海报和背景图。要在线查询影视资料，可以填入自己的 TMDB API 密钥。整部剧配错了，在详情里修正一次即可应用到整张卡，下次重新扫描也会保留。
+**以前整理好的片库也用得上。** 电影或电视剧的 Kodi NFO 带有 TMDB ID 时，可离线读出其中的简介、演员，沿用旁边的海报和背景图。NAS 里只有视频也行。扫描时会按片名和年份自动找电影、海报和简介，开箱即可用，无需注册或填写 API 密钥。整部剧配错了，在详情里修正一次即可应用到整张卡，下次重新扫描也会保留。
 
 [看具体刮削案例，以及如何用开源测试自行验证](../metadata-matching.zh-Hans.md)
 
@@ -73,7 +73,7 @@
 
 ![坐回电脑前 — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-macOS 和 Windows 桌面端可用鼠标、键盘浏览片库和播放文件。空间影院属于头显版。v1.0 提供已签名的头显 APK，桌面端从源码构建。
+macOS 和 Windows 桌面端可用鼠标、键盘浏览片库和播放文件。空间影院属于头显版。v1.1.0 提供已签名的头显 APK，桌面端从源码构建。
 
 ## 第一次放映
 

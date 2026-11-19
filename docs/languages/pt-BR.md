@@ -17,7 +17,7 @@
 
 Abra as pastas de filmes, séries e animes que você juntou no NAS ao longo dos anos. O Reality NAS Player identifica os títulos, ordena os episódios e reúne os extras de cada obra. No **PICO Space Pro**, escolha uma capa e assista com vista para a Terra.
 
-**[Baixar APK do headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notas da versão e somas de verificação](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilar para computador](../build.md)
+**[Baixar APK do headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Notas da versão e somas de verificação](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compilar para computador](../build.md)
 
 ## Das pastas do NAS às fichas dos filmes
 
@@ -27,7 +27,7 @@ Abra as pastas de filmes, séries e animes que você juntou no NAS ao longo dos 
 
 Se uma equipe de fansub abreviou o nome de um anime para `Seitokai`, outro episódio na pasta pode fornecer o título completo para a busca no AniList. O longa pode ganhar uma ficha própria, enquanto a abertura e o encerramento sem créditos ficam nos extras da série. Dá para guardar duas cópias do mesmo filme e escolher a versão em uma única ficha.
 
-Em filmes e séries, um NFO do Kodi com ID do TMDB permite ler a sinopse e o elenco mesmo offline e aproveitar suas capas e imagens de fundo. Para consultar o TMDB online, informe sua própria chave de API. Se uma série foi identificada incorretamente, corrija a ficha uma vez. A escolha vale para os arquivos daquela ficha e permanece após uma nova varredura.
+Em filmes e séries, um NFO do Kodi com ID do TMDB permite ler a sinopse e o elenco mesmo offline e aproveitar suas capas e imagens de fundo. Ao escanear o NAS, o player identifica os filmes pelo título e pelo ano e busca capas e sinopses. Você não precisa de conta nem de chave de API. Se uma série foi identificada incorretamente, corrija a ficha uma vez. A escolha vale para os arquivos daquela ficha e permanece após uma nova varredura.
 
 [Veja os exemplos e confira como executar os testes do projeto (em inglês)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Baixe o filme antes de sair do Wi-Fi. Se quiser, use um compartilhamento SMB pr�
 
 ![Na mesa de trabalho — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-No macOS e no Windows, navegue pela biblioteca e reproduza arquivos usando mouse e teclado. As salas virtuais são exclusivas do headset. A v1.0 oferece o APK do headset; o app para computador é compilado a partir do código-fonte.
+No macOS e no Windows, navegue pela biblioteca e reproduza arquivos usando mouse e teclado. As salas virtuais são exclusivas do headset. A v1.1.0 oferece o APK do headset; o app para computador é compilado a partir do código-fonte.
 
 ## Sua primeira sessão
 

@@ -26,7 +26,9 @@ sealed interface HttpResult {
  * turns this into ERROR for the item, which keeps whatever identity it already had and re-queues
  * it for the next pass.
  */
-class TransientHttpException(url: String) : IOException("provider unavailable (rate limit / outage): $url")
+class TransientHttpException(url: String) : IOException(
+    "provider unavailable (rate limit / outage): " + (runCatching { java.net.URI(url).host }.getOrNull() ?: "unknown host")
+)
 
 /**
  * Tiny blocking HTTP helper (no third-party deps). Callers wrap in Dispatchers.IO.

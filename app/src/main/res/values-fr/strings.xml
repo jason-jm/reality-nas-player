@@ -276,7 +276,7 @@
     <string name="set_local_meta_hint">Lit les fichiers .nfo, poster et fanart placés à côté d’une vidéo, tels que Kodi et Jellyfin les écrivent. Un nfo contenant un identifiant de base de données identifie le film sans recherche.</string>
     <string name="set_sources_group">Sources de données</string>
     <string name="set_tmdb_hint">Une clé d’application est intégrée, ce champ peut donc rester vide ; votre propre clé est utilisée en priorité. Rien n’est récupéré tant que l’identification hors ligne est activée.</string>
-    <string name="set_tmdb_hint2">Renseignez-la et couvertures, résumés, distribution et notes arrivent d’eux-mêmes. Inutilisée tant que l’identification hors ligne est activée.</string>
+    <string name="set_tmdb_hint2">Facultatif. Sans clé, les affiches et résumés proviennent de catalogues de films publics. Saisissez une clé pour utiliser TMDB.</string>
     <string name="set_tmdb_placeholder">Vide : clé intégrée</string>
     <string name="set_tmdb_where">Gratuite, sur themoviedb.org</string>
     <string name="set_omdb_hint">Facultatif. Avec elle, les films affichent aussi les notes IMDb, Rotten Tomatoes et Metacritic.</string>
@@ -331,7 +331,7 @@
     <string name="set_no_collect_body">Reality NAS Player ne propose ni compte ni publicité et ne collecte pas de statistiques d’utilisation. Votre bibliothèque est conservée sur le casque. Si vous activez la synchronisation NAS, la progression, les favoris et les correspondances manuelles sont aussi enregistrés dans le dossier partagé de votre choix.</string>
     <string name="set_when_network">Quand il se connecte</string>
     <string name="set_scrape_metadata">Récupération des métadonnées</string>
-    <string name="set_scrape_metadata_body">L’analyse envoie le titre lu dans un nom de fichier — « Interstellar 2014 », par exemple — à des bases de données publiques comme TMDB, AniList, Bangumi et Jikan, en échange d’une affiche et d’un résumé. Jamais le chemin complet, l’adresse de votre serveur, vos identifiants ni aucun identifiant de l’appareil.</string>
+    <string name="set_scrape_metadata_body">L’analyse envoie le titre lu dans un nom de fichier — « Interstellar 2014 », par exemple — à des bases de données publiques comme every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi et Jikan, en échange d’une affiche et d’un résumé. Jamais le chemin complet, l’adresse de votre serveur, vos identifiants ni aucun identifiant de l’appareil.</string>
     <string name="set_you_asked">Les téléchargements que vous demandez</string>
     <string name="set_you_asked_body">Un téléchargement vers le casque est copié depuis votre propre serveur uniquement ; pendant la lecture, la vidéo circule seulement entre ce casque et votre serveur — aucun tiers entre les deux.</string>
     <string name="set_offline_note">L’identification hors ligne utilise les noms de fichiers et ne recherche ni métadonnées ni affiches en ligne. Vous pouvez toujours lire les films de votre NAS.</string>

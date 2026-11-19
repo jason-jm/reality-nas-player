@@ -268,7 +268,7 @@
     <string name="set_local_meta_hint">Kodi ve Jellyfin’in yazdığı gibi, videonun yanındaki .nfo, poster ve fanart dosyalarını okur. Veritabanı kimliği içeren bir nfo, filmi arama yapmadan tanımlar.</string>
     <string name="set_sources_group">Veri kaynakları</string>
     <string name="set_tmdb_hint">Uygulamada yerleşik bir anahtar vardır, bu yüzden bu alan boş kalabilir; kendi anahtarınız önce kullanılır. Çevrimdışı eşleştirme açıkken hiçbir şey indirilmez.</string>
-    <string name="set_tmdb_hint2">Bunu doldurduğunuzda kapaklar, özetler, oyuncular ve puanlar kendiliğinden gelir. Çevrimdışı eşleştirme açıkken kullanılmaz.</string>
+    <string name="set_tmdb_hint2">İsteğe bağlı. Boş bırakırsanız film afişleri ve özetleri herkese açık film kataloglarında aranır. TMDB kullanmak için bir anahtar girin.</string>
     <string name="set_tmdb_placeholder">Boşsa yerleşik anahtar kullanılır</string>
     <string name="set_tmdb_where">Ücretsiz, themoviedb.org adresinden</string>
     <string name="set_omdb_hint">İsteğe bağlı. Bununla filmler IMDb, Rotten Tomatoes ve Metacritic puanlarını da gösterir.</string>
@@ -323,7 +323,7 @@
     <string name="set_no_collect_body">Reality NAS Player hesap, reklam veya kullanım istatistikleri içermez. Kitaplığınız gözlükte saklanır. NAS eşitlemesini açarsanız izleme konumları, favoriler ve elle eşleştirdiğiniz yapımlar seçtiğiniz paylaşıma da kaydedilir.</string>
     <string name="set_when_network">İnternete bağlandığında</string>
     <string name="set_scrape_metadata">Meta veri getirme</string>
-    <string name="set_scrape_metadata_body">Tarama, dosya adından okunan başlığı — örneğin “Interstellar 2014” — bir afiş ve özet karşılığında TMDB, AniList, Bangumi ve Jikan gibi herkese açık veritabanlarına gönderir. Asla tam yolu, sunucunuzun adresini, kimlik bilgilerinizi veya herhangi bir cihaz kimliğini göndermez.</string>
+    <string name="set_scrape_metadata_body">Tarama, dosya adından okunan başlığı — örneğin “Interstellar 2014” — bir afiş ve özet karşılığında every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi ve Jikan gibi herkese açık veritabanlarına gönderir. Asla tam yolu, sunucunuzun adresini, kimlik bilgilerinizi veya herhangi bir cihaz kimliğini göndermez.</string>
     <string name="set_you_asked">İstediğiniz indirmeler</string>
     <string name="set_you_asked_body">Gözlüğe indirme yalnızca kendi sunucunuzdan kopyalanır; oynatılırken video yalnızca bu gözlük ile kendi sunucunuz arasında gider — arada üçüncü taraf yoktur.</string>
     <string name="set_offline_note">Çevrimdışı eşleştirme dosya adlarını kullanır ve çevrimiçi meta veri veya afiş araması yapmaz. NAS üzerindeki filmleri oynatmaya devam edebilirsiniz.</string>

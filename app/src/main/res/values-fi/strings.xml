@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Lue videon vieressä olevat .nfo-, juliste- ja fanart-tiedostot sellaisina kuin Kodi ja Jellyfin ne kirjoittavat. Tietokannan tunnisteen sisältävä nfo tunnistaa elokuvan ilman hakua.</string>
     <string name="set_sources_group">Tietolähteet</string>
     <string name="set_tmdb_hint">Sovellukseen on sisäänrakennettu avain, joten tämän voi jättää tyhjäksi; omaa avaintasi käytetään ensin. Mitään ei haeta, kun tunnistus ilman verkkoa on päällä.</string>
-    <string name="set_tmdb_hint2">Täytä tämä, niin kannet, juonikuvaukset, näyttelijät ja arviot tulevat itsestään. Ei käytössä, kun tunnistus ilman verkkoa on päällä.</string>
+    <string name="set_tmdb_hint2">Valinnainen. Ilman avainta elokuvien julisteet ja kuvaukset haetaan julkisista elokuvaluetteloista. Anna avain, jos haluat käyttää TMDB:tä.</string>
     <string name="set_tmdb_placeholder">Tyhjä käyttää sisäänrakennettua avainta</string>
     <string name="set_tmdb_where">Ilmainen, osoitteesta themoviedb.org</string>
     <string name="set_omdb_hint">Valinnainen. Sen avulla elokuvissa näkyvät myös IMDb-, Rotten Tomatoes- ja Metacritic-pisteet.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player -sovelluksessa ei ole tilejä, mainoksia eikä käyttötilastoja. Kirjasto tallennetaan laseille. Kun otat NAS-synkronoinnin käyttöön, myös katselukohdat, suosikit ja käsin yhdistetyt nimikkeet tallennetaan valitsemaasi jaettuun kansioon.</string>
     <string name="set_when_network">Kun se käyttää verkkoa</string>
     <string name="set_scrape_metadata">Metatietojen haku</string>
-    <string name="set_scrape_metadata_body">Skannaus lähettää tiedostonimestä luetun nimen – esimerkiksi ”Interstellar 2014” – julkisiin tietokantoihin, kuten TMDB, AniList, Bangumi ja Jikan, ja saa vastineeksi julisteen ja juonikuvauksen. Ei koskaan koko polkua, palvelimesi osoitetta, tunnistetietojasi tai laitetunnisteita.</string>
+    <string name="set_scrape_metadata_body">Skannaus lähettää tiedostonimestä luetun nimen – esimerkiksi ”Interstellar 2014” – julkisiin tietokantoihin, kuten every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi ja Jikan, ja saa vastineeksi julisteen ja juonikuvauksen. Ei koskaan koko polkua, palvelimesi osoitetta, tunnistetietojasi tai laitetunnisteita.</string>
     <string name="set_you_asked">Pyytämäsi lataukset</string>
     <string name="set_you_asked_body">Lataus laseille kopioidaan vain omalta palvelimeltasi; toiston aikana video kulkee vain näiden lasien ja oman palvelimesi välillä – ei kolmatta osapuolta välissä.</string>
     <string name="set_offline_note">Paikallinen tunnistus käyttää tiedostonimiä eikä hae metatietoja tai julisteita verkosta. Voit edelleen katsoa elokuvia NAS-palvelimeltasi.</string>

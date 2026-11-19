@@ -1,6 +1,7 @@
 package com.therealityteam.videoplayer.ui.library
 
 import android.content.Context
+import com.therealityteam.videoplayer.data.scrape.PublicMovieCatalog
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.background
@@ -603,6 +604,21 @@ fun DetailScreen(
                                 modifier = Modifier.padding(top = 8.dp).widthIn(max = 880.dp),
                             )
                         }
+                    }
+                }
+
+                PublicMovieCatalog.credit(rep.nfoCredit.takeIf { rep.fromNfo } ?: rep.collectionKey)?.let { (name, url) ->
+                    item(key = "__metadata_source") {
+                        val links = androidx.compose.ui.platform.LocalUriHandler.current
+                        val clipboard = androidx.compose.ui.platform.LocalClipboardManager.current
+                        Button(
+                            onClick = {
+                                runCatching { links.openUri(url) }.onFailure {
+                                    clipboard.setText(androidx.compose.ui.text.AnnotatedString(url))
+                                }
+                            },
+                            modifier = Modifier.padding(start = 32.dp, top = 16.dp),
+                        ) { Text(name) }
                     }
                 }
 

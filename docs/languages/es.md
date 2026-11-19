@@ -17,7 +17,7 @@
 
 Abre las carpetas de películas, series y anime que llevas años guardando en el NAS. Reality NAS Player reconoce títulos, ordena episodios y reúne cada serie con sus extras. En **PICO Space Pro**, elige un cartel y toma asiento con vistas a la Tierra.
 
-**[Descargar APK para el visor](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Notas de versión y sumas de verificación](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilar para escritorio](../build.md)
+**[Descargar APK para el visor](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Notas de versión y sumas de verificación](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compilar para escritorio](../build.md)
 
 ## De las carpetas del NAS a las fichas de las películas
 
@@ -27,7 +27,7 @@ Abre las carpetas de películas, series y anime que llevas años guardando en el
 
 Si un grupo de fansub abrevia el nombre de un anime como `Seitokai`, otro episodio de la carpeta puede aportar el nombre completo para buscarlo en AniList. Una película de la saga puede tener su propio cartel y los openings y endings sin créditos quedan entre los extras de la serie. Dos copias de una misma película pueden compartir ficha para que elijas cuál reproducir.
 
-Si ya guardas un NFO de Kodi con un identificador de TMDB, puedes recuperar sin conexión la sinopsis y el reparto de la película o serie y usar tus carteles y fondos. Para consultar TMDB en línea, introduce tu propia clave de API. Una sola corrección en la ficha de una serie se aplica a sus archivos y se conserva al volver a escanear.
+Si ya guardas un NFO de Kodi con un identificador de TMDB, puedes recuperar sin conexión la sinopsis y el reparto de la película o serie y usar tus carteles y fondos. Al escanear el NAS, el reproductor identifica las películas por título y año y busca carteles y sinopsis. No hace falta una cuenta ni una clave de API. Una sola corrección en la ficha de una serie se aplica a sus archivos y se conserva al volver a escanear.
 
 [Ver los ejemplos y probarlos con los tests del proyecto (en inglés)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Guarda una película en el visor antes de salir de la red Wi-Fi. Si quieres, un 
 
 ![También en el escritorio — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-En macOS y Windows puedes recorrer la biblioteca y reproducir archivos con el ratón y el teclado. Las salas virtuales son exclusivas del visor. La v1.0 incluye un APK para el visor; la aplicación de escritorio se compila desde el código fuente.
+En macOS y Windows puedes recorrer la biblioteca y reproducir archivos con el ratón y el teclado. Las salas virtuales son exclusivas del visor. La v1.1.0 incluye un APK para el visor; la aplicación de escritorio se compila desde el código fuente.
 
 ## Tu primera sesión
 

@@ -17,7 +17,7 @@
 
 Apri le cartelle di film, serie e anime che hai raccolto negli anni sul NAS. Reality NAS Player ne riconosce i titoli, riordina gli episodi e mette gli extra accanto all’opera giusta. Su **PICO Space Pro** scegli una locandina e prendi posto con vista sulla Terra.
 
-**[Scarica l’APK per il visore](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Note di rilascio e checksum](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compila l’app desktop](../build.md)
+**[Scarica l’APK per il visore](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Note di rilascio e checksum](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compila l’app desktop](../build.md)
 
 ## Dalle cartelle del NAS alle schede dei film
 
@@ -27,7 +27,7 @@ Apri le cartelle di film, serie e anime che hai raccolto negli anni sul NAS. Rea
 
 Se il nome di un anime è abbreviato in `Seitokai`, un altro episodio nella stessa cartella può fornire il titolo completo da cercare su AniList. Il film uscito al cinema può avere una scheda propria, mentre le sigle senza crediti restano fra gli extra della serie. Due copie dello stesso film possono condividere una scheda da cui scegliere la versione da riprodurre.
 
-Per film e serie, un NFO di Kodi con ID TMDB permette di recuperare offline trama e cast, insieme alle locandine e agli sfondi salvati sul NAS. Per le ricerche online su TMDB inserisci la tua chiave API. Se una serie è stata abbinata al titolo sbagliato basta correggere la sua scheda una volta. La scelta viene conservata alle scansioni successive.
+Per film e serie, un NFO di Kodi con ID TMDB permette di recuperare offline trama e cast, insieme alle locandine e agli sfondi salvati sul NAS. Durante la scansione il lettore identifica i film dal titolo e dall’anno e cerca locandine e trame. Non servono un account o una chiave API. Se una serie è stata abbinata al titolo sbagliato basta correggere la sua scheda una volta. La scelta viene conservata alle scansioni successive.
 
 [Scopri gli esempi e provali con i test del progetto (in inglese)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Scaricalo sul visore prima di lasciare il Wi-Fi. Una condivisione SMB facoltativ
 
 ![Anche alla scrivania — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-Su macOS e Windows puoi sfogliare la raccolta e riprodurre i file con mouse e tastiera. Le sale virtuali sono un’esperienza del visore. La v1.0 offre l’APK per il visore; l’app desktop si compila dai sorgenti.
+Su macOS e Windows puoi sfogliare la raccolta e riprodurre i file con mouse e tastiera. Le sale virtuali sono un’esperienza del visore. La v1.1.0 offre l’APK per il visore; l’app desktop si compila dai sorgenti.
 
 ## La prima proiezione
 

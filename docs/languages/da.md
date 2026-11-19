@@ -17,7 +17,7 @@
 
 Åbn mapperne med film, serier og anime, som du gennem årene har gemt på din NAS. Reality NAS Player finder titlerne, sætter afsnittene i rækkefølge og samler ekstramaterialet ved den rette serie. Vælg et omslag på **PICO Space Pro**, og tag plads med udsigt til Jorden.
 
-**[Hent APK til headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsnoter og kontrolsummer](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Byg computerappen](../build.md)
+**[Hent APK til headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versionsnoter og kontrolsummer](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Byg computerappen](../build.md)
 
 ## Fra NAS-mapper til filmoplysninger
 
@@ -27,7 +27,7 @@
 
 Står der kun `Seitokai` i navnet på en animefil, kan et andet afsnit i samme mappe levere det fulde navn til søgningen på AniList. Biograffilmen kan få sit eget omslag, mens introer og afslutninger uden rulletekster lægges ved seriens ekstramateriale. To kopier af samme film kan stå sammen, så du kan vælge den version, du vil se.
 
-For film og serier kan en Kodi-NFO med et TMDB-id levere handling og medvirkende offline sammen med dine egne plakater og baggrunde. Indtast din egen API-nøgle for at slå titler op på TMDB online. Du kan rette en forkert titel for hele seriekortet på én gang, og valget holder ved næste scanning.
+For film og serier kan en Kodi-NFO med et TMDB-id levere handling og medvirkende offline sammen med dine egne plakater og baggrunde. Når du scanner dit NAS, kan afspilleren finde film ud fra titel og år og hente plakater og beskrivelser uden konto eller API-nøgle. Du kan rette en forkert titel for hele seriekortet på én gang, og valget holder ved næste scanning.
 
 [Se eksemplerne, og prøv projektets test (på engelsk)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Hent en film, før du forlader dit wi-fi. Et SMB-drev efter eget valg kan synkro
 
 ![Ved skrivebordet — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-På macOS og Windows kan du finde og afspille film med mus og tastatur. De virtuelle sale hører til headsettet. v1.0 leveres som APK til headsettet; computerappen bygges fra kildekoden.
+På macOS og Windows kan du finde og afspille film med mus og tastatur. De virtuelle sale hører til headsettet. v1.1.0 leveres som APK til headsettet; computerappen bygges fra kildekoden.
 
 ## Første forestilling
 

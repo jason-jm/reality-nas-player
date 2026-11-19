@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Lees de .nfo-, poster- en fanart-bestanden naast een video, zoals Kodi en Jellyfin ze schrijven. Een nfo met een database-id herkent de film zonder te zoeken.</string>
     <string name="set_sources_group">Gegevensbronnen</string>
     <string name="set_tmdb_hint">Er is een app-sleutel ingebouwd, dus dit mag leeg blijven; je eigen sleutel wordt eerst gebruikt. Zolang offline herkennen aan staat, wordt er niets opgehaald.</string>
-    <string name="set_tmdb_hint2">Vul dit in en covers, samenvattingen, acteurs en beoordelingen komen vanzelf binnen. Niet gebruikt zolang offline herkennen aan staat.</string>
+    <string name="set_tmdb_hint2">Optioneel. Zonder sleutel worden filmposters en samenvattingen opgezocht in openbare filmcatalogi. Vul een sleutel in om TMDB te gebruiken.</string>
     <string name="set_tmdb_placeholder">Leeg gebruikt de ingebouwde sleutel</string>
     <string name="set_tmdb_where">Gratis, via themoviedb.org</string>
     <string name="set_omdb_hint">Optioneel. Hiermee tonen films ook scores van IMDb, Rotten Tomatoes en Metacritic.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player heeft geen accounts, advertenties of gebruiksstatistieken. Je bibliotheek staat op je headset. Als je NAS-synchronisatie inschakelt, worden afspeelposities, favorieten en handmatige koppelingen ook in de gekozen gedeelde map opgeslagen.</string>
     <string name="set_when_network">Wanneer Reality NAS Player online gaat</string>
     <string name="set_scrape_metadata">Metadata ophalen</string>
-    <string name="set_scrape_metadata_body">Bij het scannen wordt de titel uit een bestandsnaam – bijvoorbeeld “Interstellar 2014” – naar openbare databases zoals TMDB, AniList, Bangumi en Jikan gestuurd, in ruil voor een poster en een samenvatting. Nooit het volledige pad, het adres van je server, je inloggegevens of een apparaat-ID.</string>
+    <string name="set_scrape_metadata_body">Bij het scannen wordt de titel uit een bestandsnaam – bijvoorbeeld “Interstellar 2014” – naar openbare databases zoals every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi en Jikan gestuurd, in ruil voor een poster en een samenvatting. Nooit het volledige pad, het adres van je server, je inloggegevens of een apparaat-ID.</string>
     <string name="set_you_asked">Downloads die je zelf start</string>
     <string name="set_you_asked_body">Een download naar de headset wordt alleen van je eigen server gekopieerd; tijdens het afspelen gaat video alleen tussen deze headset en je eigen server – geen derde partij ertussen.</string>
     <string name="set_offline_note">Offline herkenning gebruikt bestandsnamen en zoekt geen metadata of posters online op. Je kunt nog steeds films vanaf je NAS afspelen.</string>

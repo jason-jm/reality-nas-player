@@ -278,7 +278,7 @@
     <string name="set_local_meta_hint">Czytaj pliki .nfo, poster i fanart obok filmu, tak jak zapisują je Kodi i Jellyfin. Plik nfo z identyfikatorem bazy danych rozpoznaje film bez wyszukiwania.</string>
     <string name="set_sources_group">Źródła danych</string>
     <string name="set_tmdb_hint">Klucz aplikacji jest wbudowany, więc to pole może zostać puste; własny klucz ma pierwszeństwo. Przy włączonym rozpoznawaniu offline nic nie jest pobierane.</string>
-    <string name="set_tmdb_hint2">Wpisz go, a okładki, opisy, obsada i oceny pojawią się same. Nieużywany przy rozpoznawaniu offline.</string>
+    <string name="set_tmdb_hint2">Opcjonalnie. Bez klucza plakaty i opisy filmów są pobierane z publicznych katalogów. Wpisz klucz, aby korzystać z TMDB.</string>
     <string name="set_tmdb_placeholder">Puste — wbudowany klucz</string>
     <string name="set_tmdb_where">Bezpłatnie na themoviedb.org</string>
     <string name="set_omdb_hint">Opcjonalnie. Dzięki niemu filmy pokazują też oceny IMDb, Rotten Tomatoes i Metacritic.</string>
@@ -333,7 +333,7 @@
     <string name="set_no_collect_body">Reality NAS Player nie ma kont, reklam ani statystyk użytkowania. Biblioteka jest przechowywana w goglach. Po włączeniu synchronizacji z NAS pozycje odtwarzania, ulubione i ręczne dopasowania tytułów są też zapisywane w wybranym folderze udostępnionym.</string>
     <string name="set_when_network">Kiedy łączy się z siecią</string>
     <string name="set_scrape_metadata">Pobieranie metadanych</string>
-    <string name="set_scrape_metadata_body">Podczas skanowania tytuł odczytany z nazwy pliku — np. „Interstellar 2014” — trafia do publicznych baz danych, takich jak TMDB, AniList, Bangumi i Jikan, w zamian za plakat i opis. Nigdy pełna ścieżka, adres serwera, dane logowania ani żaden identyfikator urządzenia.</string>
+    <string name="set_scrape_metadata_body">Podczas skanowania tytuł odczytany z nazwy pliku — np. „Interstellar 2014” — trafia do publicznych baz danych, takich jak every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi i Jikan, w zamian za plakat i opis. Nigdy pełna ścieżka, adres serwera, dane logowania ani żaden identyfikator urządzenia.</string>
     <string name="set_you_asked">Pobrania na żądanie</string>
     <string name="set_you_asked_body">Pobierany film jest kopiowany wyłącznie z własnego serwera; podczas odtwarzania obraz płynie tylko między tymi goglami a własnym serwerem — bez żadnych pośredników.</string>
     <string name="set_offline_note">Rozpoznawanie offline korzysta z nazw plików i pomija wyszukiwanie metadanych oraz plakatów w internecie. Nadal możesz odtwarzać filmy z NAS.</string>

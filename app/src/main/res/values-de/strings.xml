@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Liest die .nfo-, Poster- und Fanart-Dateien neben einem Video, wie Kodi und Jellyfin sie schreiben. Eine NFO mit Datenbank-ID erkennt den Film ohne Suche.</string>
     <string name="set_sources_group">Datenquellen</string>
     <string name="set_tmdb_hint">Ein App-Schlüssel ist eingebaut, das Feld darf also leer bleiben; dein eigener Schlüssel wird zuerst verwendet. Solange der Offline-Abgleich an ist, wird nichts abgerufen.</string>
-    <string name="set_tmdb_hint2">Trag ihn ein, und Cover, Inhaltsangaben, Besetzung und Bewertungen kommen von selbst. Wird beim Offline-Abgleich nicht genutzt.</string>
+    <string name="set_tmdb_hint2">Optional. Ohne Schlüssel stammen Filmplakate und Inhaltsangaben aus öffentlichen Filmkatalogen. Mit einem Schlüssel wird TMDB verwendet.</string>
     <string name="set_tmdb_placeholder">Leer nutzt den eingebauten Schlüssel</string>
     <string name="set_tmdb_where">Kostenlos, von themoviedb.org</string>
     <string name="set_omdb_hint">Optional. Damit zeigen Filme auch Bewertungen von IMDb, Rotten Tomatoes und Metacritic.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player verwendet weder Konten noch Werbung oder Nutzungsstatistiken. Deine Mediathek liegt auf dem Headset. Mit NAS-Synchronisierung speichert Reality NAS Player Wiedergabepositionen, Favoriten und manuelle Zuordnungen auch in der gewählten Freigabe.</string>
     <string name="set_when_network">Wenn Reality NAS Player online geht</string>
     <string name="set_scrape_metadata">Metadaten abrufen</string>
-    <string name="set_scrape_metadata_body">Beim Scannen wird der aus einem Dateinamen gelesene Titel – etwa „Interstellar 2014“ – an öffentliche Datenbanken wie TMDB, AniList, Bangumi und Jikan gesendet, im Tausch gegen ein Poster und eine Inhaltsangabe. Nie der vollständige Pfad, die Adresse deines Servers, deine Zugangsdaten oder eine Gerätekennung.</string>
+    <string name="set_scrape_metadata_body">Beim Scannen wird der aus einem Dateinamen gelesene Titel – etwa „Interstellar 2014“ – an öffentliche Datenbanken wie every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi und Jikan gesendet, im Tausch gegen ein Poster und eine Inhaltsangabe. Nie der vollständige Pfad, die Adresse deines Servers, deine Zugangsdaten oder eine Gerätekennung.</string>
     <string name="set_you_asked">Downloads, die du anforderst</string>
     <string name="set_you_asked_body">Ein Download auf das Headset wird nur von deinem eigenen Server kopiert; beim Abspielen fließt das Video nur zwischen diesem Headset und deinem eigenen Server – kein Dritter dazwischen.</string>
     <string name="set_offline_note">Der Offline-Abgleich erkennt Titel anhand ihrer Dateinamen und ruft keine Metadaten oder Cover aus dem Internet ab. Filme von deinem NAS kannst du weiterhin abspielen.</string>

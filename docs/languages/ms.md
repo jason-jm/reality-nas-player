@@ -17,7 +17,7 @@
 
 Buka folder filem, siri dan anime yang anda kumpulkan selama ini pada NAS. Reality NAS Player mengenal pasti tajuk, menyusun episod dan meletakkan bahan tambahan bersama siri yang betul. Pilih poster pada **PICO Space Pro** dan tonton dengan pemandangan Bumi.
 
-**[Muat turun APK set kepala](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Nota keluaran dan nilai semak](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bina aplikasi komputer](../build.md)
+**[Muat turun APK set kepala](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Nota keluaran dan nilai semak](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Bina aplikasi komputer](../build.md)
 
 ## Daripada folder NAS kepada maklumat filem
 
@@ -27,7 +27,7 @@ Buka folder filem, siri dan anime yang anda kumpulkan selama ini pada NAS. Reali
 
 Jika nama satu episod anime disingkatkan kepada `Seitokai`, episod lain dalam folder yang sama boleh memberikan tajuk penuh untuk carian di AniList. Filem pawagam boleh mendapat posternya sendiri, manakala pembukaan dan penutup tanpa kredit diletakkan bersama bahan tambahan siri. Dua salinan filem yang sama boleh berkongsi satu kad untuk anda memilih versi yang ingin dimainkan.
 
-Untuk filem dan siri, fail NFO Kodi dengan ID TMDB membolehkan anda membaca sinopsis dan senarai pelakon di luar talian serta menggunakan poster dan latar sendiri. Masukkan kunci API TMDB anda untuk carian dalam talian. Jika siri tersalah padan, betulkan seluruh kad sekali sahaja. Pilihan itu kekal selepas imbasan seterusnya.
+Untuk filem dan siri, fail NFO Kodi dengan ID TMDB membolehkan anda membaca sinopsis dan senarai pelakon di luar talian serta menggunakan poster dan latar sendiri. Semasa imbasan, pemain mengenal pasti filem melalui tajuk dan tahun, kemudian mencari poster dan sinopsis yang tersedia. Akaun dan kunci API tidak diperlukan. Jika siri tersalah padan, betulkan seluruh kad sekali sahaja. Pilihan itu kekal selepas imbasan seterusnya.
 
 [Lihat contoh padanan dan cuba ujian sumber terbuka projek (bahasa Inggeris)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Muat turun sebelum meninggalkan Wi-Fi. Di rumah, folder SMB pilihan anda boleh m
 
 ![Tonton di meja juga — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-Pada macOS dan Windows, gunakan tetikus dan papan kekunci untuk melayari koleksi dan memainkan filem. Pawagam ruang maya dikhususkan untuk set kepala. v1.0 menyediakan APK bertandatangan; aplikasi komputer dibina daripada kod sumber.
+Pada macOS dan Windows, gunakan tetikus dan papan kekunci untuk melayari koleksi dan memainkan filem. Pawagam ruang maya dikhususkan untuk set kepala. v1.1.0 menyediakan APK bertandatangan; aplikasi komputer dibina daripada kod sumber.
 
 ## Tayangan pertama
 

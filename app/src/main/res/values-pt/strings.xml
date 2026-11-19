@@ -276,7 +276,7 @@
     <string name="set_local_meta_hint">Lê os arquivos .nfo, poster e fanart ao lado de um vídeo, como o Kodi e o Jellyfin os gravam. Um nfo com um ID de banco de dados identifica o filme sem pesquisa.</string>
     <string name="set_sources_group">Fontes de dados</string>
     <string name="set_tmdb_hint">O app já traz uma chave, então isto pode ficar vazio; sua própria chave é usada primeiro. Nada é baixado enquanto a identificação offline estiver ativada.</string>
-    <string name="set_tmdb_hint2">Preencha e capas, sinopses, elenco e avaliações chegam sozinhos. Não é usado enquanto a identificação offline estiver ativada.</string>
+    <string name="set_tmdb_hint2">Opcional. Deixe em branco para procurar cartazes e sinopses em catálogos públicos de cinema. Introduza uma chave para usar o TMDB.</string>
     <string name="set_tmdb_placeholder">Vazio usa a chave integrada</string>
     <string name="set_tmdb_where">Grátis, em themoviedb.org</string>
     <string name="set_omdb_hint">Opcional. Com ela, os filmes também mostram as notas do IMDb, Rotten Tomatoes e Metacritic.</string>
@@ -331,7 +331,7 @@
     <string name="set_no_collect_body">O Reality NAS Player não tem contas, anúncios nem coleta de estatísticas de uso. Sua biblioteca fica no headset. Se você ativar a sincronização com o NAS, o progresso da reprodução, os favoritos e as associações manuais também serão salvos na pasta compartilhada que escolher.</string>
     <string name="set_when_network">Quando ele se conecta à internet</string>
     <string name="set_scrape_metadata">Busca de metadados</string>
-    <string name="set_scrape_metadata_body">Ao escanear, o título lido do nome de um arquivo — “Interstellar 2014”, por exemplo — é enviado a bancos de dados públicos como TMDB, AniList, Bangumi e Jikan, em troca de um pôster e uma sinopse. Nunca o caminho completo, o endereço do seu servidor, suas credenciais nem qualquer identificador do dispositivo.</string>
+    <string name="set_scrape_metadata_body">Ao escanear, o título lido do nome de um arquivo — “Interstellar 2014”, por exemplo — é enviado a bancos de dados públicos como every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi e Jikan, em troca de um pôster e uma sinopse. Nunca o caminho completo, o endereço do seu servidor, suas credenciais nem qualquer identificador do dispositivo.</string>
     <string name="set_you_asked">Downloads que você pede</string>
     <string name="set_you_asked_body">Um download para os óculos é copiado apenas do seu próprio servidor; durante a reprodução, o vídeo trafega só entre estes óculos e o seu servidor, sem terceiros no meio.</string>
     <string name="set_offline_note">A identificação offline usa os nomes dos arquivos e dispensa a busca de metadados e pôsteres na internet. Você ainda pode assistir aos filmes do seu NAS.</string>

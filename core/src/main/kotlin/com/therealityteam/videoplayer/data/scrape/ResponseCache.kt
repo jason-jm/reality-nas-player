@@ -57,6 +57,8 @@ class ResponseCache(root: File, private val ttlMs: Long) {
         }
     }
 
+    internal fun remove(key: String) { File(dir, fileName(key)).delete() }
+
     private fun putInner(key: String, value: String) {
         val target = File(dir, fileName(key))
         // A temp file of its own: episodes of one show ask the same question at once, and with one

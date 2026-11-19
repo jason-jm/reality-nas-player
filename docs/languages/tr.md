@@ -17,7 +17,7 @@
 
 Yıllardır NAS üzerinde biriktirdiğiniz film, dizi ve anime klasörlerini açın. Reality NAS Player yapımları tanır, bölümleri sıralar ve ek içerikleri ait oldukları diziyle bir araya getirir. **PICO Space Pro** üzerinde afişten bir film seçip Dünya manzaralı koltuğunuza yerleşin.
 
-**[Başlık için APK’yı indir](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Sürüm notları ve sağlama toplamları](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Masaüstü uygulamasını derle](../build.md)
+**[Başlık için APK’yı indir](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Sürüm notları ve sağlama toplamları](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Masaüstü uygulamasını derle](../build.md)
 
 ## NAS klasörlerinden film künyelerine
 
@@ -27,7 +27,7 @@ Yıllardır NAS üzerinde biriktirdiğiniz film, dizi ve anime klasörlerini aç
 
 Bir anime bölümünün adında yalnızca `Seitokai` yazıyorsa aynı klasördeki başka bir bölüm, AniList araması için tam adı verebilir. Sinema filmi ayrı bir afiş alabilir. Yazısız açılış ve kapanışlar ise dizinin ek içerikleri arasına girer. Aynı filmin iki kopyasını tek bir karttan açıp izlemek istediğiniz sürümü seçebilirsiniz.
 
-Filmlere ve dizilere ait Kodi NFO dosyasında TMDB kimliği varsa özet ve oyuncu kadrosu çevrimdışı okunabilir, kendi afiş ve arka plan görselleriniz kullanılabilir. Çevrimiçi TMDB araması için kendi API anahtarınızı girin. Yanlış eşleşen bir dizinin kartını bir kez düzeltmeniz yeterlidir. Seçiminiz yeniden taramada da korunur.
+Filmlere ve dizilere ait Kodi NFO dosyasında TMDB kimliği varsa özet ve oyuncu kadrosu çevrimdışı okunabilir, kendi afiş ve arka plan görselleriniz kullanılabilir. Tarama sırasında oynatıcı filmleri adlarına ve yıllarına göre tanır, mevcut afişleri ve özetleri getirir. Hesap veya API anahtarı gerekmez. Yanlış eşleşen bir dizinin kartını bir kez düzeltmeniz yeterlidir. Seçiminiz yeniden taramada da korunur.
 
 [Eşleştirme örneklerini ve projenin açık kaynak testlerini inceleyin (İngilizce)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Wi-Fi’dan ayrılmadan filmi başlığa indirin. Evde izleme konumunuzu, favori
 
 ![Masa başında da izleyin — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-macOS ve Windows’ta fare ve klavyeyle arşivinizi gezebilir, filmlerinizi açabilirsiniz. Mekânsal sinema salonları başlığa özeldir. v1.0 imzalı bir APK sunar; masaüstü uygulaması kaynak koddan derlenir.
+macOS ve Windows’ta fare ve klavyeyle arşivinizi gezebilir, filmlerinizi açabilirsiniz. Mekânsal sinema salonları başlığa özeldir. v1.1.0 imzalı bir APK sunar; masaüstü uygulaması kaynak koddan derlenir.
 
 ## İlk gösterim
 

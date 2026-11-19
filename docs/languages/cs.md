@@ -17,7 +17,7 @@
 
 Otevřete složky s filmy, seriály a anime, které jste si v průběhu let uložili na NAS. Reality NAS Player rozpozná názvy, seřadí epizody a přiřadí bonusy k seriálu. Na **PICO Space Pro** si vyberte podle plakátu a usaďte se s výhledem na Zemi.
 
-**[Stáhnout APK pro headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Poznámky k vydání a kontrolní součty](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Sestavení pro počítač](../build.md)
+**[Stáhnout APK pro headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Poznámky k vydání a kontrolní součty](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Sestavení pro počítač](../build.md)
 
 ## Ze složek na NAS do filmové knihovny
 
@@ -27,7 +27,7 @@ Otevřete složky s filmy, seriály a anime, které jste si v průběhu let ulo�
 
 Když je v názvu jednoho dílu anime jen `Seitokai`, může jiná epizoda ve stejné složce dodat celý název pro hledání v AniListu. Celovečerní film může dostat vlastní plakát a úvodní či závěrečné znělky bez titulků zůstanou mezi bonusy seriálu. Dvě verze téhož filmu lze vybírat z jediné karty.
 
-Obsahuje-li soubor Kodi NFO u filmu nebo seriálu identifikátor TMDB, přehrávač z něj načte děj i obsazení offline a použije vaše plakáty a pozadí. Pro online vyhledávání v TMDB zadejte vlastní klíč API. Chybné přiřazení můžete opravit najednou pro celou kartu seriálu. Oprava zůstane i po novém prohledání.
+Obsahuje-li soubor Kodi NFO u filmu nebo seriálu identifikátor TMDB, přehrávač z něj načte děj i obsazení offline a použije vaše plakáty a pozadí. Filmy se při skenování rozpoznají online bez účtu a bez klíče API. Přehrávač hledá podle názvu a roku a doplní dostupný plakát a popis. Chybné přiřazení můžete opravit najednou pro celou kartu seriálu. Oprava zůstane i po novém prohledání.
 
 [Prohlédněte si příklady a vyzkoušejte testy projektu (anglicky)](../metadata-matching.md)
 

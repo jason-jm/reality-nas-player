@@ -1,5 +1,6 @@
 package com.therealityteam.videoplayer.ui.library
 
+import com.therealityteam.videoplayer.data.scrape.TmdbConfig
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.background
@@ -201,7 +202,7 @@ fun FixMatchScreen(
                         SegmentItem(
                             selected = source == MatchSource.TMDB,
                             onClick = { if (!running) source = MatchSource.TMDB },
-                            title = { Text(stringResource(R.string.fix_source_tmdb), maxLines = 1, softWrap = false) },
+                            title = { Text(stringResource(if (TmdbConfig.effectiveKey.isBlank()) R.string.nav_movies else R.string.fix_source_tmdb), maxLines = 1, softWrap = false) },
                         )
                         SegmentItem(
                             selected = source == MatchSource.ANILIST,
@@ -311,12 +312,13 @@ fun FixMatchScreen(
 }
 
 /** How a result is told apart from every other one in a list: its database, its kind and its id. */
-private fun resultKey(from: MatchSource, r: MetaResult): String = "${from.name}:${r.kind.name}:${r.providerId}"
+private fun resultKey(from: MatchSource, r: MetaResult): String = "${from.name}:${r.kind.name}:${r.publicMovieKey ?: r.providerId}"
 
 /** Whether [r] is what the card is filed under now — the entry a fix would be moving away from. */
 private fun isCurrent(r: MetaResult, from: MatchSource, group: MediaGroup): Boolean {
     val rep = group.representative
     if (rep.scrapeStatus != ScrapeStatus.MATCHED) return false
+    r.publicMovieKey?.let { return rep.collectionKey == it }
     return when (from) {
         MatchSource.ANILIST -> group.items.any { it.collectionKey == "anilist:${r.providerId}" }
         // An AniList match files its id where TMDB's goes, so an anilist: card is never TMDB's.

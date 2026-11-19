@@ -278,7 +278,7 @@
     <string name="set_local_meta_hint">Číst soubory .nfo, poster a fanart vedle videa, jak je zapisují Kodi a Jellyfin. Soubor nfo s ID databáze určí film bez hledání.</string>
     <string name="set_sources_group">Zdroje dat</string>
     <string name="set_tmdb_hint">Klíč aplikace je vestavěný, takže pole může zůstat prázdné; přednost má váš vlastní klíč. Při zapnutém offline rozpoznávání se nic nestahuje.</string>
-    <string name="set_tmdb_hint2">Vyplňte ho a obálky, popisy, obsazení a hodnocení dorazí samy. Při zapnutém offline rozpoznávání se nepoužívá.</string>
+    <string name="set_tmdb_hint2">Nepovinné. Bez klíče se plakáty a popisy filmů hledají ve veřejných katalozích. Pro použití TMDB zadejte klíč.</string>
     <string name="set_tmdb_placeholder">Prázdné = vestavěný klíč</string>
     <string name="set_tmdb_where">Zdarma na themoviedb.org</string>
     <string name="set_omdb_hint">Nepovinné. S ním filmy ukazují i hodnocení IMDb, Rotten Tomatoes a Metacritic.</string>
@@ -333,7 +333,7 @@
     <string name="set_no_collect_body">Reality NAS Player nemá účty, reklamy ani statistiky používání. Knihovna se ukládá do headsetu. Po zapnutí synchronizace s NAS se průběh přehrávání, oblíbené položky a ručně přiřazené tituly uloží také do vybrané sdílené složky.</string>
     <string name="set_when_network">Kdy se připojuje k síti</string>
     <string name="set_scrape_metadata">Stahování metadat</string>
-    <string name="set_scrape_metadata_body">Prohledávání posílá název přečtený z názvu souboru — třeba „Interstellar 2014“ — do veřejných databází, jako jsou TMDB, AniList, Bangumi a Jikan, výměnou za plakát a popis. Nikdy celou cestu, adresu vašeho serveru, přihlašovací údaje ani žádný identifikátor zařízení.</string>
+    <string name="set_scrape_metadata_body">Prohledávání posílá název přečtený z názvu souboru — třeba „Interstellar 2014“ — do veřejných databází, jako jsou every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi a Jikan, výměnou za plakát a popis. Nikdy celou cestu, adresu vašeho serveru, přihlašovací údaje ani žádný identifikátor zařízení.</string>
     <string name="set_you_asked">Stahování, o které požádáte</string>
     <string name="set_you_asked_body">Stažený soubor se do headsetu kopíruje jen z vašeho vlastního serveru; při přehrávání putuje video jen mezi tímto headsetem a vaším serverem — bez třetí strany.</string>
     <string name="set_offline_note">Offline rozpoznávání určí titul podle názvu souboru bez stahování metadat a plakátů. Filmy z NAS můžete dál přehrávat.</string>

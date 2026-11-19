@@ -225,6 +225,8 @@ data class MediaItem(
     val local: LocalMeta? = null,
     /** [LocalMeta.stamp] as it was when the file was last identified; a different one asks again. */
     val localApplied: String? = null,
+    /** Public catalogue credited for words or pictures that completed a local movie NFO. */
+    val nfoCredit: String? = null,
     /**
      * The identity came from the file's own nfo. Like [userMatched], the folder rules leave it
      * alone — somebody settled the question — but unlike it a changed nfo is read again.

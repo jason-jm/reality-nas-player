@@ -1,6 +1,7 @@
 package com.therealityteam.videoplayer
 
 import com.therealityteam.videoplayer.util.Http
+import com.therealityteam.videoplayer.util.TransientHttpException
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -25,6 +26,16 @@ class HttpRetryTest {
         assertFalse("a bad key is not fixed by waiting", Http.isTransient(401))
         assertFalse(Http.isTransient(400))
         assertFalse(Http.isTransient(200))
+    }
+
+    @Test
+    fun aProviderFailureOnlyNamesTheHost() {
+        val url = "https://viewer:test-password@example.org/private-path?api_key=test-key"
+        val message = TransientHttpException(url).message.orEmpty()
+        assertTrue(message.endsWith("example.org"))
+        assertFalse(message.contains("test-"))
+        assertFalse(message.contains("private-path"))
+        assertFalse(TransientHttpException("invalid url?api_key=test-key").toString().contains("test-key"))
     }
 
     @Test

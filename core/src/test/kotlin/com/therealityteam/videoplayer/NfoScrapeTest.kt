@@ -16,6 +16,7 @@ import com.therealityteam.videoplayer.data.scrape.MetaResult
 import com.therealityteam.videoplayer.data.scrape.MetadataClient
 import com.therealityteam.videoplayer.data.scrape.OmdbClient
 import com.therealityteam.videoplayer.data.scrape.ParsedName
+import com.therealityteam.videoplayer.data.scrape.PublicMovieCatalog
 import com.therealityteam.videoplayer.data.scrape.ScrapeEngine
 import com.therealityteam.videoplayer.data.scrape.TmdbConfig
 import com.therealityteam.videoplayer.data.source.LocalSource
@@ -56,7 +57,7 @@ class NfoScrapeTest {
     private val files by lazy { tmp.newFolder("files") }
     private val library by lazy { tmp.newFolder("library") }
 
-    private fun engine(client: MetadataClient) = ScrapeEngine(
+    private fun engine(client: MetadataClient, publicMovies: PublicMovieCatalog? = null) = ScrapeEngine(
         client = client,
         artwork = ArtworkCache(files) { _, _, _ -> null },
         repo = JsonMediaRepository(files),
@@ -66,6 +67,7 @@ class NfoScrapeTest {
         jikan = JikanClient(files),
         imdb = ImdbDatasetClient(files),
         sidecars = SidecarReader { _, path, max -> File(path).takeIf { it.isFile && it.length() <= max }?.readBytes() },
+        publicMovies = publicMovies,
     )
 
     private fun write(rel: String, text: String = "") = File(library, rel).apply { parentFile.mkdirs(); writeText(text) }
@@ -117,6 +119,28 @@ class NfoScrapeTest {
         assertArrayEquals("POSTER".toByteArray(), File(out.posterPath!!).readBytes())
         assertArrayEquals("FANART".toByteArray(), File(out.backdropPath!!).readBytes())
         assertEquals(item.local!!.stamp, out.localApplied)
+    }
+
+    @Test fun `a conflicting filename and independently confirmed ID replace a misplaced NFO and its poster`() = runBlocking {
+        write("Films/Coast/Coast.2012.1080p.mkv")
+        write("Films/Coast/Coast.2012.1080p.nfo", "<movie><title>Forest</title><year>2010</year><uniqueid type='imdb'>tt1111111</uniqueid></movie>")
+        write("Films/Coast/poster.jpg", "OTHER FILM")
+        val id = "00000000-0000-4000-8000-000000000012"
+        val film = org.json.JSONObject().put("type", "movie").put("id", id).put("original_title", "Coast")
+            .put("original_release_date", "2012-05-20").put("mappings", org.json.JSONArray().put(
+                org.json.JSONObject().put("source_platform", "imdb").put("external_id", "tt2222222")))
+        val catalogue = PublicMovieCatalog { url, _ -> when {
+            url.contains("/api/v1/search") -> org.json.JSONObject().put("results",
+                org.json.JSONObject().put("media", org.json.JSONArray().put(film)))
+            url.endsWith("/$id/detail") -> film
+            else -> null
+        } }
+        val out = engine(FakeTmdb(emptyMap(), online = false), catalogue).scrape(scan().single())
+        assertEquals("Coast", out.title)
+        assertEquals("everyfilm:$id", out.collectionKey)
+        assertFalse(out.fromNfo)
+        assertEquals(null, out.posterPath)
+        assertTrue(File(library, "Films/Coast/poster.jpg").isFile)
     }
 
     @Test fun `offline, the nfo's own words fill the page`() = runBlocking {

@@ -79,6 +79,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.res.painterResource
 
 /** The settings pages, in the order they appear down the master column. */
 private enum class SettingsPage(
@@ -981,6 +982,10 @@ private fun AboutPage(version: String) {
         DetailRow(
             title = stringResource(R.string.set_tmdb_name),
             description = stringResource(R.string.set_tmdb_notice),
+            trailing = {
+                Image(painterResource(R.drawable.tmdb_logo), contentDescription = null,
+                    modifier = Modifier.size(width = 108.dp, height = 14.dp))
+            },
         )
         DetailRow(
             title = stringResource(R.string.set_anime_dbs),

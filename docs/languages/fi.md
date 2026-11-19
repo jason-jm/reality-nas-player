@@ -17,7 +17,7 @@
 
 Avaa NAS-palvelimelle vuosien varrella keräämäsi elokuva-, sarja- ja animekansiot. Reality NAS Player tunnistaa teokset, järjestää jaksot ja kokoaa lisämateriaalin sarjan yhteyteen. Valitse kansikuva **PICO Space Prolla** ja istahda katsomoon, jonka ikkunasta näkyy Maa.
 
-**[Lataa lasien APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Julkaisutiedot ja tarkistussummat](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Käännä työpöytäsovellus](../build.md)
+**[Lataa lasien APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Julkaisutiedot ja tarkistussummat](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Käännä työpöytäsovellus](../build.md)
 
 ## Elokuvatiedot suoraan NAS-kansioista
 
@@ -27,7 +27,7 @@ Avaa NAS-palvelimelle vuosien varrella keräämäsi elokuva-, sarja- ja animekan
 
 Jos animejakson nimessä lukee vain `Seitokai`, toinen saman kansion jakso voi kertoa koko nimen AniList-hakua varten. Teatterielokuva voi saada oman kansikuvan, ja tekstitön alku- tai lopputunnus päätyy sarjan lisämateriaaliin. Saman elokuvan kaksi versiota voivat jakaa kortin, josta voit valita toistettavan version.
 
-Jos elokuvan tai sarjan Kodi-NFO sisältää TMDB-tunnisteen, voit käyttää sen juonikuvausta ja näyttelijätietoja myös offline-tilassa sekä omia julisteita ja taustakuvia. Verkkohaku TMDB:stä vaatii oman API-avaimesi. Väärän tunnistuksen voi korjata koko sarjakortille kerralla. Valinta säilyy uudessa skannauksessa.
+Jos elokuvan tai sarjan Kodi-NFO sisältää TMDB-tunnisteen, voit käyttää sen juonikuvausta ja näyttelijätietoja myös offline-tilassa sekä omia julisteita ja taustakuvia. Soitin tunnistaa elokuvia nimen ja vuoden perusteella ja hakee saatavilla olevat julisteet ja kuvaukset. Et tarvitse tiliä tai API-avainta. Väärän tunnistuksen voi korjata koko sarjakortille kerralla. Valinta säilyy uudessa skannauksessa.
 
 [Katso esimerkit ja kokeile niitä projektin testeillä (englanniksi)](../metadata-matching.md)
 

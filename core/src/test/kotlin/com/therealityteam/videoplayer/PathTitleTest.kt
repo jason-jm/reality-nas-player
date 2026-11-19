@@ -102,6 +102,14 @@ class PathTitleTest {
     }
 
     @Test
+    fun aDatedOneWordMovieKeepsItsNameOnAMixedShelf() {
+        val film = parse("smb://nas/Movies/Favourites/Interstellar.2014.mkv")
+        assertEquals("Interstellar", film.title)
+        assertEquals(2014, film.year)
+        assertEquals("Cloud Atlas", title("smb://nas/Movies/Cloud Atlas/cloudatlas.2012.mkv"))
+    }
+
+    @Test
     fun aChineseTitleIsNotOverriddenByItsBroadcasterFolder() {
         assertEquals("秋叶原物语", title("smb://nas/video/Documentary/NHK/秋叶原物语.avi"))
         assertEquals(

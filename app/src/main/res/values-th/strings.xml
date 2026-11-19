@@ -273,7 +273,7 @@
     <string name="set_local_meta_hint">อ่านไฟล์ .nfo, poster และ fanart ที่อยู่ข้างวิดีโอ ตามรูปแบบที่ Kodi และ Jellyfin เขียนไว้ ไฟล์ nfo ที่มีรหัสฐานข้อมูลจะระบุภาพยนตร์ได้โดยไม่ต้องค้นหา</string>
     <string name="set_sources_group">แหล่งข้อมูล</string>
     <string name="set_tmdb_hint">มีคีย์ของแอปในตัวแล้ว จึงเว้นว่างได้ ถ้าใส่คีย์ของคุณเองจะใช้คีย์นั้นก่อน ไม่มีการดึงข้อมูลขณะเปิดการดึงข้อมูลแบบออฟไลน์</string>
-    <string name="set_tmdb_hint2">กรอกช่องนี้แล้วปก เรื่องย่อ นักแสดง และคะแนนจะมาเอง ไม่ได้ใช้ขณะเปิดการดึงข้อมูลแบบออฟไลน์</string>
+    <string name="set_tmdb_hint2">เว้นว่างไว้เพื่อค้นหาโปสเตอร์และเรื่องย่อจากฐานข้อมูลภาพยนตร์สาธารณะ กรอกคีย์หากต้องการใช้ TMDB</string>
     <string name="set_tmdb_placeholder">เว้นว่างเพื่อใช้คีย์ในตัว</string>
     <string name="set_tmdb_where">ฟรี จาก themoviedb.org</string>
     <string name="set_omdb_hint">ไม่บังคับ ถ้าใส่ ภาพยนตร์จะแสดงคะแนนจาก IMDb, Rotten Tomatoes และ Metacritic ด้วย</string>
@@ -328,7 +328,7 @@
     <string name="set_no_collect_body">Reality NAS Player ไม่มีระบบบัญชี โฆษณา หรือการเก็บสถิติการใช้งาน คลังสื่ออยู่ในเฮดเซ็ต เมื่อเปิดการซิงค์กับ NAS ตำแหน่งที่ดูค้างไว้ รายการโปรด และข้อมูลเรื่องที่จับคู่เองจะถูกบันทึกลงในโฟลเดอร์ที่แชร์ที่คุณเลือกด้วย</string>
     <string name="set_when_network">เมื่อเชื่อมต่อเครือข่าย</string>
     <string name="set_scrape_metadata">การดึงข้อมูลเมตา</string>
-    <string name="set_scrape_metadata_body">การสแกนจะส่งชื่อเรื่องที่อ่านได้จากชื่อไฟล์ เช่น “Interstellar 2014” ไปยังฐานข้อมูลสาธารณะอย่าง TMDB, AniList, Bangumi และ Jikan เพื่อแลกกับโปสเตอร์และเรื่องย่อ โดยไม่ส่งพาธเต็ม ที่อยู่เซิร์ฟเวอร์ ข้อมูลรับรอง หรือรหัสอุปกรณ์ใดๆ</string>
+    <string name="set_scrape_metadata_body">การสแกนจะส่งชื่อเรื่องที่อ่านได้จากชื่อไฟล์ เช่น “Interstellar 2014” ไปยังฐานข้อมูลสาธารณะอย่าง every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi และ Jikan เพื่อแลกกับโปสเตอร์และเรื่องย่อ โดยไม่ส่งพาธเต็ม ที่อยู่เซิร์ฟเวอร์ ข้อมูลรับรอง หรือรหัสอุปกรณ์ใดๆ</string>
     <string name="set_you_asked">การดาวน์โหลดที่คุณสั่ง</string>
     <string name="set_you_asked_body">การดาวน์โหลดลงเฮดเซ็ตจะคัดลอกจากเซิร์ฟเวอร์ของคุณเองเท่านั้น ขณะเล่น วิดีโอจะส่งระหว่างเฮดเซ็ตนี้กับเซิร์ฟเวอร์ของคุณเท่านั้น ไม่มีบุคคลที่สามคั่นกลาง</string>
     <string name="set_offline_note">โหมดออฟไลน์จะระบุชื่อเรื่องจากชื่อไฟล์โดยไม่ค้นหาข้อมูลภาพยนตร์หรือโปสเตอร์ออนไลน์ คุณยังเล่นภาพยนตร์จาก NAS ได้</string>

@@ -17,7 +17,7 @@
 
 Öppna mapparna med filmer, serier och anime som du har samlat på din NAS. Reality NAS Player hittar titlar, sorterar avsnitt och lägger extramaterialet hos rätt serie. Välj ett omslag på **PICO Space Pro** och slå dig ner med utsikt över jorden.
 
-**[Hämta APK för headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versionsinformation och kontrollsummor](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Bygg datorappen](../build.md)
+**[Hämta APK för headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versionsinformation och kontrollsummor](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Bygg datorappen](../build.md)
 
 ## Från NAS-mappar till filmuppgifter
 
@@ -27,7 +27,7 @@
 
 Om ett animeavsnitt bara heter `Seitokai` kan ett annat avsnitt i samma mapp ge hela namnet för sökningen på AniList. En biofilm kan få ett eget omslag, medan för- och eftertexternas bildsekvenser utan text hamnar bland seriens extramaterial. Två kopior av samma film kan dela post, så att du själv kan välja version.
 
-Med en Kodi-NFO som innehåller ett TMDB-id kan spelaren läsa filmens eller seriens handling och rollista offline och använda dina omslag och bakgrundsbilder. Ange din egen API-nyckel för att söka på TMDB online. Om en serie fått fel titel kan du rätta hela posten på en gång. Valet finns kvar efter nästa genomsökning.
+Med en Kodi-NFO som innehåller ett TMDB-id kan spelaren läsa filmens eller seriens handling och rollista offline och använda dina omslag och bakgrundsbilder. Vid genomsökningen känner spelaren igen filmer utifrån titel och år och hämtar tillgängliga affischer och beskrivningar. Du behöver varken konto eller API-nyckel. Om en serie fått fel titel kan du rätta hela posten på en gång. Valet finns kvar efter nästa genomsökning.
 
 [Se exemplen och prova projektets öppna tester (på engelska)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Ladda ned innan du lämnar wifi. Med en egen SMB-resurs kan du välja att synka 
 
 ![Vid skrivbordet — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-I macOS och Windows kan du bläddra och spela upp med mus och tangentbord. De virtuella salongerna hör till headsetet. v1.0 innehåller en APK för headsetet; datorappen byggs från källkod.
+I macOS och Windows kan du bläddra och spela upp med mus och tangentbord. De virtuella salongerna hör till headsetet. v1.1.0 innehåller en APK för headsetet; datorappen byggs från källkod.
 
 ## Första visningen
 

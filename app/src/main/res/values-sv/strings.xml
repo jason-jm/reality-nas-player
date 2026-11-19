@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Läs .nfo-, poster- och fanart-filerna bredvid en video, så som Kodi och Jellyfin skriver dem. En nfo med ett databas-id identifierar filmen utan sökning.</string>
     <string name="set_sources_group">Datakällor</string>
     <string name="set_tmdb_hint">En appnyckel är inbyggd, så fältet kan lämnas tomt; din egen nyckel används först. Inget hämtas medan offlineskrapning är på.</string>
-    <string name="set_tmdb_hint2">Fyll i det här så kommer omslag, sammanfattningar, rollista och betyg av sig själva. Används inte medan offlineskrapning är på.</string>
+    <string name="set_tmdb_hint2">Valfritt. Utan nyckel hämtas filmaffischer och sammanfattningar från offentliga filmkataloger. Ange en nyckel för att använda TMDB.</string>
     <string name="set_tmdb_placeholder">Tomt använder den inbyggda nyckeln</string>
     <string name="set_tmdb_where">Gratis, från themoviedb.org</string>
     <string name="set_omdb_hint">Valfritt. Med den visar filmer även betyg från IMDb, Rotten Tomatoes och Metacritic.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player har inga konton, annonser eller användningsstatistik. Biblioteket sparas på headsetet. Om du aktiverar NAS-synkronisering sparas även uppspelningspositioner, favoriter och manuella matchningar i den delade mapp du väljer.</string>
     <string name="set_when_network">När den går ut på nätet</string>
     <string name="set_scrape_metadata">Hämtning av metadata</string>
-    <string name="set_scrape_metadata_body">Skanningen skickar titeln som läses ut ur ett filnamn – till exempel ”Interstellar 2014” – till offentliga databaser som TMDB, AniList, Bangumi och Jikan, i utbyte mot en affisch och en sammanfattning. Aldrig hela sökvägen, din servers adress, dina inloggningsuppgifter eller någon enhetsidentifierare.</string>
+    <string name="set_scrape_metadata_body">Skanningen skickar titeln som läses ut ur ett filnamn – till exempel ”Interstellar 2014” – till offentliga databaser som every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi och Jikan, i utbyte mot en affisch och en sammanfattning. Aldrig hela sökvägen, din servers adress, dina inloggningsuppgifter eller någon enhetsidentifierare.</string>
     <string name="set_you_asked">Nedladdningar du ber om</string>
     <string name="set_you_asked_body">En nedladdning till headsetet kopieras enbart från din egen server; under uppspelning går videon bara mellan det här headsetet och din egen server – ingen tredje part däremellan.</string>
     <string name="set_offline_note">Offlineidentifiering använder filnamnen utan att söka efter metadata eller affischer på nätet. Du kan fortfarande spela upp filmer från din NAS.</string>

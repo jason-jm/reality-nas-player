@@ -52,6 +52,7 @@ class AppGraph(val filesDir: File) {
         jikan = JikanClient(filesDir),
         imdb = ImdbDatasetClient(filesDir),
         sidecars = com.therealityteam.videoplayer.data.source.SourceSidecarReader(sources),
+        publicMovies = com.therealityteam.videoplayer.data.scrape.PublicMovieCatalog(filesDir),
     )
 
     val smb = SmbSource()

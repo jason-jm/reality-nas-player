@@ -26,7 +26,7 @@
 
 若平時用 Kodi 或 tinyMediaManager 整理電影和影集，把 NFO、海報和背景圖留在影片旁即可。NFO 含有 TMDB ID 時，播放器可離線辨識作品，讀取檔案內的片名、劇情與演員。影集可以從 `tvshow.nfo` 取得整部作品的 ID，再從單集自己的 NFO 讀取季集編號。介紹頁上的八部示範電影，就是在關閉線上查詢後，從 WebDAV 共享資料夾這樣掃描出來的。[查看實際的海報牆](showcase/01-library-en.webp) · [NFO 掃描案例](../core/src/test/kotlin/com/therealityteam/videoplayer/NfoScrapeTest.kt)
 
-想線上查詢電影與影集資料，可填入自己的 TMDB API 金鑰。動畫可透過 AniList 和 Bangumi 比對。各來源有資料時，作品頁也能並列顯示 TMDB、IMDb、AniList、Bangumi 與 MyAnimeList 評分。若整部影集配錯，在詳情頁修正一次，卡片裡的檔案會一起更新，重新掃描也會保留選擇。
+掃描電影預設免金鑰，先查 every.film，再視需要使用 NeoDB、Wikidata 和 Open Film Database。若要使用 TMDB，也可填入自己的金鑰。動畫可透過 AniList 和 Bangumi 比對。各來源有資料時，作品頁也能並列顯示 TMDB、IMDb、AniList、Bangumi 與 MyAnimeList 評分。若整部影集配錯，在詳情頁修正一次，卡片裡的檔案會一起更新，重新掃描也會保留選擇。
 
 啟用片庫自動更新，後續掃描會收錄新加入的檔案。變更中繼資料的語言時，已線上配對的作品可依既有 ID 更新片名、劇情與演職員的顯示語言。觀看進度仍在原卡片上，從本機 NFO 讀入的項目繼續使用你儲存的文字。
 

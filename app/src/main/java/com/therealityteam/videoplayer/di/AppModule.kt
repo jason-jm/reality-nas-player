@@ -50,6 +50,7 @@ val appModule = module {
         ScrapeEngine(
             get(), get(), get(), get(), get(), get(), get(), get(),
             sidecars = com.therealityteam.videoplayer.data.source.SourceSidecarReader(get()),
+            publicMovies = com.therealityteam.videoplayer.data.scrape.PublicMovieCatalog(androidContext().filesDir),
         )
     }
     single { com.therealityteam.videoplayer.data.sync.HeadsetSync(androidContext(), get(), get(), get(), engine = get()) }

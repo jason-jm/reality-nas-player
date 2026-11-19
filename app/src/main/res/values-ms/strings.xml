@@ -273,7 +273,7 @@
     <string name="set_local_meta_hint">Baca fail .nfo, poster dan fanart di sebelah video, seperti yang ditulis Kodi dan Jellyfin. Fail nfo dengan ID pangkalan data mengenal pasti filem tanpa carian.</string>
     <string name="set_sources_group">Sumber data</string>
     <string name="set_tmdb_hint">Kunci apl sudah terbina dalam, jadi ruangan ini boleh dibiarkan kosong; kunci anda sendiri digunakan dahulu. Tiada apa diambil semasa metadata luar talian dihidupkan.</string>
-    <string name="set_tmdb_hint2">Isikan ini dan kulit, ringkasan, pelakon dan penilaian akan tiba dengan sendirinya. Tidak digunakan semasa metadata luar talian dihidupkan.</string>
+    <string name="set_tmdb_hint2">Pilihan. Biarkan kosong untuk mencari poster dan sinopsis dalam katalog filem awam. Masukkan kunci untuk menggunakan TMDB.</string>
     <string name="set_tmdb_placeholder">Kosong menggunakan kunci terbina dalam</string>
     <string name="set_tmdb_where">Percuma, dari themoviedb.org</string>
     <string name="set_omdb_hint">Pilihan. Dengannya, filem juga menunjukkan skor IMDb, Rotten Tomatoes dan Metacritic.</string>
@@ -328,7 +328,7 @@
     <string name="set_no_collect_body">Reality NAS Player tiada akaun, iklan atau statistik penggunaan. Pustaka disimpan pada set kepala. Jika penyegerakan NAS dihidupkan, kedudukan main balik, kegemaran dan padanan manual turut disimpan dalam folder kongsi yang anda pilih.</string>
     <string name="set_when_network">Apabila ia dalam talian</string>
     <string name="set_scrape_metadata">Mengambil metadata</string>
-    <string name="set_scrape_metadata_body">Pengimbasan menghantar tajuk yang dibaca daripada nama fail — “Interstellar 2014”, contohnya — kepada pangkalan data awam seperti TMDB, AniList, Bangumi dan Jikan, sebagai pertukaran untuk poster dan ringkasan. Tidak sekali-kali laluan penuh, alamat pelayan anda, bukti kelayakan anda atau sebarang pengecam peranti.</string>
+    <string name="set_scrape_metadata_body">Pengimbasan menghantar tajuk yang dibaca daripada nama fail — “Interstellar 2014”, contohnya — kepada pangkalan data awam seperti every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi dan Jikan, sebagai pertukaran untuk poster dan ringkasan. Tidak sekali-kali laluan penuh, alamat pelayan anda, bukti kelayakan anda atau sebarang pengecam peranti.</string>
     <string name="set_you_asked">Muat turun yang anda minta</string>
     <string name="set_you_asked_body">Muat turun ke set kepala disalin daripada pelayan anda sendiri sahaja; semasa dimainkan, video hanya bergerak antara set kepala ini dan pelayan anda sendiri — tiada pihak ketiga di tengah.</string>
     <string name="set_offline_note">Pengecaman luar talian menggunakan nama fail tanpa mencari metadata atau poster dalam talian. Anda masih boleh menonton filem daripada NAS.</string>

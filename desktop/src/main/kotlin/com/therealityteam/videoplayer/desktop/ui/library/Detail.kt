@@ -1,5 +1,6 @@
 package com.therealityteam.videoplayer.desktop.ui.library
 
+import com.therealityteam.videoplayer.data.scrape.PublicMovieCatalog
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.VerticalScrollbar
 import androidx.compose.foundation.background
@@ -144,6 +145,16 @@ fun DetailPage(state: AppState, group: MediaGroup) {
                     Overview(overview)
                     Spacer(Modifier.height(28.dp))
                 }
+                PublicMovieCatalog.credit(rep.nfoCredit.takeIf { rep.fromNfo } ?: rep.collectionKey)?.let { (name, url) ->
+                    val links = androidx.compose.ui.platform.LocalUriHandler.current
+                    val clipboard = androidx.compose.ui.platform.LocalClipboardManager.current
+                    AuraButton(name, onClick = {
+                        runCatching { links.openUri(url) }.onFailure {
+                            clipboard.setText(androidx.compose.ui.text.AnnotatedString(url))
+                        }
+                    })
+                    Spacer(Modifier.height(16.dp))
+                }
                 val people = remember(rep) { rep.crew.take(8) + rep.cast.take(16) }
                 if (people.isNotEmpty()) {
                     Txt(s["det_credits"], Aura.type.title2, c.text)
@@ -175,8 +186,16 @@ private fun Hero(state: AppState, group: MediaGroup, ordered: List<MediaItem>, n
             val tint = group.dominantColor?.let { Color(it) } ?: c.accent
             Box(Modifier.matchParentSize().background(Brush.linearGradient(listOf(tint.copy(alpha = 0.55f), c.background))))
         }
-        // Darken towards the text on the left, and fade into the page at the bottom.
-        Box(Modifier.matchParentSize().background(Brush.horizontalGradient(0f to c.background.copy(alpha = 0.92f), 0.55f to c.background.copy(alpha = 0.55f), 1f to c.background.copy(alpha = 0.15f))))
+        // Veil the picture where the text is, and fade into the page at the bottom. The text column
+        // has to read over whatever frame is behind it: at 55% a light theme's veil turned a dark
+        // frame grey under grey text, so the light veil holds denser across the column, and both
+        // let the right of the frame be the picture.
+        val veil = if (c.isDark) {
+            arrayOf(0f to 0.92f, 0.5f to 0.68f, 0.8f to 0.3f, 1f to 0.15f)
+        } else {
+            arrayOf(0f to 0.96f, 0.5f to 0.86f, 0.78f to 0.42f, 1f to 0.12f)
+        }
+        Box(Modifier.matchParentSize().background(Brush.horizontalGradient(*veil.map { (at, a) -> at to c.background.copy(alpha = a) }.toTypedArray())))
         Box(Modifier.matchParentSize().background(Brush.verticalGradient(0.55f to Color.Transparent, 1f to c.background)))
         Row(Modifier.fillMaxWidth().padding(start = 40.dp, end = 40.dp, top = 24.dp, bottom = 28.dp), verticalAlignment = Alignment.Bottom) {
             Box(Modifier.width(210.dp).aspectRatio(2f / 3f).shadow(24.dp, AuraShapes.card).clip(AuraShapes.card).background(c.surface)) {

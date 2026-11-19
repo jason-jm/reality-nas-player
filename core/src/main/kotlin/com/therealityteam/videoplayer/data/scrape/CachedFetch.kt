@@ -21,13 +21,13 @@ import java.io.File
  * A TRANSIENT failure (429, 5xx, a dropped connection) is never cached. It is not an answer, and
  * writing it down would turn one bad minute into a week of pretending the work does not exist.
  */
-internal class CachedFetch(root: File, ttlMs: Long = DEFAULT_TTL_MS) {
+internal class CachedFetch(root: File, ttlMs: Long = DEFAULT_TTL_MS, private val memoryEntries: Int = MEMORY_ENTRIES) {
 
     private val disk = ResponseCache(root, ttlMs)
 
     /** A few hundred bodies in front of the disk, so the hot repeats never touch the filesystem. */
     private val hot = object : LinkedHashMap<String, String>(256, 0.75f, true) {
-        override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, String>) = size > MEMORY_ENTRIES
+        override fun removeEldestEntry(eldest: MutableMap.MutableEntry<String, String>) = size > memoryEntries
     }
 
     fun get(url: String, headers: Map<String, String> = emptyMap(), throwOnTransient: Boolean = false): String? {
@@ -39,8 +39,13 @@ internal class CachedFetch(root: File, ttlMs: Long = DEFAULT_TTL_MS) {
         }
     }
 
-    private fun cached(url: String): String? =
+    internal fun cached(url: String): String? =
         synchronized(hot) { hot[url] } ?: disk.get(url)?.also { synchronized(hot) { hot[url] = it } }
+
+    internal fun forget(url: String) {
+        synchronized(hot) { hot.remove(url) }
+        disk.remove(url)
+    }
 
     private fun remember(url: String, body: String) {
         synchronized(hot) { hot[url] = body }

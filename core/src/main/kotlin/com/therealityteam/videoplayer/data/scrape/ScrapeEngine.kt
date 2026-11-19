@@ -34,6 +34,7 @@ class ScrapeEngine(
     private val imdb: ImdbDatasetClient,
     /** Reads the nfo and pictures a scan found beside a file; null reads nothing. */
     private val sidecars: com.therealityteam.videoplayer.data.source.SidecarReader? = null,
+    private val publicMovies: PublicMovieCatalog? = null,
 ) {
 
     /**
@@ -139,15 +140,56 @@ class ScrapeEngine(
 
     suspend fun scrape(item: MediaItem, siblings: Collection<String> = emptyList()): MediaItem {
         val local = localOf(item)
-        val identified = local?.let { fromNfo(item) }
-            ?: if (local != null && FilenameParser.nothingToLookUp(item.path, item.fileName, item.title)) {
-                item.copy(fromNfo = false) // its pictures are still its own; nothing online has its name
-            } else {
-                // An identity an nfo gave, now asked by name again, is no longer the nfo's.
-                scrapeByName(item, siblings).copy(fromNfo = false)
+        if (local != null && !animeShelf(item)) {
+            val own = readNfo(item, local.nfo)
+            val identified = fromNfo(item, local, own)
+            if (identified != null) {
+                val result = if (own?.kind == KodiNfo.Kind.MOVIE && !client.isConfigured && !TmdbConfig.offline && publicMovies != null) {
+                    completeLocalMovie(item, local, own, identified, publicMovies)
+                } else withLocalArt(identified, item)
+                return result.copy(localApplied = local.stamp)
             }
-        // What was beside the file when it was identified, so the next pass can tell it changed.
-        return withLocalArt(identified, item).copy(localApplied = local?.stamp)
+        }
+        val identified = if (local != null && FilenameParser.nothingToLookUp(item.path, item.fileName, item.title)) item
+            else scrapeByName(item, siblings)
+        return withLocalArt(identified.copy(fromNfo = false, nfoCredit = null), item).copy(localApplied = local?.stamp)
+    }
+
+    private suspend fun completeLocalMovie(
+        item: MediaItem, local: com.therealityteam.videoplayer.data.model.LocalMeta, own: KodiNfo.Nfo,
+        identified: MediaItem, catalog: PublicMovieCatalog,
+    ): MediaItem {
+        val parsed = FilenameParser.parseFromPath(item.path)
+        val nfo = own.toMetaResult(0)
+        val conflictingName = !FilenameParser.isJunkTitle(parsed.title) && !Matcher.namesAgree(parsed.title, nfo)
+        fun conflict(movie: MetaResult): Boolean =
+            (own.imdbId != null && movie.imdbId != null && own.imdbId != movie.imdbId) ||
+                (own.tmdbId != null && movie.referencedTmdbMovie != null && own.tmdbId != movie.referencedTmdbMovie)
+        try {
+            val conflictingYear = parsed.year != null && own.year != null && kotlin.math.abs(parsed.year - own.year) > 1
+            val needsMetadata = local.poster == null || identified.overview.isNullOrBlank()
+            if (!conflictingName && !conflictingYear && !needsMetadata) return withLocalArt(identified, item)
+            val names = if (PublicMovieCatalog.eligible(item.path, item.fileName, item.title, parsed))
+                PublicMovieCatalog.fileNames(item.path, parsed) else emptyList()
+            val fileMatch = names.firstOrNull()?.let { catalog.match(it, names.drop(1)) }
+            // Require a different public identifier as well as conflicting evidence from the filename.
+            if ((conflictingName || conflictingYear) && fileMatch != null && conflict(fileMatch)) return applyPublic(item, fileMatch)
+            if (needsMetadata) {
+                val name = own.originalTitle?.takeIf { it.isNotBlank() } ?: identified.title
+                val film = fileMatch?.takeUnless(::conflict) ?: catalog.match(ParsedName(name, own.year ?: parsed.year))
+                if (film != null && !conflict(film)) {
+                    val art = if (local.poster == null) artwork.cache(film.posterUrl, film.publicMovieKey!!.replace(':', '_')) else null
+                    val synopsis = film.overview?.takeIf { identified.overview.isNullOrBlank() }
+                    if (art != null || synopsis != null) return withLocalArt(identified.copy(
+                        posterPath = art ?: identified.posterPath, overview = synopsis ?: identified.overview,
+                        dominantColor = artwork.dominantColor(art) ?: identified.dominantColor, nfoCredit = film.publicMovieKey,
+                    ), item)
+                }
+            }
+        } catch (_: com.therealityteam.videoplayer.util.TransientHttpException) {
+            // The catalogue can be unavailable while the NAS still has an authoritative local record.
+        }
+        return withLocalArt(identified, item)
     }
 
     /** What lies beside the file, as far as this pass may read it (Settings can say not at all). */
@@ -166,13 +208,18 @@ class ScrapeEngine(
      * the question, and asking the name again can only agree with them or be wrong. Null when there is
      * no nfo, it names no entry, or the entry cannot be resolved; the name is then asked as before.
      */
-    private suspend fun fromNfo(item: MediaItem): MediaItem? {
-        val local = localOf(item) ?: return null
-        if (animeShelf(item)) return null
-        val own = readNfo(item, local.nfo)
+    private suspend fun fromNfo(item: MediaItem, local: com.therealityteam.videoplayer.data.model.LocalMeta, own: KodiNfo.Nfo?): MediaItem? {
         val show = local.showNfo?.takeIf { it != local.nfo }?.let { readNfo(item, it) }
         val episodeNfo = own?.takeIf { it.kind == KodiNfo.Kind.EPISODE }
         // An episode's own nfo names the EPISODE's entry; the series it belongs to is the show nfo's.
+        if (!client.isConfigured && own?.kind == KodiNfo.Kind.MOVIE && own.tmdbId == null && !own.title.isNullOrBlank()) {
+            // Kodi exports also exist with only an IMDb ID, or with no external ID at all.
+            // Keep the owner's words and the pictures beside them, even with the network disabled.
+            val key = own.imdbId?.let { "imdb:$it" } ?: "nfo:" + MediaItem.idFor(item.sourceId, local.nfo ?: item.path)
+            val meta = own.toMetaResult(0).copy(publicMovieKey = key, posterUrl = null, backdropUrl = null,
+                cast = own.actors.map { Credit(it.name, it.role) })
+            return applyPublic(item, meta).copy(fromNfo = true)
+        }
         val identity = own?.takeIf { it.kind != KodiNfo.Kind.EPISODE && it.hasId }
             ?: show?.takeIf { it.hasId }
             ?: return null
@@ -183,7 +230,7 @@ class ScrapeEngine(
             if (identity.kind == null) kind = found.kind else if (found.kind != kind) return null
             found.providerId
         }
-        val details = retry(MAX_RETRIES) { client.details(tmdbId, kind) }
+        val details = if (client.isConfigured) retry(MAX_RETRIES) { client.details(tmdbId, kind) } else null
         // Offline, or without a key, what the nfo says is the answer.
         val meta = details ?: identity.toMetaResult(tmdbId)
         val parsed = FilenameParser.parseFromPath(item.path)
@@ -192,7 +239,7 @@ class ScrapeEngine(
         val season = episodeNfo?.season ?: parsed.season
         val episode = episodeNfo?.episode ?: parsed.episode
         val artKey = "tmdb_$tmdbId"
-        val posterPath = artwork.cache(meta.posterUrl, artKey)
+        val posterPath = if (!client.isConfigured || TmdbConfig.offline) null else artwork.cache(meta.posterUrl, artKey)
         val stillUrl = if (series && details != null && season != null && episode != null) {
             client.episodeStill(tmdbId, season, episode)
         } else null
@@ -212,7 +259,7 @@ class ScrapeEngine(
             crew = persons(meta.crew),
             posterPath = posterPath,
             posterGenerated = false,
-            backdropPath = artwork.cache(meta.backdropUrl, artKey + "_bd"),
+            backdropPath = if (!client.isConfigured || TmdbConfig.offline) null else artwork.cache(meta.backdropUrl, artKey + "_bd"),
             stillUrl = stillUrl,
             dominantColor = artwork.dominantColor(posterPath),
             tmdbId = tmdbId,
@@ -221,7 +268,7 @@ class ScrapeEngine(
             episode = if (series) episode else null,
             collectionKey = null,
             kind = if (series) MediaKind.EPISODE else MediaKind.MOVIE,
-            fromNfo = true,
+            fromNfo = true, nfoCredit = null,
             scrapeStatus = ScrapeStatus.MATCHED,
             ratingsVersion = RATINGS_VERSION,
         )
@@ -310,7 +357,19 @@ class ScrapeEngine(
             return clearedUnmatched(base, animeUnmatchedTitle(anime, item.path, base.title))
         }
 
-        if (!client.isConfigured) return base.copy(scrapeStatus = ScrapeStatus.UNMATCHED)
+        if (!client.isConfigured) {
+            if (!TmdbConfig.offline && publicMovies != null && PublicMovieCatalog.eligible(item.path, item.fileName, item.title, parsed)) {
+                val names = PublicMovieCatalog.fileNames(item.path, parsed)
+                val record = names.firstOrNull()?.let { publicMovies.match(it, names.drop(1)) }
+                if (record != null && !(FilenameParser.isUnderDocRoot(item.path) && ShelfFit.neverOnDocumentaryShelf(record.genres))) {
+                    return applyPublic(base, record)
+                }
+                if (item.scrapeStatus == ScrapeStatus.MATCHED) return item
+                return base.copy(scrapeStatus = ScrapeStatus.UNMATCHED, ratingsVersion = RATINGS_VERSION)
+            }
+            if (item.scrapeStatus == ScrapeStatus.MATCHED) return item
+            return base.copy(scrapeStatus = ScrapeStatus.UNMATCHED)
+        }
 
         // A file under a TV library root is an episode of something even when its own name says
         // nothing about seasons; searching movies first there matched a scene-named John Adams rip
@@ -449,6 +508,26 @@ class ScrapeEngine(
             showTitle = if (parsed.isEpisode) details.title.ifBlank { base.title } else null,
             scrapeStatus = ScrapeStatus.MATCHED,
             ratingsVersion = RATINGS_VERSION,
+        )
+    }
+
+    private suspend fun applyPublic(item: MediaItem, details: MetaResult): MediaItem {
+        val key = requireNotNull(details.publicMovieKey)
+        val artKey = key.replace(':', '_')
+        val same = item.collectionKey == key
+        val poster = artwork.cache(details.posterUrl, artKey)
+        return item.copy(
+            title = details.title, originalTitle = details.originalTitle, aliases = aliasesOf(details, details.title),
+            year = details.year ?: item.year, overview = details.overview, runtime = details.runtime,
+            genres = details.genres, cast = persons(details.cast), crew = persons(details.crew),
+            posterPath = poster ?: item.posterPath.takeIf { same || item.posterGenerated },
+            posterGenerated = poster == null && item.posterGenerated,
+            backdropPath = artwork.cache(details.backdropUrl, artKey + "_bd") ?: item.backdropPath.takeIf { same },
+            dominantColor = artwork.dominantColor(poster) ?: item.dominantColor.takeIf { same || item.posterGenerated },
+            rating = details.rating, ratings = details.ratings, certification = details.certification,
+            tmdbId = null, collectionKey = key, kind = MediaKind.MOVIE, season = null, episode = null,
+            showTitle = null, stillUrl = null, stillPath = null, contentTag = null, fromNfo = false, nfoCredit = null,
+            scrapeStatus = ScrapeStatus.MATCHED, ratingsVersion = RATINGS_VERSION,
         )
     }
 
@@ -729,6 +808,9 @@ class ScrapeEngine(
         // and a ratings backfill (stamped, so it cannot loop). Not a file that matched nothing, nor the
         // corrections below that re-ask matched files — those are a requested 刮削's, and on a real NAS
         // the ones that cannot heal (an anime nobody lists on AniList) were re-asked on every pass.
+        !retryUnmatched && it.scrapeStatus == ScrapeStatus.UNMATCHED && it.ratingsVersion < RATINGS_VERSION &&
+            !TmdbConfig.offline && !client.isConfigured && publicMovies != null &&
+            PublicMovieCatalog.eligible(it.path, it.fileName, it.title, FilenameParser.parseFromPath(it.path)) -> true
         !retryUnmatched -> it.scrapeStatus == ScrapeStatus.PENDING || it.scrapeStatus == ScrapeStatus.ERROR ||
             (it.scrapeStatus == ScrapeStatus.MATCHED && it.ratingsVersion < RATINGS_VERSION)
         it.scrapeStatus != ScrapeStatus.MATCHED -> true
@@ -1154,7 +1236,8 @@ class ScrapeEngine(
      * 1980 and 2024) could never be fixed to its series.
      */
     suspend fun searchManual(query: String): List<MetaResult> {
-        if (!client.isConfigured || query.isBlank()) return emptyList()
+        if (query.isBlank()) return emptyList()
+        if (!client.isConfigured) return publicMovies?.manual(query).orEmpty()
         val q = query.trim()
         val films = retry(MAX_RETRIES) { client.search(ParsedName(title = q)) } ?: emptyList()
         val series = retry(MAX_RETRIES) { client.search(ParsedName(title = q, season = 1)) } ?: emptyList()
@@ -1280,6 +1363,12 @@ class ScrapeEngine(
     }
 
     suspend fun applyMatch(item: MediaItem, chosen: MetaResult): MediaItem {
+        chosen.publicMovieKey?.let { key ->
+            val record = publicMovies?.detail(key) ?: return item
+            val updated = applyPublic(item, record).copy(userMatched = true)
+            repo.upsert(updated)
+            return updated
+        }
         val details = retry(MAX_RETRIES) { client.details(chosen.providerId, chosen.kind) } ?: chosen
         val artKey = "tmdb_${details.providerId}"
         val posterPath = artwork.cache(details.posterUrl ?: chosen.posterUrl, artKey)
@@ -1333,7 +1422,7 @@ class ScrapeEngine(
         val works = items
             .filter { it.scrapeStatus == ScrapeStatus.MATCHED && !it.fromNfo }
             .groupBy { item ->
-                item.collectionKey?.takeIf { it.startsWith("anilist:") }
+                item.collectionKey?.takeIf { it.startsWith("anilist:") || PublicMovieCatalog.credit(it) != null }
                     ?: item.tmdbId?.let { id -> (if (item.kind == MediaKind.MOVIE) "movie:" else "tv:") + id }
             }
             .filterKeys { it != null }
@@ -1375,7 +1464,9 @@ class ScrapeEngine(
             }
         }
         val kind = if (key.startsWith("movie:")) MediaKind.MOVIE else MediaKind.SHOW
-        val details = retry(MAX_RETRIES) { client.details(key.substringAfter(':').toInt(), kind) } ?: return null
+        val details = if (PublicMovieCatalog.credit(key) != null) publicMovies?.detail(key)
+            else retry(MAX_RETRIES) { client.details(key.substringAfter(':').toInt(), kind) }
+        if (details == null) return null
         if (details.title.isBlank()) return null
         return files.map { f ->
             f.copy(
@@ -1486,7 +1577,7 @@ class ScrapeEngine(
     }
 
     private fun aliasesOf(r: MetaResult, displayTitle: String): List<String> =
-        listOfNotNull(r.romajiTitle, r.englishTitle)
+        (listOfNotNull(r.romajiTitle, r.englishTitle) + if (r.publicMovieKey != null) r.synonyms.take(64) else emptyList())
             .filter { it.isNotBlank() && it != displayTitle && it != r.originalTitle }
             .distinct()
 
@@ -1600,7 +1691,9 @@ class ScrapeEngine(
         // talk show (明治, 华尔街); a music shelf never asks AniList or a category folder's name (Guitar,
         // ACG) and keeps only what a clip's own name names (not Jamming on an Old Saya for `jamming`);
         // and a file this pass found nothing for keeps nothing an earlier answer left on it.
-        const val RATINGS_VERSION = 20
+        // 21: revisit unmatched feature films (including documentary releases) when upgrading from
+        // an installation that had no film API key. Manual matches are protected by needsScrape.
+        const val RATINGS_VERSION = 21
         /** Origins whose animation we also look up on the anime sites (anime / donghua / 애니). */
         val ANIME_LANGS = setOf("ja", "zh", "ko")
         // Extras/container folder vocabulary lives with the reconciliation rules that use it.

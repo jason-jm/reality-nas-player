@@ -17,7 +17,7 @@
 
 Otwórz foldery z filmami, serialami i anime, które przez lata gromadziły się na Twoim NAS-ie. Reality NAS Player rozpoznaje tytuły, porządkuje odcinki i przypisuje dodatki do właściwych serii. Na **PICO Space Pro** wybierz plakat i zajmij miejsce z widokiem na Ziemię.
 
-**[Pobierz APK na gogle](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Informacje o wydaniu i sumy kontrolne](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Budowanie na komputer](../build.md)
+**[Pobierz APK na gogle](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Informacje o wydaniu i sumy kontrolne](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Budowanie na komputer](../build.md)
 
 ## Od folderów na NAS-ie do opisów filmów
 
@@ -27,7 +27,7 @@ Otwórz foldery z filmami, serialami i anime, które przez lata gromadziły się
 
 Jeśli jeden odcinek anime ma w nazwie tylko `Seitokai`, inny z tego samego folderu może podpowiedzieć pełny tytuł do wyszukania w AniList. Film kinowy może dostać własny plakat, a czołówki i końcówki bez napisów trafią do dodatków serialu. Dwie kopie jednego filmu mogą mieć wspólną kartę, na której wybierzesz wersję do odtworzenia.
 
-Plik NFO z Kodi z identyfikatorem TMDB pozwala odczytać opis i obsadę filmu lub serialu offline oraz wykorzystać własne plakaty i tła. Aby wyszukiwać w TMDB przez internet, podaj własny klucz API. Błędne dopasowanie można poprawić dla całej karty serialu jednocześnie. Wybór pozostanie po ponownym skanowaniu.
+Plik NFO z Kodi z identyfikatorem TMDB pozwala odczytać opis i obsadę filmu lub serialu offline oraz wykorzystać własne plakaty i tła. Podczas skanowania odtwarzacz rozpoznaje filmy na podstawie tytułu i roku, a następnie pobiera dostępne plakaty i opisy. Nie wymaga konta ani klucza API. Błędne dopasowanie można poprawić dla całej karty serialu jednocześnie. Wybór pozostanie po ponownym skanowaniu.
 
 [Zobacz przykłady i wypróbuj testy projektu (po angielsku)](../metadata-matching.md)
 

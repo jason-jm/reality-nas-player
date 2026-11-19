@@ -17,7 +17,7 @@
 
 오랫동안 NAS에 모아 둔 영화와 시리즈, 애니메이션 폴더를 그대로 열어 보세요. Reality NAS Player가 폴더와 다른 회차에 남은 단서를 읽어 작품을 정리합니다. **PICO Space Pro**에서 포스터를 고르고 지구가 보이는 좌석에서 감상하세요.
 
-**[헤드셋 APK 받기](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [릴리스 및 체크섬](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [데스크톱 빌드](../build.md)
+**[헤드셋 APK 받기](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [릴리스 및 체크섬](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [데스크톱 빌드](../build.md)
 
 ## NAS를 스캔해 작품 정보를 자동으로 채우세요
 
@@ -27,7 +27,7 @@
 
 **자막판 애니메이션도 회차별로 정리합니다.** 어떤 파일에 `Seitokai`라고만 적혀 있어도 같은 폴더의 다른 회차에 있는 전체 제목으로 AniList를 검색할 수 있습니다. 극장판은 별도 작품으로, 논크레딧 오프닝과 엔딩은 본편의 특전으로 정리합니다. 같은 애니메이션 영화의 두 판본을 TMDB와 AniList가 각각 식별한 경우에도 원제와 개봉 연도가 일치하면 한 카드에서 판본을 골라 재생할 수 있습니다.
 
-영화나 시리즈의 Kodi NFO에 TMDB ID가 있으면 오프라인에서도 거기에 저장된 줄거리와 출연진, 폴더의 포스터와 배경 이미지를 사용할 수 있습니다. 온라인 영화·시리즈 검색에는 개인 TMDB API 키를 입력하세요. 잘못 연결된 시리즈는 카드에서 한 번 수정하면 다시 스캔해도 선택이 유지됩니다.
+영화나 시리즈의 Kodi NFO에 TMDB ID가 있으면 오프라인에서도 거기에 저장된 줄거리와 출연진, 폴더의 포스터와 배경 이미지를 사용할 수 있습니다. NAS를 스캔하면 제목과 개봉 연도로 영화를 찾아 포스터와 줄거리를 가져옵니다. 계정이나 API 키는 필요 없습니다. 잘못 연결된 시리즈는 카드에서 한 번 수정하면 다시 스캔해도 선택이 유지됩니다.
 
 [작품 식별 사례와 오픈 소스 테스트로 확인하는 방법 보기 (영어)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Wi-Fi를 떠나기 전에 헤드셋으로 내려받으세요. 원할 때만 자�
 
 ![책상에서도 꺼내 보는 소장품 — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-macOS와 Windows 데스크톱 버전은 마우스와 키보드로 작품을 찾고 재생합니다. 공간 영화관은 헤드셋 전용입니다. v1.0은 헤드셋용 APK를 제공하며 데스크톱 버전은 소스에서 빌드합니다.
+macOS와 Windows 데스크톱 버전은 마우스와 키보드로 작품을 찾고 재생합니다. 공간 영화관은 헤드셋 전용입니다. v1.1.0은 헤드셋용 APK를 제공하며 데스크톱 버전은 소스에서 빌드합니다.
 
 ## 첫 상영 시작하기
 

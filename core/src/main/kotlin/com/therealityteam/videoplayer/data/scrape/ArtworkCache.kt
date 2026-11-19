@@ -37,8 +37,12 @@ class ArtworkCache(filesDir: File, private val sampler: ImageSampler) {
         val tag = url.hashCode().toUInt().toString(16)
         val dest = File(dir, "${key}__$tag.jpg")
         if (dest.exists() && dest.length() > 0) return@withContext dest.absolutePath
-        dir.listFiles { f -> f.name.startsWith("${key}__") && f.name != dest.name }?.forEach { it.delete() }
-        if (Http.download(url, dest)) dest.absolutePath else null
+        val partial = File.createTempFile("art-", ".part", dir)
+        try {
+            if (Http.download(url, partial)) publish(partial, key, dest) else null
+        } finally {
+            partial.delete()
+        }
     }
 
     /**
@@ -47,9 +51,22 @@ class ArtworkCache(filesDir: File, private val sampler: ImageSampler) {
      */
     suspend fun store(key: String, tag: String, writeJpeg: (java.io.OutputStream) -> Boolean): String? = withContext(Dispatchers.IO) {
         val dest = File(dir, "${key}__$tag.jpg")
-        dir.listFiles { f -> f.name.startsWith("${key}__") && f.name != dest.name }?.forEach { it.delete() }
-        val ok = runCatching { dest.outputStream().use(writeJpeg) }.getOrDefault(false)
-        if (ok) dest.absolutePath else { dest.delete(); null }
+        val partial = File.createTempFile("art-", ".part", dir)
+        try {
+            val ok = runCatching { partial.outputStream().use(writeJpeg) }.getOrDefault(false)
+            if (ok) publish(partial, key, dest) else null
+        } finally {
+            partial.delete()
+        }
+    }
+
+    // Downloads and NAS copies may finish at the same time. Commit and prune together so two
+    // replacements cannot delete each other's finished files. Network and NAS reads stay parallel.
+    @Synchronized
+    private fun publish(partial: File, key: String, dest: File): String? {
+        if (partial.length() == 0L || !partial.renameTo(dest)) return null
+        dir.listFiles { f -> f.name.startsWith("${key}__") && f != dest }?.forEach { it.delete() }
+        return dest.absolutePath
     }
 
     /** Where a headshot for [url] is filed. Shared by the scraper and the cast row. */

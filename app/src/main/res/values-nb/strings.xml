@@ -274,7 +274,7 @@
     <string name="set_local_meta_hint">Les .nfo-, plakat- og fanart-filene ved siden av en video, slik Kodi og Jellyfin skriver dem. En nfo med en database-ID identifiserer filmen uten søk.</string>
     <string name="set_sources_group">Datakilder</string>
     <string name="set_tmdb_hint">En appnøkkel er innebygd, så dette kan stå tomt; din egen nøkkel brukes først. Ingenting hentes mens gjenkjenning uten nett er på.</string>
-    <string name="set_tmdb_hint2">Fyll inn dette, så kommer omslag, sammendrag, skuespillere og vurderinger av seg selv. Brukes ikke mens gjenkjenning uten nett er på.</string>
+    <string name="set_tmdb_hint2">Valgfritt. Uten nøkkel hentes filmplakater og handlingsreferater fra offentlige filmkataloger. Skriv inn en nøkkel for å bruke TMDB.</string>
     <string name="set_tmdb_placeholder">Tomt bruker den innebygde nøkkelen</string>
     <string name="set_tmdb_where">Gratis, fra themoviedb.org</string>
     <string name="set_omdb_hint">Valgfritt. Med den viser filmer også poeng fra IMDb, Rotten Tomatoes og Metacritic.</string>
@@ -329,7 +329,7 @@
     <string name="set_no_collect_body">Reality NAS Player har ingen kontoer, annonser eller bruksstatistikk. Biblioteket lagres på hodesettet. Med NAS-synkronisering lagres også avspillingsposisjoner, favoritter og manuelle treff i den delte mappen du velger.</string>
     <string name="set_when_network">Når den går på nett</string>
     <string name="set_scrape_metadata">Henting av metadata</string>
-    <string name="set_scrape_metadata_body">Skanning sender tittelen som leses ut av et filnavn – for eksempel «Interstellar 2014» – til offentlige databaser som TMDB, AniList, Bangumi og Jikan, i bytte mot en plakat og et sammendrag. Aldri hele stien, serverens adresse, påloggingsinformasjonen din eller noen enhets-ID.</string>
+    <string name="set_scrape_metadata_body">Skanning sender tittelen som leses ut av et filnavn – for eksempel «Interstellar 2014» – til offentlige databaser som every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi og Jikan, i bytte mot en plakat og et sammendrag. Aldri hele stien, serverens adresse, påloggingsinformasjonen din eller noen enhets-ID.</string>
     <string name="set_you_asked">Nedlastinger du ber om</string>
     <string name="set_you_asked_body">En nedlasting til headsettet kopieres bare fra din egen server; under avspilling går video bare mellom dette headsettet og din egen server – ingen tredjepart imellom.</string>
     <string name="set_offline_note">Frakoblet gjenkjenning bruker filnavn uten å hente metadata eller plakater fra nettet. Du kan fortsatt spille av filmer fra NAS-en.</string>

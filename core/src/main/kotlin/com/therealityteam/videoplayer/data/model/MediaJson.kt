@@ -40,6 +40,7 @@ object MediaJson {
         season = o.optIntOrNull("season"),
         episode = o.optIntOrNull("episode"),
         collectionKey = o.optStringOrNull("collectionKey"),
+        nfoCredit = o.optStringOrNull("nfoCredit"),
         contentTag = o.optStringOrNull("contentTag")?.let { runCatching { ContentKind.valueOf(it) }.getOrNull() },
         video = VideoFlags(
             stereo = enumOf(o.optString("stereo"), StereoMode.UNKNOWN),
@@ -108,6 +109,7 @@ object MediaJson {
         putOpt("season", m.season)
         putOpt("episode", m.episode)
         putOpt("collectionKey", m.collectionKey)
+        if (m.fromNfo) putOpt("nfoCredit", m.nfoCredit)
         putOpt("contentTag", m.contentTag?.name)
         put("stereo", m.video.stereo.name)
         put("projection", m.video.projection.name)

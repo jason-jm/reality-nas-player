@@ -17,7 +17,7 @@
 
 Point Reality NAS Player at the folders you already keep on your NAS. It can find the film behind a file called `video1.mkv`, put a box set in episode order and give a theatrical spin-off its own cover. Pick a title from the poster wall on **PICO Space Pro** and watch it from a seat above Earth.
 
-**[Get the v1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktop builds](docs/build.md)
+**[Get the v1.1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Desktop builds](docs/build.md)
 
 ## Turn NAS folders into a film library
 
@@ -29,7 +29,7 @@ Point Reality NAS Player at the folders you already keep on your NAS. It can fin
 
 **One film, both copies.** Keep an anime film in Movies and a second encode in Anime. Even if TMDB recognizes one and AniList the other, the player can bring them together by original title and release year. Open one card and choose the version you want.
 
-**Keep the work you put into your NAS.** For films and TV, Kodi NFO files with a TMDB ID can supply credits and a synopsis offline, alongside your own posters and backdrops. For online film and TV lookup, add your own TMDB API key. If a whole series lands on the wrong card, use **Fix match** once for the group. Your choice survives a rescan.
+**Keep the work you put into your NAS.** For films and TV, Kodi NFO files with a TMDB ID can supply credits and a synopsis offline, alongside your own posters and backdrops. Scan a folder of video files and the player looks up films by title and release year, then brings available posters and synopses into your library. No movie-database account or API key is required. [How film matching was tested](docs/keyless-verification.md) If a whole series lands on the wrong card, use **Fix match** once for the group. Your choice survives a rescan.
 
 [Explore the matching examples and try them with the open-source tests](docs/metadata-matching.md)
 
@@ -89,11 +89,11 @@ There are no ads or analytics. Your library and server settings live on the devi
 
 ![The desktop app showing six of the demonstration titles in its native window.](docs/showcase/07-desktop-en.webp)
 
-The macOS and Windows app shares the headset’s library and metadata tools. Browse a collection, open an episode or play a local file with a mouse and keyboard. The spatial rooms belong to the headset experience. **v1.0 ships a headset APK; the desktop app is available to build from source.** [Desktop instructions](docs/build.md)
+The macOS and Windows app shares the headset’s library and metadata tools. Browse a collection, open an episode or play a local file with a mouse and keyboard. The spatial rooms belong to the headset experience. **v1.1.0 ships a headset APK; the desktop app is available to build from source.** [Desktop instructions](docs/build.md)
 
 ## Start with one film
 
-1. Download the signed APK from [Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) and sideload it for **PICO Space Pro / PICO OS 6**.
+1. Download the signed APK from [Releases](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) and sideload it for **PICO Space Pro / PICO OS 6**.
 2. Open one of your own videos from Files, or add a shared folder under **Sources**. No NAS is required to try local playback.
 3. Start the film and open **Viewing space** to choose your window or room.
 

@@ -17,7 +17,7 @@
 
 Deschide folderele cu filme, seriale și anime pe care le-ai strâns de-a lungul anilor pe NAS. Reality NAS Player recunoaște titlurile, ordonează episoadele și păstrează materialele bonus lângă serialul potrivit. Alege un afiș pe **PICO Space Pro** și ia loc cu vedere spre Pământ.
 
-**[Descarcă APK-ul pentru cască](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Note de versiune și sume de control](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Compilare pentru calculator](../build.md)
+**[Descarcă APK-ul pentru cască](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Note de versiune și sume de control](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compilare pentru calculator](../build.md)
 
 ## De la dosarele de pe NAS la fișa filmului
 
@@ -27,7 +27,7 @@ Deschide folderele cu filme, seriale și anime pe care le-ai strâns de-a lungul
 
 Dacă un episod anime apare doar ca `Seitokai`, un alt episod din același folder poate da numele complet pentru căutarea pe AniList. Lungmetrajul poate primi propriul afiș, iar secvențele de început și sfârșit fără generic intră la materialele bonus ale serialului. Două copii ale aceluiași film pot împărți o fișă din care alegi versiunea de redat.
 
-Pentru filme și seriale, un fișier NFO Kodi cu un ID TMDB îți pune la dispoziție sinopsisul și distribuția offline, alături de afișele și fundalurile tale. Pentru căutări online în TMDB introdu cheia ta API. O asociere greșită se poate corecta o singură dată pentru toată fișa serialului, iar alegerea se păstrează la următoarea scanare.
+Pentru filme și seriale, un fișier NFO Kodi cu un ID TMDB îți pune la dispoziție sinopsisul și distribuția offline, alături de afișele și fundalurile tale. La scanare, aplicația identifică filmele după titlu și an și caută afișele și descrierile disponibile, fără cont sau cheie API. O asociere greșită se poate corecta o singură dată pentru toată fișa serialului, iar alegerea se păstrează la următoarea scanare.
 
 [Vezi exemplele și încearcă testele proiectului (în engleză)](../metadata-matching.md)
 

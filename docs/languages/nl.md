@@ -17,7 +17,7 @@
 
 Open de mappen met films, series en anime die je door de jaren heen op je NAS hebt verzameld. Reality NAS Player herkent titels, zet afleveringen op volgorde en bewaart de extra’s bij de serie. Kies op **PICO Space Pro** een hoes en neem plaats met uitzicht op de aarde.
 
-**[Headset-APK downloaden](https://github.com/jason-jm/reality-nas-player/releases/download/v1.0/reality-nas-player-1.0-4.apk)** · [Versiegegevens en controlesommen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.0) · [Desktopapp bouwen](../build.md)
+**[Headset-APK downloaden](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versiegegevens en controlesommen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Desktopapp bouwen](../build.md)
 
 ## Van NAS-map naar filmgegevens
 
@@ -27,7 +27,7 @@ Open de mappen met films, series en anime die je door de jaren heen op je NAS he
 
 Staat er op één anime-aflevering alleen `Seitokai`, dan kan een andere aflevering in dezelfde map de volledige naam leveren voor de zoekopdracht bij AniList. Een bioscoopfilm kan een eigen hoes krijgen, terwijl intro’s en outro’s zonder credits bij de extra’s van de serie komen. Twee versies van dezelfde film kun je vanuit één kaart afspelen.
 
-Een Kodi-NFO met een TMDB-ID kan voor films en series ook offline de samenvatting en cast leveren, samen met de posters en achtergronden uit je map. Vul je eigen API-sleutel in om TMDB online te raadplegen. Een verkeerde koppeling herstel je voor de hele seriekaart. Die keuze blijft behouden bij een nieuwe scan.
+Een Kodi-NFO met een TMDB-ID kan voor films en series ook offline de samenvatting en cast leveren, samen met de posters en achtergronden uit je map. Bij het scannen herkent de speler films aan de titel en het jaar en haalt hij beschikbare posters en samenvattingen op. Je hebt geen account of API-sleutel nodig. Een verkeerde koppeling herstel je voor de hele seriekaart. Die keuze blijft behouden bij een nieuwe scan.
 
 [Bekijk de voorbeelden en probeer de tests van het project (Engels)](../metadata-matching.md)
 
@@ -73,7 +73,7 @@ Download voordat je de wifi verlaat. Via een eigen SMB-share kun je desgewenst v
 
 ![Aan je bureau — Reality NAS Player](../showcase/07-desktop-en.webp)
 
-Op macOS en Windows blader en speel je met muis en toetsenbord. De virtuele zalen zijn voor de headset. v1.0 biedt een headset-APK; de desktopapp bouw je uit de broncode.
+Op macOS en Windows blader en speel je met muis en toetsenbord. De virtuele zalen zijn voor de headset. v1.1.0 biedt een headset-APK; de desktopapp bouw je uit de broncode.
 
 ## Je eerste voorstelling
 

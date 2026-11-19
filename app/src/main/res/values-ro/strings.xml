@@ -270,7 +270,7 @@
     <string name="set_local_meta_hint">Citește fișierele .nfo, poster și fanart de lângă un videoclip, așa cum le scriu Kodi și Jellyfin. Un nfo cu ID de bază de date identifică filmul fără căutare.</string>
     <string name="set_sources_group">Surse de date</string>
     <string name="set_tmdb_hint">Aplicația are o cheie inclusă, deci câmpul poate rămâne gol; cheia dvs. are prioritate. Nu se descarcă nimic cât timp identificarea offline este activă.</string>
-    <string name="set_tmdb_hint2">Completați-o, iar copertele, rezumatele, distribuția și notele vin singure. Nefolosită cât timp identificarea offline este activă.</string>
+    <string name="set_tmdb_hint2">Opțional. Lasă câmpul gol pentru a căuta afișe și rezumate în cataloage publice de filme. Introdu o cheie pentru a folosi TMDB.</string>
     <string name="set_tmdb_placeholder">Lăsați gol</string>
     <string name="set_tmdb_where">Gratuită, de pe themoviedb.org</string>
     <string name="set_omdb_hint">Opțională. Cu ea, filmele arată și notele IMDb, Rotten Tomatoes și Metacritic.</string>
@@ -325,7 +325,7 @@
     <string name="set_no_collect_body">Reality NAS Player nu are conturi, reclame sau statistici de utilizare. Biblioteca este stocată pe cască. Dacă activezi sincronizarea cu NAS-ul, progresul redării, favoritele și asocierile manuale sunt salvate și în dosarul partajat pe care îl alegi.</string>
     <string name="set_when_network">Când se conectează la rețea</string>
     <string name="set_scrape_metadata">Preluarea metadatelor</string>
-    <string name="set_scrape_metadata_body">Scanarea trimite titlul citit din numele fișierului — de pildă „Interstellar 2014” — către baze de date publice precum TMDB, AniList, Bangumi și Jikan, în schimbul unui poster și al unui rezumat. Niciodată calea completă, adresa serverului dvs., datele de autentificare sau vreun identificator al dispozitivului.</string>
+    <string name="set_scrape_metadata_body">Scanarea trimite titlul citit din numele fișierului — de pildă „Interstellar 2014” — către baze de date publice precum every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi și Jikan, în schimbul unui poster și al unui rezumat. Niciodată calea completă, adresa serverului dvs., datele de autentificare sau vreun identificator al dispozitivului.</string>
     <string name="set_you_asked">Descărcările cerute de dvs.</string>
     <string name="set_you_asked_body">O descărcare pe cască este copiată doar de pe serverul dvs.; în timpul redării, video circulă doar între această cască și serverul dvs. — fără terți la mijloc.</string>
     <string name="set_offline_note">Identificarea offline folosește numele fișierelor și nu caută metadate sau afișe online. Poți reda în continuare filme de pe NAS.</string>

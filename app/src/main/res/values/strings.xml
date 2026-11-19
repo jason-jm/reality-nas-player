@@ -276,7 +276,7 @@
     <string name="set_local_meta_hint">Read the .nfo, poster and fanart files beside a video, as Kodi and Jellyfin write them. An nfo with a database id identifies the film without a search.</string>
     <string name="set_sources_group">Data sources</string>
     <string name="set_tmdb_hint">An app key is built in, so this may stay empty; your own key is used first. Nothing is fetched while offline scraping is on.</string>
-    <string name="set_tmdb_hint2">Fill this in and covers, summaries, cast and ratings arrive on their own. Unused while offline scraping is on.</string>
+    <string name="set_tmdb_hint2">Optional. Leave this empty to find movie posters and summaries using public film catalogues. Enter a key to use TMDB.</string>
     <string name="set_tmdb_placeholder">Empty uses the built-in key</string>
     <string name="set_tmdb_where">Free, from themoviedb.org</string>
     <string name="set_omdb_hint">Optional. With it, films also show IMDb, Rotten Tomatoes and Metacritic scores.</string>
@@ -331,7 +331,7 @@
     <string name="set_no_collect_body">Reality NAS Player has no account system, ads or analytics. Your library is stored on the headset. If you enable NAS sync, Reality NAS Player also saves watch progress, favourites and manual matches to the share you choose.</string>
     <string name="set_when_network">When it goes online</string>
     <string name="set_scrape_metadata">Fetching metadata</string>
-    <string name="set_scrape_metadata_body">Scanning sends the title read out of a file name — “Interstellar 2014”, say — to public databases such as TMDB, AniList, Bangumi and Jikan, in exchange for a poster and a summary. Never the full path, your server\'s address, your credentials or any device identifier.</string>
+    <string name="set_scrape_metadata_body">Scanning sends the title read out of a file name — “Interstellar 2014”, say — to public databases such as every.film / NeoDB / Wikidata / OFDb / TMDB, AniList, Bangumi and Jikan, in exchange for a poster and a summary. Never the full path, your server\'s address, your credentials or any device identifier.</string>
     <string name="set_you_asked">Downloads you ask for</string>
     <string name="set_you_asked_body">A download to the headset is copied from your own server alone; while playing, video travels only between this headset and your own server — no third party in between.</string>
     <string name="set_offline_note">Offline scraping uses local rules for titles and skips online metadata and artwork lookups. You can still play films from your NAS.</string>
