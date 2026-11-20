@@ -17,16 +17,20 @@
 
 ## 扫描完，打开一张卡会看到什么
 
-- **剧集可以按季、按集选。** 数据源有收录时，电视剧用 TMDB 补充分集名称和简介，通过 AniList 识别的番剧则可以从 Bangumi 取得这些资料。
+- **剧集可以按季、按集选。** 数据源有收录时，TVmaze 能补充它所识别剧集的分集名和简介，番剧可用 Bangumi；配置 TMDB 时也可获取分集资料。
 - **正片和特典各有去处。** 没有制作人员署名的片头（NCOP）、片尾（NCED）和预告片可以归入原作的特典。同一套碟里的剧场版，或有独立片名的 OVA，也可以有自己的海报。
 - **纪录片和演唱会有各自的识别线索。** 一个电视台目录可以装下几十部不同的纪录片，播放器会看节目的名字，并能根据纪录片分类排除同名电视剧。演唱会自己的目录可以帮助识别曲目，「钢琴」这样的音乐分类则按分类处理。[分类识别案例](../core/src/test/kotlin/com/therealityteam/videoplayer/ShelfRulesTest.kt)
 - **同一部电影可以保留多个版本。** 比如《机动战士高达 闪光的哈萨维》在电影目录里由 TMDB 认出，另一份压制在番剧目录里由 AniList 认出。原名和年份相符、两边对应关系明确时，会归到同一张卡，打开可选版本。真正分成上下两碟的电影仍然可以按顺序播放。[跨库去重案例](../core/src/test/kotlin/com/therealityteam/videoplayer/OneFilmTwoDatabasesTest.kt) · [多版本与分碟案例](../core/src/test/kotlin/com/therealityteam/videoplayer/FilmVersionsTest.kt)
+
+演唱会放在单独的文件夹时，播放器可以按演出名查询 Internet Archive。档案必须注明创作者和音乐主题，并且收录了原始视频。只有音频专辑的条目不会给录像套上封面。
+
+有些电视纪录片在资料库里连类型都没填。如果完整片名一致，播放器会核对文件名里的「纪录片」标注和资料库里的电视台署名。例如，放在 PBS 目录里的节目，也可以通过条目中明确的「PBS 纪录片」说明来识别。
 
 ## 自己刮好的资料，换个设备也能用
 
 如果一直用 Kodi 或 tinyMediaManager 整理电影和电视剧，把 NFO、海报和背景图留在原处即可。NFO 带有 TMDB ID 时，播放器离线也能认出作品，读出文件里已有的片名、简介和演职员。剧集可以从 `tvshow.nfo` 认出整部剧，再从分集自己的 NFO 取得季集编号。介绍页里的八部演示电影就是在关闭在线查询后，从 WebDAV 共享这样扫出来的。[查看这次扫描生成的海报墙](showcase/01-library-en.webp) · [NFO 扫描案例](../core/src/test/kotlin/com/therealityteam/videoplayer/NfoScrapeTest.kt)
 
-电影扫描默认免密钥，先查 every.film，按需用 NeoDB、Wikidata 和 Open Film Database 补查。若要使用 TMDB，也可以填写自己的密钥。番剧可用 AniList 和 Bangumi。有相应数据时，详情页也能并列展示 TMDB、IMDb、AniList、Bangumi 和 MyAnimeList 的评分。整部剧配错时，从详情页「修正匹配」选对作品，这一张卡上的文件就一起改好，重新扫描仍会保留。
+电影扫描默认免密钥，先查 every.film，按需用 NeoDB、Wikidata 和 Open Film Database 补查。若要使用 TMDB，也可以填写自己的密钥。剧集会查 TVmaze、NeoDB 和 every.film。还缺少资料时，可以用 Stremio Cinemeta 核对年份、类型和 IMDb 编号，也能从 Wikidata 核对一部作品是否属于迷你剧。放在电影目录里、标有“BBC MiniSeries part 2”的文件也会按第 2 集归组。纪录节目还会核对类型。本地 tvshow.nfo 即使没有数据库编号，也可将同一部剧的分集归在一起。番剧可用 AniList、Bangumi 和内置的日中英动画片名索引。断网时也能用索引核对片名、年份和剧场版等版本；海报与分集简介取决于数据源。有相应数据时，详情页也能并列展示 TMDB、IMDb、AniList、Bangumi 和 MyAnimeList 的评分。整部剧配错时，从详情页「修正匹配」选对作品，这一张卡上的文件就一起改好，重新扫描仍会保留。
 
 开启片库自动更新，后续扫描会收录新放进去的文件。更改「元数据语言」时，已经在线匹配的作品可以按已有 ID 刷新相应语言的片名、简介和演职员。观看进度仍在原卡片上，从本地 NFO 读取的条目继续使用你保存的文字。
 

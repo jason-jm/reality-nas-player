@@ -16,3 +16,11 @@ The film detail page links to the catalogue that identified the film. every.film
 NeoDB provides public catalogue records for noncommercial use. The detail page links to the film’s NeoDB entry. Wikidata provides structured facts under CC0. [NeoDB terms](https://neodb.social/pages/terms/) · [Wikidata licensing](https://www.wikidata.org/wiki/Wikidata:Licensing)
 
 Open Film Database (ofdb.cc) provides factual film records under the Open Database License. Its third-party artwork has separate rights. The player uses its titles, release dates and identifiers. [Open Film Database copyright](https://ofdb.cc/copyright)
+
+TVmaze provides show and episode metadata under CC BY-SA 4.0. The detail page links to the original show. [TVmaze API licensing](https://www.tvmaze.com/api#licensing) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+The offline animation title index is adapted from **bangumi-data** version 0.3.237 by the bangumi-data contributors under CC BY 4.0. The player selects names, translations, dates, formats and public identifiers and packs them into a compressed table. [Upstream dataset](https://github.com/bangumi-data/bangumi-data) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Index builder](tools/dev/build-anime-title-index.py)
+
+Stremio Cinemeta can verify a series title, release year, genre and IMDb identifier. The player links to the series on Stremio. [Stremio addon protocol](https://stremio.github.io/stremio-addon-sdk/protocol.html)
+
+For music recordings, the player can read factual catalogue information and link to the original Internet Archive item. [Internet Archive metadata API](https://archive.org/developers/md-read.html)

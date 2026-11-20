@@ -22,13 +22,17 @@
 - **紀錄片和演唱會各有線索。** 一個電視台資料夾可以收錄幾十部不同的紀錄片，播放器會先看節目名稱，也能利用紀錄片分類排除同名戲劇。演唱會本身的資料夾可協助辨識曲目，「鋼琴」這類資料夾則視為音樂分類。[分類辨識案例](../core/src/test/kotlin/com/therealityteam/videoplayer/ShelfRulesTest.kt)
 - **同一部電影可以保留多個版本。** 例如《機動戰士鋼彈 閃光的哈薩威》在電影資料夾由 TMDB 辨識，另一份放在動畫資料夾的版本則由 AniList 辨識。原名和年份相符、兩邊能明確對應時，打開同一張卡片就可選擇版本。真正拆成上下兩片的電影仍可依序播放。[跨資料庫比對案例](../core/src/test/kotlin/com/therealityteam/videoplayer/OneFilmTwoDatabasesTest.kt) · [多版本與分片案例](../core/src/test/kotlin/com/therealityteam/videoplayer/FilmVersionsTest.kt)
 
+有些電視紀錄片在資料庫裡缺少類型。如果完整片名一致，播放器會核對檔名上的「紀錄片」標示與資料庫裡的電視台署名。例如，放在 PBS 資料夾的節目，也能以條目裡明確的「PBS 紀錄片」說明來辨識。
+
 ## 繼續使用已經整理好的資料
 
 若平時用 Kodi 或 tinyMediaManager 整理電影和影集，把 NFO、海報和背景圖留在影片旁即可。NFO 含有 TMDB ID 時，播放器可離線辨識作品，讀取檔案內的片名、劇情與演員。影集可以從 `tvshow.nfo` 取得整部作品的 ID，再從單集自己的 NFO 讀取季集編號。介紹頁上的八部示範電影，就是在關閉線上查詢後，從 WebDAV 共享資料夾這樣掃描出來的。[查看實際的海報牆](showcase/01-library-en.webp) · [NFO 掃描案例](../core/src/test/kotlin/com/therealityteam/videoplayer/NfoScrapeTest.kt)
 
-掃描電影預設免金鑰，先查 every.film，再視需要使用 NeoDB、Wikidata 和 Open Film Database。若要使用 TMDB，也可填入自己的金鑰。動畫可透過 AniList 和 Bangumi 比對。各來源有資料時，作品頁也能並列顯示 TMDB、IMDb、AniList、Bangumi 與 MyAnimeList 評分。若整部影集配錯，在詳情頁修正一次，卡片裡的檔案會一起更新，重新掃描也會保留選擇。
+掃描電影預設免金鑰，先查 every.film，再視需要使用 NeoDB、Wikidata 和 Open Film Database。若要使用 TMDB，也可填入自己的金鑰。影集會查 TVmaze、NeoDB 與 every.film。缺少資料時，還可以用 Stremio Cinemeta 核對年份、類型與 IMDb 編號，或用 Wikidata 辨認迷你影集。放在電影資料夾裡、標有「BBC MiniSeries part 2」的檔案也會歸入第 2 集。紀錄節目另會核對類型。TVmaze 可提供它所辨識影集的各集名稱與簡介。本機 tvshow.nfo 即使沒有資料庫編號，也能將各集歸在一起。動畫可透過 AniList、Bangumi 和內建日中英片名索引比對。離線也能用索引核對名稱、年份與劇場版等版本；海報和分集資料依來源而定。各來源有資料時，作品頁也能並列顯示 TMDB、IMDb、AniList、Bangumi 與 MyAnimeList 評分。若整部影集配錯，在詳情頁修正一次，卡片裡的檔案會一起更新，重新掃描也會保留選擇。
 
 啟用片庫自動更新，後續掃描會收錄新加入的檔案。變更中繼資料的語言時，已線上配對的作品可依既有 ID 更新片名、劇情與演職員的顯示語言。觀看進度仍在原卡片上，從本機 NFO 讀入的項目繼續使用你儲存的文字。
+
+演唱會放在獨立資料夾時，播放器可以用演出名稱查詢 Internet Archive。檔案必須註明創作者和音樂主題，而且收錄了原始影片。只有音訊專輯的條目不會被套用到錄影。
 
 ## 自己驗證這些例子
 
