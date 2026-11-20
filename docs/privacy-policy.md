@@ -26,6 +26,7 @@ Reality NAS Player is a local media library player for PICO headsets. The princi
 | TVmaze | api.tvmaze.com / static.tvmaze.com | 免密钥电视剧、纪录剧集、分集资料和海报 |
 | Stremio Cinemeta | v3-cinemeta.strem.io | 核对剧集的名称、年份、类型和公开 IMDb 编号 |
 | Internet Archive | archive.org | 按音乐演出名称核对音乐影像条目 |
+| WordPress.com 上的 NHK 纪录片精选发行记录 | public-api.wordpress.com | 下载公开标题索引，按文章编号读取日文原名和播出日。文件名在设备上核对 |
 | Wikidata | www.wikidata.org | 免密钥电影条目和上映年份 |
 | Open Film Database | ofdb.cc | 核对电影片名、编号和年份 |
 | The Movie Database (TMDB) | api.themoviedb.org / image.tmdb.org | 电影、剧集元数据与海报 |
@@ -83,7 +84,7 @@ Reality NAS Player 的头显版本关闭了 Android 对应用数据的自动云�
 
 Reality NAS Player is a local video player for PICO headsets. It has no Reality NAS Player account, advertising or analytics. Your library index, server credentials and playback settings are stored on the headset.
 
-- **Film identification.** When enabled, Reality NAS Player uses title and year keywords or public work IDs to look up posters and descriptions from every.film, NeoDB, TVmaze, Internet Archive, Wikidata, Open Film Database, TMDB, AniList, Bangumi and Jikan. Stremio Cinemeta can verify a series title, year, genre and public IMDb ID. OMDb is used when you enter an API key. IMDb ratings are downloaded as a complete dataset and matched locally. Requests to these services do not include your file paths, NAS credentials or device identifiers. Offline identification stops external metadata and artwork requests. You can still play films from your own servers.
+- **Film identification.** When enabled, Reality NAS Player uses title and year keywords or public work IDs to look up posters and descriptions from every.film, NeoDB, TVmaze, Internet Archive, Wikidata, Open Film Database, TMDB, AniList, Bangumi and Jikan. Stremio Cinemeta can verify a series title, year, genre and public IMDb ID. For labelled NHK documentaries, the app reads a public title index and public post IDs from WordPress.com. It compares release filenames on the device. OMDb is used when you enter an API key. IMDb ratings are downloaded as a complete dataset and matched locally. Requests to these services do not include your file paths, NAS credentials or device identifiers. Offline identification stops external metadata and artwork requests. You can still play films from your own servers.
 - **Playback and downloads.** Reality NAS Player connects directly to the servers you configure, including for streaming and offline downloads. Connection security depends on the protocol and settings you choose.
 - **Casting and sync.** Both are off by default. Enabling the cast receiver lets phones on your network discover the headset and send a playback URL. Enabling sync stores viewing progress, favourites and manual matches in a hidden `.aura` directory in the NAS share you select. The records include the device name you set. You can disable either feature or delete the sync folder from settings.
 - **Changing headsets.** Reality NAS Player excludes its app data from Android cloud backup and device-to-device transfer. On a new headset, add your media sources again. In Settings → Sync, you can choose your own NAS to carry over watch progress, favourites and manual matches.

@@ -13,8 +13,9 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
     private suspend fun get(url: String) = read(url, TmdbConfig.language)
 
     suspend fun match(names: List<String>, year: Int?, season: Int?, documentary: Boolean, allowWikidata: Boolean = true,
-                      episode: Int? = null): MetaResult? {
+                      episode: Int? = null, broadcastFolder: String = ""): MetaResult? {
         if (TmdbConfig.offline) return null
+        val station = if (documentary && (season == null || season == 1)) PublicMovieCatalog.broadcasterName(broadcastFolder) else null
         var unavailable: TransientHttpException? = null
         for (name in names) {
             var ambiguousLead: MetaResult? = null
@@ -23,7 +24,7 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
             for (source in SOURCES) {
                 if (source == "wikidata-tv" && !allowWikidata) continue
                 try {
-                    val options = search(source, name)
+                    val options = search(source, name, station, episode)
                     val sameName = options.filter { record ->
                         (source != "wikidata-tv" || record.year != null || record.imdbId?.matches(IMDB_ID) == true) &&
                             (!documentary || record.genres.isNotEmpty() && ShelfFit.documentary(record.genres)) &&
@@ -92,12 +93,12 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
         return possible.singleOrNull()?.takeIf { it.imdbId?.matches(IMDB_ID) == true }
     }
 
-    private suspend fun search(source: String, name: String): List<MetaResult> {
+    private suspend fun search(source: String, name: String, station: String? = null, episode: Int? = null): List<MetaResult> {
         val query = encode(name)
         return when (source) {
             "tvmaze" -> get("https://api.tvmaze.com/search/shows?q=$query")?.objects("items").orEmpty()
                 .mapNotNull { it.optJSONObject("show")?.let(::mazeShow) }
-            "neodb-tv" -> neoSearch(query, name)
+            "neodb-tv" -> neoSearch(query, name, station, episode)
             "wikidata-tv" -> PublicMovieCatalog.wikiSearch(name, TmdbConfig.language) { path ->
                 get(PublicMovieCatalog.Source.WIKI.url(path))
             }.filter { it.kind == MediaKind.SHOW }
@@ -126,7 +127,7 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
         return choices.distinctBy { it.publicMovieKey }.take(8)
     }
 
-    private suspend fun neoSearch(query: String, name: String): List<MetaResult> {
+    private suspend fun neoSearch(query: String, name: String, station: String?, episode: Int?): List<MetaResult> {
         val records = get("https://neodb.social/api/catalog/search?query=$query&category=tv")?.objects("data").orEmpty()
         val shows = records.filter { it.str("type") == "TVShow" }.mapNotNull(::neoShow).associateBy { it.publicMovieKey }.toMutableMap()
         // Search often returns several seasons without the parent. Follow a season only when its
@@ -139,6 +140,17 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
             val key = "neodb-tv:$id"
             if (key !in shows) detail(key)?.let { shows[key] = it }
         }
+        if (station != null && name.count(Char::isLetterOrDigit) >= 4 && shows.values.none { it.hasName(name) }) {
+            // Some broadcasters' programmes are catalogued as a single season with no show entry.
+            // Keep the season's own identity. A station credit and a known programme year are required.
+            val seasons = records.filter { row ->
+                val numbered = row.optInt("episode_count")
+                (episode == null || numbered <= 0 || episode <= numbered) &&
+                    (row.strings("director").any { it.trim().equals(station, true) } ||
+                        station == "nhk" && row.str("orig_title")?.startsWith("NHKスペシャル", ignoreCase = true) == true)
+            }.mapNotNull { neoShow(it, season = true) }.filter { it.hasName(name) }
+            for (record in seasons) shows[record.publicMovieKey] = record
+        }
         return shows.values.toList()
     }
 
@@ -150,6 +162,8 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
                 get("https://api.tvmaze.com/shows/$id")?.let(::mazeShow)?.takeIf { it.publicMovieKey == key }
             key.startsWith("neodb-tv:") && NEO_ID.matches(id) ->
                 get("https://neodb.social/api/tv/$id")?.let(::neoShow)?.takeIf { it.publicMovieKey == key }
+            key.startsWith("neodb-tv-season:") && NEO_ID.matches(id) ->
+                get("https://neodb.social/api/tv/season/$id")?.let { neoShow(it, season = true) }?.takeIf { it.publicMovieKey == key }
             key.startsWith("wikidata-tv:") && PublicMovieCatalog.wikiId.matches(id) ->
                 get(PublicMovieCatalog.Source.WIKI.url(PublicMovieCatalog.wikiPath(listOf(id), TmdbConfig.language)))
                     ?.optJSONObject("entities")?.optJSONObject(id)?.let { PublicMovieCatalog.wiki(it, TmdbConfig.language) }
@@ -195,18 +209,25 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
             posterUrl = mazeImage(row), publicMovieKey = "tvmaze:$id")
     }
 
-    private fun neoShow(row: JSONObject): MetaResult? {
-        if (row.str("type") != "TVShow") return null
+    private fun MetaResult.hasName(name: String) = (listOfNotNull(title, originalTitle) + synonyms).any { sameName(name, it) }
+
+    private fun neoShow(row: JSONObject, season: Boolean = false): MetaResult? {
         val id = row.str("uuid")?.takeIf(NEO_ID::matches) ?: return null
-        if (row.str("url") != "/tv/$id") return null
+        val genres = row.strings("genre")
+        val year = row.str("release_date")?.take(4)?.toIntOrNull() ?: row.optInt("year").takeIf { it > 0 }
+        if (season) {
+            if (row.str("type") != "TVSeason" || row.str("url") != "/tv/season/$id" || row.str("parent_uuid") != null ||
+                row.optInt("season_number") > 1 || year == null || row.str("orig_title").isNullOrBlank() ||
+                genres.isEmpty() || !ShelfFit.documentary(genres) || ShelfFit.neverOnDocumentaryShelf(genres)) return null
+        } else if (row.str("type") != "TVShow" || row.str("url") != "/tv/$id") return null
         val labels = row.objects("localized_title")
         val title = PublicMovieCatalog.localized(labels, TmdbConfig.language, "lang", "text") ?: row.str("title") ?: return null
         return MetaResult(0, MediaKind.SHOW, title, originalTitle = row.str("orig_title"),
             synonyms = (labels.mapNotNull { it.str("text") } + listOfNotNull(row.str("title"))).distinct(),
-            year = row.str("release_date")?.take(4)?.toIntOrNull() ?: row.optInt("year").takeIf { it > 0 },
-            genres = row.strings("genre"), imdbId = row.str("imdb"), overview = PublicMovieCatalog.overview(
+            year = year, genres = genres, imdbId = row.str("imdb"), overview = PublicMovieCatalog.overview(
                 row.objects("localized_description"), TmdbConfig.language, "lang", "text", row.str("description")),
-            posterUrl = row.str("cover_image_url")?.takeIf { it.startsWith("https://neodb.social/") }, publicMovieKey = "neodb-tv:$id")
+            posterUrl = row.str("cover_image_url")?.takeIf { it.startsWith("https://neodb.social/") },
+            publicMovieKey = if (season) "neodb-tv-season:$id" else "neodb-tv:$id")
     }
 
     companion object {
@@ -236,6 +257,7 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
             return when {
                 key.startsWith("tvmaze:") && MAZE_ID.matches(id) -> "TVmaze" to "https://www.tvmaze.com/shows/$id"
                 key.startsWith("neodb-tv:") && NEO_ID.matches(id) -> "NeoDB" to "https://neodb.social/tv/$id"
+                key.startsWith("neodb-tv-season:") && NEO_ID.matches(id) -> "NeoDB" to "https://neodb.social/tv/season/$id"
                 key.startsWith("everyfilm-tv:") && PublicMovieCatalog.uuid.matches(id) -> "every.film" to "https://every.film/"
                 key.startsWith("cinemeta-tv:") && IMDB_ID.matches(id) ->
                     "Stremio Cinemeta" to "https://web.stremio.com/#/detail/series/$id"

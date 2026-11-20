@@ -19,6 +19,7 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
     constructor(root: File) : this(publicMovieReader(root))
     internal val series = PublicSeriesCatalog(read)
     internal val music = PublicMusicCatalog(read)
+    private val broadcastNames = BroadcastReleaseNames(read)
 
     internal enum class Source(val prefix: String, val host: String) {
         EVERY("everyfilm", "every.film"), NEO("neodb", "neodb.social"), WIKI("wikidata", "www.wikidata.org"),
@@ -100,6 +101,18 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
     private data class Lookup(val film: MetaResult? = null, val ambiguous: Boolean = false, val lead: MetaResult? = null)
 
     internal suspend fun match(source: Source, parsed: ParsedName): MetaResult? = lookup(source, parsed).film
+
+    /** A release note supplies a spelling and air date. A catalogue must still identify the programme. */
+    internal suspend fun matchBroadcastRelease(file: String, parsed: ParsedName, folder: String): MetaResult? {
+        if (parsed.isEpisode || broadcasterName(folder)?.let { it != "nhk" } == true) return null
+        val label = broadcastNames.find(file) ?: return null
+        if (parsed.year != null && parsed.year != label.year) return null
+        fun confirms(record: MetaResult) = record.year == label.year &&
+            (listOfNotNull(record.title, record.originalTitle) + record.synonyms).any { normalized(it) == normalized(label.original) }
+        val movie = broadcastFilm(ParsedName(label.original, label.year), "NHK", file)
+        if (movie != null && confirms(movie)) return movie
+        return series.match(listOf(label.original), label.year, null, documentary = true, broadcastFolder = "NHK")?.takeIf(::confirms)
+    }
 
     /** A broadcaster's shelf can mix one-off programmes, fiction and series. */
     internal suspend fun broadcastFilm(name: ParsedName, shelf: String = "", fileName: String = ""): MetaResult? {
@@ -198,11 +211,12 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
     companion object {
         internal val defaults = listOf(Source.EVERY, Source.NEO, Source.WIKI, Source.OFDB)
         private val broadcasters = setOf("nhk", "bbc", "pbs", "itv", "hbo", "cctv", "discovery", "natgeo", "arte")
+        internal fun broadcasterName(folder: String): String? = folder.trim().lowercase(Locale.ROOT).takeIf { it in broadcasters }
         private val documentaryLabel = Regex("""(?i)\bdocumentar(?:y|ies)\b|纪录片|紀錄片|記錄片|ドキュメンタリー""")
 
         private fun hasBroadcastCredit(title: String, film: MetaResult, shelf: String, fileName: String): Boolean {
-            val broadcaster = shelf.trim().lowercase(Locale.ROOT)
-            if (broadcaster !in broadcasters || title.count(Char::isLetterOrDigit) < 5) return false
+            val broadcaster = broadcasterName(shelf) ?: return false
+            if (title.count(Char::isLetterOrDigit) < 5) return false
             val exact = (listOfNotNull(film.title, film.originalTitle) + film.synonyms).any { normalized(it) == normalized(title) }
             if (!exact) return false
             // Some small broadcasts have no genre. The labelled release and a catalogue
@@ -434,7 +448,7 @@ private fun publicMovieReader(root: File): suspend (String, String) -> JSONObjec
     val requestLocks = Array(64) { Mutex() }
     val limits = PublicMovieCatalog.Source.entries.associate { it.host to RateLimiter(if (it == PublicMovieCatalog.Source.NEO) 2300 else 1800) } +
         mapOf("api.tvmaze.com" to RateLimiter(650), "archive.org" to RateLimiter(1500),
-            "v3-cinemeta.strem.io" to RateLimiter(1500))
+            "v3-cinemeta.strem.io" to RateLimiter(1500), "public-api.wordpress.com" to RateLimiter(1500))
     return { url, language ->
         withContext(Dispatchers.IO) {
             val cache = caches.getOrPut(language) { CachedFetch(File(root, "public-movies/$language"), memoryEntries = 12) }

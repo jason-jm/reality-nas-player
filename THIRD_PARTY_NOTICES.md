@@ -24,3 +24,5 @@ The offline animation title index is adapted from **bangumi-data** version 0.3.2
 Stremio Cinemeta can verify a series title, release year, genre and IMDb identifier. The player links to the series on Stremio. [Stremio addon protocol](https://stremio.github.io/stremio-addon-sdk/protocol.html)
 
 For music recordings, the player can read factual catalogue information and link to the original Internet Archive item. [Internet Archive metadata API](https://archive.org/developers/md-read.html)
+
+Kamonka’s NHK documentary release notes can supply alternate broadcast titles and dates for matching editions. The player reads the public title index and selected note IDs using the WordPress.com REST API. It compares release filenames on the device and confirms programme information against a film or TV catalogue. [WordPress.com posts API](https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/posts/)

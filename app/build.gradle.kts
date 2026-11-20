@@ -29,8 +29,8 @@ android {
         manifestPlaceholders["appLabel"] = "@string/app_name"
         minSdk = 35
         targetSdk = 35
-        versionCode = 6
-        versionName = "1.1.0"
+        versionCode = 7
+        versionName = "1.2.0-rc.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk { abiFilters.add("arm64-v8a") }

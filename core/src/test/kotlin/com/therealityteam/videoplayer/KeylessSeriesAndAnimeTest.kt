@@ -44,6 +44,42 @@ class KeylessSeriesAndAnimeTest {
         assertNull(catalog.match(listOf("Delta"), 2016, 2, false))
     }
 
+    @Test fun aDocumentarySeasonWithoutAParentKeepsItsOwnRecordAndBroadcastCredit() = runBlocking {
+        val id = "xY1234567890"
+        val season = JSONObject().put("type", "TVSeason").put("uuid", id).put("url", "/tv/season/$id")
+            .put("title", "River Signals").put("orig_title", "Signals on the River").put("year", 2011)
+            .put("genre", JSONArray().put("Documentary")).put("director", JSONArray().put("PBS")).put("episode_count", 3)
+        val records = JSONArray().put(season)
+        val catalog = PublicSeriesCatalog { url, _ -> when {
+            "category=tv" in url -> JSONObject().put("data", records)
+            url.endsWith("/api/tv/season/$id") -> season
+            else -> null
+        } }
+        suspend fun identify(folder: String, label: Int? = null, ep: Int? = null) =
+            catalog.match(listOf("River Signals"), 2011, label, true, episode = ep, broadcastFolder = folder)
+        val key = "neodb-tv-season:$id"
+        assertEquals(key, identify("PBS", 1, 3)?.publicMovieKey)
+        assertEquals("https://neodb.social/tv/season/$id", PublicSeriesCatalog.credit(key)?.second)
+        assertEquals(key, catalog.detail(key)?.publicMovieKey)
+        assertNull(identify("BBC"))
+        assertNull(identify("PBS", 2))
+        assertNull(identify("PBS", 1, 4))
+        assertNull(catalog.match(listOf("River Signals"), 2011, 1, false, broadcastFolder = "PBS"))
+        assertNull(catalog.match(listOf("River Signals"), 2018, 1, true, broadcastFolder = "PBS"))
+        season.put("parent_uuid", "zZ1234567890")
+        assertNull(identify("PBS"))
+        season.remove("parent_uuid")
+        season.put("director", JSONArray()).put("orig_title", "NHKスペシャル 夜の川")
+        assertEquals(key, identify("NHK")?.publicMovieKey)
+        season.put("genre", JSONArray().put("Drama"))
+        assertNull(identify("NHK"))
+        season.put("genre", JSONArray().put("Documentary")).put("season_number", 2)
+        assertNull(identify("NHK"))
+        season.remove("season_number")
+        records.put(JSONObject(season.toString()).put("uuid", "aB1234567890").put("url", "/tv/season/aB1234567890"))
+        assertNull(identify("NHK"))
+    }
+
     @Test fun aPunctuationVariantNeedsTheSameSeriesIdFromAnotherCatalogue() = runBlocking {
         val id = "tt0123456"
         val tagged = show(30, 2008).also { it.getJSONObject("show").put("externals", JSONObject().put("imdb", id)) }
