@@ -328,7 +328,7 @@ object AnimeMatch {
     private val ORDINAL_WORD = mapOf(2 to "second", 3 to "third", 4 to "fourth", 5 to "fifth")
     private val ROMAN = mapOf(2 to "ii", 3 to "iii", 4 to "iv", 5 to "v")
 
-    private fun seasonFit(season: Int?, r: MetaResult): Int {
+    internal fun seasonFit(season: Int?, r: MetaResult): Int {
         if (season == null || season < 2) return 0
         val titles = (listOfNotNull(r.title, r.originalTitle, r.romajiTitle, r.englishTitle) + r.synonyms)
         // …including the way a database spells it: AniList's season 2 of Gundam 00 is titled
