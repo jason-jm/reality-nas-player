@@ -12,7 +12,8 @@ import kotlin.math.abs
 internal class PublicSeriesCatalog(private val read: suspend (String, String) -> JSONObject?) {
     private suspend fun get(url: String) = read(url, TmdbConfig.language)
 
-    suspend fun match(names: List<String>, year: Int?, season: Int?, documentary: Boolean, allowWikidata: Boolean = true): MetaResult? {
+    suspend fun match(names: List<String>, year: Int?, season: Int?, documentary: Boolean, allowWikidata: Boolean = true,
+                      episode: Int? = null): MetaResult? {
         if (TmdbConfig.offline) return null
         var unavailable: TransientHttpException? = null
         for (name in names) {
@@ -32,8 +33,16 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
                     if (dated.size > 1) {
                         // Punctuation matters for some remakes ("Change" and "Change!").
                         // A unique literal title is still only a lead until a different catalogue
-                        // confirms the same IMDb series ID. Identically spelled remakes stay open.
-                        val lead = dated.singleOrNull(::literal)?.takeIf { it.imdbId?.matches(IMDB_ID) == true } ?: return null
+                        // confirms the same IMDb series ID. Episode numbering can also rule out a completed namesake.
+                        val exact = dated.singleOrNull(::literal)?.takeIf { it.imdbId?.matches(IMDB_ID) == true }
+                        val lead = exact ?: if (source == "tvmaze") seasonCandidate(dated, season, episode) else null
+                        if (lead == null) {
+                            // A second ambiguous catalogue cannot confirm the lead, but an
+                            // independent catalogue later in the chain still might.
+                            val previousId = ambiguousLead?.imdbId
+                            if (previousId != null && dated.any { it.imdbId == previousId }) continue
+                            return null
+                        }
                         val previous = ambiguousLead
                         if (previous != null) {
                             if (previous.imdbId == lead.imdbId) return previous
@@ -57,6 +66,30 @@ internal class PublicSeriesCatalog(private val read: suspend (String, String) ->
         }
         unavailable?.let { throw it }
         return null
+    }
+
+    /** Only eliminate a namesake when its completed run cannot contain the numbered file. */
+    private suspend fun seasonCandidate(shows: List<MetaResult>, season: Int?, episode: Int?): MetaResult? {
+        if (shows.size !in 2..4 || season == null || season < 1 || episode == null || episode < 1) return null
+        if (season == 1 && episode == 1) return null
+        val possible = mutableListOf<MetaResult>()
+        for (show in shows) {
+            val id = show.publicMovieKey?.removePrefix("tvmaze:")?.takeIf(MAZE_ID::matches) ?: return null
+            val detail = try { get("https://api.tvmaze.com/shows/$id?embed=seasons") }
+                catch (_: TransientHttpException) { return null } ?: return null
+            if (detail.optInt("id").toString() != id) return null
+            val seasons = detail.optJSONObject("_embedded")?.objects("seasons").orEmpty()
+            val numbers = seasons.map { it.optInt("number") }.filter { it > 0 }.sorted()
+            if (numbers.isEmpty() || numbers != (1..numbers.size).toList()) return null
+            val record = seasons.singleOrNull { it.optInt("number") == season }
+            val count = record?.optInt("episodeOrder") ?: 0
+            if (record != null && count >= episode) {
+                possible += show
+            } else if (detail.str("status") != "Ended" || record != null && count <= 0) {
+                return null
+            }
+        }
+        return possible.singleOrNull()?.takeIf { it.imdbId?.matches(IMDB_ID) == true }
     }
 
     private suspend fun search(source: String, name: String): List<MetaResult> {

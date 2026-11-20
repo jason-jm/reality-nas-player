@@ -77,6 +77,45 @@ class KeylessSeriesAndAnimeTest {
         assertTrue(catalog.episodes("neodb-tv:abcdEFGH1234").isEmpty())
     }
 
+    @Test fun anEpisodeOutsideAnEndedNamesakeNeedsIndependentConfirmation() = runBlocking {
+        val id = "tt0123456"
+        val longRun = show(30, 1998).also { it.getJSONObject("show").put("externals", JSONObject().put("imdb", id)) }
+        val shortRun = show(31, 2014)
+        fun seasons(id: Int, vararg episodes: Int) = JSONObject().put("id", id).put("status", "Ended")
+            .put("_embedded", JSONObject().put("seasons", JSONArray(episodes.mapIndexed { index, count ->
+                JSONObject().put("number", index + 1).put("episodeOrder", count) })))
+        val first = seasons(30, 20, 8)
+        val second = seasons(31, 4)
+        val backup = JSONObject().put("id", id).put("type", "series").put("name", "River").put("year", "1998")
+        var confirm = true
+        var available = true
+        val catalog = PublicSeriesCatalog { url, _ -> when {
+            "api.tvmaze.com/search" in url -> array(listOf(longRun, shortRun))
+            url.endsWith("/30?embed=seasons") -> first
+            url.endsWith("/31?embed=seasons") -> if (available) second else throw com.therealityteam.videoplayer.util.TransientHttpException(url)
+            confirm && "/catalog/series/" in url -> JSONObject().put("metas", JSONArray().put(backup))
+            confirm && url.endsWith("/$id.json") -> JSONObject().put("meta", backup)
+            else -> null
+        } }
+        suspend fun identify(season: Int, episode: Int) = catalog.match(listOf("River"), null, season, false, episode = episode)
+        assertNull(identify(1, 1))
+        assertNull(identify(1, 3))
+        assertEquals("tvmaze:30", identify(1, 12)?.publicMovieKey)
+        assertEquals("tvmaze:30", identify(2, 1)?.publicMovieKey)
+        assertNull(identify(2, 12))
+        confirm = false
+        assertNull(identify(2, 1))
+        confirm = true
+        available = false
+        assertNull(identify(2, 1))
+        available = true
+        second.put("status", "Running")
+        assertNull(identify(2, 1))
+        second.put("status", "Ended").getJSONObject("_embedded").getJSONArray("seasons")
+            .getJSONObject(0).remove("episodeOrder")
+        assertNull(identify(1, 12))
+    }
+
     @Test fun cinemetaConfirmsTheSeriesIdAndUsesItsActualGenreAndYear() = runBlocking {
         val id = "tt0123456"
         val hit = JSONObject().put("id", id).put("type", "series").put("name", "A + B")

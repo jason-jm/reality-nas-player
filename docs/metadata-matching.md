@@ -24,6 +24,8 @@ Film and TV searches can use regional and alternative titles. For anime, the pla
 
 An older TV documentary may have no genre in the catalogue. When the full title agrees, the player can use a documentary label on the file together with a matching station credit in the catalogue. A clip filed under PBS can also match a catalogue entry that describes itself as a PBS documentary.
 
+If two series share a title, a filename such as `S04E12` can settle which one you have. The player checks that the other completed series never reached that episode, then confirms the choice against a second catalogue.
+
 For a concert in its own folder, the player can check the Internet Archive catalogue for a recording of the same name. The entry must credit a creator, describe music, and contain an original video. An audio-only album leaves the video unidentified.
 
 ## Bring your own metadata or look it up online

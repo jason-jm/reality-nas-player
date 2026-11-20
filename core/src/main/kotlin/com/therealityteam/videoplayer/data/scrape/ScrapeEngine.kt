@@ -385,7 +385,7 @@ class ScrapeEngine(
                 val seriesBase = if (instalment == null) base else base.copy(season = base.season ?: 1, episode = base.episode ?: instalment)
                 var unavailable: com.therealityteam.videoplayer.util.TransientHttpException? = null
                 suspend fun show(): MetaResult? = try { publicMovies.series.match(seriesNames, parsed.year, parsed.season, doc,
-                    allowWikidata = preferSeries || doc && !FilenameParser.isShelfFolder(parent)) }
+                    allowWikidata = preferSeries || doc && !FilenameParser.isShelfFolder(parent), episode = parsed.episode) }
                     catch (e: com.therealityteam.videoplayer.util.TransientHttpException) { unavailable = e; null }
                 if (preferSeries) show()?.let { return applyPublic(seriesBase, it) }
                 if (doc && !preferSeries && FilenameParser.isShelfFolder(parent) &&
@@ -1781,7 +1781,7 @@ class ScrapeEngine(
         // 21: revisit unmatched feature films (including documentary releases) when upgrading from
         // an installation that had no film API key. Manual matches are protected by needsScrape.
         // A keyless installation can now revisit unmatched series and animations on upgrade.
-        const val RATINGS_VERSION = 24
+        const val RATINGS_VERSION = 25
         /** Origins whose animation we also look up on the anime sites (anime / donghua / 애니). */
         val ANIME_LANGS = setOf("ja", "zh", "ko")
         // Extras/container folder vocabulary lives with the reconciliation rules that use it.
