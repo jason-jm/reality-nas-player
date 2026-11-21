@@ -24,7 +24,7 @@
 
 ## 自己刮好的资料，换个设备也能用
 
-如果一直用 Kodi 或 tinyMediaManager 整理电影和电视剧，把 NFO、海报和背景图留在原处即可。NFO 带有 TMDB ID 时，播放器离线也能认出作品，读出文件里已有的片名、简介和演职员。剧集可以从 `tvshow.nfo` 认出整部剧，再从分集自己的 NFO 取得季集编号。介绍页里的八部演示电影就是在关闭在线查询后，从 WebDAV 共享这样扫出来的。[查看这次扫描生成的海报墙](showcase/01-library-en.webp) · [NFO 扫描案例](../core/src/test/kotlin/com/therealityteam/videoplayer/NfoScrapeTest.kt)
+如果一直用 Kodi 或 tinyMediaManager 整理电影和电视剧，把 NFO、海报和背景图留在原处即可。NFO 带有 TMDB ID 时，播放器离线也能认出作品，读出文件里已有的片名、简介和演职员。剧集可以从 `tvshow.nfo` 认出整部剧，再从分集自己的 NFO 取得季集编号。介绍页里的八部演示电影就是在关闭在线查询后，从 WebDAV 共享这样扫出来的。[查看这次扫描生成的海报墙](showcase/features/zh-Hans/03-poster-wall.webp) · [NFO 扫描案例](../core/src/test/kotlin/com/therealityteam/videoplayer/NfoScrapeTest.kt)
 
 电影扫描默认免密钥，先查 every.film，按需用 NeoDB、Wikidata 和 Open Film Database 补查。若要使用 TMDB，也可以填写自己的密钥。番剧可用 AniList 和 Bangumi。有相应数据时，详情页也能并列展示 TMDB、IMDb、AniList、Bangumi 和 MyAnimeList 的评分。整部剧配错时，从详情页「修正匹配」选对作品，这一张卡上的文件就一起改好，重新扫描仍会保留。
 

@@ -1,84 +1,49 @@
 # Reality NAS Player
 
-**Vaše soukromé kino pro PICO Space Pro.**
+Rozpoznejte filmy, seřaďte epizody a přehrávejte videa z NAS na **PICO Space Pro**.
 
-**Čeština** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>Jazyky (23)</summary>
+[Stáhnout podepsaný APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
-**Čeština** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
-[Jazyky (23) →](README.md)
+## Rozpoznávání filmů, seriálů, dokumentů a anime
 
-</details>
+I souboru video1.mkv může nadřazená složka dodat název a rok. Filmy a samostatné dokumenty přehrávač hledá v every.film a NeoDB bez klíče API. U seriálů a dokumentárních cyklů čte řadu, číslo dílu a případný tvshow.nfo. Anime vyhledává přes AniList a Bangumi. Plakáty z Kodi i ruční opravy zůstanou zachovány.
 
-**[Zhlédnout 31sekundové video](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Oficiální web](https://jason-jm.github.io/reality-nas-player/)
+![Rozpoznávání filmů, seriálů, dokumentů a anime](../showcase/features/en/01-nas-matching.webp)
 
-![Vaše soukromé kino pro PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+## Připojení NAS a mediálních serverů
 
-Otevřete složky s filmy, seriály a anime, které jste si v průběhu let uložili na NAS. Reality NAS Player rozpozná názvy, seřadí epizody a přiřadí bonusy k seriálu. Na **PICO Space Pro** si vyberte podle plakátu a usaďte se s výhledem na Zemi.
+Otevřete sdílenou složku pomocí SMB, WebDAV, NFS, FTP nebo SFTP. Procházejte zařízení DLNA v síti nebo připojte knihovnu Jellyfin, Emby či Plex.
 
-**[Stáhnout APK pro headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Poznámky k vydání a kontrolní součty](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Sestavení pro počítač](../build.md)
+![Připojení NAS a mediálních serverů](../showcase/features/en/02-nas-connections.webp)
 
-## Ze složek na NAS do filmové knihovny
+## Výběr na stěně plakátů
 
-![Dva příklady ukazují vodítka z názvu složky a sousední epizody. Vpravo jsou čtyři z osmi ukázkových filmů rozpoznaných podle souborů NFO ve sdílené složce WebDAV.](../showcase/01-auto-scraping-en.webp)
+Otevřete plakát a zobrazte děj, obsazení a své verze filmu. U seriálu vyberte řadu a díl, u rozkoukaného filmu pokračujte od poslední pozice.
 
-**Napoví i složka.** U souboru `Interstellar (2014)/video1.mkv` prozradí složka název i rok. Soubor `Dark Staffel 2 Folge 3.mkv` patří ke třetí epizodě druhé řady. Při hledání přehrávač využívá také původní názvy a názvy, pod kterými film vyšel v jiných zemích.
+![Výběr na stěně plakátů](../showcase/features/en/03-poster-wall.webp)
 
-Když je v názvu jednoho dílu anime jen `Seitokai`, může jiná epizoda ve stejné složce dodat celý název pro hledání v AniListu. Celovečerní film může dostat vlastní plakát a úvodní či závěrečné znělky bez titulků zůstanou mezi bonusy seriálu. Dvě verze téhož filmu lze vybírat z jediné karty.
+## Videoformáty, titulky a zvuk
 
-Obsahuje-li soubor Kodi NFO u filmu nebo seriálu identifikátor TMDB, přehrávač z něj načte děj i obsazení offline a použije vaše plakáty a pozadí. Filmy se při skenování rozpoznají online bez účtu a bez klíče API. Přehrávač hledá podle názvu a roku a doplní dostupný plakát a popis. Chybné přiřazení můžete opravit najednou pro celou kartu seriálu. Oprava zůstane i po novém prohledání.
+Mezi podporované videosoubory patří MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP. Přehrávejte hlavní film z kompatibilních nešifrovaných kopií Blu-ray či DVD (ISO, BDMV, VIDEO_TS). K dispozici jsou titulky SRT, WebVTT, ASS/SSA, PGS, VobSub. Přepínejte stopy, upravte velikost a časování textu nebo přidejte externí dabing. Podporovány jsou DTS a TrueHD.
 
-[Prohlédněte si příklady a vyzkoušejte testy projektu (anglicky)](../metadata-matching.md)
+![Videoformáty, titulky a zvuk](../showcase/features/en/04-video-formats.webp)
 
-## Listujte filmovými plakáty
+![Videoformáty, titulky a zvuk](../showcase/features/en/05-subtitles-audio.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Knihovna na PICO Space Pro zobrazuje osm filmových plakátů ve dvou řadách. Vlevo jsou kategorie, nahoře filtry a řazení."></a>
-</p>
+## Čtyři kina ve VR
 
-Pamatujete si modrý plakát, ale název už ne? Najděte ho mezi obaly a otevřete si příběh, obsazení a obrázek na pozadí. U seriálů si zvolíte řadu a díl. Nabídku lze zúžit podle žánru či desetiletí a rozkoukaný film pustit od poslední scény.
+Vesmírný salonek má pět míst, dvě z nich u oken. Promítejte také na plátně v domácím kině, na návsi nebo v táboře v poušti.
 
-## Z disku rovnou na plátno
+![Čtyři kina ve VR](../showcase/features/en/06-vr-cinemas.webp)
 
-![Z disku rovnou na plátno — Reality NAS Player](../showcase/02-connect-en.webp)
+## Přehrávání VR180 a 360°
 
-Otevřete soubor v headsetu nebo připojte sdílenou složku přes SMB, WebDAV, NFS, FTP či SFTP. Máte doma Jellyfin, Emby, Plex nebo server DLNA? Sbírku můžete ponechat tam, kde je.
+Rozhlížejte se otočením hlavy. Podporováno je stereo vedle sebe i nad sebou, rybí oko a projekce na krychli. Přehrávač přečte způsob projekce ze souboru nebo jej můžete nastavit ručně.
 
-## Sedadlo u okna
+![Přehrávání VR180 a 360°](../showcase/features/en/07-panoramic-video.webp)
 
-![Sedadlo u okna — Reality NAS Player](../showcase/03-cinemas-en.webp)
-
-V orbitálním salonku si lze vybrat z pěti míst. Další večer můžete strávit v soukromém kině, na návsi nebo v pouštním táboře. Při pauze se rozsvítí světla; k plovoucímu oknu se vrátíte přímo z přehrávání.
-
-## Ohlédněte se za kameru
-
-![Ohlédněte se za kameru — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-V 360° záznamu se stačí otočit. Záběry v 180° nebo VR180 se rozprostřou před vámi. Stereoskopické filmy s obrazem vedle sebe nebo nad sebou nabídnou každému oku vlastní pohled.
-
-## Hlas i titulky podle vás
-
-![Hlas i titulky podle vás — Reality NAS Player](../showcase/05-playback-en.webp)
-
-Přepínejte dabing a originál, dolaďte zpoždění zvuku nebo načtěte externí titulky. Podporovány jsou ASS/SSA i obrazové PGS a VobSub. Z nešifrované zálohy Blu-ray či DVD lze přehrát hlavní film bez nabídky disku.
-
-## Na cestu bez sítě
-
-![Na cestu bez sítě — Reality NAS Player](../showcase/06-offline-en.webp)
-
-Před odjezdem si film stáhněte do headsetu. Doma můžete přes zvolenou složku SMB synchronizovat průběh sledování, oblíbené položky a opravené názvy. Přehrávač nezobrazuje reklamy ani nesbírá analytická data.
-
-## Když sedíte u počítače
-
-![Když sedíte u počítače — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-Na macOS a Windows lze knihovnu procházet a filmy přehrávat myší a klávesnicí. Prostorová kina patří k headsetu. Verze 1.0 nabízí podepsaný APK; aplikace pro počítač se sestavuje ze zdrojového kódu.
-
-## První promítání
-
-Nainstalujte APK do PICO Space Pro, otevřete vlastní video a v ovládání přehrávání zvolte prostředí. Snímky z headsetu pocházejí z emulátoru PICO OS 6. Ukázkové filmy nejsou součástí aplikace.
-
-[Ochrana soukromí](../privacy-policy.md) · [O snímcích](../showcase/README.md) · [MIT](../../LICENSE) · [Jazyky (23)](README.md)
+[Stáhnout podepsaný APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

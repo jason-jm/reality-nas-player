@@ -1,84 +1,49 @@
 # Reality NAS Player
 
-**Um cinema particular feito para o PICO Space Pro.**
+Identifique filmes, organize episódios e assista ao seu NAS no **PICO Space Pro**.
 
-**Português (Brasil)** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>Idiomas (23)</summary>
+[Baixar o APK assinado · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
-**Português (Brasil)** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
-[Idiomas (23) →](README.md)
+## Identifique filmes, séries, documentários e animes
 
-</details>
+Mesmo quando o arquivo se chama video1.mkv, a pasta pode informar o título e o ano. Para filmes e documentários avulsos, o app consulta every.film e NeoDB sem chave de API. Para séries de ficção ou documentais, lê temporada, episódio e o arquivo tvshow.nfo, quando disponível. AniList e Bangumi ajudam a identificar animes. Os pôsteres do Kodi e os ajustes manuais são preservados.
 
-**[Assista ao vídeo de 31 segundos](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Site oficial](https://jason-jm.github.io/reality-nas-player/)
+![Identifique filmes, séries, documentários e animes](../showcase/features/en/01-nas-matching.webp)
 
-![Um cinema particular feito para o PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+## Conecte pastas e servidores de mídia
 
-Abra as pastas de filmes, séries e animes que você juntou no NAS ao longo dos anos. O Reality NAS Player identifica os títulos, ordena os episódios e reúne os extras de cada obra. No **PICO Space Pro**, escolha uma capa e assista com vista para a Terra.
+Acesse o NAS por SMB, WebDAV, NFS, FTP ou SFTP. Explore dispositivos DLNA na rede ou conecte sua biblioteca do Jellyfin, Emby ou Plex.
 
-**[Baixar APK do headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Notas da versão e somas de verificação](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Compilar para computador](../build.md)
+![Conecte pastas e servidores de mídia](../showcase/features/en/02-nas-connections.webp)
 
-## Das pastas do NAS às fichas dos filmes
+## Escolha pelo mural de pôsteres
 
-![Exemplos de identificação pelo nome da pasta e pelo título de outro episódio. À direita, quatro dos oito filmes de demonstração que o visor identificou pelos NFOs em um compartilhamento WebDAV.](../showcase/01-auto-scraping-en.webp)
+Abra um pôster para consultar sinopse, elenco e as versões do filme que você tem. Escolha temporada e episódio de uma série ou retome o filme de onde parou.
 
-**A pasta também dá pistas.** Em `Interstellar (2014)/video1.mkv`, o nome da pasta informa o título e o ano. Um arquivo chamado `Dark Staffel 2 Folge 3.mkv` entra como o terceiro episódio da segunda temporada. A busca leva em conta o título original e os nomes de lançamento em outros países.
+![Escolha pelo mural de pôsteres](../showcase/features/en/03-poster-wall.webp)
 
-Se uma equipe de fansub abreviou o nome de um anime para `Seitokai`, outro episódio na pasta pode fornecer o título completo para a busca no AniList. O longa pode ganhar uma ficha própria, enquanto a abertura e o encerramento sem créditos ficam nos extras da série. Dá para guardar duas cópias do mesmo filme e escolher a versão em uma única ficha.
+## Formatos de vídeo, legendas e áudio
 
-Em filmes e séries, um NFO do Kodi com ID do TMDB permite ler a sinopse e o elenco mesmo offline e aproveitar suas capas e imagens de fundo. Ao escanear o NAS, o player identifica os filmes pelo título e pelo ano e busca capas e sinopses. Você não precisa de conta nem de chave de API. Se uma série foi identificada incorretamente, corrija a ficha uma vez. A escolha vale para os arquivos daquela ficha e permanece após uma nova varredura.
+Arquivos reconhecidos incluem MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP. Reproduza o filme principal de cópias compatíveis de Blu-ray ou DVD sem criptografia (ISO, BDMV, VIDEO_TS). Legendas incluem SRT, WebVTT, ASS/SSA, PGS, VobSub. Troque a faixa, ajuste tamanho do texto e sincronia ou adicione uma dublagem externa. Há suporte a áudio DTS e TrueHD.
 
-[Veja os exemplos e confira como executar os testes do projeto (em inglês)](../metadata-matching.md)
+![Formatos de vídeo, legendas e áudio](../showcase/features/en/04-video-formats.webp)
 
-## Encontre o filme pela capa
+![Formatos de vídeo, legendas e áudio](../showcase/features/en/05-subtitles-audio.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="A biblioteca no PICO Space Pro exibe oito pôsteres em duas fileiras de quatro. As categorias ficam à esquerda, com os controles de filtro e ordenação no topo."></a>
-</p>
+## Quatro salas em RV
 
-Esqueceu o título, mas lembra daquele pôster azul? Percorra o mural de capas e abra o filme para ver a arte de fundo, a sinopse e o elenco. Nas séries, escolha a temporada e o episódio. Filtre por gênero ou década ou continue uma sessão do ponto em que parou.
+O salão espacial tem cinco lugares, dois junto às janelas. Você também pode assistir no cinema privado, na praça da vila ou no acampamento no deserto.
 
-## Use o armazenamento que já tem
+![Quatro salas em RV](../showcase/features/en/06-vr-cinemas.webp)
 
-![Use o armazenamento que já tem — Reality NAS Player](../showcase/02-connect-en.webp)
+## Vídeo VR180 e em 360°
 
-Abra um vídeo no headset ou uma pasta compartilhada no computador via SMB. Há suporte a WebDAV, NFS, FTP e SFTP, além de Jellyfin, Emby, Plex e DLNA. Para enviar um vídeo do celular, ative a recepção DLNA.
+Vire a cabeça para explorar a cena. Use estéreo lado a lado ou de cima para baixo, olho de peixe ou mapa de cubo. A projeção pode seguir os dados do arquivo ou ser ajustada manualmente.
 
-## Escolha seu lugar
+![Vídeo VR180 e em 360°](../showcase/features/en/07-panoramic-video.webp)
 
-![Escolha seu lugar — Reality NAS Player](../showcase/03-cinemas-en.webp)
-
-A sala espacial tem cinco assentos, incluindo lugares à janela. Há também o cinema privativo, a praça e o acampamento no deserto. A sala lembra onde você sentou e as luzes voltam ao pausar. Se preferir, assista em uma janela flutuante.
-
-## Olhe para o outro lado do lago
-
-![Olhe para o outro lado do lago — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-Gire a cabeça em um vídeo de 360° ou explore a cena à frente em 180° e VR180. Na janela, arraste para mudar o ângulo. Em filmes 3D lado a lado ou com vistas empilhadas, cada olho recebe sua própria imagem. É possível corrigir o formato manualmente.
-
-## Escolha áudio e legendas
-
-![Escolha áudio e legendas — Reality NAS Player](../showcase/05-playback-en.webp)
-
-Alterne entre áudio original e dublagem externa, ajuste o atraso do som e use legendas ASS/SSA, PGS ou VobSub. Além de MKV, MP4 e formatos antigos, o player reproduz o filme principal de backups de Blu-ray e DVD sem criptografia, sem menus de disco. O resultado em 4K e HDR depende do arquivo e do aparelho.
-
-## Leve um filme para a viagem
-
-![Leve um filme para a viagem — Reality NAS Player](../showcase/06-offline-en.webp)
-
-Baixe o filme antes de sair do Wi-Fi. Se quiser, use um compartilhamento SMB próprio para sincronizar progresso, favoritos e correspondências de títulos entre headsets. Não há anúncios nem análise de uso; a identificação offline usa informações do próprio arquivo.
-
-## Na mesa de trabalho
-
-![Na mesa de trabalho — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-No macOS e no Windows, navegue pela biblioteca e reproduza arquivos usando mouse e teclado. As salas virtuais são exclusivas do headset. A v1.1.0 oferece o APK do headset; o app para computador é compilado a partir do código-fonte.
-
-## Sua primeira sessão
-
-Instale o APK no PICO Space Pro, abra um vídeo seu ou adicione uma pasta compartilhada e escolha o ambiente nos controles de reprodução. As imagens do headset vêm do emulador PICO OS 6. Os filmes de demonstração não estão incluídos.
-
-[Privacidade](../privacy-policy.md) · [Sobre as imagens](../showcase/README.md) · [MIT](../../LICENSE) · [Idiomas (23)](README.md)
+[Baixar o APK assinado · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

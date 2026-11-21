@@ -1,94 +1,58 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:01.864
-Reality NAS Player. Built for PICO Space Pro.
+00:00:00.000 --> 00:00:01.500
+Reality NAS Player scans and plays your NAS library on PICO Space Pro.
 
-00:00:01.864 --> 00:00:02.986
-On your NAS. A folder of films.
+00:00:01.500 --> 00:00:03.733
+Scan films, TV series, documentaries and anime. File names, folders and NFO files supply clues.
 
-00:00:02.986 --> 00:00:03.356
-Scan.
+00:00:03.733 --> 00:00:05.600
+Look up movie titles and release years through public catalogues without an API key.
 
-00:00:03.356 --> 00:00:04.842
-NAS matching. Find the film.
+00:00:05.600 --> 00:00:07.433
+Group TV episodes by season and number. AniList and Bangumi help identify anime.
 
-00:00:04.842 --> 00:00:06.334
-Match without a metadata key. Films. Series. Anime.
+00:00:07.433 --> 00:00:09.300
+Open shared folders over SMB, WebDAV, NFS, FTP or SFTP.
 
-00:00:06.334 --> 00:00:07.077
-Documentaries, too.. Keep your NFO.
+00:00:09.300 --> 00:00:10.800
+Browse Jellyfin, Emby, Plex and DLNA media servers.
 
-00:00:07.077 --> 00:00:07.820
-Match corrections. Fix it once.
+00:00:10.800 --> 00:00:13.033
+Identify films by their covers. Search or filter the poster wall.
 
-00:00:07.820 --> 00:00:08.564
-Pick a cover.
+00:00:13.033 --> 00:00:14.900
+Select a cover to see the synopsis, cast and available versions.
 
-00:00:08.564 --> 00:00:08.943
-Polar Letter
+00:00:14.900 --> 00:00:17.133
+Play MKV, MP4, MOV, AVI, WebM, transport streams and legacy formats such as WMV and RMVB.
 
-00:00:08.943 --> 00:00:09.312
-Salt Route
+00:00:17.133 --> 00:00:18.600
+Play the main feature of compatible unencrypted Blu-ray and DVD backups.
 
-00:00:09.312 --> 00:00:09.686
-Tide Garden
+00:00:18.600 --> 00:00:20.467
+Switch text or bitmap subtitles, including SRT, WebVTT, ASS/SSA, PGS and VobSub.
 
-00:00:09.686 --> 00:00:10.799
-Artwork library. The poster wall.
+00:00:20.467 --> 00:00:21.967
+Switch between embedded audio tracks or add an external dub. DTS, TrueHD and AAC are supported.
 
-00:00:10.799 --> 00:00:11.916
-Series library. Pick an episode.
+00:00:21.967 --> 00:00:23.067
+Space Lounge.
 
-00:00:11.916 --> 00:00:13.034
-Your sources. Connect your NAS.
+00:00:23.067 --> 00:00:24.200
+Private Cinema.
 
-00:00:13.034 --> 00:00:14.151
-Media servers. Jellyfin Emby Plex
+00:00:24.200 --> 00:00:25.300
+Village Square.
 
-00:00:14.151 --> 00:00:14.894
-Take a seat.
+00:00:25.300 --> 00:00:26.433
+Desert Camp.
 
-00:00:14.894 --> 00:00:15.628
-Screening rooms. Space Lounge
+00:00:26.433 --> 00:00:28.667
+Play VR180 and 360° video. Choose the projection and look around.
 
-00:00:15.628 --> 00:00:16.376
-Village Square
+00:00:28.667 --> 00:00:30.133
+Choose side-by-side or top-and-bottom stereoscopic playback.
 
-00:00:16.376 --> 00:00:17.119
-Desert Camp
-
-00:00:17.119 --> 00:00:18.237
-Private Cinema
-
-00:00:18.237 --> 00:00:19.723
-Immersive video. Look around.
-
-00:00:19.723 --> 00:00:20.467
-Stereoscopic playback. See in 3D.
-
-00:00:20.467 --> 00:00:21.589
-Playback. Style your subtitles.
-
-00:00:21.589 --> 00:00:22.702
-Soundtracks. Choose your audio.
-
-00:00:22.702 --> 00:00:23.445
-Unencrypted disc backups. Play the main feature.
-
-00:00:23.445 --> 00:00:24.193
-Disc formats. ISO BDMV VIDEO_TS
-
-00:00:24.193 --> 00:00:25.311
-Offline downloads. Take it with you.
-
-00:00:25.311 --> 00:00:26.423
-Optional SMB sync. Keep your place.
-
-00:00:26.423 --> 00:00:27.536
-Desktop edition. At your desk.
-
-00:00:27.536 --> 00:00:28.279
-Spatial cinema. Your NAS. Now showing.
-
-00:00:28.279 --> 00:00:31.369
-Built for PICO Space Pro. Reality NAS Player
+00:00:30.133 --> 00:00:31.369
+Reality NAS Player for PICO Space Pro.

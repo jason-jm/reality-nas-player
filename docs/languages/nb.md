@@ -1,84 +1,49 @@
 # Reality NAS Player
 
-**Din egen kino, laget for PICO Space Pro.**
+Gjenkjenn filmer, sorter episoder og spill NAS-video på **PICO Space Pro**.
 
-**Norsk bokmål** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>Språk (23)</summary>
+[Last ned signert APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
-**Norsk bokmål** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
-[Språk (23) →](README.md)
+## Gjenkjenn filmer, serier, dokumentarer og anime
 
-</details>
+Selv video1.mkv kan få tittel og årstall fra mappen. Spillefilmer og frittstående dokumentarer slås opp i every.film og NeoDB uten API-nøkkel. For TV- og dokumentarserier leser spilleren sesong, episode og eventuelle tvshow.nfo-filer. Anime gjenkjennes ved hjelp av AniList og Bangumi. Kodi-plakater og egne rettelser beholdes.
 
-**[Se filmen på 31 sekunder](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Offisielt nettsted](https://jason-jm.github.io/reality-nas-player/)
+![Gjenkjenn filmer, serier, dokumentarer og anime](../showcase/features/en/01-nas-matching.webp)
 
-![Din egen kino, laget for PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+## Koble til mapper og medieservere
 
-Åpne mappene med film, serier og anime som du har samlet på NAS-en din. Reality NAS Player kjenner igjen titlene, setter episodene i rekkefølge og legger ekstramaterialet ved riktig serie. Velg et omslag på **PICO Space Pro**, og finn deg en plass med utsikt mot jorda.
+Åpne delte NAS-mapper med SMB, WebDAV, NFS, FTP eller SFTP. Bla gjennom DLNA-enheter på hjemmenettet eller koble til et bibliotek fra Jellyfin, Emby eller Plex.
 
-**[Last ned APK til headset](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versjonsnotater og kontrollsummer](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Bygg datamaskinappen](../build.md)
+![Koble til mapper og medieservere](../showcase/features/en/02-nas-connections.webp)
 
-## Fra NAS-mapper til filmopplysninger
+## Velg på plakatveggen
 
-![To eksempler viser hvordan en mappe og en annen episode gir ledetråder til tittelen. Til høyre vises fire av åtte demofilmer som ble identifisert med NFO-filer på en WebDAV-deling.](../showcase/01-auto-scraping-en.webp)
+Åpne en plakat for å se handlingsreferat, rollebesetning og filmversjonene du har. Velg sesong og episode i en serie, eller fortsett en film fra der du stoppet.
 
-**Mappenavnet gir også ledetråder.** I `Interstellar (2014)/video1.mkv` oppgir mappen både tittel og årstall. En fil som heter `Dark Staffel 2 Folge 3.mkv` havner som tredje episode i andre sesong. Spilleren kan også søke etter originaltitler og titler brukt i andre land.
+![Velg på plakatveggen](../showcase/features/en/03-poster-wall.webp)
 
-Hvis en animeepisode bare heter `Seitokai`, kan en annen episode i samme mappe gi hele navnet til søket på AniList. En kinofilm kan få sitt eget omslag, mens åpnings- og avslutningssekvenser uten tekst legges under ekstramaterialet til serien. To kopier av samme film kan dele kort, slik at du kan velge hvilken du vil spille.
+## Videoformater, undertekster og lydspor
 
-Med en Kodi-NFO som har en TMDB-ID, kan spilleren hente handlingsreferat og rolleliste for filmer og serier lokalt og bruke dine egne omslag og bakgrunner. Under skanningen gjenkjenner spilleren filmer ut fra tittel og år og henter tilgjengelige plakater og handlingsreferater, uten konto eller API-nøkkel. Du kan rette en feil kobling for hele seriekortet på én gang. Valget står også etter neste skanning.
+Videofiler omfatter MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP. Spill hovedfilmen fra kompatible, ukrypterte Blu-ray- og DVD-kopier (ISO, BDMV, VIDEO_TS). Undertekster omfatter SRT, WebVTT, ASS/SSA, PGS, VobSub. Bytt spor, juster tekststørrelse og tidsforskyvning eller legg til et eksternt lydspor med dubbing. DTS og TrueHD støttes.
 
-[Se eksemplene og prøv prosjektets tester (på engelsk)](../metadata-matching.md)
+![Videoformater, undertekster og lydspor](../showcase/features/en/04-video-formats.webp)
 
-## Bla i omslagene
+![Videoformater, undertekster og lydspor](../showcase/features/en/05-subtitles-audio.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="Biblioteket på PICO Space Pro viser åtte filmplakater i to rader med fire i hver. Kategoriene er til venstre, og filtrering og sortering ligger øverst."></a>
-</p>
+## Fire VR-kinoer
 
-Husker du den blå plakaten bedre enn tittelen? Finn den på plakatveggen og åpne filmen for å se bakgrunnsbilde, handling og medvirkende. I en serie velger du sesong og episode. Filtrer etter sjanger eller tiår, eller fortsett der du slapp.
+Romloungen har fem plasser, to av dem ved vinduene. Se filmen på lerretet i en privat kino, på landsbytorget eller i ørkenleiren.
 
-## Bruk lagringen du har
+![Fire VR-kinoer](../showcase/features/en/06-vr-cinemas.webp)
 
-![Bruk lagringen du har — Reality NAS Player](../showcase/02-connect-en.webp)
+## Spill VR180 og 360°
 
-Åpne en lokal fil eller en delt mappe på datamaskinen via SMB. WebDAV, NFS, FTP og SFTP støttes, i tillegg til Jellyfin, Emby, Plex og DLNA. Slå på DLNA-mottak for å sende video fra en kompatibel mobil.
+Snu hodet for å se deg rundt. Velg stereo side ved side eller over/under, fiskeøye eller kubekart. Spilleren leser projeksjonen fra filen og lar deg justere den selv.
 
-## Hvor vil du sitte?
+![Spill VR180 og 360°](../showcase/features/en/07-panoramic-video.webp)
 
-![Hvor vil du sitte? — Reality NAS Player](../showcase/03-cinemas-en.webp)
-
-Romloungen har fem plasser. Du kan også velge privatkinoen, landsbytorget eller leiren i ørkenen. Rommet husker setet, og lyset kommer tilbake når du tar pause. Du kan bytte til et svevende vindu.
-
-## Se hva som er bak deg
-
-![Se hva som er bak deg — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-Snu deg i en 360°-film, eller utforsk motivet foran deg i 180° og VR180. I et vindu kan du dra for å se deg rundt. I 3D-filmer med bilder side om side eller over hverandre får hvert øye sitt eget bilde.
-
-## Velg lyd og tekst
-
-![Velg lyd og tekst — Reality NAS Player](../showcase/05-playback-en.webp)
-
-Bytt til et eksternt dubbespor, juster lydforsinkelsen og bruk teksting i ASS/SSA, PGS eller VobSub. Spilleren støtter MKV, MP4, eldre formater og hovedfilmen fra ukrypterte Blu-ray- og DVD-kopier, uten platemenyer. 4K og HDR avhenger av fil og enhet.
-
-## En film til reisen
-
-![En film til reisen — Reality NAS Player](../showcase/06-offline-en.webp)
-
-Last ned før du forlater trådløsnettet. Du kan bruke din egen SMB-deling til å synkronisere fremdrift, favoritter og manuelle tittelkoblinger mellom headset. Ingen reklame eller bruksanalyse; frakoblet gjenkjenning bruker lokale opplysninger.
-
-## Ved skrivebordet
-
-![Ved skrivebordet — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-På macOS og Windows kan du bla og spille av med mus og tastatur. De virtuelle kinoene er for headsettet. v1.1.0 tilbyr en APK til headsettet; datamaskinappen må bygges fra kildekoden.
-
-## Første visning
-
-Installer APK-filen på PICO Space Pro, åpne en egen video eller legg til en delt mappe, og velg visningsrom i spilleren. Headsetbildene er tatt i PICO OS 6-emulatoren. Eksempelfilmene følger ikke med.
-
-[Personvern](../privacy-policy.md) · [Om bildene](../showcase/README.md) · [MIT](../../LICENSE) · [Språk (23)](README.md)
+[Last ned signert APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

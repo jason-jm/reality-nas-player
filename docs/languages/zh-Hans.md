@@ -1,86 +1,57 @@
 # Reality NAS Player
 
-**为 PICO Space Pro 打造的私人影院。**
+为 **PICO Space Pro** 打造。刮削电影、剧集、纪录片和动漫，从海报墙选片播放。
 
-**简体中文** · [English](../../README.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · **简体中文** · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>语言 (23)</summary>
+[下载正式签名 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
 
-**简体中文** · [English](../../README.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![PICO Space Pro 上的 NAS 识别与海报片库](../showcase/features/zh-Hans/key-art-landscape.webp)
 
-[语言 (23) →](README.md)
+## 电影、电视剧、纪录片和动漫怎么刮削
 
-</details>
+文件只叫 video1.mkv，也可以从上一级目录提取片名和年份。电影和单部纪录片可用 every.film、NeoDB 联网匹配，无需申请密钥。电视剧和系列纪录片按季、集归档，并读取已有的 tvshow.nfo。动漫通过 AniList 和 Bangumi 核对片名。已有的 Kodi 海报可以沿用，手动纠正的匹配会保留到下次扫描。
 
-**为 PICO Space Pro 打造。** 连接 NAS，播放器会根据文件名、目录和已有的影片资料识别电影、剧集和番剧。打开海报墙，挑一部，去太空观影厅坐下。也可以直接播放本地视频、未加密原盘以及 180° 或 360° 全景影像。
+![电影、剧集、纪录片与动漫的识别线索，包括文件名、年份、NFO 与季集号](../showcase/features/zh-Hans/01-nas-matching.webp)
 
-**[观看 31 秒宣传片](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)** · [访问中文官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [体验 v1.2.0-rc.1 刮削预览版](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
+在已公开的 NAS 电影测试中，**267 部电影认对 266 部**，每部都取得海报。另有 1 部保留待识别，错配为 0 部。[电影测试与评分口径](https://github.com/jason-jm/reality-nas-player/blob/v1.1.0/docs/keyless-verification.md)
 
-[![为 PICO Space Pro 打造的 Reality NAS Player 太空观影厅。](../media/film-cover.jpg)](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
+**v1.2.0-rc.1 预览版新增免 Key 的在线剧集匹配。** 它能跨公开片目核对电视剧，用播出机构和年份识别系列纪录片，还内置多语动漫片名索引供离线查询。[预览版与发行说明](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
 
-**[下载头显 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [版本说明与校验值](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [桌面构建](../build.md)
+## 连接 NAS 共享目录和媒体服务器
 
-## 让播放器替你的 NAS 片库刮削资料
+共享文件夹支持 SMB、WebDAV、NFS、FTP 和 SFTP。也可以浏览局域网中的 DLNA 设备，或直接连接 Jellyfin、Emby、Plex 媒体库。
 
-**新版预览扩展了免密钥识别。** 遇到同名剧集，播放器能用多个资料库核对。同名纪录节目可以比对电视台署名，部分 NHK 中文字幕版还可追溯日文原名和播出年份。内置的多语番剧索引覆盖数千条发行记录，断网也能用。上述功能均无需注册资料库账号或填写 API 密钥。[查看刮削案例](https://github.com/jason-jm/reality-nas-player/blob/v1.2.0-rc.1/docs/metadata-matching.zh-Hans.md)
+![添加来源页面中的共享协议、DLNA 与媒体服务器](../showcase/features/zh-Hans/02-nas-connections.webp)
 
-![两个刮削例子展示播放器怎样从父目录认出《星际穿越》，以及怎样从相邻分集补全番名。右侧是头显从 WebDAV 共享的 NFO 识别出的八部演示影片中的四部。](../showcase/01-auto-scraping-en.webp)
+## 从海报墙挑片、选集、续播
 
-**文件名没写全，目录里还有线索。** 比如 `Interstellar (2014)/video1.mkv`，片名和年份都在上一级目录里。剧集用德文写成 `Dark Staffel 2 Folge 3.mkv`，也能排进《暗黑》第二季第三集。查找影片时还会比对原名和不同地区的译名，补上简介、演职员和海报。
+点一张海报就能看剧情、演员和自己收藏的不同文件版本。剧集按季排列，展开即可选集。没看完的电影可以从上次停下的位置继续。
 
-**番剧有自己的识别逻辑。** 字幕组把一集简写成 `Seitokai`，同目录另一集写了全名 `Seitokai no Ichizon`，播放器就能借全名去 AniList 查找。剧场版可以单独成卡，无字幕片头、片尾则收进原作的特典。有些动画电影在「电影」和「番剧」各存了一版，分别被 TMDB 和 AniList 认出，也能按原名和年份合到同一张卡里，两个版本都能播放。
+![头显片库的完整双排海报墙、侧栏与筛选控件](../showcase/features/zh-Hans/03-poster-wall.webp)
 
-**以前整理好的片库也用得上。** 电影或电视剧的 Kodi NFO 带有 TMDB ID 时，可离线读出其中的简介、演员，沿用旁边的海报和背景图。NAS 里只有视频也行。扫描时会按片名和年份自动找电影、海报和简介，开箱即可用，无需注册或填写 API 密钥。整部剧配错了，在详情里修正一次即可应用到整张卡，下次重新扫描也会保留。
+## 视频格式、字幕和音轨
 
-[看具体刮削案例，以及如何用开源测试自行验证](../metadata-matching.zh-Hans.md)
+可扫描的视频文件包括 MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP。未加密且兼容的蓝光和 DVD 备份支持 ISO、BDMV、VIDEO_TS，可直接播放正片。字幕支持 SRT、WebVTT、ASS/SSA、PGS、VobSub。播放中可换字幕、调文字大小和显示时间，也能切换音轨或外挂配音，支持 DTS、TrueHD 音频。
 
-## 按封面逛海报墙
+![视频文件扩展名及未加密蓝光和 DVD 备份格式](../showcase/features/zh-Hans/04-video-formats.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pro 片库的完整海报墙。八部影片按四列两行排列，左侧是分类，上方可以筛选和排序。"></a>
-</p>
+![文字字幕、图形字幕、音轨切换与播放设置](../showcase/features/zh-Hans/05-subtitles-audio.webp)
 
-记得蓝色封面，却想不起片名？在海报墙上一眼就能认出来。点开封面可看背景图、简介和演职员，打开剧集还能按季选集。按类型、年代或观看进度筛选，「继续观看」会带你回到上次停下的那一幕。
+实际播放取决于文件内的视频编码、档次、分辨率及头显解码能力。ISO、BDMV 和 VIDEO_TS 可用于读取兼容的未加密蓝光或 DVD 备份正片。
 
-## 家里的片源，直接连
+## 四个 VR 观影环境
 
-![家里的片源，直接连 — Reality NAS Player](../showcase/02-connect-en.webp)
+太空观景厅提供五个座位，含两侧窗边座。在私人影院、小镇广场或沙漠营地，也可以把影片放在场景里的银幕上观看。
 
-本机文件可从系统文件管理器打开。电脑共享文件夹选 SMB；NAS 也可用 WebDAV、NFS、FTP 或 SFTP。已经在用 Jellyfin、Emby、Plex 或 DLNA 的话，直接选择对应入口。需要手机投放时，可自行开启 DLNA 接收。
+![太空观景厅、私人影院、小镇广场与沙漠营地的实际座位视角](../showcase/features/zh-Hans/06-vr-cinemas.webp)
 
-## 为今晚挑个座位
+## 180° 与 360° 全景播放
 
-![为今晚挑个座位 — Reality NAS Player](../showcase/03-cinemas-en.webp)
+支持 VR180 和 360° 视频，转头即可改变视角。可以播放左右、上下立体视频，以及鱼眼、立方体贴图。播放器读取投影信息，也可手动切换投影和立体布局。
 
-太空观景厅设有五个座位，窗边能见到地球。私人影院、小镇广场和沙漠营地各有不同的光线与景致。影院会记住座位；暂停时厅内灯光亮起，也可随时切回浮动窗口。
+![180°、360° 全景与投影、立体布局设置](../showcase/features/zh-Hans/07-panoramic-video.webp)
 
-## 转身看另一面湖岸
+还可以提前下载影片到头显，用自己的 SMB 共享同步观看进度、收藏和匹配修正。macOS 和 Windows 桌面版可从源码构建。 [从源码构建桌面版](../build.md)
 
-![转身看另一面湖岸 — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-360° 影片可以转身环顾，180° 和 VR180 影片在眼前展开。在窗口里可以拖动视角，格式判断有误时也能手动指定。左右或上下排列的 3D 影片会分别送到左右眼。
-
-## 听原声，也能换配音
-
-![听原声，也能换配音 — Reality NAS Player](../showcase/05-playback-en.webp)
-
-支持内封与外挂字幕、ASS/SSA 排版以及 PGS、VobSub 图形字幕。可切换音轨、外挂配音并微调音画延迟。除 MKV、MP4 外，还可播放多种旧格式及未加密蓝光、DVD 备份的正片；不含光盘交互菜单。4K、HDR 效果取决于片源与设备。
-
-## 出门前存一部，回家接着看
-
-![出门前存一部，回家接着看 — Reality NAS Player](../showcase/06-offline-en.webp)
-
-提前下载到头显，离开 Wi-Fi 也能看；来源支持时可断点续传。可选的 SMB 同步只把进度、收藏和手动匹配写到你选的共享。没有广告或分析服务；离线识别使用本地文件信息。
-
-## 坐回电脑前
-
-![坐回电脑前 — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-macOS 和 Windows 桌面端可用鼠标、键盘浏览片库和播放文件。空间影院属于头显版。v1.1.0 提供已签名的头显 APK，桌面端从源码构建。
-
-## 第一次放映
-
-将 APK 侧载到 PICO Space Pro，打开一部自己的影片或在「来源」添加共享，然后在播放控件的「观影空间」选择窗口或影院。这里的头显画面来自 PICO OS 6 模拟器，演示影片不随播放器提供。
-
-[隐私政策](../privacy-policy.md) · [关于这些画面](../showcase/README.md) · [MIT](../../LICENSE) · [语言 (23)](README.md)
+[下载正式签名 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

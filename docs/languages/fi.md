@@ -1,84 +1,49 @@
 # Reality NAS Player
 
-**Oma elokuvateatteri PICO Space Prolle.**
+Tunnista elokuvat, järjestä jaksot ja toista NAS-videoita **PICO Space Pro**lla.
 
-**Suomi** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>Kielet (23)</summary>
+[Lataa allekirjoitettu APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
-**Suomi** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Nederlands](nl.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
-[Kielet (23) →](README.md)
+## Elokuvien, sarjojen, dokumenttien ja animen tunnistus
 
-</details>
+Kansion nimi voi kertoa jopa video1.mkv-tiedoston nimen ja vuoden. Elokuvat ja yksittäiset dokumentit haetaan every.film- ja NeoDB-palveluista ilman API-avainta. TV- ja dokumenttisarjoista luetaan kausi, jakso ja mahdollinen tvshow.nfo. Anime tunnistetaan AniListin ja Bangumin avulla. Kodin julisteet ja omat korjaukset säilyvät.
 
-**[Katso 31 sekunnin esittelyvideo](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Virallinen sivusto](https://jason-jm.github.io/reality-nas-player/)
+![Elokuvien, sarjojen, dokumenttien ja animen tunnistus](../showcase/features/en/01-nas-matching.webp)
 
-![Oma elokuvateatteri PICO Space Prolle. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+## Yhdistä NAS tai mediapalvelin
 
-Avaa NAS-palvelimelle vuosien varrella keräämäsi elokuva-, sarja- ja animekansiot. Reality NAS Player tunnistaa teokset, järjestää jaksot ja kokoaa lisämateriaalin sarjan yhteyteen. Valitse kansikuva **PICO Space Prolla** ja istahda katsomoon, jonka ikkunasta näkyy Maa.
+Avaa jaettu kansio SMB-, WebDAV-, NFS-, FTP- tai SFTP-yhteydellä. Selaa lähiverkon DLNA-laitteita tai yhdistä Jellyfin-, Emby- tai Plex-kirjasto.
 
-**[Lataa lasien APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Julkaisutiedot ja tarkistussummat](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Käännä työpöytäsovellus](../build.md)
+![Yhdistä NAS tai mediapalvelin](../showcase/features/en/02-nas-connections.webp)
 
-## Elokuvatiedot suoraan NAS-kansioista
+## Valitse julisteseinältä
 
-![Kaksi esimerkkiä kansion nimen ja viereisen jakson antamista vihjeistä. Oikealla näkyy neljä kahdeksasta demoelokuvasta, jotka tunnistettiin WebDAV-jaon NFO-tiedostojen avulla.](../showcase/01-auto-scraping-en.webp)
+Julistetta painamalla näet juonikuvauksen, näyttelijät ja omat elokuvaversiosi. Valitse sarjan kausi ja jakso tai jatka katselua kohdasta, johon jäit.
 
-**Kansionkin nimi kertoo paljon.** Polussa `Interstellar (2014)/video1.mkv` kansion nimi paljastaa elokuvan ja ilmestymisvuoden. Saksankielinen nimi `Dark Staffel 2 Folge 3.mkv` kertoo, että kyseessä on toisen kauden kolmas jakso. Haussa voidaan käyttää myös alkuperäistä nimeä ja eri maissa käytettyjä nimiä.
+![Valitse julisteseinältä](../showcase/features/en/03-poster-wall.webp)
 
-Jos animejakson nimessä lukee vain `Seitokai`, toinen saman kansion jakso voi kertoa koko nimen AniList-hakua varten. Teatterielokuva voi saada oman kansikuvan, ja tekstitön alku- tai lopputunnus päätyy sarjan lisämateriaaliin. Saman elokuvan kaksi versiota voivat jakaa kortin, josta voit valita toistettavan version.
+## Videoformaatit, tekstitys ja ääniraidat
 
-Jos elokuvan tai sarjan Kodi-NFO sisältää TMDB-tunnisteen, voit käyttää sen juonikuvausta ja näyttelijätietoja myös offline-tilassa sekä omia julisteita ja taustakuvia. Soitin tunnistaa elokuvia nimen ja vuoden perusteella ja hakee saatavilla olevat julisteet ja kuvaukset. Et tarvitse tiliä tai API-avainta. Väärän tunnistuksen voi korjata koko sarjakortille kerralla. Valinta säilyy uudessa skannauksessa.
+Luettavia videotiedostoja ovat MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP. Yhteensopivista salaamattomista Blu-ray- ja DVD-kopioista (ISO, BDMV, VIDEO_TS) voi toistaa pääelokuvan. Tekstitysmuotoihin kuuluvat SRT, WebVTT, ASS/SSA, PGS, VobSub. Vaihda raitaa, säädä tekstikokoa ja ajoitusta tai lisää ulkoinen dubbaus. DTS- ja TrueHD-ääntä tuetaan.
 
-[Katso esimerkit ja kokeile niitä projektin testeillä (englanniksi)](../metadata-matching.md)
+![Videoformaatit, tekstitys ja ääniraidat](../showcase/features/en/04-video-formats.webp)
 
-## Selaa kirjastoa kansikuvien avulla
+![Videoformaatit, tekstitys ja ääniraidat](../showcase/features/en/05-subtitles-audio.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="PICO Space Pron kirjastossa näkyy kahdeksan elokuvajulistetta kahdessa neljän julisteen rivissä. Luokat ovat vasemmalla ja suodatus sekä lajittelu ylhäällä."></a>
-</p>
+## Neljä VR-elokuvateatteria
 
-Muistatko sinisen julisteen, mutta et elokuvan nimeä? Julisteseinältä voit avata juonikuvauksen ja näyttelijätiedot tai valita sarjan kauden ja jakson. Rajaa valikoimaa tyylilajin tai vuosikymmenen mukaan tai jatka kesken jäänyttä elokuvaa samasta kohtauksesta.
+Avaruusloungessa on viisi paikkaa, joista kaksi on ikkunan vieressä. Katso elokuvaa myös kotiteatterin, kylän aukion tai aavikkoleirin valkokankaalta.
 
-## Yhdistä oma tallennustilasi
+![Neljä VR-elokuvateatteria](../showcase/features/en/06-vr-cinemas.webp)
 
-![Yhdistä oma tallennustilasi — Reality NAS Player](../showcase/02-connect-en.webp)
+## VR180- ja 360°-videot
 
-Avaa video laseista tai tietokoneen jaetusta kansiosta SMB:n kautta. Myös WebDAV, NFS, FTP, SFTP sekä Jellyfin, Emby, Plex ja DLNA ovat tuettuja. Ota DLNA-vastaanotto käyttöön, jos haluat lähettää videon puhelimesta.
+Katsele ympärillesi päätä kääntämällä. Stereokuva voi olla rinnakkain tai päällekkäin. Myös kalansilmä- ja kuutioprojektiot toimivat. Soitin lukee projektion tiedostosta, ja voit vaihtaa sen käsin.
 
-## Valitse paikka näytökseen
+![VR180- ja 360°-videot](../showcase/features/en/07-panoramic-video.webp)
 
-![Valitse paikka näytökseen — Reality NAS Player](../showcase/03-cinemas-en.webp)
-
-Avaruusloungessa on viisi istumapaikkaa. Vaihtoehtoina ovat myös yksityinen elokuvateatteri, kylänaukio ja aavikkoleiri. Sali muistaa paikkasi ja valot syttyvät tauolla. Voit vaihtaa kelluvaan ikkunaan.
-
-## Katso myös taaksesi
-
-![Katso myös taaksesi — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-360°-videossa voit kääntyä ympäri, 180°- ja VR180-videoissa kohtaus avautuu eteesi. Ikkunassa näkymää voi vetää. Vierekkäisillä tai päällekkäisillä kuvilla tallennettu 3D-elokuva näyttää kummallekin silmälle oman näkymän.
-
-## Sopiva ääniraita ja tekstitys
-
-![Sopiva ääniraita ja tekstitys — Reality NAS Player](../showcase/05-playback-en.webp)
-
-Vaihda ulkoiseen ääniraitaan, säädä ääniviivettä ja käytä ASS/SSA-, PGS- tai VobSub-tekstitystä. MKV:n, MP4:n ja vanhempien tiedostomuotojen lisäksi soitin toistaa salaamattoman Blu-ray- tai DVD-varmuuskopion pääelokuvan ilman levyvalikkoja. 4K- ja HDR-toisto riippuu tiedostosta ja laitteesta.
-
-## Elokuva mukaan matkalle
-
-![Elokuva mukaan matkalle — Reality NAS Player](../showcase/06-offline-en.webp)
-
-Lataa elokuva laseihin ennen kuin lähdet Wi-Fi-verkon ulottuvilta. Oman SMB-jaon avulla voit halutessasi synkronoida katselukohdan, suosikit ja korjatut nimiketiedot lasien välillä. Ei mainoksia eikä käyttöanalytiikkaa; tunnistus onnistuu myös paikallisesti.
-
-## Myös työpöydällä
-
-![Myös työpöydällä — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-macOS- ja Windows-versiossa voit selata ja toistaa elokuvia hiirellä ja näppäimistöllä. Virtuaalisalit kuuluvat lasiversioon. Versio 1.0 sisältää APK:n laseille; työpöytäsovellus käännetään lähdekoodista.
-
-## Ensimmäinen näytös
-
-Asenna APK PICO Space Prohon, avaa oma video tai lisää jaettu kansio ja valitse katselutila toistosäätimistä. Kuvat on otettu PICO OS 6 -emulaattorissa. Esimerkkielokuvat eivät sisälly sovellukseen.
-
-[Tietosuoja](../privacy-policy.md) · [Tietoa kuvista](../showcase/README.md) · [MIT](../../LICENSE) · [Kielet (23)](README.md)
+[Lataa allekirjoitettu APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

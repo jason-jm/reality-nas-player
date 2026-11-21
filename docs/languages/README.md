@@ -1,6 +1,6 @@
 # Reality NAS Player in your language
 
-A personal cinema built for **PICO Space Pro**. Match films, TV seasons and fansub releases from the folders on your NAS, then browse them by cover. Pick a language for the illustrated guide and headset download.
+Match movies, series, documentaries and anime on **PICO Space Pro**. Each guide lists NAS connections, video and subtitle formats, the four screening rooms, and 180° and 360° playback.
 
 | Read the guide | Language |
 | --- | --- |

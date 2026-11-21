@@ -1,84 +1,49 @@
 # Reality NAS Player
 
-**Een eigen filmzaal, ontworpen voor PICO Space Pro.**
+Herken films, orden afleveringen en speel NAS-video’s af op **PICO Space Pro**.
 
-**Nederlands** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md)
+[English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-<details>
-<summary>Talen (23)</summary>
+[Ondertekende APK downloaden · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
-**Nederlands** · [English](../../README.md) · [简体中文](zh-Hans.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [Čeština](cs.md) · [Dansk](da.md) · [Ελληνικά](el.md) · [Suomi](fi.md) · [Italiano](it.md) · [한국어](ko.md) · [Bahasa Melayu](ms.md) · [Norsk bokmål](nb.md) · [Polski](pl.md) · [Português (Brasil)](pt-BR.md) · [Română](ro.md) · [Русский](ru.md) · [Svenska](sv.md) · [ไทย](th.md) · [Türkçe](tr.md) · [繁體中文](zh-Hant.md)
+![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
-[Talen (23) →](README.md)
+## Films, series, documentaires en anime herkennen
 
-</details>
+Ook bij video1.mkv kan de map de filmtitel en het jaar geven. De speler zoekt films en losse documentaires zonder API-sleutel op bij every.film en NeoDB. Voor series en documentairereeksen leest hij seizoen, aflevering en bestaande tvshow.nfo-bestanden. Anime wordt gekoppeld via AniList en Bangumi. Je Kodi-posters en handmatige correcties blijven behouden.
 
-**[Bekijk de film van 31 seconden](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Officiële website](https://jason-jm.github.io/reality-nas-player/)
+![Films, series, documentaires en anime herkennen](../showcase/features/en/01-nas-matching.webp)
 
-![Een eigen filmzaal, ontworpen voor PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
+## Verbinding maken met je NAS
 
-Open de mappen met films, series en anime die je door de jaren heen op je NAS hebt verzameld. Reality NAS Player herkent titels, zet afleveringen op volgorde en bewaart de extra’s bij de serie. Kies op **PICO Space Pro** een hoes en neem plaats met uitzicht op de aarde.
+Open gedeelde mappen via SMB, WebDAV, NFS, FTP of SFTP. Blader door DLNA-apparaten op je netwerk of verbind een bibliotheek van Jellyfin, Emby of Plex.
 
-**[Headset-APK downloaden](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Versiegegevens en controlesommen](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Desktopapp bouwen](../build.md)
+![Verbinding maken met je NAS](../showcase/features/en/02-nas-connections.webp)
 
-## Van NAS-map naar filmgegevens
+## Kiezen op de posterwand
 
-![Twee voorbeelden van herkenning via een mapnaam en een andere aflevering. Rechts staan vier van de acht demofilms die de headset via NFO-bestanden op een WebDAV-share heeft herkend.](../showcase/01-auto-scraping-en.webp)
+Open een poster voor het verhaal, de cast en de versies die je hebt. Kies bij een serie een seizoen en aflevering, of kijk een film verder vanaf het laatste kijkmoment.
 
-**Ook de mapnaam telt mee.** Bij `Interstellar (2014)/video1.mkv` geeft de bovenliggende map de titel en het jaar. Een bestand met de naam `Dark Staffel 2 Folge 3.mkv` hoort bij seizoen 2, aflevering 3. De speler zoekt ook op oorspronkelijke titels en namen waaronder een film elders is uitgebracht.
+![Kiezen op de posterwand](../showcase/features/en/03-poster-wall.webp)
 
-Staat er op één anime-aflevering alleen `Seitokai`, dan kan een andere aflevering in dezelfde map de volledige naam leveren voor de zoekopdracht bij AniList. Een bioscoopfilm kan een eigen hoes krijgen, terwijl intro’s en outro’s zonder credits bij de extra’s van de serie komen. Twee versies van dezelfde film kun je vanuit één kaart afspelen.
+## Bestanden, ondertiteling en geluid
 
-Een Kodi-NFO met een TMDB-ID kan voor films en series ook offline de samenvatting en cast leveren, samen met de posters en achtergronden uit je map. Bij het scannen herkent de speler films aan de titel en het jaar en haalt hij beschikbare posters en samenvattingen op. Je hebt geen account of API-sleutel nodig. Een verkeerde koppeling herstel je voor de hele seriekaart. Die keuze blijft behouden bij een nieuwe scan.
+Herkenbare videobestanden zijn onder meer MKV, MP4, M4V, MOV, AVI, WebM, TS, M2TS, MTS, MPG, MPEG, MPE, M2P, M2V, VOB, WMV, ASF, RM, RMVB, FLV, F4V, OGM, OGV, DivX, 3GP. Speel de hoofdfilm van een compatibele, onversleutelde Blu-ray- of dvd-kopie (ISO, BDMV, VIDEO_TS). Ondertitels omvatten SRT, WebVTT, ASS/SSA, PGS, VobSub. Wissel van spoor, pas tekstgrootte en timing aan of voeg een externe nasynchronisatie toe. DTS en TrueHD worden ondersteund.
 
-[Bekijk de voorbeelden en probeer de tests van het project (Engels)](../metadata-matching.md)
+![Bestanden, ondertiteling en geluid](../showcase/features/en/04-video-formats.webp)
 
-## Blader langs de filmhoezen
+![Bestanden, ondertiteling en geluid](../showcase/features/en/05-subtitles-audio.webp)
 
-<p align="center">
-  <a href="../showcase/01-library-en.webp?raw=true"><img src="../showcase/01-library-en.webp" alt="De bibliotheek op PICO Space Pro toont acht filmposters in twee rijen van vier. Links staan de categorieën en bovenaan kun je filteren en sorteren."></a>
-</p>
+## Vier VR-bioscopen
 
-Weet je de titel niet meer, maar herinner je je de blauwe hoes? Op de posterwand herken je hem meteen. Open een film voor de achtergrond, het verhaal en de acteurs, of kies bij een serie een seizoen en aflevering. Filter op genre of decennium, of kijk verder waar je was gebleven.
+De ruimtelounge heeft vijf zitplaatsen, waarvan twee bij het raam. Kijk ook op het scherm in de privébioscoop, op het dorpsplein of in het woestijnkamp.
 
-## Sluit je eigen opslag aan
+![Vier VR-bioscopen](../showcase/features/en/06-vr-cinemas.webp)
 
-![Sluit je eigen opslag aan — Reality NAS Player](../showcase/02-connect-en.webp)
+## VR180 en 360° afspelen
 
-Open een bestand op de headset of een gedeelde map op de pc via SMB. Ook WebDAV, NFS, FTP, SFTP, Jellyfin, Emby, Plex en DLNA worden ondersteund. Zet de DLNA-ontvanger aan als je vanaf je telefoon wilt afspelen.
+Kijk om je heen door je hoofd te draaien. Kies stereo naast of boven elkaar, fisheye of kubusprojectie. De speler leest de projectie uit het bestand en laat je die zelf wijzigen.
 
-## Kies je stoel
+![VR180 en 360° afspelen](../showcase/features/en/07-panoramic-video.webp)
 
-![Kies je stoel — Reality NAS Player](../showcase/03-cinemas-en.webp)
-
-De ruimtelounge heeft vijf zitplaatsen. Er zijn ook een privébioscoop, een dorpsplein en een kamp in de woestijn. Je stoel wordt onthouden en bij pauze gaat het licht aan. Je kunt altijd terug naar een zwevend venster.
-
-## Kijk achterom
-
-![Kijk achterom — Reality NAS Player](../showcase/04-panorama-en.webp)
-
-Draai je om in een 360°-video of verken het beeld vóór je in 180° of VR180. In een venster sleep je de weergave. Bij 3D met beelden naast of boven elkaar krijgt elk oog zijn eigen beeld.
-
-## Geluid en ondertitels
-
-![Geluid en ondertitels — Reality NAS Player](../showcase/05-playback-en.webp)
-
-Kies een originele of externe audiotrack en pas de vertraging aan. ASS/SSA, PGS en VobSub worden ondersteund. Naast MKV, MP4 en oudere formaten kun je de hoofdfilm uit een onversleutelde blu-ray- of dvd-back-up bekijken, zonder schijfmenu’s. 4K en HDR hangen af van bestand en apparaat.
-
-## Neem een film mee
-
-![Neem een film mee — Reality NAS Player](../showcase/06-offline-en.webp)
-
-Download voordat je de wifi verlaat. Via een eigen SMB-share kun je desgewenst voortgang, favorieten en handmatige koppelingen tussen headsets synchroniseren. Geen advertenties of gebruiksanalyse; offline herkenning werkt met lokale bestandsinformatie.
-
-## Aan je bureau
-
-![Aan je bureau — Reality NAS Player](../showcase/07-desktop-en.webp)
-
-Op macOS en Windows blader en speel je met muis en toetsenbord. De virtuele zalen zijn voor de headset. v1.1.0 biedt een headset-APK; de desktopapp bouw je uit de broncode.
-
-## Je eerste voorstelling
-
-Installeer de APK op PICO Space Pro, open je eigen video of voeg een gedeelde map toe en kies een kijkruimte tijdens het afspelen. De headsetbeelden komen uit de PICO OS 6-emulator; de voorbeeldfilms worden niet meegeleverd.
-
-[Privacy](../privacy-policy.md) · [Over de beelden](../showcase/README.md) · [MIT](../../LICENSE) · [Talen (23)](README.md)
+[Ondertekende APK downloaden · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
