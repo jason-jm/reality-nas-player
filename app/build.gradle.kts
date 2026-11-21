@@ -6,14 +6,11 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
-// Release signing lives in local.properties (untracked): AURA_STORE_FILE, AURA_STORE_PASSWORD,
-// AURA_KEY_ALIAS, AURA_KEY_PASSWORD. When absent — a fresh clone, CI — the release build still
-// assembles, just unsigned, instead of failing on a missing keystore.
+// The store identity has its own key. A public clone without the private configuration builds unsigned.
+val signingFile = rootProject.file("signing/reality-nas-player.properties")
 val signingProps = Properties().apply {
-    rootProject.file("local.properties").takeIf { it.exists() }?.inputStream()?.use { load(it) }
+    if (signingFile.isFile) signingFile.inputStream().use { load(it) }
 }
-val releaseKeystore = signingProps.getProperty("AURA_STORE_FILE")
-    ?.let { rootProject.file(it) }?.takeIf { it.exists() }
 
 android {
     testOptions {
@@ -25,12 +22,12 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.therealityteam.videoplayer"
+        applicationId = "com.therealityteam.realitynasplayer"
         manifestPlaceholders["appLabel"] = "@string/app_name"
         minSdk = 35
         targetSdk = 35
-        versionCode = 6
-        versionName = "1.1.0"
+        versionCode = 8
+        versionName = "1.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk { abiFilters.add("arm64-v8a") }
@@ -40,21 +37,21 @@ android {
         buildConfigField("boolean", "AUTOMATION", "false")
     }
 
-    if (releaseKeystore != null) {
+    if (signingFile.isFile) {
         signingConfigs {
             create("release") {
-                storeFile = releaseKeystore
-                storePassword = signingProps.getProperty("AURA_STORE_PASSWORD")
-                keyAlias = signingProps.getProperty("AURA_KEY_ALIAS")
-                keyPassword = signingProps.getProperty("AURA_KEY_PASSWORD")
+                storeFile = signingFile.resolveSibling(signingProps.getProperty("storeFile"))
+                storePassword = signingProps.getProperty("storePassword")
+                keyAlias = signingProps.getProperty("keyAlias")
+                keyPassword = signingProps.getProperty("keyPassword")
             }
         }
     }
 
     buildTypes {
-        // -Paura.devPackage: a debug build beside the installed app (….videoplayer.dev, "Reality NAS Player Dev"), for a
+        // -Paura.devPackage: a debug build beside the installed app (….realitynasplayer.dev, "Reality NAS Player Dev"), for a
         // headset whose Aura was signed on another machine — its library and settings stay as they are.
-        // -Paura.devPackage=<name> names another (….videoplayer.<name>, "Reality NAS Player <Name>"): =fresh is an empty
+        // -Paura.devPackage=<name> names another (….realitynasplayer.<name>, "Reality NAS Player <Name>"): =fresh is an empty
         // install beside both, for trying what a new user first sees without clearing anybody's library.
         debug {
             buildConfigField("boolean", "AUTOMATION", "true")
@@ -86,7 +83,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            if (releaseKeystore != null) {
+            if (signingFile.isFile) {
                 signingConfig = signingConfigs.getByName("release")
             }
         }
@@ -133,7 +130,6 @@ dependencies {
     implementation(libs.design)
     implementation(libs.sense)
     implementation(libs.tracking)
-    implementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity.compose)
@@ -160,6 +156,7 @@ dependencies {
     testImplementation("org.json:json:20240303")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.tooling.preview)
 }
 

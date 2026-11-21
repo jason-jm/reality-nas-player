@@ -181,6 +181,23 @@ class NfoScrapeTest {
         assertArrayEquals("SHOW POSTER".toByteArray(), File(out.posterPath!!).readBytes())
     }
 
+    @Test fun `a show NFO without a TMDB id groups its episodes offline`() = runBlocking {
+        write("TV/Delta/tvshow.nfo", "<tvshow><title>Delta</title><plot>Across the estuary.</plot></tvshow>")
+        write("TV/Delta/poster.jpg", "LOCAL ART")
+        for (n in 1..2) {
+            write("TV/Delta/Season 2/file$n.mkv")
+            write("TV/Delta/Season 2/file$n.nfo", "<episodedetails><title>Day $n</title><season>2</season><episode>$n</episode></episodedetails>")
+        }
+        val client = FakeTmdb(emptyMap(), online = false)
+        val engine = engine(client)
+        val episodes = scan().map { engine.scrape(it) }.sortedBy { it.episode }
+        assertEquals(listOf(1, 2), episodes.map { it.episode })
+        assertEquals(1, episodes.map { it.collectionKey }.distinct().size)
+        assertTrue(episodes.all { it.season == 2 && it.showTitle == "Delta" && it.fromNfo && it.identityPinned &&
+            it.collectionKey?.startsWith("nfo:") == true && it.overview == "Across the estuary." && it.posterPath != null })
+        assertEquals(0, client.searches)
+    }
+
     @Test fun `a URL nfo with an IMDb id is looked up once, then fetched by id`() = runBlocking {
         write("Films/The Matrix/The.Matrix.1999.mkv")
         write("Films/The Matrix/The.Matrix.1999.nfo", "http://www.imdb.com/title/tt0133093/")

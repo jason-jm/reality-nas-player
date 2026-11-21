@@ -1,6 +1,7 @@
 package com.therealityteam.videoplayer.data.scrape
 
 import com.therealityteam.videoplayer.util.PRODUCT_AGENT
+import com.therealityteam.videoplayer.data.model.MediaKind
 import kotlinx.coroutines.Dispatchers
 import com.therealityteam.videoplayer.util.Http
 import kotlinx.coroutines.withContext
@@ -34,6 +35,7 @@ data class BangumiInfo(
 class BangumiClient(cacheDir: java.io.File) {
 
     private val cache = ScrapeCache(cacheDir, "bangumi-search", TTL_MS)
+    private val details = CachedFetch(cacheDir)
     private val episodeCache = ScrapeCache(cacheDir, "bangumi-episodes", EPISODES_TTL_MS)
 
     init {
@@ -145,6 +147,57 @@ class BangumiClient(cacheDir: java.io.File) {
             ?.let(::subjectsOf).orEmpty()
         cache.put(key, subjectsToJson(subjects))
         return subjects
+    }
+
+    /** A subject can identify a file itself when AniList has no corresponding entry. */
+    internal suspend fun direct(names: List<String>, year: Int?, season: Int?, movie: Boolean, numbered: Boolean): MetaResult? =
+        withContext(Dispatchers.IO) {
+            if (TmdbConfig.offline) return@withContext null
+            val own = names.firstOrNull() ?: return@withContext null
+            for (q in names.distinct().take(2)) {
+                val name = StringSimilarity.normalizeTitle(q)
+                if (name.length < 2 || name.none(Char::isLetter)) continue
+                val ids = search(q).orEmpty().filter { result ->
+                    listOfNotNull(result.name, result.nameCn).any { StringSimilarity.normalizeTitle(it) == name }
+                }.mapNotNull { it.id }.distinct()
+                val candidates = ids.mapNotNull { detail(it) }.filter { record ->
+                    val titles = listOfNotNull(record.title, record.originalTitle) + record.synonyms
+                    val hasName = titles.any { StringSimilarity.normalizeTitle(it) == name }
+                    val laterSeason = season != null && season > 1
+                    val confirmsSeason = !laterSeason || year != null && year == record.year ||
+                        AnimeMatch.seasonFit(season, record) > 0
+                    hasName && confirmsSeason && (q == own || !AnimeMatch.namesAnotherWork(own, record)) &&
+                        (year == null || record.year != null && kotlin.math.abs(year - record.year) <= 1) &&
+                        (!movie || record.kind == MediaKind.MOVIE) && (!numbered || movie || record.kind != MediaKind.MOVIE)
+                }
+                if (candidates.size > 1) return@withContext null
+                candidates.singleOrNull()?.let { return@withContext it }
+            }
+            null
+        }
+
+    internal suspend fun detail(id: Int): MetaResult? = withContext(Dispatchers.IO) {
+        if (id <= 0 || TmdbConfig.offline) return@withContext null
+        val url = "https://api.bgm.tv/v0/subjects/$id"
+        val text = details.cached(url) ?: limiter.withPermit {
+            details.get(url, mapOf("User-Agent" to USER_AGENT), throwOnTransient = true)
+        }
+        if (text == null || text == CachedFetch.MISS) return@withContext null
+        val row = runCatching { JSONObject(text) }.getOrNull() ?: return@withContext null
+        if (row.optInt("id") != id || row.optInt("type") != 2) return@withContext null
+        val native = row.str("name") ?: return@withContext null
+        val cn = row.str("name_cn")
+        val form = when (row.str("platform")?.uppercase(java.util.Locale.ROOT)) {
+            "剧场版", "劇場版", "MOVIE" -> MediaKind.MOVIE
+            "TV", "WEB", "OVA", "OAD" -> MediaKind.SHOW
+            else -> return@withContext null
+        }
+        MetaResult(0, form, cn.takeIf { TmdbConfig.isChinese } ?: native, originalTitle = native,
+            synonyms = listOfNotNull(cn, native), year = row.str("date")?.take(4)?.toIntOrNull(),
+            overview = Synopsis.forReader(row.str("summary"), TmdbConfig.language),
+            posterUrl = row.optJSONObject("images")?.let { it.str("large") ?: it.str("common") }?.takeIf { it.startsWith("https://lain.bgm.tv/") },
+            genres = listOf("Animation"), rating = row.optJSONObject("rating")?.optDouble("score")?.takeIf { it > 0 },
+            publicMovieKey = "bangumi:$id")
     }
 
     /**

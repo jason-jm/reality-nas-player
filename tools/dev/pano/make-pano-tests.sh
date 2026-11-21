@@ -3,7 +3,7 @@
 # equirectangular frame per eye (test-pano.swift), converted by FFmpeg's v360 into each projection, 60 s of
 # H.264 each. Some carry Google's spherical metadata (inject-spherical.py) and plain names — the file's own
 # word must be read; others only say it in their names, as downloads do. Push them to the emulator with
-#   adb push OUT_DIR/*.mp4 /sdcard/Android/data/com.therealityteam.videoplayer/files/
+#   adb push OUT_DIR/*.mp4 /sdcard/Android/data/com.therealityteam.realitynasplayer/files/
 set -euo pipefail
 here="$(cd "$(dirname "$0")" && pwd)"
 out="${1:-${TMPDIR:-/tmp}/aura-pano}"

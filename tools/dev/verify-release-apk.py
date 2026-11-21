@@ -97,7 +97,13 @@ def verify_native_library(apk, name):
 
 
 if len(sys.argv) == 4:
-    verify_backup_rules(sys.argv[1], sys.argv[2], Path(sys.argv[3]).read_text())
+    manifest = Path(sys.argv[3]).read_text()
+    app_id = "com.therealityteam.realitynasplayer"
+    if not re.search(rf'^\s*A: package="{re.escape(app_id)}"', manifest, re.M):
+        sys.exit("Unexpected release application ID")
+    if 'androidx.compose.ui.tooling.PreviewActivity' in manifest:
+        sys.exit("Compose preview activity in the release manifest")
+    verify_backup_rules(sys.argv[1], sys.argv[2], manifest)
 
 with zipfile.ZipFile(sys.argv[1]) as apk:
     entries = set(apk.namelist())

@@ -5,13 +5,13 @@
 #   DELAY seconds after the sphere before the shot (default 10: the emulator's screenshots lag the stage)
 #   DEVICE  adb serial (default emulator-5554); a headset's is shot with `capture screenshot --spatial` (pico-cli
 #           0.6.1+: the compositor's view from the head pose — it shows the sphere, plain screencap does not)
-#   PKG     the app (default com.therealityteam.videoplayer; the headset's side-by-side build is …videoplayer.dev)
+#   PKG     the app (default com.therealityteam.realitynasplayer; the headset's side-by-side build is …realitynasplayer.dev)
 # The clips' saved positions are forgotten after (aura.forget_progress since the start; debug builds).
 set -u
 here="$(cd "$(dirname "$0")" && pwd)"
 out="${1:-${TMPDIR:-/tmp}/aura-pano-smoke}"
 mkdir -p "$out"
-PKG=${PKG:-com.therealityteam.videoplayer}
+PKG=${PKG:-com.therealityteam.realitynasplayer}
 DIRP=/sdcard/Android/data/$PKG/files
 DEVICE=${DEVICE:-emulator-5554}
 cap=(); [[ $DEVICE == emulator-* ]] || cap=(--spatial --size 1920x1080)

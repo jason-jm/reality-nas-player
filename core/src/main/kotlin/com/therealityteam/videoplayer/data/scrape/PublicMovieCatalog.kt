@@ -1,8 +1,11 @@
 package com.therealityteam.videoplayer.data.scrape
 
 import com.therealityteam.videoplayer.data.model.MediaKind
+import com.therealityteam.videoplayer.util.Http
 import com.therealityteam.videoplayer.util.TransientHttpException
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.io.File
@@ -14,6 +17,9 @@ import kotlin.math.abs
 /** Anonymous film lookups. Search ranks suggest candidates; titles and release dates establish identity. */
 class PublicMovieCatalog internal constructor(private val read: suspend (String, String) -> JSONObject?) {
     constructor(root: File) : this(publicMovieReader(root))
+    internal val series = PublicSeriesCatalog(read)
+    internal val music = PublicMusicCatalog(read)
+    private val broadcastNames = BroadcastReleaseNames(read)
 
     internal enum class Source(val prefix: String, val host: String) {
         EVERY("everyfilm", "every.film"), NEO("neodb", "neodb.social"), WIKI("wikidata", "www.wikidata.org"),
@@ -21,7 +27,7 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
         fun url(path: String) = "https://$host$path"
     }
 
-    suspend fun match(parsed: ParsedName, alternatives: List<ParsedName> = emptyList()): MetaResult? {
+    suspend fun match(parsed: ParsedName, alternatives: List<ParsedName> = emptyList(), allowSeries: Boolean = false): MetaResult? {
         if (TmdbConfig.offline || parsed.isEpisode || !safeTitle(parsed.title)) return null
         var unavailable: TransientHttpException? = null
         for (name in (listOf(parsed) + alternatives).distinct()) {
@@ -36,10 +42,10 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
                         result.lead?.let(leading::add)
                     }
                     val film = result.film ?: continue
-                    if (!ambiguous) return completeRecord(film, name)
+                    if (!ambiguous) return completeRecord(film, name, allowSeries)
                     // Two catalogues must supply the same external film identifier to resolve an undated remake.
                     val agrees = film.imdbId?.let { id -> (leading + confirmations).firstOrNull { it.imdbId == id } }
-                    if (agrees != null) return completeRecord(if (agrees.posterUrl != null) agrees else film, name)
+                    if (agrees != null) return completeRecord(if (agrees.posterUrl != null) agrees else film, name, allowSeries)
                     confirmations += film
                 } catch (error: TransientHttpException) {
                     unavailable = error
@@ -50,16 +56,21 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
         return null
     }
 
-    private suspend fun completeRecord(verified: MetaResult, name: ParsedName): MetaResult {
+    private suspend fun completeRecord(verified: MetaResult, name: ParsedName, allowSeries: Boolean): MetaResult {
         val id = verified.imdbId ?: return verified
         if (name.year == null && verified.year != null && verified.publicMovieKey?.startsWith("neodb:") == true) {
             // Catalogue release dates may be regional. Only a premiere for the same IMDb record
             // in the preceding year can refine an undated filename's year.
-            val earlier = try {
-                search(Source.WIKI, verified.originalTitle ?: name.title).firstOrNull {
-                    it.imdbId == id && it.year == verified.year - 1
+            val evidence = try {
+                wikiSearch(verified.originalTitle ?: name.title, TmdbConfig.language) { path ->
+                    read(Source.WIKI.url(path), TmdbConfig.language)
                 }
-            } catch (_: TransientHttpException) { null }
+            } catch (_: TransientHttpException) { emptyList() }
+            if (allowSeries && verified.referencedTmdbMovie == null) {
+                val show = evidence.singleOrNull { it.kind == MediaKind.SHOW && it.imdbId == id && it.year == verified.year }
+                if (show != null) return show
+            }
+            val earlier = evidence.firstOrNull { it.kind == MediaKind.MOVIE && it.imdbId == id && it.year == verified.year - 1 }
             return if (earlier != null) verified.copy(year = earlier.year) else verified
         }
         if (verified.posterUrl != null || !(verified.publicMovieKey?.startsWith("wikidata:") == true ||
@@ -90,6 +101,37 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
     private data class Lookup(val film: MetaResult? = null, val ambiguous: Boolean = false, val lead: MetaResult? = null)
 
     internal suspend fun match(source: Source, parsed: ParsedName): MetaResult? = lookup(source, parsed).film
+
+    /** A release note supplies a spelling and air date. A catalogue must still identify the programme. */
+    internal suspend fun matchBroadcastRelease(file: String, parsed: ParsedName, folder: String): MetaResult? {
+        if (parsed.isEpisode || broadcasterName(folder)?.let { it != "nhk" } == true) return null
+        val label = broadcastNames.find(file) ?: return null
+        if (parsed.year != null && parsed.year != label.year) return null
+        fun confirms(record: MetaResult) = record.year == label.year &&
+            (listOfNotNull(record.title, record.originalTitle) + record.synonyms).any { normalized(it) == normalized(label.original) }
+        val movie = broadcastFilm(ParsedName(label.original, label.year), "NHK", file)
+        if (movie != null && confirms(movie)) return movie
+        return series.match(listOf(label.original), label.year, null, documentary = true, broadcastFolder = "NHK")?.takeIf(::confirms)
+    }
+
+    /** A broadcaster's shelf can mix one-off programmes, fiction and series. */
+    internal suspend fun broadcastFilm(name: ParsedName, shelf: String = "", fileName: String = ""): MetaResult? {
+        if (TmdbConfig.offline || name.isEpisode || name.title.count(Char::isLetterOrDigit) < 4 ||
+            !safeTitle(name.title) || FilenameParser.isJunkTitle(name.title)) return null
+        var failure: TransientHttpException? = null
+        for (source in listOf(Source.EVERY, Source.NEO)) {
+            val found = try { lookup(source, name) } catch (e: TransientHttpException) { failure = e; continue }
+            if (found.ambiguous) return null
+            val film = found.film ?: continue
+            if (film.genres.isNotEmpty()) {
+                if (ShelfFit.documentary(film.genres) && !ShelfFit.neverOnDocumentaryShelf(film.genres)) return film
+            } else if (hasBroadcastCredit(name.title, film, shelf, fileName)) {
+                return film
+            }
+        }
+        failure?.let { throw it }
+        return null
+    }
 
     private suspend fun lookup(source: Source, parsed: ParsedName): Lookup {
         for (query in queryNames(parsed.title)) {
@@ -140,16 +182,7 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
                 .filter { it.str("type") == "movie" }.take(7).mapNotNull { every(it, lang) }
             Source.NEO -> get("/api/catalog/search?query=$q&category=movie")?.objects("data").orEmpty()
                 .filter { it.str("type") == "Movie" }.take(6).mapNotNull { neo(it, lang) }
-            Source.WIKI -> {
-                val searchLanguage = if (han.containsMatchIn(query)) "zh" else "en"
-                val ids = get("/w/api.php?action=wbsearchentities&format=json&search=$q&language=$searchLanguage&uselang=" +
-                    encode(lang.substringBefore('-')) + "&type=item&limit=6")?.objects("search").orEmpty()
-                    .mapNotNull { it.str("id")?.takeIf(wikiId::matches) }
-                if (ids.isEmpty()) emptyList() else {
-                    val entities = get(wikiPath(ids, lang))?.optJSONObject("entities")
-                    ids.mapNotNull { entities?.optJSONObject(it)?.let { entity -> wiki(entity, lang) } }
-                }
-            }
+            Source.WIKI -> wikiSearch(query, lang, ::get).filter { it.kind == MediaKind.MOVIE }
             Source.OFDB -> get("/api/node/movie?filter%5Btitle%5D=$q&page%5Blimit%5D=6")
                 ?.objects("data").orEmpty().mapNotNull(::ofdb)
         }
@@ -157,6 +190,8 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
 
     suspend fun detail(key: String): MetaResult? {
         if (TmdbConfig.offline) return null
+        if (PublicSeriesCatalog.credit(key) != null) return series.detail(key)
+        if (PublicMusicCatalog.credit(key) != null) return music.detail(key.substringAfter(':'))
         val id = key.substringAfter(':')
         val lang = TmdbConfig.language
         return when {
@@ -165,7 +200,8 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
             key.startsWith("neodb:") && neoId.matches(id) ->
                 read(Source.NEO.url("/api/movie/$id"), lang)?.takeIf { it.str("type") == "Movie" && it.str("url") == "/movie/$id" }?.let { neo(it, lang) }
             key.startsWith("wikidata:") && wikiId.matches(id) ->
-                read(Source.WIKI.url(wikiPath(listOf(id), lang)), lang)?.optJSONObject("entities")?.optJSONObject(id)?.let { wiki(it, lang) }
+                read(Source.WIKI.url(wikiPath(listOf(id), lang)), lang)?.optJSONObject("entities")?.optJSONObject(id)
+                    ?.let { wiki(it, lang) }
             key.startsWith("ofdb:") && uuid.matches(id) ->
                 read(Source.OFDB.url("/api/node/movie/$id"), lang)?.optJSONObject("data")?.let(::ofdb)
             else -> null
@@ -174,13 +210,32 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
 
     companion object {
         internal val defaults = listOf(Source.EVERY, Source.NEO, Source.WIKI, Source.OFDB)
+        private val broadcasters = setOf("nhk", "bbc", "pbs", "itv", "hbo", "cctv", "discovery", "natgeo", "arte")
+        internal fun broadcasterName(folder: String): String? = folder.trim().lowercase(Locale.ROOT).takeIf { it in broadcasters }
+        private val documentaryLabel = Regex("""(?i)\bdocumentar(?:y|ies)\b|纪录片|紀錄片|記錄片|ドキュメンタリー""")
+
+        private fun hasBroadcastCredit(title: String, film: MetaResult, shelf: String, fileName: String): Boolean {
+            val broadcaster = broadcasterName(shelf) ?: return false
+            if (title.count(Char::isLetterOrDigit) < 5) return false
+            val exact = (listOfNotNull(film.title, film.originalTitle) + film.synonyms).any { normalized(it) == normalized(title) }
+            if (!exact) return false
+            // Some small broadcasts have no genre. The labelled release and a catalogue
+            // production credit can corroborate one another independently of the title.
+            if (documentaryLabel.containsMatchIn(fileName) && film.crew.any { it.name.trim().equals(broadcaster, true) }) return true
+            // Only accept a short self-description such as "NHK纪录片". A synopsis may
+            // mention another station's documentary in passing, even when this is a drama.
+            val line = film.overview?.trim() ?: return false
+            if (!line.startsWith(broadcaster, ignoreCase = true)) return false
+            return documentaryLabel.matches(line.substring(broadcaster.length).trim(' ', '-', ':', '：', '。', '.'))
+        }
         private val han = Regex("[\\p{IsHan}]")
         private val bilingual = Regex("""^([\p{IsHan}\p{N}·：:，、\s]+?)\s+([a-zA-Z][a-zA-Z\p{N}\p{P}\s]+)$""")
         private val tmdbMovie = Regex("""^https://(?:www\.)?themoviedb\.org/movie/(\d+)(?:[-/?].*)?$""")
-        private val uuid = Regex("[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}")
+        internal val uuid = Regex("[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}")
         private val neoId = Regex("[A-Za-z0-9]{10,32}")
-        private val filmTypes = setOf("Q11424", "Q24869", "Q29168811", "Q506240", "Q1259759", "Q226730")
-        private val wikiId = Regex("Q[1-9][0-9]*")
+        private val filmTypes = setOf("Q11424", "Q24869", "Q29168811", "Q506240", "Q93204", "Q226730")
+        private val seriesTypes = setOf("Q5398426", "Q581714", "Q1259759", "Q116515088")
+        internal val wikiId = Regex("Q[1-9][0-9]*")
         private fun encode(value: String) = URLEncoder.encode(value, "UTF-8")
         private fun safeTitle(query: String) = query.isNotBlank() && query.length <= 160 &&
             query.none { it == '/' || it == '\\' || it == '@' || it.isISOControl() }
@@ -193,7 +248,10 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
 
         fun credit(key: String?): Pair<String, String>? {
             val id = key?.substringAfter(':') ?: return null
+            PublicSeriesCatalog.credit(key)?.let { return it }
+            PublicMusicCatalog.credit(key)?.let { return it }
             return when {
+                key.startsWith("bangumi:") && (id.toIntOrNull() ?: 0) > 0 -> "Bangumi" to "https://bgm.tv/subject/$id"
                 key.startsWith("everyfilm:") && uuid.matches(id) -> "every.film" to "https://every.film/"
                 key.startsWith("neodb:") && neoId.matches(id) -> "NeoDB" to "https://neodb.social/movie/$id"
                 key.startsWith("wikidata:") && wikiId.matches(id) -> "Wikidata" to "https://www.wikidata.org/wiki/$id"
@@ -259,8 +317,9 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
             return (if (exact) 4 else 1) + date
         }
 
-        private fun every(j: JSONObject, lang: String): MetaResult? {
+        internal fun every(j: JSONObject, lang: String): MetaResult? {
             val id = j.str("id")?.takeIf(uuid::matches) ?: return null
+            val show = j.str("type") == "tv"
             val titles = j.objects("titles")
             val translations = j.objects("translations")
             val aliases = (titles.mapNotNull { it.str("title") } + translations.mapNotNull { it.str("name") } +
@@ -272,13 +331,14 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
                 c.str("name")?.let { Credit(it, c.str("character") ?: c.str("job")) }
             }
             fun image(field: String) = j.str(field)?.takeIf { it.startsWith("/api/v1/img/media/$id/") }?.let(Source.EVERY::url)
-            return MetaResult(0, MediaKind.MOVIE, title, originalTitle = j.str("original_title"), synonyms = aliases,
+            return MetaResult(0, if (show) MediaKind.SHOW else MediaKind.MOVIE, title,
+                originalTitle = j.str("original_title"), synonyms = aliases,
                 year = j.str("original_release_date")?.take(4)?.toIntOrNull(),
                 overview = overview(translations, lang, "language_code", "summary", j.str("overview")),
                 imdbId = j.objects("mappings").firstOrNull { it.str("source_platform") == "imdb" }?.str("external_id"),
                 runtime = j.optInt("runtime").takeIf { it > 0 }, genres = j.strings("genres"), cast = creditsOf("cast"),
                 crew = creditsOf("crew"), posterUrl = image("poster_stored_url"), backdropUrl = image("backdrop_stored_url"),
-                publicMovieKey = "everyfilm:$id", referencedTmdbMovie = j.objects("mappings")
+                publicMovieKey = if (show) "everyfilm-tv:$id" else "everyfilm:$id", referencedTmdbMovie = j.objects("mappings")
                     .firstOrNull { it.str("source_platform") == "tmdb" && it.str("resource_type") == "movie" }?.str("external_id")?.toIntOrNull())
         }
 
@@ -298,30 +358,51 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
                     tmdbMovie.find(it.str("url").orEmpty())?.groupValues?.get(1)?.toIntOrNull() })
         }
 
-        private fun wikiPath(ids: List<String>, lang: String): String {
+        internal fun wikiPath(ids: List<String>, lang: String): String {
             val languages = (listOf("zh", "zh-hans", "zh-cn", "en", "ja") + lang.substringBefore('-')).distinct().joinToString("|")
             return "/w/api.php?action=wbgetentities&format=json&ids=" + encode(ids.joinToString("|")) +
                 "&props=" + encode("claims|labels|aliases|descriptions") + "&languages=" + encode(languages)
         }
 
-        private fun wiki(j: JSONObject, lang: String): MetaResult? {
+        internal suspend fun wikiSearch(query: String, lang: String, get: suspend (String) -> JSONObject?): List<MetaResult> {
+            if (!safeTitle(query) || TmdbConfig.offline) return emptyList()
+            val searchLanguage = if (han.containsMatchIn(query)) "zh" else "en"
+            val ids = get("/w/api.php?action=wbsearchentities&format=json&search=${encode(query)}&language=$searchLanguage&uselang=" +
+                encode(lang.substringBefore('-')) + "&type=item&limit=6")?.objects("search").orEmpty()
+                .mapNotNull { it.str("id")?.takeIf(wikiId::matches) }
+            if (ids.isEmpty()) return emptyList()
+            val entities = get(wikiPath(ids, lang))?.optJSONObject("entities") ?: return emptyList()
+            return ids.mapNotNull { id -> entities.optJSONObject(id)?.let { wiki(it, lang) } }
+        }
+
+        internal fun wiki(j: JSONObject, lang: String): MetaResult? {
             val id = j.str("id")?.takeIf(wikiId::matches) ?: return null
             val claims = j.optJSONObject("claims") ?: return null
             fun values(prop: String) = claims.objects(prop).filter { it.str("rank") != "deprecated" }.mapNotNull {
                 it.optJSONObject("mainsnak")?.optJSONObject("datavalue")?.opt("value")
             }
-            // Feature, film, animated feature, short, television film and documentary film.
-            if (values("P31").filterIsInstance<JSONObject>().none { it.str("id") in filmTypes }) return null
+            val types = values("P31").filterIsInstance<JSONObject>().mapNotNull { it.str("id") }
+            val kind = when {
+                types.any { it in seriesTypes } -> MediaKind.SHOW
+                types.any { it in filmTypes } -> MediaKind.MOVIE
+                else -> return null
+            }
             val labels = j.optJSONObject("labels") ?: return null
             val allLabels = labels.keys().asSequence().mapNotNull { labels.optJSONObject(it) }.toList()
             val title = localized(allLabels, lang, "language", "value") ?: allLabels.firstOrNull()?.str("value") ?: return null
             val aliases = j.optJSONObject("aliases")
             val names = allLabels.mapNotNull { it.str("value") } + aliases?.keys()?.asSequence().orEmpty()
                 .flatMap { aliases!!.objects(it).asSequence() }.mapNotNull { it.str("value") }.toList()
-            val year = values("P577").filterIsInstance<JSONObject>().mapNotNull { it.str("time")?.removePrefix("+")?.take(4)?.toIntOrNull() }.minOrNull()
-            return MetaResult(0, MediaKind.MOVIE, title, originalTitle = values("P1476").filterIsInstance<JSONObject>().firstOrNull()?.str("text"),
+            fun firstYear(prop: String) = values(prop).filterIsInstance<JSONObject>().mapNotNull {
+                it.str("time")?.removePrefix("+")?.take(4)?.toIntOrNull()
+            }.minOrNull()
+            val year = firstYear("P577") ?: if (kind == MediaKind.SHOW) firstYear("P580") else null
+            val documentary = "Q116515088" in types || "Q93204" in types ||
+                values("P136").filterIsInstance<JSONObject>().any { it.str("id") == "Q93204" }
+            return MetaResult(0, kind, title, originalTitle = values("P1476").filterIsInstance<JSONObject>().firstOrNull()?.str("text"),
                 synonyms = names.distinct(), year = year, imdbId = values("P345").filterIsInstance<String>().firstOrNull(),
-                publicMovieKey = "wikidata:$id")
+                genres = if (documentary) listOf("Documentary") else emptyList(),
+                publicMovieKey = if (kind == MediaKind.SHOW) "wikidata-tv:$id" else "wikidata:$id")
         }
 
         private fun ofdb(j: JSONObject): MetaResult? {
@@ -332,12 +413,12 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
                 imdbId = a.str("field_imdb"), publicMovieKey = "ofdb:$id")
         }
 
-        private fun overview(entries: List<JSONObject>, lang: String, tag: String, field: String, fallback: String?): String? {
+        internal fun overview(entries: List<JSONObject>, lang: String, tag: String, field: String, fallback: String?): String? {
             val readable = entries.filter { Synopsis.forReader(it.str(field), lang) != null }
             return Synopsis.forReader(localized(readable, lang, tag, field) ?: fallback, lang)
         }
 
-        private fun localized(entries: List<JSONObject>, lang: String, tag: String, field: String): String? {
+        internal fun localized(entries: List<JSONObject>, lang: String, tag: String, field: String): String? {
             val preferred = lang.lowercase(Locale.ROOT)
             val base = preferred.substringBefore('-')
             fun weight(code: String) = when {
@@ -354,29 +435,36 @@ class PublicMovieCatalog internal constructor(private val read: suspend (String,
     }
 }
 
-private fun JSONObject.str(field: String) = optString(field).takeUnless { isNull(field) || it.isBlank() }
-private fun JSONObject.objects(field: String): List<JSONObject> = optJSONArray(field)?.let { a ->
+internal fun JSONObject.str(field: String) = optString(field).takeUnless { isNull(field) || it.isBlank() }
+internal fun JSONObject.objects(field: String): List<JSONObject> = optJSONArray(field)?.let { a ->
     (0 until a.length()).mapNotNull { a.optJSONObject(it) }
 }.orEmpty()
-private fun JSONObject.strings(field: String): List<String> = optJSONArray(field)?.let { a ->
+internal fun JSONObject.strings(field: String): List<String> = optJSONArray(field)?.let { a ->
     (0 until a.length()).mapNotNull { (a.opt(it) as? String)?.takeIf(String::isNotBlank) }
 }.orEmpty()
 
 private fun publicMovieReader(root: File): suspend (String, String) -> JSONObject? {
     val caches = ConcurrentHashMap<String, CachedFetch>()
-    val limits = PublicMovieCatalog.Source.entries.associate { it.host to RateLimiter(if (it == PublicMovieCatalog.Source.NEO) 2300 else 1800) }
+    val requestLocks = Array(64) { Mutex() }
+    val limits = PublicMovieCatalog.Source.entries.associate { it.host to RateLimiter(if (it == PublicMovieCatalog.Source.NEO) 2300 else 1800) } +
+        mapOf("api.tvmaze.com" to RateLimiter(650), "archive.org" to RateLimiter(1500),
+            "v3-cinemeta.strem.io" to RateLimiter(1500), "public-api.wordpress.com" to RateLimiter(1500))
     return { url, language ->
         withContext(Dispatchers.IO) {
             val cache = caches.getOrPut(language) { CachedFetch(File(root, "public-movies/$language"), memoryEntries = 12) }
-            val cached = cache.cached(url)
-            val body = if (cached != null) cached.takeUnless { it == CachedFetch.MISS } else {
-                limits.getValue(java.net.URI(url).host).withPermit {
-                    cache.get(url, mapOf("Accept" to "application/json", "Accept-Language" to language,
-                        "User-Agent" to "RealityNASPlayer/1.0 (+https://github.com/jason-jm/reality-nas-player)"), throwOnTransient = true)
+            val body = cache.cached(url) ?: requestLocks[(url.hashCode() and Int.MAX_VALUE) % requestLocks.size].withLock {
+                cache.cached(url) ?: run {
+                    if (Http.cooling(url)) throw TransientHttpException(url)
+                    limits.getValue(java.net.URI(url).host).withPermit {
+                        cache.get(url, mapOf("Accept" to "application/json", "Accept-Language" to language,
+                            "User-Agent" to "RealityNASPlayer/1.0 (+https://github.com/jason-jm/reality-nas-player)"), throwOnTransient = true)
+                    }
                 }
             }
             try {
-                body?.let(::JSONObject)
+                body?.takeUnless { it == CachedFetch.MISS }?.let { text ->
+                    if (text.trimStart().startsWith("[")) JSONObject().put("items", org.json.JSONArray(text)) else JSONObject(text)
+                }
             } catch (_: org.json.JSONException) {
                 // Captive portals and faulty gateways sometimes answer HTTP 200 with HTML.
                 // Let the next catalogue run, and let a later scan retry this one.

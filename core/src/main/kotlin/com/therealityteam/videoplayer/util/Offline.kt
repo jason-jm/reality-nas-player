@@ -15,6 +15,7 @@ object Offline {
     private val HOSTS = listOf(
         "themoviedb.org", "tmdb.org", "anilist.co", "bgm.tv", "bangumi.tv", "jikan.moe", "myanimelist.net",
         "omdbapi.com", "imdbws.com", "imdb.com", "media-amazon.com", "fanart.tv", "douban.com", "doubanio.com",
+        "tvmaze.com", "every.film", "neodb.social", "wikidata.org", "ofdb.cc", "archive.org", "v3-cinemeta.strem.io",
     )
 
     /** Whether [url] is one of those databases and the user has asked for none of them. */

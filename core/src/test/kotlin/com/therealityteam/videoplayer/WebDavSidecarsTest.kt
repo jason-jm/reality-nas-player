@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Test
 import java.net.InetSocketAddress
@@ -30,6 +31,30 @@ class WebDavSidecarsTest {
             append("</D:resourcetype></D:prop></D:propstat></D:response>")
         }
         append("</D:multistatus>")
+    }
+
+    @Test fun `one root scan visits folders beyond the former limits and preserves disc stream sizes`() = runBlocking {
+        val origin = "https://nas.test"
+        val previous = WebDavSource.sendPropfind
+        WebDavSource.sendPropfind = { url, _, request ->
+            require("<d:getcontentlength/>" in request)
+            if (url == "$origin/video/") {
+                multistatus(*(1..220).map { "/video/$it/" to true }.toTypedArray())
+            } else {
+                val dir = url.removePrefix(origin)
+                val entries = (1..11).map { "${dir}${it.toString().padStart(5, '0')}.m2ts" to false }
+                multistatus(*entries.toTypedArray()).replace("</D:prop>", "<D:getcontentlength>8589934592</D:getcontentlength></D:prop>")
+            }
+        }
+        try {
+            val share = MediaSourceConfig("dav", SourceType.WEBDAV, "video", "$origin/video/")
+            val listing = WebDavSource().listing(share)
+            assertFalse(listing.cut)
+            assertEquals(2420, listing.videos.size)
+            assertEquals(8589934592L, listing.videos.last().size)
+        } finally {
+            WebDavSource.sendPropfind = previous
+        }
     }
 
     @Test fun `a WebDAV folder's nfo and poster are found and read`(): Unit = runBlocking {

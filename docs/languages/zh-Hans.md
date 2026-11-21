@@ -4,7 +4,7 @@
 
 [English](../../README.md) · **简体中文** · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-[下载正式签名 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
+[下载正式签名 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
 
 ![PICO Space Pro 上的 NAS 识别与海报片库](../showcase/features/zh-Hans/key-art-landscape.webp)
 
@@ -16,7 +16,7 @@
 
 在已公开的 NAS 电影测试中，**267 部电影认对 266 部**，每部都取得海报。另有 1 部保留待识别，错配为 0 部。[电影测试与评分口径](https://github.com/jason-jm/reality-nas-player/blob/v1.1.0/docs/keyless-verification.md)
 
-**v1.2.0-rc.1 预览版新增免 Key 的在线剧集匹配。** 它能跨公开片目核对电视剧，用播出机构和年份识别系列纪录片，还内置多语动漫片名索引供离线查询。[预览版与发行说明](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
+电视剧和系列纪录片可通过 TVmaze 等公开资料库免密钥匹配，动漫支持离线匹配多语片名。WebDAV 可扫描更大的片库，并读取文件大小以选择原盘正片。 [1.2.0](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0)
 
 ## 连接 NAS 共享目录和媒体服务器
 
@@ -54,4 +54,4 @@
 
 还可以提前下载影片到头显，用自己的 SMB 共享同步观看进度、收藏和匹配修正。macOS 和 Windows 桌面版可从源码构建。 [从源码构建桌面版](../build.md)
 
-[下载正式签名 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
+[下载正式签名 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

@@ -165,6 +165,8 @@ def main():
     add("Reality NAS Player 由下列开源软件构成或使用了它们，感谢各位作者。组件清单之后附有各许可证全文。\n"
         "Reality NAS Player is built with the open-source software listed below; the full licence texts follow the list.")
 
+    add("■ 影片与剧集资料 · Media catalogues")
+    add("Animation title index: bangumi-data contributors, version 0.3.237. Titles, dates, formats and public identifiers are selected and repacked for offline lookup. https://github.com/bangumi-data/bangumi-data — CC BY 4.0, https://creativecommons.org/licenses/by/4.0/\nSeries and episode metadata: TVmaze, https://www.tvmaze.com/api — CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/")
     add("■ 原生库 · Native libraries")
     add("FFmpeg 8.1.1 — LGPL-2.1-or-later\n"
         "  libavcodec、libavformat、libavutil、libavfilter、libavdevice、libswresample、libswscale（独立的共享库 .so，供 mpv 使用）。\n"

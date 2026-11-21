@@ -3,6 +3,7 @@ package com.therealityteam.videoplayer.data.source
 import com.therealityteam.videoplayer.data.model.MediaSourceConfig
 import com.therealityteam.videoplayer.data.model.SourceType
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.withContext
 import java.net.HttpURLConnection
 import java.net.URL
@@ -41,6 +42,7 @@ class WebDavSource : MediaSourceProvider {
             val unread = mutableListOf<String>()
 
             while (queue.isNotEmpty() && dirsVisited < MAX_DIRS && videos.size < MAX_FILES) {
+                ensureActive()
                 val dir = queue.removeFirst()
                 if (!seen.add(dir)) continue
                 dirsVisited++
@@ -55,7 +57,7 @@ class WebDavSource : MediaSourceProvider {
                         entry.isCollection -> if (entry.url != dir && !SkippedFolders.skip(entry.name)) queue.add(entry.url)
                         entry.name.substringAfterLast('.', "").lowercase() in VIDEO_EXTENSIONS -> videos += folder to entry
                         Sidecars.isCandidate(entry.name) -> {
-                            candidates.getOrPut(folder) { HashMap() }[entry.name] = null
+                            candidates.getOrPut(folder) { HashMap() }[entry.name] = entry.size
                             addresses["$folder|${entry.name}"] = entry.url
                         }
                     }
@@ -65,7 +67,9 @@ class WebDavSource : MediaSourceProvider {
                 addresses["$folder|$name"] ?: "$folder/$name"
             }
             SourceListing(
-                videos = videos.mapIndexed { i, (_, entry) -> DiscoveredVideo(path = entry.url, fileName = entry.name, local = local[i]) },
+                videos = videos.mapIndexed { i, (_, entry) ->
+                    DiscoveredVideo(path = entry.url, fileName = entry.name, size = entry.size, local = local[i])
+                },
                 unread = unread,
                 // Stopped at a limit with folders still to list: what they hold is unknown.
                 cut = queue.isNotEmpty(),
@@ -84,7 +88,7 @@ class WebDavSource : MediaSourceProvider {
             parseEntries(body, origin, dir).filter { !it.isCollection }.map { it.name to it.url }
         }
 
-    internal data class Entry(val url: String, val name: String, val isCollection: Boolean)
+    internal data class Entry(val url: String, val name: String, val isCollection: Boolean, val size: Long?)
 
     /** XML character references and the five named entities, as text. */
     private fun xmlText(s: String): String {
@@ -112,7 +116,13 @@ class WebDavSource : MediaSourceProvider {
             // A path's own decoding: URLDecoder is a form's, and read Apache's bare + ("Tom & Jerry + Friends") as a
             // space — the file named, and scraped, as "Tom & Jerry   Friends".
             val name = URLDecoder.decode(url.trimEnd('/').substringAfterLast('/').replace("+", "%2B"), "UTF-8")
-            Entry(url = url, name = name, isCollection = isCollection)
+            val size = PROPSTAT.findAll(block).firstNotNullOfOrNull { result ->
+                val properties = result.groupValues[1]
+                val status = STATUS.find(properties)?.groupValues?.get(1)
+                if (status != null && !status.startsWith('2')) null
+                else CONTENT_LENGTH.find(properties)?.groupValues?.get(1)?.toLongOrNull()
+            }
+            Entry(url = url, name = name, isCollection = isCollection, size = size)
         }.filter { it.name.isNotEmpty() }
     }
 
@@ -183,10 +193,13 @@ class WebDavSource : MediaSourceProvider {
             }
         }
 
-        private const val MAX_DIRS = 200
-        private const val MAX_FILES = 2000
+        private val PROPSTAT = Regex("""<(?:[\w.-]+:)?propstat\b[^>]*>(.*?)</(?:[\w.-]+:)?propstat>""", setOf(RegexOption.IGNORE_CASE, RegexOption.DOT_MATCHES_ALL))
+        private val STATUS = Regex("""<(?:[\w.-]+:)?status>\s*HTTP/\S+\s+(\d{3})""", RegexOption.IGNORE_CASE)
+        private val CONTENT_LENGTH = Regex("""<(?:[\w.-]+:)?getcontentlength\b[^>]*>\s*(\d+)\s*</""", RegexOption.IGNORE_CASE)
+        private const val MAX_DIRS = 50_000
+        private const val MAX_FILES = 50_000
         private const val PROPFIND_BODY =
             "<?xml version=\"1.0\"?><d:propfind xmlns:d=\"DAV:\"><d:prop>" +
-                "<d:resourcetype/><d:getcontenttype/></d:prop></d:propfind>"
+                "<d:resourcetype/><d:getcontenttype/><d:getcontentlength/></d:prop></d:propfind>"
     }
 }

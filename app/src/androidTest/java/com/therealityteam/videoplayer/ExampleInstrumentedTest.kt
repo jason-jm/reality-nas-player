@@ -6,7 +6,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Test
 import org.junit.runner.RunWith
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import com.therealityteam.videoplayer.platform.LaunchActivity
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -19,6 +20,9 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.therealityteam.videoplayer", appContext.packageName)
+        assertEquals(BuildConfig.APPLICATION_ID, appContext.packageName)
+        val launcher = appContext.packageManager.getLaunchIntentForPackage(appContext.packageName)?.component
+        assertEquals(appContext.packageName, launcher?.packageName)
+        assertEquals(LaunchActivity::class.java.name, launcher?.className)
     }
 }

@@ -1175,8 +1175,20 @@ object FilenameParser {
     }
 
     /** Container folders that name a location, not a title — never used as the show name. */
-    /** An address's scheme as the path splits it ("smb:" before "//host"): not a folder of the film's. */
-    private val URI_SCHEMES = setOf("smb:", "http:", "https:", "ftp:", "sftp:", "nfs:")
+    /** Candidates stop at the library shelf. Network authorities and SMB share names are never titles. */
+    private fun nameSegments(path: String): List<String> {
+        val normalized = path.replace('\\', '/').trimEnd('/')
+        val remote = normalized.indexOf("://")
+        var relative = if (remote < 0) normalized else normalized.substring(remote + 3).substringAfter('/', "")
+        if (remote >= 0 && normalized.startsWith("smb://", ignoreCase = true))
+            relative = relative.substringAfter('/', "")
+        val parts = relative.split('/').filter(String::isNotBlank)
+        val boundary = parts.dropLast(1).indexOfLast { it.lowercase() in NAME_BOUNDARIES }
+        return parts.drop(boundary + 1)
+    }
+
+    private val NAME_BOUNDARIES = MOVIE_ROOTS + TV_ROOTS + DOC_ROOTS + ANIME_ROOTS + MUSIC_ROOTS +
+        setOf("video", "videos", "media")
 
     private val CONTAINER_FOLDERS = setOf(
         "video", "videos", "movie", "movies", "film", "films", "tv", "tvshow", "tvshows",
@@ -1249,8 +1261,7 @@ object FilenameParser {
      * loose at a shelf root answers nothing.
      */
     fun showFolderTitle(path: String): String? {
-        val segments = path.replace('\\', '/').trimEnd('/').split('/')
-            .filter { it.isNotBlank() && it !in URI_SCHEMES }
+        val segments = nameSegments(path)
         segments.dropLast(1).asReversed().take(4).forEach { folder ->
             if (folder.lowercase() in CONTAINER_FOLDERS || isSeasonFolder(folder)) return@forEach
             val p = parse(folder)
@@ -1260,9 +1271,7 @@ object FilenameParser {
     }
 
     fun parseFromPath(path: String): ParsedName {
-        val norm = path.replace('\\', '/').trimEnd('/')
-        val segments = norm.split('/')
-            .filter { it.isNotBlank() && it !in URI_SCHEMES }
+        val segments = nameSegments(path)
         if (segments.isEmpty()) return ParsedName("")
         val fileName = segments.last()
         val folders = segments.dropLast(1).asReversed() // nearest parent first

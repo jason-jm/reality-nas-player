@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [简体中文](zh-Hans.md) · **繁體中文** · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-[下載正式簽署的 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [官網](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
+[下載正式簽署的 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [官網](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
 
 ![PICO Space Pro 上的 NAS 辨識與海報片庫](../showcase/features/zh-Hant/key-art-landscape.webp)
 
@@ -16,7 +16,7 @@
 
 在已公開的 NAS 電影測試中，**267 部電影辨識正確 266 部**，每部均取得海報，另有 1 部待辨識，錯配 0 部。[電影測試與評分方式](https://github.com/jason-jm/reality-nas-player/blob/v1.1.0/docs/keyless-verification.md)
 
-**v1.2.0-rc.1 預覽版加入免金鑰的影集線上比對。** 它會跨公開片目核對影集，以播出機構和年份辨識系列紀錄片，並內建多語動畫片名索引供離線查詢。[預覽版與發行說明](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
+影集和系列紀錄片可透過 TVmaze 等公開資料庫比對，無須 API 金鑰。動畫支援離線比對多語片名。WebDAV 可掃描更大的片庫，並依檔案大小選取原盤正片。 [1.2.0](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0)
 
 ## 連接 NAS 或家中的媒體伺服器
 
@@ -54,4 +54,4 @@
 
 也可預先下載影片到頭戴裝置，透過自己的 SMB 共享資料夾同步觀看進度、收藏與比對修正。macOS 和 Windows 桌面版可從原始碼建置。 [從原始碼建置桌面版](../build.md)
 
-[下載正式簽署的 APK · v1.1.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
+[下載正式簽署的 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

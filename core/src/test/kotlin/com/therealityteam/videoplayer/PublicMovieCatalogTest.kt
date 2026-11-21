@@ -159,6 +159,36 @@ class PublicMovieCatalogTest {
         assertEquals(2018, catalog.match(ParsedName("A Summer Crossing"))?.year)
     }
 
+    @Test fun aMiniseriesUsesItsSeriesIdentityAndOnlyResolvesAConflictingFilmWhenTheIdsAgree() = runBlocking {
+        val name = "Winter Crossing"
+        val id = "tt1234567"
+        val key = "abcdefghijklmnop"
+        val card = JSONObject().put("type", "Movie").put("url", "/movie/$key").put("title", name)
+            .put("year", 2008).put("imdb", id)
+        val entity = wikiFilm(name, id, 2008)
+        val claims = entity.getJSONObject("claims")
+        claims.put("P31", claim(JSONObject().put("id", "Q1259759")))
+        claims.remove("P577")
+        claims.put("P580", claim(JSONObject().put("time", "+2008-02-01")))
+        val catalog = PublicMovieCatalog { url, _ -> when {
+            "category=movie" in url -> JSONObject().put("data", JSONArray().put(card))
+            "/api/movie/" in url -> card
+            "wbsearchentities" in url -> JSONObject().put("search", JSONArray().put(JSONObject().put("id", "Q123")))
+            "wbgetentities" in url -> JSONObject().put("entities", JSONObject().put("Q123", entity))
+            else -> null
+        } }
+        assertTrue(catalog.search(PublicMovieCatalog.Source.WIKI, name).isEmpty())
+        assertEquals("wikidata-tv:Q123", catalog.series.match(listOf(name), 2008, 1, false)?.publicMovieKey)
+        assertNull(catalog.series.match(listOf(name), 2008, 1, true))
+        assertEquals("wikidata-tv:Q123", catalog.detail("wikidata:Q123")?.publicMovieKey)
+        assertEquals("neodb:$key", catalog.match(ParsedName(name))?.publicMovieKey)
+        assertEquals("wikidata-tv:Q123", catalog.match(ParsedName(name), allowSeries = true)?.publicMovieKey)
+        card.put("imdb", "tt9876543")
+        assertEquals("neodb:$key", catalog.match(ParsedName(name), allowSeries = true)?.publicMovieKey)
+        claims.put("P31", claim(JSONObject().put("id", "Q1258086")))
+        assertNull(catalog.detail("wikidata-tv:Q123"))
+    }
+
     @Test fun failedArtworkRefreshKeepsThePreviousImage() = runBlocking {
         val pictures = ArtworkCache(tmp.newFolder()) { _, _, _ -> null }
         val saved = pictures.store("cover", "first") { it.write(123); true }!!

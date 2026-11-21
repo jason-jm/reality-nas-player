@@ -5,6 +5,13 @@ Reality NAS Player 由下列开源软件构成或使用了它们，感谢各位�
 Reality NAS Player is built with the open-source software listed below; the full licence texts follow the list.
 
 
+■ 影片与剧集资料 · Media catalogues
+
+
+Animation title index: bangumi-data contributors, version 0.3.237. Titles, dates, formats and public identifiers are selected and repacked for offline lookup. https://github.com/bangumi-data/bangumi-data — CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
+Series and episode metadata: TVmaze, https://www.tvmaze.com/api — CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/
+
+
 ■ 原生库 · Native libraries
 
 

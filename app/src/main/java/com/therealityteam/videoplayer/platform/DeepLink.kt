@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 /**
  * Launch-intent requests handed from [LaunchActivity] to the composition. One use today:
  *
- *   adb shell am start -n <pkg>/.platform.LaunchActivity -e aura.play "关键词"
+ *   adb shell am start -n <pkg>/com.therealityteam.videoplayer.platform.LaunchActivity -e aura.play "关键词"
  *
  * plays the first library item whose title or file name contains the keyword — the
  * automation entry every playback change is verified through (the emulator's spatial
