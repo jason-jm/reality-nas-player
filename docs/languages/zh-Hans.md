@@ -4,7 +4,7 @@
 
 [English](../../README.md) · **简体中文** · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-[下载正式签名 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
+[下载正式签名 APK · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
 
 ![PICO Space Pro 上的 NAS 识别与海报片库](../showcase/features/zh-Hans/key-art-landscape.webp)
 
@@ -54,4 +54,4 @@
 
 还可以提前下载影片到头显，用自己的 SMB 共享同步观看进度、收藏和匹配修正。macOS 和 Windows 桌面版可从源码构建。 [从源码构建桌面版](../build.md)
 
-[下载正式签名 APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
+[下载正式签名 APK · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

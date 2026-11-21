@@ -4,7 +4,7 @@
 
 [English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · **日本語** · [한국어](ko.md) · [Español](es.md) · [Deutsch](de.md) · [Français](fr.md) · [🌐 23](README.md)
 
-[署名済み APK をダウンロード · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [公式サイト](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
+[署名済み APK をダウンロード · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [公式サイト](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
 ![PICO Space Pro での NAS スキャンとポスターライブラリ](../showcase/features/ja/key-art-landscape.webp)
 
@@ -46,4 +46,4 @@
 
 ![180°・360° 動画の投影と立体配置の設定](../showcase/features/ja/07-panoramic-video.webp)
 
-[署名済み APK をダウンロード · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
+[署名済み APK をダウンロード · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

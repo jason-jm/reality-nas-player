@@ -1,8 +1,8 @@
 # Build Reality NAS Player
 
-[Product guide](../README.md) · [Choose a language](languages/README.md) · [v1.2.0 downloads](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0)
+[Product guide](../README.md) · [Choose a language](languages/README.md) · [v1.2.1 downloads](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.1)
 
-**Want to watch a film on PICO Space Pro?** Download the signed [headset APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk). These instructions are for running the desktop edition or building the headset app yourself. There is no prebuilt desktop installer in v1.2.0.
+**Want to watch a film on PICO Space Pro?** Download the signed [headset APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk). These instructions are for running the desktop edition or building the headset app yourself. There is no prebuilt desktop installer in v1.2.1.
 
 ## On your Mac or Windows PC
 
@@ -22,4 +22,4 @@ Use JDK 21, Android SDK Platform 36 and Android SDK Build Tools. Configure the S
 ./gradlew :core:test :app:testDebugUnitTest
 ```
 
-On Windows, use `.\gradlew.bat` in place of `./gradlew`. The debug APK is written to `app/build/outputs/apk/debug/`. The [v1.2.0 release](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0) includes checksums for the signed headset APK and the corresponding native source archive.
+On Windows, use `.\gradlew.bat` in place of `./gradlew`. The debug APK is written to `app/build/outputs/apk/debug/`. The [v1.2.1 release](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.1) includes checksums for the signed headset APK and the corresponding native source archive.

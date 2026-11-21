@@ -3,7 +3,7 @@
 # theater's screen in it (seat and screen of the catalogue entry), room lights LIGHTS (hold|off); 30 s to settle, then a
 # 20 s Perfetto trace with a live GPU report beside it. Prints frames and their kinds (Miss/Late), GPU ms, and GPU load =
 # use × clock (healthy ≈ 420, ceiling ≈ 600), and the app's graphics memory. Traces go to ./traces/.
-SP=$(cd "$(dirname "$0")" && pwd); D=${DEVICE:-PB3310PGL7200077B}; PKG=com.therealityteam.realitynasplayer.dev; P=/sdcard/Android/data/$PKG/files
+SP=$(cd "$(dirname "$0")" && pwd); D=${DEVICE:-PB3310PGL7200077B}; PKG=com.therealityteam.realityplayer.dev; P=/sdcard/Android/data/$PKG/files
 export ADB_LIBUSB=1
 name=$1; env=$2; lights=$3
 adb -s $D shell am force-stop $PKG; sleep 1

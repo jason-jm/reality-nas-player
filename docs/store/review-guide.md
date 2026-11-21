@@ -1,4 +1,4 @@
-# Reality NAS Player 1.2.0 (8)
+# Reality NAS Player 1.2.1 (9)
 
 ## 中文审核说明
 

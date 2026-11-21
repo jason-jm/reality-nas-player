@@ -4,7 +4,7 @@ Identify films, organise episodes and play NAS video on **PICO Space Pro**.
 
 **English** · [简体中文](docs/languages/zh-Hans.md) · [繁體中文](docs/languages/zh-Hant.md) · [日本語](docs/languages/ja.md) · [한국어](docs/languages/ko.md) · [Español](docs/languages/es.md) · [Deutsch](docs/languages/de.md) · [Français](docs/languages/fr.md) · [🌐 23](docs/languages/README.md)
 
-[Download the signed APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [Product site](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
+[Download the signed APK · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [Product site](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
 ![NAS file matching and the headset library on PICO Space Pro](docs/showcase/features/en/key-art-landscape.webp)
 
@@ -54,4 +54,4 @@ Turn your head to look around. Use side-by-side or top/bottom stereo, fisheye or
 
 Download a film to the headset for offline viewing. An optional SMB share can sync watch progress, favourites and match corrections between devices. The macOS and Windows desktop app can be built from source. [Build the desktop app](docs/build.md)
 
-[Download the signed APK · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](docs/languages/README.md)
+[Download the signed APK · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](docs/languages/README.md)

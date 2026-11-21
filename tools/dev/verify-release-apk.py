@@ -98,7 +98,7 @@ def verify_native_library(apk, name):
 
 if len(sys.argv) == 4:
     manifest = Path(sys.argv[3]).read_text()
-    app_id = "com.therealityteam.realitynasplayer"
+    app_id = "com.therealityteam.realityplayer"
     if not re.search(rf'^\s*A: package="{re.escape(app_id)}"', manifest, re.M):
         sys.exit("Unexpected release application ID")
     if 'androidx.compose.ui.tooling.PreviewActivity' in manifest:

@@ -22,12 +22,12 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.therealityteam.realitynasplayer"
+        applicationId = "com.therealityteam.realityplayer"
         manifestPlaceholders["appLabel"] = "@string/app_name"
         minSdk = 35
         targetSdk = 35
-        versionCode = 8
-        versionName = "1.2.0"
+        versionCode = 9
+        versionName = "1.2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk { abiFilters.add("arm64-v8a") }
@@ -49,9 +49,9 @@ android {
     }
 
     buildTypes {
-        // -Paura.devPackage: a debug build beside the installed app (….realitynasplayer.dev, "Reality NAS Player Dev"), for a
+        // -Paura.devPackage: a debug build beside the installed app (….realityplayer.dev, "Reality NAS Player Dev"), for a
         // headset whose Aura was signed on another machine — its library and settings stay as they are.
-        // -Paura.devPackage=<name> names another (….realitynasplayer.<name>, "Reality NAS Player <Name>"): =fresh is an empty
+        // -Paura.devPackage=<name> names another (….realityplayer.<name>, "Reality NAS Player <Name>"): =fresh is an empty
         // install beside both, for trying what a new user first sees without clearing anybody's library.
         debug {
             buildConfigField("boolean", "AUTOMATION", "true")

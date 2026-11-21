@@ -25,8 +25,8 @@ python3 tools/dev/make-audio-gauntlet.py /tmp/audio-gauntlet.mkv
 ./gradlew -Paura.devPackage :app:assembleDebug :app:assembleDebugAndroidTest
 adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk
 adb -s emulator-5556 install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
-adb -s emulator-5556 shell -T 'run-as com.therealityteam.realitynasplayer.dev sh -c "cat > files/audio-gauntlet.mkv"' < /tmp/audio-gauntlet.mkv
-adb -s emulator-5556 shell am instrument -w -e class com.therealityteam.videoplayer.AudioCodecGauntletTest com.therealityteam.realitynasplayer.dev.test/androidx.test.runner.AndroidJUnitRunner
+adb -s emulator-5556 shell -T 'run-as com.therealityteam.realityplayer.dev sh -c "cat > files/audio-gauntlet.mkv"' < /tmp/audio-gauntlet.mkv
+adb -s emulator-5556 shell am instrument -w -e class com.therealityteam.videoplayer.AudioCodecGauntletTest com.therealityteam.realityplayer.dev.test/androidx.test.runner.AndroidJUnitRunner
 ```
 
 测试逐轨检查实际选择的 MIME、已初始化的 FFmpeg 解码器、送到音频输出的新增缓冲区和播放位置。发布前在头显上另验听感和声道定位。

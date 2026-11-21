@@ -4,7 +4,7 @@ Filme erkennen, Serien ordnen und NAS-Videos auf **PICO Space Pro** abspielen.
 
 [English](../../README.md) · [简体中文](zh-Hans.md) · [繁體中文](zh-Hant.md) · [日本語](ja.md) · [한국어](ko.md) · [Español](es.md) · **Deutsch** · [Français](fr.md) · [🌐 23](README.md)
 
-[Signierte APK herunterladen · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
+[Signierte APK herunterladen · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [Web](https://jason-jm.github.io/reality-nas-player/) · [▶ 0:31](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
 ![Reality NAS Player · PICO Space Pro](../showcase/features/en/key-art-landscape.webp)
 
@@ -46,4 +46,4 @@ Sieh dich mit Kopfbewegungen um. Der Player unterstützt Stereo nebeneinander od
 
 ![VR180 und 360° abspielen](../showcase/features/en/07-panoramic-video.webp)
 
-[Signierte APK herunterladen · v1.2.0](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.0/reality-nas-player-1.2.0-8.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)
+[Signierte APK herunterladen · v1.2.1](https://github.com/jason-jm/reality-nas-player/releases/download/v1.2.1/reality-nas-player-1.2.1-9.apk) · [GitHub Releases](https://github.com/jason-jm/reality-nas-player/releases) · [MIT](https://github.com/jason-jm/reality-nas-player/blob/main/LICENSE) · [🌐 23](README.md)

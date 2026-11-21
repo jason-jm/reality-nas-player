@@ -7,7 +7,7 @@
 #   NOPAUSE=1 to leave it playing. On the emulator play a silent track (FILM=Silence.m4a NOPAUSE=1): its video sampling
 #   crashes MoltenVK. There the lights want LIGHTS=hold: with the user's Aura installed beside the dev one, the pause key
 #   can reach the other's session, the film plays on, and 观影灯光 takes the room lights down.
-export ADB_LIBUSB=1; D=$1; pre=$2; glb=$3; lights=${4:-on}; P=com.therealityteam.realitynasplayer.dev
+export ADB_LIBUSB=1; D=$1; pre=$2; glb=$3; lights=${4:-on}; P=com.therealityteam.realityplayer.dev
 F=/sdcard/Android/data/$P/files
 # VIEWS="name:x,y,z,yaw …" for another place's vantage points (aura.env_pose's figures); the private theater's by default
 VIEWS=${VIEWS:-"seat:0,0.36,5.37,0 overview:2.9,1.3,9.2,-22 stage:0,0.38,0.9,180 side:3.1,0.36,5.6,-90"}
