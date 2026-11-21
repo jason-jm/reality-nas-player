@@ -13,6 +13,8 @@
 
 </details>
 
+**[Katso 31 sekunnin esittelyvideo](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Virallinen sivusto](https://jason-jm.github.io/reality-nas-player/)
+
 ![Oma elokuvateatteri PICO Space Prolle. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Avaa NAS-palvelimelle vuosien varrella keräämäsi elokuva-, sarja- ja animekansiot. Reality NAS Player tunnistaa teokset, järjestää jaksot ja kokoaa lisämateriaalin sarjan yhteyteen. Valitse kansikuva **PICO Space Prolla** ja istahda katsomoon, jonka ikkunasta näkyy Maa.

@@ -13,6 +13,8 @@
 
 </details>
 
+**[Guarda il video di 31 secondi](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Sito ufficiale](https://jason-jm.github.io/reality-nas-player/)
+
 ![La tua sala cinematografica, progettata per PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Apri le cartelle di film, serie e anime che hai raccolto negli anni sul NAS. Reality NAS Player ne riconosce i titoli, riordina gli episodi e mette gli extra accanto all’opera giusta. Su **PICO Space Pro** scegli una locandina e prendi posto con vista sulla Terra.

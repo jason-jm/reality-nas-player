@@ -13,13 +13,17 @@
 
 </details>
 
-![A closer view of Polar Letter playing on the Space Lounge screen, with Earth visible through the windows.](docs/showcase/00-screening-room-en.webp)
+A file called `video1.mkv` can still belong to *Interstellar*. Reality NAS Player reads the surrounding folder, the release year and your existing metadata to find what you meant. Choose a cover on **PICO Space Pro** and watch the film from a window seat above Earth. Your episodes, disc backups and 180° or 360° recordings can come along too.
 
-Point Reality NAS Player at the folders you already keep on your NAS. It can find the film behind a file called `video1.mkv`, put a box set in episode order and give a theatrical spin-off its own cover. Pick a title from the poster wall on **PICO Space Pro** and watch it from a seat above Earth.
+**[Watch the 31-second launch film](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Explore the official site](https://jason-jm.github.io/reality-nas-player/) · [Try the v1.2.0-rc.1 matching preview](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
+
+[![Reality NAS Player running in the Space Lounge, built for PICO Space Pro.](docs/media/film-cover.jpg)](https://jason-jm.github.io/reality-nas-player/?watch=1)
 
 **[Get the v1.1.0 headset app](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [Release notes and checksums](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [Desktop builds](docs/build.md)
 
 ## Turn NAS folders into a film library
+
+**The matching preview knows more kinds of titles.** TV seasons can be checked against multiple catalogues when shows share a name. For documentaries, the player can compare a broadcaster credit or follow a translated NHK release back to its Japanese title and broadcast year. An on-device multilingual anime index covers thousands of releases even offline. These preview features work without a metadata account or API key. [See the matching examples](https://github.com/jason-jm/reality-nas-player/blob/v1.2.0-rc.1/docs/metadata-matching.md)
 
 ![How a parent folder identifies Interstellar and another episode supplies a full anime title. The headset shows four of eight demo films matched from NFO files on a WebDAV share.](docs/showcase/01-auto-scraping-en.webp)
 

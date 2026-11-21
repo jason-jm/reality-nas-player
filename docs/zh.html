@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reality NAS Player | 为 PICO Space Pro 打造</title>
+    <meta
+      name="description"
+      content="为 PICO Space Pro 打造的开源空间影院。识别 NAS 里的电影，浏览海报墙，把自己的影片带进四个观影空间。"
+    />
+    <meta name="theme-color" content="#101210" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Reality NAS Player | 为 PICO Space Pro 打造"
+    />
+    <meta
+      property="og:description"
+      content="为 PICO Space Pro 打造的开源空间影院。识别 NAS 里的电影，浏览海报墙，把自己的影片带进四个观影空间。"
+    />
+    <meta
+      property="og:image"
+      content="https://jason-jm.github.io/reality-nas-player/media/film-cover.jpg"
+    />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="zh.html" />
+    <link rel="icon" href="media/mark.webp" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="media/SpaceGrotesk.ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="site.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到正文</a>
+    <header class="top wrap">
+      <a class="brand" href="#main"
+        ><img src="media/mark.webp" width="33" height="33" alt="" />Reality NAS
+        Player</a
+      >
+      <nav aria-label="产品指南">
+        <a href="#library">媒体库</a><a href="#rooms">观影空间</a
+        ><a href="#playback">播放体验</a>
+      </nav>
+      <div class="top-actions">
+        <a class="lang" lang="en" href="index.html">English</a
+        ><a class="pill" href="#download">获取应用</a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <picture class="hero-art"
+          ><img
+            src="media/space-lounge.webp"
+            width="1780"
+            height="1001"
+            fetchpriority="high"
+            alt="太空观影厅 · 地球上空的五个座位。"
+        /></picture>
+        <div class="wrap hero-inner">
+          <span class="eyebrow">为 PICO Space Pro 打造</span>
+          <h1>你的 NAS，<br />今晚放映。</h1>
+          <p>
+            让自己的电影和剧集排成一面海报墙。在 PICO Space Pro
+            上选好座位，开场。
+          </p>
+          <div class="buttons">
+            <a class="button" data-film href="media/reality-nas-player.mp4"
+              ><span class="play" aria-hidden="true"></span>观看宣传片 · 0:31</a
+            ><a class="button alt" href="#download">获取应用</a>
+          </div>
+        </div>
+      </section>
+      <div class="wrap hero-foot">太空观影厅 · PICO OS 6 模拟器实录</div>
+      <section id="library" class="content light">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">NAS 自动刮削</div>
+              <h2>从文件名，<br />找到这部片。</h2>
+            </div>
+            <p>
+              添加你一直在用的影视文件夹。播放器结合片名、年份、目录和相邻文件，识别电影，也把剧集排到对应的季和集。
+            </p>
+          </div>
+          <div class="match">
+            <div class="match-in">
+              <h3>NAS 里的文件</h3>
+              <div class="tree">
+                <b>Polar Letter (2026)/</b
+                ><span>Polar.Letter.2026.720p.mp4</span><span>movie.nfo</span
+                ><span>poster.jpg</span><span>fanart.jpg</span>
+              </div>
+            </div>
+            <div class="match-out">
+              <img
+                src="media/film-detail.webp"
+                width="962"
+                height="720"
+                loading="lazy"
+                alt="头显里的《Polar Letter》详情页，含海报、简介和对应视频文件。"
+              />
+            </div>
+          </div>
+          <div class="detail-copy">
+            <article>
+              <h3>沿用整理好的资料</h3>
+              <p>
+                播放器会读取电影旁的 Kodi
+                NFO、海报和背景图。即使断开外网，片库也可以保留原来的样子。
+              </p>
+            </article>
+            <article>
+              <h3>装好就能查</h3>
+              <p>
+                电影和剧集可直接联网识别，无需申请数据库密钥。预览版还能核对纪录片的电视台署名，并通过多语片名识别番剧。
+              </p>
+            </article>
+            <article>
+              <h3>整部剧一次修正</h3>
+              <p>
+                季度目录和集数让剧集按顺序归组。如果配错作品，改一次即可修正整组，重新扫描也会保留。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="content wall">
+        <div class="wrap wall-inner">
+          <div class="wall-copy">
+            <div class="kicker">海报墙</div>
+            <h2>封面一眼，<br />就认出它。</h2>
+            <p>
+              按海报找片，按类型或年代筛选。点开封面可以看演员、选集或开始播放。「继续观看」会带你回到上次停下的位置。
+            </p>
+          </div>
+          <figure class="wall-figure">
+            <img
+              src="media/poster-wall.webp"
+              width="1443"
+              height="1080"
+              loading="lazy"
+              alt="实际头显媒体库里两排共八张演示海报，以及片库分类和筛选控件。"
+            />
+          </figure>
+        </div>
+      </section>
+      <section id="rooms" class="content dark">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">空间影院</div>
+              <h2>今晚，<br />坐哪里？</h2>
+            </div>
+            <p>
+              坐在正中央看银幕，也可以移到窗边看地球。在播放时切换影厅，或把影片放到眼前的悬浮窗口里。
+            </p>
+          </div>
+          <div class="room-nav" role="group" aria-label="观影空间">
+            <button
+              type="button"
+              aria-pressed="true"
+              data-source="media/space-lounge.webp"
+              data-caption="太空观影厅 · 地球上空的五个座位。"
+            >
+              太空观影厅</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/private-cinema.webp"
+              data-caption="私人影院 · 木质放映厅里的三个座位。"
+            >
+              私人影院</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/village-square.webp"
+              data-caption="小镇广场 · 夜幕下的露天庭院。"
+            >
+              小镇广场</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/desert-camp.webp"
+              data-caption="沙漠营地 · 暮色与营地银幕。"
+            >
+              沙漠营地
+            </button>
+          </div>
+          <figure class="rooms-art">
+            <img
+              id="room-img"
+              src="media/space-lounge.webp"
+              width="1780"
+              height="1001"
+              loading="lazy"
+              alt="太空观影厅 · 地球上空的五个座位。"
+            />
+            <figcaption id="room-caption" aria-live="polite">
+              太空观影厅 · 地球上空的五个座位。
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="playback" class="content light">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">播放体验</div>
+              <h2>转身看风景，<br />听清每一句。</h2>
+            </div>
+            <p>
+              全景、立体电影和原盘备份都能进入片库。影片可以保留自己的字幕、配音和音轨。
+            </p>
+          </div>
+          <div class="formats">
+            <article class="feature">
+              <img
+                class="pano"
+                src="media/lake.webp"
+                width="1500"
+                height="609"
+                loading="lazy"
+                alt="实际播放器中湖畔全景演示影片的另一侧视角。"
+              />
+              <h3>180°、360° 与立体 3D</h3>
+              <p>
+                在 360° 影片里回头看身后的湖岸，在 VR180
+                里看眼前的空间，也可以播放左右或上下格式的立体电影。
+              </p>
+            </article>
+            <article class="feature">
+              <img
+                class="tracks"
+                src="media/subtitles.webp"
+                width="979"
+                height="580"
+                loading="lazy"
+                alt="播放《Polar Letter》时打开的字幕样式面板。"
+              />
+              <h3>字幕保留原来的样子</h3>
+              <p>
+                切换配音和字幕，调整同步时间。支持带样式的 ASS/SSA
+                字幕，以及原盘里的 PGS、VobSub 图形字幕。
+              </p>
+            </article>
+          </div>
+          <div class="detail-copy smallfeatures">
+            <article>
+              <h3>接入现有片库</h3>
+              <p>
+                打开本地文件，或连接 SMB、WebDAV、NFS、FTP、SFTP 共享。也支持
+                Jellyfin、Emby、Plex 和 DLNA。
+              </p>
+            </article>
+            <article>
+              <h3>打开原盘正片</h3>
+              <p>
+                可从未加密的蓝光和 DVD 备份中打开正片，支持 ISO、BDMV 和
+                VIDEO_TS。
+              </p>
+            </article>
+            <article>
+              <h3>带上进度出门</h3>
+              <p>
+                提前把影片下载到头显。回家后，可以通过自己的 SMB
+                共享同步观看进度、收藏和匹配修正。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="download" class="content download">
+        <div class="wrap">
+          <div>
+            <h2>入座，开场。</h2>
+            <p>
+              把签名 APK 侧载到运行 PICO OS 6 的 PICO Space
+              Pro。打开一个本地视频，或在「来源」中添加 NAS，即可开始。
+            </p>
+          </div>
+          <div class="buttons">
+            <a
+              class="button"
+              href="https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0"
+              >下载稳定版</a
+            ><a
+              href="https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1"
+              >体验免密钥刮削预览版</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <span class="brand">Reality NAS Player</span>
+      <div class="footlinks">
+        <a href="https://github.com/jason-jm/reality-nas-player">源代码</a
+        ><a
+          href="https://github.com/jason-jm/reality-nas-player/blob/main/docs/languages/README.md"
+          >23 种语言的产品指南</a
+        ><a href="store/privacy.html">隐私政策</a
+        ><a
+          href="https://github.com/jason-jm/reality-nas-player/blob/main/THIRD_PARTY_NOTICES.md"
+          >素材署名</a
+        ><a href="film-zh.html">阅读影片字幕</a>
+      </div>
+    </footer>
+    <dialog id="film" aria-labelledby="film-title">
+      <header>
+        <p id="film-title">Reality NAS Player · 产品宣传片</p>
+        <button type="button" id="close-film">关闭</button>
+      </header>
+      <video
+        controls
+        playsinline
+        preload="none"
+        poster="media/film-cover.jpg"
+        src="media/reality-nas-player.mp4"
+      >
+        <track
+          kind="subtitles"
+          srclang="en"
+          label="English"
+          src="media/film-en.vtt"
+        />
+        <track
+          kind="subtitles"
+          srclang="zh"
+          label="简体中文"
+          src="media/film-zh.vtt"
+        />
+      </video>
+      <footer>
+        原创纯器乐《Orbit Switch》，使用 Suno v6 制作。产品画面来自 PICO
+        模拟器。 <a href="film-zh.html">阅读影片字幕</a>
+      </footer>
+    </dialog>
+  </body>
+</html>

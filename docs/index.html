@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reality NAS Player | Built for PICO Space Pro</title>
+    <meta
+      name="description"
+      content="An open-source spatial cinema for PICO Space Pro. Match films on your NAS, browse the poster wall and watch in four screening rooms."
+    />
+    <meta name="theme-color" content="#101210" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Reality NAS Player | Built for PICO Space Pro"
+    />
+    <meta
+      property="og:description"
+      content="An open-source spatial cinema for PICO Space Pro. Match films on your NAS, browse the poster wall and watch in four screening rooms."
+    />
+    <meta
+      property="og:image"
+      content="https://jason-jm.github.io/reality-nas-player/media/film-cover.jpg"
+    />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="zh-Hans" href="zh.html" />
+    <link rel="icon" href="media/mark.webp" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="media/SpaceGrotesk.ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="site.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top wrap">
+      <a class="brand" href="#main"
+        ><img src="media/mark.webp" width="33" height="33" alt="" />Reality NAS
+        Player</a
+      >
+      <nav aria-label="Product guide">
+        <a href="#library">Library</a><a href="#rooms">Screening rooms</a
+        ><a href="#playback">Playback</a>
+      </nav>
+      <div class="top-actions">
+        <a class="lang" lang="zh-CN" href="zh.html">简体中文</a
+        ><a class="pill" href="#download">Get the app</a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <picture class="hero-art"
+          ><img
+            src="media/space-lounge.webp"
+            width="1780"
+            height="1001"
+            fetchpriority="high"
+            alt="Space Lounge · Five seats above Earth."
+        /></picture>
+        <div class="wrap hero-inner">
+          <span class="eyebrow">Built for PICO Space Pro</span>
+          <h1>Your NAS.<br />Now showing.</h1>
+          <p>
+            Turn your own films and series into a poster wall. Pick a seat and
+            press play on PICO Space Pro.
+          </p>
+          <div class="buttons">
+            <a class="button" data-film href="media/reality-nas-player.mp4"
+              ><span class="play" aria-hidden="true"></span>Watch the film ·
+              0:31</a
+            ><a class="button alt" href="#download">Get the app</a>
+          </div>
+        </div>
+      </section>
+      <div class="wrap hero-foot">
+        Space Lounge · PICO OS 6 emulator capture
+      </div>
+      <section id="library" class="content light">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">NAS matching</div>
+              <h2>From filename<br />to film.</h2>
+            </div>
+            <p>
+              Add the folder you already use. Reality NAS Player reads the name,
+              year and nearby files to bring the right film or episode into
+              view.
+            </p>
+          </div>
+          <div class="match">
+            <div class="match-in">
+              <h3>On your NAS</h3>
+              <div class="tree">
+                <b>Polar Letter (2026)/</b
+                ><span>Polar.Letter.2026.720p.mp4</span><span>movie.nfo</span
+                ><span>poster.jpg</span><span>fanart.jpg</span>
+              </div>
+            </div>
+            <div class="match-out">
+              <img
+                src="media/film-detail.webp"
+                width="962"
+                height="720"
+                loading="lazy"
+                alt="Polar Letter open in the headset with its cover, synopsis and local file."
+              />
+            </div>
+          </div>
+          <div class="detail-copy">
+            <article>
+              <h3>Keep your metadata</h3>
+              <p>
+                The player reads Kodi NFO files and the posters and backdrops
+                beside your films. An existing collection can keep its artwork
+                offline.
+              </p>
+            </article>
+            <article>
+              <h3>Match without a key</h3>
+              <p>
+                Look up films and series without a database account. The preview
+                also checks documentary titles against broadcaster credits and
+                anime names across languages.
+              </p>
+            </article>
+            <article>
+              <h3>Fix a whole series</h3>
+              <p>
+                Season folders and episode numbers keep box sets in order.
+                Correct a match once and your choice survives the next scan.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="content wall">
+        <div class="wrap wall-inner">
+          <div class="wall-copy">
+            <div class="kicker">Artwork library</div>
+            <h2>Recognize it<br />by its cover.</h2>
+            <p>
+              Scan the wall, filter by genre or decade, then open a cover for
+              cast, episodes and playback. Continue watching brings you back to
+              your place.
+            </p>
+          </div>
+          <figure class="wall-figure">
+            <img
+              src="media/poster-wall.webp"
+              width="1443"
+              height="1080"
+              loading="lazy"
+              alt="Eight fictional film covers in the actual headset library, with its filters and category sidebar."
+            />
+          </figure>
+        </div>
+      </section>
+      <section id="rooms" class="content dark">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">Spatial cinema</div>
+              <h2>Where are we<br />watching?</h2>
+            </div>
+            <p>
+              Take the center seat for the screen or sit by the window above
+              Earth. Switch rooms from the player, or bring the film into your
+              own space in a floating window.
+            </p>
+          </div>
+          <div class="room-nav" role="group" aria-label="Screening rooms">
+            <button
+              type="button"
+              aria-pressed="true"
+              data-source="media/space-lounge.webp"
+              data-caption="Space Lounge · Five seats above Earth."
+            >
+              Space Lounge</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/private-cinema.webp"
+              data-caption="Private Cinema · Three seats in a wood-lined screening room."
+            >
+              Private Cinema</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/village-square.webp"
+              data-caption="Village Square · An open-air courtyard after dark."
+            >
+              Village Square</button
+            ><button
+              type="button"
+              aria-pressed="false"
+              data-source="media/desert-camp.webp"
+              data-caption="Desert Camp · A screen under the evening sky."
+            >
+              Desert Camp
+            </button>
+          </div>
+          <figure class="rooms-art">
+            <img
+              id="room-img"
+              src="media/space-lounge.webp"
+              width="1780"
+              height="1001"
+              loading="lazy"
+              alt="Space Lounge · Five seats above Earth."
+            />
+            <figcaption id="room-caption" aria-live="polite">
+              Space Lounge · Five seats above Earth.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="playback" class="content light">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <div class="kicker">Inside the player</div>
+              <h2>Look around.<br />Hear every line.</h2>
+            </div>
+            <p>
+              A film night can be a panorama, a stereo feature or a favorite
+              disc backup. The player keeps your own files, subtitles and
+              soundtracks together.
+            </p>
+          </div>
+          <div class="formats">
+            <article class="feature">
+              <img
+                class="pano"
+                src="media/lake.webp"
+                width="1500"
+                height="609"
+                loading="lazy"
+                alt="A second view of the original lakeside 360-degree demo."
+              />
+              <h3>180°, 360° and stereo 3D</h3>
+              <p>
+                Look over your shoulder in a 360° film, face the action in VR180
+                or watch side-by-side and top-and-bottom stereo on the headset.
+              </p>
+            </article>
+            <article class="feature">
+              <img
+                class="tracks"
+                src="media/subtitles.webp"
+                width="979"
+                height="580"
+                loading="lazy"
+                alt="The in-player subtitle appearance controls over Polar Letter."
+              />
+              <h3>Subtitles with character</h3>
+              <p>
+                Choose a dub, switch tracks or adjust timing. Styled ASS/SSA and
+                image-based PGS and VobSub subtitles travel with the film.
+              </p>
+            </article>
+          </div>
+          <div class="detail-copy smallfeatures">
+            <article>
+              <h3>Connect your share</h3>
+              <p>
+                Open local files or connect over SMB, WebDAV, NFS, FTP or SFTP.
+                Jellyfin, Emby, Plex and DLNA are supported too.
+              </p>
+            </article>
+            <article>
+              <h3>Bring your discs</h3>
+              <p>
+                Open the main feature from an unencrypted Blu-ray or DVD backup.
+                Support includes ISO, BDMV and VIDEO_TS.
+              </p>
+            </article>
+            <article>
+              <h3>Keep your place</h3>
+              <p>
+                Download for a trip. At home, an optional SMB share can carry
+                progress, favorites and match corrections between devices.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="download" class="content download">
+        <div class="wrap">
+          <div>
+            <h2>Take your seat.</h2>
+            <p>
+              Sideload the signed headset APK on PICO Space Pro running PICO OS
+              6. Start with one local file or add your NAS under Sources.
+            </p>
+          </div>
+          <div class="buttons">
+            <a
+              class="button"
+              href="https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0"
+              >Get the stable release</a
+            ><a
+              href="https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1"
+              >Try the keyless matching preview</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <span class="brand">Reality NAS Player</span>
+      <div class="footlinks">
+        <a href="https://github.com/jason-jm/reality-nas-player">Source code</a
+        ><a
+          href="https://github.com/jason-jm/reality-nas-player/blob/main/docs/languages/README.md"
+          >Guide in 23 languages</a
+        ><a href="store/privacy.html">Privacy</a
+        ><a
+          href="https://github.com/jason-jm/reality-nas-player/blob/main/THIRD_PARTY_NOTICES.md"
+          >Artwork credits</a
+        ><a href="film.html">Read the film transcript</a>
+      </div>
+    </footer>
+    <dialog id="film" aria-labelledby="film-title">
+      <header>
+        <p id="film-title">Reality NAS Player · Launch film</p>
+        <button type="button" id="close-film">Close</button>
+      </header>
+      <video
+        controls
+        playsinline
+        preload="none"
+        poster="media/film-cover.jpg"
+        src="media/reality-nas-player.mp4"
+      >
+        <track
+          kind="subtitles"
+          srclang="en"
+          label="English"
+          src="media/film-en.vtt"
+        />
+        <track
+          kind="subtitles"
+          srclang="zh"
+          label="简体中文"
+          src="media/film-zh.vtt"
+        />
+      </video>
+      <footer>
+        Original instrumental “Orbit Switch”, made with Suno v6. Product footage
+        from the PICO emulator. <a href="film.html">Read the film transcript</a>
+      </footer>
+    </dialog>
+  </body>
+</html>

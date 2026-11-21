@@ -13,6 +13,8 @@
 
 </details>
 
+**[ชมวิดีโอแนะนำความยาว 31 วินาที](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [เว็บไซต์อย่างเป็นทางการ](https://jason-jm.github.io/reality-nas-player/)
+
 ![โรงภาพยนตร์ส่วนตัวที่สร้างขึ้นสำหรับ PICO Space Pro — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 เปิดโฟลเดอร์หนัง ซีรีส์ และอนิเมะที่สะสมไว้บน NAS ได้เลย Reality NAS Player ช่วยระบุชื่อเรื่อง เรียงตอน และเก็บวิดีโอพิเศษไว้กับซีรีส์ที่เกี่ยวข้อง เลือกเรื่องจากโปสเตอร์บน **PICO Space Pro** แล้วนั่งชมพร้อมวิวโลกจากอวกาศ

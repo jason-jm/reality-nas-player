@@ -13,6 +13,8 @@
 
 </details>
 
+**[觀看 31 秒介紹短片](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)** · [官方網站](https://jason-jm.github.io/reality-nas-player/zh.html)
+
 ![專為 PICO Space Pro 打造的私人電影院。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 把 NAS 裡多年累積的電影、影集和動畫資料夾接進來。Reality NAS Player 能從檔名以外的線索認出作品，把正片、各集與特典分好。戴上 **PICO Space Pro**，從海報牆選一部，到太空觀影廳入座。

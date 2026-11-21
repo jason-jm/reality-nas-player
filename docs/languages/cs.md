@@ -13,6 +13,8 @@
 
 </details>
 
+**[Zhlédnout 31sekundové video](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Oficiální web](https://jason-jm.github.io/reality-nas-player/)
+
 ![Vaše soukromé kino pro PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Otevřete složky s filmy, seriály a anime, které jste si v průběhu let uložili na NAS. Reality NAS Player rozpozná názvy, seřadí epizody a přiřadí bonusy k seriálu. Na **PICO Space Pro** si vyberte podle plakátu a usaďte se s výhledem na Zemi.

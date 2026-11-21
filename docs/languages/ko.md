@@ -13,6 +13,8 @@
 
 </details>
 
+**[31초 소개 영상 보기](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [공식 웹사이트](https://jason-jm.github.io/reality-nas-player/)
+
 ![PICO Space Pro를 위한 나만의 영화관. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 오랫동안 NAS에 모아 둔 영화와 시리즈, 애니메이션 폴더를 그대로 열어 보세요. Reality NAS Player가 폴더와 다른 회차에 남은 단서를 읽어 작품을 정리합니다. **PICO Space Pro**에서 포스터를 고르고 지구가 보이는 좌석에서 감상하세요.

@@ -13,13 +13,17 @@
 
 </details>
 
-![为 PICO Space Pro 打造的私人影院。 — Reality NAS Player](../showcase/00-screening-room-en.webp)
+**为 PICO Space Pro 打造。** 连接 NAS，播放器会根据文件名、目录和已有的影片资料识别电影、剧集和番剧。打开海报墙，挑一部，去太空观影厅坐下。也可以直接播放本地视频、未加密原盘以及 180° 或 360° 全景影像。
 
-把 NAS 上积攒多年的电影、剧集和番剧文件夹接进来。Reality NAS Player 能认出藏在普通文件名里的电影，把正片、分集和特典各自归好。戴上 **PICO Space Pro**，从海报墙挑一部，到太空观影厅开场。
+**[观看 31 秒宣传片](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)** · [访问中文官网](https://jason-jm.github.io/reality-nas-player/zh.html) · [体验 v1.2.0-rc.1 刮削预览版](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.2.0-rc.1)
+
+[![为 PICO Space Pro 打造的 Reality NAS Player 太空观影厅。](../media/film-cover.jpg)](https://jason-jm.github.io/reality-nas-player/zh.html?watch=1)
 
 **[下载头显 APK](https://github.com/jason-jm/reality-nas-player/releases/download/v1.1.0/reality-nas-player-1.1.0-6.apk)** · [版本说明与校验值](https://github.com/jason-jm/reality-nas-player/releases/tag/v1.1.0) · [桌面构建](../build.md)
 
 ## 让播放器替你的 NAS 片库刮削资料
+
+**新版预览扩展了免密钥识别。** 遇到同名剧集，播放器能用多个资料库核对。同名纪录节目可以比对电视台署名，部分 NHK 中文字幕版还可追溯日文原名和播出年份。内置的多语番剧索引覆盖数千条发行记录，断网也能用。上述功能均无需注册资料库账号或填写 API 密钥。[查看刮削案例](https://github.com/jason-jm/reality-nas-player/blob/v1.2.0-rc.1/docs/metadata-matching.zh-Hans.md)
 
 ![两个刮削例子展示播放器怎样从父目录认出《星际穿越》，以及怎样从相邻分集补全番名。右侧是头显从 WebDAV 共享的 NFO 识别出的八部演示影片中的四部。](../showcase/01-auto-scraping-en.webp)
 

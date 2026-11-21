@@ -13,6 +13,8 @@
 
 </details>
 
+**[Urmărește filmul de 31 de secunde](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Site oficial](https://jason-jm.github.io/reality-nas-player/)
+
 ![Un cinematograf personal, creat pentru PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Deschide folderele cu filme, seriale și anime pe care le-ai strâns de-a lungul anilor pe NAS. Reality NAS Player recunoaște titlurile, ordonează episoadele și păstrează materialele bonus lângă serialul potrivit. Alege un afiș pe **PICO Space Pro** și ia loc cu vedere spre Pământ.

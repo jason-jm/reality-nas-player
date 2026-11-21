@@ -13,6 +13,8 @@
 
 </details>
 
+**[Se filmen på 31 sekunder](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Offisielt nettsted](https://jason-jm.github.io/reality-nas-player/)
+
 ![Din egen kino, laget for PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Åpne mappene med film, serier og anime som du har samlet på NAS-en din. Reality NAS Player kjenner igjen titlene, setter episodene i rekkefølge og legger ekstramaterialet ved riktig serie. Velg et omslag på **PICO Space Pro**, og finn deg en plass med utsikt mot jorda.

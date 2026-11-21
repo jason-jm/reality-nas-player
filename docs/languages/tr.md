@@ -13,6 +13,8 @@
 
 </details>
 
+**[31 saniyelik tanıtım filmini izleyin](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Resmî site](https://jason-jm.github.io/reality-nas-player/)
+
 ![PICO Space Pro için tasarlanmış kişisel sinemanız. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Yıllardır NAS üzerinde biriktirdiğiniz film, dizi ve anime klasörlerini açın. Reality NAS Player yapımları tanır, bölümleri sıralar ve ek içerikleri ait oldukları diziyle bir araya getirir. **PICO Space Pro** üzerinde afişten bir film seçip Dünya manzaralı koltuğunuza yerleşin.

@@ -13,6 +13,8 @@
 
 </details>
 
+**[Tonton video 31 saat](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Laman rasmi](https://jason-jm.github.io/reality-nas-player/)
+
 ![Pawagam peribadi yang dibina untuk PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Buka folder filem, siri dan anime yang anda kumpulkan selama ini pada NAS. Reality NAS Player mengenal pasti tajuk, menyusun episod dan meletakkan bahan tambahan bersama siri yang betul. Pilih poster pada **PICO Space Pro** dan tonton dengan pemandangan Bumi.

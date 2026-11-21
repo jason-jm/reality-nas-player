@@ -13,6 +13,8 @@
 
 </details>
 
+**[Se filmen på 31 sekunder](https://jason-jm.github.io/reality-nas-player/?watch=1)** · [Officiell webbplats](https://jason-jm.github.io/reality-nas-player/)
+
 ![En egen filmvisning, byggd för PICO Space Pro. — Reality NAS Player](../showcase/00-screening-room-en.webp)
 
 Öppna mapparna med filmer, serier och anime som du har samlat på din NAS. Reality NAS Player hittar titlar, sorterar avsnitt och lägger extramaterialet hos rätt serie. Välj ett omslag på **PICO Space Pro** och slå dig ner med utsikt över jorden.
